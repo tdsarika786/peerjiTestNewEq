@@ -1,43 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results ignored="5" total="7" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="20599" started-at="2020-06-10T03:09:36Z" finished-at="2020-06-10T03:09:56Z">
+  <suite started-at="2020-08-23T18:17:02 EDT" name="Default suite" finished-at="2020-08-23T18:17:07 EDT" duration-ms="5122">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="20599" started-at="2020-06-10T03:09:36Z" finished-at="2020-06-10T03:09:56Z">
-      <class name="quickseries.testcases.ContactUsScenarios">
-        <test-method status="PASS" signature="setupReport()[pri:0, instance:quickseries.testcases.ContactUsScenarios@7bb58ca3]" name="setupReport" is-config="true" duration-ms="127" started-at="2020-06-10T03:09:36Z" finished-at="2020-06-10T03:09:36Z">
+    <test started-at="2020-08-23T18:17:02 EDT" name="Default test" finished-at="2020-08-23T18:17:07 EDT" duration-ms="5122">
+      <class name="eqcare.testcases.LoginScenarios">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:eqcare.testcases.LoginScenarios@1a0dcaa]" started-at="2020-08-23T18:17:02 EDT" name="setupReport" finished-at="2020-08-23T18:17:02 EDT" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:quickseries.testcases.ContactUsScenarios@7bb58ca3]" name="setUp" is-config="true" duration-ms="11928" started-at="2020-06-10T03:09:36Z" finished-at="2020-06-10T03:09:48Z">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:eqcare.testcases.LoginScenarios@1a0dcaa]" started-at="2020-08-23T18:17:02 EDT" name="setUp" finished-at="2020-08-23T18:17:06 EDT" duration-ms="3337" status="PASS">
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="verifyPage()[pri:0, instance:quickseries.testcases.ContactUsScenarios@7bb58ca3]" name="verifyPage" duration-ms="2072" started-at="2020-06-10T03:09:48Z" finished-at="2020-06-10T03:09:50Z">
+        <test-method signature="verifyPage()[pri:0, instance:eqcare.testcases.LoginScenarios@1a0dcaa]" started-at="2020-08-23T18:17:06 EDT" name="verifyPage" finished-at="2020-08-23T18:17:06 EDT" duration-ms="29" status="PASS">
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- verifyPage -->
-        <test-method status="PASS" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:quickseries.testcases.ContactUsScenarios@7bb58ca3]" name="tearDownReport" is-config="true" duration-ms="416" started-at="2020-06-10T03:09:50Z" finished-at="2020-06-10T03:09:50Z">
+        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:eqcare.testcases.LoginScenarios@1a0dcaa]" started-at="2020-08-23T18:17:06 EDT" name="tearDownReport" finished-at="2020-08-23T18:17:06 EDT" duration-ms="232" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult: verifyPage STATUS:SUCCESS METHOD:ContactUsScenarios.verifyPage()[pri:0, instance:quickseries.testcases.ContactUsScenarios@7bb58ca3]]
-]]>
+                <![CDATA[[TestResult name=verifyPage status=SUCCESS method=LoginScenarios.verifyPage()[pri:0, instance:eqcare.testcases.LoginScenarios@1a0dcaa] output={null}]]]>
               </value>
             </param>
           </params>
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- tearDownReport -->
-        <test-method status="PASS" signature="TC_01_Display_Validation_Errors()[pri:1, instance:quickseries.testcases.ContactUsScenarios@7bb58ca3]" name="TC_01_Display_Validation_Errors" duration-ms="6001" started-at="2020-06-10T03:09:50Z" depends-on-methods="quickseries.testcases.ContactUsScenarios.verifyPage" finished-at="2020-06-10T03:09:56Z">
-        </test-method> <!-- TC_01_Display_Validation_Errors -->
-        <test-method status="PASS" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:quickseries.testcases.ContactUsScenarios@7bb58ca3]" name="tearDownReport" is-config="true" duration-ms="42" started-at="2020-06-10T03:09:56Z" finished-at="2020-06-10T03:09:56Z">
+        <test-method signature="verifyLanguageLink()[pri:1, instance:eqcare.testcases.LoginScenarios@1a0dcaa]" started-at="2020-08-23T18:17:06 EDT" name="verifyLanguageLink" finished-at="2020-08-23T18:17:07 EDT" depends-on-methods="eqcare.testcases.LoginScenarios.verifyPage" duration-ms="1283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLanguageLink -->
+        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:eqcare.testcases.LoginScenarios@1a0dcaa]" started-at="2020-08-23T18:17:07 EDT" name="tearDownReport" finished-at="2020-08-23T18:17:07 EDT" duration-ms="8" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult: TC_01_Display_Validation_Errors STATUS:SUCCESS METHOD:ContactUsScenarios.TC_01_Display_Validation_Errors()[pri:1, instance:quickseries.testcases.ContactUsScenarios@7bb58ca3]]
-]]>
+                <![CDATA[[TestResult name=verifyLanguageLink status=SUCCESS method=LoginScenarios.verifyLanguageLink()[pri:1, instance:eqcare.testcases.LoginScenarios@1a0dcaa] output={null}]]]>
               </value>
             </param>
           </params>
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- tearDownReport -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:quickseries.testcases.ContactUsScenarios@7bb58ca3]" name="tearDown" is-config="true" duration-ms="125" started-at="2020-06-10T03:09:56Z" finished-at="2020-06-10T03:09:56Z">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:eqcare.testcases.LoginScenarios@1a0dcaa]" started-at="2020-08-23T18:17:07 EDT" name="tearDown" finished-at="2020-08-23T18:17:07 EDT" duration-ms="197" status="PASS">
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- quickseries.testcases.ContactUsScenarios -->
+      </class> <!-- eqcare.testcases.LoginScenarios -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
