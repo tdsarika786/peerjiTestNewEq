@@ -48,6 +48,8 @@ public class LoginPage {
 	
 	By registerLink = By.xpath("//*[@data-role='register-button']");
 	
+	By logoutText=By.xpath("//a[contains(text(), 'Logout')]");
+	
 	public void verifyUrlBeforeLogin() {
 		Utility.verifyURLContains(driver, "eqcare");
 	}
@@ -80,6 +82,7 @@ public class LoginPage {
 	}
 
 	public void loginToApplication(String userName, String passWord) {
+		
 		Utility.waitForWebElement(driver, user).sendKeys(userName);
 		Utility.waitForWebElement(driver, password).sendKeys(passWord);
 		Utility.waitForWebElement(driver, loginButton).click();
@@ -87,6 +90,7 @@ public class LoginPage {
 	}
 
 	public void errorMessagesIncorrectEmailPassword() {
+		Utility.wait(2);
 		WebElement ele = Utility.waitForWebElement(driver, loginErrorMessage);
 		String loginErrorMessageText = ele.getText();
 		Assert.assertEquals(loginErrorMessageText, ErrorCodesProvider.read("INCORRECT_EMAIL_PASSWORD"));
@@ -105,6 +109,8 @@ public class LoginPage {
 	}
 
 	public void emptyFieldsTest() {
+		
+		Utility.wait(2);
 
 		List<WebElement> errorElements = Utility.waitForWebElements(driver, errorMessages);
 
@@ -130,6 +136,10 @@ public class LoginPage {
 	}
 
 	public void validateShowPasswordLink() {
+		
+		Utility.waitForWebElement(driver, password).sendKeys("TestPassword");
+		
+		Utility.wait(2);
 
 		Utility.verifyText(driver, showHideText, "Hide");
 		
@@ -140,11 +150,15 @@ public class LoginPage {
 	    Utility.verifyText(driver, showHideText, "Show");
 			
 		Utility.verifyAttribute(driver,password, "type", "text");
+		
+		Utility.wait(2);
 
 
 	}
 
 	public void signUpRedirectionTest() {
+		
+		Utility.wait(2);
 
 		Utility.waitForWebElement(driver, registerLink).click();
 
@@ -169,10 +183,28 @@ public class LoginPage {
 		
 		Utility.verifyText(driver, passwordLabel, "Mot de passe");
 		
+		Utility.wait(2);
+		
 		Utility.waitForWebElement(driver, languageENLink).click();
 		
 		Utility.verifyText(driver, passwordLabel, "Password");
 		
+		Utility.wait(2);
+		
 	}
 	
+	public void navigateToLoginPage() {
+
+		Utility.navigateToURL(driver, DataProviderFactory.getConfig().getValue("ponyEnv"));
+	}
+	
+	public void logOutFromApplication() {
+		
+		
+	
+		Utility.waitForWebElement(driver, logoutText).click();
+		
+		Utility.wait(2);
+	}
+
 }

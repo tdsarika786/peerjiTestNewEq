@@ -61,7 +61,7 @@ public class NovaHomePage {
 		this.driver = ldriver;
 	}
 
-	public void createEmployee() {
+	public void createEmployee(String coverageTokenString) {
 
 		Utility.waitForWebElement(driver, EmployeesLink).click();
 
@@ -91,7 +91,7 @@ public class NovaHomePage {
 		objProvince.selectByValue("QC");
 
 		// Change Token- 1
-		Utility.waitForWebElement(driver, coverageToken).sendKeys("77104");
+		Utility.waitForWebElement(driver, coverageToken).sendKeys(coverageTokenString);
 
 		WebElement planTypeElement = driver.findElement(planTypeDropDwnList);
 

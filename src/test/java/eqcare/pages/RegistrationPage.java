@@ -97,12 +97,22 @@ public class RegistrationPage {
 
 	By serverErrorElement = By.xpath("//p[@data-role='error']");
 
+	By divCoverage = By.xpath("//div[contains(text(),'Coverage')]");
+
+	By divProfile = By.xpath("//div[contains(text(),'Profile')]");
+
+	By divSecurity = By.xpath("//div[contains(text(),'Security')]");
+
+	By divConfirm = By.xpath("//div[contains(text(),'Confirm')]");
+
 	public void verifyUrlBeforeRegister()
 
 	{
 		clickOnRegisterButton();
 
 		Utility.verifyURLContains(driver, "register");
+		
+		
 	}
 
 	public void verifyFB()
@@ -117,20 +127,75 @@ public class RegistrationPage {
 
 	public void clickOnRegisterButton() {
 		Utility.waitForWebElement(driver, registerLink).click();
+		
+	
 	}
 
 	public void EnrolledUser_TC1() {
 
-		navigateToRegistrationPage();
+		//navigateToRegistrationPage();
 
 		clickOnRegisterButton();
 
 		EnrolledUser();
 	}
-
+	
 	public void EnrolledUser() {
+		
+		navigateToRegisterationPage();
 
 		Utility.waitForWebElement(driver, coverageButton).click();
+	}
+
+	public void EnrolledUserWithValidInput() {
+
+		Utility.waitForWebElement(driver, groupNoInput).sendKeys("7710");
+
+		Utility.waitForWebElement(driver, groupNumberLink).click();
+
+		//PEERJI
+		Utility.waitForWebElement(driver, coverageIdentifierInput).sendKeys("77107");
+		
+		Utility.wait(2);  
+
+		Utility.waitForWebElement(driver, checkCoverageLink).click();
+		
+		Utility.wait(2);
+
+		Utility.waitForWebElement(driver, planTypeNextBtn).click();
+
+	}
+
+	public void registerationWithInvalidGroupNo() {
+
+		Utility.waitForWebElement(driver, groupNoInput).sendKeys("12377777775555");
+
+		Utility.waitForWebElement(driver, groupNumberLink).click();
+
+		WebElement ele = Utility.waitForWebElement(driver, serverErrorElement);
+		String confirmationText = ele.getText();
+		Assert.assertEquals(confirmationText, "This Group Number is invalid.");
+
+	}
+
+	public void registerationWithInvalidCoverageIdentifier() {
+
+		Utility.waitForWebElement(driver, groupNoInput).sendKeys("7710");
+
+		Utility.waitForWebElement(driver, groupNumberLink).click();
+
+		Utility.waitForWebElement(driver, coverageIdentifierInput).sendKeys("S1S2TEST");
+
+		Utility.waitForWebElement(driver, checkCoverageLink).click();
+
+		WebElement ele = Utility.waitForWebElement(driver, serverErrorElement);
+		String confirmationText = ele.getText();
+		Assert.assertEquals(confirmationText,
+				"The coverage token you provided is invalid. Please contact your provider.");
+
+	}
+
+	public void registerationWithAlreadyAssociatedCoverageIdentifier() {
 
 		Utility.waitForWebElement(driver, groupNoInput).sendKeys("7710");
 
@@ -140,11 +205,17 @@ public class RegistrationPage {
 
 		Utility.waitForWebElement(driver, checkCoverageLink).click();
 
-		Utility.waitForWebElement(driver, planTypeNextBtn).click();
+		WebElement ele = Utility.waitForWebElement(driver, serverErrorElement);
+		String confirmationText = ele.getText();
+		Assert.assertEquals(confirmationText,
+				"The coverage token you provided is already associated to an account.");
 
 	}
 
 	public void notEnrolledUser() {
+
+		navigateToRegisterationPage();
+
 		Utility.waitForWebElement(driver, notCoverageButton).click();
 
 	}
@@ -155,13 +226,7 @@ public class RegistrationPage {
 		Utility.waitForWebElement(driver, emailAddress).sendKeys(email);
 
 		if (optional == true) {
-			WebElement fileButtonGovtID = driver.findElement(By.xpath("(//input[@type='file'])[2]"));
-			JavascriptExecutor executorGovtID = (JavascriptExecutor) driver;
-			executorGovtID.executeScript("arguments[0].style.display='block';", fileButtonGovtID);
-
-			Utility.waitForWebElement(driver, uploadGovtID)
-					.sendKeys(System.getProperty("user.dir") + "/TestData/medical-card.jpeg");
-
+			
 			WebElement fileButtonProfielPic = driver.findElement(By.xpath("(//input[@type='file'])[1]"));
 			JavascriptExecutor executor = (JavascriptExecutor) driver;
 			executor.executeScript("arguments[0].style.display='block';", fileButtonProfielPic);
@@ -183,10 +248,20 @@ public class RegistrationPage {
 		Utility.waitForWebElement(driver, lastName).sendKeys(userLastName);
 
 		Utility.waitForWebElement(driver, gender).click();
+		
+		WebElement fileButtonGovtID = driver.findElement(By.xpath("(//input[@type='file'])[2]"));
+		JavascriptExecutor executorGovtID = (JavascriptExecutor) driver;
+		executorGovtID.executeScript("arguments[0].style.display='block';", fileButtonGovtID);
+
+		Utility.waitForWebElement(driver, uploadGovtID)
+				.sendKeys(System.getProperty("user.dir") + "/TestData/medical-card.jpeg");
+
 
 		// Utility.waitForWebElement(driver,
 		// uploadGovtID).sendKeys("/Users/sarikadhall/Downloads/OIP-2.jpeg");
 
+	
+		
 		Utility.waitForWebElement(driver, nextBtn).click();
 
 		Utility.waitForWebElement(driver, address).sendKeys(Address);
@@ -207,14 +282,18 @@ public class RegistrationPage {
 		Utility.waitForWebElement(driver, phoneNumber).sendKeys(PhoneNo);
 
 		Utility.waitForWebElement(driver, accountInfoBtn).click();
+		
+		
 
 		Utility.waitForWebElement(driver, password).sendKeys(Password);
 
 		Utility.waitForWebElement(driver, password1).sendKeys(Password);
+		
+		
 
 		Utility.waitForWebElement(driver, nextBtn2).click();
 
-		Utility.wait(2);
+	
 
 		WebElement button = driver.findElement(By.xpath("//div[@checkbox-field-id=\"email_confirmation\"]/div/input"));
 
@@ -244,12 +323,14 @@ public class RegistrationPage {
 
 		// Utility.waitForWebElement(driver, checkBox2).click();
 
-		Utility.waitForWebElement(driver, confirmButton).click();
+		
+		//PEERJI
+		//Utility.waitForWebElement(driver, confirmButton).click();
 
 	}
 
 	public void registerationCompleteWithValidInput() {
-		Utility.wait(2);
+		
 		WebElement ele = Utility.waitForWebElement(driver, confirmationEmailText);
 		String confirmationText = ele.getText();
 		Assert.assertEquals(confirmationText, "One last step");
@@ -257,18 +338,14 @@ public class RegistrationPage {
 	}
 
 	public void registerationWithInValidInput() {
-		Utility.wait(2);
+		
 		WebElement ele = Utility.waitForWebElement(driver, serverErrorElement);
 		String confirmationText = ele.getText();
 		Assert.assertEquals(confirmationText, "This email is already in use.");
 
 	}
 
-	public void navigateToRegistrationPage() {
-
-		Utility.navigateToURL(driver, DataProviderFactory.getConfig().getValue("ponyEnv"));
-
-	}
+	
 
 	public void signInRedirectionTest() {
 
@@ -279,31 +356,47 @@ public class RegistrationPage {
 		for (String handle : allWindows) {
 			driver.switchTo().window(handle);
 		}
-		
+
 		String expectedURL = DataProviderFactory.getConfig().getValue("ponyEnv");
-		
+
 		String actualURL = driver.getCurrentUrl();
 		// System.out.println(actualURL);
 		Assert.assertEquals(actualURL, expectedURL);
 
 	}
 
-	
 	public void emptyFieldsTest() {
 
 		Utility.waitForWebElement(driver, nextBtn).click();
-		
+
 		List<WebElement> errors = Utility.waitForWebElements(driver, serverErrorElement);
-		
-		boolean errorDisplayed=true;
-		
-		for(WebElement e : errors) {
-		    System.out.println(e.getText());
-		    if (!e.isDisplayed())
-	        {
-		    	errorDisplayed= false; // one of the messages isn't displayed
-	        }
+
+		boolean errorDisplayed = true;
+
+		for (WebElement e : errors) {
+			System.out.println(e.getText());
+			if (!e.isDisplayed()) {
+				errorDisplayed = false; // one of the messages isn't displayed
+			}
 		}
 		Assert.assertEquals(errorDisplayed, true);
-	}	
+	}
+
+	public void verifyElementsOnPage() {
+
+		Utility.waitForWebElement(driver, divCoverage);
+		Utility.waitForWebElement(driver, divProfile);
+		Utility.waitForWebElement(driver, divSecurity);
+		Utility.waitForWebElement(driver, divConfirm);
+
+		Utility.waitForWebElement(driver, coverageButton);
+		Utility.waitForWebElement(driver, notCoverageButton);
+
+	}
+
+	public void navigateToRegisterationPage() {
+
+		Utility.navigateToURL(driver, DataProviderFactory.getConfig().getValue("ponyRegister"));
+	}
+
 }

@@ -54,6 +54,8 @@ public class HomePage {
 	
 	
 	public void logOutFromApplication() {
+		
+		Utility.wait(4);
 	
 		Utility.waitForWebElement(driver, logoutText).click();
 	}

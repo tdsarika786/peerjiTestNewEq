@@ -55,6 +55,8 @@ public class Utility {
 		WebDriverWait wait = new WebDriverWait(driver, 15);
 
 		boolean status = wait.until(ExpectedConditions.textToBe(byLocator, expectedText));
+		
+		
 
 		Assert.assertTrue(status);
 ;

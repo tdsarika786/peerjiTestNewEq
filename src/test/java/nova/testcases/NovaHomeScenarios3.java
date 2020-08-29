@@ -10,7 +10,9 @@ import eqcare.factories.DataProviderFactory;
 import eqcare.pages.HomePage;
 import nova.pages.BaseClass;
 
-public class NovaHomeScenarios extends BaseClass {
+public class NovaHomeScenarios3 extends BaseClass {
+	
+	//Enrolled Patient Register to EQ Care whose having coverage token
 
 	LoginPage login;
 	NovaHomePage home;
@@ -42,7 +44,7 @@ public class NovaHomeScenarios extends BaseClass {
 
 		
 
-		logger.info("Patient Logged in");
+		logger.info("Care Manager Logged in");
 	}
 	
 
@@ -51,15 +53,15 @@ public class NovaHomeScenarios extends BaseClass {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
 
-		logger = report.createTest("Login to Nova application");
+		logger = report.createTest("Create Employee with coverage token");
 
 		//home.createEmployer(); // First see if employer there
 		
-		home.createEmployee(); // then create employee
+		home.createEmployee("771011"); // then create employee
 		
 		//home.TestBrowser();
 
-		logger.info("Patient Logged in");
+		logger.info("Employee created with coverage token");
 	}
 
 	@Test(priority = 2, dependsOnMethods = "loginToApplication", enabled =false)

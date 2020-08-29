@@ -12,6 +12,15 @@ import eqcare.factories.DataProviderFactory;
 import eqcare.pages.BaseClass;
 
 public class HomeScenarios extends BaseClass {
+	
+	
+	// Home Scenarios
+	
+	
+	//thats it for now and more and more automated test cases i will create day by day.
+	// Thanks you
+	
+	//PAssing to next person
 
 	LoginPage login;
 	HomePage home;
@@ -23,11 +32,11 @@ public class HomeScenarios extends BaseClass {
 
 		logger = report.createTest("Login as patient");
 
-		login.loginToApplication(DataProviderFactory.getExcel().getCellData("EQCare", 1, 0),
+		//login.loginToApplication(DataProviderFactory.getExcel().getCellData("EQCare", 1, 0),
 
-				DataProviderFactory.getExcel().getCellData("EQCare", 1, 1));
+			//	DataProviderFactory.getExcel().getCellData("EQCare", 1, 1));
 
-		// login.loginToApplication("automationsaru@gmail.com", "Peerji#123");
+		login.loginToApplication("sarikaqa7+nr1@gmail.com", "Sarika#123");
 
 		logger.info("Logged in");
 	}
