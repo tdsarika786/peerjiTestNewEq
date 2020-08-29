@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="eqcare.testcases.LoginScenarios">
+      <class name="eqcare.testcases.HomeScenarios">
         <methods>
+          <include name="loginToApplication"/>
           <include name="setupReport"/>
           <include name="tearDown"/>
           <include name="tearDownReport"/>
           <include name="setUp"/>
-          <include name="verifyPage"/>
-          <include name="verifyShowHideLink"/>
+          <include name="startVideoConsultation"/>
         </methods>
-      </class> <!-- eqcare.testcases.LoginScenarios -->
+      </class> <!-- eqcare.testcases.HomeScenarios -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
