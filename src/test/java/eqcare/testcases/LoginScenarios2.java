@@ -38,7 +38,7 @@ public class LoginScenarios2 extends BaseClass{
 	@Test(priority = 1, dependsOnMethods = "verifyPage", enabled=false)
 	public void loginToApplicationWithValidInput() {
 
-		logger = report.createTest("Login as patient with valid inputs");
+		logger = report.createTest("Login as patient wgith valid inputs");
 
 		// login.loginToApplication(DataProviderFactory.getExcel().getCellData("EQCare",
 		// 1, 0),
