@@ -37,7 +37,7 @@ public class NovaHomePage {
 
 	By createEmployeeSubmitButton = By.xpath("//button[@dusk='create-button']");
 
-	By selectEqCareEmployee = By.xpath("//div[contains(text(),'Bell-Test')]");
+	By selectEqCareEmployee = By.xpath("//div[contains(text(),'Bell-Test-Sarika')]");
 
 	// EMployer
 
@@ -116,9 +116,9 @@ public class NovaHomePage {
 		Utility.waitForWebElement(driver, createEmployerLink).click();
 
 		// Change ID for NEW Employer
-		Utility.waitForWebElement(driver, employerIDInput).sendKeys("7711");
+		Utility.waitForWebElement(driver, employerIDInput).sendKeys("1234");
 
-		Utility.waitForWebElement(driver, companyNameInput).sendKeys("CN-TestSarika");
+		Utility.waitForWebElement(driver, companyNameInput).sendKeys("EqCare");
 
 		// Select
 		WebElement coverageTokenElement = driver.findElement(selectCoverageTokenInput);

@@ -62,7 +62,7 @@ public class IndividualPayingPatientRegisteration1 extends BaseClass {
 
 		//register.Registeration(DataProviderFactory.getExcel().getCellData("Users", 2, 0),
 		
-		register.Registeration("sarikaqa7+nro5@gmail.com",
+		register.Registeration("sarikaqa7+in2@gmail.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),

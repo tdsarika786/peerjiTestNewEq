@@ -115,7 +115,7 @@ public class EnrolledUserRegisteration4 extends BaseClass {
 		// register.Registeration(DataProviderFactory.getExcel().getCellData("Users", 2,
 		// 0),
 
-		register.Registeration("sarikaqa7+enro4@gmail.com",
+		register.Registeration("sarikaqa7+er2@gmail.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),

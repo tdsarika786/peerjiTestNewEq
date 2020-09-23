@@ -12,11 +12,13 @@ import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
+import com.practitest.examples.runWithAttachments;
+
 import eqcare.factories.DataProviderFactory;
 import eqcare.factories.*;
 import eqcare.helper.Utility;
 
-public class LoginPage {
+public class LoginPage extends runWithAttachments {
 
 	WebDriver driver;
 
@@ -86,6 +88,7 @@ public class LoginPage {
 		Utility.waitForWebElement(driver, user).sendKeys(userName);
 		Utility.waitForWebElement(driver, password).sendKeys(passWord);
 		Utility.waitForWebElement(driver, loginButton).click();
+		Utility.wait(2);
 
 	}
 

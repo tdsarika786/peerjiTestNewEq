@@ -145,7 +145,7 @@ public class Utility {
 	public static void navigateToURL(WebDriver driver, String url) {
 		WebDriverWait wait = new WebDriverWait(driver, 30);
 		driver.navigate().to(url);
-		Assert.assertTrue(wait.until(ExpectedConditions.urlContains(url)));
+		//Assert.assertTrue(wait.until(ExpectedConditions.urlContains(url)));
 
 	}
 

@@ -154,7 +154,7 @@ public class RegistrationPage {
 		Utility.waitForWebElement(driver, groupNumberLink).click();
 
 		//PEERJI
-		Utility.waitForWebElement(driver, coverageIdentifierInput).sendKeys("77107");
+		Utility.waitForWebElement(driver, coverageIdentifierInput).sendKeys("72722");
 		
 		Utility.wait(2);  
 
@@ -180,7 +180,7 @@ public class RegistrationPage {
 
 	public void registerationWithInvalidCoverageIdentifier() {
 
-		Utility.waitForWebElement(driver, groupNoInput).sendKeys("7710");
+		Utility.waitForWebElement(driver, groupNoInput).sendKeys("7727");
 
 		Utility.waitForWebElement(driver, groupNumberLink).click();
 
@@ -201,7 +201,7 @@ public class RegistrationPage {
 
 		Utility.waitForWebElement(driver, groupNumberLink).click();
 
-		Utility.waitForWebElement(driver, coverageIdentifierInput).sendKeys("77103");
+		Utility.waitForWebElement(driver, coverageIdentifierInput).sendKeys("77270");
 
 		Utility.waitForWebElement(driver, checkCoverageLink).click();
 
@@ -325,7 +325,7 @@ public class RegistrationPage {
 
 		
 		//PEERJI
-		//Utility.waitForWebElement(driver, confirmButton).click();
+		Utility.waitForWebElement(driver, confirmButton).click();
 
 	}
 

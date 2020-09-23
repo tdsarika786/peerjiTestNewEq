@@ -11,7 +11,7 @@ import eqcare.pages.RegistrationPage;
 import eqcare.factories.DataProviderFactory;
 import eqcare.pages.BaseClass;
 
-public class LoginScenarios2 extends BaseClass {
+public class LoginScenarios2 extends BaseClass{
 	
 	//  2. Patient login to the application to EQ Care
 
@@ -30,10 +30,12 @@ public class LoginScenarios2 extends BaseClass {
 		login.verifyUrlBeforeLogin();
 
 		logger.info("Validating url");
+		
+		login.peerji();
 
 	}
 
-	@Test(priority = 1, dependsOnMethods = "verifyPage")
+	@Test(priority = 1, dependsOnMethods = "verifyPage", enabled=false)
 	public void loginToApplicationWithValidInput() {
 
 		logger = report.createTest("Login as patient with valid inputs");
@@ -43,14 +45,18 @@ public class LoginScenarios2 extends BaseClass {
 
 		// DataProviderFactory.getExcel().getCellData("EQCare", 1, 1));
 
-		login.loginToApplication("sarikaqa7+nr1@gmail.com", "Sarika#123");
+		login.loginToApplication("sarikaqa7+nr1@gmail.com", "Sarika#1234");
 
 		login.verifyUrlAfterLogin();
+		
+		//login.runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 1, 0));
+		
+		//login.peerji();
 
 		logger.info("Patient Logged in");
 	}
 
-	@Test(priority = 2, dependsOnMethods = "loginToApplicationWithValidInput")
+	@Test(priority = 2, dependsOnMethods = "loginToApplicationWithValidInput", enabled=false)
 	public void logoutFromApplication() {
 		logger = report.createTest("Patient Logout from Application");
 
@@ -62,7 +68,7 @@ public class LoginScenarios2 extends BaseClass {
 
 	}
 
-	@Test(priority = 3, dependsOnMethods = "verifyPage")
+	@Test(priority = 3, dependsOnMethods = "verifyPage", enabled=false)
 	public void verifyShowHideLink() {
 
 		logger = report.createTest("Verify Show password link on login page");
@@ -103,7 +109,7 @@ public class LoginScenarios2 extends BaseClass {
 		logger.info("Validated redirection to the registeration page");
 	}
 
-	@Test(priority = 6, dependsOnMethods = "verifyPage")
+	@Test(priority = 6, dependsOnMethods = "verifyPage", enabled=false)
 	public void loginToApplicationWithBlankInput() {
 
 		logger = report.createTest("Login without providing email and password");
@@ -121,7 +127,7 @@ public class LoginScenarios2 extends BaseClass {
 		logger.info("Displayed valid error message to user.");
 	}
 
-	@Test(priority = 7, dependsOnMethods = "verifyPage")
+	@Test(priority = 7, dependsOnMethods = "verifyPage", enabled=false)
 	public void loginToApplicationWithNonRegisteredEmailId() {
 
 		logger = report.createTest("Login as patient with non registered email id");

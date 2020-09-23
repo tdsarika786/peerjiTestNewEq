@@ -26,7 +26,7 @@ public class BrowserFactory {
 		if (browser.equalsIgnoreCase("Chrome")) {
 			// System.setProperty("webdriver.chrome.driver",
 			// System.getProperty("user.dir")+"/Drivers/chromedriver1");
-			System.setProperty("webdriver.chrome.driver", "/Users/sarikadhall/Downloads/chromedriver");
+			System.setProperty("webdriver.chrome.driver", "/Users/sarikadhall/Documents/ChromeDriver/chromedriver");
 
 			// ChromeOptions optionsC = new ChromeOptions();
 			// optionsC.addArguments(Arrays.asList("disable-infobars",
