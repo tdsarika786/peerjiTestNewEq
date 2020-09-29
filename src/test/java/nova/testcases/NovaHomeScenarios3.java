@@ -57,7 +57,7 @@ public class NovaHomeScenarios3 extends BaseClass {
 
 		//home.createEmployer(); // First see if employer there
 		
-		home.createEmployee("72722"); // then create employee
+		home.createEmployee("12"); // then create employee
 		
 		//home.TestBrowser();
 

@@ -106,6 +106,8 @@ public class NovaHomePage {
 		Utility.waitForWebElement(driver, coverageStartDate).sendKeys("2020-08-01");
 
 		Utility.waitForWebElement(driver, createEmployeeSubmitButton).click();
+		
+		Utility.wait(5);
 
 	}
 

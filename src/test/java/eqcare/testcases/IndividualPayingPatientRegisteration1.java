@@ -62,7 +62,7 @@ public class IndividualPayingPatientRegisteration1 extends BaseClass {
 
 		//register.Registeration(DataProviderFactory.getExcel().getCellData("Users", 2, 0),
 		
-		register.Registeration("sarikaqa7+in2@gmail.com",
+		register.Registeration("sarikaqa7+in4@gmail.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
@@ -98,7 +98,7 @@ public class IndividualPayingPatientRegisteration1 extends BaseClass {
 		logger.info("Validated not Enrolled link");
 
 		//register.Registeration(DataProviderFactory.getExcel().getCellData("Users", 2, 0),
-		register.Registeration("sarikaqa7+nr6@gmail.com",
+		register.Registeration("sarikaqa7+nr7@gmail.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),

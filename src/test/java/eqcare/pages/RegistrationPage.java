@@ -154,7 +154,7 @@ public class RegistrationPage {
 		Utility.waitForWebElement(driver, groupNumberLink).click();
 
 		//PEERJI
-		Utility.waitForWebElement(driver, coverageIdentifierInput).sendKeys("72722");
+		Utility.waitForWebElement(driver, coverageIdentifierInput).sendKeys("11");
 		
 		Utility.wait(2);  
 

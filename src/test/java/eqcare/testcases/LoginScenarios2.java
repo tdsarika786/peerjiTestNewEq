@@ -32,6 +32,8 @@ public class LoginScenarios2 extends BaseClass{
 		logger.info("Validating url");
 		
 		login.peerji();
+		
+		login.runTestResults("29754173");
 
 	}
 

@@ -151,7 +151,7 @@ public class AccountPage {
 
 	By nextBtn2 = By.xpath("//*[@data-role='password-step-next-button']");
 
-	By confirmationEmailText = By.xpath("//h2[text()='One last step']");
+	
 
 	// Coverage
 
@@ -176,7 +176,34 @@ public class AccountPage {
 	By divSecurity = By.xpath("//div[contains(text(),'Security')]");
 
 	By divConfirm = By.xpath("//div[contains(text(),'Confirm')]");
+	
+	By divAddFamilyMember = By.xpath("//div[contains(text(),' Add a family member ')]");
+	
+	By linkInviteChild = By.xpath("//div[2]/div/a[text()=' Invite ']");
+	
+	By childAgeNoSelect = By.xpath("//label[@for='childAge-no']");
+	
+	By childFirstName = By.xpath("//div[@text-field-id='child_first_name']/input");
 
+	By childLastName = By.xpath("//div[@text-field-id='child_last_name']/input");
+
+	By childDob = By.xpath("//div[@text-field-id='child_date_of_birth']/input");
+
+	By childHealthCardNumber = By.xpath("//div[@text-field-id='child_health_card_number']/input");
+
+	By childSexAtBirth = By.xpath("//*[@for='sex-female']");
+	
+	By addToFamilyBtn = By.xpath("//a[text()=' Add to Family ']");
+	
+	By confirmationChildAddedPopUp = By.xpath("//h2[text()='Child Added']");
+	
+	By addChildDoneLink = By.xpath("(//a[text()=' Done '])[1]");
+	
+	By deleteChildLink = By.xpath("(//a[text()=' Delete '])[1]");
+	
+	By deleteChildYesBtn = By.xpath("//a[text()=' Yes ']");
+
+	
 	public void verifyAccountPageUrl()
 
 	{
@@ -469,9 +496,60 @@ public class AccountPage {
 
 		Utility.waitForWebElement(driver, familyLink).click();
 
-		Utility.waitForWebElement(driver, createFamily);
+		//Utility.waitForWebElement(driver, createFamily).click();
+		
+		
+		
+		
+		
+		
 
 	}
+	
+	public void addChild() {
+		
+       Utility.waitForWebElement(driver, divAddFamilyMember).click();
+		
+		Utility.waitForWebElement(driver, linkInviteChild).click(); 
+		
+		Utility.waitForWebElement(driver, childAgeNoSelect).click(); 
+	
+		Utility.waitForWebElement(driver, childFirstName).sendKeys("Saru");
+		
+		Utility.waitForWebElement(driver, childLastName).sendKeys("Test");
+		
+		Utility.waitForWebElement(driver, childDob).sendKeys("2020-07-14");
+		
+		Utility.waitForWebElement(driver, childHealthCardNumber).sendKeys("H279780808081");
+		
+		Utility.waitForWebElement(driver, childSexAtBirth).click(); 
+		
+		Utility.waitForWebElement(driver, addToFamilyBtn).click(); 
+		
+		WebElement ele = Utility.waitForWebElement(driver, confirmationChildAddedPopUp);
+		String confirmationText = ele.getText();
+		Assert.assertEquals(confirmationText, "Child Added");
+		
+		Utility.waitForWebElement(driver, addChildDoneLink).click(); 
+		
+
+	}
+	
+	public void deleteChild() {
+		
+	       Utility.waitForWebElement(driver, deleteChildLink).click();
+	       
+	       Utility.waitForWebElement(driver, deleteChildYesBtn).click();
+	       
+	       Utility.wait(2);
+			
+	       
+			
+			/*WebElement ele = Utility.waitForWebElement(driver, confirmationChildAddedPopUp);
+			String confirmationText = ele.getText();
+			Assert.assertEquals(confirmationText, "Child Added");*/
+
+		}
 
 	public void verifyFB()
 
@@ -608,9 +686,9 @@ public class AccountPage {
 
 	public void registerationCompleteWithValidInput() {
 
-		WebElement ele = Utility.waitForWebElement(driver, confirmationEmailText);
-		String confirmationText = ele.getText();
-		Assert.assertEquals(confirmationText, "One last step");
+		//WebElement ele = Utility.waitForWebElement(driver, confirmationEmailText);
+		//String confirmationText = ele.getText();
+		//Assert.assertEquals(confirmationText, "One last step");
 
 	}
 

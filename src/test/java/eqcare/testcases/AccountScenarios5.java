@@ -41,7 +41,7 @@ public class AccountScenarios5 extends BaseClass {
 
 		// DataProviderFactory.getExcel().getCellData("EQCare", 1, 1));
 
-		login.loginToApplication("sarikaqa7+in2@gmail.com", "Sarika#123");
+		login.loginToApplication("sarikaqa7+er4@gmail.com", "Sarika#123");
 		
 		logger.info("Patient logs In");
 		
@@ -208,6 +208,48 @@ public class AccountScenarios5 extends BaseClass {
 		// logger.info("Logout done");
 
 	}
+	
+	@Test(priority = 6, dependsOnMethods = "verifyPage")
+	public void addChild() {
+
+		account = PageFactory.initElements(driver, AccountPage.class);
+
+		logger = report.createTest("Verify Family Tab");
+
+		//account.navigateToProfilePage();
+
+		logger.info("Patient logged and navigates to Family Tab");
+
+		account.addChild();
+
+		logger.info("Create a family link validated");
+
+		// home.logOutFromApplication();
+
+		// logger.info("Logout done");
+
+	}
+	
+	@Test(priority = 6, dependsOnMethods = "verifyPage")
+	public void deleteChild() {
+
+		account = PageFactory.initElements(driver, AccountPage.class);
+
+		logger = report.createTest("Verify Family Tab");
+
+		//account.navigateToProfilePage();
+
+		logger.info("Patient logged and navigates to Family Tab");
+
+		account.deleteChild();
+
+		logger.info("Create a family link validated");
+
+		// home.logOutFromApplication();
+
+		// logger.info("Logout done");
+
+	}
 
 	@Test(priority = 6, dependsOnMethods = "verifyPage", enabled = false)
 	public void passwordTab() {
@@ -232,7 +274,7 @@ public class AccountScenarios5 extends BaseClass {
 
 	}
 	
-	@Test(priority = 7, dependsOnMethods = "verifyPage")
+	@Test(priority = 7, dependsOnMethods = "verifyPage", enabled = false)
 	public void resetPasswordWithInvalidInput() {
 
 		account = PageFactory.initElements(driver, AccountPage.class);

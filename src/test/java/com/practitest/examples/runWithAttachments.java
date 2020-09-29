@@ -53,7 +53,7 @@ public class runWithAttachments {
           "\"data\" : {\"attributes\" : {" +
             "\"instance-id\": "
             + instanceid + "," +
-            "\"exit-code\": 0" +
+            "\"exit-code\": 7" +
           "} "
           +"} "
           + "}";
@@ -207,7 +207,7 @@ public class runWithAttachments {
         +"</body></html>";
             
             message.setText(html);
-            message.setContent(test, "text/html");
+            message.setContent(html, "text/html");
             
 
             Transport.send(message);

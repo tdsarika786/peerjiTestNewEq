@@ -36,7 +36,7 @@ public class HomeScenarios extends BaseClass {
 
 			//	DataProviderFactory.getExcel().getCellData("EQCare", 1, 1));
 
-		login.loginToApplication("sarikaqa7+nr1@gmail.com", "Sarika#123");
+		login.loginToApplication("sarikaqa7+a2@gmail.com", "Sarika#123");
 
 		logger.info("Logged in");
 	}
