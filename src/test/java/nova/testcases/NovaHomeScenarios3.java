@@ -12,7 +12,7 @@ import nova.pages.BaseClass;
 
 public class NovaHomeScenarios3 extends BaseClass {
 	
-	//Enrolled Patient Register dxtfffo EQ Carddde whose having coverage token dddd
+	//Enrolled Patient Register dxtfffo EQ Carddde whose having coverage token ddddsss
 
 	LoginPage login;
 	NovaHomePage home;
