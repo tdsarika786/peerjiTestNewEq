@@ -64,6 +64,7 @@ public class BaseClass implements ITestListener {
 		if (result.getStatus() == ITestResult.SUCCESS) {
 
 			System.out.println("Log:INFO- Test Executed- Test Status is Passed");
+			
 
 		} else if (result.getStatus() == ITestResult.FAILURE) {
 

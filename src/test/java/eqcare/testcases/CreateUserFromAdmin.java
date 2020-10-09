@@ -15,7 +15,7 @@ public class CreateUserFromAdmin extends BaseClass {
 	AdminPage admin;
 	
 	@Test(priority=0)
-	public void verifyPage()
+	public void verifyPage() throws Exception
 	{		
 			
 		login=PageFactory.initElements(driver, LoginPage.class);
@@ -42,7 +42,7 @@ public class CreateUserFromAdmin extends BaseClass {
 				
 				DataProviderFactory.getExcel().getCellData("OrangeHRM", 1, 1));
 		
-		login.verifyUrlAfterLogin();
+		//login.verifyUrlAfterLogin();
 		
 		logger.info("Logged in");
 	}

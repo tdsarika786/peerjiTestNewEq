@@ -57,7 +57,7 @@ public class HomeScenarios extends BaseClass {
 	}
 
 	@Test(priority = 3, dependsOnMethods = "loginToApplication")
-	public void startVideoConsultation() {
+	public void startVideoConsultation() throws Exception {
 
 		home = PageFactory.initElements(driver, HomePage.class);
 		

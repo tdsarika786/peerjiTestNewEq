@@ -23,7 +23,9 @@ import java.util.Properties;
 import java.util.Date;
 import java.util.Properties;
 
-
+import javax.activation.DataHandler;
+import javax.activation.DataSource;
+import javax.activation.FileDataSource;
 import javax.mail.Authenticator;
 import javax.mail.BodyPart;
 import javax.mail.Message;
@@ -36,6 +38,7 @@ import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
+import javax.mail.internet.MimeMultipart;
 
 public class runWithAttachments {
     private static final String URI = "https://api.practitest.com/api/v2/projects/13295/runs.json";
@@ -43,7 +46,7 @@ public class runWithAttachments {
     private static final String API_TOKEN = "0bc03cabd0dc1c944bdae4955ffcc92d56bf3548";
 	private String tower_no;
 
-      public void runTestResults(String instanceid) {
+      public void runTestResults(String instanceid, String status) {
 
         byte[] encoding = Base64.encodeBase64((DEVELOPER_EMAIL + ":" + API_TOKEN).getBytes());
 
@@ -53,7 +56,8 @@ public class runWithAttachments {
           "\"data\" : {\"attributes\" : {" +
             "\"instance-id\": "
             + instanceid + "," +
-            "\"exit-code\": 7" +
+            "\"exit-code\": "
+            + status +
           "} "
           +"} "
           + "}";
@@ -114,8 +118,8 @@ public class runWithAttachments {
   
     
     
-    public void peerji() {
-    	final String username = "sarikabagga7@gmail.com";
+    public void peerji(String testcase, String status) {
+    	final String username = "sarikaqa7@gmail.com";
         final String password = "bible786";
 
         Properties prop = new Properties();
@@ -137,7 +141,7 @@ public class runWithAttachments {
             message.setFrom(new InternetAddress("sdhall@eqcare.com"));
             message.setRecipients(
                     Message.RecipientType.TO,
-                    InternetAddress.parse("sdhall@eqcare.com, sdhall@eqcare.com")
+                    InternetAddress.parse("sarikaqa7@gmail.com")
             );
             message.setSubject("Testing Email");
             
@@ -169,16 +173,16 @@ public class runWithAttachments {
                     +"<tr><td height='5'></td></tr>"
                     +"<tr><td><table border='1' width='800' cellpadding='2' cellspacing='1' bgColor='#B6AFA9' style='border-collapse: collapse' bordercolor='#EBDA2A' align='left'>"
                     +"<tr bgColor=#CD919E class='centerheading' align='left'>"
-                            +"<td width='30' style='color: #FFFFFF;'><b>Category</b></td>"
-                            +"<td width='35' style='color: #FFFFFF;'><b>Subcategory</b></td>"
+                            +"<td width='30' style='color: #FFFFFF;'><b>TestCase</b></td>"
+                            +"<td width='35' style='color: #FFFFFF;'><b>Status</b></td>"
                             +"<td width='30' style='color: #FFFFFF;'><b>Quantity</b></td>"
                             +"<td width='30' style='color: #FFFFFF;'><b>Units</b></td>"
                             +"<td width='30' style='color: #FFFFFF;'><b>Rate</b></td>"
                             +"<td width='30' style='color: #FFFFFF;'><b>Total</b></td>"
                    + "</tr>"
                    +"<tr>"
-                        +"<td width='30' style='color: #EEE9E9;'>"+cat+"</b></td>"
-                            +"<td width='35' style='color: #EEE9E9;'>"+subcat+"</td>"
+                        +"<td width='30' style='color: #EEE9E9;'>"+testcase+"</b></td>"
+                            +"<td width='35' style='color: #EEE9E9;'>"+status+"</td>"
                             +"<td width='30' style='color: #EEE9E9;'>"+quan+"</td>"
                             +"<td width='30' style='color: #EEE9E9;'>"+unit+"</td>"
                             +"<td width='30' style='color: #EEE9E9;'>"+rate+"</td>"
@@ -206,13 +210,42 @@ public class runWithAttachments {
         +"</table>"
         +"</body></html>";
             
-            message.setText(html);
-            message.setContent(html, "text/html");
+			
             
-
+            
+            
+            
+            
+            
+            message.setSubject("Attachment");
+            // Create the message part
+            BodyPart messageBodyPart = new MimeBodyPart();
+            // Now set the actual message
+            messageBodyPart.setText("Please find the attachment below");
+            // Create a multipar message
+            Multipart multipart = new MimeMultipart();
+            // Set text message part
+            multipart.addBodyPart(messageBodyPart);
+            // Part two is attachment
+            messageBodyPart = new MimeBodyPart();
+            String filename = System.getProperty("user.dir")+"/Report/ExtentReport.html";
+            //String filename = "D:/test.PDF";
+            DataSource source = new FileDataSource(filename);
+            messageBodyPart.setDataHandler(new DataHandler(source));
+            messageBodyPart.setFileName("Results.html");
+            multipart.addBodyPart(messageBodyPart);
+            // Send the complete message parts
+           message.setContent(multipart);
+            
+            //**********************//
+           // message.setText(html);
+          // message.setContent(multipart, "text/html");
+            //**********************//
+            
+            // Send message
             Transport.send(message);
-
-            System.out.println("Done");
+            System.out.println("Email Sent Successfully !!");
+            
 
         } catch (MessagingException e) {
             e.printStackTrace();

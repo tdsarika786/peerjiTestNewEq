@@ -13,10 +13,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
+import com.practitest.examples.runWithAttachments;
+
 import eqcare.factories.DataProviderFactory;
 import eqcare.helper.Utility;
 
-public class AccountPage {
+public class AccountPage extends runWithAttachments {
 
 	WebDriver driver;
 
@@ -67,11 +69,11 @@ public class AccountPage {
 	By uploadProfilePic = By.xpath("(//input[@type='file'])[1]");
 
 	By uploadGovtID = By.xpath("(//input[@type='file'])[2]");
-	
+
 	By switchProfileLink = By.xpath("//a[text()=' Switch profile ']");
-	
-	By logoutText=By.xpath("//a[contains(text(), 'Logout')]");
-	
+
+	By logoutText = By.xpath("//a[contains(text(), 'Logout')]");
+
 	//
 
 	By currentPassword = By.xpath("(//*[@name='password'])[1]");
@@ -91,15 +93,12 @@ public class AccountPage {
 	By showLinkConfirmPwd = By.xpath("//label[text()=' Confirm New Password ']/following-sibling::div/a");
 
 	By showHideText = By.xpath("//span[@class='phone:hidden text-gray-500']");
-	
+
 	By passwordErrorMessage = By.xpath("//p[contains(@class, 'form-field-error')]");
-	
+
 	By errorMessage = By.xpath("//p[@data-role='error']");
-	
+
 	By passwordNotMatchErrorMessage = By.xpath("(//p[@data-role='error'])[2]");
-	
-	
-	
 
 	/// Family
 
@@ -151,8 +150,6 @@ public class AccountPage {
 
 	By nextBtn2 = By.xpath("//*[@data-role='password-step-next-button']");
 
-	
-
 	// Coverage
 
 	By coverageButton = By.xpath("//*[@data-role='covered-button']");
@@ -167,8 +164,6 @@ public class AccountPage {
 
 	By planTypeNextBtn = By.xpath("//a[@data-role='plan-type-next']");
 
-	
-
 	By divCoverage = By.xpath("//div[contains(text(),'Coverage')]");
 
 	By divProfile = By.xpath("//div[contains(text(),'Profile')]");
@@ -176,13 +171,13 @@ public class AccountPage {
 	By divSecurity = By.xpath("//div[contains(text(),'Security')]");
 
 	By divConfirm = By.xpath("//div[contains(text(),'Confirm')]");
-	
+
 	By divAddFamilyMember = By.xpath("//div[contains(text(),' Add a family member ')]");
-	
+
 	By linkInviteChild = By.xpath("//div[2]/div/a[text()=' Invite ']");
-	
+
 	By childAgeNoSelect = By.xpath("//label[@for='childAge-no']");
-	
+
 	By childFirstName = By.xpath("//div[@text-field-id='child_first_name']/input");
 
 	By childLastName = By.xpath("//div[@text-field-id='child_last_name']/input");
@@ -192,18 +187,17 @@ public class AccountPage {
 	By childHealthCardNumber = By.xpath("//div[@text-field-id='child_health_card_number']/input");
 
 	By childSexAtBirth = By.xpath("//*[@for='sex-female']");
-	
+
 	By addToFamilyBtn = By.xpath("//a[text()=' Add to Family ']");
-	
+
 	By confirmationChildAddedPopUp = By.xpath("//h2[text()='Child Added']");
-	
+
 	By addChildDoneLink = By.xpath("(//a[text()=' Done '])[1]");
-	
+
 	By deleteChildLink = By.xpath("(//a[text()=' Delete '])[1]");
-	
+
 	By deleteChildYesBtn = By.xpath("//a[text()=' Yes ']");
 
-	
 	public void verifyAccountPageUrl()
 
 	{
@@ -237,92 +231,125 @@ public class AccountPage {
 
 	}
 
-	public void editUserPersonalInfo() {
+	public void editUserPersonalInfo() throws Exception {
 
-		navigateToProfilePage();
+		try {
 
-		Utility.waitForWebElement(driver, accounLink).click();
+			navigateToProfilePage();
 
-		Utility.waitForWebElement(driver, personalInfoEditLink).click();
+			Utility.waitForWebElement(driver, accounLink).click();
 
-		clearFieldsPersonalInfo();
+			Utility.waitForWebElement(driver, personalInfoEditLink).click();
 
-		Utility.waitForWebElement(driver, personalInfoHeader);
+			clearFieldsPersonalInfo();
 
-		Utility.waitForWebElement(driver, firstNameInput).sendKeys("AakashAutom");
+			Utility.waitForWebElement(driver, personalInfoHeader);
 
-		Utility.waitForWebElement(driver, lastNameInput).sendKeys("TestAutom");
+			Utility.waitForWebElement(driver, firstNameInput).sendKeys("AakashAutom");
 
-		Utility.waitForWebElement(driver, radioSexMale).click();
+			Utility.waitForWebElement(driver, lastNameInput).sendKeys("TestAutom");
 
-		WebElement languageElement = Utility.waitForWebElement(driver, languageDrpDoown);
+			Utility.waitForWebElement(driver, radioSexMale).click();
 
-		Select language = new Select(languageElement);
+			WebElement languageElement = Utility.waitForWebElement(driver, languageDrpDoown);
 
-		language.selectByValue("en");
+			Select language = new Select(languageElement);
 
-		Utility.waitForWebElement(driver, saveLink).click();
+			language.selectByValue("en");
 
-		Utility.waitForWebElement(driver, personalInfoEditLink);
+			Utility.waitForWebElement(driver, saveLink).click();
 
+			Utility.waitForWebElement(driver, personalInfoEditLink);
+
+			runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 2, 0), "0");
+		} catch (Exception ex) {
+			runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 2, 0), "7");
+			throw ex;
+		}
 	}
 
-	public void editUserAccountInfo() {
+	public void editUserAccountInfo() throws Exception {
 
-		navigateToProfilePage();
+		try {
 
-		Utility.waitForWebElement(driver, accounLink).click();
+			navigateToProfilePage();
 
-		Utility.waitForWebElement(driver, accountInfoHeader);
+			Utility.waitForWebElement(driver, accounLink).click();
 
-		Utility.waitForWebElement(driver, accountInfoEditLink).click();
+			Utility.waitForWebElement(driver, accountInfoHeader);
 
-		clearFieldsAccountInfo();
+			Utility.waitForWebElement(driver, accountInfoEditLink).click();
 
-		Utility.waitForWebElement(driver, addressInput).sendKeys("2177, Rue Sherbrooke");
+			clearFieldsAccountInfo();
 
-		Utility.waitForWebElement(driver, address_2Input).sendKeys("Optional Address 2");
+			Utility.waitForWebElement(driver, addressInput).sendKeys("2177, Rue Sherbrooke");
 
-		Utility.waitForWebElement(driver, cityInput).sendKeys("Laval");
+			Utility.waitForWebElement(driver, address_2Input).sendKeys("Optional Address 2");
 
-		Utility.waitForWebElement(driver, postal_code).sendKeys("H4K 1X7");
+			Utility.waitForWebElement(driver, cityInput).sendKeys("Laval");
 
-		Utility.waitForWebElement(driver, date_of_birth).sendKeys("2000-07-14");
+			Utility.waitForWebElement(driver, postal_code).sendKeys("H4K 1X7");
 
-		Utility.waitForWebElement(driver, health_card).sendKeys("H4K217566HKWW2");
+			Utility.waitForWebElement(driver, date_of_birth).sendKeys("2000-07-14");
 
-		WebElement languageElement = Utility.waitForWebElement(driver, provinceDropdown);
+			Utility.waitForWebElement(driver, health_card).sendKeys("H4K217566HKWW2");
 
-		Select province = new Select(languageElement);
+			WebElement languageElement = Utility.waitForWebElement(driver, provinceDropdown);
 
-		province.selectByValue("AB");
+			Select province = new Select(languageElement);
 
-		Utility.waitForWebElement(driver, saveLink).click();
+			province.selectByValue("AB");
 
-		Utility.waitForWebElement(driver, accountInfoEditLink);
+			Utility.waitForWebElement(driver, saveLink).click();
+
+			Utility.waitForWebElement(driver, accountInfoEditLink);
+
+			runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 3,
+			 0), "0");
+		} catch (Exception ex) {
+			 runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 3,
+			 0), "7");
+			throw ex;
+		}
 	}
 
-	public void uploadProfilePic() {
-		WebElement fileButtonProfielPic = driver.findElement(By.xpath("(//input[@type='file'])[1]"));
-		JavascriptExecutor executor = (JavascriptExecutor) driver;
-		executor.executeScript("arguments[0].style.display='block';", fileButtonProfielPic);
+	public void uploadProfilePic() throws Exception {
+		try {
+			WebElement fileButtonProfielPic = driver.findElement(By.xpath("(//input[@type='file'])[1]"));
+			JavascriptExecutor executor = (JavascriptExecutor) driver;
+			executor.executeScript("arguments[0].style.display='block';", fileButtonProfielPic);
 
-		Utility.waitForWebElement(driver, uploadProfilePic)
-				.sendKeys(System.getProperty("user.dir") + "/TestData/test1.jpeg");
-		
-		Utility.wait(2);
+			Utility.waitForWebElement(driver, uploadProfilePic)
+					.sendKeys(System.getProperty("user.dir") + "/TestData/test1.jpeg");
+
+			Utility.wait(2);
+		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 4, 0), "0");
+		} catch (Exception ex) {
+			 runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 4,
+			 0), "7");
+			throw ex;
+		}
 	}
 
-	public void uploadGovtID() {
+	public void uploadGovtID() throws Exception {
 
-		WebElement fileButtonGovtID = driver.findElement(By.xpath("(//input[@type='file'])[2]"));
-		JavascriptExecutor executorGovtID = (JavascriptExecutor) driver;
-		executorGovtID.executeScript("arguments[0].style.display='block';", fileButtonGovtID);
+		try {
 
-		Utility.waitForWebElement(driver, uploadGovtID)
-				.sendKeys(System.getProperty("user.dir") + "/TestData/test2.jpeg");
+			WebElement fileButtonGovtID = driver.findElement(By.xpath("(//input[@type='file'])[2]"));
+			JavascriptExecutor executorGovtID = (JavascriptExecutor) driver;
+			executorGovtID.executeScript("arguments[0].style.display='block';", fileButtonGovtID);
 
-		Utility.wait(2);
+			Utility.waitForWebElement(driver, uploadGovtID)
+					.sendKeys(System.getProperty("user.dir") + "/TestData/test2.jpeg");
+
+			Utility.wait(2);
+
+		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 5, 0), "0");
+		} catch (Exception ex) {
+			 runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 5,
+			 0), "7");
+			throw ex;
+		}
 
 	}
 
@@ -345,7 +372,7 @@ public class AccountPage {
 		Assert.assertEquals(confirmationText, "Your password has successfully been changed.");
 
 	}
-	
+
 	public void invalidCurrentPassword() {
 
 		Utility.waitForWebElement(driver, passwordLink).click();
@@ -365,7 +392,7 @@ public class AccountPage {
 		Assert.assertEquals(errorText, "The current password you have entered is incorrect.");
 
 	}
-	
+
 	public void passwordMatch() {
 
 		Utility.waitForWebElement(driver, passwordLink).click();
@@ -386,7 +413,6 @@ public class AccountPage {
 
 	}
 
-	
 	public void blankPasswordInputFields() {
 
 		Utility.waitForWebElement(driver, passwordLink).click();
@@ -428,11 +454,10 @@ public class AccountPage {
 
 		WebElement ele = Utility.waitForWebElement(driver, passwordErrorMessage);
 		String errorText = ele.getText();
-		Assert.assertEquals(errorText, "You have previously used this password. For security reasons, you cannot use the last 4 passwords.");
-
+		Assert.assertEquals(errorText,
+				"You have previously used this password. For security reasons, you cannot use the last 4 passwords.");
 
 	}
-
 
 	public void validateShowPasswordLink() {
 
@@ -471,85 +496,97 @@ public class AccountPage {
 		Utility.wait(2);
 
 	}
-	
+
 	public void switchProfile() {
 
 		Utility.waitForWebElement(driver, switchProfileLink).click();
 
 		Utility.verifyURLContains(driver, "choose-profile");
-		
+
 		Utility.wait(5);
 
 	}
-	
-	
+
 	public void logOutFromApplication() {
-		
-		
+
 		Utility.waitForWebElement(driver, logoutText).click();
-		
+
 		Utility.wait(2);
 	}
 
+	public void createFamily() throws Exception {
 
-	public void createFamily() {
+		try {
 
-		Utility.waitForWebElement(driver, familyLink).click();
+			Utility.waitForWebElement(driver, familyLink).click();
 
-		//Utility.waitForWebElement(driver, createFamily).click();
-		
-		
-		
-		
-		
-		
+			 Utility.waitForWebElement(driver, createFamily).click();
+
+		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 6, 0), "0");
+		} catch (Exception ex) {
+			 runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 6,
+			 0), "7");
+			throw ex;
+		}
 
 	}
-	
-	public void addChild() {
+
+	public void addChild() throws Exception {
 		
-       Utility.waitForWebElement(driver, divAddFamilyMember).click();
-		
-		Utility.waitForWebElement(driver, linkInviteChild).click(); 
-		
-		Utility.waitForWebElement(driver, childAgeNoSelect).click(); 
-	
+		try {
+
+		Utility.waitForWebElement(driver, divAddFamilyMember).click();
+
+		Utility.waitForWebElement(driver, linkInviteChild).click();
+
+		Utility.waitForWebElement(driver, childAgeNoSelect).click();
+
 		Utility.waitForWebElement(driver, childFirstName).sendKeys("Saru");
-		
+
 		Utility.waitForWebElement(driver, childLastName).sendKeys("Test");
-		
+
 		Utility.waitForWebElement(driver, childDob).sendKeys("2020-07-14");
-		
+
 		Utility.waitForWebElement(driver, childHealthCardNumber).sendKeys("H279780808081");
-		
-		Utility.waitForWebElement(driver, childSexAtBirth).click(); 
-		
-		Utility.waitForWebElement(driver, addToFamilyBtn).click(); 
-		
+
+		Utility.waitForWebElement(driver, childSexAtBirth).click();
+
+		Utility.waitForWebElement(driver, addToFamilyBtn).click();
+
 		WebElement ele = Utility.waitForWebElement(driver, confirmationChildAddedPopUp);
 		String confirmationText = ele.getText();
 		Assert.assertEquals(confirmationText, "Child Added");
+
+		Utility.waitForWebElement(driver, addChildDoneLink).click();
 		
-		Utility.waitForWebElement(driver, addChildDoneLink).click(); 
-		
+		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 7, 0), "0");
+		} catch (Exception ex) {
+			 runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 7,
+			 0), "7");
+			throw ex;
+		}
+
 
 	}
-	
-	public void deleteChild() {
-		
-	       Utility.waitForWebElement(driver, deleteChildLink).click();
-	       
-	       Utility.waitForWebElement(driver, deleteChildYesBtn).click();
-	       
-	       Utility.wait(2);
-			
-	       
-			
-			/*WebElement ele = Utility.waitForWebElement(driver, confirmationChildAddedPopUp);
-			String confirmationText = ele.getText();
-			Assert.assertEquals(confirmationText, "Child Added");*/
 
+	public void deleteChild() throws Exception {
+		
+		try {
+
+		Utility.waitForWebElement(driver, deleteChildLink).click();
+
+		Utility.waitForWebElement(driver, deleteChildYesBtn).click();
+
+		Utility.wait(2);
+
+		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 8, 0), "0");
+		} catch (Exception ex) {
+			 runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 8,
+			 0), "7");
+			throw ex;
 		}
+
+	}
 
 	public void verifyFB()
 
@@ -579,12 +616,6 @@ public class AccountPage {
 		Utility.waitForWebElement(driver, planTypeNextBtn).click();
 
 	}
-
-	
-
-	
-
-	
 
 	public void notEnrolledUser() {
 
@@ -686,13 +717,12 @@ public class AccountPage {
 
 	public void registerationCompleteWithValidInput() {
 
-		//WebElement ele = Utility.waitForWebElement(driver, confirmationEmailText);
-		//String confirmationText = ele.getText();
-		//Assert.assertEquals(confirmationText, "One last step");
+		// WebElement ele = Utility.waitForWebElement(driver, confirmationEmailText);
+		// String confirmationText = ele.getText();
+		// Assert.assertEquals(confirmationText, "One last step");
 
 	}
 
-	
 	public void signInRedirectionTest() {
 
 		// Utility.waitForWebElement(driver, signInLink).click();
@@ -711,8 +741,6 @@ public class AccountPage {
 
 	}
 
-	
-
 	public void verifyElementsOnPage() {
 
 		Utility.waitForWebElement(driver, divCoverage);
@@ -728,7 +756,7 @@ public class AccountPage {
 	public void navigateToProfilePage() {
 
 		Utility.navigateToURL(driver, DataProviderFactory.getConfig().getValue("ponyProfile"));
-		
+
 		Utility.wait(2);
 	}
 

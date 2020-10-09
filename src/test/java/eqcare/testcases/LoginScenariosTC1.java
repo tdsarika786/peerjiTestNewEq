@@ -17,7 +17,7 @@ public class LoginScenariosTC1 extends Base {
 	HomePage home;
 
 	@Test(priority = 0)
-	public void verifyPage() {
+	public void verifyPage() throws Exception {
 
 		login = PageFactory.initElements(driver, LoginPage.class);
 

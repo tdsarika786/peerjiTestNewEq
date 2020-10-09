@@ -3,18 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="eqcare.testcases.EnrolledUserRegisteration4">
+      <class name="AutomatedTests.TC1_EndToEndScenarios">
         <methods>
-          <include name="verifyNotEnrolledUserRegisterToApplicationWithEmptyFields"/>
           <include name="setupReport"/>
           <include name="tearDown"/>
+          <include name="deleteChild"/>
           <include name="tearDownReport"/>
+          <include name="feedback"/>
           <include name="setUp"/>
           <include name="verifyPage"/>
-          <include name="invalidInputRegisterationTest"/>
-          <include name="validInputRegisterationTest"/>
+          <include name="addChild"/>
+          <include name="loginToApplication"/>
         </methods>
-      </class> <!-- eqcare.testcases.EnrolledUserRegisteration4 -->
+      </class> <!-- AutomatedTests.TC1_EndToEndScenarios -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

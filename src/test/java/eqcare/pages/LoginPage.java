@@ -39,21 +39,32 @@ public class LoginPage extends runWithAttachments {
 	By errorMessages = By.xpath("//p[@data-role='error']");
 
 	By showLink = By.xpath("//input[@name='password']/following-sibling::a");
-	
-	By showHideText=By.xpath("//span[@class='phone:hidden text-gray-500']");
-	
+
+	By showHideText = By.xpath("//span[@class='phone:hidden text-gray-500']");
+
 	By passwordLabel = By.xpath("//*[@class='form-label']");
-	
+
 	By languageENLink = By.xpath("//a[contains(text(), 'EN')]");
-	
+
 	By languageFRLink = By.xpath("//a[contains(text(), 'FR')]");
-	
+
 	By registerLink = By.xpath("//*[@data-role='register-button']");
-	
-	By logoutText=By.xpath("//a[contains(text(), 'Logout')]");
-	
-	public void verifyUrlBeforeLogin() {
-		Utility.verifyURLContains(driver, "eqcare");
+
+	By logoutText = By.xpath("//a[contains(text(), 'Logout')]");
+
+	public void verifyUrlBeforeLogin() throws Exception {
+
+		try {
+			Utility.verifyURLContains(driver, "eqcare");
+
+		} catch (Exception ex) {
+			System.out.print("Peerji");
+			// runTestResults("29754173","7");
+			peerji("Login", "Failed");
+			// peerji("Login2","Failed");
+			throw ex;
+		}
+
 	}
 
 	public void verifyFB()
@@ -62,12 +73,17 @@ public class LoginPage extends runWithAttachments {
 		System.out.println(driver.findElement(By.xpath("//a[2]//img[1]")).isDisplayed());
 	}
 
-	public void verifyUrlAfterLogin() {
-		// Assert.assertTrue(driver.getCurrentUrl().contains("dashboard"), "Dashboard
-		// does not contain dashboard keyword");
-		WebElement ele = Utility.waitForWebElement(driver, logoutButton);
-		String contactUsHeader = ele.getText();
-		Assert.assertEquals(contactUsHeader, "Logout");
+	public void verifyUrlAfterLogin() throws Exception {
+		try {
+			WebElement ele = Utility.waitForWebElement(driver, logoutButton);
+			String contactUsHeader = ele.getText();
+			Assert.assertEquals(contactUsHeader, "Logout");
+
+			runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 1, 0), "0");
+		} catch (Exception ex) {
+			runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 1, 0), "7");
+			throw ex;
+		}
 
 	}
 
@@ -84,7 +100,7 @@ public class LoginPage extends runWithAttachments {
 	}
 
 	public void loginToApplication(String userName, String passWord) {
-		
+
 		Utility.waitForWebElement(driver, user).sendKeys(userName);
 		Utility.waitForWebElement(driver, password).sendKeys(passWord);
 		Utility.waitForWebElement(driver, loginButton).click();
@@ -112,7 +128,7 @@ public class LoginPage extends runWithAttachments {
 	}
 
 	public void emptyFieldsTest() {
-		
+
 		Utility.wait(2);
 
 		List<WebElement> errorElements = Utility.waitForWebElements(driver, errorMessages);
@@ -139,28 +155,27 @@ public class LoginPage extends runWithAttachments {
 	}
 
 	public void validateShowPasswordLink() {
-		
+
 		Utility.waitForWebElement(driver, password).sendKeys("TestPassword");
-		
+
 		Utility.wait(2);
 
 		Utility.verifyText(driver, showHideText, "Hide");
-		
-		Utility.verifyAttribute(driver,password, "type", "password");
 
-	    Utility.waitForWebElement(driver, showLink).click();
-	     
-	    Utility.verifyText(driver, showHideText, "Show");
-			
-		Utility.verifyAttribute(driver,password, "type", "text");
-		
+		Utility.verifyAttribute(driver, password, "type", "password");
+
+		Utility.waitForWebElement(driver, showLink).click();
+
+		Utility.verifyText(driver, showHideText, "Show");
+
+		Utility.verifyAttribute(driver, password, "type", "text");
+
 		Utility.wait(2);
-
 
 	}
 
 	public void signUpRedirectionTest() {
-		
+
 		Utility.wait(2);
 
 		Utility.waitForWebElement(driver, registerLink).click();
@@ -170,43 +185,40 @@ public class LoginPage extends runWithAttachments {
 		for (String handle : allWindows) {
 			driver.switchTo().window(handle);
 		}
-		
+
 		String expectedURL = "https://pony.qa.eqcarestaging.com/register";
-		
+
 		String actualURL = driver.getCurrentUrl();
 		// System.out.println(actualURL);
 		Assert.assertEquals(actualURL, expectedURL);
 
 	}
-	
+
 	public void validatelanguageLink() {
-		
 
 		Utility.waitForWebElement(driver, languageFRLink).click();
-		
+
 		Utility.verifyText(driver, passwordLabel, "Mot de passe");
-		
+
 		Utility.wait(2);
-		
+
 		Utility.waitForWebElement(driver, languageENLink).click();
-		
+
 		Utility.verifyText(driver, passwordLabel, "Password");
-		
+
 		Utility.wait(2);
-		
+
 	}
-	
+
 	public void navigateToLoginPage() {
 
 		Utility.navigateToURL(driver, DataProviderFactory.getConfig().getValue("ponyEnv"));
 	}
-	
+
 	public void logOutFromApplication() {
-		
-		
-	
+
 		Utility.waitForWebElement(driver, logoutText).click();
-		
+
 		Utility.wait(2);
 	}
 

@@ -12,10 +12,12 @@ import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
+import com.practitest.examples.runWithAttachments;
+
 import eqcare.factories.DataProviderFactory;
 import eqcare.helper.Utility;
 
-public class RegistrationPage {
+public class RegistrationPage extends runWithAttachments {
 
 	WebDriver driver;
 
@@ -149,12 +151,12 @@ public class RegistrationPage {
 
 	public void EnrolledUserWithValidInput() {
 
-		Utility.waitForWebElement(driver, groupNoInput).sendKeys("7710");
+		Utility.waitForWebElement(driver, groupNoInput).sendKeys("7171");
 
 		Utility.waitForWebElement(driver, groupNumberLink).click();
 
 		//PEERJI
-		Utility.waitForWebElement(driver, coverageIdentifierInput).sendKeys("11");
+		Utility.waitForWebElement(driver, coverageIdentifierInput).sendKeys("G1");
 		
 		Utility.wait(2);  
 

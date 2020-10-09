@@ -54,7 +54,7 @@ public class AccountScenarios5 extends BaseClass {
 
 	
 	@Test(priority = 1, dependsOnMethods = "verifyPage", enabled = false)
-	public void editPersonalInformation() {
+	public void editPersonalInformation() throws Exception {
 
 		account = PageFactory.initElements(driver, AccountPage.class);
 
@@ -79,7 +79,7 @@ public class AccountScenarios5 extends BaseClass {
 	}
 
 	@Test(priority = 2, dependsOnMethods = "verifyPage", enabled = false)
-	public void editAccountInformation() {
+	public void editAccountInformation() throws Exception {
 
 		account = PageFactory.initElements(driver, AccountPage.class);
 
@@ -118,7 +118,12 @@ public class AccountScenarios5 extends BaseClass {
 
 		logger.info("Patient uploading profile pic");
 
-		account.uploadProfilePic();
+		try {
+			account.uploadProfilePic();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		logger.info("Patint uploaded profile pic");
 
@@ -129,7 +134,7 @@ public class AccountScenarios5 extends BaseClass {
 	}
 
 	@Test(priority = 4, dependsOnMethods = "verifyPage")
-	public void uploadGovernmentID() {
+	public void uploadGovernmentID() throws Exception {
 
 		account = PageFactory.initElements(driver, AccountPage.class);
 
@@ -199,7 +204,12 @@ public class AccountScenarios5 extends BaseClass {
 
 		logger.info("Patient logged and navigates to Family Tab");
 
-		account.createFamily();
+		try {
+			account.createFamily();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		logger.info("Create a family link validated");
 
@@ -220,7 +230,12 @@ public class AccountScenarios5 extends BaseClass {
 
 		logger.info("Patient logged and navigates to Family Tab");
 
-		account.addChild();
+		try {
+			account.addChild();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		logger.info("Create a family link validated");
 
@@ -241,7 +256,12 @@ public class AccountScenarios5 extends BaseClass {
 
 		logger.info("Patient logged and navigates to Family Tab");
 
-		account.deleteChild();
+		try {
+			account.deleteChild();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
 		logger.info("Create a family link validated");
 

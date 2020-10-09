@@ -19,7 +19,7 @@ public class LoginScenarios2 extends BaseClass{
 	HomePage home;
 
 	@Test(priority = 0)
-	public void verifyPage() {
+	public void verifyPage() throws Exception {
 
 		login = PageFactory.initElements(driver, LoginPage.class);
 
@@ -31,14 +31,14 @@ public class LoginScenarios2 extends BaseClass{
 
 		logger.info("Validating url");
 		
-		login.peerji();
+		//login.peerji();
 		
-		login.runTestResults("29754173");
+		//login.runTestResults("29754173");
 
 	}
 
 	@Test(priority = 1, dependsOnMethods = "verifyPage", enabled=false)
-	public void loginToApplicationWithValidInput() {
+	public void loginToApplicationWithValidInput() throws Exception {
 
 		logger = report.createTest("Login as patient wgith valid inputs");
 

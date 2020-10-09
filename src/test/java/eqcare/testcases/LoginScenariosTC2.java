@@ -24,7 +24,7 @@ public class LoginScenariosTC2 extends Base {
 		home = PageFactory.initElements(driver, HomePage.class);
 
 
-		login.verifyUrlAfterLogin();
+		//login.verifyUrlAfterLogin();
 
 
 	}
@@ -40,7 +40,7 @@ public class LoginScenariosTC2 extends Base {
 
 		// login.loginToApplication("automationsaru@gmail.com", "Peerji#123");
 
-		login.verifyUrlAfterLogin();
+		//login.verifyUrlAfterLogin();
 
 		logger.info("Patient Logged in");
 	}
