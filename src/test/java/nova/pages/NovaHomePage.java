@@ -36,7 +36,9 @@ public class NovaHomePage {
 	By coverageStartDate = By.name("Coverage Start");
 
 	By createEmployeeSubmitButton = By.xpath("//button[@dusk='create-button']");
+	
 
+	//Modify Employee
 	By selectEqCareEmployee = By.xpath("//div[contains(text(),'Bell-Test-Sarika')]");
 
 	// EMployer
@@ -61,6 +63,18 @@ public class NovaHomePage {
 		this.driver = ldriver;
 	}
 
+	public void createEmployeeLifeJourney(String coverageTokenString) {
+		
+		Utility.waitForWebElement(driver, EmployeesLink).click();
+
+		Utility.waitForWebElement(driver, createEmployeeLink).click();
+
+		Utility.waitForWebElement(driver, employerButton).click();
+		
+		
+		
+	}
+	
 	public void createEmployee(String coverageTokenString) {
 
 		Utility.waitForWebElement(driver, EmployeesLink).click();
@@ -68,17 +82,22 @@ public class NovaHomePage {
 		Utility.waitForWebElement(driver, createEmployeeLink).click();
 
 		Utility.waitForWebElement(driver, employerButton).click();
+		
+		//Modify Line No 40
 
 		Utility.waitForWebElement(driver, searchEmployerInput).sendKeys("Bell-Test-Sarika");
+		
+		//Utility.waitForWebElement(driver, searchEmployerInput).sendKeys("Comp-Sarika-Test-Gold");
+		
 
-		// Utility.waitForWebElement(driver, searchEmployerInput).sendKeys(Keys.ENTER);
+		//Utility.waitForWebElement(driver, searchEmployerInput).sendKeys(Keys.ENTER);
 
 		// Actions builder = new Actions(driver);
 		// builder.sendKeys(Keys.chord(Keys.DOWN, Keys.DOWN)).perform();
 
 		Utility.waitForWebElement(driver, selectEqCareEmployee).click();
 
-		Utility.waitForWebElement(driver, firstName).sendKeys("Sarika");
+		Utility.waitForWebElement(driver, firstName).sendKeys("Sarika-LifeJourneyGold");
 
 		Utility.waitForWebElement(driver, lastName).sendKeys("Test");
 
@@ -101,7 +120,7 @@ public class NovaHomePage {
 
 		objplanTypee.selectByValue("family");
 
-		// objplanTypee.selectByValue("single");
+	    // objplanTypee.selectByValue("single");
 
 		Utility.waitForWebElement(driver, coverageStartDate).sendKeys("2020-08-01");
 

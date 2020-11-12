@@ -38,11 +38,11 @@ public class VisitPage {
 	public void endCall() {
 
 		Utility.waitForWebElement(driver, videoEndCallButton).click();
-		
+
 		Utility.waitForWebElement(driver, confirmEndCallButton).click();
 
 	}
-	
+
 	public void ratingProvided() {
 
 		Utility.waitForWebElement(driver, ratingHeart).click();

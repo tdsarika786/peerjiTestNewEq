@@ -51,6 +51,12 @@ public class LoginPage extends runWithAttachments {
 	By registerLink = By.xpath("//*[@data-role='register-button']");
 
 	By logoutText = By.xpath("//a[contains(text(), 'Logout')]");
+	
+	By needHelpText = By.xpath("//p[contains(text(), 'Need help')]");
+
+	By phoneNoLink = By.xpath("//a[contains(text(), '1-855-449-4994')]");
+
+	By emailLink = By.xpath("//a[contains(text(), 'support@eqcare.com')]");
 
 	public void verifyUrlBeforeLogin() throws Exception {
 
@@ -220,6 +226,23 @@ public class LoginPage extends runWithAttachments {
 		Utility.waitForWebElement(driver, logoutText).click();
 
 		Utility.wait(2);
+	}
+	
+public void verifyHomeFooter() throws Exception {
+		
+		try {
+
+		Utility.waitForWebElement(driver, needHelpText);
+
+		Utility.waitForWebElement(driver, phoneNoLink);
+
+		Utility.waitForWebElement(driver, emailLink);
+		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 13, 0), "0");
+		} catch (Exception ex) {
+			runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 13, 0), "7");
+			throw ex;
+		}
+
 	}
 
 }

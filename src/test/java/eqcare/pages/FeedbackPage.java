@@ -22,7 +22,7 @@ public class FeedbackPage {
 	By submitLink = By.xpath("//a[contains(text(), 'Submit')]");
 
 	By homeButton = By.xpath("//a[contains(text(), 'Homepage')]");
-	
+
 	By visitFeedbackInput = By.xpath("//textarea[@name='textFieldInput']");
 
 	public void verifyFeedbackPageUrl()
@@ -33,15 +33,14 @@ public class FeedbackPage {
 
 	}
 
-	
 	public void ratingProvided() {
 
 		Utility.waitForWebElement(driver, ratingHeart).click();
-		
+
 		Utility.waitForWebElement(driver, visitFeedbackInput).sendKeys("A Good");
-		
+
 		Utility.waitForWebElement(driver, submitLink).click();
-		
+
 		Utility.waitForWebElement(driver, homeButton).click();
 
 	}

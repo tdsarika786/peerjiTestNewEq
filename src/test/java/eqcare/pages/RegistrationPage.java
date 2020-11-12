@@ -113,8 +113,7 @@ public class RegistrationPage extends runWithAttachments {
 		clickOnRegisterButton();
 
 		Utility.verifyURLContains(driver, "register");
-		
-		
+
 	}
 
 	public void verifyFB()
@@ -129,21 +128,20 @@ public class RegistrationPage extends runWithAttachments {
 
 	public void clickOnRegisterButton() {
 		Utility.waitForWebElement(driver, registerLink).click();
-		
-	
+
 	}
 
 	public void EnrolledUser_TC1() {
 
-		//navigateToRegistrationPage();
+		// navigateToRegistrationPage();
 
 		clickOnRegisterButton();
 
 		EnrolledUser();
 	}
-	
+
 	public void EnrolledUser() {
-		
+
 		navigateToRegisterationPage();
 
 		Utility.waitForWebElement(driver, coverageButton).click();
@@ -151,17 +149,21 @@ public class RegistrationPage extends runWithAttachments {
 
 	public void EnrolledUserWithValidInput() {
 
-		Utility.waitForWebElement(driver, groupNoInput).sendKeys("7171");
+		//Utility.waitForWebElement(driver, groupNoInput).sendKeys("7171");
+		
+		//Bell Test Sarika
+		
+		Utility.waitForWebElement(driver, groupNoInput).sendKeys("7710");
 
 		Utility.waitForWebElement(driver, groupNumberLink).click();
 
-		//PEERJI
-		Utility.waitForWebElement(driver, coverageIdentifierInput).sendKeys("G1");
-		
-		Utility.wait(2);  
+		// PEERJI
+		Utility.waitForWebElement(driver, coverageIdentifierInput).sendKeys("25");
+
+		Utility.wait(2);
 
 		Utility.waitForWebElement(driver, checkCoverageLink).click();
-		
+
 		Utility.wait(2);
 
 		Utility.waitForWebElement(driver, planTypeNextBtn).click();
@@ -209,8 +211,7 @@ public class RegistrationPage extends runWithAttachments {
 
 		WebElement ele = Utility.waitForWebElement(driver, serverErrorElement);
 		String confirmationText = ele.getText();
-		Assert.assertEquals(confirmationText,
-				"The coverage token you provided is already associated to an account.");
+		Assert.assertEquals(confirmationText, "The coverage token you provided is already associated to an account.");
 
 	}
 
@@ -228,7 +229,7 @@ public class RegistrationPage extends runWithAttachments {
 		Utility.waitForWebElement(driver, emailAddress).sendKeys(email);
 
 		if (optional == true) {
-			
+
 			WebElement fileButtonProfielPic = driver.findElement(By.xpath("(//input[@type='file'])[1]"));
 			JavascriptExecutor executor = (JavascriptExecutor) driver;
 			executor.executeScript("arguments[0].style.display='block';", fileButtonProfielPic);
@@ -250,7 +251,7 @@ public class RegistrationPage extends runWithAttachments {
 		Utility.waitForWebElement(driver, lastName).sendKeys(userLastName);
 
 		Utility.waitForWebElement(driver, gender).click();
-		
+
 		WebElement fileButtonGovtID = driver.findElement(By.xpath("(//input[@type='file'])[2]"));
 		JavascriptExecutor executorGovtID = (JavascriptExecutor) driver;
 		executorGovtID.executeScript("arguments[0].style.display='block';", fileButtonGovtID);
@@ -258,12 +259,9 @@ public class RegistrationPage extends runWithAttachments {
 		Utility.waitForWebElement(driver, uploadGovtID)
 				.sendKeys(System.getProperty("user.dir") + "/TestData/medical-card.jpeg");
 
-
 		// Utility.waitForWebElement(driver,
 		// uploadGovtID).sendKeys("/Users/sarikadhall/Downloads/OIP-2.jpeg");
 
-	
-		
 		Utility.waitForWebElement(driver, nextBtn).click();
 
 		Utility.waitForWebElement(driver, address).sendKeys(Address);
@@ -284,18 +282,12 @@ public class RegistrationPage extends runWithAttachments {
 		Utility.waitForWebElement(driver, phoneNumber).sendKeys(PhoneNo);
 
 		Utility.waitForWebElement(driver, accountInfoBtn).click();
-		
-		
 
 		Utility.waitForWebElement(driver, password).sendKeys(Password);
 
 		Utility.waitForWebElement(driver, password1).sendKeys(Password);
-		
-		
 
 		Utility.waitForWebElement(driver, nextBtn2).click();
-
-	
 
 		WebElement button = driver.findElement(By.xpath("//div[@checkbox-field-id=\"email_confirmation\"]/div/input"));
 
@@ -325,14 +317,13 @@ public class RegistrationPage extends runWithAttachments {
 
 		// Utility.waitForWebElement(driver, checkBox2).click();
 
-		
-		//PEERJI
+		// PEERJI
 		Utility.waitForWebElement(driver, confirmButton).click();
 
 	}
 
 	public void registerationCompleteWithValidInput() {
-		
+
 		WebElement ele = Utility.waitForWebElement(driver, confirmationEmailText);
 		String confirmationText = ele.getText();
 		Assert.assertEquals(confirmationText, "One last step");
@@ -340,14 +331,12 @@ public class RegistrationPage extends runWithAttachments {
 	}
 
 	public void registerationWithInValidInput() {
-		
+
 		WebElement ele = Utility.waitForWebElement(driver, serverErrorElement);
 		String confirmationText = ele.getText();
 		Assert.assertEquals(confirmationText, "This email is already in use.");
 
 	}
-
-	
 
 	public void signInRedirectionTest() {
 

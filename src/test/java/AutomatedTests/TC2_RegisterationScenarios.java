@@ -3,7 +3,7 @@ package AutomatedTests;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
-import eqcare.pages.ContactUsPage;
+import NotRequiredClasses.ContactUsPage;
 import eqcare.pages.FeedbackPage;
 import eqcare.pages.HelpPage;
 import eqcare.pages.HomePage;
@@ -63,8 +63,10 @@ public class TC2_RegisterationScenarios extends BaseClass {
 
 		// register.Registeration(DataProviderFactory.getExcel().getCellData("Users", 2,
 		// 0),
+		
+		//paying customer
 
-		register.Registeration("sarikaqa7+ba2@gmail.com",
+		register.Registeration("sarikaqa7+alpha@gmail.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
@@ -91,7 +93,7 @@ public class TC2_RegisterationScenarios extends BaseClass {
 				// Care");
 				+ "sarikaqa7+i1@gmail.com" + " with EQ Care");
 
-		//register.runTestResults("29754305", "0");
+		register.runTestResults("29754305", "0");
 
 	}
 	
@@ -110,7 +112,7 @@ public class TC2_RegisterationScenarios extends BaseClass {
 		// register.Registeration(DataProviderFactory.getExcel().getCellData("Users", 2,
 		// 0),
 
-		register.Registeration("sarikaqa7+gj1@gmail.com",
+		register.Registeration("sarikaqa7+bellAlpha@gmail.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
@@ -124,7 +126,7 @@ public class TC2_RegisterationScenarios extends BaseClass {
 				DataProviderFactory.getExcel().getCellData("Users", 2, 8),
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 9),
-				DataProviderFactory.getExcel().getCellData("Users", 2, 10), false);
+				DataProviderFactory.getExcel().getCellData("Users", 2, 10), true);
 
 		register.registerationCompleteWithValidInput();
 

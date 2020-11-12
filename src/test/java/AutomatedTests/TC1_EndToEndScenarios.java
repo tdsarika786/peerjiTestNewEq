@@ -3,7 +3,7 @@ package AutomatedTests;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
-import eqcare.pages.ContactUsPage;
+import NotRequiredClasses.ContactUsPage;
 import eqcare.pages.FeedbackPage;
 import eqcare.pages.HelpPage;
 import eqcare.pages.HomePage;

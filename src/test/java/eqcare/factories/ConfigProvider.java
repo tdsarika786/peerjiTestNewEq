@@ -16,7 +16,7 @@ public class ConfigProvider {
 		pro=new Properties();
 		
 		try {
-			pro.load(new FileInputStream(new File(System.getProperty("user.dir")+"/Config/configEqcare2.properties")));
+			pro.load(new FileInputStream(new File(System.getProperty("user.dir")+"/Config/configEqcare.properties")));
 		} catch (FileNotFoundException e) {
 			
 		} catch (IOException e) {

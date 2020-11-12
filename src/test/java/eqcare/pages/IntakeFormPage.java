@@ -7,10 +7,13 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import com.practitest.examples.runWithAttachments;
+
+import eqcare.factories.DataProviderFactory;
 import eqcare.helper.Utility;
 
-public class IntakeFormPage {
-
+public class IntakeFormPage extends runWithAttachments {
+ 
 	WebDriver driver;
 
 	public IntakeFormPage(WebDriver driver) {
@@ -22,58 +25,76 @@ public class IntakeFormPage {
 	By durationSymptomsInput = By.xpath("//div[@data-role='intake-symptoms-duration-input']/input");
 
 	By currentAllergies = By.xpath("//div[@data-role='intake-allergies-input']/div/input");
-	
+
 	By addCurrentAllergies = By.xpath("//div[contains(text(),'+ Add')]");
 
 	By currentMedication = By.xpath("//input[@id='medication-input']");
-	
+
 	By addCurrentMedication = By.xpath("//div[contains(text(),'+ Add')]");
-	
+
 	By checkBox = By.xpath("//input[@type='checkbox']");
 
 	By uploadFile = By.xpath("//input[@type='file']");
-	
+
 	By startCall = By.xpath("//a[@data-role='start-call-button']");
 
+	By cancelButton = By.xpath("//a[@data-role='cancel-button']");
 
-	public void verifyIntakeFormPageUrl()
+	public void verifyIntakeFormPageUrl() throws Exception
 
 	{
+		try {
+			Utility.verifyURLContains(driver, "intake-form");
+			runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 15, 0), "0");
 
-		Utility.verifyURLContains(driver, "intake-form");
+		} catch (Exception ex) {
+			runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 15, 0), "7");
+			throw ex;
+		}
 
 	}
 
+	public void navigateToIntakeFormPage() {
+
+		Utility.navigateToURL(driver, DataProviderFactory.getConfig().getValue("ponyIntakeForm"));
+	}
+
 	public void fillIntakeForm() throws Exception {
-	
+		
+		try {
+
 		Utility.waitForWebElement(driver, reasonVisitInput).sendKeys("Test Visit by Sarika Peerji");
-		
+
 		Utility.waitForWebElement(driver, durationSymptomsInput).sendKeys("7 weeks");
-		
+
 		Utility.waitForWebElement(driver, currentAllergies).sendKeys("Amoxyllin");
-		
+
 		Utility.waitForWebElement(driver, addCurrentAllergies).click();
-		
+
 		Utility.waitForWebElement(driver, currentMedication).sendKeys("Tyenol Liquid Gels");
-		
+
 		Utility.waitForWebElement(driver, addCurrentMedication).click();
-		
+
 		uploadFiles();
-		
-		//Utility.waitForWebElement(driver, checkBox).click();
-		
+
+		// Utility.waitForWebElement(driver, checkBox).click();
+
 		WebElement button = driver.findElement(By.xpath("//input[@type='checkbox']"));
 
 		JavascriptExecutor executor1 = (JavascriptExecutor) driver;
 		executor1.executeScript("arguments[0].click()", button);
 
-		
 		Utility.waitForWebElement(driver, startCall).click();
 		// Utility.selectValueFromCalendar(Utility.waitForMultipleWebElement(driver,
 		// calen), "25");
-		
-		
+		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 16, 0), "0");
+	} catch (Exception ex) {
+		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 16, 0), "7");
+		throw ex;
 	}
+
+	}
+
 	public void uploadFiles() throws Exception {
 		try {
 			WebElement fileButton = driver.findElement(By.xpath("(//input[@type='file'])[1]"));
@@ -91,4 +112,18 @@ public class IntakeFormPage {
 			throw ex;
 		}
 	}
+
+	public void cancelButton() throws Exception {
+		
+		try {
+
+		Utility.waitForWebElement(driver, cancelButton).click();
+		
+		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 16, 0), "0");
+	} catch (Exception ex) {
+		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 16, 0), "7");
+		throw ex;
+	}
+	}
+
 }

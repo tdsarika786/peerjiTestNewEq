@@ -1,137 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="17" passed="13" failed="3" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-10-08T00:28:57 EDT" name="Default suite" finished-at="2020-10-08T00:31:06 EDT" duration-ms="128755">
+  <suite started-at="2020-11-11T12:01:05 EST" name="Default suite" finished-at="2020-11-11T12:01:37 EST" duration-ms="32025">
     <groups>
     </groups>
-    <test started-at="2020-10-08T00:28:57 EDT" name="Default test" finished-at="2020-10-08T00:31:06 EDT" duration-ms="128755">
-      <class name="AutomatedTests.TC1_EndToEndScenarios">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:28:57 EDT" name="setupReport" finished-at="2020-10-08T00:28:57 EDT" duration-ms="162" status="PASS">
+    <test started-at="2020-11-11T12:01:05 EST" name="Default test" finished-at="2020-11-11T12:01:37 EST" duration-ms="32025">
+      <class name="AutomatedTests.TC1_CovidResultsForm">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:AutomatedTests.TC1_CovidResultsForm@78dd667e]" started-at="2020-11-11T12:01:05 EST" name="setupReport" finished-at="2020-11-11T12:01:05 EST" duration-ms="123" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:28:57 EDT" name="setUp" finished-at="2020-10-08T00:29:01 EDT" duration-ms="3684" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:AutomatedTests.TC1_CovidResultsForm@78dd667e]" started-at="2020-11-11T12:01:05 EST" name="setUp" finished-at="2020-11-11T12:01:09 EST" duration-ms="4606" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyPage()[pri:0, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:29:01 EDT" name="verifyPage" finished-at="2020-10-08T00:29:01 EDT" duration-ms="89" status="PASS">
+        <test-method signature="verifyPage()[pri:0, instance:AutomatedTests.TC1_CovidResultsForm@78dd667e]" started-at="2020-11-11T12:01:09 EST" name="verifyPage" finished-at="2020-11-11T12:01:09 EST" duration-ms="58" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPage -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:29:01 EDT" name="tearDownReport" finished-at="2020-10-08T00:29:01 EDT" duration-ms="350" status="PASS">
+        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:AutomatedTests.TC1_CovidResultsForm@78dd667e]" started-at="2020-11-11T12:01:09 EST" name="tearDownReport" finished-at="2020-11-11T12:01:10 EST" duration-ms="243" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyPage status=SUCCESS method=TC1_EndToEndScenarios.verifyPage()[pri:0, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b] output={null}]]]>
+                <![CDATA[[TestResult name=verifyPage status=SUCCESS method=TC1_CovidResultsForm.verifyPage()[pri:0, instance:AutomatedTests.TC1_CovidResultsForm@78dd667e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->
-        <test-method signature="loginToApplication()[pri:1, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:29:01 EDT" name="loginToApplication" finished-at="2020-10-08T00:29:07 EDT" depends-on-methods="AutomatedTests.TC1_EndToEndScenarios.verifyPage" duration-ms="5715" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginToApplication -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:29:07 EDT" name="tearDownReport" finished-at="2020-10-08T00:29:07 EDT" duration-ms="13" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginToApplication status=SUCCESS method=TC1_EndToEndScenarios.loginToApplication()[pri:1, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="editPersonalInformation()[pri:2, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:29:07 EDT" name="editPersonalInformation" finished-at="2020-10-08T00:29:20 EDT" depends-on-methods="AutomatedTests.TC1_EndToEndScenarios.verifyPage" duration-ms="12977" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editPersonalInformation -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:29:20 EDT" name="tearDownReport" finished-at="2020-10-08T00:29:20 EDT" duration-ms="13" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=editPersonalInformation status=SUCCESS method=TC1_EndToEndScenarios.editPersonalInformation()[pri:2, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="editAccountInformation()[pri:3, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:29:20 EDT" name="editAccountInformation" finished-at="2020-10-08T00:29:33 EDT" depends-on-methods="AutomatedTests.TC1_EndToEndScenarios.verifyPage" duration-ms="13585" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editAccountInformation -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:29:33 EDT" name="tearDownReport" finished-at="2020-10-08T00:29:33 EDT" duration-ms="16" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=editAccountInformation status=SUCCESS method=TC1_EndToEndScenarios.editAccountInformation()[pri:3, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="uploadProfilePic()[pri:4, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:29:33 EDT" name="uploadProfilePic" finished-at="2020-10-08T00:29:36 EDT" depends-on-methods="AutomatedTests.TC1_EndToEndScenarios.verifyPage" duration-ms="2955" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- uploadProfilePic -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:29:36 EDT" name="tearDownReport" finished-at="2020-10-08T00:29:36 EDT" duration-ms="6" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=uploadProfilePic status=SUCCESS method=TC1_EndToEndScenarios.uploadProfilePic()[pri:4, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="uploadGovernmentID()[pri:5, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:29:36 EDT" name="uploadGovernmentID" finished-at="2020-10-08T00:29:39 EDT" depends-on-methods="AutomatedTests.TC1_EndToEndScenarios.verifyPage" duration-ms="2917" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- uploadGovernmentID -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:29:39 EDT" name="tearDownReport" finished-at="2020-10-08T00:29:39 EDT" duration-ms="13" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=uploadGovernmentID status=SUCCESS method=TC1_EndToEndScenarios.uploadGovernmentID()[pri:5, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="familyTab()[pri:6, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:29:39 EDT" name="familyTab" finished-at="2020-10-08T00:29:41 EDT" depends-on-methods="AutomatedTests.TC1_EndToEndScenarios.verifyPage" duration-ms="1472" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- familyTab -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:29:41 EDT" name="tearDownReport" finished-at="2020-10-08T00:29:41 EDT" duration-ms="6" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=familyTab status=SUCCESS method=TC1_EndToEndScenarios.familyTab()[pri:6, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="addChild()[pri:7, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:29:41 EDT" name="addChild" finished-at="2020-10-08T00:30:02 EDT" depends-on-methods="AutomatedTests.TC1_EndToEndScenarios.verifyPage" duration-ms="20757" status="FAIL">
+        <test-method signature="validInputRegisterationTest()[pri:1, instance:AutomatedTests.TC1_CovidResultsForm@78dd667e]" started-at="2020-11-11T12:01:10 EST" name="validInputRegisterationTest" finished-at="2020-11-11T12:01:36 EST" depends-on-methods="AutomatedTests.TC1_CovidResultsForm.verifyPage" duration-ms="26602" status="FAIL">
           <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //div[contains(text(),' Add a family member ')] (tried for 15 second(s) with 500 milliseconds interval)]]>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //button[text()='Submit Form'] (tried for 15 second(s) with 500 milliseconds interval)]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[contains(text(),' Add a family member ')] (tried for 15 second(s) with 500 milliseconds interval)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[text()='Submit Form'] (tried for 15 second(s) with 500 milliseconds interval)
 at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
 at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
 at eqcare.helper.Utility.waitForWebElement(Utility.java:112)
-at eqcare.pages.AccountPage.addChild(AccountPage.java:538)
-at AutomatedTests.TC1_EndToEndScenarios.addChild(TC1_EndToEndScenarios.java:164)
+at eqcare.pages.CovidResultsFormPage.Registeration(CovidResultsFormPage.java:93)
+at AutomatedTests.TC1_CovidResultsForm.validInputRegisterationTest(TC1_CovidResultsForm.java:43)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -160,10 +70,10 @@ at org.testng.TestNG.run(TestNG.java:1037)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //div[contains(text(),' Add a family member ')]
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //button[text()='Submit Form']
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:cdc:eff:b974:76f2%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '14.0.2'
+System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:14b7:e400:abc2:7df3%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '14.0.2'
 Driver info: driver.version: unknown
 at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
 at java.base/java.util.Optional.orElseThrow(Optional.java:401)
@@ -180,257 +90,23 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
           </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addChild -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:30:02 EDT" name="tearDownReport" finished-at="2020-10-08T00:30:02 EDT" duration-ms="631" status="PASS">
+        </test-method> <!-- validInputRegisterationTest -->
+        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:AutomatedTests.TC1_CovidResultsForm@78dd667e]" started-at="2020-11-11T12:01:36 EST" name="tearDownReport" finished-at="2020-11-11T12:01:37 EST" duration-ms="360" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addChild status=FAILURE method=TC1_EndToEndScenarios.addChild()[pri:7, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b] output={null}]]]>
+                <![CDATA[[TestResult name=validInputRegisterationTest status=FAILURE method=TC1_CovidResultsForm.validInputRegisterationTest()[pri:1, instance:AutomatedTests.TC1_CovidResultsForm@78dd667e] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->
-        <test-method signature="deleteChild()[pri:8, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:30:02 EDT" name="deleteChild" finished-at="2020-10-08T00:30:23 EDT" depends-on-methods="AutomatedTests.TC1_EndToEndScenarios.verifyPage" duration-ms="20494" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: (//a[text()=' Delete '])[1] (tried for 15 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: (//a[text()=' Delete '])[1] (tried for 15 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-at eqcare.helper.Utility.waitForWebElement(Utility.java:112)
-at eqcare.pages.AccountPage.deleteChild(AccountPage.java:576)
-at AutomatedTests.TC1_EndToEndScenarios.deleteChild(TC1_EndToEndScenarios.java:181)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: (//a[text()=' Delete '])[1]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:cdc:eff:b974:76f2%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '14.0.2'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-at java.base/java.util.Optional.orElseThrow(Optional.java:401)
-at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)
-at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-... 31 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteChild -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:30:23 EDT" name="tearDownReport" finished-at="2020-10-08T00:30:23 EDT" duration-ms="550" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=deleteChild status=FAILURE method=TC1_EndToEndScenarios.deleteChild()[pri:8, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="startVideoConsultation()[pri:9, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:30:23 EDT" name="startVideoConsultation" finished-at="2020-10-08T00:30:24 EDT" depends-on-methods="AutomatedTests.TC1_EndToEndScenarios.loginToApplication" duration-ms="574" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startVideoConsultation -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:30:24 EDT" name="tearDownReport" finished-at="2020-10-08T00:30:24 EDT" duration-ms="6" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=startVideoConsultation status=SUCCESS method=TC1_EndToEndScenarios.startVideoConsultation()[pri:9, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="deviceCheck()[pri:10, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:30:24 EDT" name="deviceCheck" finished-at="2020-10-08T00:30:27 EDT" depends-on-methods="AutomatedTests.TC1_EndToEndScenarios.loginToApplication" duration-ms="3543" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deviceCheck -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:30:27 EDT" name="tearDownReport" finished-at="2020-10-08T00:30:27 EDT" duration-ms="11" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=deviceCheck status=SUCCESS method=TC1_EndToEndScenarios.deviceCheck()[pri:10, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="fillIntakeFormWithAllFields()[pri:11, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:30:27 EDT" name="fillIntakeFormWithAllFields" finished-at="2020-10-08T00:30:34 EDT" depends-on-methods="AutomatedTests.TC1_EndToEndScenarios.loginToApplication" duration-ms="6923" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillIntakeFormWithAllFields -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:30:34 EDT" name="tearDownReport" finished-at="2020-10-08T00:30:34 EDT" duration-ms="11" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=fillIntakeFormWithAllFields status=SUCCESS method=TC1_EndToEndScenarios.fillIntakeFormWithAllFields()[pri:11, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="endVisit()[pri:12, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:30:34 EDT" name="endVisit" finished-at="2020-10-08T00:30:37 EDT" depends-on-methods="AutomatedTests.TC1_EndToEndScenarios.loginToApplication" duration-ms="2330" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endVisit -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:30:37 EDT" name="tearDownReport" finished-at="2020-10-08T00:30:37 EDT" duration-ms="4" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=endVisit status=SUCCESS method=TC1_EndToEndScenarios.endVisit()[pri:12, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="feedback()[pri:13, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:30:37 EDT" name="feedback" finished-at="2020-10-08T00:30:57 EDT" depends-on-methods="AutomatedTests.TC1_EndToEndScenarios.loginToApplication" duration-ms="20023" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //div[@class='rating-heart-5'] (tried for 15 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //div[@class='rating-heart-5'] (tried for 15 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-at eqcare.helper.Utility.waitForWebElement(Utility.java:112)
-at eqcare.pages.FeedbackPage.ratingProvided(FeedbackPage.java:39)
-at AutomatedTests.TC1_EndToEndScenarios.feedback(TC1_EndToEndScenarios.java:246)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:764)
-at org.testng.TestRunner.run(TestRunner.java:585)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
-at org.testng.TestNG.runSuites(TestNG.java:1069)
-at org.testng.TestNG.run(TestNG.java:1037)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //div[@class='rating-heart-5']
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:cdc:eff:b974:76f2%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '14.0.2'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-at java.base/java.util.Optional.orElseThrow(Optional.java:401)
-at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)
-at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-... 31 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feedback -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:30:57 EDT" name="tearDownReport" finished-at="2020-10-08T00:30:57 EDT" duration-ms="361" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=feedback status=FAILURE method=TC1_EndToEndScenarios.feedback()[pri:13, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="help()[pri:14, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:30:57 EDT" name="help" finished-at="2020-10-08T00:31:01 EDT" depends-on-methods="AutomatedTests.TC1_EndToEndScenarios.loginToApplication" duration-ms="3677" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- help -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:31:01 EDT" name="tearDownReport" finished-at="2020-10-08T00:31:01 EDT" duration-ms="6" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=help status=SUCCESS method=TC1_EndToEndScenarios.help()[pri:14, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="inbox()[pri:14, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:31:01 EDT" name="inbox" finished-at="2020-10-08T00:31:05 EDT" depends-on-methods="AutomatedTests.TC1_EndToEndScenarios.loginToApplication" duration-ms="4672" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inbox -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:31:05 EDT" name="tearDownReport" finished-at="2020-10-08T00:31:05 EDT" duration-ms="45" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=inbox status=SUCCESS method=TC1_EndToEndScenarios.inbox()[pri:14, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:AutomatedTests.TC1_EndToEndScenarios@70be0a2b]" started-at="2020-10-08T00:31:05 EDT" name="tearDown" finished-at="2020-10-08T00:31:06 EDT" duration-ms="252" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:AutomatedTests.TC1_CovidResultsForm@78dd667e]" started-at="2020-11-11T12:01:37 EST" name="tearDown" finished-at="2020-11-11T12:01:37 EST" duration-ms="129" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- AutomatedTests.TC1_EndToEndScenarios -->
+      </class> <!-- AutomatedTests.TC1_CovidResultsForm -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

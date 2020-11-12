@@ -18,7 +18,8 @@ public class VerifyPage {
 	{
 		this.driver=driver;
 	}
-	public  void verifyLinks() 
+
+	public void verifyLinks() 
 	{
 		
 		

@@ -29,9 +29,8 @@ public class InboxPage {
 	By carePlansLink = By.xpath("//a[text()=' Care Plans ']");
 
 	By appointmentsLink = By.xpath("//a[text()=' Appointments ']");
-	
+
 	By inboxHeader = By.xpath("//h1");
-	
 
 	public void verifyFeedbackPageUrl()
 
@@ -41,13 +40,12 @@ public class InboxPage {
 
 	}
 
-	
 	public void verifyMyInboxTabs() {
 
 		Utility.waitForWebElement(driver, messagesLink).click();
-		
+
 		Utility.waitForWebElement(driver, carePlansLink).click();
-		
+
 		Utility.waitForWebElement(driver, appointmentsLink).click();
 
 	}
@@ -57,7 +55,7 @@ public class InboxPage {
 		Utility.navigateToURL(driver, DataProviderFactory.getConfig().getValue("inbox"));
 
 		Utility.wait(2);
-		
+
 		WebElement ele = Utility.waitForWebElement(driver, inboxHeader);
 		String helpHeaderText = ele.getText();
 		Assert.assertEquals(helpHeaderText, ErrorCodesProvider.read("INBOX_HEADER"));

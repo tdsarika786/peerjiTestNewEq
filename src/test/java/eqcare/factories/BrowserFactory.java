@@ -38,18 +38,16 @@ public class BrowserFactory {
 			ChromeOptions options = new ChromeOptions();
 			options.addArguments("use-fake-device-for-media-stream");
 			options.addArguments("use-fake-ui-for-media-stream");
-			//options.addArguments("--window-size=1920,1080");
-			//options.addArguments("start-maximized");
-			//DesiredCapabilities caps = new DesiredCapabilities();
-			//caps.setCapability("browser", "Chrome");
-			//caps.setCapability("browser_version", "75.0");
-			//caps.setCapability("os", "Windows");
-			//caps.setCapability("os_version", "10");
-			//caps.setCapability(ChromeOptions.CAPABILITY, options);
+			// options.addArguments("--window-size=1920,1080");
+			// options.addArguments("start-maximized");
+			// DesiredCapabilities caps = new DesiredCapabilities();
+			// caps.setCapability("browser", "Chrome");
+			// caps.setCapability("browser_version", "75.0");
+			// caps.setCapability("os", "Windows");
+			// caps.setCapability("os_version", "10");
+			// caps.setCapability(ChromeOptions.CAPABILITY, options);
 
 			driver = new ChromeDriver(options);
-			
-			
 
 			// return new ChromeDriver(options);
 
@@ -77,7 +75,7 @@ public class BrowserFactory {
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 		driver.get(appURL);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		
+
 		return driver;
 	}
 

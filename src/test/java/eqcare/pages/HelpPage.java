@@ -36,14 +36,12 @@ public class HelpPage {
 
 	}
 
-	
-
 	public void navigateToHelpPage() {
 
 		Utility.navigateToURL(driver, DataProviderFactory.getConfig().getValue("help"));
 
 		Utility.wait(2);
-		
+
 		WebElement ele = Utility.waitForWebElement(driver, helpHeader);
 		String helpHeaderText = ele.getText();
 		Assert.assertEquals(helpHeaderText, ErrorCodesProvider.read("HELP_HEADER"));

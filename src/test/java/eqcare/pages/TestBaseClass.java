@@ -27,37 +27,31 @@ public class TestBaseClass {
 	public WebDriver driver, driver1;
 	public ExtentReports report;
 	public ExtentTest logger;
-	
-	
-	
+
 	@BeforeTest
-	public void setUp()
-	{
+	public void setUp() {
 		System.out.println("Log:INFO- Setting up Browser and Application");
-		
-		
-		
-		driver=BrowserFactory.getApplication(DataProviderFactory.getConfig().getValue("Browser"),
-			DataProviderFactory.getConfig().getValue("ponyEnv"));
-		
+
+		driver = BrowserFactory.getApplication(DataProviderFactory.getConfig().getValue("Browser"),
+				DataProviderFactory.getConfig().getValue("ponyEnv"));
+
 		driver.manage().window().maximize();
-		
-		//driver.manage().window().setSize(new Dimension(1270, 716));
-		
-		//driver1=BrowserFactory.getApplication(DataProviderFactory.getConfig().getValue("Browser"),
-		//	DataProviderFactory.getConfig().getValue("clinic"));
-		
+
+		// driver.manage().window().setSize(new Dimension(1270, 716));
+
+		// driver1=BrowserFactory.getApplication(DataProviderFactory.getConfig().getValue("Browser"),
+		// DataProviderFactory.getConfig().getValue("clinic"));
+
 		System.out.println("Log:INFO- Browser and application is ready");
 	}
-	
+
 	@AfterTest
-	public void tearDown()
-	{
+	public void tearDown() {
 		System.out.println("Log:INFO- Terminating browser");
-		
+
 		BrowserFactory.closeApplication(driver);
-		
+
 		System.out.println("Log:INFO- Browser terminated");
 	}
-	
+
 }
