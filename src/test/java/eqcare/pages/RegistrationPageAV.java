@@ -78,6 +78,9 @@ public class RegistrationPageAV extends runWithAttachments {
 	By nextBtn2 = By.xpath("//*[@data-role='password-step-next-button']");
 
 	By confirmationEmailText = By.xpath("//h2[text()='One last step']");
+	
+	By confirmationPopUp = By.xpath("//p[contains(text(),'eligible BC residents')]");
+	
 
 	By uploadProfilePic = By.xpath("(//input[@type='file'])[1]");
 
@@ -220,6 +223,13 @@ public class RegistrationPageAV extends runWithAttachments {
 		navigateToRegisterationPage();
 
 		Utility.waitForWebElement(driver, notCoverageButton).click();
+		
+		WebElement ele = Utility.waitForWebElement(driver, confirmationPopUp);
+		String confirmationText = ele.getText();
+		Assert.assertEquals(confirmationText, "Sorry! This service is available only to eligible BC residents.");
+
+		
+		
 
 	}
 

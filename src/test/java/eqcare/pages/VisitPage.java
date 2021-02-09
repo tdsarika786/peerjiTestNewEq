@@ -21,7 +21,7 @@ public class VisitPage {
 
 	By confirmEndCallButton = By.xpath("//a[@data-role='confirm-end-call-button']");
 
-	By ratingHeart = By.xpath("//div[@class='rating-heart-5']");
+	By ratingHeart = By.xpath("//div[@class='rating-5']");
 
 	By submitText = By.xpath("//a[contains(text(), 'Submit')]");
 

@@ -45,13 +45,13 @@ public class CovidResultsFormPage extends runWithAttachments {
 	By testLocation = By.name("test_location");
 
 	By testDate = By.name("test_date");
-	
+
 	By timeOfTestDrpDown = By.name("test_time");
 
 	By checkBox1 = By.name("user_consent");
 
 	By submitForm = By.xpath("//button[text()='Submit Form']");
-	
+
 	By confirmationEmailText = By.xpath("//h2[contains(text(),'Thank you')]");
 
 	public void verifyUrlBeforeRegister()
@@ -62,7 +62,9 @@ public class CovidResultsFormPage extends runWithAttachments {
 
 	}
 
-	public void Registeration(String email, String userFirstName, String userLastName, String DOB, String PhoneNo, String HealthCardNumber, String HealthCardExpiration, String TestLocation, String TestDate) {
+	public void Registeration(String email, String userFirstName, String userLastName, String DOB, String PhoneNo,
+			String HealthCardNumber, String HealthCardExpiration, String TestLocation, String TestDate,
+			boolean status) {
 
 		Utility.waitForWebElement(driver, emailAddress).sendKeys(email);
 
@@ -78,15 +80,18 @@ public class CovidResultsFormPage extends runWithAttachments {
 
 		Utility.waitForWebElement(driver, healthCardExpiration).sendKeys(HealthCardExpiration);
 
-		Utility.waitForWebElement(driver, testLocation).sendKeys(TestLocation);
-
 		Utility.waitForWebElement(driver, testDate).sendKeys(TestDate);
-		
-		WebElement languageElement = Utility.waitForWebElement(driver, timeOfTestDrpDown);
 
-		Select language = new Select(languageElement);
+		if (status == true) {
+			Utility.waitForWebElement(driver, testLocation).sendKeys(TestLocation);
 
-		language.selectByValue("morning");
+			WebElement languageElement = Utility.waitForWebElement(driver, timeOfTestDrpDown);
+
+			Select language = new Select(languageElement);
+
+			language.selectByValue("morning");
+
+		}
 
 		Utility.waitForWebElement(driver, checkBox1).click();
 
@@ -95,8 +100,8 @@ public class CovidResultsFormPage extends runWithAttachments {
 		WebElement ele = Utility.waitForWebElement(driver, confirmationEmailText);
 		String confirmationText = ele.getText();
 		Assert.assertEquals(confirmationText, "Thank you for submitting your request.");
-		
-	     Utility.wait(5);
+
+		Utility.wait(5);
 
 	}
 

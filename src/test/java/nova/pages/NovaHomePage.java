@@ -39,7 +39,7 @@ public class NovaHomePage {
 	
 
 	//Modify Employee
-	By selectEqCareEmployee = By.xpath("//div[contains(text(),'Bell-Test-Sarika')]");
+	By selectEqCareEmployee = By.xpath("//div[contains(text(),'Sarika-TestBasi')]");
 
 	// EMployer
 
@@ -53,7 +53,11 @@ public class NovaHomePage {
 
 	By selectCoverageTokenInput = By.id("coverage_token_label");
 
+	By selectCoverageType = By.xpath("//select[@id='coverage_type']");
+	
+	
 	By selectPartnerPortal = By.xpath("//select[@data-testid='partner-portals-select']");
+
 
 	By startDateInput = By.name("Start Date");
 
@@ -85,7 +89,7 @@ public class NovaHomePage {
 		
 		//Modify Line No 40
 
-		Utility.waitForWebElement(driver, searchEmployerInput).sendKeys("Bell-Test-Sarika");
+		Utility.waitForWebElement(driver, searchEmployerInput).sendKeys("Sarika-TestBasi");
 		
 		//Utility.waitForWebElement(driver, searchEmployerInput).sendKeys("Comp-Sarika-Test-Gold");
 		
@@ -97,7 +101,7 @@ public class NovaHomePage {
 
 		Utility.waitForWebElement(driver, selectEqCareEmployee).click();
 
-		Utility.waitForWebElement(driver, firstName).sendKeys("Sarika-LifeJourneyGold");
+		Utility.waitForWebElement(driver, firstName).sendKeys("Sarika");
 
 		Utility.waitForWebElement(driver, lastName).sendKeys("Test");
 
@@ -137,9 +141,9 @@ public class NovaHomePage {
 		Utility.waitForWebElement(driver, createEmployerLink).click();
 
 		// Change ID for NEW Employer
-		Utility.waitForWebElement(driver, employerIDInput).sendKeys("1234");
+		Utility.waitForWebElement(driver, employerIDInput).sendKeys("11"); // Modify
 
-		Utility.waitForWebElement(driver, companyNameInput).sendKeys("EqCare");
+		Utility.waitForWebElement(driver, companyNameInput).sendKeys("Sarika-TestNone"); //Modify
 
 		// Select
 		WebElement coverageTokenElement = driver.findElement(selectCoverageTokenInput);
@@ -151,17 +155,30 @@ public class NovaHomePage {
 		objTokenLabel.selectByValue("email");
 
 		// Select PArtner
-		WebElement partnerPortalElement = driver.findElement(selectPartnerPortal);
+		/*WebElement partnerPortalElement = driver.findElement(selectPartnerPortal);
 
 		Select objPartnerPortal = new Select(partnerPortalElement);
 
 		Utility.waitForWebElement(driver, selectPartnerPortal).click();
 
-		objPartnerPortal.selectByValue("1");
+		objPartnerPortal.selectByValue("1");*/
+		
+		
+		
+		WebElement coverageTypeElement = driver.findElement(selectCoverageType);
+
+		Select objCoverageType = new Select(coverageTypeElement);
+
+		Utility.waitForWebElement(driver, selectCoverageType).click();
+
+		//objCoverageType.selectByValue("lifejourney_gold");
+		
+		//objCoverageType.selectByValue("lifejourney_basic"); 
+		
+		objCoverageType.selectByValue("none");//Modify
+		
 
 		Utility.waitForWebElement(driver, startDateInput).sendKeys("2020-08-01");
-
-		Utility.waitForWebElement(driver, selectCoverageTokenInput).click();
 
 		Utility.waitForWebElement(driver, createEmployerSubmitButton).click();
 

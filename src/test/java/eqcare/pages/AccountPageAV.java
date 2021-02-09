@@ -292,7 +292,7 @@ public class AccountPageAV extends runWithAttachments {
 
 			//Utility.waitForWebElement(driver, date_of_birth).sendKeys("2000-07-14");
 
-			Utility.waitForWebElement(driver, health_card).sendKeys("H4K217566HKWW2");
+			Utility.waitForWebElement(driver, health_card).sendKeys("9123467890");
 
 			/*WebElement languageElement = Utility.waitForWebElement(driver, provinceDropdown);
 
@@ -520,7 +520,7 @@ public class AccountPageAV extends runWithAttachments {
 
 			Utility.waitForWebElement(driver, familyLink).click();
 
-			 //Utility.waitForWebElement(driver, createFamily).click();
+			// Utility.waitForWebElement(driver, createFamily).click();
 
 		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 6, 0), "0");
 		} catch (Exception ex) {
@@ -547,7 +547,7 @@ public class AccountPageAV extends runWithAttachments {
 
 		Utility.waitForWebElement(driver, childDob).sendKeys("2020-07-14");
 
-		Utility.waitForWebElement(driver, childHealthCardNumber).sendKeys("H279780808081");
+		Utility.waitForWebElement(driver, childHealthCardNumber).sendKeys("9123456789");
 
 		Utility.waitForWebElement(driver, childSexAtBirth).click();
 

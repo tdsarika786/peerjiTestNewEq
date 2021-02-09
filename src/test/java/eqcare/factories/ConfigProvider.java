@@ -16,7 +16,15 @@ public class ConfigProvider {
 		pro=new Properties();
 		
 		try {
-			pro.load(new FileInputStream(new File(System.getProperty("user.dir")+"/Config/configEqcare.properties")));
+			// 4 - AV
+			//Nothing-Pony
+			//dev - 2
+			//Prod = 7
+			//Cole - 8
+			//Dmtry-stagq=9
+			//life journey - 2
+			//life journey prod - 10
+			pro.load(new FileInputStream(new File(System.getProperty("user.dir")+"/Config/configEqcared2.properties")));
 		} catch (FileNotFoundException e) {
 			
 		} catch (IOException e) {

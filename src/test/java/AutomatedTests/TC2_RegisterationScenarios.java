@@ -58,6 +58,8 @@ public class TC2_RegisterationScenarios extends BaseClass {
 		logger = report.createTest("Individual-paying Patient Register with required and optional fields");
 
 		register.notEnrolledUser();
+		
+		//register.EnrolledUser();
 
 		logger.info("Validated not Enrolled link");
 
@@ -65,8 +67,13 @@ public class TC2_RegisterationScenarios extends BaseClass {
 		// 0),
 		
 		//paying customer
+		
+		//sarikaqa7+accvir1@gmail.com
+		
+		//QA1 - sarikaqa7+envqa1nen@gmail.com
+		// -  sarikaqa7+envqa1en1@gmail.com
 
-		register.Registeration("sarikaqa7+alpha@gmail.com",
+		register.Registeration("sarikaqa7+envne@gmail.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
@@ -111,8 +118,14 @@ public class TC2_RegisterationScenarios extends BaseClass {
 
 		// register.Registeration(DataProviderFactory.getExcel().getCellData("Users", 2,
 		// 0),
+		
+		//sarikaqa7+devlfj1@gmail.com
+		//sarikaqa7+devln1@gmail.com
+		
+		//LJ - sarikaqa7+ljn1@gmail.com - Life Journey None
+		//sarikaqa7+ljgo2@gmail.com
 
-		register.Registeration("sarikaqa7+bellAlpha@gmail.com",
+		register.Registeration("sarikaqa7+enven1@gmail.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),

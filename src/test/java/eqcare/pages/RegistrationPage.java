@@ -144,21 +144,21 @@ public class RegistrationPage extends runWithAttachments {
 
 		navigateToRegisterationPage();
 
-		Utility.waitForWebElement(driver, coverageButton).click();
+		//Utility.waitForWebElement(driver, coverageButton).click(); // New EQCare
 	}
 
 	public void EnrolledUserWithValidInput() {
 
 		//Utility.waitForWebElement(driver, groupNoInput).sendKeys("7171");
 		
-		//Bell Test Sarika
+		//Bell Test Sarika , Gp No - 7710
 		
-		Utility.waitForWebElement(driver, groupNoInput).sendKeys("7710");
+		Utility.waitForWebElement(driver, groupNoInput).sendKeys("7");
 
 		Utility.waitForWebElement(driver, groupNumberLink).click();
 
 		// PEERJI
-		Utility.waitForWebElement(driver, coverageIdentifierInput).sendKeys("25");
+		Utility.waitForWebElement(driver, coverageIdentifierInput).sendKeys("Anu2");
 
 		Utility.wait(2);
 
@@ -299,6 +299,9 @@ public class RegistrationPage extends runWithAttachments {
 		JavascriptExecutor executor2 = (JavascriptExecutor) driver;
 		executor2.executeScript("arguments[0].click()", button2);
 
+		
+		// FOR COLE TICKETS
+		
 		if (optional == true) {
 
 			WebElement button3 = driver.findElement(By.xpath("//div[@checkbox-field-id=\"mailing_list\"]/div/input"));
@@ -307,6 +310,9 @@ public class RegistrationPage extends runWithAttachments {
 			executor3.executeScript("arguments[0].click()", button3);
 
 		}
+		
+		
+		
 
 		// WebDriverWait wait1=new WebDriverWait(driver,10);
 		// wait1.until(ExpectedConditions.elementToBeClickable(ele5));
@@ -323,6 +329,8 @@ public class RegistrationPage extends runWithAttachments {
 	}
 
 	public void registerationCompleteWithValidInput() {
+		
+		Utility.wait(2);
 
 		WebElement ele = Utility.waitForWebElement(driver, confirmationEmailText);
 		String confirmationText = ele.getText();

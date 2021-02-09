@@ -37,7 +37,7 @@ public class TC2_LoginScenarios extends BaseClass{
 
 	}
 
-	@Test(priority = 1, dependsOnMethods = "verifyPage", enabled=false)
+	@Test(priority = 1, dependsOnMethods = "verifyPage")
 	public void loginToApplicationWithValidInput() throws Exception {
 
 		logger = report.createTest("Login as patient wgith valid inputs");
@@ -47,7 +47,7 @@ public class TC2_LoginScenarios extends BaseClass{
 
 		// DataProviderFactory.getExcel().getCellData("EQCare", 1, 1));
 
-		login.loginToApplication("sarikaqa7+nr1@gmail.com", "Sarika#1234");
+		login.loginToApplication("sarikaqa7+t1@gmail.com", "Sarika#123");
 
 		login.verifyUrlAfterLogin();
 		

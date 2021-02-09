@@ -1,4 +1,4 @@
-package AutomatedTests;
+
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
@@ -11,14 +11,14 @@ import eqcare.pages.InboxPage;
 import eqcare.pages.IntakeFormPage;
 import eqcare.pages.LoginPage;
 import eqcare.pages.LogoutPage;
-import eqcare.pages.RegistrationPageAV;
+import eqcare.pages.RegistrationPage;
 import eqcare.pages.VisitPage;
 import eqcare.factories.DataProviderFactory;
 import eqcare.pages.AccountPage;
 import eqcare.pages.Base;
 import eqcare.pages.BaseClass;
 
-public class TC2_RegisterationScenariosAV extends BaseClass {
+public class TC2_RegisterationScenarios extends BaseClass {
 
 	LoginPage login;
 	HomePage home;
@@ -28,12 +28,14 @@ public class TC2_RegisterationScenariosAV extends BaseClass {
 	FeedbackPage feedback;
 	HelpPage help;
 	InboxPage inbox;
-	RegistrationPageAV register;
+	RegistrationPage register;
+
+	// 1. Individual Paying Patient register to EQ Care using automation
 
 	@Test(priority = 0)
 	public void verifyPage() {
 
-		register = PageFactory.initElements(driver, RegistrationPageAV.class);
+		register = PageFactory.initElements(driver, RegistrationPage.class);
 
 		logger = report.createTest("Registration Page URL validation");
 
@@ -44,28 +46,24 @@ public class TC2_RegisterationScenariosAV extends BaseClass {
 		logger.info("Validated Registeration URL and Register now link");
 
 	}
+	
+	//sarikaqa7+b1@gmail.com  = Individual
+	//sarikaqa7+c1@gmail.com  = Covered Single
+	
+	//QA1 - sarikaqa7+qa1@gmail.com
 
-	// sarikaqa7+b1@gmail.com = Individual
-	// sarikaqa7+c1@gmail.com = Covered Single
-
-	// 1. Individual Paying Patient register to EQ Care using automation
-
-	@Test(priority = 1, dependsOnMethods = "verifyPage")
+	@Test(priority = 1, dependsOnMethods = "verifyPage", enabled=false)
 	public void validInputRegisterationTest() {
 
-		register = PageFactory.initElements(driver, RegistrationPageAV.class);
+		register = PageFactory.initElements(driver, RegistrationPage.class);
 
 		logger = report.createTest("Individual-paying Patient Register with required and optional fields");
 
-		register.EnrolledUser();
+		register.notEnrolledUser();
 
-		logger.info("Validated Enrolled link");
+		logger.info("Validated not Enrolled link");
 
-		// register.Registeration(DataProviderFactory.getExcel().getCellData("Users", 2,
-		// 0),
-		//sarikaqa7+ponystg1@gmail.com
-		//sarikaqa7+ponyav1@gmail.com
-		register.Registeration("sarikaqa7+ponystg1@gmail.com",
+		register.Registeration("sarikaqa7+q1@gmail.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
@@ -92,16 +90,12 @@ public class TC2_RegisterationScenariosAV extends BaseClass {
 				// Care");
 				+ "sarikaqa7+i1@gmail.com" + " with EQ Care");
 
-		// register.runTestResults("29754305", "0");
+		register.runTestResults("29754305", "0");
 
 	}
-
-	// Enrolled Patient Register with required and optional fields
-	// sarikaqa7+lfg1@gmail.com
-	// sarikaqa7+slf1@gmail.com
-	// sarikaqa7+lf1@gmail.com
-
-	@Test(priority = 2, dependsOnMethods = "verifyPage", enabled = false)
+	
+	
+	@Test(priority = 2, dependsOnMethods = "verifyPage")
 	public void validInputEnrolledRegisterationTest() {
 
 		logger = report.createTest("Enrolled Patient Register with required and optional fields");
@@ -110,14 +104,11 @@ public class TC2_RegisterationScenariosAV extends BaseClass {
 
 		logger.info("Validated Enrolled link");
 		
-		//1. Change TOKEN
-
 		register.EnrolledUserWithValidInput();
-
-		// register.Registeration(DataProviderFactory.getExcel().getCellData("Users", 2,
-		// 0),
-
-		register.Registeration("sarikaqa7+bell@gmail.com",
+		
+		//LJ - sarikaqa7+ljno1@gmail.com - Life Journey None
+		
+		register.Registeration("sarikaqa7+dev2@gmail.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
@@ -143,8 +134,8 @@ public class TC2_RegisterationScenariosAV extends BaseClass {
 				// + DataProviderFactory.getExcel().getCellData("Users", 1, 0) + " with EQ
 				// Care");
 				+ "sarikaqa7+enro2@gmail.com" + " with EQ Care");
-
-		// register.runTestResults("29754306","0");
+		
+		//register.runTestResults("29754306","0");
 	}
 
 }

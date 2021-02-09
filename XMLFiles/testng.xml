@@ -9,10 +9,9 @@
 
   <test name="Test" preserve-order="true" thread-count="3" >
     <classes>
-      
-         <class name="eqcare.testcases.LoginScenariosTC1"/>  
-           <class name="eqcare.testcases.LoginScenariosTC2"/> 
-           <class name="eqcare.testcases.HomeScenarios"/>   
+       
+           <class name="eqcare.testcases.TC2_LoginScenarios"/> 
+           <class name="eqcare.testcases.TC6_HomeScenarios"/>   
          
          
     </classes>

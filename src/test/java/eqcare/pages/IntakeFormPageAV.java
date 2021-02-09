@@ -61,10 +61,10 @@ public class IntakeFormPageAV {
 
 		// Utility.waitForWebElement(driver, checkBox).click();
 
-	/*	WebElement button = driver.findElement(By.xpath("//input[@type='checkbox']"));
+		WebElement button = driver.findElement(By.xpath("//input[@type='checkbox']"));
 
 		JavascriptExecutor executor1 = (JavascriptExecutor) driver;
-		executor1.executeScript("arguments[0].click()", button);*/
+		executor1.executeScript("arguments[0].click()", button);
 
 		Utility.waitForWebElement(driver, startCall).click();
 		// Utility.selectValueFromCalendar(Utility.waitForMultipleWebElement(driver,
@@ -74,9 +74,9 @@ public class IntakeFormPageAV {
 
 	public void uploadFiles() throws Exception {
 		try {
-			WebElement fileButton = driver.findElement(By.xpath("//input[@id='file']"));
+			WebElement fileButton = driver.findElement(By.xpath("//input[@type='file']"));
 			JavascriptExecutor executor = (JavascriptExecutor) driver;
-			executor.executeScript("arguments[0].style.display='block';", fileButton);
+			executor.executeScript("arguments[0].style.display='block';arguments[0].style.opacity=1;", fileButton);
 
 			Utility.waitForWebElement(driver, uploadFile)
 					.sendKeys(System.getProperty("user.dir") + "/TestData/test1.jpeg");

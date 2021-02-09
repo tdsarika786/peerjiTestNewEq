@@ -1,4 +1,4 @@
-package AutomatedTests;
+
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
@@ -57,10 +57,15 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 
 		logger = report.createTest("Login as patient - Individual Paying Customer");
 
-		login.loginToApplication(DataProviderFactory.getExcel().getCellData("Login", 1, 0),
-				DataProviderFactory.getExcel().getCellData("Login", 1, 1));
+		//login.loginToApplication(DataProviderFactory.getExcel().getCellData("Login", 1, 0),
+		//		DataProviderFactory.getExcel().getCellData("Login", 1, 1));
+		
+		//sarikaqa7+envqa3en2@gmail.com
 
-		login.verifyUrlAfterLogin();
+		login.loginToApplication("sarikaqa7+enven@gmail.com",
+				"Sarika#123");
+		
+		//login.verifyUrlAfterLogin();
 
 		logger.info("Patient Logged in");
 	}
@@ -212,7 +217,7 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 
 	}
 
-	@Test(priority = 11, dependsOnMethods = "loginToApplication", enabled=false)
+	@Test(priority = 11, dependsOnMethods = "loginToApplication")
 	public void fillIntakeFormWithAllFields() throws Exception {
 
 		intake = PageFactory.initElements(driver, IntakeFormPageAV.class);
@@ -224,7 +229,7 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 		logger.info("Patint device check completed");
 	}
 
-	@Test(priority = 12, dependsOnMethods = "loginToApplication", enabled=false)
+	@Test(priority = 12, dependsOnMethods = "loginToApplication")
 	public void endVisit() throws Exception {
 
 		visit = PageFactory.initElements(driver, VisitPageAV.class);
@@ -236,7 +241,7 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 		logger.info("Patint device check completed");
 	}
 
-	@Test(priority = 13, dependsOnMethods = "loginToApplication", enabled=false)
+	@Test(priority = 13, dependsOnMethods = "loginToApplication")
 	public void feedback() throws Exception {
 
 		feedback = PageFactory.initElements(driver, FeedbackPageAV.class);
@@ -248,7 +253,7 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 		logger.info("Patient provided feeback");
 	}
 
-	@Test(priority = 14, dependsOnMethods = "loginToApplication", enabled=false)
+	@Test(priority = 14, dependsOnMethods = "loginToApplication")
 	public void help() throws Exception {
 
 		help = PageFactory.initElements(driver, HelpPageAV.class);
@@ -260,7 +265,7 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 		logger.info("Help Page Header verified");
 	}
 
-	@Test(priority = 14, dependsOnMethods = "loginToApplication", enabled=false)
+	@Test(priority = 14, dependsOnMethods = "loginToApplication")
 	public void inbox() throws Exception {
 
 		inbox = PageFactory.initElements(driver, InboxPageAV.class);
@@ -274,7 +279,7 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 		logger.info("Help Page Header verified");
 	}
 
-	@Test(priority = 14, dependsOnMethods = "loginToApplication", enabled = false)
+	@Test(priority = 14, dependsOnMethods = "loginToApplication")
 	public void chooseProfile() throws Exception {
 
 		inbox = PageFactory.initElements(driver, InboxPageAV.class);

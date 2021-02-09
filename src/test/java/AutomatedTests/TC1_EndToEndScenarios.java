@@ -57,9 +57,23 @@ public class TC1_EndToEndScenarios extends BaseClass {
 
 		logger = report.createTest("Login as patient - Individual Paying Customer");
 
-		login.loginToApplication(DataProviderFactory.getExcel().getCellData("Login", 1, 0),
-				DataProviderFactory.getExcel().getCellData("Login", 1, 1));
+		//login.loginToApplication(DataProviderFactory.getExcel().getCellData("Login", 1, 0),
+		//		DataProviderFactory.getExcel().getCellData("Login", 1, 1));
 
+		
+		//Access Virtual
+		//login.loginToApplication("sarikaqa7+accvir1@gmail.com",
+		//			"Sarika#123");
+
+		
+		//Pony
+		//sarikaqa7+ponystage2@gmail.com
+		//sarikaqa7+eqserqa1@gmail.com
+		//sarikaqa7+envqa1nen@gmail.com - QA1
+		//sarikaqa7+ljn1@gmail.com
+		login.loginToApplication("sarikaqa7+envqa3en1@gmail.com",
+				"Sarika#123");
+		
 		login.verifyUrlAfterLogin();
 
 		logger.info("Patient Logged in");

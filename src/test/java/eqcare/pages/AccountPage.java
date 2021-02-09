@@ -520,7 +520,7 @@ public class AccountPage extends runWithAttachments {
 
 			Utility.waitForWebElement(driver, familyLink).click();
 
-			 Utility.waitForWebElement(driver, createFamily).click();
+			// Utility.waitForWebElement(driver, createFamily).click();
 
 		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 6, 0), "0");
 		} catch (Exception ex) {

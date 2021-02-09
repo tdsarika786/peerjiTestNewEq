@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="AutomatedTests.TC1_CovidResultsForm">
+      <class name="TC2_RegisterationScenarios">
         <methods>
           <include name="setupReport"/>
           <include name="tearDown"/>
           <include name="tearDownReport"/>
           <include name="setUp"/>
           <include name="verifyPage"/>
-          <include name="validInputRegisterationTest"/>
+          <include name="validInputEnrolledRegisterationTest"/>
         </methods>
-      </class> <!-- AutomatedTests.TC1_CovidResultsForm -->
+      </class> <!-- TC2_RegisterationScenarios -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
