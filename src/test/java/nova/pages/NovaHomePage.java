@@ -1,6 +1,7 @@
 package nova.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -39,7 +40,7 @@ public class NovaHomePage {
 	
 
 	//Modify Employee
-	By selectEqCareEmployee = By.xpath("//div[contains(text(),'Sarika-TestBasi')]");
+	By selectEqCareEmployee = By.xpath("//div[contains(text(),'Sarika-BellTest')]");
 
 	// EMployer
 
@@ -89,9 +90,9 @@ public class NovaHomePage {
 		
 		//Modify Line No 40
 
-		Utility.waitForWebElement(driver, searchEmployerInput).sendKeys("Sarika-TestBasi");
+		//Utility.waitForWebElement(driver, searchEmployerInput).sendKeys("Sarika-TestBasi");
 		
-		//Utility.waitForWebElement(driver, searchEmployerInput).sendKeys("Comp-Sarika-Test-Gold");
+		Utility.waitForWebElement(driver, searchEmployerInput).sendKeys("Sarika-BellTest");
 		
 
 		//Utility.waitForWebElement(driver, searchEmployerInput).sendKeys(Keys.ENTER);
@@ -141,9 +142,9 @@ public class NovaHomePage {
 		Utility.waitForWebElement(driver, createEmployerLink).click();
 
 		// Change ID for NEW Employer
-		Utility.waitForWebElement(driver, employerIDInput).sendKeys("11"); // Modify
+		Utility.waitForWebElement(driver, employerIDInput).sendKeys("16"); // Modify
 
-		Utility.waitForWebElement(driver, companyNameInput).sendKeys("Sarika-TestNone"); //Modify
+		Utility.waitForWebElement(driver, companyNameInput).sendKeys("Sarika-TestSilver"); //Modify
 
 		// Select
 		WebElement coverageTokenElement = driver.findElement(selectCoverageTokenInput);
@@ -171,11 +172,77 @@ public class NovaHomePage {
 
 		Utility.waitForWebElement(driver, selectCoverageType).click();
 
+		//objCoverageType.selectByValue("lifejourney_silver"); 
+		
 		//objCoverageType.selectByValue("lifejourney_gold");
+		
+		objCoverageType.selectByValue("lifejourney_bronze");//Modify
 		
 		//objCoverageType.selectByValue("lifejourney_basic"); 
 		
-		objCoverageType.selectByValue("none");//Modify
+		//objCoverageType.selectByValue("none");
+		
+		//Services
+		
+		WebElement buttonPrimaryCare = driver.findElement(By.xpath("//input[@name='primary_care']"));
+
+		JavascriptExecutor executor1 = (JavascriptExecutor) driver;
+		executor1.executeScript("arguments[0].click()", buttonPrimaryCare);
+		
+		//Checkbox
+		
+		WebElement buttonDmss = driver.findElement(By.xpath("//input[@name='dmss']"));
+
+		JavascriptExecutor executor2 = (JavascriptExecutor) driver;
+		executor2.executeScript("arguments[0].click()", buttonDmss);
+		
+		//Checkbox
+		
+		WebElement buttonDcbt = driver.findElement(By.xpath("//input[@name='dcbt']"));
+        JavascriptExecutor executor3 = (JavascriptExecutor) driver;
+		executor3.executeScript("arguments[0].click()", buttonDcbt);
+		
+		
+		WebElement buttonCritical_incident = driver.findElement(By.xpath("//input[@name='critical_incident']"));
+		JavascriptExecutor executor4 = (JavascriptExecutor) driver;
+		executor4.executeScript("arguments[0].click()", buttonCritical_incident);
+		
+		
+		WebElement buttonTherapy = driver.findElement(By.xpath("//input[@name='therapy']"));
+		JavascriptExecutor executor5 = (JavascriptExecutor) driver;
+		executor5.executeScript("arguments[0].click()", buttonTherapy);
+		
+		
+		WebElement buttonCoaching = driver.findElement(By.xpath("//input[@name='coaching']"));
+		JavascriptExecutor executor6 = (JavascriptExecutor) driver;
+		executor6.executeScript("arguments[0].click()", buttonCoaching);
+		
+		
+		WebElement buttonPersonal_crisis = driver.findElement(By.xpath("//input[@name='personal_crisis']"));
+		JavascriptExecutor executor7 = (JavascriptExecutor) driver;
+		executor7.executeScript("arguments[0].click()", buttonPersonal_crisis);
+		
+		
+		WebElement buttonHra = driver.findElement(By.xpath("//input[@name='hra']"));
+		JavascriptExecutor executor8 = (JavascriptExecutor) driver;
+		executor8.executeScript("arguments[0].click()", buttonHra);
+		
+		
+		WebElement buttonNutrition = driver.findElement(By.xpath("//input[@name='nutrition']"));
+		JavascriptExecutor executor9 = (JavascriptExecutor) driver;
+		executor9.executeScript("arguments[0].click()", buttonNutrition);
+		
+		
+		WebElement buttonArticles = driver.findElement(By.xpath("//input[@name='articles']"));
+		JavascriptExecutor executor10 = (JavascriptExecutor) driver;
+		executor10.executeScript("arguments[0].click()", buttonArticles);
+		
+		
+		WebElement buttonLegal_financial = driver.findElement(By.xpath("//input[@name='legal_financial']"));
+		JavascriptExecutor executor11 = (JavascriptExecutor) driver;
+		executor11.executeScript("arguments[0].click()", buttonLegal_financial);
+		
+		
 		
 
 		Utility.waitForWebElement(driver, startDateInput).sendKeys("2020-08-01");

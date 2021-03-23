@@ -63,7 +63,7 @@ public class TC2_RegisterationScenarios extends BaseClass {
 
 		logger.info("Validated not Enrolled link");
 
-		register.Registeration("sarikaqa7+q1@gmail.com",
+		register.Registeration("sarikaqa7+b1@gmail.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
@@ -108,7 +108,7 @@ public class TC2_RegisterationScenarios extends BaseClass {
 		
 		//LJ - sarikaqa7+ljno1@gmail.com - Life Journey None
 		
-		register.Registeration("sarikaqa7+dev2@gmail.com",
+		register.Registeration("sdhall@eqcare.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),

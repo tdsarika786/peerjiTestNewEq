@@ -52,9 +52,9 @@ public class NovaLifeJourneyEmployee extends BaseClass {
 
 		logger = report.createTest("Create Employee with coverage token");
 
-		//home.createEmployer(); // First see if employer there Modify
+		// home.createEmployer(); // First see if employer there Modify
 		
-		home.createEmployee("Anu1"); // then create employee 
+		home.createEmployee("b4"); // then create employee 
 		
 		//home.TestBrowser();
 

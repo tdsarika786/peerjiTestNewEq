@@ -37,7 +37,7 @@ public class FeedbackPageAV {
 
 		Utility.waitForWebElement(driver, ratingHeart).click();
 
-		Utility.waitForWebElement(driver, visitFeedbackInput).sendKeys("A Good");
+		Utility.waitForWebElement(driver, visitFeedbackInput).sendKeys("AV Good");
 
 		Utility.waitForWebElement(driver, submitLink).click();
 

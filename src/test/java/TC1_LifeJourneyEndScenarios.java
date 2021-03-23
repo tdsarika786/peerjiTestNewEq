@@ -38,7 +38,7 @@ public class TC1_LifeJourneyEndScenarios extends BaseClass {
 
 		// DataProviderFactory.getExcel().getCellData("EQCare", 1, 1));
 
-		login.loginToApplication("sarikaqa7+ljgo1@gmail.com", "Sarika#123");
+		login.loginToApplication("sarikaqa7+ljgo@gmail.com", "Sarika#123");
 
 		logger.info("Logged in as patient");
 
@@ -55,7 +55,7 @@ public class TC1_LifeJourneyEndScenarios extends BaseClass {
 		logger.info("Validated Home Page Url");
 	}
 
-	@Test(priority = 2, enabled=false)
+	@Test(priority = 2)
 	public void verifyStartLifeJourney() throws Exception {
 		login = PageFactory.initElements(driver, LoginPage.class);
 		
@@ -74,7 +74,7 @@ public class TC1_LifeJourneyEndScenarios extends BaseClass {
 	}
 	
 	
-	@Test(priority = 2)
+	@Test(priority = 2, enabled=false)
 	public void verifyStartLifeJourneyYesButton() throws Exception {
 		login = PageFactory.initElements(driver, LoginPage.class);
 		

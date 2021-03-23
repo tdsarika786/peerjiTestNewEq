@@ -153,12 +153,12 @@ public class RegistrationPage extends runWithAttachments {
 		
 		//Bell Test Sarika , Gp No - 7710
 		
-		Utility.waitForWebElement(driver, groupNoInput).sendKeys("7");
+		Utility.waitForWebElement(driver, groupNoInput).sendKeys("77");
 
 		Utility.waitForWebElement(driver, groupNumberLink).click();
 
 		// PEERJI
-		Utility.waitForWebElement(driver, coverageIdentifierInput).sendKeys("Anu2");
+		Utility.waitForWebElement(driver, coverageIdentifierInput).sendKeys("b1");
 
 		Utility.wait(2);
 

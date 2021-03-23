@@ -62,7 +62,7 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 		
 		//sarikaqa7+envqa3en2@gmail.com
 
-		login.loginToApplication("sarikaqa7+enven@gmail.com",
+		login.loginToApplication("sdhall@eqcare.com",
 				"Sarika#123");
 		
 		//login.verifyUrlAfterLogin();

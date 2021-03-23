@@ -3,16 +3,25 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TC2_RegisterationScenarios">
+      <class name="TC1_EndToEndScenarios">
         <methods>
-          <include name="setupReport"/>
+          <include name="addChild"/>
           <include name="tearDown"/>
+          <include name="editPersonalInformation"/>
           <include name="tearDownReport"/>
+          <include name="fillIntakeFormWithAllFields"/>
+          <include name="startVideoConsultation"/>
+          <include name="feedback"/>
+          <include name="editAccountInformation"/>
+          <include name="loginToApplication"/>
+          <include name="setupReport"/>
           <include name="setUp"/>
+          <include name="endVisit"/>
+          <include name="deviceCheck"/>
+          <include name="deleteChild"/>
           <include name="verifyPage"/>
-          <include name="validInputEnrolledRegisterationTest"/>
         </methods>
-      </class> <!-- TC2_RegisterationScenarios -->
+      </class> <!-- TC1_EndToEndScenarios -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

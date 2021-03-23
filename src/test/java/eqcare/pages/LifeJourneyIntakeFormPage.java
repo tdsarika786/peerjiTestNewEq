@@ -366,7 +366,7 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 		JavascriptExecutor executor4 = (JavascriptExecutor) driver;
 		executor4.executeScript("arguments[0].click()", button4);
 
-		Utility.waitForWebElement(driver, pregnantOption).click();
+		//Utility.waitForWebElement(driver, pregnantOption).click();
 
 		Utility.waitForWebElement(driver, changesInHealthOption).click();
 
