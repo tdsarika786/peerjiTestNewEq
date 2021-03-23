@@ -11,7 +11,7 @@
     <classes>
        
            <class name="eqcare.testcases.TC2_LoginScenarios"/> 
-           <class name="eqcare.testcases.TC6_HomeScenarios"/>   
+        
          
          
     </classes>
