@@ -10,7 +10,7 @@
   <test name="Test" preserve-order="true" thread-count="3" >
     <classes>
        
-           <class name="eqcare.testcases.TC2_LoginScenarios"/> 
+           <class name="eqcare.testcases.Peerjitc"/> 
         
          
          
