@@ -3,16 +3,28 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="NovaLifeJourneyEmployee">
+      <class name="TC1_EndToEndScenarios">
         <methods>
-          <include name="CreateEmployee"/>
+          <include name="addChild"/>
           <include name="tearDown"/>
-          <include name="setupReport"/>
+          <include name="editPersonalInformation"/>
           <include name="tearDownReport"/>
+          <include name="fillIntakeFormWithAllFields"/>
+          <include name="startVideoConsultation"/>
+          <include name="inbox"/>
+          <include name="feedback"/>
+          <include name="help"/>
+          <include name="editAccountInformation"/>
+          <include name="loginToApplication"/>
+          <include name="setupReport"/>
           <include name="setUp"/>
+          <include name="endVisit"/>
+          <include name="familyTab"/>
+          <include name="deviceCheck"/>
+          <include name="deleteChild"/>
           <include name="verifyPage"/>
         </methods>
-      </class> <!-- NovaLifeJourneyEmployee -->
+      </class> <!-- TC1_EndToEndScenarios -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
