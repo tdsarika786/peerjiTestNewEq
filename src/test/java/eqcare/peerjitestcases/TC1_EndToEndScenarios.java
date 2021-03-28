@@ -62,7 +62,7 @@ public class TC1_EndToEndScenarios extends BaseClass {
 		//		DataProviderFactory.getExcel().getCellData("Login", 1, 1));
 
 		//sarikaqa7+eqserstg1@gmail.com
-		login.loginToApplication("sdhall@eqcare.com",
+		login.loginToApplication("sarikaqa7+br1@gmail.com",
 				"Sarika#123");
 		
 		login.verifyUrlAfterLogin();
