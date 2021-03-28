@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -104,7 +104,17 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="eqcare.testcases.Peerjitc" class="method navigator-link" hash-for-method="verifyPage">verifyPage</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="NovaLifeJourneyEmployee" class="method navigator-link" hash-for-method="CreateEmployee">CreateEmployee</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="NovaLifeJourneyEmployee" class="method navigator-link" hash-for-method="loginToApplication">loginToApplication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="NovaLifeJourneyEmployee" class="method navigator-link" hash-for-method="verifyPage">verifyPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Default_suite -->
@@ -122,9 +132,23 @@
           <div class="suite-Default_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">eqcare.testcases.Peerjitc</span>
+              <span class="class-name">NovaLifeJourneyEmployee</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="CreateEmployee">
+                  </a> <!-- CreateEmployee -->
+                  <span class="method-name">CreateEmployee</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginToApplication">
+                  </a> <!-- loginToApplication -->
+                  <span class="method-name">loginToApplication</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="verifyPage">
@@ -137,7 +161,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/l9/4pwqxcnj26bcf95btzx4z7rm0000gp/T/testng-eclipse--700779793/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/l9/4pwqxcnj26bcf95btzx4z7rm0000gp/T/testng-eclipse--1964299959/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -146,7 +170,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;eqcare.testcases.Peerjitc&quot;/&gt;
+      &lt;class name=&quot;NovaLifeJourneyEmployee&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -186,16 +210,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyPage')
-data.setCell(0, 2, 'eqcare.testcases.Peerjitc')
-data.setCell(0, 3, 97);
+data.setCell(0, 1, 'CreateEmployee')
+data.setCell(0, 2, 'NovaLifeJourneyEmployee')
+data.setCell(0, 3, 10409217);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginToApplication')
+data.setCell(1, 2, 'NovaLifeJourneyEmployee')
+data.setCell(1, 3, 23511);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyPage')
+data.setCell(2, 2, 'NovaLifeJourneyEmployee')
+data.setCell(2, 3, 33);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 97 ms</span>
+              <span class="suite-total-time">Total running time: 2 hours</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -210,9 +242,16 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">NovaLifeJourneyEmployee</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">logoutFromApplication</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -221,26 +260,42 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">eqcare.testcases.Peerjitc</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">NovaLifeJourneyEmployee</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">setupReport</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">126 ms</span>
+                <span class="method-start">147 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyPage</span>
-                <span class="method-start">15561 ms</span>
+                <span class="method-start">5407 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDownReport([TestResult name=verifyPage status=SUCCESS method=Peerjitc.verifyPage()[pri:0, instance:eqcare.testc...)</span>
-                <span class="method-start">15661 ms</span>
+                <span class="method-name">tearDownReport([TestResult name=verifyPage status=SUCCESS method=NovaLifeJourneyEmployee.verifyPage()[pri:0, instan...)</span>
+                <span class="method-start">5442 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">loginToApplication</span>
+                <span class="method-start">5702 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownReport([TestResult name=loginToApplication status=SUCCESS method=NovaLifeJourneyEmployee.loginToApplication...)</span>
+                <span class="method-start">29215 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">CreateEmployee</span>
+                <span class="method-start">29249 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownReport([TestResult name=CreateEmployee status=SUCCESS method=NovaLifeJourneyEmployee.CreateEmployee()[pri:2...)</span>
+                <span class="method-start">10438653 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16035 ms</span>
+                <span class="method-start">10439466 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

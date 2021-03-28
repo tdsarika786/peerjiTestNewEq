@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="eqcare.testcases.Peerjitc">
+      <class name="NovaLifeJourneyEmployee">
         <methods>
-          <include name="setupReport"/>
-          <include name="verifyPage"/>
+          <include name="CreateEmployee"/>
           <include name="tearDown"/>
-          <include name="loginToApplicationWithValidInput"/>
+          <include name="setupReport"/>
           <include name="tearDownReport"/>
           <include name="setUp"/>
+          <include name="verifyPage"/>
         </methods>
-      </class> <!-- eqcare.testcases.Peerjitc -->
+      </class> <!-- NovaLifeJourneyEmployee -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

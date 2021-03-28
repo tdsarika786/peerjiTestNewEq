@@ -40,19 +40,19 @@ public class NovaHomePage {
 	
 
 	//Modify Employee
-	By selectEqCareEmployee = By.xpath("//div[contains(text(),'Sarika-BellTest')]");
+	By selectEqCareEmployee = By.xpath("//div[contains(text(),'Sarika-TestBellNew')]");
 
 	// EMployer
 
 	By EmployerLink = By.xpath("//a[contains(text(), 'Employers')]");
 
-	By createEmployerLink = By.xpath("//a[contains(text(), 'Create Employer')]");
+	By createEmployerLink = By.xpath("(//a[contains(text(), 'Create Employer')])[1]");
 
 	By employerIDInput = By.id("id");
 
 	By companyNameInput = By.id("company_name");
 
-	By selectCoverageTokenInput = By.id("coverage_token_label");
+	By selectCoverageTokenInput = By.xpath("//select[@id='coverage_token_label']");
 
 	By selectCoverageType = By.xpath("//select[@id='coverage_type']");
 	
@@ -92,7 +92,7 @@ public class NovaHomePage {
 
 		//Utility.waitForWebElement(driver, searchEmployerInput).sendKeys("Sarika-TestBasi");
 		
-		Utility.waitForWebElement(driver, searchEmployerInput).sendKeys("Sarika-BellTest");
+		Utility.waitForWebElement(driver, searchEmployerInput).sendKeys("Sarika-TestBellNew");
 		
 
 		//Utility.waitForWebElement(driver, searchEmployerInput).sendKeys(Keys.ENTER);
@@ -110,7 +110,7 @@ public class NovaHomePage {
 
 		Select objProvince = new Select(provinceElement);
 
-		Utility.waitForWebElement(driver, provinceDropDwnList).click();
+		//Utility.waitForWebElement(driver, provinceDropDwnList).click();
 
 		objProvince.selectByValue("QC");
 
@@ -127,9 +127,21 @@ public class NovaHomePage {
 
 	    // objplanTypee.selectByValue("single");
 
-		Utility.waitForWebElement(driver, coverageStartDate).sendKeys("2020-08-01");
+		Utility.waitForWebElement(driver, coverageStartDate).sendKeys("2021-03-02");
+		
+		
+		WebElement checkBoxVip = driver.findElement(By.xpath("//input[@id='is_vip']"));
 
-		Utility.waitForWebElement(driver, createEmployeeSubmitButton).click();
+		JavascriptExecutor executorCheck = (JavascriptExecutor) driver;
+		executorCheck.executeScript("arguments[0].click()", checkBoxVip);
+		
+		
+		WebElement buttonSub = driver.findElement(By.xpath("//button[@dusk='create-button']"));
+
+		JavascriptExecutor executorSub = (JavascriptExecutor) driver;
+		executorSub.executeScript("arguments[0].click()", buttonSub);
+
+		//Utility.waitForWebElement(driver, createEmployeeSubmitButton).click();
 		
 		Utility.wait(5);
 
@@ -138,24 +150,29 @@ public class NovaHomePage {
 	public void createEmployer() {
 
 		Utility.waitForWebElement(driver, EmployerLink).click();
+		
+		WebElement buttonEmpl = driver.findElement(By.xpath("(//a[contains(text(), 'Create Employer')])[1]"));
 
-		Utility.waitForWebElement(driver, createEmployerLink).click();
+		JavascriptExecutor executorEmpl = (JavascriptExecutor) driver;
+		executorEmpl.executeScript("arguments[0].click()", buttonEmpl);
+
+		//Utility.waitForWebElement(driver, createEmployerLink).click();
 
 		// Change ID for NEW Employer
-		Utility.waitForWebElement(driver, employerIDInput).sendKeys("16"); // Modify
+		Utility.waitForWebElement(driver, employerIDInput).sendKeys("77"); // Modify
 
-		Utility.waitForWebElement(driver, companyNameInput).sendKeys("Sarika-TestSilver"); //Modify
+		Utility.waitForWebElement(driver, companyNameInput).sendKeys("Sarika-TestBellNew"); //Modify
 
 		// Select
 		WebElement coverageTokenElement = driver.findElement(selectCoverageTokenInput);
 
 		Select objTokenLabel = new Select(coverageTokenElement);
 
-		Utility.waitForWebElement(driver, selectCoverageTokenInput).click();
+		//Utility.waitForWebElement(driver, selectCoverageTokenInput).click();
 
 		objTokenLabel.selectByValue("email");
 
-		// Select PArtner
+		// *****************  Select PArtner
 		/*WebElement partnerPortalElement = driver.findElement(selectPartnerPortal);
 
 		Select objPartnerPortal = new Select(partnerPortalElement);
@@ -166,23 +183,38 @@ public class NovaHomePage {
 		
 		
 		
+		//*******************************Coverage Type************************************
+		
+		/*
+		
 		WebElement coverageTypeElement = driver.findElement(selectCoverageType);
 
 		Select objCoverageType = new Select(coverageTypeElement);
 
 		Utility.waitForWebElement(driver, selectCoverageType).click();
+		
+		*/
+		
+		//*******************************Services************************************
+		
+		
+		
 
 		//objCoverageType.selectByValue("lifejourney_silver"); 
 		
 		//objCoverageType.selectByValue("lifejourney_gold");
 		
-		objCoverageType.selectByValue("lifejourney_bronze");//Modify
+		// Uncomment it
+		
+		//objCoverageType.selectByValue("lifejourney_bronze");//Modify
 		
 		//objCoverageType.selectByValue("lifejourney_basic"); 
 		
 		//objCoverageType.selectByValue("none");
 		
-		//Services
+		//*******************************Services************************************
+		
+		/*
 		
 		WebElement buttonPrimaryCare = driver.findElement(By.xpath("//input[@name='primary_care']"));
 
@@ -242,12 +274,19 @@ public class NovaHomePage {
 		JavascriptExecutor executor11 = (JavascriptExecutor) driver;
 		executor11.executeScript("arguments[0].click()", buttonLegal_financial);
 		
+		*/
 		
+		//*******************************Services************************************
 		
 
 		Utility.waitForWebElement(driver, startDateInput).sendKeys("2020-08-01");
 
-		Utility.waitForWebElement(driver, createEmployerSubmitButton).click();
+		//Utility.waitForWebElement(driver, createEmployerSubmitButton).click();
+		
+		WebElement buttonSub = driver.findElement(By.xpath("//button[@dusk='create-button']"));
+
+		JavascriptExecutor executorSub = (JavascriptExecutor) driver;
+		executorSub.executeScript("arguments[0].click()", buttonSub);
 
 		Utility.wait(10000);
 
