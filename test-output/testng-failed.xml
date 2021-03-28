@@ -16,6 +16,8 @@
           <include name="help"/>
           <include name="editAccountInformation"/>
           <include name="loginToApplication"/>
+          <include name="uploadGovernmentID"/>
+          <include name="uploadProfilePic"/>
           <include name="setupReport"/>
           <include name="setUp"/>
           <include name="endVisit"/>

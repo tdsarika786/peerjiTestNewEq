@@ -1,261 +1,581 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="17" passed="16" failed="0" skipped="0">
+<testng-results ignored="1" total="17" passed="0" failed="0" skipped="16">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-28T16:55:48 EDT" name="Default suite" finished-at="2021-03-28T16:57:44 EDT" duration-ms="116027">
+  <suite started-at="2021-03-28T18:08:29 EDT" name="Default suite" finished-at="2021-03-28T18:08:29 EDT" duration-ms="62">
     <groups>
     </groups>
-    <test started-at="2021-03-28T16:55:48 EDT" name="Default test" finished-at="2021-03-28T16:57:44 EDT" duration-ms="116027">
+    <test started-at="2021-03-28T18:08:29 EDT" name="Default test" finished-at="2021-03-28T18:08:29 EDT" duration-ms="62">
       <class name="TC1_EndToEndScenarios">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:55:48 EDT" name="setupReport" finished-at="2021-03-28T16:55:48 EDT" duration-ms="185" status="PASS">
+        <test-method is-config="true" signature="setupReport()[pri:0, instance:TC1_EndToEndScenarios@4e7912d8]" started-at="2021-03-28T18:08:29 EDT" name="setupReport" finished-at="2021-03-28T18:08:29 EDT" duration-ms="165" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:55:48 EDT" name="setUp" finished-at="2021-03-28T16:56:01 EDT" duration-ms="13011" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:TC1_EndToEndScenarios@4e7912d8]" started-at="2021-03-28T18:08:29 EDT" name="setUp" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1616969309429" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'Browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in /private/var/folders/l9/4pwqxcnj26bcf95btzx4z7rm0000gp/T/testng-eclipse--322106752/testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'Browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in /private/var/folders/l9/4pwqxcnj26bcf95btzx4z7rm0000gp/T/testng-eclipse--322106752/testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyPage()[pri:0, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:56:01 EDT" name="verifyPage" finished-at="2021-03-28T16:56:01 EDT" duration-ms="39" status="PASS">
+        <test-method signature="verifyPage()[pri:0, instance:TC1_EndToEndScenarios@4e7912d8]" started-at="2021-03-28T18:08:29 EDT" name="verifyPage" finished-at="2021-03-28T18:08:29 EDT" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'Browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in /private/var/folders/l9/4pwqxcnj26bcf95btzx4z7rm0000gp/T/testng-eclipse--322106752/testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'Browser' is required by BeforeClass on method setUp but has not been marked @Optional or defined
+in /private/var/folders/l9/4pwqxcnj26bcf95btzx4z7rm0000gp/T/testng-eclipse--322106752/testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:268)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:356)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:301)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPage -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:56:01 EDT" name="tearDownReport" finished-at="2021-03-28T16:56:01 EDT" duration-ms="266" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyPage status=SUCCESS method=TC1_EndToEndScenarios.verifyPage()[pri:0, instance:TC1_EndToEndScenarios@67080771] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:TC1_EndToEndScenarios@4e7912d8]" started-at="2021-03-28T18:08:29 EDT" name="tearDownReport" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1616969309444" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownReport -->
-        <test-method signature="loginToApplication()[pri:1, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:56:01 EDT" name="loginToApplication" finished-at="2021-03-28T16:56:15 EDT" depends-on-methods="TC1_EndToEndScenarios.verifyPage" duration-ms="13225" status="PASS">
+        <test-method signature="loginToApplication()[pri:1, instance:TC1_EndToEndScenarios@4e7912d8]" started-at="2021-03-28T18:08:29 EDT" name="loginToApplication" finished-at="2021-03-28T18:08:29 EDT" depends-on-methods="TC1_EndToEndScenarios.verifyPage" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC1_EndToEndScenarios.loginToApplication()[pri:1, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC1_EndToEndScenarios.loginToApplication()[pri:1, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:56:15 EDT" name="tearDownReport" finished-at="2021-03-28T16:56:15 EDT" duration-ms="14" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginToApplication status=SUCCESS method=TC1_EndToEndScenarios.loginToApplication()[pri:1, instance:TC1_EndToEndScenarios@67080771] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="editPersonalInformation()[pri:2, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:56:15 EDT" name="editPersonalInformation" finished-at="2021-03-28T16:56:31 EDT" depends-on-methods="TC1_EndToEndScenarios.verifyPage" duration-ms="16300" status="PASS">
+        <test-method signature="editPersonalInformation()[pri:2, instance:TC1_EndToEndScenarios@4e7912d8]" started-at="2021-03-28T18:08:29 EDT" name="editPersonalInformation" finished-at="2021-03-28T18:08:29 EDT" depends-on-methods="TC1_EndToEndScenarios.verifyPage" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC1_EndToEndScenarios.editPersonalInformation()[pri:2, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC1_EndToEndScenarios.editPersonalInformation()[pri:2, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editPersonalInformation -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:56:31 EDT" name="tearDownReport" finished-at="2021-03-28T16:56:31 EDT" duration-ms="17" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=editPersonalInformation status=SUCCESS method=TC1_EndToEndScenarios.editPersonalInformation()[pri:2, instance:TC1_EndToEndScenarios@67080771] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="editAccountInformation()[pri:3, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:56:31 EDT" name="editAccountInformation" finished-at="2021-03-28T16:56:46 EDT" depends-on-methods="TC1_EndToEndScenarios.verifyPage" duration-ms="15235" status="PASS">
+        <test-method signature="editAccountInformation()[pri:3, instance:TC1_EndToEndScenarios@4e7912d8]" started-at="2021-03-28T18:08:29 EDT" name="editAccountInformation" finished-at="2021-03-28T18:08:29 EDT" depends-on-methods="TC1_EndToEndScenarios.verifyPage" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC1_EndToEndScenarios.editAccountInformation()[pri:3, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC1_EndToEndScenarios.editAccountInformation()[pri:3, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editAccountInformation -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:56:46 EDT" name="tearDownReport" finished-at="2021-03-28T16:56:46 EDT" duration-ms="13" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=editAccountInformation status=SUCCESS method=TC1_EndToEndScenarios.editAccountInformation()[pri:3, instance:TC1_EndToEndScenarios@67080771] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="uploadProfilePic()[pri:4, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:56:46 EDT" name="uploadProfilePic" finished-at="2021-03-28T16:56:50 EDT" depends-on-methods="TC1_EndToEndScenarios.verifyPage" duration-ms="4160" status="PASS">
+        <test-method signature="uploadProfilePic()[pri:4, instance:TC1_EndToEndScenarios@4e7912d8]" started-at="2021-03-28T18:08:29 EDT" name="uploadProfilePic" finished-at="2021-03-28T18:08:29 EDT" depends-on-methods="TC1_EndToEndScenarios.verifyPage" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC1_EndToEndScenarios.uploadProfilePic()[pri:4, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC1_EndToEndScenarios.uploadProfilePic()[pri:4, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uploadProfilePic -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:56:50 EDT" name="tearDownReport" finished-at="2021-03-28T16:56:50 EDT" duration-ms="11" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=uploadProfilePic status=SUCCESS method=TC1_EndToEndScenarios.uploadProfilePic()[pri:4, instance:TC1_EndToEndScenarios@67080771] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="uploadGovernmentID()[pri:5, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:56:50 EDT" name="uploadGovernmentID" finished-at="2021-03-28T16:56:55 EDT" depends-on-methods="TC1_EndToEndScenarios.verifyPage" duration-ms="4265" status="PASS">
+        <test-method signature="uploadGovernmentID()[pri:5, instance:TC1_EndToEndScenarios@4e7912d8]" started-at="2021-03-28T18:08:29 EDT" name="uploadGovernmentID" finished-at="2021-03-28T18:08:29 EDT" depends-on-methods="TC1_EndToEndScenarios.verifyPage" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC1_EndToEndScenarios.uploadGovernmentID()[pri:5, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC1_EndToEndScenarios.uploadGovernmentID()[pri:5, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uploadGovernmentID -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:56:55 EDT" name="tearDownReport" finished-at="2021-03-28T16:56:55 EDT" duration-ms="13" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=uploadGovernmentID status=SUCCESS method=TC1_EndToEndScenarios.uploadGovernmentID()[pri:5, instance:TC1_EndToEndScenarios@67080771] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="familyTab()[pri:6, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:56:55 EDT" name="familyTab" finished-at="2021-03-28T16:56:57 EDT" depends-on-methods="TC1_EndToEndScenarios.verifyPage" duration-ms="2804" status="PASS">
+        <test-method signature="familyTab()[pri:6, instance:TC1_EndToEndScenarios@4e7912d8]" started-at="2021-03-28T18:08:29 EDT" name="familyTab" finished-at="2021-03-28T18:08:29 EDT" depends-on-methods="TC1_EndToEndScenarios.verifyPage" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC1_EndToEndScenarios.familyTab()[pri:6, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC1_EndToEndScenarios.familyTab()[pri:6, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- familyTab -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:56:57 EDT" name="tearDownReport" finished-at="2021-03-28T16:56:57 EDT" duration-ms="5" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=familyTab status=SUCCESS method=TC1_EndToEndScenarios.familyTab()[pri:6, instance:TC1_EndToEndScenarios@67080771] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="addChild()[pri:7, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:56:57 EDT" name="addChild" finished-at="2021-03-28T16:57:07 EDT" depends-on-methods="TC1_EndToEndScenarios.verifyPage" duration-ms="10028" status="PASS">
+        <test-method signature="addChild()[pri:7, instance:TC1_EndToEndScenarios@4e7912d8]" started-at="2021-03-28T18:08:29 EDT" name="addChild" finished-at="2021-03-28T18:08:29 EDT" depends-on-methods="TC1_EndToEndScenarios.verifyPage" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC1_EndToEndScenarios.addChild()[pri:7, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC1_EndToEndScenarios.addChild()[pri:7, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addChild -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:57:08 EDT" name="tearDownReport" finished-at="2021-03-28T16:57:08 EDT" duration-ms="12" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=addChild status=SUCCESS method=TC1_EndToEndScenarios.addChild()[pri:7, instance:TC1_EndToEndScenarios@67080771] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="deleteChild()[pri:8, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:57:08 EDT" name="deleteChild" finished-at="2021-03-28T16:57:13 EDT" depends-on-methods="TC1_EndToEndScenarios.verifyPage" duration-ms="5349" status="PASS">
+        <test-method signature="deleteChild()[pri:8, instance:TC1_EndToEndScenarios@4e7912d8]" started-at="2021-03-28T18:08:29 EDT" name="deleteChild" finished-at="2021-03-28T18:08:29 EDT" depends-on-methods="TC1_EndToEndScenarios.verifyPage" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC1_EndToEndScenarios.deleteChild()[pri:8, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC1_EndToEndScenarios.deleteChild()[pri:8, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteChild -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:57:13 EDT" name="tearDownReport" finished-at="2021-03-28T16:57:13 EDT" duration-ms="9" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=deleteChild status=SUCCESS method=TC1_EndToEndScenarios.deleteChild()[pri:8, instance:TC1_EndToEndScenarios@67080771] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="startVideoConsultation()[pri:9, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:57:13 EDT" name="startVideoConsultation" finished-at="2021-03-28T16:57:13 EDT" depends-on-methods="TC1_EndToEndScenarios.loginToApplication" duration-ms="578" status="PASS">
+        <test-method signature="startVideoConsultation()[pri:9, instance:TC1_EndToEndScenarios@4e7912d8]" started-at="2021-03-28T18:08:29 EDT" name="startVideoConsultation" finished-at="2021-03-28T18:08:29 EDT" depends-on-methods="TC1_EndToEndScenarios.loginToApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC1_EndToEndScenarios.startVideoConsultation()[pri:9, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC1_EndToEndScenarios.startVideoConsultation()[pri:9, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startVideoConsultation -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:57:13 EDT" name="tearDownReport" finished-at="2021-03-28T16:57:13 EDT" duration-ms="9" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=startVideoConsultation status=SUCCESS method=TC1_EndToEndScenarios.startVideoConsultation()[pri:9, instance:TC1_EndToEndScenarios@67080771] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="deviceCheck()[pri:10, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:57:13 EDT" name="deviceCheck" finished-at="2021-03-28T16:57:18 EDT" depends-on-methods="TC1_EndToEndScenarios.loginToApplication" duration-ms="4923" status="PASS">
+        <test-method signature="deviceCheck()[pri:10, instance:TC1_EndToEndScenarios@4e7912d8]" started-at="2021-03-28T18:08:29 EDT" name="deviceCheck" finished-at="2021-03-28T18:08:29 EDT" depends-on-methods="TC1_EndToEndScenarios.loginToApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC1_EndToEndScenarios.deviceCheck()[pri:10, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC1_EndToEndScenarios.deviceCheck()[pri:10, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deviceCheck -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:57:18 EDT" name="tearDownReport" finished-at="2021-03-28T16:57:18 EDT" duration-ms="12" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=deviceCheck status=SUCCESS method=TC1_EndToEndScenarios.deviceCheck()[pri:10, instance:TC1_EndToEndScenarios@67080771] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="fillIntakeFormWithAllFields()[pri:11, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:57:18 EDT" name="fillIntakeFormWithAllFields" finished-at="2021-03-28T16:57:27 EDT" depends-on-methods="TC1_EndToEndScenarios.loginToApplication" duration-ms="8731" status="PASS">
+        <test-method signature="fillIntakeFormWithAllFields()[pri:11, instance:TC1_EndToEndScenarios@4e7912d8]" started-at="2021-03-28T18:08:29 EDT" name="fillIntakeFormWithAllFields" finished-at="2021-03-28T18:08:29 EDT" depends-on-methods="TC1_EndToEndScenarios.loginToApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC1_EndToEndScenarios.fillIntakeFormWithAllFields()[pri:11, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC1_EndToEndScenarios.fillIntakeFormWithAllFields()[pri:11, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- fillIntakeFormWithAllFields -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:57:27 EDT" name="tearDownReport" finished-at="2021-03-28T16:57:27 EDT" duration-ms="12" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=fillIntakeFormWithAllFields status=SUCCESS method=TC1_EndToEndScenarios.fillIntakeFormWithAllFields()[pri:11, instance:TC1_EndToEndScenarios@67080771] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="endVisit()[pri:12, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:57:27 EDT" name="endVisit" finished-at="2021-03-28T16:57:30 EDT" depends-on-methods="TC1_EndToEndScenarios.loginToApplication" duration-ms="3281" status="PASS">
+        <test-method signature="endVisit()[pri:12, instance:TC1_EndToEndScenarios@4e7912d8]" started-at="2021-03-28T18:08:29 EDT" name="endVisit" finished-at="2021-03-28T18:08:29 EDT" depends-on-methods="TC1_EndToEndScenarios.loginToApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC1_EndToEndScenarios.endVisit()[pri:12, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC1_EndToEndScenarios.endVisit()[pri:12, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endVisit -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:57:30 EDT" name="tearDownReport" finished-at="2021-03-28T16:57:30 EDT" duration-ms="5" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=endVisit status=SUCCESS method=TC1_EndToEndScenarios.endVisit()[pri:12, instance:TC1_EndToEndScenarios@67080771] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="feedback()[pri:13, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:57:30 EDT" name="feedback" finished-at="2021-03-28T16:57:35 EDT" depends-on-methods="TC1_EndToEndScenarios.loginToApplication" duration-ms="4330" status="PASS">
+        <test-method signature="feedback()[pri:13, instance:TC1_EndToEndScenarios@4e7912d8]" started-at="2021-03-28T18:08:29 EDT" name="feedback" finished-at="2021-03-28T18:08:29 EDT" depends-on-methods="TC1_EndToEndScenarios.loginToApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC1_EndToEndScenarios.feedback()[pri:13, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC1_EndToEndScenarios.feedback()[pri:13, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feedback -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:57:35 EDT" name="tearDownReport" finished-at="2021-03-28T16:57:35 EDT" duration-ms="12" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=feedback status=SUCCESS method=TC1_EndToEndScenarios.feedback()[pri:13, instance:TC1_EndToEndScenarios@67080771] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="help()[pri:14, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:57:35 EDT" name="help" finished-at="2021-03-28T16:57:38 EDT" depends-on-methods="TC1_EndToEndScenarios.loginToApplication" duration-ms="3647" status="PASS">
+        <test-method signature="help()[pri:14, instance:TC1_EndToEndScenarios@4e7912d8]" started-at="2021-03-28T18:08:29 EDT" name="help" finished-at="2021-03-28T18:08:29 EDT" depends-on-methods="TC1_EndToEndScenarios.loginToApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC1_EndToEndScenarios.help()[pri:14, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC1_EndToEndScenarios.help()[pri:14, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- help -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:57:38 EDT" name="tearDownReport" finished-at="2021-03-28T16:57:38 EDT" duration-ms="6" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=help status=SUCCESS method=TC1_EndToEndScenarios.help()[pri:14, instance:TC1_EndToEndScenarios@67080771] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="inbox()[pri:14, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:57:38 EDT" name="inbox" finished-at="2021-03-28T16:57:44 EDT" depends-on-methods="TC1_EndToEndScenarios.loginToApplication" duration-ms="5272" status="PASS">
+        <test-method signature="inbox()[pri:14, instance:TC1_EndToEndScenarios@4e7912d8]" started-at="2021-03-28T18:08:29 EDT" name="inbox" finished-at="2021-03-28T18:08:29 EDT" depends-on-methods="TC1_EndToEndScenarios.loginToApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TC1_EndToEndScenarios.inbox()[pri:14, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TC1_EndToEndScenarios.inbox()[pri:14, instance:TC1_EndToEndScenarios@4e7912d8] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inbox -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:57:44 EDT" name="tearDownReport" finished-at="2021-03-28T16:57:44 EDT" duration-ms="17" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=inbox status=SUCCESS method=TC1_EndToEndScenarios.inbox()[pri:14, instance:TC1_EndToEndScenarios@67080771] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TC1_EndToEndScenarios@67080771]" started-at="2021-03-28T16:57:44 EDT" name="tearDown" finished-at="2021-03-28T16:57:44 EDT" duration-ms="371" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TC1_EndToEndScenarios@4e7912d8]" started-at="2021-03-28T18:08:29 EDT" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1616969309480" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
