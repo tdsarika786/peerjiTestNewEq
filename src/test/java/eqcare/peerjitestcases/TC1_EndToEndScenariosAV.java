@@ -53,9 +53,9 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 	//ENV 2
     //sarikaqa7+i1@gmail.com
 	
-	//@Parameters
+	@Parameters({"Email","Password"})
 	@Test(priority = 1, dependsOnMethods = "verifyPage")
-	public void loginToApplication() throws Exception {
+	public void loginToApplication(String email, String password) throws Exception {
 
 		logger = report.createTest("Login as patient - Individual Paying Customer");
 
@@ -64,8 +64,8 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 		
 		//sarikaqa7+envqa3en2@gmail.com
 
-		login.loginToApplication("sarikaqa7+br1.com",
-				"Sarika#123");
+		login.loginToApplication(email,
+				password);
 		
 		//login.verifyUrlAfterLogin();
 
@@ -281,7 +281,7 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 		logger.info("Help Page Header verified");
 	}
 
-	@Test(priority = 14, dependsOnMethods = "loginToApplication")
+	@Test(priority = 14, dependsOnMethods = "loginToApplication", enabled=false)
 	public void chooseProfile() throws Exception {
 
 		inbox = PageFactory.initElements(driver, InboxPageAV.class);

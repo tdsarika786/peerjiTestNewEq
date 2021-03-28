@@ -77,6 +77,8 @@
 					<systemPropertyVariables>
 					<Browser>${Browser}</Browser>
 						<AppURL>${AppURL}</AppURL>
+							<Email>${Email}</Email>
+						<Password>${Password}</Password>
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>

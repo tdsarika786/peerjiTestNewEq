@@ -39,10 +39,15 @@ public class HelpPage {
 	}
 
 	public void navigateToHelpPage() {
+		
+		WebElement button1 = driver.findElement(By.xpath("//a[@href='/help']"));
+
+		JavascriptExecutor executor1 = (JavascriptExecutor) driver;
+		executor1.executeScript("arguments[0].click()", button1);
 
 		//Utility.navigateToURL(driver, DataProviderFactory.getConfig().getValue("help"));
 		
-		Utility.waitForWebElement(driver, helpLink);
+		//Utility.waitForWebElement(driver, helpLink);
 
 		Utility.wait(2);
 

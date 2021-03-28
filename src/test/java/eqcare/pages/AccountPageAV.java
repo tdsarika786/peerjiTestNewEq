@@ -757,7 +757,13 @@ public class AccountPageAV extends runWithAttachments {
 
 	public void navigateToProfilePage() {
 		
-		Utility.waitForWebElement(driver, profileLink);
+
+		WebElement button1 = driver.findElement(By.xpath("//a[@href='/profile']"));
+
+		JavascriptExecutor executor1 = (JavascriptExecutor) driver;
+		executor1.executeScript("arguments[0].click()", button1);
+		
+		// Utility.waitForWebElement(driver, profileLink);
 
 		//Utility.navigateToURL(driver, DataProviderFactory.getConfig().getValue("ponyProfile"));
 

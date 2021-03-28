@@ -54,7 +54,12 @@ public class InboxPageAV {
 
 	public void navigateToInboxPage() {
 		
-		Utility.waitForWebElement(driver, inboxLink);
+		WebElement button1 = driver.findElement(By.xpath("//a[@href='/profile/inbox']"));
+
+		JavascriptExecutor executor1 = (JavascriptExecutor) driver;
+		executor1.executeScript("arguments[0].click()", button1);
+		
+		//Utility.waitForWebElement(driver, inboxLink);
 
 		//Utility.navigateToURL(driver, DataProviderFactory.getConfig().getValue("inbox"));
 
