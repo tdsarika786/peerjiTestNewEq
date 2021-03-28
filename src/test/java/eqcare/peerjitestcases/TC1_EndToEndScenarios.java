@@ -2,6 +2,7 @@ package eqcare.peerjitestcases;
 
 
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import NotRequiredClasses.ContactUsPage;
@@ -52,9 +53,9 @@ public class TC1_EndToEndScenarios extends BaseClass {
 	//ENV 2
     //sarikaqa7+i1@gmail.com
 	
-	
+	@Parameters({"Email","Password"})
 	@Test(priority = 1, dependsOnMethods = "verifyPage")
-	public void loginToApplication() throws Exception {
+	public void loginToApplication(String email, String password) throws Exception {
 
 		logger = report.createTest("Login as patient - Individual Paying Customer");
 
@@ -62,8 +63,11 @@ public class TC1_EndToEndScenarios extends BaseClass {
 		//		DataProviderFactory.getExcel().getCellData("Login", 1, 1));
 
 		//sarikaqa7+eqserstg1@gmail.com
-		login.loginToApplication("sarikaqa7+br1@gmail.com",
-				"Sarika#123");
+		//login.loginToApplication("sarikaqa7+br1@gmail.com",
+		//		"Sarika#123");
+		
+		login.loginToApplication(email,
+				password);
 		
 		login.verifyUrlAfterLogin();
 
