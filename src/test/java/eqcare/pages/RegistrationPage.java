@@ -144,7 +144,7 @@ public class RegistrationPage extends runWithAttachments {
 
 		navigateToRegisterationPage();
 
-		//Utility.waitForWebElement(driver, coverageButton).click(); // New EQCare
+		Utility.waitForWebElement(driver, coverageButton).click(); // New EQCare
 	}
 
 	public void EnrolledUserWithValidInput() {
@@ -158,7 +158,7 @@ public class RegistrationPage extends runWithAttachments {
 		Utility.waitForWebElement(driver, groupNumberLink).click();
 
 		// PEERJI
-		Utility.waitForWebElement(driver, coverageIdentifierInput).sendKeys("b1");
+		Utility.waitForWebElement(driver, coverageIdentifierInput).sendKeys("b2");
 
 		Utility.wait(2);
 

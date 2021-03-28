@@ -72,7 +72,7 @@
 				<version>3.0.0-M4</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>XMLFiles/testng.xml</suiteXmlFile>
+						<suiteXmlFile>XMLFiles/${xmlFiles}</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>

@@ -108,7 +108,7 @@ public class TC2_RegisterationScenarios extends BaseClass {
 		
 		//LJ - sarikaqa7+ljno1@gmail.com - Life Journey None
 		
-		register.Registeration("sdhall@eqcare.com",
+		register.Registeration("sarikaqa7+a1@gmail.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
