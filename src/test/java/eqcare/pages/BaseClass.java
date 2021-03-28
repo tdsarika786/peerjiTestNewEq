@@ -11,6 +11,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
@@ -95,14 +96,20 @@ public class BaseClass implements ITestListener {
 		report.flush();
 	}
 
+	@Parameters({"Browser","AppURL"})
 	@BeforeClass
-	public void setUp() {
+	public void setUp(String browser, String appurl) {
 		System.out.println("Log:INFO- Setting up Browser and Application");
 
-		driver = BrowserFactory.getApplication(DataProviderFactory.getConfig().getValue("Browser"),
-				DataProviderFactory.getConfig().getValue("ponyEnv"));
+		//driver = BrowserFactory.getApplication(DataProviderFactory.getConfig().getValue("Browser"),
+		//		DataProviderFactory.getConfig().getValue("ponyEnv"));
+		
+		driver = BrowserFactory.getApplication(browser,
+						appurl);
 
 		driver.manage().window().maximize();
+		
+		System.out.println("Log:INFO- Driver Value- "+driver);
 
 		// driver.manage().window().setSize(new Dimension(1270, 716));
 
