@@ -11,7 +11,7 @@
     <classes>
        
            <class name="eqcare.peerjitestcases.TC1_EndToEndScenarios"/> 
-           <class name="eqcare.peerjitestcases.TC1_EndToEndScenariosAV"/> 
+          
         
          
          
