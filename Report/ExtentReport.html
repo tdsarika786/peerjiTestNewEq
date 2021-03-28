@@ -52,7 +52,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Mar. 28, 2021 04:55:48 p.m.</span>
+			<span class='label blue darken-3 suite-start-time'>Mar. 28, 2021 07:21:05 p.m.</span>
 			</a>
 		</ul>
 	</div>
@@ -68,6 +68,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -110,10 +111,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>16</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='28.571%'><span class='strong'>2</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='71.429%'>5</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -131,17 +132,17 @@
 </div>	<div class='subview-left left'>
 		<div class='view-summary'>
 			<ul id='test-collection' class='test-collection'>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='1'>
+				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
 					<div class='test-heading'>
 						<span class='test-name'>Staging Web Application Login URL validation</span>
-						<span class='test-time'>Mar. 28, 2021 04:56:01 p.m.</span>
+						<span class='test-time'>Mar. 28, 2021 07:21:15 p.m.</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar. 28, 2021 04:56:01 p.m.</span>
-	<span class='label end-time'>Mar. 28, 2021 04:56:01 p.m.</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+36ms</span>
+	<span class='label start-time'>Mar. 28, 2021 07:21:15 p.m.</span>
+	<span class='label end-time'>Mar. 28, 2021 07:21:15 p.m.</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+40ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -155,7 +156,7 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:56:01 p.m.</td>
+				<td class='timestamp'>7:21:15 p.m.</td>
 				<td class='step-details'>
 						Validating url:  https://patient.eqserviceqa1.eqcaredev.com/login
 					
@@ -163,109 +164,7 @@
 			</tr>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:56:01 p.m.</td>
-				<td class='step-details'>
-						Test Passed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
-					<div class='test-heading'>
-						<span class='test-name'>Login as patient - Individual Paying Customer</span>
-						<span class='test-time'>Mar. 28, 2021 04:56:01 p.m.</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Mar. 28, 2021 04:56:01 p.m.</span>
-	<span class='label end-time'>Mar. 28, 2021 04:56:15 p.m.</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 13s+226ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:56:15 p.m.</td>
-				<td class='step-details'>
-						Patient Logged in
-					
-				</td>
-			</tr>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:56:15 p.m.</td>
-				<td class='step-details'>
-						Test Passed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
-					<div class='test-heading'>
-						<span class='test-name'>Patient Edits Profile - Personal Information</span>
-						<span class='test-time'>Mar. 28, 2021 04:56:15 p.m.</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Mar. 28, 2021 04:56:15 p.m.</span>
-	<span class='label end-time'>Mar. 28, 2021 04:56:31 p.m.</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 16s+298ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:56:18 p.m.</td>
-				<td class='step-details'>
-						Patint logged in and navigates to Account Page
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:56:18 p.m.</td>
-				<td class='step-details'>
-						Patint editing user personal information
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:56:31 p.m.</td>
-				<td class='step-details'>
-						Patint saved user personal information
-					
-				</td>
-			</tr>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:56:31 p.m.</td>
+				<td class='timestamp'>7:21:15 p.m.</td>
 				<td class='step-details'>
 						Test Passed
 					
@@ -278,15 +177,15 @@
 				</li>
 				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
 					<div class='test-heading'>
-						<span class='test-name'>Patient Edits Profile -  Account Information</span>
-						<span class='test-time'>Mar. 28, 2021 04:56:31 p.m.</span>
+						<span class='test-name'>Login as patient - Individual Paying Customer</span>
+						<span class='test-time'>Mar. 28, 2021 07:21:16 p.m.</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar. 28, 2021 04:56:31 p.m.</span>
-	<span class='label end-time'>Mar. 28, 2021 04:56:46 p.m.</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 15s+235ms</span>
+	<span class='label start-time'>Mar. 28, 2021 07:21:16 p.m.</span>
+	<span class='label end-time'>Mar. 28, 2021 07:21:20 p.m.</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+907ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -300,23 +199,15 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:56:31 p.m.</td>
+				<td class='timestamp'>7:21:20 p.m.</td>
 				<td class='step-details'>
-						Patient editing user account information
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:56:46 p.m.</td>
-				<td class='step-details'>
-						Patint saved user account information
+						Patient Logged in
 					
 				</td>
 			</tr>
 			<tr class='log' status='pass'>
 				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:56:46 p.m.</td>
+				<td class='timestamp'>7:21:20 p.m.</td>
 				<td class='step-details'>
 						Test Passed
 					
@@ -327,17 +218,52 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='6'>
 					<div class='test-heading'>
-						<span class='test-name'>Patient Uploads profile pic</span>
-						<span class='test-time'>Mar. 28, 2021 04:56:46 p.m.</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-name'>Patient Edits Profile - Personal Information</span>
+						<span class='test-time'>Mar. 28, 2021 07:21:20 p.m.</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar. 28, 2021 04:56:46 p.m.</span>
-	<span class='label end-time'>Mar. 28, 2021 04:56:50 p.m.</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+161ms</span>
+	<span class='label start-time'>Mar. 28, 2021 07:21:20 p.m.</span>
+	<span class='label end-time'>Mar. 28, 2021 07:21:40 p.m.</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 20s+668ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>7:21:40 p.m.</td>
+				<td class='step-details'>
+						Test Failed Expected condition failed: waiting for element to be clickable: By.xpath: //a[@href='/profile'] (tried for 15 second(s) with 500 milliseconds interval)
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='/Users/sarikadhall/Desktop/Framework/Screenshots/Screenshot_40_21_19_28_03_2021.png' src='/Users/sarikadhall/Desktop/Framework/Screenshots/Screenshot_40_21_19_28_03_2021.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='8'>
+					<div class='test-heading'>
+						<span class='test-name'>Patient Edits Profile -  Account Information</span>
+						<span class='test-time'>Mar. 28, 2021 07:21:40 p.m.</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar. 28, 2021 07:21:40 p.m.</span>
+	<span class='label end-time'>Mar. 28, 2021 07:22:07 p.m.</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 26s+716ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -351,7 +277,50 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:56:46 p.m.</td>
+				<td class='timestamp'>7:21:40 p.m.</td>
+				<td class='step-details'>
+						Patient editing user account information
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>7:22:07 p.m.</td>
+				<td class='step-details'>
+						Test Failed Expected condition failed: waiting for element to be clickable: By.xpath: //a[@href='/profile'] (tried for 15 second(s) with 500 milliseconds interval)
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='/Users/sarikadhall/Desktop/Framework/Screenshots/Screenshot_07_22_19_28_03_2021.png' src='/Users/sarikadhall/Desktop/Framework/Screenshots/Screenshot_07_22_19_28_03_2021.png'>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='10'>
+					<div class='test-heading'>
+						<span class='test-name'>Patient Uploads profile pic</span>
+						<span class='test-time'>Mar. 28, 2021 07:22:07 p.m.</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Mar. 28, 2021 07:22:07 p.m.</span>
+	<span class='label end-time'>Mar. 28, 2021 07:22:30 p.m.</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 22s+726ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>7:22:07 p.m.</td>
 				<td class='step-details'>
 						Patint logged and navigates to Account Page
 					
@@ -359,26 +328,26 @@
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:56:46 p.m.</td>
+				<td class='timestamp'>7:22:07 p.m.</td>
 				<td class='step-details'>
 						Patient uploading profile pic
 					
 				</td>
 			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:56:50 p.m.</td>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>7:22:30 p.m.</td>
 				<td class='step-details'>
-						Patint uploaded profile pic
-					
-				</td>
-			</tr>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:56:50 p.m.</td>
-				<td class='step-details'>
-						Test Passed
-					
+						Test Failed no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@type='file'])[1]"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:1084:64bd:1f43:a57b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 88.0.4324.27 (6347fe8bf1e48..., userDataDir: /var/folders/l9/4pwqxcnj26b...}, goog:chromeOptions: {debuggerAddress: localhost:62574}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0677e41de253627d5039f749418abac1
+*** Element info: {Using=xpath, value=(//input[@type='file'])[1]}
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='/Users/sarikadhall/Desktop/Framework/Screenshots/Screenshot_29_22_19_28_03_2021.png' src='/Users/sarikadhall/Desktop/Framework/Screenshots/Screenshot_29_22_19_28_03_2021.png'>
 				</td>
 			</tr>
 		</tbody>
@@ -386,17 +355,17 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='12'>
 					<div class='test-heading'>
 						<span class='test-name'>Patient Uploads government ID</span>
-						<span class='test-time'>Mar. 28, 2021 04:56:50 p.m.</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Mar. 28, 2021 07:22:30 p.m.</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar. 28, 2021 04:56:50 p.m.</span>
-	<span class='label end-time'>Mar. 28, 2021 04:56:55 p.m.</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+265ms</span>
+	<span class='label start-time'>Mar. 28, 2021 07:22:30 p.m.</span>
+	<span class='label end-time'>Mar. 28, 2021 07:22:52 p.m.</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 22s+487ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -410,7 +379,7 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:56:50 p.m.</td>
+				<td class='timestamp'>7:22:30 p.m.</td>
 				<td class='step-details'>
 						Patient logged and navigates to Account Page
 					
@@ -418,26 +387,26 @@
 			</tr>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:56:50 p.m.</td>
+				<td class='timestamp'>7:22:30 p.m.</td>
 				<td class='step-details'>
 						Patient uploading government ID
 					
 				</td>
 			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:56:55 p.m.</td>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>7:22:52 p.m.</td>
 				<td class='step-details'>
-						Patient uploaded Govt ID
-					
-				</td>
-			</tr>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:56:55 p.m.</td>
-				<td class='step-details'>
-						Test Passed
-					
+						Test Failed no such element: Unable to locate element: {"method":"xpath","selector":"(//input[@type='file'])[2]"}
+  (Session info: chrome=89.0.4389.90)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:1084:64bd:1f43:a57b%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.90, chrome: {chromedriverVersion: 88.0.4324.27 (6347fe8bf1e48..., userDataDir: /var/folders/l9/4pwqxcnj26b...}, goog:chromeOptions: {debuggerAddress: localhost:62574}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0677e41de253627d5039f749418abac1
+*** Element info: {Using=xpath, value=(//input[@type='file'])[2]}
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='/Users/sarikadhall/Desktop/Framework/Screenshots/Screenshot_52_22_19_28_03_2021.png' src='/Users/sarikadhall/Desktop/Framework/Screenshots/Screenshot_52_22_19_28_03_2021.png'>
 				</td>
 			</tr>
 		</tbody>
@@ -445,17 +414,17 @@
 </div>
 					</div>
 				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='14'>
 					<div class='test-heading'>
 						<span class='test-name'>Verify Family Tab</span>
-						<span class='test-time'>Mar. 28, 2021 04:56:55 p.m.</span>
-						<span class='test-status right pass'>pass</span>
+						<span class='test-time'>Mar. 28, 2021 07:22:52 p.m.</span>
+						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Mar. 28, 2021 04:56:55 p.m.</span>
-	<span class='label end-time'>Mar. 28, 2021 04:56:57 p.m.</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 2s+805ms</span>
+	<span class='label start-time'>Mar. 28, 2021 07:22:52 p.m.</span>
+	<span class='label end-time'>Mar. 28, 2021 07:23:15 p.m.</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 22s+408ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -469,453 +438,18 @@
 		<tbody>
 			<tr class='log' status='info'>
 				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:56:55 p.m.</td>
+				<td class='timestamp'>7:22:52 p.m.</td>
 				<td class='step-details'>
 						Patient logged and navigates to Family Tab
 					
 				</td>
 			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:56:57 p.m.</td>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>7:23:15 p.m.</td>
 				<td class='step-details'>
-						Create a family link validated
-					
-				</td>
-			</tr>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:56:57 p.m.</td>
-				<td class='step-details'>
-						Test Passed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
-					<div class='test-heading'>
-						<span class='test-name'>Verify Family Tab and Add Child</span>
-						<span class='test-time'>Mar. 28, 2021 04:56:57 p.m.</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Mar. 28, 2021 04:56:57 p.m.</span>
-	<span class='label end-time'>Mar. 28, 2021 04:57:08 p.m.</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 10s+29ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:56:57 p.m.</td>
-				<td class='step-details'>
-						Patient logged and navigates to Family Tab
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:56:57 p.m.</td>
-				<td class='step-details'>
-						Patient adding a child
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:57:07 p.m.</td>
-				<td class='step-details'>
-						Patient Added Child
-					
-				</td>
-			</tr>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:57:08 p.m.</td>
-				<td class='step-details'>
-						Test Passed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
-					<div class='test-heading'>
-						<span class='test-name'>Verify Family Tab and Delete Child</span>
-						<span class='test-time'>Mar. 28, 2021 04:57:08 p.m.</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Mar. 28, 2021 04:57:08 p.m.</span>
-	<span class='label end-time'>Mar. 28, 2021 04:57:13 p.m.</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+349ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:57:08 p.m.</td>
-				<td class='step-details'>
-						Patient logged and navigates to Family Tab
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:57:08 p.m.</td>
-				<td class='step-details'>
-						Patient deleting a child
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:57:13 p.m.</td>
-				<td class='step-details'>
-						Patient Deleted Child
-					
-				</td>
-			</tr>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:57:13 p.m.</td>
-				<td class='step-details'>
-						Test Passed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
-					<div class='test-heading'>
-						<span class='test-name'>Patient Starts Video Consultation</span>
-						<span class='test-time'>Mar. 28, 2021 04:57:13 p.m.</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Mar. 28, 2021 04:57:13 p.m.</span>
-	<span class='label end-time'>Mar. 28, 2021 04:57:13 p.m.</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+576ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:57:13 p.m.</td>
-				<td class='step-details'>
-						Patint logged and navigates to Home Page
-					
-				</td>
-			</tr>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:57:13 p.m.</td>
-				<td class='step-details'>
-						Validating Home Page Url
-					
-				</td>
-			</tr>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:57:13 p.m.</td>
-				<td class='step-details'>
-						Test Passed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
-					<div class='test-heading'>
-						<span class='test-name'>Patient performing Device Check</span>
-						<span class='test-time'>Mar. 28, 2021 04:57:13 p.m.</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Mar. 28, 2021 04:57:13 p.m.</span>
-	<span class='label end-time'>Mar. 28, 2021 04:57:18 p.m.</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+923ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:57:18 p.m.</td>
-				<td class='step-details'>
-						Patint device check completed
-					
-				</td>
-			</tr>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:57:18 p.m.</td>
-				<td class='step-details'>
-						Test Passed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='12'>
-					<div class='test-heading'>
-						<span class='test-name'>Patient filling Intake Form</span>
-						<span class='test-time'>Mar. 28, 2021 04:57:18 p.m.</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Mar. 28, 2021 04:57:18 p.m.</span>
-	<span class='label end-time'>Mar. 28, 2021 04:57:27 p.m.</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 8s+730ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:57:27 p.m.</td>
-				<td class='step-details'>
-						Patint device check completed
-					
-				</td>
-			</tr>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:57:27 p.m.</td>
-				<td class='step-details'>
-						Test Passed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='13'>
-					<div class='test-heading'>
-						<span class='test-name'>Patient end the Visit</span>
-						<span class='test-time'>Mar. 28, 2021 04:57:27 p.m.</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Mar. 28, 2021 04:57:27 p.m.</span>
-	<span class='label end-time'>Mar. 28, 2021 04:57:30 p.m.</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+281ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:57:30 p.m.</td>
-				<td class='step-details'>
-						Patint device check completed
-					
-				</td>
-			</tr>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:57:30 p.m.</td>
-				<td class='step-details'>
-						Test Passed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='14'>
-					<div class='test-heading'>
-						<span class='test-name'>Patient providing rating and feedback</span>
-						<span class='test-time'>Mar. 28, 2021 04:57:30 p.m.</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Mar. 28, 2021 04:57:30 p.m.</span>
-	<span class='label end-time'>Mar. 28, 2021 04:57:35 p.m.</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+328ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:57:35 p.m.</td>
-				<td class='step-details'>
-						Patient provided feeback
-					
-				</td>
-			</tr>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:57:35 p.m.</td>
-				<td class='step-details'>
-						Test Passed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='15'>
-					<div class='test-heading'>
-						<span class='test-name'>Patient navigating to Help Page</span>
-						<span class='test-time'>Mar. 28, 2021 04:57:35 p.m.</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Mar. 28, 2021 04:57:35 p.m.</span>
-	<span class='label end-time'>Mar. 28, 2021 04:57:38 p.m.</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 3s+645ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:57:38 p.m.</td>
-				<td class='step-details'>
-						Help Page Header verified
-					
-				</td>
-			</tr>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:57:38 p.m.</td>
-				<td class='step-details'>
-						Test Passed
-					
-				</td>
-			</tr>
-		</tbody>
-	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='16'>
-					<div class='test-heading'>
-						<span class='test-name'>Patient navigating to Inbox Page</span>
-						<span class='test-time'>Mar. 28, 2021 04:57:38 p.m.</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Mar. 28, 2021 04:57:38 p.m.</span>
-	<span class='label end-time'>Mar. 28, 2021 04:57:44 p.m.</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 5s+271ms</span>
-</div>
-<div class='test-steps'>
-	<table class='bordered table-results'>
-		<thead>
-			<tr>
-				<th>Status</th>
-				<th>Timestamp</th>
-				<th>Details</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr class='log' status='info'>
-				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
-				<td class='timestamp'>4:57:44 p.m.</td>
-				<td class='step-details'>
-						Help Page Header verified
-					
-				</td>
-			</tr>
-			<tr class='log' status='pass'>
-				<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-				<td class='timestamp'>4:57:44 p.m.</td>
-				<td class='step-details'>
-						Test Passed
-					
+						Test Failed Expected condition failed: waiting for element to be clickable: By.xpath: //a[text()=' Family '] (tried for 15 second(s) with 500 milliseconds interval)
+					<img class='r-img' onerror='this.style.display="none"' data-featherlight='/Users/sarikadhall/Desktop/Framework/Screenshots/Screenshot_14_23_19_28_03_2021.png' src='/Users/sarikadhall/Desktop/Framework/Screenshots/Screenshot_14_23_19_28_03_2021.png'>
 				</td>
 			</tr>
 		</tbody>
@@ -951,7 +485,7 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>16</div>
+					<div class='panel-lead'>7</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -963,19 +497,19 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Mar. 28, 2021 04:55:48 p.m.</div>
+					<div class='panel-lead'>Mar. 28, 2021 07:21:05 p.m.</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Mar. 28, 2021 04:57:44 p.m.</div>
+			 		<div class='panel-lead'>Mar. 28, 2021 07:23:15 p.m.</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 1m 55s+763ms</div>
+					<div class='panel-lead'>0h 2m 9s+811ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -1010,14 +544,14 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 16,
-				passParent: 16,
-				failParent: 0,
+                parentCount: 7,
+				passParent: 2,
+				failParent: 5,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
+				exceptionsParent: 5,
 				childCount: 0,
 				passChild: 0,
 				failChild: 0,
@@ -1042,7 +576,7 @@
 		</script>
 		<script>
 			var timeline = {
-			        "Staging Web Application Login URL validation":0.036,"Login as patient - Individual Paying Customer":13.226,"Patient Edits Profile - Personal Information":16.298,"Patient Edits Profile -  Account Information":15.235,"Patient Uploads profile pic":4.161,"Patient Uploads government ID":4.265,"Verify Family Tab":2.805,"Verify Family Tab and Add Child":10.029,"Verify Family Tab and Delete Child":5.349,"Patient Starts Video Consultation":0.576,"Patient performing Device Check":4.923,"Patient filling Intake Form":8.73,"Patient end the Visit":3.281,"Patient providing rating and feedback":4.328,"Patient navigating to Help Page":3.645,"Patient navigating to Inbox Page":5.271
+			        "Staging Web Application Login URL validation":0.04,"Login as patient - Individual Paying Customer":3.907,"Patient Edits Profile - Personal Information":20.668,"Patient Edits Profile -  Account Information":26.716,"Patient Uploads profile pic":22.726,"Patient Uploads government ID":22.487,"Verify Family Tab":22.408
 			};
 		</script>
 	

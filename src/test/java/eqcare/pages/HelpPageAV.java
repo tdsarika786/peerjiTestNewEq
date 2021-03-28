@@ -27,6 +27,8 @@ public class HelpPageAV {
 	By homeButton = By.xpath("//a[contains(text(), 'Homepage')]");
 
 	By visitFeedbackInput = By.xpath("//textarea[@name='textFieldInput']");
+	
+	By helpLink = By.xpath("//a[@href='/help']");
 
 	public void verifyFeedbackPageUrl()
 
@@ -37,8 +39,10 @@ public class HelpPageAV {
 	}
 
 	public void navigateToHelpPage() {
+		
+		Utility.waitForWebElement(driver, helpLink);
 
-		Utility.navigateToURL(driver, DataProviderFactory.getConfig().getValue("help"));
+		//Utility.navigateToURL(driver, DataProviderFactory.getConfig().getValue("help"));
 
 		Utility.wait(2);
 

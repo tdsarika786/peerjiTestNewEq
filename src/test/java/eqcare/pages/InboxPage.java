@@ -31,6 +31,8 @@ public class InboxPage {
 	By appointmentsLink = By.xpath("//a[text()=' Appointments ']");
 
 	By inboxHeader = By.xpath("//h1");
+	
+	By inboxLink = By.xpath("//a[@href='/profile/inbox']");
 
 	public void verifyFeedbackPageUrl()
 
@@ -50,9 +52,11 @@ public class InboxPage {
 
 	}
 
-	public void navigateToInboxPage() {
+	public void navigateToInboxPage() {	
 
-		Utility.navigateToURL(driver, DataProviderFactory.getConfig().getValue("inbox"));
+		Utility.waitForWebElement(driver, inboxLink);
+		
+		//Utility.navigateToURL(driver, DataProviderFactory.getConfig().getValue("inbox"));
 
 		Utility.wait(2);
 

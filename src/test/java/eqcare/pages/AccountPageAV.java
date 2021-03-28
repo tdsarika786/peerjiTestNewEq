@@ -197,6 +197,8 @@ public class AccountPageAV extends runWithAttachments {
 	By deleteChildLink = By.xpath("(//a[text()=' Delete '])[1]");
 
 	By deleteChildYesBtn = By.xpath("//a[text()=' Yes ']");
+	
+	By profileLink = By.xpath("//a[@href='/profile']");
 
 	public void verifyAccountPageUrl()
 
@@ -754,8 +756,10 @@ public class AccountPageAV extends runWithAttachments {
 	}
 
 	public void navigateToProfilePage() {
+		
+		Utility.waitForWebElement(driver, profileLink);
 
-		Utility.navigateToURL(driver, DataProviderFactory.getConfig().getValue("ponyProfile"));
+		//Utility.navigateToURL(driver, DataProviderFactory.getConfig().getValue("ponyProfile"));
 
 		Utility.wait(2);
 	}
