@@ -1,4 +1,5 @@
-package LifeJourneyAutomatedTests;
+package eqcare.peerjitestcases;
+
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Parameters;
@@ -50,6 +51,8 @@ public class TC2_RegisterationScenarios extends BaseClass {
 	
 	//sarikaqa7+b1@gmail.com  = Individual
 	//sarikaqa7+c1@gmail.com  = Covered Single
+	
+	//QA1 - sarikaqa7+qa1@gmail.com
 
 	@Test(priority = 1, dependsOnMethods = "verifyPage", enabled=false)
 	public void validInputRegisterationTest() {
@@ -59,19 +62,10 @@ public class TC2_RegisterationScenarios extends BaseClass {
 		logger = report.createTest("Individual-paying Patient Register with required and optional fields");
 
 		register.notEnrolledUser();
-		
-		//register.EnrolledUser();
 
 		logger.info("Validated not Enrolled link");
 
-		// register.Registeration(DataProviderFactory.getExcel().getCellData("Users", 2,
-		// 0),
-		
-		//paying customer
-		
-		//sarikaqa7+eqserstglj1@gmail.com
-
-		register.Registeration("sarikaqa7+eqserstglj1@gmail.com",
+		register.Registeration("sarikaqa7+b1@gmail.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
@@ -102,14 +96,13 @@ public class TC2_RegisterationScenarios extends BaseClass {
 
 	}
 	
-	
 	@Parameters({"Email","CoverageToken","CoverageIdentifier"})
 	@Test(priority = 2, dependsOnMethods = "verifyPage")
 	public void validInputEnrolledRegisterationTest(String email, String coveragetoken, String coverageidentifier) {
 
 		logger = report.createTest("Enrolled Patient Register with required and optional fields");
 
-		register.EnrolledUser();
+		//register.EnrolledUser();
 
 		logger.info("Validated Enrolled link");
 		
@@ -146,7 +139,5 @@ public class TC2_RegisterationScenarios extends BaseClass {
 		
 		//register.runTestResults("29754306","0");
 	}
-
-	
 
 }

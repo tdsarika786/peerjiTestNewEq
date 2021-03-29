@@ -110,7 +110,7 @@ public class RegistrationPage extends runWithAttachments {
 	public void verifyUrlBeforeRegister()
 
 	{
-		clickOnRegisterButton();
+		//clickOnRegisterButton();
 
 		Utility.verifyURLContains(driver, "register");
 
@@ -147,18 +147,22 @@ public class RegistrationPage extends runWithAttachments {
 		Utility.waitForWebElement(driver, coverageButton).click(); // New EQCare
 	}
 
-	public void EnrolledUserWithValidInput() {
+	public void EnrolledUserWithValidInput(String coveragetoken, String coverageidentifier) {
 
 		//Utility.waitForWebElement(driver, groupNoInput).sendKeys("7171");
 		
 		//Bell Test Sarika , Gp No - 7710
 		
-		Utility.waitForWebElement(driver, groupNoInput).sendKeys("77");
+		//Utility.waitForWebElement(driver, groupNoInput).sendKeys("77");
+		
+		Utility.waitForWebElement(driver, groupNoInput).sendKeys(coveragetoken);
 
 		Utility.waitForWebElement(driver, groupNumberLink).click();
 
 		// PEERJI
-		Utility.waitForWebElement(driver, coverageIdentifierInput).sendKeys("b2");
+		//Utility.waitForWebElement(driver, coverageIdentifierInput).sendKeys("b2");
+		
+		Utility.waitForWebElement(driver, coverageIdentifierInput).sendKeys(coverageidentifier);
 
 		Utility.wait(2);
 

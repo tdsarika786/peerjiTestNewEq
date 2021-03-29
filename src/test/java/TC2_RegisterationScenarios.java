@@ -1,6 +1,7 @@
 
 
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import NotRequiredClasses.ContactUsPage;
@@ -94,21 +95,21 @@ public class TC2_RegisterationScenarios extends BaseClass {
 
 	}
 	
-	
+	@Parameters({"Email","CoverageToken","CoverageIdentifier"})
 	@Test(priority = 2, dependsOnMethods = "verifyPage")
-	public void validInputEnrolledRegisterationTest() {
+	public void validInputEnrolledRegisterationTest(String email, String coveragetoken, String coverageidentifier) {
 
 		logger = report.createTest("Enrolled Patient Register with required and optional fields");
 
-		register.EnrolledUser();
+		//register.EnrolledUser();
 
 		logger.info("Validated Enrolled link");
 		
-		register.EnrolledUserWithValidInput();
+		register.EnrolledUserWithValidInput(coveragetoken,coverageidentifier);
 		
 		//LJ - sarikaqa7+ljno1@gmail.com - Life Journey None
 		
-		register.Registeration("sarikaqa7+a1@gmail.com",
+		register.Registeration(email,
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),

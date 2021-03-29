@@ -1,6 +1,7 @@
 package eqcare.testcases;
 
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import NotRequiredClasses.ContactUsPage;
@@ -100,9 +101,9 @@ public class TC5_EnrolledUserRegisteration4 extends BaseClass {
 		logger.info("Displayed valid error messages");
 
 	}
-
-	@Test(priority = 5, dependsOnMethods = "verifyPage")
-	public void validInputRegisterationTest() {
+	@Parameters({"Email","CoverageToken","CoverageIdentifier"})
+	@Test(priority = 2, dependsOnMethods = "verifyPage")
+	public void validInputEnrolledRegisterationTest1(String email, String coveragetoken, String coverageidentifier) {
 
 		logger = report.createTest("Enrolled Patient Register with required and optional fields");
 
@@ -110,12 +111,11 @@ public class TC5_EnrolledUserRegisteration4 extends BaseClass {
 
 		logger.info("Validated Enrolled link");
 		
-		register.EnrolledUserWithValidInput();
-
-		// register.Registeration(DataProviderFactory.getExcel().getCellData("Users", 2,
-		// 0),
-
-		register.Registeration("sarikaqa7+enro101@gmail.com",
+		register.EnrolledUserWithValidInput(coveragetoken,coverageidentifier);
+		
+		//LJ - sarikaqa7+ljno1@gmail.com - Life Journey None
+		
+		register.Registeration(email,
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
@@ -141,21 +141,26 @@ public class TC5_EnrolledUserRegisteration4 extends BaseClass {
 				// + DataProviderFactory.getExcel().getCellData("Users", 1, 0) + " with EQ
 				// Care");
 				+ "sarikaqa7+enro2@gmail.com" + " with EQ Care");
+		
+		//register.runTestResults("29754306","0");
 	}
 
-	@Test(priority = 6, dependsOnMethods = "verifyPage", enabled=false)
-	public void validInputRegisterationWithRequiredFields() {
-		logger = report.createTest("Enrolled Patient Registers with EQ Care by entering only required fields");
+	
+	@Parameters({"Email","CoverageToken","CoverageIdentifier"})
+	@Test(priority = 2, dependsOnMethods = "verifyPage")
+	public void validInputEnrolledRegisterationTest(String email, String coveragetoken, String coverageidentifier) {
+
+		logger = report.createTest("Enrolled Patient Register with required and optional fields");
 
 		register.EnrolledUser();
 
 		logger.info("Validated Enrolled link");
 		
-		register.EnrolledUserWithValidInput();
-
-		// register.Registeration(DataProviderFactory.getExcel().getCellData("Users", 2,
-		// 0),
-		register.Registeration("sarikaqa7+enr2@gmail.com",
+		register.EnrolledUserWithValidInput(coveragetoken,coverageidentifier);
+		
+		//LJ - sarikaqa7+ljno1@gmail.com - Life Journey None
+		
+		register.Registeration(email,
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
@@ -169,15 +174,22 @@ public class TC5_EnrolledUserRegisteration4 extends BaseClass {
 				DataProviderFactory.getExcel().getCellData("Users", 2, 8),
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 9),
-				DataProviderFactory.getExcel().getCellData("Users", 2, 10), false);
+				DataProviderFactory.getExcel().getCellData("Users", 2, 10), true);
 
 		register.registerationCompleteWithValidInput();
 
 		logger.info("Required fields entered by user");
 
-		logger.info("Registeration complete for Enrolled User - " + "sarikaqa7+nr1@gmail.com" + " with EQ Care");
+		logger.info("Optional fields - Profile Pic, Medical Card, Address 2, Health Card entered by user");
 
+		logger.info("Registeration complete for self-paying patient - "
+				// + DataProviderFactory.getExcel().getCellData("Users", 1, 0) + " with EQ
+				// Care");
+				+ "sarikaqa7+enro2@gmail.com" + " with EQ Care");
+		
+		//register.runTestResults("29754306","0");
 	}
+
 
 	@Test(priority = 7, dependsOnMethods = "verifyPage")
 	public void invalidInputRegisterationTest() {

@@ -79,6 +79,8 @@
 						<AppURL>${AppURL}</AppURL>
 							<Email>${Email}</Email>
 						<Password>${Password}</Password>
+						<AppURL>${CoverageToken}</AppURL>
+							<Email>${CoverageIdentifier}</Email>
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>
