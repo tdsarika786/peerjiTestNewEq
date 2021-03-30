@@ -143,7 +143,7 @@ public class LifeJourneyHomePage extends runWithAttachments {
 
 	public void navigateToHomePage() {
 
-		Utility.navigateToURL(driver, DataProviderFactory.getConfig().getValue("ponyHome"));
+		Utility.waitForWebElement(driver, homeLink).click();
 
 	}
 
