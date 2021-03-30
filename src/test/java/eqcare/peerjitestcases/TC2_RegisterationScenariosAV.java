@@ -1,6 +1,7 @@
 package eqcare.peerjitestcases;
 
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import NotRequiredClasses.ContactUsPage;
@@ -50,8 +51,9 @@ public class TC2_RegisterationScenariosAV extends BaseClass {
 
 	// 1. Individual Paying Patient register to EQ Care using automation
 
+	@Parameters({"Email"})
 	@Test(priority = 1, dependsOnMethods = "verifyPage")
-	public void validInputRegisterationTestForPatients() {
+	public void validInputRegisterationTestForPatients(String email) {
 
 		register = PageFactory.initElements(driver, RegistrationPageAV.class);
 
@@ -72,7 +74,7 @@ public class TC2_RegisterationScenariosAV extends BaseClass {
 		//https://eqcare.atlassian.net/browse/EQCARE-1240
 		
 				//prodmy1
-				register.Registeration("sarikaqa7+envqa3en2@gmail.com",
+				register.Registeration(email,
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
