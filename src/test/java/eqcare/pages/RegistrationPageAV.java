@@ -113,7 +113,7 @@ public class RegistrationPageAV extends runWithAttachments {
 	public void verifyUrlBeforeRegister()
 
 	{
-		clickOnRegisterButton();
+		//clickOnRegisterButton();
 
 		Utility.verifyURLContains(driver, "register");
 
@@ -145,7 +145,7 @@ public class RegistrationPageAV extends runWithAttachments {
 
 	public void EnrolledUser() {
 
-		navigateToRegisterationPage();
+		//navigateToRegisterationPage();
 
 		Utility.waitForWebElement(driver, coverageButton).click();
 	}
