@@ -81,6 +81,7 @@
 						<Password>${Password}</Password>
 						<AppURL>${CoverageToken}</AppURL>
 							<Email>${CoverageIdentifier}</Email>
+							<ProjectRun>${ProjectRun}</ProjectRun>
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>
