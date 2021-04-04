@@ -24,7 +24,7 @@ public class ConfigProvider {
 			//Dmtry-stagq=9
 			//life journey - 2
 			//life journey prod - 10
-			pro.load(new FileInputStream(new File(System.getProperty("user.dir")+"/Config/configEqcare_Peerji.properties")));
+			pro.load(new FileInputStream(new File(System.getProperty("user.dir")+"/Config/configEqcareq1.properties")));
 		} catch (FileNotFoundException e) {
 			
 		} catch (IOException e) {

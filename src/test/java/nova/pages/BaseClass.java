@@ -93,8 +93,8 @@ public class BaseClass {
 		
 		
 		
-		driver=BrowserFactory.getApplication(DataProviderFactory.getConfig().getValue("Browser"),
-			DataProviderFactory.getConfig().getValue("novaEnv"));
+		//driver=BrowserFactory.getApplication(DataProviderFactory.getConfig().getValue("Browser"),
+		//	DataProviderFactory.getConfig().getValue("novaEnv"));
 		
 		driver.manage().window().maximize();
 		

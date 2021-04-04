@@ -20,13 +20,19 @@ public class BrowserFactory {
 		System.out.println("LOG:INFO- Session closed");
 	}
 
-	public static WebDriver getApplication(String browser, String appURL) {
+	public static WebDriver getApplication(String browser, String appURL, String projectrun) {
 		WebDriver driver = null;
 
 		if (browser.equalsIgnoreCase("Chrome")) {
 			// System.setProperty("webdriver.chrome.driver",
 			// System.getProperty("user.dir")+"/Drivers/chromedriver1");
+			
+			if (projectrun.equalsIgnoreCase("eq")) {
 			System.setProperty("webdriver.chrome.driver", "/Users/sarikadhall/Documents/ChromeDriver/chromedriver-88");
+			}
+			else {
+				System.setProperty("webdriver.chrome.driver", "/Users/sarika/Documents/ChromeDriver/chromedriver-89");
+			}
 
 			// ChromeOptions optionsC = new ChromeOptions();
 			// optionsC.addArguments(Arrays.asList("disable-infobars",

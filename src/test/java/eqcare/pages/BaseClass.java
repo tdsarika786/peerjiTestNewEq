@@ -96,16 +96,16 @@ public class BaseClass implements ITestListener {
 		report.flush();
 	}
 
-	@Parameters({"Browser","AppURL"})
+	@Parameters({"Browser","AppURL", "ProjectRun"})
 	@BeforeClass
-	public void setUp(String browser, String appurl) {
+	public void setUp(String browser, String appurl, String projectrun) {
 		System.out.println("Log:INFO- Setting up Browser and Application");
 
 		//driver = BrowserFactory.getApplication(DataProviderFactory.getConfig().getValue("Browser"),
 		//		DataProviderFactory.getConfig().getValue("ponyEnv"));
 		
 		driver = BrowserFactory.getApplication(browser,
-						appurl);
+						appurl, projectrun);
 
 		driver.manage().window().maximize();
 		

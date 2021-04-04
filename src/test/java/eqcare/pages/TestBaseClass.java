@@ -32,8 +32,8 @@ public class TestBaseClass {
 	public void setUp() {
 		System.out.println("Log:INFO- Setting up Browser and Application");
 
-		driver = BrowserFactory.getApplication(DataProviderFactory.getConfig().getValue("Browser"),
-				DataProviderFactory.getConfig().getValue("ponyEnv"));
+	//	driver = BrowserFactory.getApplication(DataProviderFactory.getConfig().getValue("Browser"),
+	//			DataProviderFactory.getConfig().getValue("ponyEnv"));
 
 		driver.manage().window().maximize();
 
