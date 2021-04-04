@@ -74,7 +74,7 @@ public class TC1_EndToEndScenarios extends BaseClass {
 		logger.info("Patient Logged in");
 	}
 
-	@Test(priority = 2, dependsOnMethods = "verifyPage")
+	@Test(priority = 2, dependsOnMethods = "loginToApplication")
 	public void editPersonalInformation() throws Exception {
 
 		account = PageFactory.initElements(driver, AccountPage.class);
@@ -95,7 +95,7 @@ public class TC1_EndToEndScenarios extends BaseClass {
 
 	}
 
-	@Test(priority = 3, dependsOnMethods = "verifyPage")
+	@Test(priority = 3, dependsOnMethods = "loginToApplication")
 	public void editAccountInformation() throws Exception {
 
 		account = PageFactory.initElements(driver, AccountPage.class);
@@ -127,7 +127,7 @@ public class TC1_EndToEndScenarios extends BaseClass {
 
 	}
 
-	@Test(priority = 5, dependsOnMethods = "verifyPage")
+	@Test(priority = 5, dependsOnMethods = "loginToApplication")
 	public void uploadGovernmentID() throws Exception {
 
 		account = PageFactory.initElements(driver, AccountPage.class);
@@ -144,7 +144,7 @@ public class TC1_EndToEndScenarios extends BaseClass {
 
 	}
 
-	@Test(priority = 6, dependsOnMethods = "verifyPage")
+	@Test(priority = 6, dependsOnMethods = "loginToApplication")
 	public void familyTab() throws Exception {
 
 		account = PageFactory.initElements(driver, AccountPage.class);
@@ -159,7 +159,7 @@ public class TC1_EndToEndScenarios extends BaseClass {
 
 	}
 
-	@Test(priority = 7, dependsOnMethods = "verifyPage")
+	@Test(priority = 7, dependsOnMethods = "loginToApplication")
 	public void addChild() throws Exception {
 
 		account = PageFactory.initElements(driver, AccountPage.class);
@@ -176,7 +176,7 @@ public class TC1_EndToEndScenarios extends BaseClass {
 
 	}
 
-	@Test(priority = 8, dependsOnMethods = "verifyPage")
+	@Test(priority = 8, dependsOnMethods = "loginToApplication")
 	public void deleteChild() throws Exception {
 
 		account = PageFactory.initElements(driver, AccountPage.class);
