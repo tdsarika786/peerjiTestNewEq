@@ -190,7 +190,7 @@ public class AccountPageAV extends runWithAttachments {
 
 	By addToFamilyBtn = By.xpath("//a[text()=' Add to Family ']");
 
-	By confirmationChildAddedPopUp = By.xpath("//h2[text()='Child Added']");
+	By confirmationChildAddedPopUp = By.xpath("//h2[text()='Dependant Added']");
 
 	By addChildDoneLink = By.xpath("(//a[text()=' Done '])[1]");
 
@@ -557,7 +557,7 @@ public class AccountPageAV extends runWithAttachments {
 
 		WebElement ele = Utility.waitForWebElement(driver, confirmationChildAddedPopUp);
 		String confirmationText = ele.getText();
-		Assert.assertEquals(confirmationText, "Child Added");
+		Assert.assertEquals(confirmationText, "Dependant Added");
 
 		Utility.waitForWebElement(driver, addChildDoneLink).click();
 		

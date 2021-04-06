@@ -110,7 +110,7 @@ public class TC1_EndToEndScenarios extends BaseClass {
 
 	}
 
-	@Test(priority = 4, dependsOnMethods = "verifyPage")
+	@Test(priority = 4, dependsOnMethods = "loginToApplication")
 	public void uploadProfilePic() throws Exception {
 
 		account = PageFactory.initElements(driver, AccountPage.class);

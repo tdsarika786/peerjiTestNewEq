@@ -58,7 +58,7 @@ public class Novapeerji extends BaseClass {
 	}
 	
 	@Parameters({"SearchEmployer","CoverageToken"})
-	@Test(priority = 1, dependsOnMethods = "verifyPage")
+	@Test(priority = 1, dependsOnMethods = "loginToApplication")
 	public void CreateEmployer(String searchemployer, String coveragetoken) throws InterruptedException {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);

@@ -17,7 +17,7 @@ public class FeedbackPageAV {
 		this.driver = driver;
 	}
 
-	By ratingHeart = By.xpath("//div[@class='rating-heart-5']");
+	By ratingHeart = By.xpath("//div[@class='rating-5']");
 
 	By submitLink = By.xpath("//a[contains(text(), 'Submit')]");
 

@@ -56,7 +56,7 @@ public class TC1_LifeJourneyEndScenarios extends BaseClass {
 		logger.info("Validated Home Page Url");
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2, dependsOnMethods = "verifyPage")
 	public void verifyStartLifeJourney() throws Exception {
 		login = PageFactory.initElements(driver, LoginPage.class);
 		
@@ -93,7 +93,7 @@ public class TC1_LifeJourneyEndScenarios extends BaseClass {
 		logger.info("Validated Profile pic placeholder displayed to patient");
 	}
 	
-	@Test(priority = 3)
+	@Test(priority = 3, dependsOnMethods = "verifyPage")
 	public void verifyEQMedicalClinic() throws Exception {
 		login = PageFactory.initElements(driver, LoginPage.class);
 		
@@ -104,7 +104,7 @@ public class TC1_LifeJourneyEndScenarios extends BaseClass {
 		intakeForm.fillIntakeForm();
 	}
 	
-	@Test(priority = 4)
+	@Test(priority = 4, dependsOnMethods = "verifyPage")
 	public void verifyflowerInformation() throws Exception {
 		
 		intakeForm = PageFactory.initElements(driver, LifeJourneyIntakeFormPage.class);
