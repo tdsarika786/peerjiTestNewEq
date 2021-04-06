@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 25, Failures: 2, Errors: 0, Skipped: 22, Time elapsed: 38.629 s <<< FAILURE! - in TestSuite
+eqcare.peerjitestcases.TC1_EndToEndScenarios.loginToApplication  Time elapsed: 22.923 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(text(), 'Logout')] (tried for 15 second(s) with 500 milliseconds interval)
+	at eqcare.peerjitestcases.TC1_EndToEndScenarios.loginToApplication(TC1_EndToEndScenarios.java:72)
+Caused by: org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=89.0.4389.114)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Sarikas-MacBook-Pro.local', ip: 'fe80:0:0:0:4d7:8741:ad49:26a8%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/y7/70y7xh2n095...}, goog:chromeOptions: {debuggerAddress: localhost:57819}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0369d343a4c4331ad31ad50daaf65cb8
+*** Element info: {Using=xpath, value=//a[contains(text(), 'Logout')]}
+	at eqcare.peerjitestcases.TC1_EndToEndScenarios.loginToApplication(TC1_EndToEndScenarios.java:72)
+
+eqcare.peerjitestcases.TC1_EndToEndScenarios.tearDownReport  Time elapsed: 22.952 s  <<< FAILURE!
+org.openqa.selenium.NoSuchWindowException: 
+no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=89.0.4389.114)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Sarikas-MacBook-Pro.local', ip: 'fe80:0:0:0:4d7:8741:ad49:26a8%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 89.0.4389.114, chrome: {chromedriverVersion: 89.0.4389.23 (61b08ee2c5002..., userDataDir: /var/folders/y7/70y7xh2n095...}, goog:chromeOptions: {debuggerAddress: localhost:57819}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 0369d343a4c4331ad31ad50daaf65cb8
+
