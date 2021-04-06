@@ -40,7 +40,7 @@ public class NovaHomePage {
 	
 
 	//Modify Employee
-	By selectEqCareEmployee = By.xpath("//div[contains(text(),'Sarika-TestBellNew')]");
+	
 
 	// EMployer
 
@@ -80,7 +80,7 @@ public class NovaHomePage {
 		
 	}
 	
-	public void createEmployee(String coverageTokenString) {
+	public void createEmployee(String searchEmployer ,String CoverageIdentifier) {
 
 		Utility.waitForWebElement(driver, EmployeesLink).click();
 
@@ -92,13 +92,17 @@ public class NovaHomePage {
 
 		//Utility.waitForWebElement(driver, searchEmployerInput).sendKeys("Sarika-TestBasi");
 		
-		Utility.waitForWebElement(driver, searchEmployerInput).sendKeys("Sarika-TestBellNew");
+		Utility.waitForWebElement(driver, searchEmployerInput).sendKeys(searchEmployer);
 		
 
 		//Utility.waitForWebElement(driver, searchEmployerInput).sendKeys(Keys.ENTER);
 
 		// Actions builder = new Actions(driver);
 		// builder.sendKeys(Keys.chord(Keys.DOWN, Keys.DOWN)).perform();
+		
+		By selectEqCareEmployee = By.xpath("//div[contains(text(),'"+searchEmployer+"')]");
+		
+		System.out.println("xpath --------"+selectEqCareEmployee);
 
 		Utility.waitForWebElement(driver, selectEqCareEmployee).click();
 
@@ -115,7 +119,7 @@ public class NovaHomePage {
 		objProvince.selectByValue("QC");
 
 		// Change Token- 1
-		Utility.waitForWebElement(driver, coverageToken).sendKeys(coverageTokenString);
+		Utility.waitForWebElement(driver, coverageToken).sendKeys(CoverageIdentifier);
 
 		WebElement planTypeElement = driver.findElement(planTypeDropDwnList);
 
@@ -129,6 +133,7 @@ public class NovaHomePage {
 
 		Utility.waitForWebElement(driver, coverageStartDate).sendKeys("2021-03-02");
 		
+		Utility.waitForWebElement(driver, coverageStartDate).sendKeys(Keys.RETURN);
 		
 		WebElement checkBoxVip = driver.findElement(By.xpath("//input[@id='is_vip']"));
 
@@ -147,7 +152,7 @@ public class NovaHomePage {
 
 	}
 
-	public void createEmployer() {
+	public void createEmployer(String searchEmployer ,String CoverageToken) {
 
 		Utility.waitForWebElement(driver, EmployerLink).click();
 		
@@ -159,9 +164,9 @@ public class NovaHomePage {
 		//Utility.waitForWebElement(driver, createEmployerLink).click();
 
 		// Change ID for NEW Employer
-		Utility.waitForWebElement(driver, employerIDInput).sendKeys("77"); // Modify
+		Utility.waitForWebElement(driver, employerIDInput).sendKeys(CoverageToken); // Modify
 
-		Utility.waitForWebElement(driver, companyNameInput).sendKeys("Sarika-TestBellNew"); //Modify
+		Utility.waitForWebElement(driver, companyNameInput).sendKeys(searchEmployer); //Modify
 
 		// Select
 		WebElement coverageTokenElement = driver.findElement(selectCoverageTokenInput);
@@ -185,15 +190,15 @@ public class NovaHomePage {
 		
 		//*******************************Coverage Type************************************
 		
-		/*
+		
 		
 		WebElement coverageTypeElement = driver.findElement(selectCoverageType);
 
 		Select objCoverageType = new Select(coverageTypeElement);
 
-		Utility.waitForWebElement(driver, selectCoverageType).click();
+		//Utility.waitForWebElement(driver, selectCoverageType).click();
 		
-		*/
+		objCoverageType.selectByValue("lifejourney_gold");
 		
 		//*******************************Services************************************
 		
@@ -214,12 +219,14 @@ public class NovaHomePage {
 		
 		//*******************************Services************************************
 		
-		/*
+		
 		
 		WebElement buttonPrimaryCare = driver.findElement(By.xpath("//input[@name='primary_care']"));
 
 		JavascriptExecutor executor1 = (JavascriptExecutor) driver;
 		executor1.executeScript("arguments[0].click()", buttonPrimaryCare);
+		
+		/*
 		
 		//Checkbox
 		
@@ -280,6 +287,7 @@ public class NovaHomePage {
 		
 
 		Utility.waitForWebElement(driver, startDateInput).sendKeys("2020-08-01");
+		Utility.waitForWebElement(driver, startDateInput).sendKeys(Keys.RETURN);
 
 		//Utility.waitForWebElement(driver, createEmployerSubmitButton).click();
 		
@@ -287,8 +295,6 @@ public class NovaHomePage {
 
 		JavascriptExecutor executorSub = (JavascriptExecutor) driver;
 		executorSub.executeScript("arguments[0].click()", buttonSub);
-
-		Utility.wait(10000);
 
 	}
 

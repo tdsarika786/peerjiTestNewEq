@@ -57,7 +57,7 @@ public class NovaLifeJourneyEmployee extends BaseClass {
 
 		//home.createEmployer(); // First see if employer there
 		
-		home.createEmployee("Anu1"); // then create employee
+		//home.createEmployee("Anu1"); // then create employee
 		
 		//home.TestBrowser();
 

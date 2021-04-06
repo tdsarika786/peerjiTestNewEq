@@ -52,7 +52,7 @@ public class TC1_NovaCreateEmployee extends BaseClass {
 
 		// home.createEmployer(); // First see if employer there
 
-		home.createEmployee("LFG2"); // then create employee
+		//home.createEmployee("LFG2"); // then create employee
 
 		// home.TestBrowser();
 
