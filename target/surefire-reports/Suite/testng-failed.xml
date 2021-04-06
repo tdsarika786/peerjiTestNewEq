@@ -1,35 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
   <listeners>
     <listener class-name="eqcare.pages.Listeners"/>
   </listeners>
-  <test thread-count="5" verbose="0" name="Test(failed)">
+  <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="eqcare.peerjitestcases.TC1_EndToEndScenarios">
+      <class name="eqcare.peerjitestcases.TC2_RegisterationScenarios">
         <methods>
-          <include name="endVisit"/>
-          <include name="deleteChild"/>
-          <include name="tearDown"/>
           <include name="verifyPage"/>
-          <include name="familyTab"/>
-          <include name="tearDownReport"/>
-          <include name="loginToApplication" invocation-numbers="0"/>
-          <include name="deviceCheck"/>
-          <include name="uploadProfilePic"/>
-          <include name="editAccountInformation"/>
-          <include name="help"/>
+          <include name="validInputEnrolledRegisterationTest" invocation-numbers="0"/>
           <include name="setupReport"/>
-          <include name="startVideoConsultation"/>
-          <include name="fillIntakeFormWithAllFields"/>
-          <include name="uploadGovernmentID"/>
+          <include name="tearDown"/>
+          <include name="tearDownReport"/>
           <include name="setUp"/>
-          <include name="addChild"/>
-          <include name="feedback"/>
-          <include name="editPersonalInformation"/>
-          <include name="inbox"/>
         </methods>
-      </class> <!-- eqcare.peerjitestcases.TC1_EndToEndScenarios -->
+      </class> <!-- eqcare.peerjitestcases.TC2_RegisterationScenarios -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
