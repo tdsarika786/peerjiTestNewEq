@@ -82,6 +82,7 @@
 						<AppURL>${CoverageToken}</AppURL>
 							<Email>${CoverageIdentifier}</Email>
 							<ProjectRun>${ProjectRun}</ProjectRun>
+							<SearchEmployer>${SearchEmployer}</SearchEmployer>
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>
