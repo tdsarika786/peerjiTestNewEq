@@ -1,15 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 52.734 s <<< FAILURE! - in TestSuite
-eqcare.peerjitestcases.TC2_RegisterationScenarios.validInputEnrolledRegisterationTest  Time elapsed: 27.902 s  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[@data-role='plan-type-next'] (tried for 15 second(s) with 500 milliseconds interval)
-	at eqcare.peerjitestcases.TC2_RegisterationScenarios.validInputEnrolledRegisterationTest(TC2_RegisterationScenarios.java:109)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.xpath: //a[@data-role='plan-type-next']
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:10d1:112f:9ced:2d09%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '14.0.2'
-Driver info: driver.version: unknown
-	at eqcare.peerjitestcases.TC2_RegisterationScenarios.validInputEnrolledRegisterationTest(TC2_RegisterationScenarios.java:109)
-
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 91.151 s - in TestSuite

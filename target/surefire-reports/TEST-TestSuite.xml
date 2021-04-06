@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="52.734" tests="2" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="91.151" tests="4" errors="0" skipped="0" failures="0">
   <properties>
-    <property name="Email" value="sarikaqa7+qaeq1@gmail.com"/>
+    <property name="Email" value="sarikaqa7+ljgo@gmail.com"/>
     <property name="java.specification.version" value="14"/>
     <property name="webdriver.chrome.driver" value="/Users/sarikadhall/Documents/ChromeDriver/chromedriver-88"/>
     <property name="TestExecution" value="anu"/>
@@ -15,9 +15,8 @@
     <property name="java.vm.specification.version" value="14"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CA"/>
-    <property name="CoverageToken" value="70"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-14.0.2.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/sarikadhall/git/peerjiTestNewEq/target/surefire/surefirebooter2353626769380534724.jar /Users/sarikadhall/git/peerjiTestNewEq/target/surefire 2021-04-06T13-04-18_403-jvmRun1 surefire10736546001376666054tmp surefire_014677762175309527989tmp"/>
+    <property name="sun.java.command" value="/Users/sarikadhall/git/peerjiTestNewEq/target/surefire/surefirebooter18193396624145315312.jar /Users/sarikadhall/git/peerjiTestNewEq/target/surefire 2021-04-06T15-17-08_685-jvmRun1 surefire15490225241708388163tmp surefire_010573558203086286163tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/sarikadhall/git/peerjiTestNewEq/target/test-classes:/Users/sarikadhall/git/peerjiTestNewEq/target/classes:/Users/sarikadhall/.m2/repository/com/aventstack/extentreports/4.1.7/extentreports-4.1.7.jar:/Users/sarikadhall/.m2/repository/org/freemarker/freemarker/2.3.29/freemarker-2.3.29.jar:/Users/sarikadhall/.m2/repository/org/apache/httpcomponents/httpclient/4.5.2/httpclient-4.5.2.jar:/Users/sarikadhall/.m2/repository/org/apache/httpcomponents/httpmime/4.5.2/httpmime-4.5.2.jar:/Users/sarikadhall/.m2/repository/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar:/Users/sarikadhall/.m2/repository/org/mongodb/mongodb-driver/3.12.0/mongodb-driver-3.12.0.jar:/Users/sarikadhall/.m2/repository/org/mongodb/mongodb-driver-core/3.12.0/mongodb-driver-core-3.12.0.jar:/Users/sarikadhall/.m2/repository/org/mongodb/bson/3.12.0/bson-3.12.0.jar:/Users/sarikadhall/.m2/repository/org/apache/poi/poi/4.0.1/poi-4.0.1.jar:/Users/sarikadhall/.m2/repository/commons-codec/commons-codec/1.11/commons-codec-1.11.jar:/Users/sarikadhall/.m2/repository/org/apache/commons/commons-collections4/4.2/commons-collections4-4.2.jar:/Users/sarikadhall/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/Users/sarikadhall/.m2/repository/org/apache/poi/poi-ooxml/4.0.1/poi-ooxml-4.0.1.jar:/Users/sarikadhall/.m2/repository/org/apache/poi/poi-ooxml-schemas/4.0.1/poi-ooxml-schemas-4.0.1.jar:/Users/sarikadhall/.m2/repository/org/apache/xmlbeans/xmlbeans/3.0.2/xmlbeans-3.0.2.jar:/Users/sarikadhall/.m2/repository/org/apache/commons/commons-compress/1.18/commons-compress-1.18.jar:/Users/sarikadhall/.m2/repository/com/github/virtuald/curvesapi/1.05/curvesapi-1.05.jar:/Users/sarikadhall/.m2/repository/org/testng/testng/7.1.0/testng-7.1.0.jar:/Users/sarikadhall/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/sarikadhall/.m2/repository/com/google/inject/guice/4.1.0/guice-4.1.0-no_aop.jar:/Users/sarikadhall/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar:/Users/sarikadhall/.m2/repository/aopalliance/aopalliance/1.0/aopalliance-1.0.jar:/Users/sarikadhall/.m2/repository/org/yaml/snakeyaml/1.21/snakeyaml-1.21.jar:/Users/sarikadhall/.m2/repository/org/seleniumhq/selenium/selenium-java/3.14.0/selenium-java-3.14.0.jar:/Users/sarikadhall/.m2/repository/org/seleniumhq/selenium/selenium-api/3.14.0/selenium-api-3.14.0.jar:/Users/sarikadhall/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/3.14.0/selenium-chrome-driver-3.14.0.jar:/Users/sarikadhall/.m2/repository/org/seleniumhq/selenium/selenium-edge-driver/3.14.0/selenium-edge-driver-3.14.0.jar:/Users/sarikadhall/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/3.14.0/selenium-firefox-driver-3.14.0.jar:/Users/sarikadhall/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/3.14.0/selenium-ie-driver-3.14.0.jar:/Users/sarikadhall/.m2/repository/org/seleniumhq/selenium/selenium-opera-driver/3.14.0/selenium-opera-driver-3.14.0.jar:/Users/sarikadhall/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/3.14.0/selenium-remote-driver-3.14.0.jar:/Users/sarikadhall/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/3.14.0/selenium-safari-driver-3.14.0.jar:/Users/sarikadhall/.m2/repository/org/seleniumhq/selenium/selenium-support/3.14.0/selenium-support-3.14.0.jar:/Users/sarikadhall/.m2/repository/net/bytebuddy/byte-buddy/1.8.15/byte-buddy-1.8.15.jar:/Users/sarikadhall/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/sarikadhall/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/sarikadhall/.m2/repository/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar:/Users/sarikadhall/.m2/repository/com/google/code/findbugs/jsr305/1.3.9/jsr305-1.3.9.jar:/Users/sarikadhall/.m2/repository/org/checkerframework/checker-compat-qual/2.0.0/checker-compat-qual-2.0.0.jar:/Users/sarikadhall/.m2/repository/com/google/errorprone/error_prone_annotations/2.1.3/error_prone_annotations-2.1.3.jar:/Users/sarikadhall/.m2/repository/com/google/j2objc/j2objc-annotations/1.1/j2objc-annotations-1.1.jar:/Users/sarikadhall/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14.jar:/Users/sarikadhall/.m2/repository/org/apache/httpcomponents/httpcore/4.4.9/httpcore-4.4.9.jar:/Users/sarikadhall/.m2/repository/com/squareup/okhttp3/okhttp/3.10.0/okhttp-3.10.0.jar:/Users/sarikadhall/.m2/repository/com/squareup/okio/okio/1.14.1/okio-1.14.1.jar:/Users/sarikadhall/.m2/repository/com/sun/mail/javax.mail/1.6.2/javax.mail-1.6.2.jar:/Users/sarikadhall/.m2/repository/javax/activation/activation/1.1/activation-1.1.jar:"/>
@@ -34,28 +33,27 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="ProjectRun" value="eq"/>
-    <property name="surefire.real.class.path" value="/Users/sarikadhall/git/peerjiTestNewEq/target/surefire/surefirebooter2353626769380534724.jar"/>
+    <property name="surefire.real.class.path" value="/Users/sarikadhall/git/peerjiTestNewEq/target/surefire/surefirebooter18193396624145315312.jar"/>
     <property name="Browser" value="Chrome"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="14.0.2+12-46"/>
     <property name="user.name" value="sarikadhall"/>
-    <property name="xmlFiles" value="testng3.xml"/>
-    <property name="CoverageIdentifier" value="anu1"/>
+    <property name="xmlFiles" value="testng5.xml"/>
     <property name="path.separator" value=":"/>
     <property name="os.version" value="10.15.6"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="SearchEmployer" value=""/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
-    <property name="Password" value="Sarika#123"/>
+    <property name="Password" value="Sarika#1234"/>
     <property name="localRepository" value="/Users/sarikadhall/.m2/repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="/var/folders/l9/4pwqxcnj26bcf95btzx4z7rm0000gp/T/"/>
     <property name="java.version" value="14.0.2"/>
     <property name="user.dir" value="/Users/sarikadhall/git/peerjiTestNewEq"/>
     <property name="os.arch" value="x86_64"/>
-    <property name="AppURL" value="https://patient.eqserviceqa4.eqcaredev.com/register"/>
+    <property name="AppURL" value="https://patient.eqserviceqa2.eqcaredev.com/login/"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="java.library.path" value="/Users/sarikadhall/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
@@ -65,19 +63,8 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="58.0"/>
   </properties>
-  <testcase name="verifyPage" classname="eqcare.peerjitestcases.TC2_RegisterationScenarios" time="0.049"/>
-  <testcase name="validInputEnrolledRegisterationTest" classname="eqcare.peerjitestcases.TC2_RegisterationScenarios" time="27.902">
-    <failure message="Expected condition failed: waiting for element to be clickable: By.xpath: //a[@data-role=&apos;plan-type-next&apos;] (tried for 15 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[@data-role='plan-type-next'] (tried for 15 second(s) with 500 milliseconds interval)
-	at eqcare.peerjitestcases.TC2_RegisterationScenarios.validInputEnrolledRegisterationTest(TC2_RegisterationScenarios.java:109)
-Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.xpath: //a[@data-role='plan-type-next']
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:10d1:112f:9ced:2d09%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '14.0.2'
-Driver info: driver.version: unknown
-	at eqcare.peerjitestcases.TC2_RegisterationScenarios.validInputEnrolledRegisterationTest(TC2_RegisterationScenarios.java:109)
-]]></failure>
-    <system-out><![CDATA[Log:INFO- Test Executed- Test Status is Passed
-]]></system-out>
-  </testcase>
+  <testcase name="verifyPage" classname="eqcare.peerjitestcases.TC1_LifeJourneyEndScenarios" time="12.64"/>
+  <testcase name="verifyStartLifeJourney" classname="eqcare.peerjitestcases.TC1_LifeJourneyEndScenarios" time="25.697"/>
+  <testcase name="verifyEQMedicalClinic" classname="eqcare.peerjitestcases.TC1_LifeJourneyEndScenarios" time="15.642"/>
+  <testcase name="verifyflowerInformation" classname="eqcare.peerjitestcases.TC1_LifeJourneyEndScenarios" time="14.593"/>
 </testsuite>
