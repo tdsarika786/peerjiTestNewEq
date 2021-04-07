@@ -215,7 +215,7 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 
 		home.deviceCheck();
 
-		logger.info("Patint device check completed");
+		logger.info("Patint device check completed test");
 
 	}
 
