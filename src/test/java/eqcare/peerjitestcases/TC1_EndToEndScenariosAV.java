@@ -219,7 +219,7 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 
 	}
 
-	@Test(priority = 11, dependsOnMethods = "loginToApplication")
+	@Test(priority = 11, dependsOnMethods = "deviceCheck")
 	public void fillIntakeFormWithAllFields() throws Exception {
 
 		intake = PageFactory.initElements(driver, IntakeFormPageAV.class);
@@ -231,7 +231,7 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 		logger.info("Patint device check completed");
 	}
 
-	@Test(priority = 12, dependsOnMethods = "loginToApplication")
+	@Test(priority = 12, dependsOnMethods = "deviceCheck")
 	public void endVisit() throws Exception {
 
 		visit = PageFactory.initElements(driver, VisitPageAV.class);
@@ -243,7 +243,7 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 		logger.info("Patint device check completed");
 	}
 
-	@Test(priority = 13, dependsOnMethods = "loginToApplication")
+	@Test(priority = 13, dependsOnMethods = "deviceCheck")
 	public void feedback() throws Exception {
 
 		feedback = PageFactory.initElements(driver, FeedbackPageAV.class);
