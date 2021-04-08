@@ -38,7 +38,7 @@ public class Novapeerji2 extends BaseClass {
 	
 	@Parameters({"NovaEmail","NovaPassword"})
 	@Test(priority = 0, dependsOnMethods = "verifyPage")
-	public void loginToApplication(String email, String password) throws Exception {
+	public void loginToApplication(String novaemail, String novapassword) throws Exception {
 
 		logger = report.createTest("Login as patient - Individual Paying Customer");
 
@@ -49,8 +49,8 @@ public class Novapeerji2 extends BaseClass {
 		//login.loginToApplication("sarikaqa7+br1@gmail.com",
 		//		"Sarika#123");
 		
-		login.loginToApplication(email,
-				password);
+		login.loginToApplication(novaemail,
+				novapassword);
 		
 		login.verifyUrlAfterLogin();
 
