@@ -36,7 +36,7 @@ public class Novapeerji2 extends BaseClass {
 	//ENV 2
     //sarikaqa7+i1@gmail.com
 	
-	@Parameters({"Email","Password"})
+	@Parameters({"NovaEmail","NovaPassword"})
 	@Test(priority = 0, dependsOnMethods = "verifyPage")
 	public void loginToApplication(String email, String password) throws Exception {
 
@@ -65,7 +65,7 @@ public class Novapeerji2 extends BaseClass {
 
 		logger = report.createTest("Create Employee with coverage token");
 
-		home.createEmployer(searchemployer,coveragetoken); // First see if employer there Modify
+		//home.createEmployer(searchemployer,coveragetoken); // First see if employer there Modify
 		
 		//home.TestBrowser();
 

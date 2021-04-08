@@ -152,7 +152,7 @@ public class NovaHomePage {
 
 	}
 
-	public void createEmployer(String searchEmployer ,String CoverageToken) {
+	public void createEmployer(String searchEmployer ,String CoverageToken, String CoverageType) {
 
 		Utility.waitForWebElement(driver, EmployerLink).click();
 		
@@ -190,7 +190,7 @@ public class NovaHomePage {
 		
 		//*******************************Coverage Type************************************
 		
-		
+		//lifejourney_gold
 		
 		WebElement coverageTypeElement = driver.findElement(selectCoverageType);
 
@@ -198,7 +198,7 @@ public class NovaHomePage {
 
 		//Utility.waitForWebElement(driver, selectCoverageType).click();
 		
-		objCoverageType.selectByValue("lifejourney_gold");
+		objCoverageType.selectByValue("CoverageType");
 		
 		//*******************************Services************************************
 		

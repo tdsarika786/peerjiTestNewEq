@@ -36,7 +36,7 @@ public class Novapeerji extends BaseClass {
 	//ENV 2
     //sarikaqa7+i1@gmail.com
 	
-	@Parameters({"Email","Password"})
+	@Parameters({"NovaEmail","NovaPassword"})
 	@Test(priority = 0, dependsOnMethods = "verifyPage")
 	public void loginToApplication(String email, String password) throws Exception {
 
@@ -57,15 +57,15 @@ public class Novapeerji extends BaseClass {
 		logger.info("Patient Logged in");
 	}
 	
-	@Parameters({"SearchEmployer","CoverageToken"})
+	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
 	@Test(priority = 1, dependsOnMethods = "loginToApplication")
-	public void CreateEmployer(String searchemployer, String coveragetoken) throws InterruptedException {
+	public void CreateEmployer(String searchemployer, String coveragetoken, String coveragetype ) throws InterruptedException {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
 
 		logger = report.createTest("Create Employee with coverage token");
 
-		home.createEmployer(searchemployer,coveragetoken); // First see if employer there Modify
+		home.createEmployer(searchemployer,coveragetoken, coveragetype); // First see if employer there Modify
 		
 		//home.TestBrowser();
 
