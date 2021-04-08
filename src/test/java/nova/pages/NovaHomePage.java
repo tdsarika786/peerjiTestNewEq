@@ -198,7 +198,11 @@ public class NovaHomePage {
 
 		//Utility.waitForWebElement(driver, selectCoverageType).click();
 		
-		objCoverageType.selectByValue("CoverageType");
+		System.out.println(CoverageType);
+		
+		objCoverageType.selectByValue(CoverageType);
+		
+		
 		
 		//*******************************Services************************************
 		
@@ -295,6 +299,8 @@ public class NovaHomePage {
 
 		JavascriptExecutor executorSub = (JavascriptExecutor) driver;
 		executorSub.executeScript("arguments[0].click()", buttonSub);
+		
+		Utility.wait(10000);
 
 	}
 
