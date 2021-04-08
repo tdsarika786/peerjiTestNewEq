@@ -84,8 +84,8 @@
 							<ProjectRun>${ProjectRun}</ProjectRun>
 							<SearchEmployer>${SearchEmployer}</SearchEmployer>
 							<CoverageType>${CoverageType}</CoverageType>
-							<Email>${NovaEmail}</Email>
-						<Password>${NovaPassword}</Password>
+							<NovaEmail>${NovaEmail}</NovaEmail>
+						<NovaPassword>${NovaPassword}</NovaPassword>
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>
