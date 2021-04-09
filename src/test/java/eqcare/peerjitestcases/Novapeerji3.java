@@ -64,11 +64,11 @@ public class Novapeerji3 extends BaseClass {
 
 		logger = report.createTest("Create Employee with coverage token");
 		
-		home.addStaff("sarikacm2@gmail.com","secret","CareManager");
+		home.addStaff("sarikacm@gmail.com","secret","CareManager");
 
-		home.addStaff("sarikado1@gmail.com","secret","Practitioner");
+		home.addStaff("sarikado@gmail.com","secret","Practitioner");
 		
-		home.addStaff("sarikanu1@gmail.com","secret","Nurse");
+		home.addStaff("sarikanu@gmail.com","secret","Nurse");
 
 		logger.info("Employee created with coverage token");
 	}

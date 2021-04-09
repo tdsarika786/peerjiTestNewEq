@@ -106,7 +106,7 @@ public class TC1_LifeJourneyEndScenarios extends BaseClass {
 
 		intakeForm.fillIntakeForm();
 	}
-	
+
 	@Test(priority = 4, dependsOnMethods = "verifyPage")
 	public void verifyflowerInformation() throws Exception {
 		
