@@ -2,6 +2,7 @@ package eqcare.peerjitestcases;
 
 
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import NotRequiredClasses.ContactUsPage;
@@ -28,8 +29,9 @@ public class TC1_LifeJourneyEndScenarios extends BaseClass {
 	LifeJourneyIntakeFormPage intakeForm;
 	ClinicPage clinic;
 
+	@Parameters({"Email","Password"})
 	@Test(priority = 1)
-	public void verifyPage() throws Exception {
+	public void verifyPage(String email, String password) throws Exception {
 		login = PageFactory.initElements(driver, LoginPage.class);
 
 		logger = report.createTest("Verify Home page Url");
@@ -39,7 +41,8 @@ public class TC1_LifeJourneyEndScenarios extends BaseClass {
 
 		// DataProviderFactory.getExcel().getCellData("EQCare", 1, 1));
 
-		login.loginToApplication("sarikaqa7+ljgo@gmail.com", "Sarika#123");
+		login.loginToApplication(email,
+				password);
 
 		logger.info("Logged in as patient");
 
@@ -56,7 +59,7 @@ public class TC1_LifeJourneyEndScenarios extends BaseClass {
 		logger.info("Validated Home Page Url");
 	}
 
-	@Test(priority = 2, dependsOnMethods = "verifyPage")
+	@Test(priority = 2, dependsOnMethods = "verifyPage", enabled=false)
 	public void verifyStartLifeJourney() throws Exception {
 		login = PageFactory.initElements(driver, LoginPage.class);
 		
@@ -75,7 +78,7 @@ public class TC1_LifeJourneyEndScenarios extends BaseClass {
 	}
 	
 	
-	@Test(priority = 2, enabled=false)
+	@Test(priority = 2)
 	public void verifyStartLifeJourneyYesButton() throws Exception {
 		login = PageFactory.initElements(driver, LoginPage.class);
 		
