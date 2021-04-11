@@ -1,4 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 91.151 s - in TestSuite
+Tests run: 16, Failures: 1, Errors: 0, Skipped: 14, Time elapsed: 37.764 s <<< FAILURE! - in TestSuite
+eqcare.peerjitestcases.TC1_EndToEndScenarios.loginToApplication  Time elapsed: 26.088 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(text(), 'Logout')] (tried for 15 second(s) with 500 milliseconds interval)
+	at eqcare.peerjitestcases.TC1_EndToEndScenarios.loginToApplication(TC1_EndToEndScenarios.java:72)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.xpath: //a[contains(text(), 'Logout')]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:1835:847b:3482:c959%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '14.0.2'
+Driver info: driver.version: unknown
+	at eqcare.peerjitestcases.TC1_EndToEndScenarios.loginToApplication(TC1_EndToEndScenarios.java:72)
+

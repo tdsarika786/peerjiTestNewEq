@@ -87,7 +87,7 @@ public class NovaHomePage {
 
 	}
 
-	public void createEmployee(String searchEmployer, String CoverageIdentifier) {
+	public void createEmployee(String searchEmployer, String CoverageIdentifier, String PlanType) {
 
 		Utility.waitForWebElement(driver, EmployeesLink).click();
 
@@ -133,8 +133,10 @@ public class NovaHomePage {
 		Select objplanTypee = new Select(planTypeElement);
 
 		// Change Family Type
+		
+		objplanTypee.selectByValue(PlanType);
 
-		objplanTypee.selectByValue("family");
+		// objplanTypee.selectByValue("family");
 
 		// objplanTypee.selectByValue("single");
 

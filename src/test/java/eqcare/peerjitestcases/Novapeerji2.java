@@ -72,9 +72,9 @@ public class Novapeerji2 extends BaseClass {
 		logger.info("Employee created with coverage token");
 	}
 
-	@Parameters({"SearchEmployer","CoverageIdentifier" })
+	@Parameters({"SearchEmployer","CoverageIdentifier", "PlanType" })
 	@Test(priority = 2, dependsOnMethods = "loginToApplication")
-	public void CreateEmployee(String searchemployer, String coverageidentifier) throws InterruptedException {
+	public void CreateEmployee(String searchemployer, String coverageidentifier, String plantype) throws InterruptedException {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
 
@@ -82,7 +82,7 @@ public class Novapeerji2 extends BaseClass {
 
 		// home.createEmployer(); // First see if employer there Modify
 		
-		home.createEmployee(searchemployer,coverageidentifier); // then create employee 
+		home.createEmployee(searchemployer,coverageidentifier,plantype); // then create employee 
 		
 		//home.TestBrowser();
 

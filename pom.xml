@@ -86,6 +86,7 @@
 							<CoverageType>${CoverageType}</CoverageType>
 							<NovaEmail>${NovaEmail}</NovaEmail>
 						<NovaPassword>${NovaPassword}</NovaPassword>
+						<PlanType>${PlanType}</PlanType>
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>
