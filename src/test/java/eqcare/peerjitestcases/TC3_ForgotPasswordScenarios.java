@@ -35,7 +35,7 @@ public class TC3_ForgotPasswordScenarios extends BaseClass {
 
 	}
 
-	@Test(priority = 2, dependsOnMethods = "verifyPage")
+	@Test(priority = 1, dependsOnMethods = "verifyPage")
 	public void resetPasswordWithInValidInput() {
 
 		logger = report.createTest("Login as patient with valid inputs");
@@ -47,10 +47,12 @@ public class TC3_ForgotPasswordScenarios extends BaseClass {
 		logger.info("Patient ");
 	}
 
-	@Test(priority = 1, dependsOnMethods = "verifyPage")
+	@Test(priority = 2, dependsOnMethods = "verifyPage")
 	public void resetPasswordWithValidInput() {
 
 		logger = report.createTest("Login as patient with valid inputs");
+		
+		forgot.navigateToForgortPasswordModal();
 
 		forgot.resetPasswordNotification();
 
