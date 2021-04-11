@@ -202,6 +202,16 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 		Utility.waitForWebElement(driver, startCall).click();
 		// Utility.selectValueFromCalendar(Utility.waitForMultipleWebElement(driver,
 		// calen), "25");
+		
+		Utility.waitForWebElement(driver, videoEndCallButton).click();
+
+		Utility.waitForWebElement(driver, confirmEndCallButton).click();
+
+		Utility.waitForWebElement(driver, ratingHeart).click();
+
+		Utility.waitForWebElement(driver, submitText).click();
+
+		Utility.waitForWebElement(driver, homeButton).click();
 
 	}
 

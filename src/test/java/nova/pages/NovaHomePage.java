@@ -284,19 +284,19 @@ public class NovaHomePage {
 		 * JavascriptExecutor executor9 = (JavascriptExecutor) driver;
 		 * executor9.executeScript("arguments[0].click()", buttonNutrition);
 		 * 
-		 * 
-		 * WebElement buttonArticles =
-		 * driver.findElement(By.xpath("//input[@name='articles']")); JavascriptExecutor
-		 * executor10 = (JavascriptExecutor) driver;
-		 * executor10.executeScript("arguments[0].click()", buttonArticles);
-		 * 
-		 * 
-		 * WebElement buttonLegal_financial =
-		 * driver.findElement(By.xpath("//input[@name='legal_financial']"));
-		 * JavascriptExecutor executor11 = (JavascriptExecutor) driver;
-		 * executor11.executeScript("arguments[0].click()", buttonLegal_financial);
-		 * 
-		 */
+		 * */
+		 WebElement buttonArticles =
+		  driver.findElement(By.xpath("//input[@name='articles']")); JavascriptExecutor
+		  executor10 = (JavascriptExecutor) driver;
+		  executor10.executeScript("arguments[0].click()", buttonArticles);
+		  
+		  
+		  WebElement buttonLegal_financial =
+		  driver.findElement(By.xpath("//input[@name='legal_financial']"));
+		  JavascriptExecutor executor11 = (JavascriptExecutor) driver;
+		  executor11.executeScript("arguments[0].click()", buttonLegal_financial);
+		  
+		 
 
 		// *******************************Services************************************
 
@@ -329,15 +329,15 @@ public class NovaHomePage {
 
 		Utility.waitForWebElement(driver, createEmployeeLink).click();
 
-		Utility.waitForWebElement(driver, firstName).sendKeys("Sarika");
-
 		Utility.waitForWebElement(driver, email).sendKeys(staffEmail);
 
 		Utility.waitForWebElement(driver, passowrd).sendKeys(password);
 
 		if (staff.equalsIgnoreCase("Practitioner")) {
+			
+			Utility.waitForWebElement(driver, firstName).sendKeys("SarikaPa");
 
-			Utility.waitForWebElement(driver, lastName).sendKeys("TestDo");
+			Utility.waitForWebElement(driver, lastName).sendKeys("TestPa");
 
 			// Select Role
 			WebElement roleElement = driver.findElement(selectRole);
@@ -349,6 +349,8 @@ public class NovaHomePage {
 		}
 
 		if (staff.equalsIgnoreCase("CareManager")) {
+			
+			Utility.waitForWebElement(driver, firstName).sendKeys("SarikaCM");
 
 			Utility.waitForWebElement(driver, lastName).sendKeys("TestCM");
 
@@ -367,6 +369,8 @@ public class NovaHomePage {
 		}
 
 		if (staff.equalsIgnoreCase("Nurse")) {
+			
+			Utility.waitForWebElement(driver, firstName).sendKeys("SarikaNu");
 
 			Utility.waitForWebElement(driver, lastName).sendKeys("TestNu");
 

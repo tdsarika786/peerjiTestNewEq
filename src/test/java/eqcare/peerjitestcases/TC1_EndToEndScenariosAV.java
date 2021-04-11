@@ -157,7 +157,7 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 
 	}
 
-	@Test(priority = 7, dependsOnMethods = "loginToApplication")
+	@Test(priority = 7, dependsOnMethods = "familyTab")
 	public void addChild() throws Exception {
 
 		account = PageFactory.initElements(driver, AccountPageAV.class);
@@ -174,7 +174,7 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 
 	}
 
-	@Test(priority = 8, dependsOnMethods = "loginToApplication")
+	@Test(priority = 8, dependsOnMethods = "familyTab")
 	public void deleteChild() throws Exception {
 
 		account = PageFactory.initElements(driver, AccountPageAV.class);

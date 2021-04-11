@@ -247,9 +247,9 @@ public class AccountPage extends runWithAttachments {
 
 			Utility.waitForWebElement(driver, personalInfoHeader);
 
-			Utility.waitForWebElement(driver, firstNameInput).sendKeys("AakashAutom");
+			Utility.waitForWebElement(driver, firstNameInput).sendKeys("AakashAutomation");
 
-			Utility.waitForWebElement(driver, lastNameInput).sendKeys("TestAutom");
+			Utility.waitForWebElement(driver, lastNameInput).sendKeys("SarikaTest");
 
 			Utility.waitForWebElement(driver, radioSexMale).click();
 
