@@ -106,6 +106,9 @@ public class LoginPage extends runWithAttachments {
 	}
 
 	public void loginToApplication(String userName, String passWord) {
+		
+		Utility.waitForWebElement(driver, user).clear();
+		Utility.waitForWebElement(driver, password).clear();
 
 		Utility.waitForWebElement(driver, user).sendKeys(userName);
 		Utility.waitForWebElement(driver, password).sendKeys(passWord);
