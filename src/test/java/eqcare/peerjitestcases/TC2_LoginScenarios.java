@@ -34,31 +34,7 @@ public class TC2_LoginScenarios extends BaseClass{
 
 	}
 
-	@Parameters({"Email","Password"})
 	@Test(priority = 1, dependsOnMethods = "verifyPage")
-	public void loginToApplication(String email, String password) throws Exception {
-
-		logger = report.createTest("Login as patient wgith valid inputs");
-
-		login.loginToApplication(email,
-				password);
-
-		login.verifyUrlAfterLogin();
-
-		logger.info("Patient Logged in");
-	}
-
-	@Test(priority = 2, dependsOnMethods = "loginToApplicationWithValidInput")
-	public void logoutFromApplication() {
-		logger = report.createTest("Patient Logout from Application");
-
-		login.logOutFromApplication();
-
-		logger.info("Logout done");
-
-	}
-
-	@Test(priority = 3, dependsOnMethods = "verifyPage", enabled=false)
 	public void verifyShowHideLink() {
 
 		logger = report.createTest("Verify Show password link on login page");
@@ -73,7 +49,7 @@ public class TC2_LoginScenarios extends BaseClass{
 
 	}
 
-	@Test(priority = 4, dependsOnMethods = "verifyPage")
+	@Test(priority = 2, dependsOnMethods = "verifyPage")
 	public void verifyLanguageLink() {
 
 		logger = report.createTest("Verify langauge link on login page");
@@ -97,7 +73,7 @@ public class TC2_LoginScenarios extends BaseClass{
 		logger.info("Validated redirection to the registeration page");
 	}
 
-	@Test(priority = 6, dependsOnMethods = "verifyPage")
+	@Test(priority = 3, dependsOnMethods = "verifyPage")
 	public void loginToApplicationWithBlankInput() {
 
 		logger = report.createTest("Login without providing email and password");
@@ -115,7 +91,7 @@ public class TC2_LoginScenarios extends BaseClass{
 		logger.info("Displayed valid error message to user.");
 	}
 
-	@Test(priority = 7, dependsOnMethods = "verifyPage")
+	@Test(priority = 4, dependsOnMethods = "verifyPage")
 	public void loginToApplicationWithNonRegisteredEmailId() {
 
 		logger = report.createTest("Login as patient with non registered email id");
@@ -129,7 +105,7 @@ public class TC2_LoginScenarios extends BaseClass{
 		logger.info("Displayed valid error message to user.");
 	}
 	
-	@Test(priority = 5)
+	@Test(priority = 5, dependsOnMethods = "verifyPage")
 	public void verifyHomeFooter() throws Exception {
 
 		logger.info("Verify Start a Consultation link display to use");
@@ -137,6 +113,30 @@ public class TC2_LoginScenarios extends BaseClass{
 		login.verifyHomeFooter();
 
 		logger.info("Validated Start a Consultation link displayed to patient");
+
+	}
+	
+	@Parameters({"Email","Password"})
+	@Test(priority = 6, dependsOnMethods = "verifyPage")
+	public void loginToApplication(String email, String password) throws Exception {
+
+		logger = report.createTest("Login as patient wgith valid inputs");
+
+		login.loginToApplication(email,
+				password);
+
+		login.verifyUrlAfterLogin();
+
+		logger.info("Patient Logged in");
+	}
+
+	@Test(priority = 7, dependsOnMethods = "loginToApplicationWithValidInput")
+	public void logoutFromApplication() {
+		logger = report.createTest("Patient Logout from Application");
+
+		login.logOutFromApplication();
+
+		logger.info("Logout done");
 
 	}
 
