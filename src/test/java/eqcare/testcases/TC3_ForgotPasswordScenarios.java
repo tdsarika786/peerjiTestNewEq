@@ -1,6 +1,7 @@
 package eqcare.testcases;
 
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import NotRequiredClasses.ContactUsPage;
@@ -35,8 +36,10 @@ public class TC3_ForgotPasswordScenarios extends BaseClass {
 
 	}
 
+
+	@Parameters({"Email"})
 	@Test(priority = 1, dependsOnMethods = "verifyPage")
-	public void resetPasswordWithValidInput() {
+	public void resetPasswordWithValidInput(String email) {
 
 		logger = report.createTest("Login as patient with valid inputs");
 
@@ -45,7 +48,7 @@ public class TC3_ForgotPasswordScenarios extends BaseClass {
 
 		// DataProviderFactory.getExcel().getCellData("EQCare", 1, 1));
 		
-		forgot.resetPasswordNotification();
+		//forgot.resetPasswordNotification(email);
 
 		logger.info("Patient ");
 	}
@@ -54,12 +57,6 @@ public class TC3_ForgotPasswordScenarios extends BaseClass {
 	public void resetPasswordWithInValidInput() {
 
 		logger = report.createTest("Login as patient with valid inputs");
-
-		// login.loginToApplication(DataProviderFactory.getExcel().getCellData("EQCare",
-		// 1, 0),
-
-		// DataProviderFactory.getExcel().getCellData("EQCare", 1, 1));
-		forgot.navigateToLoginPage();
 		
 		forgot.navigateToForgortPasswordModal();
 		

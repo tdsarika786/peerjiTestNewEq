@@ -52,9 +52,9 @@ public class ForgotPasswordPage {
 		Utility.waitForWebElement(driver, forgotPasswordButton).click();
 	}
 
-	public void resetPasswordNotification() {
+	public void resetPasswordNotification(String patientEmail) {
 
-		Utility.waitForWebElement(driver, email).sendKeys("admin@aa.com");
+		Utility.waitForWebElement(driver, email).sendKeys(patientEmail);
 
 		Utility.waitForWebElement(driver, resetButton).click();
 

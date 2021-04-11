@@ -1,6 +1,7 @@
 package eqcare.peerjitestcases;
 
 import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import NotRequiredClasses.ContactUsPage;
@@ -47,19 +48,20 @@ public class TC3_ForgotPasswordScenarios extends BaseClass {
 		logger.info("Patient ");
 	}
 
+	@Parameters({"Email"})
 	@Test(priority = 2, dependsOnMethods = "verifyPage")
-	public void resetPasswordWithValidInput() {
+	public void resetPasswordWithValidInput(String email) {
 
 		logger = report.createTest("Login as patient with valid inputs");
 		
 		forgot.navigateToForgortPasswordModal();
 
-		forgot.resetPasswordNotification();
+		forgot.resetPasswordNotification(email);
 
 		logger.info("Patient ");
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3, enabled=false)
 	public void resetPassword() {
 
 		logger = report.createTest("Login as patient with valid inputs");

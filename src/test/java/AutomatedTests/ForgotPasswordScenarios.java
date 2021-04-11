@@ -45,7 +45,7 @@ public class ForgotPasswordScenarios extends BaseClass {
 
 		// DataProviderFactory.getExcel().getCellData("EQCare", 1, 1));
 		
-		forgot.resetPasswordNotification();
+		//forgot.resetPasswordNotification();
 
 		logger.info("Patient ");
 	}
