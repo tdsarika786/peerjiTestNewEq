@@ -130,7 +130,7 @@ public class TC2_LoginScenarios extends BaseClass{
 		logger.info("Patient Logged in");
 	}
 
-	@Test(priority = 7, dependsOnMethods = "loginToApplicationWithValidInput")
+	@Test(priority = 7, dependsOnMethods = "loginToApplication")
 	public void logoutFromApplication() {
 		logger = report.createTest("Patient Logout from Application");
 
