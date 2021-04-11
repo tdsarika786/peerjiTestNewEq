@@ -42,6 +42,8 @@ public class ForgotPasswordPage {
 	By confirmPassword = By.xpath("(//*[@name='password'])[2]");
 	
 	By resetLink = By.xpath("//a[text()=' Reset ']");
+	
+	By cloaseLink = By.xpath("(//div[@class='close-button'])[1]");
 
 	// FR PW
 
@@ -68,6 +70,8 @@ public class ForgotPasswordPage {
 		WebElement ele = Utility.waitForWebElement(driver, resetPasswordHeader);
 		String resetPasswordHeaderText = ele.getText();
 		Assert.assertEquals(resetPasswordHeaderText, "Reset password");
+		
+		Utility.waitForWebElement(driver, cloaseLink).click();
 	}
 
 	public void errorMessageEmptyEmail() {
@@ -79,13 +83,13 @@ public class ForgotPasswordPage {
 		WebElement ele = Utility.waitForWebElement(driver, errorMessages);
 		String resetPasswordMessageText = ele.getText();
 		Assert.assertEquals(resetPasswordMessageText, ErrorCodesProvider.read("ENTER_EMAIL"));
+		
+		Utility.waitForWebElement(driver, cloaseLink).click();
 	}
 
 	// 
 
 	public void resetPassword() {
-		
-		
 
 		Utility.waitForWebElement(driver, password).sendKeys("Abcde#123");
 		
@@ -97,6 +101,7 @@ public class ForgotPasswordPage {
 		String resetPasswordConfirmMsg = ele.getText();
 		Assert.assertEquals(resetPasswordConfirmMsg, ErrorCodesProvider.read("FORGOT_PASSWORD_CONFIRMATION_MESSAGE"));
 
+		Utility.waitForWebElement(driver, cloaseLink).click();
 	}
 
 	public void navigateToLoginPage() {
