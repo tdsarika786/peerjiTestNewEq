@@ -156,7 +156,7 @@ public class NovaHomePage {
 
 		// Utility.waitForWebElement(driver, createEmployeeSubmitButton).click();
 
-		Utility.wait(5);
+		Utility.wait(500);
 
 	}
 

@@ -94,7 +94,7 @@ public class AccountPage extends runWithAttachments {
 
 	By showHideText = By.xpath("//span[@class='phone:hidden text-gray-500']");
 
-	By passwordErrorMessage = By.xpath("//p[contains(@class, 'form-field-error')]");
+	By passwordErrorMessage = By.xpath("//p[@data-role='error']");
 
 	By errorMessage = By.xpath("//p[@data-role='error']");
 
