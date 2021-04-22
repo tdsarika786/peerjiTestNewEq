@@ -25,6 +25,7 @@
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/AutomatedTests/TC1_EndToEndScenarios.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/NotRequiredClasses/LoginScenariosTC1.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/pages/RegistrationPageAV.java
+/Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/peerjitestcases/TC3_ForgotPasswordScenarios.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/pages/LifeJourneyIntakeFormPage.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/nova/pages/ContactUsPage.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/peerjitestcases/Novapeerji3.java
@@ -50,6 +51,7 @@
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/pages/HomePageAV.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/pages/FeedbackPage.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/peerjitestcases/Novapeerji.java
+/Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/peerjitestcases/TC2_LoginScenarios.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/testcases/TC5_EnrolledUserRegisteration4.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/pages/TestBaseClass.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/TC1_LifeJourneyEndScenarios.java

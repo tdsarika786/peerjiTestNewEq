@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-failed">Suite</span>
+              <span class="suite-name border-skipped">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">16 methods, 1 failed,  14 skipped,  1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.TC1_EndToEndScenarios" class="method navigator-link" hash-for-method="loginToApplication(sarikaqa7+ljgo@gmail.com, Sarika#1234)">loginToApplication(sarikaqa7+ljgo@gmail.com, Sarika#1234)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Suite -->
+                    <span class="method-stats">16 methods,  16 skipped,  </span>
                   </li>
                   <li>
                     <span class="method-list-title skipped">Skipped methods</span>
@@ -171,6 +157,11 @@
                       <br/>
                       <span>
                         <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.TC1_EndToEndScenarios" class="method navigator-link" hash-for-method="loginToApplication">loginToApplication</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.TC1_EndToEndScenarios" class="method navigator-link" hash-for-method="startVideoConsultation">startVideoConsultation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -184,21 +175,12 @@
                         <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.TC1_EndToEndScenarios" class="method navigator-link" hash-for-method="uploadProfilePic">uploadProfilePic</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
-                    </span>
-                    <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.TC1_EndToEndScenarios" class="method navigator-link" hash-for-method="verifyPage">verifyPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -210,46 +192,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">eqcare.peerjitestcases.TC1_EndToEndScenarios</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="loginToApplication(sarikaqa7+ljgo@gmail.com, Sarika#1234)">
-                  </a> <!-- loginToApplication(sarikaqa7+ljgo@gmail.com, Sarika#1234) -->
-                  <span class="method-name">loginToApplication</span>
-                  <span class="parameters">(sarikaqa7+ljgo@gmail.com, Sarika#1234)</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(text(), &apos;Logout&apos;)] (tried for 15 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-	at eqcare.helper.Utility.waitForWebElement(Utility.java:112)
-	at eqcare.pages.LoginPage.verifyUrlAfterLogin(LoginPage.java:84)
-	at eqcare.peerjitestcases.TC1_EndToEndScenarios.loginToApplication(TC1_EndToEndScenarios.java:72)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //a[contains(text(), &apos;Logout&apos;)]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;EQ-MAC-25.local&apos;, ip: &apos;fe80:0:0:0:1835:847b:3482:c959%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;14.0.2&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.base/java.util.Optional.orElseThrow(Optional.java:401)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	... 35 more
-... Removed 31 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-skipped">
             <div class="main-panel-header rounded-window-top">
               <img src="skipped.png"/>
@@ -379,6 +321,17 @@ Driver info: driver.version: unknown
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="loginToApplication">
+                  </a> <!-- loginToApplication -->
+                  <span class="method-name">loginToApplication</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TC1_EndToEndScenarios.loginToApplication(java.lang.String, java.lang.String)[pri:1, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="startVideoConsultation">
                   </a> <!-- startVideoConsultation -->
                   <span class="method-name">startVideoConsultation</span>
@@ -410,23 +363,42 @@ Driver info: driver.version: unknown
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">eqcare.peerjitestcases.TC1_EndToEndScenarios</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
                   <a name="verifyPage">
                   </a> <!-- verifyPage -->
                   <span class="method-name">verifyPage</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Timed out waiting for driver server to start.
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;EQ-MAC-25.local&apos;, ip: &apos;fe80:0:0:0:ccc:a84c:a31e:497a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;14.0.2&apos;
+Driver info: driver.version: ChromeDriver
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:193)
+	at org.openqa.selenium.remote.service.DriverService.start(DriverService.java:179)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:79)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
+	at eqcare.factories.BrowserFactory.getApplication(BrowserFactory.java:56)
+	at eqcare.pages.BaseClass.setUp(BaseClass.java:107)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:29121/status] to be available after 20003 ms
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:100)
+	at org.openqa.selenium.remote.service.DriverService.waitUntilAvailable(DriverService.java:188)
+	... 40 more
+Caused by: java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:204)
+	at com.google.common.util.concurrent.SimpleTimeLimiter.callWithTimeout(SimpleTimeLimiter.java:156)
+	at org.openqa.selenium.net.UrlChecker.waitUntilAvailable(UrlChecker.java:75)
+	... 41 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -484,63 +456,63 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(16);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginToApplication')
+data.setCell(0, 1, 'deviceCheck')
 data.setCell(0, 2, 'eqcare.peerjitestcases.TC1_EndToEndScenarios')
-data.setCell(0, 3, 26083);
+data.setCell(0, 3, 0);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyPage')
+data.setCell(1, 1, 'editPersonalInformation')
 data.setCell(1, 2, 'eqcare.peerjitestcases.TC1_EndToEndScenarios')
-data.setCell(1, 3, 25);
+data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'editAccountInformation')
+data.setCell(2, 1, 'uploadProfilePic')
 data.setCell(2, 2, 'eqcare.peerjitestcases.TC1_EndToEndScenarios')
 data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'familyTab')
+data.setCell(3, 1, 'feedback')
 data.setCell(3, 2, 'eqcare.peerjitestcases.TC1_EndToEndScenarios')
 data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'startVideoConsultation')
+data.setCell(4, 1, 'addChild')
 data.setCell(4, 2, 'eqcare.peerjitestcases.TC1_EndToEndScenarios')
 data.setCell(4, 3, 0);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'endVisit')
+data.setCell(5, 1, 'familyTab')
 data.setCell(5, 2, 'eqcare.peerjitestcases.TC1_EndToEndScenarios')
 data.setCell(5, 3, 0);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'deviceCheck')
+data.setCell(6, 1, 'deleteChild')
 data.setCell(6, 2, 'eqcare.peerjitestcases.TC1_EndToEndScenarios')
 data.setCell(6, 3, 0);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'uploadGovernmentID')
+data.setCell(7, 1, 'inbox')
 data.setCell(7, 2, 'eqcare.peerjitestcases.TC1_EndToEndScenarios')
 data.setCell(7, 3, 0);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'deleteChild')
+data.setCell(8, 1, 'verifyPage')
 data.setCell(8, 2, 'eqcare.peerjitestcases.TC1_EndToEndScenarios')
 data.setCell(8, 3, 0);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'feedback')
+data.setCell(9, 1, 'startVideoConsultation')
 data.setCell(9, 2, 'eqcare.peerjitestcases.TC1_EndToEndScenarios')
 data.setCell(9, 3, 0);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'inbox')
+data.setCell(10, 1, 'loginToApplication')
 data.setCell(10, 2, 'eqcare.peerjitestcases.TC1_EndToEndScenarios')
 data.setCell(10, 3, 0);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'editPersonalInformation')
+data.setCell(11, 1, 'fillIntakeFormWithAllFields')
 data.setCell(11, 2, 'eqcare.peerjitestcases.TC1_EndToEndScenarios')
 data.setCell(11, 3, 0);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'uploadProfilePic')
+data.setCell(12, 1, 'editAccountInformation')
 data.setCell(12, 2, 'eqcare.peerjitestcases.TC1_EndToEndScenarios')
 data.setCell(12, 3, 0);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'addChild')
+data.setCell(13, 1, 'uploadGovernmentID')
 data.setCell(13, 2, 'eqcare.peerjitestcases.TC1_EndToEndScenarios')
 data.setCell(13, 3, 0);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'fillIntakeFormWithAllFields')
+data.setCell(14, 1, 'endVisit')
 data.setCell(14, 2, 'eqcare.peerjitestcases.TC1_EndToEndScenarios')
 data.setCell(14, 3, 0);
 data.setCell(15, 0, 15)
@@ -551,7 +523,7 @@ window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 26 seconds</span>
+              <span class="suite-total-time">Total running time: 0 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -590,86 +562,82 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
-                <span class="method-name">setUp(Chrome, https://patient.eqserviceqa1.eqcaredev.com/login/, eq)</span>
-                <span class="method-start">19 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setUp(Chrome, https://patient.eqserviceqa2.eqcaredev.com/login/, eq)</span>
+                <span class="method-start">102 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">verifyPage</span>
-                <span class="method-start">10112 ms</span>
+                <span class="method-start">21366 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDownReport([TestResult name=verifyPage status=SUCCESS method=TC1_EndToEndScenarios.verifyPage()[pri:0, instance...)</span>
-                <span class="method-start">10139 ms</span>
+                <span class="method-name">tearDownReport</span>
+                <span class="method-start">21377 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">loginToApplication(sarikaqa7+ljgo@gmail.com, Sarika#1234)</span>
-                <span class="method-start">10368 ms</span>
+                <span class="method-name">loginToApplication</span>
+                <span class="method-start">21381 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDownReport([TestResult name=loginToApplication status=FAILURE method=TC1_EndToEndScenarios.loginToApplication(j...)</span>
-                <span class="method-start">36456 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">editPersonalInformation</span>
-                <span class="method-start">37070 ms</span>
+                <span class="method-start">21382 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">editAccountInformation</span>
-                <span class="method-start">37071 ms</span>
+                <span class="method-start">21384 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">uploadProfilePic</span>
-                <span class="method-start">37071 ms</span>
+                <span class="method-start">21385 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">uploadGovernmentID</span>
-                <span class="method-start">37071 ms</span>
+                <span class="method-start">21387 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">familyTab</span>
-                <span class="method-start">37072 ms</span>
+                <span class="method-start">21388 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">addChild</span>
-                <span class="method-start">37072 ms</span>
+                <span class="method-start">21389 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">deleteChild</span>
-                <span class="method-start">37072 ms</span>
+                <span class="method-start">21390 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">startVideoConsultation</span>
-                <span class="method-start">37072 ms</span>
+                <span class="method-start">21392 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">deviceCheck</span>
-                <span class="method-start">37073 ms</span>
+                <span class="method-start">21393 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">fillIntakeFormWithAllFields</span>
-                <span class="method-start">37073 ms</span>
+                <span class="method-start">21394 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">endVisit</span>
-                <span class="method-start">37073 ms</span>
+                <span class="method-start">21396 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">feedback</span>
-                <span class="method-start">37073 ms</span>
+                <span class="method-start">21398 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">help</span>
-                <span class="method-start">37074 ms</span>
+                <span class="method-start">21399 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">inbox</span>
-                <span class="method-start">37074 ms</span>
+                <span class="method-start">21400 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">37075 ms</span>
+                <span class="method-start">21402 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -28,7 +28,7 @@ public class BrowserFactory {
 			// System.getProperty("user.dir")+"/Drivers/chromedriver1");
 			
 			if (projectrun.equalsIgnoreCase("eq")) {
-			System.setProperty("webdriver.chrome.driver", "/Users/sarikadhall/Documents/ChromeDriver/chromedriver-88");
+			System.setProperty("webdriver.chrome.driver", "/Users/sarikadhall/Documents/ChromeDriver/chromedriver-90");
 			}
 			else {
 				System.setProperty("webdriver.chrome.driver", "/Users/sarika/Documents/ChromeDriver/chromedriver-89");
