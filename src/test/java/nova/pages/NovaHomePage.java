@@ -310,7 +310,7 @@ public class NovaHomePage {
 		JavascriptExecutor executorSub = (JavascriptExecutor) driver;
 		executorSub.executeScript("arguments[0].click()", buttonSub);
 
-		 Utility.wait(500);
+		 Utility.wait(100);
 
 	}
 
