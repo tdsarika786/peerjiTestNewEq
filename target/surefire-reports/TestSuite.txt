@@ -1,13 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 19, Failures: 1, Errors: 0, Skipped: 18, Time elapsed: 22.468 s <<< FAILURE! - in TestSuite
-eqcare.peerjitestcases.TC1_EndToEndScenarios.setUp  Time elapsed: 21.773 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-Timed out waiting for driver server to start.
+Tests run: 16, Failures: 1, Errors: 0, Skipped: 14, Time elapsed: 48.973 s <<< FAILURE! - in TestSuite
+eqcare.peerjitestcases.TC1_EndToEndScenarios.loginToApplication  Time elapsed: 29.688 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(text(), 'Logout')] (tried for 15 second(s) with 500 milliseconds interval)
+	at eqcare.peerjitestcases.TC1_EndToEndScenarios.loginToApplication(TC1_EndToEndScenarios.java:72)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.xpath: //a[contains(text(), 'Logout')]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
 System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:ccc:a84c:a31e:497a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.6', java.version: '14.0.2'
-Driver info: driver.version: ChromeDriver
-Caused by: org.openqa.selenium.net.UrlChecker$TimeoutException: Timed out waiting for [http://localhost:29121/status] to be available after 20003 ms
-Caused by: java.util.concurrent.TimeoutException
+Driver info: driver.version: unknown
+	at eqcare.peerjitestcases.TC1_EndToEndScenarios.loginToApplication(TC1_EndToEndScenarios.java:72)
 
