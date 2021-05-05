@@ -156,7 +156,7 @@ public class NovaHomePage {
 
 		// Utility.waitForWebElement(driver, createEmployeeSubmitButton).click();
 
-	 	Utility.wait(50);
+	 	Utility.wait(5);
 
 	}
 
@@ -310,7 +310,7 @@ public class NovaHomePage {
 		JavascriptExecutor executorSub = (JavascriptExecutor) driver;
 		executorSub.executeScript("arguments[0].click()", buttonSub);
 
-		 Utility.wait(100);
+		 Utility.wait(5);
 
 	}
 
