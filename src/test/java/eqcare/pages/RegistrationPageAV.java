@@ -245,7 +245,7 @@ public class RegistrationPageAV extends runWithAttachments {
 			executor.executeScript("arguments[0].style.display='block';", fileButtonProfielPic);
 
 			Utility.waitForWebElement(driver, uploadProfilePic)
-					.sendKeys(System.getProperty("user.dir") + "/TestData/sai-pic.jpeg");
+					.sendKeys(System.getProperty("user.dir") + "/TestData/medical-card.pdf");
 
 		}
 
@@ -267,7 +267,7 @@ public class RegistrationPageAV extends runWithAttachments {
 		executorGovtID.executeScript("arguments[0].style.display='block';", fileButtonGovtID);
 
 		Utility.waitForWebElement(driver, uploadGovtID)
-				.sendKeys(System.getProperty("user.dir") + "/TestData/medical-card.jpeg");
+				.sendKeys(System.getProperty("user.dir") + "/TestData/medical-card.pdf");
 
 		// Utility.waitForWebElement(driver,
 		// uploadGovtID).sendKeys("/Users/sarikadhall/Downloads/OIP-2.jpeg");
