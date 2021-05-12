@@ -261,7 +261,7 @@ public class RegistrationPage extends runWithAttachments {
 		executorGovtID.executeScript("arguments[0].style.display='block';", fileButtonGovtID);
 
 		Utility.waitForWebElement(driver, uploadGovtID)
-				.sendKeys(System.getProperty("user.dir") + "/TestData/medical-card.jpeg");
+				.sendKeys(System.getProperty("user.dir") + "/TestData/medical-card.pdf");
 
 		// Utility.waitForWebElement(driver,
 		// uploadGovtID).sendKeys("/Users/sarikadhall/Downloads/OIP-2.jpeg");
