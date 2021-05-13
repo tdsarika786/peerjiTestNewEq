@@ -88,7 +88,7 @@ public class TC2_RegisterationScenariosAV extends BaseClass {
 				DataProviderFactory.getExcel().getCellData("Users", 2, 8),
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 9),
-				DataProviderFactory.getExcel().getCellData("Users", 2, 10), false);
+				DataProviderFactory.getExcel().getCellData("Users", 2, 10), true);
 
 		register.registerationCompleteWithValidInput();
 
