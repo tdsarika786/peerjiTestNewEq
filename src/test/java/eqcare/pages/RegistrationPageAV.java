@@ -245,7 +245,7 @@ public class RegistrationPageAV extends runWithAttachments {
 			executor.executeScript("arguments[0].style.display='block';", fileButtonProfielPic);
 
 			Utility.waitForWebElement(driver, uploadProfilePic)
-					.sendKeys(System.getProperty("user.dir") + "/TestData/medical-card.pdf");
+					.sendKeys(System.getProperty("user.dir") + "/TestData/sai-pic.jpeg");
 
 		}
 
