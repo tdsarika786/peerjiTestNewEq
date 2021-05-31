@@ -242,7 +242,7 @@ public class RegistrationPage extends runWithAttachments {
 					.sendKeys(System.getProperty("user.dir") + "/TestData/sai-pic.jpeg");
 
 		}
-//ss
+//sstest
 		// Utility.waitForWebElement(driver,
 		// uploadProfilePic).sendKeys("/Users/sarikadhall/Downloads/OIP-2.jpeg");
 
