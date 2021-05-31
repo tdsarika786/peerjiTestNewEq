@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/14</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/16</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Apr 22 10:17:03 EDT 2021</td>
+<td>Started on:</td><td>Sun May 30 16:11:15 EDT 2021</td>
 </tr>
-<tr><td>Total time:</td><td>48 seconds (48419 ms)</td>
+<tr><td>Total time:</td><td>93 seconds (93550 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,55 +68,67 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='eqcare.peerjitestcases.TC1_EndToEndScenarios.loginToApplication()'><b>loginToApplication</b><br>Test class: eqcare.peerjitestcases.TC1_EndToEndScenarios<br>Parameters: sarikaqa7+qaeq1@gmail.com, Sarika#12345</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(text(), &apos;Logout&apos;)] (tried for 15 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-	at eqcare.helper.Utility.waitForWebElement(Utility.java:112)
-	at eqcare.pages.LoginPage.verifyUrlAfterLogin(LoginPage.java:84)
-	at eqcare.peerjitestcases.TC1_EndToEndScenarios.loginToApplication(TC1_EndToEndScenarios.java:72)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //a[contains(text(), &apos;Logout&apos;)]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+<td title='eqcare.peerjitestcases.TC1_EndToEndScenarios.setUp()'><b>setUp</b><br>Test class: eqcare.peerjitestcases.TC1_EndToEndScenarios<br>Parameters: Chrome, https://patient.eqserviceqa3.eqcaredev.com/login, and</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: unknown error: unhandled inspector error: {&quot;code&quot;:-32601,&quot;message&quot;:&quot;&apos;Browser.setWindowBounds&apos; wasn&apos;t found&quot;}
+  (Session info: chrome=90.0.4430.210)
 Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;EQ-MAC-25.local&apos;, ip: &apos;fe80:0:0:0:ccc:a84c:a31e:497a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;14.0.2&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.base/java.util.Optional.orElseThrow(Optional.java:401)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	... 35 more
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace538721498", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace538721498'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(text(), &apos;Logout&apos;)] (tried for 15 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-	at eqcare.helper.Utility.waitForWebElement(Utility.java:112)
-	at eqcare.pages.LoginPage.verifyUrlAfterLogin(LoginPage.java:84)
-	at eqcare.peerjitestcases.TC1_EndToEndScenarios.loginToApplication(TC1_EndToEndScenarios.java:72)
+System info: host: &apos;EQ-MAC-25.local&apos;, ip: &apos;fe80:0:0:0:858:f5ea:32da:4341%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;14.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, databaseEnabled: false, desired: {browserName: chrome, deviceName: Emulator_Peerji, noReset: true, platformName: android, platformVersion: 9.0}, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: AOSP on IA Emulator, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 1149007b-dea6-4bfb-b12e-a733b4dbe7f7
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:833)
+	at eqcare.pages.BaseClass.setUp(BaseClass.java:110)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace215759534", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace215759534'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: unknown error: unhandled inspector error: {&quot;code&quot;:-32601,&quot;message&quot;:&quot;&apos;Browser.setWindowBounds&apos; wasn&apos;t found&quot;}
+  (Session info: chrome=90.0.4430.210)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;EQ-MAC-25.local&apos;, ip: &apos;fe80:0:0:0:858:f5ea:32da:4341%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;14.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, databaseEnabled: false, desired: {browserName: chrome, deviceName: Emulator_Peerji, noReset: true, platformName: android, platformVersion: 9.0}, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: AOSP on IA Emulator, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 1149007b-dea6-4bfb-b12e-a733b4dbe7f7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:833)
+	at eqcare.pages.BaseClass.setUp(BaseClass.java:110)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at org.testng.TestRunner.privateRun(TestRunner.java:766)
 	at org.testng.TestRunner.run(TestRunner.java:587)
@@ -137,37 +149,27 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //a[contains(text(), &apos;Logout&apos;)]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;EQ-MAC-25.local&apos;, ip: &apos;fe80:0:0:0:ccc:a84c:a31e:497a%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.6&apos;, java.version: &apos;14.0.2&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-	at java.base/java.util.Optional.orElseThrow(Optional.java:401)
-	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)
-	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	... 35 more
 </pre></div></td>
-<td>29</td>
-<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf</td></tr>
+<td>93</td>
+<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td width="30%"><b>Exception</b></td>
 <td width="10%"><b>Time (seconds)</b></td>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='eqcare.peerjitestcases.TC1_EndToEndScenarios.verifyPage()'><b>verifyPage</b><br>Test class: eqcare.peerjitestcases.TC1_EndToEndScenarios</td>
+<td title='eqcare.peerjitestcases.TC1_EndToEndScenarios.tearDownReport()'><b>tearDownReport</b><br>Test class: eqcare.peerjitestcases.TC1_EndToEndScenarios</td>
 <td></td>
-<td>0</td>
-<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf</td></tr>
+<td>-1622405569</td>
+<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0</td></tr>
+<tr>
+<td title='eqcare.peerjitestcases.TC1_EndToEndScenarios.tearDown()'><b>tearDown</b><br>Test class: eqcare.peerjitestcases.TC1_EndToEndScenarios</td>
+<td></td>
+<td>-1622405569</td>
+<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -178,10 +180,10 @@ Driver info: driver.version: unknown
 </tr>
 <tr>
 <td title='eqcare.peerjitestcases.TC1_EndToEndScenarios.addChild()'><b>addChild</b><br>Test class: eqcare.peerjitestcases.TC1_EndToEndScenarios</td>
-<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.addChild()[pri:7, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.addChild()[pri:7, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace809439796", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace809439796'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.addChild()[pri:7, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1401295795", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1401295795'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.addChild()[pri:7, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -207,13 +209,13 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
 </pre></div></td>
 <td>0</td>
-<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf</td></tr>
+<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0</td></tr>
 <tr>
 <td title='eqcare.peerjitestcases.TC1_EndToEndScenarios.deleteChild()'><b>deleteChild</b><br>Test class: eqcare.peerjitestcases.TC1_EndToEndScenarios</td>
-<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.deleteChild()[pri:8, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.deleteChild()[pri:8, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace38625764", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace38625764'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.deleteChild()[pri:8, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace519019247", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace519019247'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.deleteChild()[pri:8, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -239,13 +241,13 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
 </pre></div></td>
 <td>0</td>
-<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf</td></tr>
+<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0</td></tr>
 <tr>
 <td title='eqcare.peerjitestcases.TC1_EndToEndScenarios.deviceCheck()'><b>deviceCheck</b><br>Test class: eqcare.peerjitestcases.TC1_EndToEndScenarios</td>
-<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.deviceCheck()[pri:10, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.deviceCheck()[pri:10, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace522082506", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace522082506'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.deviceCheck()[pri:10, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1572442646", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1572442646'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.deviceCheck()[pri:10, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -271,13 +273,13 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
 </pre></div></td>
 <td>0</td>
-<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf</td></tr>
+<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0</td></tr>
 <tr>
 <td title='eqcare.peerjitestcases.TC1_EndToEndScenarios.editAccountInformation()'><b>editAccountInformation</b><br>Test class: eqcare.peerjitestcases.TC1_EndToEndScenarios</td>
-<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.editAccountInformation()[pri:3, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.editAccountInformation()[pri:3, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2060569250", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2060569250'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.editAccountInformation()[pri:3, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace562561015", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace562561015'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.editAccountInformation()[pri:3, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -303,13 +305,13 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
 </pre></div></td>
 <td>0</td>
-<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf</td></tr>
+<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0</td></tr>
 <tr>
 <td title='eqcare.peerjitestcases.TC1_EndToEndScenarios.editPersonalInformation()'><b>editPersonalInformation</b><br>Test class: eqcare.peerjitestcases.TC1_EndToEndScenarios</td>
-<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.editPersonalInformation()[pri:2, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.editPersonalInformation()[pri:2, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1501497655", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1501497655'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.editPersonalInformation()[pri:2, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1720797452", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1720797452'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.editPersonalInformation()[pri:2, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -335,13 +337,13 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
 </pre></div></td>
 <td>0</td>
-<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf</td></tr>
+<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0</td></tr>
 <tr>
 <td title='eqcare.peerjitestcases.TC1_EndToEndScenarios.endVisit()'><b>endVisit</b><br>Test class: eqcare.peerjitestcases.TC1_EndToEndScenarios</td>
-<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.endVisit()[pri:12, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.endVisit()[pri:12, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1054035701", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1054035701'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.endVisit()[pri:12, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1545327692", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1545327692'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.endVisit()[pri:12, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -367,13 +369,13 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
 </pre></div></td>
 <td>0</td>
-<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf</td></tr>
+<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0</td></tr>
 <tr>
 <td title='eqcare.peerjitestcases.TC1_EndToEndScenarios.familyTab()'><b>familyTab</b><br>Test class: eqcare.peerjitestcases.TC1_EndToEndScenarios</td>
-<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.familyTab()[pri:6, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.familyTab()[pri:6, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1146045637", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1146045637'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.familyTab()[pri:6, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1306535359", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1306535359'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.familyTab()[pri:6, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -399,13 +401,13 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
 </pre></div></td>
 <td>0</td>
-<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf</td></tr>
+<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0</td></tr>
 <tr>
 <td title='eqcare.peerjitestcases.TC1_EndToEndScenarios.feedback()'><b>feedback</b><br>Test class: eqcare.peerjitestcases.TC1_EndToEndScenarios</td>
-<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.feedback()[pri:13, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.feedback()[pri:13, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1429980012", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1429980012'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.feedback()[pri:13, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace167013780", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace167013780'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.feedback()[pri:13, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -431,13 +433,13 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
 </pre></div></td>
 <td>0</td>
-<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf</td></tr>
+<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0</td></tr>
 <tr>
 <td title='eqcare.peerjitestcases.TC1_EndToEndScenarios.fillIntakeFormWithAllFields()'><b>fillIntakeFormWithAllFields</b><br>Test class: eqcare.peerjitestcases.TC1_EndToEndScenarios</td>
-<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.fillIntakeFormWithAllFields()[pri:11, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.fillIntakeFormWithAllFields()[pri:11, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1475889071", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1475889071'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.fillIntakeFormWithAllFields()[pri:11, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1052842393", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1052842393'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.fillIntakeFormWithAllFields()[pri:11, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -463,13 +465,13 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
 </pre></div></td>
 <td>0</td>
-<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf</td></tr>
+<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0</td></tr>
 <tr>
 <td title='eqcare.peerjitestcases.TC1_EndToEndScenarios.help()'><b>help</b><br>Test class: eqcare.peerjitestcases.TC1_EndToEndScenarios</td>
-<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.help()[pri:14, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.help()[pri:14, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace940448009", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace940448009'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.help()[pri:14, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace416049054", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace416049054'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.help()[pri:14, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -495,13 +497,13 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
 </pre></div></td>
 <td>0</td>
-<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf</td></tr>
+<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0</td></tr>
 <tr>
 <td title='eqcare.peerjitestcases.TC1_EndToEndScenarios.inbox()'><b>inbox</b><br>Test class: eqcare.peerjitestcases.TC1_EndToEndScenarios</td>
-<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.inbox()[pri:14, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.inbox()[pri:14, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace761197720", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace761197720'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.inbox()[pri:14, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace779598031", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace779598031'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.inbox()[pri:14, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -527,13 +529,45 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
 </pre></div></td>
 <td>0</td>
-<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf</td></tr>
+<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0</td></tr>
+<tr>
+<td title='eqcare.peerjitestcases.TC1_EndToEndScenarios.loginToApplication()'><b>loginToApplication</b><br>Test class: eqcare.peerjitestcases.TC1_EndToEndScenarios</td>
+<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.loginToApplication(java.lang.String, java.lang.String)[pri:1, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1302877661", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1302877661'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.loginToApplication(java.lang.String, java.lang.String)[pri:1, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+</pre></div></td>
+<td>0</td>
+<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0</td></tr>
 <tr>
 <td title='eqcare.peerjitestcases.TC1_EndToEndScenarios.startVideoConsultation()'><b>startVideoConsultation</b><br>Test class: eqcare.peerjitestcases.TC1_EndToEndScenarios</td>
-<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.startVideoConsultation()[pri:9, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.startVideoConsultation()[pri:9, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace558455114", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace558455114'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.startVideoConsultation()[pri:9, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace288919635", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace288919635'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.startVideoConsultation()[pri:9, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -559,13 +593,13 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
 </pre></div></td>
 <td>0</td>
-<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf</td></tr>
+<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0</td></tr>
 <tr>
 <td title='eqcare.peerjitestcases.TC1_EndToEndScenarios.uploadGovernmentID()'><b>uploadGovernmentID</b><br>Test class: eqcare.peerjitestcases.TC1_EndToEndScenarios</td>
-<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.uploadGovernmentID()[pri:5, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.uploadGovernmentID()[pri:5, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1708711928", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1708711928'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.uploadGovernmentID()[pri:5, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace567656864", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace567656864'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.uploadGovernmentID()[pri:5, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -591,13 +625,13 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
 </pre></div></td>
 <td>0</td>
-<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf</td></tr>
+<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0</td></tr>
 <tr>
 <td title='eqcare.peerjitestcases.TC1_EndToEndScenarios.uploadProfilePic()'><b>uploadProfilePic</b><br>Test class: eqcare.peerjitestcases.TC1_EndToEndScenarios</td>
-<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.uploadProfilePic()[pri:4, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+<td><div><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.uploadProfilePic()[pri:4, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1802188146", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1802188146'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.uploadProfilePic()[pri:4, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf] depends on not successfully finished methods
+... Removed 22 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace777813771", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace777813771'><pre>java.lang.Throwable: Method TC1_EndToEndScenarios.uploadProfilePic()[pri:4, instance:eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0] depends on not successfully finished methods
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -623,7 +657,85 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
 </pre></div></td>
 <td>0</td>
-<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@2f9f7dcf</td></tr>
+<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0</td></tr>
+<tr>
+<td title='eqcare.peerjitestcases.TC1_EndToEndScenarios.verifyPage()'><b>verifyPage</b><br>Test class: eqcare.peerjitestcases.TC1_EndToEndScenarios</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: unknown error: unhandled inspector error: {&quot;code&quot;:-32601,&quot;message&quot;:&quot;&apos;Browser.setWindowBounds&apos; wasn&apos;t found&quot;}
+  (Session info: chrome=90.0.4430.210)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;EQ-MAC-25.local&apos;, ip: &apos;fe80:0:0:0:858:f5ea:32da:4341%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;14.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, databaseEnabled: false, desired: {browserName: chrome, deviceName: Emulator_Peerji, noReset: true, platformName: android, platformVersion: 9.0}, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: AOSP on IA Emulator, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 1149007b-dea6-4bfb-b12e-a733b4dbe7f7
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:833)
+	at eqcare.pages.BaseClass.setUp(BaseClass.java:110)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 34 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2125470482", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2125470482'><pre>org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: unknown error: unhandled inspector error: {&quot;code&quot;:-32601,&quot;message&quot;:&quot;&apos;Browser.setWindowBounds&apos; wasn&apos;t found&quot;}
+  (Session info: chrome=90.0.4430.210)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;EQ-MAC-25.local&apos;, ip: &apos;fe80:0:0:0:858:f5ea:32da:4341%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;14.0.2&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, databaseEnabled: false, desired: {browserName: chrome, deviceName: Emulator_Peerji, noReset: true, platformName: android, platformVersion: 9.0}, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: AOSP on IA Emulator, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: 1149007b-dea6-4bfb-b12e-a733b4dbe7f7
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:45)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:833)
+	at eqcare.pages.BaseClass.setUp(BaseClass.java:110)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+</pre></div></td>
+<td>0</td>
+<td>eqcare.peerjitestcases.TC1_EndToEndScenarios@a2431d0</td></tr>
 </table><p>
 </body>
 </html>

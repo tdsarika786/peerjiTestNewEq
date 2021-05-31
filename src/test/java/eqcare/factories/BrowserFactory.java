@@ -1,128 +1,148 @@
 package eqcare.factories;
 
-import java.util.Arrays;
-import java.util.HashMap;
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
-import org.openqa.selenium.safari.SafariDriver;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.remote.MobileCapabilityType;
+import software.amazon.awssdk.regions.Region;
+import software.amazon.awssdk.services.devicefarm.DeviceFarmClient;
+import software.amazon.awssdk.services.devicefarm.model.CreateTestGridUrlRequest;
+import software.amazon.awssdk.services.devicefarm.model.CreateTestGridUrlResponse;
 
 public class BrowserFactory {
 
-	public static void closeApplication(WebDriver driver) {
-		driver.close();
-		driver.quit();
-		System.out.println("LOG:INFO- Session closed");
-	}
-
-	public static WebDriver getApplication(String browser, String appURL, String projectrun) {
+	public static WebDriver getApplication(String browser, String appURL, String projectrun) throws IOException {
+		RemoteWebDriver driver1 = null;
+		//AppiumDriver driver = null;
 		WebDriver driver = null;
+		
+		if (projectrun.equalsIgnoreCase("aws")) {
 
-		if (browser.equalsIgnoreCase("Chrome")) {
-			// System.setProperty("webdriver.chrome.driver",
-			// System.getProperty("user.dir")+"/Drivers/chromedriver1");
+			  DeviceFarmClient client  = DeviceFarmClient.builder().region(Region.US_WEST_2).build();
+				CreateTestGridUrlRequest request = CreateTestGridUrlRequest.builder()
+			                .expiresInSeconds(300)        // 5 minutes
+			                .projectArn("arn:aws:devicefarm:us-west-2:059362432186:testgrid-project:90639a83-a341-47b6-8377-1e16ef9ddbc4")
+			                .build();
+			        URL testGridUrl = null;
+			        try {
+			            CreateTestGridUrlResponse response = client.createTestGridUrl(request);
+			            testGridUrl = new URL(response.url());
+			        } catch (Exception e) {
+			            e.printStackTrace();
+			        }
+			        //Assertions.assertNotNull(testGridUrl);
+			        
+			        DesiredCapabilities desired_capabilities = DesiredCapabilities.chrome();
+			        driver1 = new RemoteWebDriver(testGridUrl, desired_capabilities);
+	
+		}
+
+		if (projectrun.equalsIgnoreCase("and")) {
 			
-			if (projectrun.equalsIgnoreCase("eq")) {
+			 DesiredCapabilities capabilities = new DesiredCapabilities();
+		        //capabilities.setCapability("chromedriverExecutable", System.getProperty("user.dir")+ Constants.CHROME_DRIVER_PATH);
+		        
+		        System.setProperty("webdriver.chrome.driver", "/Users/sarikadhall/Desktop/chromedriver-90-4");
+		        
+		        capabilities.setCapability(MobileCapabilityType.NO_RESET, "true");
+		        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Emulator_Peerji");
+		        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "9.0");
+		        capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+		        capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, "chrome");
+		        
+		        
+		        driver = new AndroidDriver<WebElement>( new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
+		        
+		    /*    URL url = null;
+		        
+		        url = new URL("http://127.0.0.1:4723/wd/hub");
+
+		        driver = new AndroidDriver<>(url, capabilities);
+		        
+		        driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+		     
+		        driver.manage().deleteAllCookies();*/
+	
+		}
+		
+		if (projectrun.equalsIgnoreCase("eq")) {
+			
 			System.setProperty("webdriver.chrome.driver", "/Users/sarikadhall/Documents/ChromeDriver/chromedriver-90");
-			}
-			else {
-				System.setProperty("webdriver.chrome.driver", "/Users/sarika/Documents/ChromeDriver/chromedriver-89");
-			}
-
-			// ChromeOptions optionsC = new ChromeOptions();
-			// optionsC.addArguments(Arrays.asList("disable-infobars",
-			// "ignore-certificate-errors",
-			// "start-maximized","use-fake-ui-for-media-stream"));
-
-			//////
-
+			
 			ChromeOptions options = new ChromeOptions();
+
+			//options.addArguments("--headless");
+		
 			options.addArguments("use-fake-device-for-media-stream");
 			options.addArguments("use-fake-ui-for-media-stream");
-			// options.addArguments("--window-size=1920,1080");
-			// options.addArguments("start-maximized");
-			// DesiredCapabilities caps = new DesiredCapabilities();
-			// caps.setCapability("browser", "Chrome");
-			// caps.setCapability("browser_version", "75.0");
-			// caps.setCapability("os", "Windows");
-			// caps.setCapability("os_version", "10");
-			// caps.setCapability(ChromeOptions.CAPABILITY, options);
 
 			driver = new ChromeDriver(options);
+			
+			driver.manage().window().maximize();
+			
+			}
+		
+		if (projectrun.equalsIgnoreCase("anu")) {
+			
+			System.setProperty("webdriver.chrome.driver", "/Users/sarika/Documents/ChromeDriver/chromedriver-89");
+			
+			ChromeOptions options = new ChromeOptions();
 
-			// return new ChromeDriver(options);
+			//options.addArguments("--headless");
+		
+			options.addArguments("use-fake-device-for-media-stream");
+			options.addArguments("use-fake-ui-for-media-stream");
 
-			/////
-
-		} else if (browser.equalsIgnoreCase("Firefox")) {
-			System.setProperty("webdriver.gecko.driver", "/Users/sarikadhall/Downloads/geckodriver");
-
-			// System.setProperty("webdriver.gecko.driver",
-			// System.getProperty("user.dir")+"/Drivers/geckodriver.exe");
-			driver = new FirefoxDriver();
-		} else if (browser.equalsIgnoreCase("IE")) {
-
-			System.setProperty("webdriver.ie.driver", System.getProperty("user.dir") + "/Drivers/IEDriverServer.exe");
-			driver = new InternetExplorerDriver();
-		} else if (browser.equalsIgnoreCase("Safari")) {
-
-			// System.setProperty("webdriver.ie.driver",
-			// System.getProperty("user.dir")+"/Drivers/IEDriverServer.exe");
-			driver = new SafariDriver();
-		} else {
-			System.out.println("Sorry we do not support this browser");
+			driver = new ChromeDriver(options);
+			
+			driver.manage().window().maximize();
+			
 		}
-		// driver.manage().window().maximize();
+		/*else{
+			
+			if (browser.equalsIgnoreCase("Chrome")) {
+
+				System.setProperty("webdriver.chrome.driver", "/Users/sarikadhall/Documents/ChromeDriver/chromedriver-90");
+
+				ChromeOptions options = new ChromeOptions();
+
+				//options.addArguments("--headless");
+			
+				options.addArguments("use-fake-device-for-media-stream");
+				options.addArguments("use-fake-ui-for-media-stream");
+
+				driver1 = new ChromeDriver(options);
+			
+		}}s
+		*/
+		//driver.manage().window().maximize();
+
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
+
 		driver.get(appURL);
+
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 
 		return driver;
 	}
 
-	public static WebDriver getApplication1(String browser, String appURL) {
+	public static void closeApplication(WebDriver driver) {
 
-		WebDriver driver1 = null;
+		driver.close();
 
-		if (browser.equalsIgnoreCase("Chrome")) {
-			// System.setProperty("webdriver.chrome.driver",
-			// System.getProperty("user.dir")+"/Drivers/chromedriver1");
-			System.setProperty("webdriver.chrome.driver", "/Users/sarikadhall/Downloads/chromedriver");
+		driver.quit();
 
-			// ChromeOptions optionsC = new ChromeOptions();
-			// optionsC.addArguments(Arrays.asList("disable-infobars",
-			// "ignore-certificate-errors",
-			// "start-maximized","use-fake-ui-for-media-stream"));
-
-			//////
-
-			ChromeOptions options = new ChromeOptions();
-			options.addArguments("use-fake-device-for-media-stream");
-			options.addArguments("use-fake-ui-for-media-stream");
-
-			DesiredCapabilities caps = new DesiredCapabilities();
-			caps.setCapability("browser", "Chrome");
-			caps.setCapability("browser_version", "75.0");
-			caps.setCapability("os", "Windows");
-			caps.setCapability("os_version", "10");
-			caps.setCapability(ChromeOptions.CAPABILITY, options);
-
-			driver1 = new ChromeDriver(options);
-
-			// return new ChromeDriver(options);
-		}
-		/////
-		// driver.manage().window().maximize();
-		driver1.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
-		driver1.get(appURL);
-		driver1.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
-		return driver1;
-
+		System.out.println("LOG:INFO- Session closed");
 	}
-
 }

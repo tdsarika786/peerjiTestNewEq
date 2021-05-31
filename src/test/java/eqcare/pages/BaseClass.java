@@ -98,7 +98,7 @@ public class BaseClass implements ITestListener {
 
 	@Parameters({"Browser","AppURL", "ProjectRun"})
 	@BeforeClass
-	public void setUp(String browser, String appurl, String projectrun) {
+	public void setUp(String browser, String appurl, String projectrun) throws IOException {
 		System.out.println("Log:INFO- Setting up Browser and Application");
 
 		//driver = BrowserFactory.getApplication(DataProviderFactory.getConfig().getValue("Browser"),

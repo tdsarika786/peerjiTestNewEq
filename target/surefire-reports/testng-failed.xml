@@ -14,7 +14,7 @@
           <include name="verifyPage"/>
           <include name="familyTab"/>
           <include name="tearDownReport"/>
-          <include name="loginToApplication" invocation-numbers="0"/>
+          <include name="loginToApplication"/>
           <include name="deviceCheck"/>
           <include name="uploadProfilePic"/>
           <include name="editAccountInformation"/>
