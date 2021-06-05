@@ -43,8 +43,16 @@ public class BrowserFactory {
 			        }
 			        //Assertions.assertNotNull(testGridUrl);
 			        
+			        if (browser.equalsIgnoreCase("Chrome")) {
+			        
 			        DesiredCapabilities desired_capabilities = DesiredCapabilities.chrome();
 			        driver1 = new RemoteWebDriver(testGridUrl, desired_capabilities);
+			        }
+			        if (browser.equalsIgnoreCase("Firefox")) {
+			        	  DesiredCapabilities desired_capabilities = DesiredCapabilities.firefox();
+					        driver1 = new RemoteWebDriver(testGridUrl, desired_capabilities);
+			        	
+			        }
 	
 		}
 

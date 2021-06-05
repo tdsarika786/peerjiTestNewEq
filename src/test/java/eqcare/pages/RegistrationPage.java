@@ -226,7 +226,7 @@ public class RegistrationPage extends runWithAttachments {
 		Utility.waitForWebElement(driver, notCoverageButton).click();
 
 	}
-
+	
 	public void Registeration(String email, String userFirstName, String userLastName, String Address, String City,
 			String PostalCode, String DOB, String PhoneNo, String HealthCardNumber, String Password, boolean optional) {
 
@@ -262,6 +262,117 @@ public class RegistrationPage extends runWithAttachments {
 
 		Utility.waitForWebElement(driver, uploadGovtID)
 				.sendKeys(System.getProperty("user.dir") + "/TestData/medical-card.pdf");
+
+		// Utility.waitForWebElement(driver,
+		// uploadGovtID).sendKeys("/Users/sarikadhall/Downloads/OIP-2.jpeg");
+
+		Utility.waitForWebElement(driver, nextBtn).click();
+
+		Utility.waitForWebElement(driver, address).sendKeys(Address);
+
+		if (optional == true) {
+
+			Utility.waitForWebElement(driver, address2).sendKeys(Address);
+
+			Utility.waitForWebElement(driver, healthCardNumber).sendKeys(HealthCardNumber);
+		}
+
+		Utility.waitForWebElement(driver, city).sendKeys(City);
+
+		Utility.waitForWebElement(driver, postalCode).sendKeys(PostalCode);
+
+		Utility.waitForWebElement(driver, dob).sendKeys(DOB);
+
+		Utility.waitForWebElement(driver, phoneNumber).sendKeys(PhoneNo);
+
+		Utility.waitForWebElement(driver, accountInfoBtn).click();
+
+		Utility.waitForWebElement(driver, password).sendKeys(Password);
+
+		Utility.waitForWebElement(driver, password1).sendKeys(Password);
+
+		Utility.waitForWebElement(driver, nextBtn2).click();
+
+		WebElement button = driver.findElement(By.xpath("//div[@checkbox-field-id=\"email_confirmation\"]/div/input"));
+
+		WebElement button2 = driver.findElement(By.xpath("//div[@checkbox-field-id=\"terms_and_privacy\"]/div/input"));
+
+		JavascriptExecutor executor1 = (JavascriptExecutor) driver;
+		executor1.executeScript("arguments[0].click()", button);
+
+		JavascriptExecutor executor2 = (JavascriptExecutor) driver;
+		executor2.executeScript("arguments[0].click()", button2);
+
+		
+		// FOR COLE TICKETS
+		
+		if (optional == true) {
+
+			WebElement button3 = driver.findElement(By.xpath("//div[@checkbox-field-id=\"mailing_list\"]/div/input"));
+
+			JavascriptExecutor executor3 = (JavascriptExecutor) driver;
+			executor3.executeScript("arguments[0].click()", button3);
+
+		}
+		
+		
+		
+
+		// WebDriverWait wait1=new WebDriverWait(driver,10);
+		// wait1.until(ExpectedConditions.elementToBeClickable(ele5));
+
+		// Utility.highLightElement1(driver, checkBox1);
+
+		// Utility.waitForWebElement(driver, checkBox1).click();
+
+		// Utility.waitForWebElement(driver, checkBox2).click();
+
+		// PEERJI
+		Utility.waitForWebElement(driver, confirmButton).click();
+
+	}
+
+	public void Registeration1(String email, String userFirstName, String userLastName, String Address, String City,
+			String PostalCode, String DOB, String PhoneNo, String HealthCardNumber, String Password, boolean optional, String filetype) {
+
+		Utility.waitForWebElement(driver, emailAddress).sendKeys(email);
+
+		if (optional == true) {
+
+			WebElement fileButtonProfielPic = driver.findElement(By.xpath("(//input[@type='file'])[1]"));
+			JavascriptExecutor executor = (JavascriptExecutor) driver;
+			executor.executeScript("arguments[0].style.display='block';", fileButtonProfielPic);
+
+			Utility.waitForWebElement(driver, uploadProfilePic)
+					.sendKeys(System.getProperty("user.dir") + "/TestData/sai-pic.jpeg");
+
+		}
+//sstest
+		// Utility.waitForWebElement(driver,
+		// uploadProfilePic).sendKeys("/Users/sarikadhall/Downloads/OIP-2.jpeg");
+
+		// Utility.waitForWebElement(driver,
+		// uploadProfilePic).sendKeys(System.getProperty("user.dir") +
+		// "/TestData/medical-card.jpeg");
+
+		Utility.waitForWebElement(driver, firstName).sendKeys(userFirstName);
+
+		Utility.waitForWebElement(driver, lastName).sendKeys(userLastName);
+
+		Utility.waitForWebElement(driver, gender).click();
+
+		WebElement fileButtonGovtID = driver.findElement(By.xpath("(//input[@type='file'])[2]"));
+		JavascriptExecutor executorGovtID = (JavascriptExecutor) driver;
+		executorGovtID.executeScript("arguments[0].style.display='block';", fileButtonGovtID);
+
+		if (filetype.equalsIgnoreCase("pdf")) {
+		Utility.waitForWebElement(driver, uploadGovtID)
+				.sendKeys(System.getProperty("user.dir") + "/TestData/medical-card.pdf");
+		}
+		else {
+			Utility.waitForWebElement(driver, uploadGovtID)
+			.sendKeys(System.getProperty("user.dir") + "/TestData/medical-card.jpeg");	
+		}
 
 		// Utility.waitForWebElement(driver,
 		// uploadGovtID).sendKeys("/Users/sarikadhall/Downloads/OIP-2.jpeg");

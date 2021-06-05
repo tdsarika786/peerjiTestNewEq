@@ -18,43 +18,21 @@ public class Novapeerji extends BaseClass {
 	@Test(priority = 0)
 	public void verifyPage() throws Exception {
 
-		logger = report.createTest("Staging Web Application Login URL validation");
-
 		login = PageFactory.initElements(driver, LoginPage.class);
 
 		login.verifyUrlBeforeLogin();
 
-		logger.info("Validating url:  " + DataProviderFactory.getConfig().getValue("ponyEnv"));
-
 	}
-
-	// sarikaqa7ms1@outlook.com
-	// ENV 1
-	//sarikaqa7+b1@gmail.com  = Individual
-	//sarikaqa7+c1@gmail.com  = Covered Single
-	
-	//ENV 2
-    //sarikaqa7+i1@gmail.com
 	
 	@Parameters({"NovaEmail","NovaPassword"})
 	@Test(priority = 0, dependsOnMethods = "verifyPage")
 	public void loginToApplication(String novaemail, String novapassword) throws Exception {
-
-		logger = report.createTest("Login as patient - Individual Paying Customer");
-
-		//login.loginToApplication(DataProviderFactory.getExcel().getCellData("Login", 1, 0),
-		//		DataProviderFactory.getExcel().getCellData("Login", 1, 1));
-
-		//sarikaqa7+eqserstg1@gmail.com
-		//login.loginToApplication("sarikaqa7+br1@gmail.com",
-		//		"Sarika#123");
 		
 		login.loginToApplication(novaemail,
 				novapassword);
 		
 		login.verifyUrlAfterLogin();
 
-		logger.info("Patient Logged in");
 	}
 	
 	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
@@ -63,31 +41,58 @@ public class Novapeerji extends BaseClass {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
 
-		logger = report.createTest("Create Employee with coverage token");
-
-		home.createEmployer(searchemployer,coveragetoken, coveragetype); // First see if employer there Modify
+		home.createEmployer("Sarika-Test-PC-LJ","70", "primary_care_with_lifejourney"); // First see if employer there Modify
 		
-		//home.TestBrowser();
-
-		logger.info("Employee created with coverage token");
 	}
 
-	@Parameters({"SearchEmployer","CoverageIdentifier" })
-	@Test(priority = 2, dependsOnMethods = "verifyPage", enabled=false)
-	public void CreateEmployee(String searchemployer, String coverageidentifier) throws InterruptedException {
+	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
+	@Test(priority = 2, dependsOnMethods = "loginToApplication")
+	public void CreateEmployer1(String searchemployer, String coveragetoken, String coveragetype ) throws InterruptedException {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
 
-		logger = report.createTest("Create Employee with coverage token");
-
-		// home.createEmployer(); // First see if employer there Modify
+		home.createEmployer("Sarika-Test-LJ","71", "lifejourney_standalone"); // First see if employer there Modify
 		
-		//home.createEmployee(searchemployer,coverageidentifier); // then create employee 
-		
-		//home.TestBrowser();
-
-		logger.info("Employee created with coverage token");
 	}
+	
+	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
+	@Test(priority = 3, dependsOnMethods = "loginToApplication")
+	public void CreateEmployer2(String searchemployer, String coveragetoken, String coveragetype ) throws InterruptedException {
+		
+		home = PageFactory.initElements(driver, NovaHomePage.class);
 
-
+		home.createEmployer("Sarika-Test-PC","72", "primary_care"); // First see if employer there Modify
+		
+	}
+	
+	@Parameters({"SearchEmployer","CoverageIdentifier", "PlanType" })
+	@Test(priority = 4, dependsOnMethods = "loginToApplication")
+	public void CreateEmployee(String searchemployer, String coverageidentifier, String plantype) throws InterruptedException {
+		
+		home = PageFactory.initElements(driver, NovaHomePage.class);
+		
+		home.createEmployee("Sarika-Test-PC-LJ","anu","family"); // then create employee 
+		
+	}
+	
+	@Parameters({"SearchEmployer","CoverageIdentifier", "PlanType" })
+	@Test(priority = 4, dependsOnMethods = "loginToApplication")
+	public void CreateEmployee1(String searchemployer, String coverageidentifier, String plantype) throws InterruptedException {
+		
+		home = PageFactory.initElements(driver, NovaHomePage.class);
+		
+		home.createEmployee("Sarika-Test-LJ","anu1","single"); // then create employee 
+		
+	}
+	
+	@Parameters({"SearchEmployer","CoverageIdentifier", "PlanType" })
+	@Test(priority = 4, dependsOnMethods = "loginToApplication")
+	public void CreateEmployee2(String searchemployer, String coverageidentifier, String plantype) throws InterruptedException {
+		
+		home = PageFactory.initElements(driver, NovaHomePage.class);
+		
+		home.createEmployee("Sarika-Test-PC","anu2","family"); // then create employee 
+		
+	}
+	
 }
