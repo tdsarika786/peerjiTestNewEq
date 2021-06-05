@@ -1,14 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 19, Failures: 1, Errors: 0, Skipped: 18, Time elapsed: 95.076 s <<< FAILURE! - in TestSuite
-eqcare.peerjitestcases.TC1_EndToEndScenarios.setUp  Time elapsed: 93.99 s  <<< FAILURE!
-org.openqa.selenium.WebDriverException: 
-An unknown server-side error occurred while processing the command. Original error: unknown error: unhandled inspector error: {"code":-32601,"message":"'Browser.setWindowBounds' wasn't found"}
-  (Session info: chrome=90.0.4430.210)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:858:f5ea:32da:4341%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.google.android.apps.chr..., appPackage: com.android.chrome, browserName: chrome, databaseEnabled: false, desired: {browserName: chrome, deviceName: Emulator_Peerji, noReset: true, platformName: android, platformVersion: 9.0}, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: AOSP on IA Emulator, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, noReset: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 1149007b-dea6-4bfb-b12e-a733b4dbe7f7
-
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 81.082 s - in TestSuite

@@ -71,7 +71,7 @@ public class LoginScenarios extends BaseClass{
 
 		// login.loginToApplication("automationsaru@gmail.com", "Abcde#123");
 
-		login.navigateToLoginPage();
+		//login.navigateToLoginPage();
 
 		login.validateShowPasswordLink();
 
@@ -110,7 +110,7 @@ public class LoginScenarios extends BaseClass{
 
 		logger = report.createTest("Login without providing email and password");
 
-		login.navigateToLoginPage();
+		//login.navigateToLoginPage();
 
 		login.loginToApplication("", "");
 

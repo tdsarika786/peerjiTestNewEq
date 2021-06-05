@@ -1,4 +1,4 @@
-package eqcare.peerjitestcases;
+package eqcare.peerjitestcases.copy;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Parameters;
@@ -11,9 +11,9 @@ import eqcare.pages.LoginPage;
 import eqcare.pages.LogoutPage;
 import eqcare.pages.RegistrationPage;
 import eqcare.factories.DataProviderFactory;
-import eqcare.pages.BaseClass;
+import eqcare.pages.copy.BaseClass;
 
-public class TC3_ForgotPasswordScenarios extends BaseClass {
+public class TC2_ForgotPasswordScenarios extends BaseClass {
 
 	// 2. Patient login to the application to EQ Care
 
@@ -26,45 +26,41 @@ public class TC3_ForgotPasswordScenarios extends BaseClass {
 
 		forgot = PageFactory.initElements(driver, ForgotPasswordPage.class);
 
-		//logger = report.createTest("Forgot Password modal validation");
-
 		forgot.navigateToForgortPasswordModal();
 
 		forgot.verifyResetPasswordModal();
 
-		//slogger.info("Validated forgot password  url");
-
 	}
 
-	@Test(priority = 1, dependsOnMethods = "verifyPage", enabled=false)
+	@Test(priority = 1, dependsOnMethods = "verifyPage")
 	public void resetPasswordWithInValidInput() {
 
-		logger = report.createTest("Login as patient with valid inputs");
+		//logger = report.createTest("Login as patient with valid inputs");
 
 		forgot.navigateToForgortPasswordModal();
 
 		forgot.errorMessageEmptyEmail();
 
-		logger.info("Patient ");
+		//logger.info("Patient ");
 	}
 
 	@Parameters({"Email"})
-	@Test(priority = 2, dependsOnMethods = "verifyPage", enabled=false)
+	@Test(priority = 2, dependsOnMethods = "verifyPage")
 	public void resetPasswordWithValidInput(String email) {
 
-		logger = report.createTest("Login as patient with valid inputs");
+		//logger = report.createTest("Login as patient with valid inputs");
 		
 		forgot.navigateToForgortPasswordModal();
 
 		forgot.resetPasswordNotification(email);
 
-		logger.info("Patient ");
+		//logger.info("Patient ");
 	}
 
 	@Test(priority = 3, enabled=false)
 	public void resetPassword() {
 
-		logger = report.createTest("Login as patient with valid inputs");
+		//logger = report.createTest("Login as patient with valid inputs");
 
 		forgot.navigateToPasswordResetPage();
 

@@ -47,6 +47,8 @@ public class LoginPage extends runWithAttachments {
 	By languageENLink = By.xpath("//a[contains(text(), 'EN')]");
 
 	By languageFRLink = By.xpath("//a[contains(text(), 'FR')]");
+	
+	By languageLink = By.xpath("//*[@id=\"scrollable-container\"]/div[2]/div[1]/a[2]");
 
 	By registerLink = By.xpath("//*[@data-role='register-button']");
 
@@ -57,6 +59,8 @@ public class LoginPage extends runWithAttachments {
 	By phoneNoLink = By.xpath("//a[contains(text(), '1-855-449-4994')]");
 
 	By emailLink = By.xpath("//a[contains(text(), 'support@eqcare.com')]");
+	
+	By homeLink = By.xpath("//*[@id=\"app\"]/div[1]/div[1]/div[1]/div[2]/a[1]");
 
 	public void verifyUrlBeforeLogin() throws Exception {
 
@@ -78,9 +82,26 @@ public class LoginPage extends runWithAttachments {
 	{
 		System.out.println(driver.findElement(By.xpath("//a[2]//img[1]")).isDisplayed());
 	}
+	
+	public void navigateToHomePage() {
+
+		Utility.waitForWebElement(driver, homeLink).click();
+
+	}
 
 	public void verifyUrlAfterLogin() throws Exception {
 		try {
+
+			navigateToHomePage();
+			
+			String text = Utility.waitForWebElement(driver, languageLink).getText();
+			
+			if (text.equalsIgnoreCase("EN")) {
+				
+				Utility.waitForWebElement(driver, languageLink).click();
+				
+			}
+		
 			WebElement ele = Utility.waitForWebElement(driver, logoutButton);
 			String contactUsHeader = ele.getText();
 			Assert.assertEquals(contactUsHeader, "Logout");
@@ -219,16 +240,25 @@ public class LoginPage extends runWithAttachments {
 
 	}
 
-	public void navigateToLoginPage() {
+	public void navigateToLoginPage(String appurl) {
 
-		Utility.navigateToURL(driver, DataProviderFactory.getConfig().getValue("ponyEnv"));
+		Utility.navigateToURL(driver,appurl);
 	}
 
-	public void logOutFromApplication() {
-
+public void logOutFromApplication() {
+		
+		String text = Utility.waitForWebElement(driver, languageLink).getText();
+		
+		if (text.equalsIgnoreCase("EN")) {
+			
+			Utility.waitForWebElement(driver, languageLink).click();
+			
+		}
+		
 		Utility.waitForWebElement(driver, logoutText).click();
-
+		
 		Utility.wait(2);
+		
 	}
 	
 public void verifyHomeFooter() throws Exception {
