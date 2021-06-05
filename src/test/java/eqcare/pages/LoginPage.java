@@ -106,9 +106,13 @@ public class LoginPage extends runWithAttachments {
 			String contactUsHeader = ele.getText();
 			Assert.assertEquals(contactUsHeader, "Logout");
 
-			runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 1, 0), "0");
+			runTestResults("29754173", "0");
+			
+			runTestResults("5121381", "0");
 		} catch (Exception ex) {
-			runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 1, 0), "7");
+			runTestResults("29754173", "7");
+			
+			runTestResults("5121381", "7");
 			throw ex;
 		}
 
@@ -139,11 +143,19 @@ public class LoginPage extends runWithAttachments {
 	}
 
 	public void errorMessagesIncorrectEmailPassword() {
+		
+		try {
 		Utility.wait(2);
 		WebElement ele = Utility.waitForWebElement(driver, loginErrorMessage);
 		String loginErrorMessageText = ele.getText();
 		Assert.assertEquals(loginErrorMessageText, ErrorCodesProvider.read("INCORRECT_EMAIL_PASSWORD"));
-	}
+		runTestResults("29754174", "0");
+		} catch (Exception ex) {
+			//runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 13, 0), "7");
+			runTestResults("29754174", "7");
+			throw ex;
+		}
+		}
 
 	public void errorMessagesIncorrectEmail() {
 		WebElement ele = Utility.waitForWebElement(driver, loginErrorMessage);
@@ -158,6 +170,8 @@ public class LoginPage extends runWithAttachments {
 	}
 
 	public void emptyFieldsTest() {
+		
+		try {
 
 		Utility.wait(2);
 
@@ -182,9 +196,19 @@ public class LoginPage extends runWithAttachments {
 
 			}
 		Assert.assertEquals(errorDisplayed, true);
+		//runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 13, 0), "0");
+				runTestResults("29754175", "0");
+				} catch (Exception ex) {
+					//runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 13, 0), "7");
+					runTestResults("29754175", "7");
+					throw ex;
+				}
+		
 	}
 
 	public void validateShowPasswordLink() {
+		
+		try {
 
 		Utility.waitForWebElement(driver, password).sendKeys("TestPassword");
 
@@ -201,6 +225,14 @@ public class LoginPage extends runWithAttachments {
 		Utility.verifyAttribute(driver, password, "type", "text");
 
 		Utility.wait(2);
+		
+		//runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 13, 0), "0");
+		runTestResults("29754181", "0");
+		} catch (Exception ex) {
+			//runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 13, 0), "7");
+			runTestResults("29754181", "7");
+			throw ex;
+		}
 
 	}
 
@@ -225,6 +257,8 @@ public class LoginPage extends runWithAttachments {
 	}
 
 	public void validatelanguageLink() {
+		
+		try {
 
 		Utility.waitForWebElement(driver, languageFRLink).click();
 
@@ -237,7 +271,13 @@ public class LoginPage extends runWithAttachments {
 		Utility.verifyText(driver, passwordLabel, "Password");
 
 		Utility.wait(2);
-
+		//runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 13, 0), "0");
+				runTestResults("29754180", "0");
+				} catch (Exception ex) {
+					//runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 13, 0), "7");
+					runTestResults("29754180", "7");
+					throw ex;
+				}
 	}
 
 	public void navigateToLoginPage(String appurl) {
@@ -270,9 +310,9 @@ public void verifyHomeFooter() throws Exception {
 		Utility.waitForWebElement(driver, phoneNoLink);
 
 		Utility.waitForWebElement(driver, emailLink);
-		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 13, 0), "0");
+		runTestResults("29754179", "0");
 		} catch (Exception ex) {
-			runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 13, 0), "7");
+			runTestResults("29754179", "7");
 			throw ex;
 		}
 

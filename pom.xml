@@ -96,6 +96,7 @@
 							<NovaEmail>${NovaEmail}</NovaEmail>
 						<NovaPassword>${NovaPassword}</NovaPassword>
 						<PlanType>${PlanType}</PlanType>
+						<ProjectARN>${ProjectARN}</ProjectARN>
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>

@@ -27,6 +27,8 @@ public class TC1_LoginScenarios extends BaseClass {
 		home = PageFactory.initElements(driver, HomePage.class);
 
 		login.verifyUrlBeforeLogin();
+		
+		
 
 	}
 
@@ -45,19 +47,6 @@ public class TC1_LoginScenarios extends BaseClass {
 
 		login.validatelanguageLink();
 
-	}
-
-	@Test(priority = 5, enabled = false)
-	public void signInRedirectionTest() {
-		login = PageFactory.initElements(driver, LoginPage.class);
-
-		logger = report.createTest("Verifying register link on Login page");
-
-		logger.info("Validate register link");
-
-		login.signUpRedirectionTest();
-
-		logger.info("Validated redirection to the registeration page");
 	}
 
 	@Parameters({ "AppURL" })
@@ -88,6 +77,19 @@ public class TC1_LoginScenarios extends BaseClass {
 		login.verifyHomeFooter();
 
 	}
+	
+	@Test(priority = 5, enabled = false)
+	public void signInRedirectionTest() {
+		login = PageFactory.initElements(driver, LoginPage.class);
+
+		logger = report.createTest("Verifying register link on Login page");
+
+		logger.info("Validate register link");
+
+		login.signUpRedirectionTest();
+
+		logger.info("Validated redirection to the registeration page");
+	}
 
 	@Parameters({ "Email", "Password" })
 	@Test(priority = 6, dependsOnMethods = "verifyPage")
@@ -96,6 +98,7 @@ public class TC1_LoginScenarios extends BaseClass {
 		login.loginToApplication(email, password);
 
 		login.verifyUrlAfterLogin();
+		
 
 	}
 
@@ -105,5 +108,7 @@ public class TC1_LoginScenarios extends BaseClass {
 		login.logOutFromApplication();
 
 	}
+	
+
 
 }

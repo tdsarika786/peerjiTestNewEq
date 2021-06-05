@@ -14,7 +14,7 @@ import eqcare.pages.ClinicPage;
 import eqcare.factories.DataProviderFactory;
 import eqcare.pages.BaseClass;
 
-public class TC1_LifeJourneyEndScenarios extends BaseClass {
+public class TC4_LifeJourneyEndScenarios extends BaseClass {
 
 	// Home Scenarios
 

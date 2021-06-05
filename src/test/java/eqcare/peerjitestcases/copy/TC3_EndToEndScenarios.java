@@ -20,7 +20,7 @@ import eqcare.pages.AccountPage;
 import eqcare.pages.Base;
 import eqcare.pages.BaseClass;
 
-public class TC1_EndToEndScenarios extends BaseClass {
+public class TC3_EndToEndScenarios extends BaseClass {
 
 	LoginPage login;
 	HomePage home;
@@ -35,23 +35,15 @@ public class TC1_EndToEndScenarios extends BaseClass {
 	@Test(priority = 0)
 	public void verifyPage() throws Exception {
 
-		logger = report.createTest("Staging Web Application Login URL validation");
+		//logger = report.createTest("Staging Web Application Login URL validation");
 
 		login = PageFactory.initElements(driver, LoginPage.class);
 
 		login.verifyUrlBeforeLogin();
 
-		logger.info("Validating url:  " + DataProviderFactory.getConfig().getValue("ponyEnv"));
+		//logger.info("Validating url:  " + DataProviderFactory.getConfig().getValue("ponyEnv"));
 
 	}
-
-	// sarikaqa7ms1@outlook.com
-	// ENV 1
-	//sarikaqa7+b1@gmail.com  = Individual
-	//sarikaqa7+c1@gmail.com  = Covered Single
-	
-	//ENV 2
-    //sarikaqa7+i1@gmail.com
 	
 	@Parameters({"Email","Password"})
 	@Test(priority = 1, dependsOnMethods = "verifyPage")
@@ -59,19 +51,12 @@ public class TC1_EndToEndScenarios extends BaseClass {
 
 		logger = report.createTest("Login as patient - Individual Paying Customer");
 
-		//login.loginToApplication(DataProviderFactory.getExcel().getCellData("Login", 1, 0),
-		//		DataProviderFactory.getExcel().getCellData("Login", 1, 1));
-
-		//sarikaqa7+eqserstg1@gmail.com
-		//login.loginToApplication("sarikaqa7+br1@gmail.com",
-		//		"Sarika#123");
-		
 		login.loginToApplication(email,
 				password);
 		
 		login.verifyUrlAfterLogin();
 
-		logger.info("Patient Logged in");
+		//logger.info("Patient Logged in");
 	}
 
 	@Test(priority = 2, dependsOnMethods = "loginToApplication")
@@ -79,19 +64,19 @@ public class TC1_EndToEndScenarios extends BaseClass {
 
 		account = PageFactory.initElements(driver, AccountPage.class);
 
-		logger = report.createTest("Patient Edits Profile - Personal Information ");
+		//logger = report.createTest("Patient Edits Profile - Personal Information ");
 
 		account.navigateToProfilePage();
 
-		logger.info("Patint logged in and navigates to Account Page");
+		//logger.info("Patint logged in and navigates to Account Page");
 
 		account.verifyUrlAfterLogin();
 
-		logger.info("Patint editing user personal information");
+		//logger.info("Patint editing user personal information");
 
 		account.editUserPersonalInfo();
 
-		logger.info("Patint saved user personal information");
+		//logger.info("Patint saved user personal information");
 
 	}
 
@@ -100,13 +85,13 @@ public class TC1_EndToEndScenarios extends BaseClass {
 
 		account = PageFactory.initElements(driver, AccountPage.class);
 
-		logger = report.createTest("Patient Edits Profile -  Account Information");
+		//logger = report.createTest("Patient Edits Profile -  Account Information");
 
-		logger.info("Patient editing user account information");
+		//logger.info("Patient editing user account information");
 
 		account.editUserAccountInfo();
 
-		logger.info("Patint saved user account information");
+		//logger.info("Patint saved user account information");
 
 	}
 
@@ -115,15 +100,15 @@ public class TC1_EndToEndScenarios extends BaseClass {
 
 		account = PageFactory.initElements(driver, AccountPage.class);
 
-		logger = report.createTest("Patient Uploads profile pic");
+		//logger = report.createTest("Patient Uploads profile pic");
 
-		logger.info("Patint logged and navigates to Account Page");
+		//logger.info("Patint logged and navigates to Account Page");
 
-		logger.info("Patient uploading profile pic");
+		//logger.info("Patient uploading profile pic");
 
 		account.uploadProfilePic();
 
-		logger.info("Patint uploaded profile pic");
+		//logger.info("Patint uploaded profile pic");
 
 	}
 
@@ -132,15 +117,15 @@ public class TC1_EndToEndScenarios extends BaseClass {
 
 		account = PageFactory.initElements(driver, AccountPage.class);
 
-		logger = report.createTest("Patient Uploads government ID");
+		//logger = report.createTest("Patient Uploads government ID");
 
-		logger.info("Patient logged and navigates to Account Page");
+		//logger.info("Patient logged and navigates to Account Page");
 
-		logger.info("Patient uploading government ID");
+		//logger.info("Patient uploading government ID");
 
 		account.uploadGovtID();
 
-		logger.info("Patient uploaded Govt ID");
+		//logger.info("Patient uploaded Govt ID");
 
 	}
 
@@ -149,13 +134,13 @@ public class TC1_EndToEndScenarios extends BaseClass {
 
 		account = PageFactory.initElements(driver, AccountPage.class);
 
-		logger = report.createTest("Verify Family Tab");
+		//logger = report.createTest("Verify Family Tab");
 
-		logger.info("Patient logged and navigates to Family Tab");
+		//logger.info("Patient logged and navigates to Family Tab");
 
 		account.createFamily();
 
-		logger.info("Create a family link validated");
+		//logger.info("Create a family link validated");
 
 	}
 
@@ -164,15 +149,15 @@ public class TC1_EndToEndScenarios extends BaseClass {
 
 		account = PageFactory.initElements(driver, AccountPage.class);
 
-		logger = report.createTest("Verify Family Tab and Add Child");
+		//logger = report.createTest("Verify Family Tab and Add Child");
 
-		logger.info("Patient logged and navigates to Family Tab");
+		//logger.info("Patient logged and navigates to Family Tab");
 
-		logger.info("Patient adding a child");
+		//logger.info("Patient adding a child");
 
 		account.addChild();
 
-		logger.info("Patient Added Child");
+		//logger.info("Patient Added Child");
 
 	}
 
@@ -181,80 +166,80 @@ public class TC1_EndToEndScenarios extends BaseClass {
 
 		account = PageFactory.initElements(driver, AccountPage.class);
 
-		logger = report.createTest("Verify Family Tab and Delete Child");
+		//logger = report.createTest("Verify Family Tab and Delete Child");
 
-		logger.info("Patient logged and navigates to Family Tab");
+		//logger.info("Patient logged and navigates to Family Tab");
 
-		logger.info("Patient deleting a child");
+		//logger.info("Patient deleting a child");
 
 		account.deleteChild();
 
-		logger.info("Patient Deleted Child");
+		//logger.info("Patient Deleted Child");
 
 	}
 
-	@Test(priority = 9, dependsOnMethods = "loginToApplication")
+	@Test(priority = 9, dependsOnMethods = "loginToApplication", enabled=false)
 	public void startVideoConsultation() throws Exception {
 
 		home = PageFactory.initElements(driver, HomePage.class);
 
-		logger = report.createTest("Patient Starts Video Consultation");
+		//logger = report.createTest("Patient Starts Video Consultation");
 
-		logger.info("Patint logged and navigates to Home Page");
+		//logger.info("Patint logged and navigates to Home Page");
 
 		home.navigateToHomePage();
 
-		logger.info("Validating Home Page Url");
+		//logger.info("Validating Home Page Url");
 
 	}
 
-	@Test(priority = 10, dependsOnMethods = "loginToApplication")
+	@Test(priority = 10, dependsOnMethods = "loginToApplication", enabled=false)
 	public void deviceCheck() throws Exception {
 
 		home = PageFactory.initElements(driver, HomePage.class);
 
-		logger = report.createTest("Patient performing Device Check");
+		//logger = report.createTest("Patient performing Device Check");
 
 		home.deviceCheck();
 
-		logger.info("Patint device check completed");
+		//logger.info("Patint device check completed");
 
 	}
 
-	@Test(priority = 11, dependsOnMethods = "deviceCheck")
+	@Test(priority = 11, dependsOnMethods = "deviceCheck", enabled=false)
 	public void fillIntakeFormWithAllFields() throws Exception {
 
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
 
-		logger = report.createTest("Patient filling Intake Form");
+		//logger = report.createTest("Patient filling Intake Form");
 
 		intake.fillIntakeForm();
 
-		logger.info("Patint device check completed");
+		//logger.info("Patint device check completed");
 	}
 
-	@Test(priority = 12, dependsOnMethods = "deviceCheck")
+	@Test(priority = 12, dependsOnMethods = "deviceCheck", enabled=false)
 	public void endVisit() throws Exception {
 
 		visit = PageFactory.initElements(driver, VisitPage.class);
 
-		logger = report.createTest("Patient end the Visit");
+		//logger = report.createTest("Patient end the Visit");
 
 		visit.endCall();
 
-		logger.info("Patint device check completed");
+		//logger.info("Patint device check completed");
 	}
 
-	@Test(priority = 13, dependsOnMethods = "deviceCheck")
+	@Test(priority = 13, dependsOnMethods = "deviceCheck", enabled=false)
 	public void feedback() throws Exception {
 
 		feedback = PageFactory.initElements(driver, FeedbackPage.class);
 
-		logger = report.createTest("Patient providing rating and feedback");
+		//logger = report.createTest("Patient providing rating and feedback");
 
 		feedback.ratingProvided();
 
-		logger.info("Patient provided feeback");
+		//logger.info("Patient provided feeback");
 	}
 
 	@Test(priority = 14, dependsOnMethods = "loginToApplication")
@@ -262,11 +247,11 @@ public class TC1_EndToEndScenarios extends BaseClass {
 
 		help = PageFactory.initElements(driver, HelpPage.class);
 
-		logger = report.createTest("Patient navigating to Help Page");
+		//logger = report.createTest("Patient navigating to Help Page");
 
 		help.navigateToHelpPage();
 
-		logger.info("Help Page Header verified");
+		//logger.info("Help Page Header verified");
 	}
 
 	@Test(priority = 14, dependsOnMethods = "loginToApplication")
@@ -274,13 +259,13 @@ public class TC1_EndToEndScenarios extends BaseClass {
 
 		inbox = PageFactory.initElements(driver, InboxPage.class);
 
-		logger = report.createTest("Patient navigating to Inbox Page");
+		//logger = report.createTest("Patient navigating to Inbox Page");
 
 		inbox.navigateToInboxPage();
 
 		inbox.verifyMyInboxTabs();
 
-		logger.info("Help Page Header verified");
+		//logger.info("Help Page Header verified");
 	}
 
 	@Test(priority = 14, dependsOnMethods = "loginToApplication", enabled = false)
@@ -288,13 +273,13 @@ public class TC1_EndToEndScenarios extends BaseClass {
 
 		inbox = PageFactory.initElements(driver, InboxPage.class);
 
-		logger = report.createTest("Patient navigating to Help Page");
+		//logger = report.createTest("Patient navigating to Help Page");
 
 		inbox.navigateToInboxPage();
 
 		inbox.verifyMyInboxTabs();
 
-		logger.info("Help Page Header verified");
+		//logger.info("Help Page Header verified");
 	}
 
 }

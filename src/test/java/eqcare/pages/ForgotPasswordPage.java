@@ -12,11 +12,13 @@ import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 
+import com.practitest.examples.runWithAttachments;
+
 import eqcare.factories.DataProviderFactory;
 import eqcare.factories.*;
 import eqcare.helper.Utility;
 
-public class ForgotPasswordPage {
+public class ForgotPasswordPage extends runWithAttachments {
 
 	WebDriver driver;
 
@@ -53,6 +55,8 @@ public class ForgotPasswordPage {
 	}
 
 	public void resetPasswordNotification(String patientEmail) {
+		
+		try {
 
 		Utility.waitForWebElement(driver, email).sendKeys(patientEmail);
 
@@ -61,10 +65,17 @@ public class ForgotPasswordPage {
 		WebElement ele = Utility.waitForWebElement(driver, forgotPasswordConfirmMsg);
 		String resetPasswordConfirmMsg = ele.getText();
 		Assert.assertEquals(resetPasswordConfirmMsg, ErrorCodesProvider.read("FORGOT_PASSWORD_CONFIRMATION_MESSAGE"));
-
+		runTestResults("29754304", "0");
+		} catch (Exception ex) {
+			//runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 13, 0), "7");
+			runTestResults("29754304", "7");
+			throw ex;
+		}
+		
 	}
 
 	public void verifyResetPasswordModal() {
+		try {
 		// Assert.assertTrue(driver.getCurrentUrl().contains("dashboard"), "Dashboard
 		// does not contain dashboard keyword");
 		WebElement ele = Utility.waitForWebElement(driver, resetPasswordHeader);
@@ -72,9 +83,19 @@ public class ForgotPasswordPage {
 		Assert.assertEquals(resetPasswordHeaderText, "Reset password");
 		
 		Utility.waitForWebElement(driver, cloaseLink).click();
+		runTestResults("29754303", "0");
+		runTestResults("29754177", "0");
+		} catch (Exception ex) {
+			//runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 13, 0), "7");
+			runTestResults("29754303", "7");
+			runTestResults("29754177", "7");
+			throw ex;
+		}
 	}
 
 	public void errorMessageEmptyEmail() {
+		
+		try {
 
 		Utility.waitForWebElement(driver, email).sendKeys("");
 
@@ -85,6 +106,14 @@ public class ForgotPasswordPage {
 		Assert.assertEquals(resetPasswordMessageText, ErrorCodesProvider.read("ENTER_EMAIL"));
 		
 		Utility.waitForWebElement(driver, cloaseLink).click();
+		
+		runTestResults("39236364", "0");
+		
+		} catch (Exception ex) {
+			//runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 13, 0), "7");
+			runTestResults("39236364", "7");
+			throw ex;
+		}
 	}
 
 	// 
