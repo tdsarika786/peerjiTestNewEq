@@ -1,59 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="2" total="13" passed="11" failed="0" skipped="0">
+<testng-results ignored="1" total="9" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-06-05T09:10:59 EDT" name="Suite" finished-at="2021-06-05T09:12:19 EDT" duration-ms="80185">
+  <suite started-at="2021-06-05T11:14:45 EDT" name="Suite" finished-at="2021-06-05T11:15:51 EDT" duration-ms="66144">
     <groups>
     </groups>
-    <test started-at="2021-06-05T09:10:59 EDT" name="Test" finished-at="2021-06-05T09:12:19 EDT" duration-ms="80185">
-      <class name="eqcare.peerjitestcases.copy.TC2_ForgotPasswordScenarios">
-        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:eqcare.peerjitestcases.copy.TC2_ForgotPasswordScenarios@5ace1ed4]" started-at="2021-06-05T09:11:58 EDT" name="setUp" finished-at="2021-06-05T09:12:08 EDT" duration-ms="9766" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://patient.eqservicestaging.eqcaredev.com/login]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[eq]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="verifyPage()[pri:0, instance:eqcare.peerjitestcases.copy.TC2_ForgotPasswordScenarios@5ace1ed4]" started-at="2021-06-05T09:12:08 EDT" name="verifyPage" finished-at="2021-06-05T09:12:09 EDT" duration-ms="1744" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPage -->
-        <test-method signature="resetPasswordWithInValidInput()[pri:1, instance:eqcare.peerjitestcases.copy.TC2_ForgotPasswordScenarios@5ace1ed4]" started-at="2021-06-05T09:12:09 EDT" name="resetPasswordWithInValidInput" finished-at="2021-06-05T09:12:14 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC2_ForgotPasswordScenarios.verifyPage" duration-ms="4918" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- resetPasswordWithInValidInput -->
-        <test-method signature="resetPasswordWithValidInput(java.lang.String)[pri:2, instance:eqcare.peerjitestcases.copy.TC2_ForgotPasswordScenarios@5ace1ed4]" started-at="2021-06-05T09:12:14 EDT" name="resetPasswordWithValidInput" finished-at="2021-06-05T09:12:18 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC2_ForgotPasswordScenarios.verifyPage" duration-ms="3986" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[patient@eqcare.com]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- resetPasswordWithValidInput -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:eqcare.peerjitestcases.copy.TC2_ForgotPasswordScenarios@5ace1ed4]" started-at="2021-06-05T09:12:18 EDT" name="tearDown" finished-at="2021-06-05T09:12:19 EDT" duration-ms="1202" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- eqcare.peerjitestcases.copy.TC2_ForgotPasswordScenarios -->
+    <test started-at="2021-06-05T11:14:45 EDT" name="Test" finished-at="2021-06-05T11:15:51 EDT" duration-ms="66144">
       <class name="eqcare.peerjitestcases.copy.TC1_LoginScenarios">
-        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:eqcare.peerjitestcases.copy.TC1_LoginScenarios@6631f5ca]" started-at="2021-06-05T09:10:59 EDT" name="setUp" finished-at="2021-06-05T09:11:09 EDT" duration-ms="10230" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:eqcare.peerjitestcases.copy.TC1_LoginScenarios@cad498c]" started-at="2021-06-05T11:14:45 EDT" name="setUp" finished-at="2021-06-05T11:14:56 EDT" duration-ms="10993" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -74,11 +28,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyPage()[pri:0, instance:eqcare.peerjitestcases.copy.TC1_LoginScenarios@6631f5ca]" started-at="2021-06-05T09:11:09 EDT" name="verifyPage" finished-at="2021-06-05T09:11:10 EDT" duration-ms="124" status="PASS">
+        <test-method signature="verifyPage()[pri:0, instance:eqcare.peerjitestcases.copy.TC1_LoginScenarios@cad498c]" started-at="2021-06-05T11:14:56 EDT" name="verifyPage" finished-at="2021-06-05T11:14:56 EDT" duration-ms="44" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyPage -->
-        <test-method signature="verifyShowHideLink(java.lang.String)[pri:1, instance:eqcare.peerjitestcases.copy.TC1_LoginScenarios@6631f5ca]" started-at="2021-06-05T09:11:10 EDT" name="verifyShowHideLink" finished-at="2021-06-05T09:11:16 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_LoginScenarios.verifyPage" duration-ms="6477" status="PASS">
+        <test-method signature="verifyShowHideLink(java.lang.String)[pri:1, instance:eqcare.peerjitestcases.copy.TC1_LoginScenarios@cad498c]" started-at="2021-06-05T11:14:56 EDT" name="verifyShowHideLink" finished-at="2021-06-05T11:15:06 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_LoginScenarios.verifyPage" duration-ms="9725" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -89,11 +43,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyShowHideLink -->
-        <test-method signature="verifyLanguageLink()[pri:2, instance:eqcare.peerjitestcases.copy.TC1_LoginScenarios@6631f5ca]" started-at="2021-06-05T09:11:16 EDT" name="verifyLanguageLink" finished-at="2021-06-05T09:11:21 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_LoginScenarios.verifyPage" duration-ms="5230" status="PASS">
+        <test-method signature="verifyLanguageLink()[pri:2, instance:eqcare.peerjitestcases.copy.TC1_LoginScenarios@cad498c]" started-at="2021-06-05T11:15:06 EDT" name="verifyLanguageLink" finished-at="2021-06-05T11:15:12 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_LoginScenarios.verifyPage" duration-ms="6708" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLanguageLink -->
-        <test-method signature="loginToApplicationWithBlankInput(java.lang.String)[pri:3, instance:eqcare.peerjitestcases.copy.TC1_LoginScenarios@6631f5ca]" started-at="2021-06-05T09:11:21 EDT" name="loginToApplicationWithBlankInput" finished-at="2021-06-05T09:11:29 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_LoginScenarios.verifyPage" duration-ms="8127" status="PASS">
+        <test-method signature="loginToApplicationWithBlankInput(java.lang.String)[pri:3, instance:eqcare.peerjitestcases.copy.TC1_LoginScenarios@cad498c]" started-at="2021-06-05T11:15:12 EDT" name="loginToApplicationWithBlankInput" finished-at="2021-06-05T11:15:22 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_LoginScenarios.verifyPage" duration-ms="9496" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -104,15 +58,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplicationWithBlankInput -->
-        <test-method signature="loginToApplicationWithNonRegisteredEmailId()[pri:4, instance:eqcare.peerjitestcases.copy.TC1_LoginScenarios@6631f5ca]" started-at="2021-06-05T09:11:29 EDT" name="loginToApplicationWithNonRegisteredEmailId" finished-at="2021-06-05T09:11:37 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_LoginScenarios.verifyPage" duration-ms="7519" status="PASS">
+        <test-method signature="loginToApplicationWithNonRegisteredEmailId()[pri:4, instance:eqcare.peerjitestcases.copy.TC1_LoginScenarios@cad498c]" started-at="2021-06-05T11:15:22 EDT" name="loginToApplicationWithNonRegisteredEmailId" finished-at="2021-06-05T11:15:31 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_LoginScenarios.verifyPage" duration-ms="8987" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplicationWithNonRegisteredEmailId -->
-        <test-method signature="verifyHomeFooter()[pri:5, instance:eqcare.peerjitestcases.copy.TC1_LoginScenarios@6631f5ca]" started-at="2021-06-05T09:11:37 EDT" name="verifyHomeFooter" finished-at="2021-06-05T09:11:42 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_LoginScenarios.verifyPage" duration-ms="5049" status="PASS">
+        <test-method signature="verifyHomeFooter()[pri:5, instance:eqcare.peerjitestcases.copy.TC1_LoginScenarios@cad498c]" started-at="2021-06-05T11:15:31 EDT" name="verifyHomeFooter" finished-at="2021-06-05T11:15:34 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_LoginScenarios.verifyPage" duration-ms="3047" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHomeFooter -->
-        <test-method signature="loginToApplication(java.lang.String, java.lang.String)[pri:6, instance:eqcare.peerjitestcases.copy.TC1_LoginScenarios@6631f5ca]" started-at="2021-06-05T09:11:42 EDT" name="loginToApplication" finished-at="2021-06-05T09:11:53 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_LoginScenarios.verifyPage" duration-ms="11348" status="PASS">
+        <test-method signature="loginToApplication(java.lang.String, java.lang.String)[pri:6, instance:eqcare.peerjitestcases.copy.TC1_LoginScenarios@cad498c]" started-at="2021-06-05T11:15:34 EDT" name="loginToApplication" finished-at="2021-06-05T11:15:46 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_LoginScenarios.verifyPage" duration-ms="12744" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -128,11 +82,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApplication -->
-        <test-method signature="logoutFromApplication()[pri:7, instance:eqcare.peerjitestcases.copy.TC1_LoginScenarios@6631f5ca]" started-at="2021-06-05T09:11:53 EDT" name="logoutFromApplication" finished-at="2021-06-05T09:11:56 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_LoginScenarios.loginToApplication" duration-ms="3134" status="PASS">
+        <test-method signature="logoutFromApplication()[pri:7, instance:eqcare.peerjitestcases.copy.TC1_LoginScenarios@cad498c]" started-at="2021-06-05T11:15:46 EDT" name="logoutFromApplication" finished-at="2021-06-05T11:15:50 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_LoginScenarios.loginToApplication" duration-ms="3109" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromApplication -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:eqcare.peerjitestcases.copy.TC1_LoginScenarios@6631f5ca]" started-at="2021-06-05T09:11:56 EDT" name="tearDown" finished-at="2021-06-05T09:11:58 EDT" duration-ms="1277" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:eqcare.peerjitestcases.copy.TC1_LoginScenarios@cad498c]" started-at="2021-06-05T11:15:50 EDT" name="tearDown" finished-at="2021-06-05T11:15:51 EDT" duration-ms="1246" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

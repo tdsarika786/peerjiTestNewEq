@@ -4,7 +4,6 @@
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/pages/IntakeFormPage.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/pages/LoginPage.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/nova/pages/RegistrationPage.java
-/Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/peerjitestcases/copy/TC1_EndToEndScenarios.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/nova/pages/BaseClass.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/pages/RegistrationPage.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/pages/IntakeFormPageAV.java
@@ -32,6 +31,7 @@
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/peerjitestcases/TC3_ForgotPasswordScenarios.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/pages/LifeJourneyIntakeFormPage.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/nova/pages/ContactUsPage.java
+/Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/peerjitestcases/copy/TC3_EndToEndScenarios.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/peerjitestcases/Novapeerji3.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/nova/pages/AdminPage.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/pages/HelpPageAV.java
@@ -86,6 +86,7 @@
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/peerjitestcases/Novapeerji2.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/AutomatedTests/NovaScenarios.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/peerjitestcases/copy/TC1_HRAEndScenarios.java
+/Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/peerjitestcases/copy/TC4_LifeJourneyEndScenarios.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/pages/CovidFormPage.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/factories/ErrorCodesProvider.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/pages/ClinicPage.java
@@ -99,7 +100,6 @@
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/nova/pages/ClinicPage.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/AutomatedTests/TC1_CovidResultsForm.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/TC2_RegisterationScenarios.java
-/Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/peerjitestcases/copy/TC1_LifeJourneyEndScenarios.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/NotRequiredClasses/ContactUsPage.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/testcases/Peerjitc.java
 /Users/sarikadhall/git/peerjiTestNewEq/src/test/java/eqcare/testcases/TC2_LoginScenarios.java

@@ -6,15 +6,25 @@
   </listeners>
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="eqcare.peerjitestcases.copy.TC1_LoginScenarios">
+      <class name="eqcare.peerjitestcases.copy.TC3_EndToEndScenarios">
         <methods>
-          <include name="setUp"/>
+          <include name="uploadGovernmentID"/>
+          <include name="uploadProfilePic"/>
+          <include name="loginToApplication"/>
+          <include name="editAccountInformation"/>
           <include name="tearDown"/>
-          <include name="verifyShowHideLink" invocation-numbers="0"/>
+          <include name="tearDownReport"/>
+          <include name="familyTab"/>
           <include name="verifyPage"/>
-          <include name="verifyLanguageLink"/>
+          <include name="deleteChild"/>
+          <include name="inbox"/>
+          <include name="addChild"/>
+          <include name="setupReport"/>
+          <include name="setUp"/>
+          <include name="editPersonalInformation"/>
+          <include name="help"/>
         </methods>
-      </class> <!-- eqcare.peerjitestcases.copy.TC1_LoginScenarios -->
+      </class> <!-- eqcare.peerjitestcases.copy.TC3_EndToEndScenarios -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
