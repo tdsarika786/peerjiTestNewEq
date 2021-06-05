@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 import nova.pages.LoginPage;
 import nova.pages.NovaHomePage;
 import eqcare.factories.DataProviderFactory;
-import eqcare.pages.BaseClass;
+import eqcare.pages.copy.BaseClass;
 
 public class Novapeerji extends BaseClass {
 
