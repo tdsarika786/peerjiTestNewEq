@@ -14,6 +14,8 @@ public class Novapeerji extends BaseClass {
 
 	LoginPage login;
 	NovaHomePage home;
+	
+	//test
 
 	@Test(priority = 0)
 	public void verifyPage() throws Exception {
