@@ -18,7 +18,7 @@ import eqcare.pages.VisitPage;
 import eqcare.factories.DataProviderFactory;
 import eqcare.pages.AccountPage;
 import eqcare.pages.Base;
-import eqcare.pages.BaseClass;
+import eqcare.pages.copy.BaseClass;
 
 public class TC3_EndToEndScenarios extends BaseClass {
 

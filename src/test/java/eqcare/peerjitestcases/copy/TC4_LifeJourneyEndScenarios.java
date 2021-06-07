@@ -11,7 +11,7 @@ import eqcare.pages.LoginPage;
 import eqcare.pages.LogoutPage;
 import eqcare.pages.ClinicPage;
 import eqcare.factories.DataProviderFactory;
-import eqcare.pages.BaseClass;
+import eqcare.pages.copy.BaseClass;
 
 public class TC4_LifeJourneyEndScenarios extends BaseClass {
 
