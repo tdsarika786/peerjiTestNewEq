@@ -178,7 +178,7 @@ public class TC3_EndToEndScenarios extends BaseClass {
 
 	}
 
-	@Test(priority = 9, dependsOnMethods = "loginToApplication", enabled=false)
+	@Test(priority = 9, dependsOnMethods = "loginToApplication")
 	public void startVideoConsultation() throws Exception {
 
 		home = PageFactory.initElements(driver, HomePage.class);
@@ -193,7 +193,7 @@ public class TC3_EndToEndScenarios extends BaseClass {
 
 	}
 
-	@Test(priority = 10, dependsOnMethods = "loginToApplication", enabled=false)
+	@Test(priority = 10, dependsOnMethods = "loginToApplication")
 	public void deviceCheck() throws Exception {
 
 		home = PageFactory.initElements(driver, HomePage.class);
@@ -206,7 +206,7 @@ public class TC3_EndToEndScenarios extends BaseClass {
 
 	}
 
-	@Test(priority = 11, dependsOnMethods = "deviceCheck", enabled=false)
+	@Test(priority = 11, dependsOnMethods = "deviceCheck")
 	public void fillIntakeFormWithAllFields() throws Exception {
 
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
@@ -218,7 +218,7 @@ public class TC3_EndToEndScenarios extends BaseClass {
 		//logger.info("Patint device check completed");
 	}
 
-	@Test(priority = 12, dependsOnMethods = "deviceCheck", enabled=false)
+	@Test(priority = 12, dependsOnMethods = "deviceCheck")
 	public void endVisit() throws Exception {
 
 		visit = PageFactory.initElements(driver, VisitPage.class);
@@ -230,7 +230,7 @@ public class TC3_EndToEndScenarios extends BaseClass {
 		//logger.info("Patint device check completed");
 	}
 
-	@Test(priority = 13, dependsOnMethods = "deviceCheck", enabled=false)
+	@Test(priority = 13, dependsOnMethods = "deviceCheck")
 	public void feedback() throws Exception {
 
 		feedback = PageFactory.initElements(driver, FeedbackPage.class);
