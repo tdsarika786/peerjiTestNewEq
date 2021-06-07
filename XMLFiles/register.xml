@@ -10,7 +10,7 @@
   <test name="Test" preserve-order="true" thread-count="3" >
     <classes>
        
-         <class name="eqcare.peerjitestcases.copy.TC1_RegisterationScenariosWithProfilePic"/> 
+         <class name="eqcare.peerjitestcases.copy.TC1_RegisterationScenarios"/> 
 
    <!--  	<class name="eqcare.peerjitestcases.copy.TC2_ForgotPasswordScenarios" />  -->
            
