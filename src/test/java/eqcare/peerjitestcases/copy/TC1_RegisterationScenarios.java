@@ -44,7 +44,7 @@ public class TC1_RegisterationScenarios extends BaseClass {
 	
 	@Parameters({"Email","CoverageToken","CoverageIdentifier"})
 	@Test(priority = 1, dependsOnMethods = "verifyPage")
-	public void validInputEnrolledRegisterationTest(String email, String coveragetoken, String coverageidentifier, String FileType) {
+	public void validInputEnrolledRegisterationTest(String email, String coveragetoken, String coverageidentifier) {
 		
 		register.EnrolledUserWithValidInput(coveragetoken,coverageidentifier);
 		
