@@ -19,7 +19,7 @@ import eqcare.pages.AccountPage;
 import eqcare.pages.Base;
 import eqcare.pages.copy.BaseClass;
 
-public class TC2_RegisterationScenariosWithProfilePicAV extends BaseClass {
+public class TC1_RegisterationScenariosWithProfilePicAV extends BaseClass {
 
 	LoginPage login;
 	HomePage home;
