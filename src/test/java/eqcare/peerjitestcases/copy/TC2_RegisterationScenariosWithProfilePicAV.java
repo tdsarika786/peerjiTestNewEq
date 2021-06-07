@@ -19,7 +19,7 @@ import eqcare.pages.AccountPage;
 import eqcare.pages.Base;
 import eqcare.pages.copy.BaseClass;
 
-public class TC2_RegisterationScenariosAV extends BaseClass {
+public class TC2_RegisterationScenariosWithProfilePicAV extends BaseClass {
 
 	LoginPage login;
 	HomePage home;
@@ -47,7 +47,7 @@ public class TC2_RegisterationScenariosAV extends BaseClass {
 		register = PageFactory.initElements(driver, RegistrationPageAV.class);
 
 		register.EnrolledUser();
-
+		
 				register.Registeration(email,
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
@@ -62,7 +62,7 @@ public class TC2_RegisterationScenariosAV extends BaseClass {
 				DataProviderFactory.getExcel().getCellData("Users", 2, 8),
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 9),
-				DataProviderFactory.getExcel().getCellData("Users", 2, 10), false,"pdf");
+				DataProviderFactory.getExcel().getCellData("Users", 2, 10), true,"img");
 
 		register.registerationCompleteWithValidInput();
 

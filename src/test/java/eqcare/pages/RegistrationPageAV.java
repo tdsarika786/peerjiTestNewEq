@@ -234,7 +234,7 @@ public class RegistrationPageAV extends runWithAttachments {
 	}
 
 	public void Registeration(String email, String userFirstName, String userLastName, String Address, String City,
-			String PostalCode, String DOB, String PhoneNo, String HealthCardNumber, String Password, boolean optional) {
+			String PostalCode, String DOB, String PhoneNo, String HealthCardNumber, String Password, boolean optional,String filetype) {
 
 		Utility.waitForWebElement(driver, emailAddress).sendKeys(email);
 
@@ -265,9 +265,15 @@ public class RegistrationPageAV extends runWithAttachments {
 		WebElement fileButtonGovtID = driver.findElement(By.xpath("(//input[@type='file'])[2]"));
 		JavascriptExecutor executorGovtID = (JavascriptExecutor) driver;
 		executorGovtID.executeScript("arguments[0].style.display='block';", fileButtonGovtID);
-
-		Utility.waitForWebElement(driver, uploadGovtID)
-				.sendKeys(System.getProperty("user.dir") + "/TestData/medical-card.pdf");
+		
+		if (filetype.equalsIgnoreCase("pdf")) {
+			Utility.waitForWebElement(driver, uploadGovtID)
+					.sendKeys(System.getProperty("user.dir") + "/TestData/medical-card.pdf");
+			}
+			else {
+				Utility.waitForWebElement(driver, uploadGovtID)
+				.sendKeys(System.getProperty("user.dir") + "/TestData/medical-card.jpeg");	
+			}
 
 		// Utility.waitForWebElement(driver,
 		// uploadGovtID).sendKeys("/Users/sarikadhall/Downloads/OIP-2.jpeg");
