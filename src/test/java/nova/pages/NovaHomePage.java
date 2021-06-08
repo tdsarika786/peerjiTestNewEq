@@ -564,4 +564,163 @@ public class NovaHomePage {
 		executorSub.executeScript("arguments[0].click()", buttonSub);
 	}
 
+	
+	public void createEmployerNew(String searchEmployer, String CoverageToken, String CoverageType) {
+
+		Utility.waitForWebElement(driver, EmployerLink).click();
+
+		WebElement buttonEmpl = driver.findElement(By.xpath("(//a[contains(text(), 'Create Employer')])[1]"));
+
+		JavascriptExecutor executorEmpl = (JavascriptExecutor) driver;
+		executorEmpl.executeScript("arguments[0].click()", buttonEmpl);
+
+		// Utility.waitForWebElement(driver, createEmployerLink).click();
+
+		// Change ID for NEW Employer NEW
+		//Utility.waitForWebElement(driver, employerIDInput).sendKeys(CoverageToken); // Modify
+
+		Utility.waitForWebElement(driver, companyNameInput).sendKeys(searchEmployer); // Modify
+
+		// Select
+		/* NEW
+		WebElement coverageTokenElement = driver.findElement(selectCoverageTokenInput);
+
+		Select objTokenLabel = new Select(coverageTokenElement);
+	
+
+		// Utility.waitForWebElement(driver, selectCoverageTokenInput).click();
+
+		objTokenLabel.selectByValue("email"); 	*/
+
+		// ***************** Select PArtner
+		/*
+		 * WebElement partnerPortalElement = driver.findElement(selectPartnerPortal);
+		 * 
+		 * Select objPartnerPortal = new Select(partnerPortalElement);
+		 * 
+		 * Utility.waitForWebElement(driver, selectPartnerPortal).click();
+		 * 
+		 * objPartnerPortal.selectByValue("1");
+		 */
+
+		// *******************************Coverage
+		// Type************************************
+
+		// lifejourney_gold
+
+		WebElement coverageTypeElement = driver.findElement(selectCoverageType);
+
+		Select objCoverageType = new Select(coverageTypeElement);
+
+		// Utility.waitForWebElement(driver, selectCoverageType).click();
+
+		System.out.println(CoverageType);
+
+		objCoverageType.selectByValue(CoverageType);
+
+		// *******************************Services************************************
+
+		// objCoverageType.selectByValue("lifejourney_silver");
+
+		// objCoverageType.selectByValue("lifejourney_gold");
+
+		// Uncomment it
+
+		// objCoverageType.selectByValue("lifejourney_bronze");//Modify
+
+		// objCoverageType.selectByValue("lifejourney_basic");
+
+		// objCoverageType.selectByValue("none");
+
+		// *******************************Services************************************
+
+		WebElement buttonPrimaryCare = driver.findElement(By.xpath("//input[@name='primary_care']"));
+
+		JavascriptExecutor executor1 = (JavascriptExecutor) driver;
+		executor1.executeScript("arguments[0].click()", buttonPrimaryCare);
+
+		/*
+		 * 
+		 * //Checkbox
+		 * 
+		 * WebElement buttonDmss =
+		 * driver.findElement(By.xpath("//input[@name='dmss']"));
+		 * 
+		 * JavascriptExecutor executor2 = (JavascriptExecutor) driver;
+		 * executor2.executeScript("arguments[0].click()", buttonDmss);
+		 * 
+		 * //Checkbox
+		 * 
+		 * WebElement buttonDcbt =
+		 * driver.findElement(By.xpath("//input[@name='dcbt']")); JavascriptExecutor
+		 * executor3 = (JavascriptExecutor) driver;
+		 * executor3.executeScript("arguments[0].click()", buttonDcbt);
+		 * 
+		 * 
+		 * WebElement buttonCritical_incident =
+		 * driver.findElement(By.xpath("//input[@name='critical_incident']"));
+		 * JavascriptExecutor executor4 = (JavascriptExecutor) driver;
+		 * executor4.executeScript("arguments[0].click()", buttonCritical_incident);
+		 * 
+		 * 
+		 * WebElement buttonTherapy =
+		 * driver.findElement(By.xpath("//input[@name='therapy']")); JavascriptExecutor
+		 * executor5 = (JavascriptExecutor) driver;
+		 * executor5.executeScript("arguments[0].click()", buttonTherapy);
+		 * 
+		 * 
+		 * WebElement buttonCoaching =
+		 * driver.findElement(By.xpath("//input[@name='coaching']")); JavascriptExecutor
+		 * executor6 = (JavascriptExecutor) driver;
+		 * executor6.executeScript("arguments[0].click()", buttonCoaching);
+		 * 
+		 * 
+		 * WebElement buttonPersonal_crisis =
+		 * driver.findElement(By.xpath("//input[@name='personal_crisis']"));
+		 * JavascriptExecutor executor7 = (JavascriptExecutor) driver;
+		 * executor7.executeScript("arguments[0].click()", buttonPersonal_crisis);
+		 * 
+		 * 
+		 * WebElement buttonHra = driver.findElement(By.xpath("//input[@name='hra']"));
+		 * JavascriptExecutor executor8 = (JavascriptExecutor) driver;
+		 * executor8.executeScript("arguments[0].click()", buttonHra);
+		 * 
+		 * 
+		 * WebElement buttonNutrition =
+		 * driver.findElement(By.xpath("//input[@name='nutrition']"));
+		 * JavascriptExecutor executor9 = (JavascriptExecutor) driver;
+		 * executor9.executeScript("arguments[0].click()", buttonNutrition);
+		 * 
+		 * */
+		 WebElement buttonArticles =
+		  driver.findElement(By.xpath("//input[@name='articles']")); JavascriptExecutor
+		  executor10 = (JavascriptExecutor) driver;
+		  executor10.executeScript("arguments[0].click()", buttonArticles);
+		  
+		  
+		  WebElement buttonLegal_financial =
+		  driver.findElement(By.xpath("//input[@name='legal_financial']"));
+		  JavascriptExecutor executor11 = (JavascriptExecutor) driver;
+		  executor11.executeScript("arguments[0].click()", buttonLegal_financial);
+		  
+		 
+
+		// *******************************Services************************************
+
+		Utility.waitForWebElement(driver, startDateInput).sendKeys("2020-08-01");
+		Utility.waitForWebElement(driver, startDateInput).sendKeys(Keys.RETURN);
+
+		// Utility.waitForWebElement(driver, createEmployerSubmitButton).click();
+
+		WebElement buttonSub = driver.findElement(By.xpath("//button[@dusk='create-button']"));
+
+		JavascriptExecutor executorSub = (JavascriptExecutor) driver;
+		executorSub.executeScript("arguments[0].click()", buttonSub);
+
+		 Utility.wait(2);
+
+	}
+
+	
+	
 }
