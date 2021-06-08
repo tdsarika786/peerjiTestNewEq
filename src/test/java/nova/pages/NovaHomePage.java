@@ -744,7 +744,7 @@ public class NovaHomePage {
 
 		// Utility.waitForWebElement(driver, selectCoverageTokenInput).click();
 
-		objTokenLabel.selectByValue("employers");
+		objGroup.selectByValue("employers");
 
 		// Employer
 
