@@ -80,6 +80,8 @@ public class NovaHomePage {
 	By groupNumberInput = By.id("group_number");
 
 	By selectGroupable = By.xpath("//select[@data-testid='groupable-type']");
+	
+	By selectGroupableSearchInput = By.xpath("//div[@data-testid='groupable-search-input']");
 
 	public NovaHomePage(WebDriver ldriver) {
 		this.driver = ldriver;
@@ -747,6 +749,10 @@ public class NovaHomePage {
 		objGroup.selectByValue("employers");
 
 		// Employer
+		
+		
+		
+		Utility.waitForWebElement(driver, selectGroupableSearchInput).click();
 
 		Utility.waitForWebElement(driver, searchEmployerInput).sendKeys(searchEmployer);
 
