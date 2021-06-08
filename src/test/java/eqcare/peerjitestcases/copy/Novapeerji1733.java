@@ -38,7 +38,7 @@ public class Novapeerji1733 extends BaseClass {
 	}
 	
 	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
-	@Test(priority = 2, dependsOnMethods = "loginToApplication")
+	@Test(priority = 2, dependsOnMethods = "loginToApplication", enabled=false)
 	public void CreateEmployer(String searchemployer, String coveragetoken, String coveragetype ) throws InterruptedException {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
@@ -50,12 +50,12 @@ public class Novapeerji1733 extends BaseClass {
 	
 	
 	@Parameters({"SearchEmployer","CoverageIdentifier", "PlanType" })
-	@Test(priority = 3, dependsOnMethods = "loginToApplication", enabled =false)
+	@Test(priority = 3, dependsOnMethods = "loginToApplication")
 	public void CreateEmployee(String searchemployer, String coverageidentifier, String plantype) throws InterruptedException {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
 		
-		home.createEmployee("Sarika-Test-PC-LJ","anu","family"); // then create employee 
+		home.createGroupNo("70","Sarika-Test-PC-LJ"); // then create employee 
 		
 	}
 	

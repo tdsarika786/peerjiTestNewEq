@@ -73,10 +73,18 @@ public class NovaHomePage {
 
 	By selectLanguage = By.id("language");
 
+	// Group Number
+
+	By GroupNoLink = By.xpath("//a[contains(text(), 'Group Numbers')]");
+
+	By groupNumberInput = By.id("group_number");
+
+	By selectGroupable = By.xpath("//select[@data-testid='groupable-type']");
+
 	public NovaHomePage(WebDriver ldriver) {
 		this.driver = ldriver;
 	}
-	
+
 	public void createEmployer1(String searchEmployer, String CoverageToken, String CoverageType) {
 
 		Utility.waitForWebElement(driver, EmployerLink).click();
@@ -201,19 +209,14 @@ public class NovaHomePage {
 		 * JavascriptExecutor executor9 = (JavascriptExecutor) driver;
 		 * executor9.executeScript("arguments[0].click()", buttonNutrition);
 		 * 
-		 * */
-		 WebElement buttonArticles =
-		  driver.findElement(By.xpath("//input[@name='articles']")); JavascriptExecutor
-		  executor10 = (JavascriptExecutor) driver;
-		  executor10.executeScript("arguments[0].click()", buttonArticles);
-		  
-		  
-		  WebElement buttonLegal_financial =
-		  driver.findElement(By.xpath("//input[@name='legal_financial']"));
-		  JavascriptExecutor executor11 = (JavascriptExecutor) driver;
-		  executor11.executeScript("arguments[0].click()", buttonLegal_financial);
-		  
-		 
+		 */
+		WebElement buttonArticles = driver.findElement(By.xpath("//input[@name='articles']"));
+		JavascriptExecutor executor10 = (JavascriptExecutor) driver;
+		executor10.executeScript("arguments[0].click()", buttonArticles);
+
+		WebElement buttonLegal_financial = driver.findElement(By.xpath("//input[@name='legal_financial']"));
+		JavascriptExecutor executor11 = (JavascriptExecutor) driver;
+		executor11.executeScript("arguments[0].click()", buttonLegal_financial);
 
 		// *******************************Services************************************
 
@@ -227,10 +230,9 @@ public class NovaHomePage {
 		JavascriptExecutor executorSub = (JavascriptExecutor) driver;
 		executorSub.executeScript("arguments[0].click()", buttonSub);
 
-		 Utility.wait(5);
+		Utility.wait(5);
 
 	}
-
 
 	public void createEmployeeLifeJourney(String coverageTokenString) {
 
@@ -288,7 +290,7 @@ public class NovaHomePage {
 		Select objplanTypee = new Select(planTypeElement);
 
 		// Change Family Type
-		
+
 		objplanTypee.selectByValue(PlanType);
 
 		// objplanTypee.selectByValue("family");
@@ -311,7 +313,7 @@ public class NovaHomePage {
 
 		// Utility.waitForWebElement(driver, createEmployeeSubmitButton).click();
 
-	 	Utility.wait(5);
+		Utility.wait(5);
 
 	}
 
@@ -439,19 +441,14 @@ public class NovaHomePage {
 		 * JavascriptExecutor executor9 = (JavascriptExecutor) driver;
 		 * executor9.executeScript("arguments[0].click()", buttonNutrition);
 		 * 
-		 * */
-		 WebElement buttonArticles =
-		  driver.findElement(By.xpath("//input[@name='articles']")); JavascriptExecutor
-		  executor10 = (JavascriptExecutor) driver;
-		  executor10.executeScript("arguments[0].click()", buttonArticles);
-		  
-		  
-		  WebElement buttonLegal_financial =
-		  driver.findElement(By.xpath("//input[@name='legal_financial']"));
-		  JavascriptExecutor executor11 = (JavascriptExecutor) driver;
-		  executor11.executeScript("arguments[0].click()", buttonLegal_financial);
-		  
-		 
+		 */
+		WebElement buttonArticles = driver.findElement(By.xpath("//input[@name='articles']"));
+		JavascriptExecutor executor10 = (JavascriptExecutor) driver;
+		executor10.executeScript("arguments[0].click()", buttonArticles);
+
+		WebElement buttonLegal_financial = driver.findElement(By.xpath("//input[@name='legal_financial']"));
+		JavascriptExecutor executor11 = (JavascriptExecutor) driver;
+		executor11.executeScript("arguments[0].click()", buttonLegal_financial);
 
 		// *******************************Services************************************
 
@@ -465,7 +462,7 @@ public class NovaHomePage {
 		JavascriptExecutor executorSub = (JavascriptExecutor) driver;
 		executorSub.executeScript("arguments[0].click()", buttonSub);
 
-		 Utility.wait(2);
+		Utility.wait(2);
 
 	}
 
@@ -489,7 +486,7 @@ public class NovaHomePage {
 		Utility.waitForWebElement(driver, passowrd).sendKeys(password);
 
 		if (staff.equalsIgnoreCase("Practitioner")) {
-			
+
 			Utility.waitForWebElement(driver, firstName).sendKeys("SarikaPa");
 
 			Utility.waitForWebElement(driver, lastName).sendKeys("TestPa");
@@ -504,7 +501,7 @@ public class NovaHomePage {
 		}
 
 		if (staff.equalsIgnoreCase("CareManager")) {
-			
+
 			Utility.waitForWebElement(driver, firstName).sendKeys("SarikaCM");
 
 			Utility.waitForWebElement(driver, lastName).sendKeys("TestCM");
@@ -524,7 +521,7 @@ public class NovaHomePage {
 		}
 
 		if (staff.equalsIgnoreCase("Nurse")) {
-			
+
 			Utility.waitForWebElement(driver, firstName).sendKeys("SarikaNu");
 
 			Utility.waitForWebElement(driver, lastName).sendKeys("TestNu");
@@ -564,7 +561,6 @@ public class NovaHomePage {
 		executorSub.executeScript("arguments[0].click()", buttonSub);
 	}
 
-	
 	public void createEmployerNew(String searchEmployer, String CoverageToken, String CoverageType) {
 
 		Utility.waitForWebElement(driver, EmployerLink).click();
@@ -577,20 +573,23 @@ public class NovaHomePage {
 		// Utility.waitForWebElement(driver, createEmployerLink).click();
 
 		// Change ID for NEW Employer NEW
-		//Utility.waitForWebElement(driver, employerIDInput).sendKeys(CoverageToken); // Modify
+		// Utility.waitForWebElement(driver, employerIDInput).sendKeys(CoverageToken);
+		// // Modify
 
 		Utility.waitForWebElement(driver, companyNameInput).sendKeys(searchEmployer); // Modify
 
 		// Select
-		/* NEW
-		WebElement coverageTokenElement = driver.findElement(selectCoverageTokenInput);
-
-		Select objTokenLabel = new Select(coverageTokenElement);
-	
-
-		// Utility.waitForWebElement(driver, selectCoverageTokenInput).click();
-
-		objTokenLabel.selectByValue("email"); 	*/
+		/*
+		 * NEW WebElement coverageTokenElement =
+		 * driver.findElement(selectCoverageTokenInput);
+		 * 
+		 * Select objTokenLabel = new Select(coverageTokenElement);
+		 * 
+		 * 
+		 * // Utility.waitForWebElement(driver, selectCoverageTokenInput).click();
+		 * 
+		 * objTokenLabel.selectByValue("email");
+		 */
 
 		// ***************** Select PArtner
 		/*
@@ -691,19 +690,14 @@ public class NovaHomePage {
 		 * JavascriptExecutor executor9 = (JavascriptExecutor) driver;
 		 * executor9.executeScript("arguments[0].click()", buttonNutrition);
 		 * 
-		 * */
-		 WebElement buttonArticles =
-		  driver.findElement(By.xpath("//input[@name='articles']")); JavascriptExecutor
-		  executor10 = (JavascriptExecutor) driver;
-		  executor10.executeScript("arguments[0].click()", buttonArticles);
-		  
-		  
-		  WebElement buttonLegal_financial =
-		  driver.findElement(By.xpath("//input[@name='legal_financial']"));
-		  JavascriptExecutor executor11 = (JavascriptExecutor) driver;
-		  executor11.executeScript("arguments[0].click()", buttonLegal_financial);
-		  
-		 
+		 */
+		WebElement buttonArticles = driver.findElement(By.xpath("//input[@name='articles']"));
+		JavascriptExecutor executor10 = (JavascriptExecutor) driver;
+		executor10.executeScript("arguments[0].click()", buttonArticles);
+
+		WebElement buttonLegal_financial = driver.findElement(By.xpath("//input[@name='legal_financial']"));
+		JavascriptExecutor executor11 = (JavascriptExecutor) driver;
+		executor11.executeScript("arguments[0].click()", buttonLegal_financial);
 
 		// *******************************Services************************************
 
@@ -717,10 +711,61 @@ public class NovaHomePage {
 		JavascriptExecutor executorSub = (JavascriptExecutor) driver;
 		executorSub.executeScript("arguments[0].click()", buttonSub);
 
-		 Utility.wait(2);
+		Utility.wait(2);
 
 	}
 
-	
-	
+	public void createGroupNo(String groupNumber, String searchEmployer) {
+
+		Utility.waitForWebElement(driver, GroupNoLink).click();
+
+		WebElement buttonEmpl = driver.findElement(By.xpath("//a[contains(text(), 'Create Group Number')]"));
+
+		JavascriptExecutor executorEmpl = (JavascriptExecutor) driver;
+		executorEmpl.executeScript("arguments[0].click()", buttonEmpl);
+
+		Utility.waitForWebElement(driver, groupNumberInput).sendKeys(groupNumber); // Modify
+
+		// Select
+
+		WebElement coverageTokenElement = driver.findElement(selectCoverageTokenInput);
+
+		Select objTokenLabel = new Select(coverageTokenElement);
+
+		// Utility.waitForWebElement(driver, selectCoverageTokenInput).click();
+
+		objTokenLabel.selectByValue("email");
+
+		// Select
+
+		WebElement groupableElement = driver.findElement(selectGroupable);
+
+		Select objGroup = new Select(groupableElement);
+
+		// Utility.waitForWebElement(driver, selectCoverageTokenInput).click();
+
+		objTokenLabel.selectByValue("employers");
+
+		// Employer
+
+		Utility.waitForWebElement(driver, searchEmployerInput).sendKeys(searchEmployer);
+
+		// Utility.waitForWebElement(driver, searchEmployerInput).sendKeys(Keys.ENTER);
+
+		// Actions builder = new Actions(driver);
+		// builder.sendKeys(Keys.chord(Keys.DOWN, Keys.DOWN)).perform();
+
+		By selectEqCareEmployer = By.xpath("//div[contains(text(),'" + searchEmployer + "')]");
+
+		Utility.waitForWebElement(driver, selectEqCareEmployer).click();
+
+		WebElement buttonSub = driver.findElement(By.xpath("//button[@dusk='create-button']"));
+
+		JavascriptExecutor executorSub = (JavascriptExecutor) driver;
+		executorSub.executeScript("arguments[0].click()", buttonSub);
+
+		Utility.wait(2);
+
+	}
+
 }
