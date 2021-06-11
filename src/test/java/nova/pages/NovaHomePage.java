@@ -953,7 +953,13 @@ public class NovaHomePage {
 
 		Utility.waitForWebElement(driver, clickEqCareEmployer).click(); */
 		
-		Utility.waitForWebElement(driver, CreateCoverage).click();
+		//Utility.waitForWebElement(driver, CreateCoverage).click();
+		
+		WebElement CreateCoverage = driver.findElement(By.xpath("//a[contains(text(), 'Create Coverage')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", CreateCoverage);
+
 		
 		// Select Coverage Option
 
@@ -997,7 +1003,12 @@ public class NovaHomePage {
 
 		Utility.waitForWebElement(driver, clickEqCareEmployer).click();
 		*/
-		Utility.waitForWebElement(driver, CreateLifeJounerSer).click();
+		//Utility.waitForWebElement(driver, CreateLifeJounerSer).click();
+		
+		WebElement CreateService = driver.findElement(By.xpath("//select[@id='lifejourney_service_option']"));
+
+		JavascriptExecutor executorCreateService = (JavascriptExecutor) driver;
+		executorCreateService.executeScript("arguments[0].click()", CreateService);
 		
 		// Select Coverage Option
 
