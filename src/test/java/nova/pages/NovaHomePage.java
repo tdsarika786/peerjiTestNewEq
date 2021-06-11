@@ -994,10 +994,10 @@ public class NovaHomePage {
 
 		Utility.waitForWebElement(driver, EmployerLink).click();
 
-		WebElement buttonEmpl = driver.findElement(By.xpath("(//a[contains(text(), 'Create Employer')])[1]"));
+		//WebElement buttonEmpl = driver.findElement(By.xpath("(//a[contains(text(), 'Create Employer')])[1]"));
 
-		JavascriptExecutor executorEmpl = (JavascriptExecutor) driver;
-		executorEmpl.executeScript("arguments[0].click()", buttonEmpl);
+		//JavascriptExecutor executorEmpl = (JavascriptExecutor) driver;
+		//executorEmpl.executeScript("arguments[0].click()", buttonEmpl);
 		
 		By clickEqCareEmployer = By.xpath("//span[contains(text(),'" + searchEmployer + "')]/following::td[6]//a[1])[1]");
 
