@@ -38,19 +38,32 @@ public class Novapeerji1797 extends BaseClass {
 	}
 		
 	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
-	@Test(priority = 2, dependsOnMethods = "loginToApplication")
+	@Test(priority = 2, dependsOnMethods = "loginToApplication", enabled=false)
 	public void CreateEmployer(String searchemployer, String coveragetoken, String coveragetype ) throws InterruptedException {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
 
-		home.createEmployerNew1797("Sarika-Test-PC-LJ5","75", "primary_care_with_lifejourney"); // First see if employer there Modify
+		//home.createEmployerNew1797("Sarika-Test-PC-LJ5","75", "primary_care_with_lifejourney"); // First see if employer there Modify
 		
-		home.createCoverage1797("Sarika-Test-PC-LJ3","7", "primary_care_with_lifejourney");
+		//home.createCoverage1797("Sarika-Test-PC-LJ3","7", "primary_care_with_lifejourney");
 		
 		home.createService1797("Sarika-Test-PC-LJ5","70", "primary_care_with_lifejourney");
 		
 	}
 
+	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
+	@Test(priority = 2, dependsOnMethods = "loginToApplication")
+	public void CreateEmployerService(String searchemployer, String coveragetoken, String coveragetype ) throws InterruptedException {
+		
+		home = PageFactory.initElements(driver, NovaHomePage.class);
+
+		//home.createEmployerNew1797("Sarika-Test-PC-LJ5","75", "primary_care_with_lifejourney"); // First see if employer there Modify
+		
+		//home.createCoverage1797("Sarika-Test-PC-LJ3","7", "primary_care_with_lifejourney");
+		
+		home.createService1797("Sarika-Test-PC-LJ5","70", "primary_care_with_lifejourney");
+		
+	}
 	
 	
 	
