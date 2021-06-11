@@ -1011,9 +1011,9 @@ public class NovaHomePage {
 		JavascriptExecutor executorCreateEmployer = (JavascriptExecutor) driver;
 		executorCreateEmployer.executeScript("arguments[0].click()", clickEqCareEmployer);
 		
-		Utility.wait(5);
+		//Utility.wait(5);
 		
-		//Utility.waitForWebElement(driver, CreateLifeJounerSer).click();
+		Utility.waitForWebElement(driver, CreateLifeJounerSer).click();
 		
 		WebElement CreateService = driver.findElement(By.xpath("//select[@id='lifejourney_service_option']"));
 
