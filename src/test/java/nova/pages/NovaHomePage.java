@@ -936,7 +936,7 @@ public class NovaHomePage {
 		JavascriptExecutor executorSub = (JavascriptExecutor) driver;
 		executorSub.executeScript("arguments[0].click()", buttonSub);
 
-		Utility.wait(5);
+		Utility.wait(2);
 
 	}
 	
@@ -986,7 +986,7 @@ public class NovaHomePage {
 				JavascriptExecutor executorSub = (JavascriptExecutor) driver;
 				executorSub.executeScript("arguments[0].click()", buttonSub);
 
-				Utility.wait(5);
+				Utility.wait(2);
 	}
 
 
