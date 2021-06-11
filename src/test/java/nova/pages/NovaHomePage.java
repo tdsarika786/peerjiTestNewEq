@@ -1006,10 +1006,12 @@ public class NovaHomePage {
 		//Find in table
 		WebElement clickEqCareEmployer = driver.findElement(By.xpath("(//span[contains(text(),'" + searchEmployer + "')]/following::td[6]//a[1])[1]"));
 
+	
+		
 		JavascriptExecutor executorCreateEmployer = (JavascriptExecutor) driver;
 		executorCreateEmployer.executeScript("arguments[0].click()", clickEqCareEmployer);
 		
-		
+		Utility.wait(5);
 		
 		//Utility.waitForWebElement(driver, CreateLifeJounerSer).click();
 		
