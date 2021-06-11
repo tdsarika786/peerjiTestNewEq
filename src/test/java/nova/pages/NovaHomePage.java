@@ -992,7 +992,7 @@ public class NovaHomePage {
 
 	public void createService1797(String searchEmployer, String CoverageToken, String CoverageType) {
 
-		/*Utility.waitForWebElement(driver, EmployerLink).click();
+		Utility.waitForWebElement(driver, EmployerLink).click();
 
 		WebElement buttonEmpl = driver.findElement(By.xpath("(//a[contains(text(), 'Create Employer')])[1]"));
 
@@ -1002,7 +1002,7 @@ public class NovaHomePage {
 		By clickEqCareEmployer = By.xpath("//span[contains(text(),'" + searchEmployer + "')]/following::td[6]//a[1])[1]");
 
 		Utility.waitForWebElement(driver, clickEqCareEmployer).click();
-		*/
+		
 		//Utility.waitForWebElement(driver, CreateLifeJounerSer).click();
 		
 		WebElement CreateService = driver.findElement(By.xpath("//select[@id='lifejourney_service_option']"));
