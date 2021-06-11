@@ -999,9 +999,17 @@ public class NovaHomePage {
 		//JavascriptExecutor executorEmpl = (JavascriptExecutor) driver;
 		//executorEmpl.executeScript("arguments[0].click()", buttonEmpl);
 		
-		By clickEqCareEmployer = By.xpath("(//span[contains(text(),'" + searchEmployer + "')]/following::td[6]//a[1])[1]");
+		//By clickEqCareEmployer = By.xpath("(//span[contains(text(),'" + searchEmployer + "')]/following::td[6]//a[1])[1]");
 
-		Utility.waitForWebElement(driver, clickEqCareEmployer).click();
+		//Utility.waitForWebElement(driver, clickEqCareEmployer).click();
+
+		//Find in table
+		WebElement clickEqCareEmployer = driver.findElement(By.xpath("(//span[contains(text(),'" + searchEmployer + "')]/following::td[6]//a[1])[1]"));
+
+		JavascriptExecutor executorCreateEmployer = (JavascriptExecutor) driver;
+		executorCreateEmployer.executeScript("arguments[0].click()", clickEqCareEmployer);
+		
+		
 		
 		//Utility.waitForWebElement(driver, CreateLifeJounerSer).click();
 		
