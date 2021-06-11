@@ -802,17 +802,16 @@ public class NovaHomePage {
 		Utility.waitForWebElement(driver, companyNameInput).sendKeys(searchEmployer); // Modify
 
 		// Select
-		/*
-		 * NEW WebElement coverageTokenElement =
-		 * driver.findElement(selectCoverageTokenInput);
-		 * 
-		 * Select objTokenLabel = new Select(coverageTokenElement);
-		 * 
-		 * 
-		 * // Utility.waitForWebElement(driver, selectCoverageTokenInput).click();
-		 * 
-		 * objTokenLabel.selectByValue("email");
-		 */
+		
+		  WebElement coverageTokenElement = driver.findElement(selectCoverageTokenInput);
+		 
+		  Select objTokenLabel = new Select(coverageTokenElement);
+		 
+		  
+		 // Utility.waitForWebElement(driver, selectCoverageTokenInput).click();
+		 
+		  objTokenLabel.selectByValue("email");
+		 
 
 		// ***************** Select PArtner
 		/*
