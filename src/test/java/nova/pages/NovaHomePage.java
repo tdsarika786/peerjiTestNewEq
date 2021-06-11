@@ -1013,12 +1013,17 @@ public class NovaHomePage {
 		
 		//Utility.wait(5);
 		
-		Utility.waitForWebElement(driver, CreateLifeJounerSer).click();
+		//Utility.waitForWebElement(driver, CreateLifeJounerSer).click();
 		
-		WebElement CreateService = driver.findElement(By.xpath("//select[@id='lifejourney_service_option']"));
+		WebElement createService = driver.findElement(By.xpath("//a[contains(text(), 'Create LifeJourney Service')]"));
 
 		JavascriptExecutor executorCreateService = (JavascriptExecutor) driver;
-		executorCreateService.executeScript("arguments[0].click()", CreateService);
+		executorCreateService.executeScript("arguments[0].click()", createService);
+		
+		WebElement selectService = driver.findElement(By.xpath("//select[@id='lifejourney_service_option']"));
+
+		JavascriptExecutor executorSelectService = (JavascriptExecutor) driver;
+		executorSelectService.executeScript("arguments[0].click()", selectService);
 		
 		// Select Coverage Option
 
