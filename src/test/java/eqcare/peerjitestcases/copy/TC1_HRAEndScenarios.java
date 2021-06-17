@@ -39,11 +39,11 @@ public class TC1_HRAEndScenarios extends BaseClass {
 
 		//logger.info("Patint logged and navigates to Home Page");
 
-		home.navigateToHomePage();
+		//home.navigateToHomePage();
 
-		home.verifyUrl();
+		//home.verifyUrl();
 		
-		home.navigateToHRAIntakePage();
+		//home.navigateToHRAIntakePage();
 
 		//logger.info("Validated Home Page Url");
 	}
@@ -68,7 +68,7 @@ public class TC1_HRAEndScenarios extends BaseClass {
 	@Test(priority = 2, dependsOnMethods = "verifyPage")
 	public void verifyHRAPages() throws Exception {
 		
-		home.navigateToHRAIntakePage();
+		//home.navigateToHRAIntakePage();
 
 		home.verifyHRAPhysicalIntakeForms();
 		
