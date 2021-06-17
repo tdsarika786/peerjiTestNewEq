@@ -39,9 +39,9 @@ public class TC1_HRAEndScenarios extends BaseClass {
 
 		//logger.info("Patint logged and navigates to Home Page");
 
-		//home.navigateToHomePage();
+		home.navigateToHomePage();
 
-		//home.verifyUrl();
+		home.verifyUrl();
 		
 		//home.navigateToHRAIntakePage();
 
@@ -68,13 +68,13 @@ public class TC1_HRAEndScenarios extends BaseClass {
 	@Test(priority = 2, dependsOnMethods = "verifyPage")
 	public void verifyHRAPages() throws Exception {
 		
-		//home.navigateToHRAIntakePage();
+		home.navigateToHRAIntakePage();
 
 		home.verifyHRAPhysicalIntakeForms();
 		
 		home.verifyHRALifeStyle();
 
-		logger.info("Validated Profile pic placeholder displayed to patient");
+		//logger.info("Validated Profile pic placeholder displayed to patient");
 	}
 	
 	
