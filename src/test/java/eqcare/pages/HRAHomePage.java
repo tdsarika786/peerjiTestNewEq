@@ -295,11 +295,11 @@ public class HRAHomePage extends runWithAttachments {
 			
 			Utility.waitForWebElement(driver, hraPhysicalQuesSecondOption1).click();
 			
-			Utility.waitForWebElement(driver, backLink);
+			Utility.waitForWebElement(driver, backLink).click();
 			
 			Utility.waitForWebElement(driver, hraPhysicalQuesSecondOption2).click();
 			
-			Utility.waitForWebElement(driver, backLink);
+			Utility.waitForWebElement(driver, backLink).click();
 			
 			Utility.waitForWebElement(driver, hraPhysicalQuesSecondOption3).click();
 			
