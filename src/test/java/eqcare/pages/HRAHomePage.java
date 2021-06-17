@@ -157,7 +157,9 @@ public class HRAHomePage extends runWithAttachments {
 	
 	By hraLifeStyleAlcoholPerWeekLabel = By.xpath("//label[contains(text(), 'alcholic drinks')]");
 	
-	By hraLifeStyleAlcoholPerWeeInput = By.xpath("//input[@id='current_drinks_per_day']");
+	By hraLifeStyleAlcoholPerWeeCurrentDrinkInput = By.xpath("//input[@id='current_drinks_per_day']");
+	
+	By hraLifeStyleAlcoholPerWeePastDrinksInput = By.xpath("//input[@id='past_drinks_per_day']");
 	
 	By hraLifeStyleAlchoholNextLink = By.xpath("//a[@data-role='hra-lifestyle-question-1-next-button']");  
 	
@@ -479,7 +481,7 @@ public class HRAHomePage extends runWithAttachments {
                 //Alcholic Input
 				Utility.waitForWebElement(driver, hraLifestyleQuestionAlcoholImg);	
 			    Utility.waitForWebElement(driver, hraLifeStyleAlcoholPerWeekLabel);
-				Utility.waitForWebElement(driver, hraLifeStyleAlcoholPerWeeInput).sendKeys("7");
+				Utility.waitForWebElement(driver, hraLifeStyleAlcoholPerWeePastDrinksInput).sendKeys("7");
 				
 				Utility.waitForWebElement(driver, hraLifeStyleAlchoholNextLink).click();
 			  
