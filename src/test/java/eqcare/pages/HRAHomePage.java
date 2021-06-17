@@ -153,7 +153,7 @@ public class HRAHomePage extends runWithAttachments {
 	By hraLifeStyleDrinkingFormerDrink = By.xpath("//a[contains(text(), 'Former Drink')]");
 	
 	//Alcohol Drinks
-     By hraLifestyleQuestionAlcoholImg = By.xpath("///img[contains(@src, 'hra-lifestyle-question-6')]");
+     By hraLifestyleQuestionAlcoholImg = By.xpath("//img[contains(@src, 'hra-lifestyle-question-6')]");
 	
 	By hraLifeStyleAlcoholPerWeekLabel = By.xpath("//label[contains(text(), 'alcholic drinks')]");
 	
