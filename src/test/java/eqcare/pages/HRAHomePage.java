@@ -315,14 +315,21 @@ public class HRAHomePage extends runWithAttachments {
 			
 			Utility.waitForWebElement(driver, backLink).click();
 			
+			
+            Utility.waitForWebElement(driver, hraPhysicalQuestion3Img);		
+			Utility.waitForWebElement(driver, hraPhysicalSpendSittingLabel);
 			Utility.waitForWebElement(driver, hraPhysicalQuesThirdOption2);
 			
 			Utility.waitForWebElement(driver, backLink).click();
 			
+            Utility.waitForWebElement(driver, hraPhysicalQuestion3Img);			
+			Utility.waitForWebElement(driver, hraPhysicalSpendSittingLabel);
 			Utility.waitForWebElement(driver, hraPhysicalQuesThirdOption3);
 			
 			Utility.waitForWebElement(driver, backLink).click();
 			
+            Utility.waitForWebElement(driver, hraPhysicalQuestion3Img);	
+			Utility.waitForWebElement(driver, hraPhysicalSpendSittingLabel);
 			Utility.waitForWebElement(driver, hraPhysicalQuesThirdOption4);
 			
 			//Utility.waitForWebElement(driver, weightInput);
