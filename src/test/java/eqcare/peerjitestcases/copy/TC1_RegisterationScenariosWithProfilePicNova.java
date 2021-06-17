@@ -42,13 +42,15 @@ public class TC1_RegisterationScenariosWithProfilePicNova extends BaseClass {
 
 	}
 	
-	@Parameters({"Email","CoverageToken","CoverageIdentifier"})
+	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
 	@Test(priority = 2, dependsOnMethods = "verifyPage")
-	public void validInputEnrolledRegisterationTest(String email, String coveragetoken, String coverageidentifier) {
+	public void validInputEnrolledRegisterationTest(String email, String coveragetoken, String coverageidentifier, String AppUrl) {
+		
+		register.navigateToRegisterationPage(AppUrl);
 		
 		register.EnrolledUserWithValidInput("70","anu");
 		
-		register.Registeration1("sarikaqa7+qaeq70@gmail.com",
+		register.Registeration1("sarikaqa7+qaeq1@gmail.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
@@ -68,13 +70,15 @@ public class TC1_RegisterationScenariosWithProfilePicNova extends BaseClass {
 
 	}
 	
-	@Parameters({"Email","CoverageToken","CoverageIdentifier"})
+	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
 	@Test(priority = 2, dependsOnMethods = "verifyPage")
-	public void validInputEnrolledRegisterationTest1(String email, String coveragetoken, String coverageidentifier) {
+	public void validInputEnrolledRegisterationTest1(String email, String coveragetoken, String coverageidentifier, String AppUrl) {
+		
+		register.navigateToRegisterationPage(AppUrl);
 		
 		register.EnrolledUserWithValidInput("71","anu1");
 		
-		register.Registeration1("sarikaqa7+qaeq71@gmail.com",
+		register.Registeration1("sarikaqa7+qaeq2@gmail.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
@@ -94,13 +98,15 @@ public class TC1_RegisterationScenariosWithProfilePicNova extends BaseClass {
 
 	}
 	
-	@Parameters({"Email","CoverageToken","CoverageIdentifier"})
+	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
 	@Test(priority = 2, dependsOnMethods = "verifyPage")
-	public void validInputEnrolledRegisterationTest2(String email, String coveragetoken, String coverageidentifier) {
+	public void validInputEnrolledRegisterationTest2(String email, String coveragetoken, String coverageidentifier,String AppUrl) {
+		
+		register.navigateToRegisterationPage(AppUrl);
 		
 		register.EnrolledUserWithValidInput("72","anu2");
 		
-		register.Registeration1("sarikaqa7+qaeq72@gmail.com",
+		register.Registeration1("sarikaqa7+qaeq3@gmail.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),

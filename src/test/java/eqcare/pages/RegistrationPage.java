@@ -142,7 +142,7 @@ public class RegistrationPage extends runWithAttachments {
 
 	public void EnrolledUser() {
 
-		navigateToRegisterationPage();
+		//navigateToRegisterationPage();
 
 		Utility.waitForWebElement(driver, coverageButton).click(); // New EQCare
 	}
@@ -221,7 +221,7 @@ public class RegistrationPage extends runWithAttachments {
 
 	public void notEnrolledUser() {
 
-		navigateToRegisterationPage();
+		//navigateToRegisterationPage();
 
 		Utility.waitForWebElement(driver, notCoverageButton).click();
 
@@ -508,9 +508,9 @@ public class RegistrationPage extends runWithAttachments {
 
 	}
 
-	public void navigateToRegisterationPage() {
+	public void navigateToRegisterationPage(String appurl) {
 
-		Utility.navigateToURL(driver, DataProviderFactory.getConfig().getValue("ponyRegister"));
+		Utility.navigateToURL(driver, appurl);
 	}
 
 }
