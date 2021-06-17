@@ -109,6 +109,7 @@ public class HRAHomePage extends runWithAttachments {
 	
 	By hraPhysicalQuesThirdOption4 = By.xpath("//a[contains(text(), '75-100%')]");
 	
+	
 	//Life Style sleeping
 	
 	By hraLifestyleQuestion1Img = By.xpath("//img[contains(@src, 'hra-lifestyle-question-1')]");
@@ -307,10 +308,8 @@ public class HRAHomePage extends runWithAttachments {
 			
 			//Utility.waitForWebElement(driver, quitLink);
 			
-			Utility.waitForWebElement(driver, hraPhysicalQuestion3Img);
-			
-			Utility.waitForWebElement(driver, hraPhysicalSpendSittingLabel);
-			
+			Utility.waitForWebElement(driver, hraPhysicalQuestion3Img);			
+			Utility.waitForWebElement(driver, hraPhysicalSpendSittingLabel);		
 			Utility.waitForWebElement(driver, hraPhysicalQuesThirdOption1).click();
 			
 			Utility.waitForWebElement(driver, backLink).click();
@@ -318,19 +317,19 @@ public class HRAHomePage extends runWithAttachments {
 			
             Utility.waitForWebElement(driver, hraPhysicalQuestion3Img);		
 			Utility.waitForWebElement(driver, hraPhysicalSpendSittingLabel);
-			Utility.waitForWebElement(driver, hraPhysicalQuesThirdOption2);
+			Utility.waitForWebElement(driver, hraPhysicalQuesThirdOption2).click();
 			
 			Utility.waitForWebElement(driver, backLink).click();
 			
             Utility.waitForWebElement(driver, hraPhysicalQuestion3Img);			
 			Utility.waitForWebElement(driver, hraPhysicalSpendSittingLabel);
-			Utility.waitForWebElement(driver, hraPhysicalQuesThirdOption3);
+			Utility.waitForWebElement(driver, hraPhysicalQuesThirdOption3).click();
 			
 			Utility.waitForWebElement(driver, backLink).click();
 			
             Utility.waitForWebElement(driver, hraPhysicalQuestion3Img);	
 			Utility.waitForWebElement(driver, hraPhysicalSpendSittingLabel);
-			Utility.waitForWebElement(driver, hraPhysicalQuesThirdOption4);
+			Utility.waitForWebElement(driver, hraPhysicalQuesThirdOption4).click();
 			
 			//Utility.waitForWebElement(driver, weightInput);
 			
