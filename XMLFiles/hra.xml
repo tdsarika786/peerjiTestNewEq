@@ -10,7 +10,7 @@
   <test name="Test" preserve-order="true" thread-count="3" >
     <classes>
        
-           <class name="eqcare.peerjitestcases.TC1_HRAEndScenarios"/> 
+           <class name="eqcare.peerjitestcases.copy.TC1_HRAEndScenarios"/> 
           
         
          
