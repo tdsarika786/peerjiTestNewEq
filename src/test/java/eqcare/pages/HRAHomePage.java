@@ -107,7 +107,7 @@ public class HRAHomePage extends runWithAttachments {
 	
 	By hraPhysicalQuesThirdOption3 = By.xpath("//a[contains(text(), '50-75%')]");
 	
-	By hraPhysicalQuesThirdOption4 = By.xpath("//a[contains(text(), '50-100%')]");
+	By hraPhysicalQuesThirdOption4 = By.xpath("//a[contains(text(), '75-100%')]");
 	
 	//Life Style sleeping
 	
