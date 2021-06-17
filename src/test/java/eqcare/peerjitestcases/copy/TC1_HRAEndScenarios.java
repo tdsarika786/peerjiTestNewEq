@@ -63,6 +63,19 @@ public class TC1_HRAEndScenarios extends BaseClass {
 	}
 	
 	
+	@Test(priority = 4, dependsOnMethods = "verifyPage")
+	public void verifyHRAPages() throws Exception {
+		
+		home.navigateToHRAIntakePage();
+
+		home.verifyHRAPhysicalIntakeForms();
+		
+		home.verifyHRALifeStyle();
+
+		logger.info("Validated Profile pic placeholder displayed to patient");
+	}
+	
+	
 	@Test(priority = 2, enabled=false)
 	public void verifyStartLifeJourneyYesButton() throws Exception {
 		login = PageFactory.initElements(driver, LoginPage.class);
