@@ -48,7 +48,7 @@ public class TC1_RegisterationScenariosWithProfilePicNova extends BaseClass {
 		
 		register.EnrolledUserWithValidInput("70","anu");
 		
-		register.Registeration1(email,
+		register.Registeration1("sarikaqa7+qaeq70@gmail.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
@@ -62,7 +62,7 @@ public class TC1_RegisterationScenariosWithProfilePicNova extends BaseClass {
 				DataProviderFactory.getExcel().getCellData("Users", 2, 8),
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 9),
-				DataProviderFactory.getExcel().getCellData("Users", 2, 10), true, "img");
+				"Sarika#123", true, "img");
 
 		register.registerationCompleteWithValidInput();
 
@@ -74,7 +74,7 @@ public class TC1_RegisterationScenariosWithProfilePicNova extends BaseClass {
 		
 		register.EnrolledUserWithValidInput("71","anu1");
 		
-		register.Registeration1(email,
+		register.Registeration1("sarikaqa7+qaeq71@gmail.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
@@ -88,7 +88,7 @@ public class TC1_RegisterationScenariosWithProfilePicNova extends BaseClass {
 				DataProviderFactory.getExcel().getCellData("Users", 2, 8),
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 9),
-				DataProviderFactory.getExcel().getCellData("Users", 2, 10), false, "pdf");
+				"Sarika#123", false, "pdf");
 
 		register.registerationCompleteWithValidInput();
 
@@ -100,7 +100,7 @@ public class TC1_RegisterationScenariosWithProfilePicNova extends BaseClass {
 		
 		register.EnrolledUserWithValidInput("72","anu2");
 		
-		register.Registeration1(email,
+		register.Registeration1("sarikaqa7+qaeq72@gmail.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
@@ -114,7 +114,7 @@ public class TC1_RegisterationScenariosWithProfilePicNova extends BaseClass {
 				DataProviderFactory.getExcel().getCellData("Users", 2, 8),
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 9),
-				DataProviderFactory.getExcel().getCellData("Users", 2, 10), true, "img");
+				"Sarika#123", true, "img");
 
 		register.registerationCompleteWithValidInput();
 
