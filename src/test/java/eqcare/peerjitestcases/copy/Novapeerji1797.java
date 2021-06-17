@@ -43,11 +43,11 @@ public class Novapeerji1797 extends BaseClass {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
 
-		home.createEmployerNew1797("Sarika-Test-PC-LJ1","1", "primary_care_with_lifejourney"); 
+		home.createEmployerNew1797("Sarika-Test-PC-LJ1","81", "primary_care_with_lifejourney"); 
 		
-		home.createCoverage1797("Sarika-Test-PC-LJ1","1", "primary_care_with_lifejourney");
+		home.createCoverage1797("Sarika-Test-PC-LJ1","81", "primary_care_with_lifejourney");
 		
-		home.createService1797("Sarika-Test-PC-LJ1","1", "primary_care_with_lifejourney");
+		home.createService1797("Sarika-Test-PC-LJ1","81", "primary_care_with_lifejourney");
 		
 		home.createEmployee("Sarika-Test-PC-LJ1","anu1","family");
 		
