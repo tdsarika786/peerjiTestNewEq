@@ -26,26 +26,17 @@ public class TC1_HRAEndScenarios extends BaseClass {
 	public void verifyPage(String email, String password) throws Exception {
 		login = PageFactory.initElements(driver, LoginPage.class);
 
-		//logger = report.createTest("Verify Home page Url");
-
 		login.loginToApplication(email,
 				password);
-
-		//logger.info("Logged in as patient");
 
 		home = PageFactory.initElements(driver, HRAHomePage.class);
 		
 		intakeForm = PageFactory.initElements(driver, LifeJourneyIntakeFormPage.class);
 
-		//logger.info("Patint logged and navigates to Home Page");
-
 		home.navigateToHomePage();
 
 		home.verifyUrl();
 		
-		//home.navigateToHRAIntakePage();
-
-		//logger.info("Validated Home Page Url");
 	}
 
 	@Test(priority = 2, dependsOnMethods = "verifyPage", enabled=false)
@@ -74,7 +65,6 @@ public class TC1_HRAEndScenarios extends BaseClass {
 		
 		home.verifyHRALifeStyle();
 
-		//logger.info("Validated Profile pic placeholder displayed to patient");
 	}
 	
 	
