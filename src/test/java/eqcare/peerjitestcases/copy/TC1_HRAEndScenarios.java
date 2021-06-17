@@ -42,6 +42,8 @@ public class TC1_HRAEndScenarios extends BaseClass {
 		home.navigateToHomePage();
 
 		home.verifyUrl();
+		
+		home.navigateToHRAIntakePage();
 
 		//logger.info("Validated Home Page Url");
 	}
@@ -63,7 +65,7 @@ public class TC1_HRAEndScenarios extends BaseClass {
 	}
 	
 	
-	@Test(priority = 4, dependsOnMethods = "verifyPage")
+	@Test(priority = 2, dependsOnMethods = "verifyPage")
 	public void verifyHRAPages() throws Exception {
 		
 		home.navigateToHRAIntakePage();
