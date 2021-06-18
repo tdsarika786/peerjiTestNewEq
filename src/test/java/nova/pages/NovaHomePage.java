@@ -971,7 +971,9 @@ public class NovaHomePage {
 
 				//objCoverageOption.selectByValue("primary_care");
 				
-				objCoverageOption.selectByValue("lifejourney");
+				//objCoverageOption.selectByValue("lifejourney");
+				
+				objCoverageOption.selectByValue(CoverageType);
 				
 				//objCoverageOption.selectByValue("dcbt");
 				
@@ -1053,4 +1055,50 @@ public class NovaHomePage {
 				Utility.wait(2);
 	}
 	
+	public void createCoverageUpdate1797(String searchEmployer, String CoverageToken, String CoverageType) {
+
+		Utility.waitForWebElement(driver, EmployerLink).click();
+
+		WebElement clickEqCareEmployer = driver.findElement(By.xpath("(//span[contains(text(),'" + searchEmployer + "')]/following::td[6]//a[1])[1]"));
+		
+		JavascriptExecutor executorCreateEmployer = (JavascriptExecutor) driver;
+		executorCreateEmployer.executeScript("arguments[0].click()", clickEqCareEmployer);
+		
+		
+		WebElement CreateCoverage = driver.findElement(By.xpath("//a[contains(text(), 'Create Coverage')]"));
+
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", CreateCoverage);
+
+		
+		// Select Coverage Option
+
+				WebElement coverageOptionElement = driver.findElement(selectCoverageOption);
+
+				Select objCoverageOption = new Select(coverageOptionElement);
+
+				// Utility.waitForWebElement(driver, selectCoverageTokenInput).click();
+
+				//objCoverageOption.selectByValue("primary_care");
+				
+				//objCoverageOption.selectByValue("lifejourney");
+				
+				objCoverageOption.selectByValue(CoverageType);
+				
+				//objCoverageOption.selectByValue("dcbt");
+				
+				//objCoverageOption.selectByValue("hra");
+				
+				Utility.waitForWebElement(driver, startDateInput).sendKeys("2020-08-01");
+				Utility.waitForWebElement(driver, startDateInput).sendKeys(Keys.RETURN);
+
+
+				WebElement buttonSub = driver.findElement(By.xpath("//button[@dusk='create-button']"));
+
+				JavascriptExecutor executorSub = (JavascriptExecutor) driver;
+				executorSub.executeScript("arguments[0].click()", buttonSub);
+
+				Utility.wait(2);
+	}
 }
