@@ -43,13 +43,13 @@ public class Novapeerji1797 extends BaseClass {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
 
-		home.createEmployerNew1797("Sarika-Test-LJ1","700",null); 
+		home.createEmployerNew1797("Sarika-Test-LJ700","700",null); 
 		
-		home.createCoverage1797("Sarika-Test-LJ1",null, "lifejourney");
+		home.createCoverage1797("Sarika-Test-LJ700",null, "lifejourney");
 		
-		home.createService1797("Sarika-Test-LJ1",null,null);
+		home.createService1797("Sarika-Test-LJ700",null,null);
 		
-		home.createEmployee("Sarika-Test-LJ1","anu","family");
+		home.createEmployee("Sarika-Test-LJ700","anu","family");
 		
 	}
 
@@ -59,13 +59,13 @@ public class Novapeerji1797 extends BaseClass {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
 
-		home.createEmployerNew1797("Sarika-Test-PC1","701",null); 
+		home.createEmployerNew1797("Sarika-Test-PC701","701",null); 
 		
-		home.createCoverage1797("Sarika-Test-PC1",null, "primary_care");
+		home.createCoverage1797("Sarika-Test-PC701",null, "primary_care");
 		
-		home.createService1797("Sarika-Test-PC1",null,null);
+		home.createService1797("Sarika-Test-PC701",null,null);
 		
-		home.createEmployee("Sarika-Test-PC1","anu1","family");
+		home.createEmployee("Sarika-Test-PC701","anu1","family");
 		
 	}
 	
@@ -75,15 +75,15 @@ public class Novapeerji1797 extends BaseClass {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
 
-		home.createEmployerNew1797("Sarika-Test-PC-LJ1","702",null); 
+		home.createEmployerNew1797("Sarika-Test-PC-LJ702","702",null); 
 		
-		home.createCoverage1797("Sarika-Test-PC-LJ1",null, "primary_care");
+		home.createCoverage1797("Sarika-Test-PC-LJ702",null, "primary_care");
 		
-		home.createCoverageUpdate1797("Sarika-Test-PC-LJ1",null, "lifejourney");
+		home.createCoverageUpdate1797("Sarika-Test-PC-LJ702",null, "lifejourney");
 		
-		home.createService1797("Sarika-Test-PC-LJ1",null,null);
+		home.createService1797("Sarika-Test-PC-LJ702",null,null);
 		
-		home.createEmployee("Sarika-Test-PC-LJ1","anu2","family");
+		home.createEmployee("Sarika-Test-PC-LJ702","anu2","family");
 		
 	}
 	
@@ -93,13 +93,13 @@ public class Novapeerji1797 extends BaseClass {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
 
-		home.createEmployerNew1797("Sarika-Test-LJ3","703",null); 
+		home.createEmployerNew1797("Sarika-Test-LJ703","703",null); 
 		
-		home.createCoverage1797("Sarika-Test-LJ3",null, "lifejourney");
+		home.createCoverage1797("Sarika-Test-LJ703",null, "lifejourney");
 		
-		home.createService1797("Sarika-Test-LJ3",null,null);
+		home.createService1797("Sarika-Test-LJ703",null,null);
 		
-		home.createEmployee("Sarika-Test-LJ3","anu3","single");
+		home.createEmployee("Sarika-Test-LJ703","anu3","single");
 		
 	}
 	
