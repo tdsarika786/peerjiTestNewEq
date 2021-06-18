@@ -48,7 +48,7 @@ public class TC1_RegisterationScenariosWithProfilePicNova1797 extends BaseClass 
 		
 		register.navigateToRegisterationPage(AppUrl);
 		
-		register.EnrolledUserWithValidInput("700","anu");
+		register.EnrolledUserWithValidInput("70","anu");
 		
 		register.Registeration1("sarikaqa7+qaeq@gmail.com",
 
@@ -76,7 +76,7 @@ public class TC1_RegisterationScenariosWithProfilePicNova1797 extends BaseClass 
 		
 		register.navigateToRegisterationPage(AppUrl);
 		
-		register.EnrolledUserWithValidInput("701","anu1");
+		register.EnrolledUserWithValidInput("71","anu1");
 		
 		register.Registeration1("sarikaqa7+qaeq1@gmail.com",
 
@@ -104,7 +104,7 @@ public class TC1_RegisterationScenariosWithProfilePicNova1797 extends BaseClass 
 		
 		register.navigateToRegisterationPage(AppUrl);
 		
-		register.EnrolledUserWithValidInput("702","anu2");
+		register.EnrolledUserWithValidInput("72","anu2");
 		
 		register.Registeration1("sarikaqa7+qaeq2@gmail.com",
 
@@ -132,7 +132,7 @@ public class TC1_RegisterationScenariosWithProfilePicNova1797 extends BaseClass 
 		
 		register.navigateToRegisterationPage(AppUrl);
 		
-		register.EnrolledUserWithValidInput("703","anu3");
+		register.EnrolledUserWithValidInput("73","anu3");
 		
 		register.Registeration1("sarikaqa7+qaeq3@gmail.com",
 

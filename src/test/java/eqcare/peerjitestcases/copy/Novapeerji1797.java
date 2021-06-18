@@ -42,64 +42,76 @@ public class Novapeerji1797 extends BaseClass {
 	public void CreateEmployer1(String searchemployer, String coveragetoken, String coveragetype ) throws InterruptedException {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
+		
+		String searchemployer1 ="Sarika-Test-LJ70";
+		String coveragetoken1 ="70";
 
-		home.createEmployerNew1797("Sarika-Test-LJ700","700",null); 
+        home.createEmployerNew1797(searchemployer1,coveragetoken1,null); 
 		
-		home.createCoverage1797("Sarika-Test-LJ700",null, "lifejourney");
+		home.createCoverage1797(searchemployer1,null, "lifejourney");
 		
-		home.createService1797("Sarika-Test-LJ700",null,null);
+		home.createService1797(searchemployer1,null,null);
 		
-		home.createEmployee("Sarika-Test-LJ700","anu","family");
+		home.createEmployee(searchemployer1,"anu","family");
 		
 	}
 
 	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
-	@Test(priority = 2, dependsOnMethods = "loginToApplication")
+	@Test(priority = 3, dependsOnMethods = "loginToApplication")
 	public void CreateEmployer2(String searchemployer, String coveragetoken, String coveragetype ) throws InterruptedException {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
+		
+		String searchemployer1 ="Sarika-Test-PC71";
+		String coveragetoken1 ="71";
 
-		home.createEmployerNew1797("Sarika-Test-PC701","701",null); 
+		home.createEmployerNew1797(searchemployer1,coveragetoken1,null); 
 		
-		home.createCoverage1797("Sarika-Test-PC701",null, "primary_care");
+		home.createCoverage1797(searchemployer1,null, "primary_care");
 		
-		home.createService1797("Sarika-Test-PC701",null,null);
+		home.createService1797(searchemployer1,null,null);
 		
-		home.createEmployee("Sarika-Test-PC701","anu1","family");
+		home.createEmployee(searchemployer1,"anu1","family");
 		
 	}
 	
 	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
-	@Test(priority = 2, dependsOnMethods = "loginToApplication")
+	@Test(priority = 4, dependsOnMethods = "loginToApplication")
 	public void CreateEmployerCoverageUpdate(String searchemployer, String coveragetoken, String coveragetype ) throws InterruptedException {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
+		
+		String searchemployer1 ="Sarika-Test-PCLJ72";
+		String coveragetoken1 ="72";
 
-		home.createEmployerNew1797("Sarika-Test-PC-LJ702","702",null); 
+		home.createEmployerNew1797(searchemployer1,coveragetoken1,null); 
 		
-		home.createCoverage1797("Sarika-Test-PC-LJ702",null, "primary_care");
+		home.createCoverage1797(searchemployer1,null, "primary_care");
 		
-		home.createCoverageUpdate1797("Sarika-Test-PC-LJ702",null, "lifejourney");
+		home.createCoverageUpdate1797(searchemployer1,null, "lifejourney");
 		
-		home.createService1797("Sarika-Test-PC-LJ702",null,null);
+		home.createService1797(searchemployer1,null,null);
 		
-		home.createEmployee("Sarika-Test-PC-LJ702","anu2","family");
+		home.createEmployee(searchemployer1,"anu2","family");
 		
 	}
 	
 	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
-	@Test(priority = 2, dependsOnMethods = "loginToApplication")
+	@Test(priority = 5, dependsOnMethods = "loginToApplication")
 	public void CreateEmployer3(String searchemployer, String coveragetoken, String coveragetype ) throws InterruptedException {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
+		
+		String searchemployer1 ="Sarika-Test-PCLJ73";
+		String coveragetoken1 ="73s";
 
-		home.createEmployerNew1797("Sarika-Test-LJ703","703",null); 
+		home.createEmployerNew1797(searchemployer1,coveragetoken1,null); 
 		
-		home.createCoverage1797("Sarika-Test-LJ703",null, "lifejourney");
+		home.createCoverage1797(searchemployer1,null, "lifejourney");
 		
-		home.createService1797("Sarika-Test-LJ703",null,null);
+		home.createService1797(searchemployer1,null,null);
 		
-		home.createEmployee("Sarika-Test-LJ703","anu3","single");
+		home.createEmployee(searchemployer1,"anu3","single");
 		
 	}
 	
