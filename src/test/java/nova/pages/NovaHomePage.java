@@ -644,11 +644,11 @@ public class NovaHomePage {
 
 		// *******************************Services************************************
 
-		WebElement buttonPrimaryCare = driver.findElement(By.xpath("//input[@name='primary_care']"));
+		/*WebElement buttonPrimaryCare = driver.findElement(By.xpath("//input[@name='primary_care']"));
 
 		JavascriptExecutor executor1 = (JavascriptExecutor) driver;
 		executor1.executeScript("arguments[0].click()", buttonPrimaryCare);
-
+       */
 		/*
 		 * 
 		 * //Checkbox
@@ -702,13 +702,13 @@ public class NovaHomePage {
 		 * executor9.executeScript("arguments[0].click()", buttonNutrition);
 		 * 
 		 */
-		WebElement buttonArticles = driver.findElement(By.xpath("//input[@name='articles']"));
+		/*WebElement buttonArticles = driver.findElement(By.xpath("//input[@name='articles']"));
 		JavascriptExecutor executor10 = (JavascriptExecutor) driver;
 		executor10.executeScript("arguments[0].click()", buttonArticles);
 
 		WebElement buttonLegal_financial = driver.findElement(By.xpath("//input[@name='legal_financial']"));
 		JavascriptExecutor executor11 = (JavascriptExecutor) driver;
-		executor11.executeScript("arguments[0].click()", buttonLegal_financial);
+		executor11.executeScript("arguments[0].click()", buttonLegal_financial);*/
 
 		// *******************************Services************************************
 
