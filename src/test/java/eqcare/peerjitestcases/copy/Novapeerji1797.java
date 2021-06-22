@@ -103,7 +103,7 @@ public class Novapeerji1797 extends BaseClass {
 		home = PageFactory.initElements(driver, NovaHomePage.class);
 		
 		String searchemployer1 ="Sarika-Test-PCLJ73";
-		String coveragetoken1 ="73s";
+		String coveragetoken1 ="73";
 
 		home.createEmployerNew1797(searchemployer1,coveragetoken1,null); 
 		
