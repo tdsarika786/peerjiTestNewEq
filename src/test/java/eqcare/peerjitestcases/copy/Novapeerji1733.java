@@ -43,20 +43,31 @@ public class Novapeerji1733 extends BaseClass {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
 		
-		String searchemployer1 ="Sarika-Test-LJ70";
-		String coveragetoken1 ="70";
+		String searchemployer1 ="Sarika-Test-LJ71";
+		//String coveragetoken1 ="70";
 
-        home.createEmployerNew(searchemployer1,coveragetoken1,null); 
+        home.createEmployer1733(searchemployer1,null,null); 
 		
 		home.createCoverage1797(searchemployer1,null, "lifejourney");
 		
 		home.createService1797(searchemployer1,null,null);
 		
-		home.createEmployee(searchemployer1,"anu","family");
+	    //home.createGroupNo("70","Sarika-Test-PC-LJ"); // then create employee 
+		
+		//home.createEmployee(searchemployer1,"anu","family");
 	}
 
 	
 	
-
+	@Parameters({"SearchEmployer","CoverageIdentifier", "PlanType"})
+	@Test(priority = 3, dependsOnMethods = "loginToApplication" , enabled=false)
+	public void CreateEmployee(String searchemployer, String coverageidentifier, String plantype) throws InterruptedException {
+		
+		home = PageFactory.initElements(driver, NovaHomePage.class);
+		
+		home.createGroupNo("70","Sarika-Test-PC-LJ"); // then create employee 
+		
+	}
+	
 	
 }

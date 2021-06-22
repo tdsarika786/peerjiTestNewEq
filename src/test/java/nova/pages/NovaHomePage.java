@@ -572,7 +572,7 @@ public class NovaHomePage {
 		executorSub.executeScript("arguments[0].click()", buttonSub);
 	}
 
-	public void createEmployerNew(String searchEmployer, String CoverageToken, String CoverageType) {
+	public void createEmployer1733(String searchEmployer, String CoverageToken, String CoverageType) {
 
 		Utility.waitForWebElement(driver, EmployerLink).click();
 
@@ -955,7 +955,7 @@ public class NovaHomePage {
 		
 		//Utility.waitForWebElement(driver, CreateCoverage).click();
 		
-		WebElement CreateCoverage = driver.findElement(By.xpath("//a[contains(text(), 'Create Coverage')]"));
+		WebElement CreateCoverage = driver.findElement(By.xpath("(//a[contains(text(), 'Create Coverage')])[1]"));
 
 		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
 		executorCreateCoverage.executeScript("arguments[0].click()", CreateCoverage);
