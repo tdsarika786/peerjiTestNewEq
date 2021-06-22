@@ -618,7 +618,7 @@ public class NovaHomePage {
 
 		// lifejourney_gold
 
-		WebElement coverageTypeElement = driver.findElement(selectCoverageType);
+		/*WebElement coverageTypeElement = driver.findElement(selectCoverageType);
 
 		Select objCoverageType = new Select(coverageTypeElement);
 
@@ -626,7 +626,7 @@ public class NovaHomePage {
 
 		System.out.println(CoverageType);
 
-		objCoverageType.selectByValue(CoverageType);
+		objCoverageType.selectByValue(CoverageType);*/
 
 		// *******************************Services************************************
 
