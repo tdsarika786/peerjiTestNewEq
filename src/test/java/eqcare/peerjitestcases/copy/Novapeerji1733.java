@@ -74,7 +74,7 @@ public class Novapeerji1733 extends BaseClass {
 		
 	    home.createGroupNo(groupNo,searchemployer1); // then create employee 
 		
-		home.createEmployee(searchemployer1,"anu","family");
+		home.createEmployee(searchemployer1,"anu1","family");
 	}
 
 	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
@@ -96,7 +96,7 @@ public class Novapeerji1733 extends BaseClass {
 		
 	    home.createGroupNo(groupNo,searchemployer1); // then create employee 
 		
-		home.createEmployee(searchemployer1,"anu","family");
+		home.createEmployee(searchemployer1,"anu2","family");
 	}
 	
 	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
