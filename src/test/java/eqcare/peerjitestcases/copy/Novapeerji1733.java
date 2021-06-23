@@ -58,7 +58,7 @@ public class Novapeerji1733 extends BaseClass {
 	}
 	
 	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
-	@Test(priority = 2, dependsOnMethods = "loginToApplication", enabled=false)
+	@Test(priority = 2, dependsOnMethods = "loginToApplication")
 	public void CreateEmployer1(String searchemployer, String coveragetoken, String coveragetype ) throws InterruptedException {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
@@ -78,7 +78,7 @@ public class Novapeerji1733 extends BaseClass {
 	}
 
 	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
-	@Test(priority = 2, dependsOnMethods = "loginToApplication", enabled=false)
+	@Test(priority = 2, dependsOnMethods = "loginToApplication")
 	public void CreateEmployer2(String searchemployer, String coveragetoken, String coveragetype ) throws InterruptedException {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
@@ -100,7 +100,7 @@ public class Novapeerji1733 extends BaseClass {
 	}
 	
 	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
-	@Test(priority = 2, dependsOnMethods = "loginToApplication", enabled=false)
+	@Test(priority = 2, dependsOnMethods = "loginToApplication")
 	public void CreateEmployer3(String searchemployer, String coveragetoken, String coveragetype ) throws InterruptedException {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
