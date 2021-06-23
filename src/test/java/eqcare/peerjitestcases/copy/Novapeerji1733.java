@@ -43,8 +43,8 @@ public class Novapeerji1733 extends BaseClass {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
 		
-		String searchemployer1 ="Sarika-Test-LJ70";
-		String groupNo ="70";
+		String searchemployer1 ="Sarika-Test-NewLJ700";
+		String groupNo ="700";
 
         home.createEmployer1733(searchemployer1,null,null); 
 		
@@ -63,8 +63,8 @@ public class Novapeerji1733 extends BaseClass {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
 		
-		String searchemployer1 ="Sarika-Test-PC71";
-		String groupNo ="71";
+		String searchemployer1 ="Sarika-Test-NewPC701";
+		String groupNo ="701";
 
         home.createEmployer1733(searchemployer1,null,null); 
 		
@@ -83,8 +83,8 @@ public class Novapeerji1733 extends BaseClass {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
 		
-		String searchemployer1 ="Sarika-Test-PCLJ72";
-		String groupNo ="72";
+		String searchemployer1 ="Sarika-Test-NewPCLJ702";
+		String groupNo ="702";
 
         home.createEmployer1733(searchemployer1,null,null); 
 		
@@ -105,8 +105,8 @@ public class Novapeerji1733 extends BaseClass {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
 		
-		String searchemployer1 ="Sarika-Test-PCLJ73";
-		String groupNo ="73";
+		String searchemployer1 ="Sarika-Test-NewPCLJ703";
+		String groupNo ="703";
 
         home.createEmployer1733(searchemployer1,null,null); 
 		
