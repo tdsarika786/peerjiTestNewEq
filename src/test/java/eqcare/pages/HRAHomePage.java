@@ -220,7 +220,7 @@ public class HRAHomePage extends runWithAttachments {
 	
 	public void navigateToHRAIntakePage() {
 
-		Utility.navigateToURL(driver, "https://patient.eqserviceqa2.eqcaredev.com/hra/intake");
+		Utility.navigateToURL(driver, "https://patient.eqserviceqa1.eqcaredev.com/hra/intake");
 
 	}
 	

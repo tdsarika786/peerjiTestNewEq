@@ -174,7 +174,7 @@ public class AccountPage extends runWithAttachments {
 
 	By divAddFamilyMember = By.xpath("//div[contains(text(),' Add a family member ')]");
 
-	By linkInviteChild = By.xpath("//div[2]/div/a[text()=' Invite ']");
+	By linkInviteChild = By.xpath("//span[text()='Child']/following::a[text()=' Invite ']");
 
 	By childAgeNoSelect = By.xpath("//label[@for='childAge-no']");
 

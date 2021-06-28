@@ -1,4 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 67.396 s - in TestSuite
+Tests run: 16, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 151.371 s <<< FAILURE! - in TestSuite
+eqcare.peerjitestcases.TC1_EndToEndScenarios.editAccountInformation  Time elapsed: 25.688 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: (//a[text()=' Edit '])[2] (tried for 15 second(s) with 500 milliseconds interval)
+	at eqcare.peerjitestcases.TC1_EndToEndScenarios.editAccountInformation(TC1_EndToEndScenarios.java:107)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Cannot locate an element using By.xpath: (//a[text()=' Edit '])[2]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:d8:a58d:7f6f:2bde%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+Driver info: driver.version: unknown
+	at eqcare.peerjitestcases.TC1_EndToEndScenarios.editAccountInformation(TC1_EndToEndScenarios.java:107)
+
