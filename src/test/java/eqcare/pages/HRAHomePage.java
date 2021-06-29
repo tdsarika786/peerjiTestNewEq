@@ -227,7 +227,7 @@ public class HRAHomePage extends runWithAttachments {
 		//Cardovascular
 		By hraCardiovascularLabel = By.xpath("//label[contains(text(), 'cardiovascular disease')]");
 		
-		By hraCardiovascularControlledLabel = By.xpath("//label[contains(text(), 'Type II Diabetes controlled')]");
+		By hraCardiovascularControlledLabel = By.xpath("//label[contains(text(), 'cardiovascular disease controlled')]");
 	
 		//Blood pressure
 		By hraBLoodPressureLabel = By.xpath("//label[contains(text(), 'blood pressure')]");
