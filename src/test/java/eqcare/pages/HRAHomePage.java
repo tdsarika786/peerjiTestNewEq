@@ -144,13 +144,13 @@ public class HRAHomePage extends runWithAttachments {
 	
 	By hraLifestyleQuestionDrinkingImg = By.xpath("//img[contains(@src, 'hra-lifestyle-question-6')]");
 	
-	By hraLifeStyleDrinikingLabel = By.xpath("//label[contains(text(), 'drinking habits')]");
+	By hraLifeStyleDrinikingLabel = By.xpath("//label[contains(text(), 'alcohol consumption')]");
 	
-	By hraLifeStyleDrinkingNeverDrank = By.xpath("//a[contains(text(), 'Never Drank')]");
+	By hraLifeStyleDrinkingNeverDrank = By.xpath("(//a[contains(text(), 'drink alcohol')])[1]");
 	
-	By hraLifeStyleDrinkingCurrentlyDrink = By.xpath("//a[contains(text(), 'Currently Drink')]");
+	By hraLifeStyleDrinkingCurrentlyDrink = By.xpath("//*[contains(text(),'I drink')]");
 	
-	By hraLifeStyleDrinkingFormerDrink = By.xpath("//a[contains(text(), 'Former Drink')]");
+	By hraLifeStyleDrinkingFormerDrink = By.xpath("//a[contains(text(),'I used to drink')]");
 	
 	//Alcohol Drinks
      By hraLifestyleQuestionAlcoholImg = By.xpath("//img[contains(@src, 'hra-lifestyle-question-6')]");
@@ -181,11 +181,11 @@ public class HRAHomePage extends runWithAttachments {
 	
 	By hraLifeStyleStressLabel = By.xpath("//label[contains(text(), 'describe your daily stress')]");
 	
-	By hraLifeStyleStressOptionNoStressLink = By.xpath("//a[contains(text(), 'Not at all')]");
+	By hraLifeStyleStressOptionNoStressLink = By.xpath("//a[contains(text(), 'No stress')]");
 	
-	By hraLifeStyleStressOptionNotVeryStressLink = By.xpath("//a[contains(text(), 'Not very stressful')]");
+	By hraLifeStyleStressOptionNotVeryStressLink = By.xpath("//a[contains(text(), 'little stressful')]");
 	
-	By hraLifeStyleStressOptionBitStressLink = By.xpath("//a[contains(text(), 'bit stressful')]");
+	By hraLifeStyleStressOptionBitStressLink = By.xpath("//a[contains(text(), 'bit more stressful')]");
 	
 	By hraLifeStyleStressOptionQuiteBitStressLink = By.xpath("//a[contains(text(), 'Quite a bit stressful')]");
 	
@@ -195,7 +195,7 @@ public class HRAHomePage extends runWithAttachments {
 	//Happiness question
 	By hraLifestyleQuestion4HappinessImg = By.xpath("//img[contains(@src, 'hra-lifestyle-question-7')]");
 	
-	By hraLifeStyleHappinessLabel = By.xpath("//label[contains(text(), 'happiness levels')]");
+	By hraLifeStyleHappinessLabel = By.xpath("//label[contains(text(), 'typical level of happiness')]");
 	
 	By hraLifeStyleStressOptionHappyLink = By.xpath("//a[contains(text(), 'Happy')]");
 	
