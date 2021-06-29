@@ -170,9 +170,15 @@ public class HRAHomePage extends runWithAttachments {
 	
 	By hraLifeStyleSmokePerDayLabel = By.xpath("//label[contains(text(), 'smoke per day')]");
 	
+	By hraLifeStyleSmokePerWeekLabel = By.xpath("//label[contains(text(), 'smoke per week')]");
+	
 	By hraLifeStyleSmokePerDayInput = By.xpath("//input[@id='past_cigarettes_per_day']");
 	
+	By hraLifeStyleSmokePerWeekInput = By.xpath("//input[@id='current_cigarettes_per_week']");
+	
 	By hraLifeStyleNextLink2b = By.xpath("//a[@data-role='hra-lifestyle-question-2b-next-button']");
+	
+	
 	
 	
 	//when never drank selected - daily stress question
@@ -239,7 +245,6 @@ public class HRAHomePage extends runWithAttachments {
 		}
 	}
 		
-	
 	public void verifyHRAIntroductionPage() throws Exception {
 
 		try {
@@ -412,7 +417,7 @@ public class HRAHomePage extends runWithAttachments {
 			//Cigrattes
 			 Utility.waitForWebElement(driver, hraLifestyleQuestionCigrattesImg);
 				
-			Utility.waitForWebElement(driver, hraLifeStyleSmokePerDayLabel);
+			Utility.waitForWebElement(driver, hraLifeStyleSmokePerWeekLabel);
 			
 			Utility.waitForWebElement(driver, backLink).click();
 			
