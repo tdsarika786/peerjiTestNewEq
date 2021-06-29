@@ -201,7 +201,7 @@ public class HRAHomePage extends runWithAttachments {
 	
 	
 	//Happiness question
-	By hraLifestyleQuestion4HappinessImg = By.xpath("//img[contains(@src, 'hra-lifestyle-question-7')]");
+	By hraLifestyleQuestion4HappinessImg = By.xpath("//img[contains(@src, 'hra-lifestyle-question-8')]");
 	
 	By hraLifeStyleHappinessLabel = By.xpath("//label[contains(text(), 'typical level of happiness')]");
 	
