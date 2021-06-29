@@ -93,7 +93,7 @@ public class HRAHomePage extends runWithAttachments {
 	
 	By hraPhysicalQuesSecondOption2 = By.xpath("//a[contains(text(), '60-150 min')]");
 	
-	By hraPhysicalQuesSecondOption3 = By.xpath("//a[contains(text(), 'over 150 min')]");
+	By hraPhysicalQuesSecondOption3 = By.xpath("//a[contains(text(), '150 min')]");
 	
 	//Sitting
 	
