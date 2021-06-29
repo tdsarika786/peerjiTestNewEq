@@ -488,7 +488,7 @@ public class HRAHomePage extends runWithAttachments {
                 //Alcholic Input
 				Utility.waitForWebElement(driver, hraLifestyleQuestionAlcoholImg);	
 			    Utility.waitForWebElement(driver, hraLifeStyleAlcoholPerWeekLabel);
-				Utility.waitForWebElement(driver, hraLifeStyleAlcoholPerWeePastDrinksInput).sendKeys("7");
+				Utility.waitForWebElement(driver, hraLifeStyleAlcoholPerWeeCurrentDrinkInput).sendKeys("7");
 				
 				Utility.waitForWebElement(driver, hraLifeStyleAlchoholNextLink).click();
 			  
