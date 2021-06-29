@@ -93,7 +93,7 @@ public class HRAHomePage extends runWithAttachments {
 	
 	By hraPhysicalQuesSecondOption2 = By.xpath("//a[contains(text(), '60-150 min')]");
 	
-	By hraPhysicalQuesSecondOption3 = By.xpath("//a[contains(text(), '150 min')]");
+	By hraPhysicalQuesSecondOption3 = By.xpath("//a[contains(text(), 'Over 150 min')]");
 	
 	//Sitting
 	
@@ -157,7 +157,9 @@ public class HRAHomePage extends runWithAttachments {
 	
 	By hraLifeStyleAlcoholPerWeekLabel = By.xpath("//label[contains(text(), 'alcholic drinks')]");
 	
-	By hraLifeStyleAlcoholPerWeeCurrentDrinkInput = By.xpath("//input[@id='current_drinks_per_day']");
+	By hraLifeStyleAlcoholPerDayDrinkInput = By.xpath("//input[@id='current_drinks_per_day']");
+	
+	By hraLifeStyleAlcoholPerWeeCurrentDrinkInput = By.xpath("//input[@id='current_drinks_per_week']");
 	
 	By hraLifeStyleAlcoholPerWeePastDrinksInput = By.xpath("//input[@id='past_drinks_per_day']");
 	
