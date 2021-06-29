@@ -216,6 +216,51 @@ public class HRAHomePage extends runWithAttachments {
 	By hraLifeStyleStressOptionUnHappyNotWorthLink = By.xpath("//a[contains(text(), 'unhappy that life is not worth')]");
 	
 	
+	//Medical question
+		//Diabetes
+		By hraTypeIIDiabetesLabel = By.xpath("//label[contains(text(), 'Type II Diabetes')]");
+		
+		By hraTypeIIDiabetesControlledLabel = By.xpath("//label[contains(text(), 'Type II Diabetes controlled')]");
+		
+		By hraYesLink = By.xpath("//a[contains(text(), 'Yes')]");
+	
+		//Cardovascular
+		By hraCardiovascularLabel = By.xpath("//label[contains(text(), 'cardiovascular disease')]");
+		
+		By hraCardiovascularControlledLabel = By.xpath("//label[contains(text(), 'Type II Diabetes controlled')]");
+	
+		//Blood pressure
+		By hraBLoodPressureLabel = By.xpath("//label[contains(text(), 'blood pressure')]");
+		
+		By hraBloodpressureControlledLabel = By.xpath("//label[contains(text(), 'blood pressure controlled')]");
+		
+		//osteoarthritis
+		By hraOsteoarthritisLabel = By.xpath("//label[contains(text(), 'osteoarthritis')]");
+		
+		By hraOsteoarthritisControlledLabel = By.xpath("//label[contains(text(), 'osteoarthritis controlled')]");
+		
+		//lung disease
+		By hraLungDiseaseLabel = By.xpath("//label[contains(text(), 'lung disease')]");
+				
+		By hraLungdiseaseControlledLabel = By.xpath("//label[contains(text(), 'lung disease controlled')]");
+		
+		//lower back pain
+		By hraLowerbackpainLabel = By.xpath("//label[contains(text(), 'lower back pain')]");
+						
+		By hraLowerbackpainControlledLabel = By.xpath("//label[contains(text(), 'lower back pain controlled')]");
+				
+			
+		//Immediate Type II Diabetes immediate family 
+		By hraTypeIIDiabetesImmediateLabel = By.xpath("//label[contains(text(), 'Type II Diabetes')]");
+		
+		By hraCardiovascularImemdidiateLabel = By.xpath("//label[contains(text(), 'cardiovascular disease')]");
+				
+		
+		
+		
+				
+		
+		
 	public HRAHomePage(WebDriver ldriver) {
 		this.driver = ldriver;
 	}
@@ -577,6 +622,86 @@ public class HRAHomePage extends runWithAttachments {
 		}
 	}
 		
+	
+	public void verifyMedical()  
+
+		{
+			
+			Utility.waitForWebElement(driver, hraTypeIIDiabetesLabel);
+			
+			Utility.waitForWebElement(driver, hraYesLink).click();
+			
+            Utility.waitForWebElement(driver, hraTypeIIDiabetesControlledLabel);
+			
+			Utility.waitForWebElement(driver, hraYesLink).click();
+			
+			//Cardio
+			
+			Utility.waitForWebElement(driver, hraCardiovascularLabel);
+			
+			Utility.waitForWebElement(driver, hraYesLink).click();
+			
+            Utility.waitForWebElement(driver, hraCardiovascularControlledLabel);
+			
+			Utility.waitForWebElement(driver, hraYesLink).click();
+			
+			//Blood pressure
+			
+			Utility.waitForWebElement(driver, hraBLoodPressureLabel);
+			
+			Utility.waitForWebElement(driver, hraYesLink).click();
+			
+            Utility.waitForWebElement(driver, hraBloodpressureControlledLabel);
+			
+			Utility.waitForWebElement(driver, hraYesLink).click();
+			
+			
+	       //osteoarthritis
+			
+			Utility.waitForWebElement(driver, hraOsteoarthritisLabel);
+			
+			Utility.waitForWebElement(driver, hraYesLink).click();
+			
+            Utility.waitForWebElement(driver, hraOsteoarthritisControlledLabel);
+			
+			Utility.waitForWebElement(driver, hraYesLink).click();
+			
+            //Lung Disease
+			
+			Utility.waitForWebElement(driver, hraLungDiseaseLabel);
+			
+			Utility.waitForWebElement(driver, hraYesLink).click();
+			
+            Utility.waitForWebElement(driver, hraLungdiseaseControlledLabel);
+			
+			Utility.waitForWebElement(driver, hraYesLink).click();
+			
+			//Lower backpain
+			
+			Utility.waitForWebElement(driver, hraLowerbackpainLabel);
+			
+			Utility.waitForWebElement(driver, hraYesLink).click();
+			
+            Utility.waitForWebElement(driver, hraLowerbackpainControlledLabel);
+			
+			Utility.waitForWebElement(driver, hraYesLink).click();
+			
+			//Type II Immediate
+			
+			Utility.waitForWebElement(driver, hraTypeIIDiabetesImmediateLabel);
+			
+			Utility.waitForWebElement(driver, hraYesLink).click();
+			
+			//Cardio
+			
+			Utility.waitForWebElement(driver, hraCardiovascularImemdidiateLabel);
+			
+			Utility.waitForWebElement(driver, hraYesLink).click();
+			
+		}
+	
+	
+	
 	public void logOutFromApplication() throws Exception {
 		
 		try {

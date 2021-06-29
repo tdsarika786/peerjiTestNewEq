@@ -64,6 +64,8 @@ public class TC1_HRAEndScenarios extends BaseClass {
 		home.verifyHRAPhysicalIntakeForms();
 		
 		home.verifyHRALifeStyle();
+		
+		home.verifyMedical();
 
 	}
 	
