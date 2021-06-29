@@ -197,7 +197,7 @@ public class HRAHomePage extends runWithAttachments {
 	
 	By hraLifeStyleStressOptionQuiteBitStressLink = By.xpath("//a[contains(text(), 'Quite a bit stressful')]");
 	
-	By hraLifeStyleStressOptionQuiteExtremeStressLink = By.xpath("//a[contains(text(), 'Extremly stressfull')]");
+	By hraLifeStyleStressOptionQuiteExtremeStressLink = By.xpath("//a[contains(text(), 'Extremly stressful')]");
 	
 	
 	//Happiness question
