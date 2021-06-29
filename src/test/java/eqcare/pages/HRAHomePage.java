@@ -257,8 +257,22 @@ public class HRAHomePage extends runWithAttachments {
 				
 		
 		
+		//Content Library
 		
-				
+		
+		By spanFeel = By.xpath("//span[contains(text(), 'Feel')]");	
+		
+		By spanPlay = By.xpath("//span[contains(text(), 'Play')]");
+		
+		By spanLifestyle = By.xpath("//span[contains(text(), 'Lifestyle')]");
+		
+		By spanCardio = By.xpath("//span[contains(text(), 'Cardio')]");	
+		
+		By spanRelax = By.xpath("//span[contains(text(), 'Relax')]");	
+		
+		By spanNutrition = By.xpath("//span[contains(text(), 'Nutrition')]");	
+		
+		By spanCardio2 = By.xpath("(//span[contains(text(), 'Cardio')])[2]");
 		
 		
 	public HRAHomePage(WebDriver ldriver) {
@@ -274,6 +288,32 @@ public class HRAHomePage extends runWithAttachments {
 	public void navigateToHRAIntakePage() {
 
 		Utility.navigateToURL(driver, "https://patient.eqserviceqa1.eqcaredev.com/hra/intake");
+
+	}
+	
+	public void navigateToHRAContentLibrary() {
+
+		Utility.navigateToURL(driver, "https://patient.eqserviceqa1.eqcaredev.com/hra/content-library");
+
+	}
+	
+	public void verifyHRAContentLibrary() {
+
+		Utility.waitForWebElement(driver, spanFeel);
+		
+		Utility.waitForWebElement(driver, spanPlay);
+		
+		Utility.waitForWebElement(driver, spanLifestyle);
+		
+		Utility.waitForWebElement(driver, spanCardio);
+		
+		Utility.waitForWebElement(driver, spanRelax);
+		
+		Utility.waitForWebElement(driver, spanNutrition);
+		
+		Utility.waitForWebElement(driver, spanCardio2);
+
+
 
 	}
 	
@@ -701,6 +741,8 @@ public class HRAHomePage extends runWithAttachments {
 		        Utility.waitForWebElement(driver, backLink).click();
 			
 		}
+	
+	
 	
 	
 	
