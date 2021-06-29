@@ -600,19 +600,7 @@ public class HRAHomePage extends runWithAttachments {
 		        Utility.waitForWebElement(driver, hraLifeStyleStressOptionHappyLink).click();
 				
 		        
-		        Utility.waitForWebElement(driver, backLink).click();
-		        
-		        Utility.waitForWebElement(driver, backLink).click();
-		        
-		        Utility.waitForWebElement(driver, backLink).click();
-		        
-		        Utility.waitForWebElement(driver, backLink).click();
-		        
-		        Utility.waitForWebElement(driver, backLink).click();
-		        
-		        Utility.waitForWebElement(driver, backLink).click();
-		        
-		        Utility.waitForWebElement(driver, backLink).click();
+		       
 
 			//runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 12, 0), "0");
 		} catch (Exception ex) {
@@ -697,6 +685,20 @@ public class HRAHomePage extends runWithAttachments {
 			Utility.waitForWebElement(driver, hraCardiovascularImemdidiateLabel);
 			
 			Utility.waitForWebElement(driver, hraYesLink).click();
+			
+			 Utility.waitForWebElement(driver, backLink).click();
+		        
+		        Utility.waitForWebElement(driver, backLink).click();
+		        
+		        Utility.waitForWebElement(driver, backLink).click();
+		        
+		        Utility.waitForWebElement(driver, backLink).click();
+		        
+		        Utility.waitForWebElement(driver, backLink).click();
+		        
+		        Utility.waitForWebElement(driver, backLink).click();
+		        
+		        Utility.waitForWebElement(driver, backLink).click();
 			
 		}
 	
