@@ -48,9 +48,9 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 		
 		register.navigateToRegisterationPage(AppUrl);
 		
-		register.EnrolledUserWithValidInput("700","anu");
+		register.EnrolledUserWithValidInput("LJ1","anu");
 		
-		register.Registeration1("sarikaqa7+qaeq700@gmail.com",
+		register.Registeration1("sarikaqa7+lj1@gmail.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
@@ -76,9 +76,9 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 		
 		register.navigateToRegisterationPage(AppUrl);
 		
-		register.EnrolledUserWithValidInput("701","anu1");
+		register.EnrolledUserWithValidInput("PC1","anu1");
 		
-		register.Registeration1("sarikaqa7+qaeq701@gmail.com",
+		register.Registeration1("sarikaqa7+pc1@gmail.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
@@ -104,9 +104,9 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 		
 		register.navigateToRegisterationPage(AppUrl);
 		
-		register.EnrolledUserWithValidInput("702","anu2");
+		register.EnrolledUserWithValidInput("PCLJ1","anu2");
 		
-		register.Registeration1("sarikaqa7+qaeq702@gmail.com",
+		register.Registeration1("sarikaqa7+pclj1@gmail.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
@@ -132,9 +132,9 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 		
 		register.navigateToRegisterationPage(AppUrl);
 		
-		register.EnrolledUserWithValidInput("703","anu3");
+		register.EnrolledUserWithValidInput("PCLJ2","anu3");
 		
-		register.Registeration1("sarikaqa7+qaeq703@gmail.com",
+		register.Registeration1("sarikaqa7+pclj2@gmail.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
