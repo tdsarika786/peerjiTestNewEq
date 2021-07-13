@@ -6,8 +6,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import eqcare.pages.ClinicPage;
-
-import eqcare.factories.DataProviderFactory;
+import eqcare.pages.LoginPage;
 import eqcare.pages.copy.BaseClass;
 
 public class ClinicPeerji extends BaseClass {
@@ -19,8 +18,9 @@ public class ClinicPeerji extends BaseClass {
 	@Test(priority = 0)
 	public void loginToApplication(String NovaEmail, String NovaPassword) throws Exception {
 		
-		clinic.loginToApplication(NovaEmail,
-				NovaPassword);
+		clinic = PageFactory.initElements(driver, ClinicPage.class);
+		
+		clinic.loginToApplication(NovaEmail,NovaPassword);
 		
 		clinic.navigateToClinicVisitPage();
 		
