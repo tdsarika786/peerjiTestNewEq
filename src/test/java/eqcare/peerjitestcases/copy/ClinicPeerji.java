@@ -44,8 +44,6 @@ public class ClinicPeerji extends BaseClass {
 		
 		clinic = PageFactory.initElements(driver, ClinicPage.class);
 		
-		clinic.loginToApplication(NovaEmail,NovaPassword);
-		
 		clinic.navigateToClinicVisitPage();
 		
 		clinic.addComments("Test2");
