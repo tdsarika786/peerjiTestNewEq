@@ -63,6 +63,8 @@ public class ClinicPage {
 	}
 	
 	public void addComments() {
+		
+		for(int i=0; i<=2; i++) {
 
 		Utility.waitForWebElement(driver, commentsLink).click();
 		
@@ -77,6 +79,8 @@ public class ClinicPage {
 		
 		Utility.waitForWebElement(driver, commentsButton).click();
 		
+		Utility.wait(2);
+		}
 
 	}
 
