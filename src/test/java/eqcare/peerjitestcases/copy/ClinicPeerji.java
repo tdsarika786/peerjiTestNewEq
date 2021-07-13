@@ -16,7 +16,7 @@ public class ClinicPeerji extends BaseClass {
 	
 	//test
 	@Parameters({"NovaEmail","NovaPassword"})
-	@Test(priority = 0, dependsOnMethods = "verifyPage")
+	@Test(priority = 0)
 	public void loginToApplication(String NovaEmail, String NovaPassword) throws Exception {
 		
 		clinic.loginToApplication(NovaEmail,
