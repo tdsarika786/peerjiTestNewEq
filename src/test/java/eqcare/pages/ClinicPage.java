@@ -40,6 +40,8 @@ public class ClinicPage {
 		Utility.waitForWebElement(driver, password).sendKeys(passWord);
 		Utility.waitForWebElement(driver, loginButton).click();
 		
+		Utility.wait(7);
+		
 	}
 	
 	
