@@ -29,6 +29,11 @@ public class ClinicPage {
 	
 	By TestPat = By.xpath("html/body/div[1]/div[2]/div[1]/div/div[1]/div/div/div/div[1]/div[3]/div/div[2]/div/button");
 	
+	By commentsLink=By.xpath("//a[contains(text(), 'Comments')]");
+	
+	
+	
+	
 	public void loginToApplication(String userName,String passWord)
 	{
 		Utility.waitForWebElement(driver, email).sendKeys(userName);
@@ -48,6 +53,12 @@ public class ClinicPage {
 	public void navigateToClinicVisitPage() {
 
 		Utility.navigateToURL(driver, "https://clinic.eqserviceqa1.eqcaredev.com/visits/7");
+
+	}
+	
+	public void addComments() {
+
+		Utility.waitForWebElement(driver, commentsLink).click();
 
 	}
 

@@ -24,6 +24,8 @@ public class ClinicPeerji extends BaseClass {
 		
 		clinic.navigateToClinicVisitPage();
 		
+		clinic.addComments();
+		
 	}
 	
 	
