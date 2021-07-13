@@ -15,13 +15,12 @@ public class ClinicPeerji extends BaseClass {
 	ClinicPage clinic;
 	
 	//test
-	
-	@Parameters({"Email","Password"})
+	@Parameters({"NovaEmail","NovaPassword"})
 	@Test(priority = 0, dependsOnMethods = "verifyPage")
-	public void loginToApplication(String email, String password) throws Exception {
+	public void loginToApplication(String NovaEmail, String NovaPassword) throws Exception {
 		
-		clinic.loginToApplication(email,
-			password);
+		clinic.loginToApplication(NovaEmail,
+				NovaPassword);
 		
 		clinic.navigateToClinicVisitPage();
 		
