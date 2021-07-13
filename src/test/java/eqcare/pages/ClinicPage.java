@@ -3,6 +3,7 @@ package eqcare.pages;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindAll;
@@ -67,7 +68,12 @@ public class ClinicPage {
 		
 		Utility.waitForWebElement(driver, commentsTextArea).sendKeys("Test");
 		
-		Utility.waitForWebElement(driver, commentsToggle).click();
+		//Utility.waitForWebElement(driver, commentsToggle).click();
+		
+		WebElement button = driver.findElement(By.xpath("//input[contains(@aria-label, 'Share')"));
+
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].click()", button);
 		
 		Utility.waitForWebElement(driver, commentsButton).click();
 		
