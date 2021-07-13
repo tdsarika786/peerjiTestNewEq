@@ -16,10 +16,10 @@ import eqcare.helper.Utility;
 
 public class ClinicPage {
 
-	WebDriver driver1;
+	WebDriver driver;
 
 	public ClinicPage(WebDriver ldriver) {
-		this.driver1 = ldriver;
+		this.driver = ldriver;
 	}
 
 	By email=By.name("email");
@@ -31,9 +31,9 @@ public class ClinicPage {
 	
 	public void loginToApplication(String userName,String passWord)
 	{
-		Utility.waitForWebElement(driver1, email).sendKeys(userName);
-		Utility.waitForWebElement(driver1, password).sendKeys(passWord);
-		Utility.waitForWebElement(driver1, loginButton).click();
+		Utility.waitForWebElement(driver, email).sendKeys(userName);
+		Utility.waitForWebElement(driver, password).sendKeys(passWord);
+		Utility.waitForWebElement(driver, loginButton).click();
 		
 	}
 	
@@ -41,7 +41,14 @@ public class ClinicPage {
 	
 	public void clickToPatient()
 	{
-		Utility.waitForWebElement(driver1, TestPat).click();
+		Utility.waitForWebElement(driver, TestPat).click();
+	}
+	
+	
+	public void navigateToClinicVisitPage() {
+
+		Utility.navigateToURL(driver, "https://clinic.eqserviceqa1.eqcaredev.com/visits/7");
+
 	}
 
 }
