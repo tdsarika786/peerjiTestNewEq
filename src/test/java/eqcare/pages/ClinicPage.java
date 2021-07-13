@@ -62,13 +62,11 @@ public class ClinicPage {
 
 	}
 	
-	public void addComments() {
-		
-		for(int i=0; i<=2; i++) {
+	public void addComments(String text) {
 
 		Utility.waitForWebElement(driver, commentsLink).click();
 		
-		Utility.waitForWebElement(driver, commentsTextArea).sendKeys("Test");
+		Utility.waitForWebElement(driver, commentsTextArea).sendKeys(text);
 		
 		//Utility.waitForWebElement(driver, commentsToggle).click();
 		
@@ -80,7 +78,6 @@ public class ClinicPage {
 		Utility.waitForWebElement(driver, commentsButton).click();
 		
 		Utility.wait(2);
-		}
 
 	}
 

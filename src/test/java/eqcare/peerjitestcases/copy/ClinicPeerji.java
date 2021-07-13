@@ -24,10 +24,33 @@ public class ClinicPeerji extends BaseClass {
 		
 		clinic.navigateToClinicVisitPage();
 		
-		clinic.addComments();
+	}
+	
+	@Test(priority = 1)
+	public void addComments1(String NovaEmail, String NovaPassword) throws Exception {
+		
+		clinic = PageFactory.initElements(driver, ClinicPage.class);
+		
+		clinic.loginToApplication(NovaEmail,NovaPassword);
+		
+		clinic.navigateToClinicVisitPage();
+		
+		clinic.addComments("Test1");
 		
 	}
 	
+	@Test(priority = 2)
+	public void addComments2(String NovaEmail, String NovaPassword) throws Exception {
+		
+		clinic = PageFactory.initElements(driver, ClinicPage.class);
+		
+		clinic.loginToApplication(NovaEmail,NovaPassword);
+		
+		clinic.navigateToClinicVisitPage();
+		
+		clinic.addComments("Test2");
+		
+	}
 	
 	
 	
