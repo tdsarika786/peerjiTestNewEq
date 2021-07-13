@@ -70,7 +70,7 @@ public class ClinicPage {
 		
 		//Utility.waitForWebElement(driver, commentsToggle).click();
 		
-		WebElement button = driver.findElement(By.xpath("//input[contains(@aria-label, 'Share')"));
+		WebElement button = driver.findElement(By.xpath("//input[contains(@aria-label, 'Share')]"));
 
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].click()", button);
