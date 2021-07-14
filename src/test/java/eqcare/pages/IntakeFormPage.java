@@ -85,6 +85,8 @@ public class IntakeFormPage extends runWithAttachments {
 		executor1.executeScript("arguments[0].click()", button);
 
 		Utility.waitForWebElement(driver, startCall).click();
+		
+		Utility.wait(10);
 		// Utility.selectValueFromCalendar(Utility.waitForMultipleWebElement(driver,
 		// calen), "25");
 		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 16, 0), "0");
