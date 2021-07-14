@@ -86,7 +86,7 @@
 					<systemPropertyVariables>
 					<Browser>${Browser}</Browser>
 						<AppURL>${AppURL}</AppURL>
-						<AppURL>${ClinicAppURL}</AppURL>
+						<ClinicAppURL>${ClinicAppURL}</ClinicAppURL>
 							<Email>${Email}</Email>
 						<Password>${Password}</Password>
 						<AppURL>${CoverageToken}</AppURL>
