@@ -63,19 +63,19 @@ public class IntakeFormPage extends runWithAttachments {
 		
 		try {
 
-		Utility.waitForWebElement(driver, reasonVisitInput).sendKeys("Test Visit by Sarika Peerji");
+		Utility.waitForWebElement(driver, reasonVisitInput).sendKeys("Test Visit by Sarika Peerji A");
 
-		Utility.waitForWebElement(driver, durationSymptomsInput).sendKeys("7 weeks");
+		Utility.waitForWebElement(driver, durationSymptomsInput).sendKeys("7 weeks A");
 
-		Utility.waitForWebElement(driver, currentAllergies).sendKeys("Amoxyllin");
+		Utility.waitForWebElement(driver, currentAllergies).sendKeys("Amoxyllin A");
 
 		Utility.waitForWebElement(driver, addCurrentAllergies).click();
 
-		Utility.waitForWebElement(driver, currentMedication).sendKeys("Tyenol Liquid Gels");
+		Utility.waitForWebElement(driver, currentMedication).sendKeys("Tyenol Liquid Gels A");
 
 		Utility.waitForWebElement(driver, addCurrentMedication).click();
 
-		uploadFiles();
+		uploadFiles("test1.jpeg");
 
 		// Utility.waitForWebElement(driver, checkBox).click();
 
@@ -89,7 +89,7 @@ public class IntakeFormPage extends runWithAttachments {
 		Utility.wait(20);
 		// Utility.selectValueFromCalendar(Utility.waitForMultipleWebElement(driver,
 		// calen), "25");
-		uploadFiles();
+		uploadFiles("test2.jpeg");
 		
 		Utility.wait(20);
 		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 16, 0), "0");
@@ -100,14 +100,14 @@ public class IntakeFormPage extends runWithAttachments {
 
 	}
 
-	public void uploadFiles() throws Exception {
+	public void uploadFiles(String text) throws Exception {
 		try {
 			WebElement fileButton = driver.findElement(By.xpath("(//input[@type='file'])[1]"));
 			JavascriptExecutor executor = (JavascriptExecutor) driver;
 			executor.executeScript("arguments[0].style.display='block';", fileButton);
 
 			Utility.waitForWebElement(driver, uploadFile)
-					.sendKeys(System.getProperty("user.dir") + "/TestData/test1.jpeg");
+					.sendKeys(System.getProperty("user.dir") + "/TestData/"+text);
 
 			Utility.wait(2);
 //		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 4, 0), "0");

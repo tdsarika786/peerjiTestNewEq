@@ -286,7 +286,7 @@ public class AccountPage extends runWithAttachments {
 
 			Utility.waitForWebElement(driver, addressInput).sendKeys("70 Saint-Catherine St W,A");
 
-			Utility.waitForWebElement(driver, address_2Input).sendKeys("H0123456787");
+			Utility.waitForWebElement(driver, address_2Input).sendKeys("Optional Addresss2 A");
 
 			Utility.waitForWebElement(driver, cityInput).sendKeys("Laval");
 
@@ -294,7 +294,7 @@ public class AccountPage extends runWithAttachments {
 
 			Utility.waitForWebElement(driver, date_of_birth).sendKeys("2000-03-28");
 
-			Utility.waitForWebElement(driver, health_card).sendKeys("H4K217566HKWW2");
+			Utility.waitForWebElement(driver, health_card).sendKeys("9012345678");
 
 			WebElement languageElement = Utility.waitForWebElement(driver, provinceDropdown);
 

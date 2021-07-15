@@ -57,7 +57,7 @@ public class IntakeFormPageAV {
 
 		Utility.waitForWebElement(driver, addCurrentMedication).click();
 
-		uploadFiles();
+		uploadFiles("test1.jpeg");
 
 		// Utility.waitForWebElement(driver, checkBox).click();
 
@@ -72,7 +72,7 @@ public class IntakeFormPageAV {
 		
 		Utility.wait(20);
 		
-		uploadFiles();
+		uploadFiles("test2.jpeg");
 		
 		Utility.wait(20);
 		
@@ -80,14 +80,14 @@ public class IntakeFormPageAV {
 	
 	}
 
-	public void uploadFiles() throws Exception {
+	public void uploadFiles(String text) throws Exception {
 		try {
 			WebElement fileButton = driver.findElement(By.xpath("//input[@type='file']"));
 			JavascriptExecutor executor = (JavascriptExecutor) driver;
 			executor.executeScript("arguments[0].style.display='block';arguments[0].style.opacity=1;", fileButton);
 
 			Utility.waitForWebElement(driver, uploadFile)
-					.sendKeys(System.getProperty("user.dir") + "/TestData/test1.jpeg");
+					.sendKeys(System.getProperty("user.dir") + "/TestData/"+text);
 
 			Utility.wait(2);
 //		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 4, 0), "0");
