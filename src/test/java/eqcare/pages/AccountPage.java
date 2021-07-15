@@ -247,9 +247,9 @@ public class AccountPage extends runWithAttachments {
 
 			Utility.waitForWebElement(driver, personalInfoHeader);
 
-			Utility.waitForWebElement(driver, firstNameInput).sendKeys("AakashAutomation");
+			Utility.waitForWebElement(driver, firstNameInput).sendKeys("SarikaA");
 
-			Utility.waitForWebElement(driver, lastNameInput).sendKeys("SarikaTest");
+			Utility.waitForWebElement(driver, lastNameInput).sendKeys("TestA");
 
 			Utility.waitForWebElement(driver, radioSexMale).click();
 
@@ -284,15 +284,15 @@ public class AccountPage extends runWithAttachments {
 
 			clearFieldsAccountInfo();
 
-			Utility.waitForWebElement(driver, addressInput).sendKeys("2177, Rue Sherbrooke");
+			Utility.waitForWebElement(driver, addressInput).sendKeys("70 Saint-Catherine St W,A");
 
-			Utility.waitForWebElement(driver, address_2Input).sendKeys("Optional Address 2");
+			Utility.waitForWebElement(driver, address_2Input).sendKeys("H0123456787");
 
 			Utility.waitForWebElement(driver, cityInput).sendKeys("Laval");
 
-			Utility.waitForWebElement(driver, postal_code).sendKeys("H4K 1X7");
+			Utility.waitForWebElement(driver, postal_code).sendKeys("H2X 0C8");
 
-			Utility.waitForWebElement(driver, date_of_birth).sendKeys("2000-07-14");
+			Utility.waitForWebElement(driver, date_of_birth).sendKeys("2000-03-28");
 
 			Utility.waitForWebElement(driver, health_card).sendKeys("H4K217566HKWW2");
 
