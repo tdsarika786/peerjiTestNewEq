@@ -39,13 +39,7 @@ public class AVStartVisit extends BaseClass {
 
 		home = PageFactory.initElements(driver, HomePageAV.class);
 
-		logger = report.createTest("Patient Starts Video Consultation");
-
-		logger.info("Patint logged and navigates to Home Page");
-
 		home.navigateToHomePage();
-
-		logger.info("Validating Home Page Url");
 
 	}
 
@@ -54,11 +48,7 @@ public class AVStartVisit extends BaseClass {
 
 		home = PageFactory.initElements(driver, HomePageAV.class);
 
-		logger = report.createTest("Patient performing Device Check");
-
 		home.deviceCheck();
-
-		logger.info("Patint device check completed test");
 
 	}
 
@@ -67,11 +57,8 @@ public class AVStartVisit extends BaseClass {
 
 		intake = PageFactory.initElements(driver, IntakeFormPageAV.class);
 
-		logger = report.createTest("Patient filling Intake Form");
-
 		intake.fillIntakeForm();
 
-		logger.info("Patint device check completed");
 	}
 
 }
