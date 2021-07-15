@@ -486,4 +486,125 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 
 	}
 
+	
+	public void startLifeJourneyVisit() {
+
+		Utility.waitForWebElement(driver, startLifeJourneyButton).click();
+
+		deviceCheck();
+		
+		fillIntakeFormLifeJourney();
+
+		// EDucation
+
+		Utility.waitForWebElement(driver, concernedAboutEmploymentOption).click();
+
+		Utility.waitForWebElement(driver, currentlyEmployedOption).click();
+
+		Utility.waitForWebElement(driver, workInManagementOption).click();
+
+		Utility.waitForWebElement(driver, workPhysicallyDangerousOption).click();
+
+		Utility.waitForWebElement(driver, workLongHoursOption).click();
+
+		Utility.waitForWebElement(driver, educationNextStep).click();
+
+		// Social
+
+		Utility.waitForWebElement(driver, leaveYourLifeOption).click();
+
+		Utility.waitForWebElement(driver, currentRelationshipOption).click();
+
+		Utility.waitForWebElement(driver, describeTheStrengthOption).click();
+
+		Utility.waitForWebElement(driver, statusChangedOption).click();
+
+		WebElement button1 = driver.findElement(By.xpath("//input[@value='single']"));
+
+		JavascriptExecutor executor1 = (JavascriptExecutor) driver;
+		executor1.executeScript("arguments[0].click()", button1);
+
+		Utility.waitForWebElement(driver, problemsWithMarriageOption).click();
+
+		WebElement button2 = driver.findElement(By.xpath("//input[@value='other']"));
+
+		JavascriptExecutor executor2 = (JavascriptExecutor) driver;
+		executor2.executeScript("arguments[0].click()", button2);
+
+		Utility.waitForWebElement(driver, socialNextStep).click();
+
+		// Legal
+
+		Utility.waitForWebElement(driver, concernedLegalIssuesOption).click();
+
+		// Utility.waitForWebElement(driver, inputLegalIssuesOption).click();
+
+		WebElement button = driver.findElement(By.xpath("//input[@value='probation']"));
+
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].click()", button);
+
+		Utility.waitForWebElement(driver, arrestedOption).click();
+
+		Utility.waitForWebElement(driver, sentencedOption).click();
+
+		Utility.waitForWebElement(driver, concernedFinancialOption).click();
+
+		WebElement button3 = driver.findElement(By.xpath("//input[@value='other']"));
+
+		JavascriptExecutor executor3 = (JavascriptExecutor) driver;
+		executor3.executeScript("arguments[0].click()", button3);
+
+		Utility.waitForWebElement(driver, legalNextStep).click();
+
+		// Medical
+
+		// Utility.waitForWebElement(driver, inputSocialWorkerOption).click();
+
+		WebElement button4 = driver.findElement(By.xpath("//input[@value='social_worker']"));
+
+		JavascriptExecutor executor4 = (JavascriptExecutor) driver;
+		executor4.executeScript("arguments[0].click()", button4);
+
+		//Utility.waitForWebElement(driver, pregnantOption).click();
+
+		Utility.waitForWebElement(driver, changesInHealthOption).click();
+
+		Utility.waitForWebElement(driver, currentHealthOption).click();
+
+		// Utility.waitForWebElement(driver, inputAlcoholOption).click();
+
+		WebElement button5 = driver.findElement(By.xpath("//input[@value='alcohol']"));
+
+		JavascriptExecutor executor5 = (JavascriptExecutor) driver;
+		executor5.executeScript("arguments[0].click()", button5);
+
+		Utility.waitForWebElement(driver, medicalNextStep).click();
+
+		// Mental Health
+
+		Utility.waitForWebElement(driver, currentMentalHealthOption).click();
+
+		// Utility.waitForWebElement(driver, seeingMentalHealthOption).click();
+
+		Utility.waitForWebElement(driver, seeingMentalHealthOption).click();
+
+		Utility.waitForWebElement(driver, expAnySignificantLifeStressorOption).click();
+
+		// Utility.waitForWebElement(driver, inputPromotionOption).click();
+
+		// Utility.waitForWebElement(driver, inputillNessOption).click();
+
+		WebElement button6 = driver.findElement(By.xpath("//input[@value='illness']"));
+
+		JavascriptExecutor executor6 = (JavascriptExecutor) driver;
+		executor6.executeScript("arguments[0].click()", button6);
+
+		Utility.waitForWebElement(driver, mentalNextStep).click();
+
+		// Completed
+
+		Utility.waitForWebElement(driver, lifeJourneyIntakeCompleted).click();
+
+	}
 }

@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 
 import eqcare.helper.Utility;
 import eqcare.pages.ClinicPage;
+import eqcare.pages.FeedbackPage;
 import eqcare.pages.HomePage;
 import eqcare.pages.LifeJourneyIntakeFormPage;
 import eqcare.pages.IntakeFormPage;
@@ -18,6 +19,7 @@ public class ClinicPeerji extends BaseClass {
 	LoginPage login;
 	IntakeFormPage intake;
 	HomePage home;
+	FeedbackPage feedback;
 
 	// Patient Start Visit
 	@Parameters({ "Email", "Password" })
@@ -184,6 +186,15 @@ public class ClinicPeerji extends BaseClass {
 		clinic3.endConsultation();
 		
 		System.out.println("Log:INFO- DOCTOR END CONSULTATION");
+
+	}
+	
+	@Test(priority = 5)
+	public void feedback() throws Exception {
+
+		feedback = PageFactory.initElements(driver, FeedbackPage.class);
+
+		feedback.ratingProvided();
 
 	}
 
