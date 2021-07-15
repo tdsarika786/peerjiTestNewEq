@@ -110,7 +110,7 @@ public class ClinicPeerji extends BaseClass {
 
 
 
-		clinic1.createIncident();
+		//clinic1.createIncident();
 		
 		clinic1.submitChats("PeerjiAuto Test Chat CM");
 
