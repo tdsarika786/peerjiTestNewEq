@@ -98,6 +98,7 @@
 						<NovaPassword>${NovaPassword}</NovaPassword>
 						<PlanType>${PlanType}</PlanType>
 						<ProjectARN>${ProjectARN}</ProjectARN>
+						<AppType>${AppType}</AppType>
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>

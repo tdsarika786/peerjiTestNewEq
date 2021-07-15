@@ -28,9 +28,9 @@ public class BaseClass implements ITestListener {
 	public ExtentReports report;
 	public ExtentTest logger;
 
-	@Parameters({"Browser","AppURL", "ProjectRun","ClinicAppURL" })
+	@Parameters({"Browser","AppURL", "ProjectRun","ClinicAppURL","AppType" })
 	@BeforeClass
-	public void setUp(String browser, String appurl, String projectrun, String ClinicAppURL) throws IOException {
+	public void setUp(String browser, String appurl, String projectrun, String ClinicAppURL, String AppType) throws IOException {
 		System.out.println("Log:INFO- Setting up Browser and Application");
 
 		//driver = BrowserFactory.getApplication(DataProviderFactory.getConfig().getValue("Browser"),
@@ -38,6 +38,9 @@ public class BaseClass implements ITestListener {
 		
 		driver = BrowserFactory.getApplication(browser,
 						appurl, projectrun);
+		
+		
+		if (AppType.equalsIgnoreCase("clinic")) {
 		
 		driver1 = BrowserFactory.getApplication(browser,
 				ClinicAppURL, projectrun);
@@ -47,6 +50,7 @@ public class BaseClass implements ITestListener {
 		
 		driver3 = BrowserFactory.getApplication(browser,
 				ClinicAppURL, projectrun);
+		}
 
 		driver.manage().window().maximize();
 		
