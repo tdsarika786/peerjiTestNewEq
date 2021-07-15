@@ -11,13 +11,13 @@ import eqcare.pages.HomePageAV;
 import eqcare.pages.LifeJourneyIntakeFormPage;
 import eqcare.pages.IntakeFormPage;
 import eqcare.pages.IntakeFormPageAV;
-import eqcare.pages.LoginPage;
+import eqcare.pages.LoginPageAV;
 import eqcare.pages.copy.BaseClass;
 
 public class AVStartVisit extends BaseClass {
 
 	ClinicPage clinic, clinic1, clinic2, clinic3;
-	LoginPage login;
+	LoginPageAV login;
 	IntakeFormPageAV intake;
 	HomePageAV home;
 
@@ -26,7 +26,7 @@ public class AVStartVisit extends BaseClass {
 	@Test(priority = 0)
 	public void loginToApplication(String email, String password) throws Exception {
 
-		login = PageFactory.initElements(driver, LoginPage.class);
+		login = PageFactory.initElements(driver, LoginPageAV.class);
 
 		login.loginToApplication(email, password);
 
