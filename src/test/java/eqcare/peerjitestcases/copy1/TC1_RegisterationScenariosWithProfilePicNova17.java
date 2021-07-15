@@ -1,4 +1,4 @@
-package eqcare.peerjitestcases.copy;
+package eqcare.peerjitestcases.copy1;
 
 
 import org.openqa.selenium.support.PageFactory;
@@ -92,7 +92,7 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 				DataProviderFactory.getExcel().getCellData("Users", 2, 8),
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 9),
-				"Sarika#123", true, "pdf");
+				"Sarika#123", false, "pdf");
 
 		register.registerationCompleteWithValidInput();
 
@@ -148,7 +148,7 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 				DataProviderFactory.getExcel().getCellData("Users", 2, 8),
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 9),
-				"Sarika#123", false, "img");
+				"Sarika#123", true, "img");
 
 		register.registerationCompleteWithValidInput();
 

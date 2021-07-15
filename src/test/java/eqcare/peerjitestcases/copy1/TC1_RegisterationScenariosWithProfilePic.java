@@ -1,4 +1,4 @@
-package eqcare.peerjitestcases.copy;
+package eqcare.peerjitestcases.copy1;
 
 
 import org.openqa.selenium.support.PageFactory;
@@ -20,7 +20,7 @@ import eqcare.pages.AccountPage;
 import eqcare.pages.Base;
 import eqcare.pages.copy.BaseClass;
 
-public class TC1_RegisterationScenarios extends BaseClass {
+public class TC1_RegisterationScenariosWithProfilePic extends BaseClass {
 
 	LoginPage login;
 	HomePage home;
@@ -43,7 +43,7 @@ public class TC1_RegisterationScenarios extends BaseClass {
 	}
 	
 	@Parameters({"Email","CoverageToken","CoverageIdentifier"})
-	@Test(priority = 1, dependsOnMethods = "verifyPage")
+	@Test(priority = 2, dependsOnMethods = "verifyPage")
 	public void validInputEnrolledRegisterationTest(String email, String coveragetoken, String coverageidentifier) {
 		
 		register.EnrolledUserWithValidInput(coveragetoken,coverageidentifier);
@@ -62,7 +62,7 @@ public class TC1_RegisterationScenarios extends BaseClass {
 				DataProviderFactory.getExcel().getCellData("Users", 2, 8),
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 9),
-				DataProviderFactory.getExcel().getCellData("Users", 2, 10), false, "pdf");
+				DataProviderFactory.getExcel().getCellData("Users", 2, 10), true, "img");
 
 		register.registerationCompleteWithValidInput();
 

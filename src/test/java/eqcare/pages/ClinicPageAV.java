@@ -219,7 +219,7 @@ public class ClinicPageAV {
 
 	public void navigateToClinicVisitPage(String visitNo) {
 
-		Utility.navigateToURL(driver, "https://clinic.eqserviceqa1.eqcaredev.com/visits/" + visitNo);
+		Utility.navigateToURL(driver, "https://clinic.eqserviceqa2.eqcaredev.com/visits/" + visitNo);
 
 	}
 

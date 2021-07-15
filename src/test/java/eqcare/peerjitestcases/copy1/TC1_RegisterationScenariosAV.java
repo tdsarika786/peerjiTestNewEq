@@ -1,5 +1,4 @@
-package eqcare.peerjitestcases.copy;
-
+package eqcare.peerjitestcases.copy1;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Parameters;
@@ -13,14 +12,14 @@ import eqcare.pages.InboxPage;
 import eqcare.pages.IntakeFormPage;
 import eqcare.pages.LoginPage;
 import eqcare.pages.LogoutPage;
-import eqcare.pages.RegistrationPage;
+import eqcare.pages.RegistrationPageAV;
 import eqcare.pages.VisitPage;
 import eqcare.factories.DataProviderFactory;
 import eqcare.pages.AccountPage;
 import eqcare.pages.Base;
 import eqcare.pages.copy.BaseClass;
 
-public class TC1_RegisterationScenariosWithProfilePic extends BaseClass {
+public class TC1_RegisterationScenariosAV extends BaseClass {
 
 	LoginPage login;
 	HomePage home;
@@ -30,25 +29,26 @@ public class TC1_RegisterationScenariosWithProfilePic extends BaseClass {
 	FeedbackPage feedback;
 	HelpPage help;
 	InboxPage inbox;
-	RegistrationPage register;
-
+	RegistrationPageAV register;
 
 	@Test(priority = 0)
 	public void verifyPage() {
 
-		register = PageFactory.initElements(driver, RegistrationPage.class);
+		register = PageFactory.initElements(driver, RegistrationPageAV.class);
 
 		register.verifyUrlBeforeRegister();
 
 	}
-	
-	@Parameters({"Email","CoverageToken","CoverageIdentifier"})
-	@Test(priority = 2, dependsOnMethods = "verifyPage")
-	public void validInputEnrolledRegisterationTest(String email, String coveragetoken, String coverageidentifier) {
-		
-		register.EnrolledUserWithValidInput(coveragetoken,coverageidentifier);
-		
-		register.Registeration1(email,
+
+	@Parameters({"Email"})
+	@Test(priority = 1, dependsOnMethods = "verifyPage")
+	public void validInputRegisterationTestForPatients(String email) {
+
+		register = PageFactory.initElements(driver, RegistrationPageAV.class);
+
+		register.EnrolledUser();
+
+				register.Registeration(email,
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
@@ -62,10 +62,11 @@ public class TC1_RegisterationScenariosWithProfilePic extends BaseClass {
 				DataProviderFactory.getExcel().getCellData("Users", 2, 8),
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 9),
-				DataProviderFactory.getExcel().getCellData("Users", 2, 10), true, "img");
+				DataProviderFactory.getExcel().getCellData("Users", 2, 10), false,"pdf");
 
 		register.registerationCompleteWithValidInput();
 
-	}
 
+	}
+	
 }
