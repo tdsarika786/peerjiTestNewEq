@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="16" passed="13" failed="2" skipped="0">
+<testng-results ignored="1" total="16" passed="15" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-15T13:41:47 EDT" name="Suite" finished-at="2021-07-15T13:51:35 EDT" duration-ms="588281">
+  <suite started-at="2021-07-15T14:56:24 EDT" name="Suite" finished-at="2021-07-15T15:05:34 EDT" duration-ms="549551">
     <groups>
     </groups>
-    <test started-at="2021-07-15T13:41:47 EDT" name="Test" finished-at="2021-07-15T13:51:35 EDT" duration-ms="588281">
+    <test started-at="2021-07-15T14:56:24 EDT" name="Test" finished-at="2021-07-15T15:05:34 EDT" duration-ms="549551">
       <class name="eqcare.peerjitestcases.copy.ClinicPeerji">
-        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T13:41:47 EDT" name="setUp" finished-at="2021-07-15T13:43:24 EDT" duration-ms="97770" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T14:56:24 EDT" name="setUp" finished-at="2021-07-15T14:58:30 EDT" duration-ms="125703" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -38,40 +38,40 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginAsCM(java.lang.String)[pri:1, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T13:43:24 EDT" name="loginAsCM" finished-at="2021-07-15T13:43:49 EDT" duration-ms="24397" status="PASS">
+        <test-method signature="loginAsCM(java.lang.String)[pri:1, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T14:58:30 EDT" name="loginAsCM" finished-at="2021-07-15T14:58:54 EDT" duration-ms="24436" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[82]]>
+                <![CDATA[85]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAsCM -->
-        <test-method signature="loginAsDRNurse(java.lang.String)[pri:1, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T13:43:49 EDT" name="loginAsDRNurse" finished-at="2021-07-15T13:43:49 EDT" duration-ms="0" status="PASS">
+        <test-method signature="loginAsDRNurse(java.lang.String)[pri:1, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T14:58:54 EDT" name="loginAsDRNurse" finished-at="2021-07-15T14:58:54 EDT" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[82]]>
+                <![CDATA[85]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAsDRNurse -->
-        <test-method signature="loginToClinicApplication(java.lang.String)[pri:2, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T13:43:49 EDT" name="loginToClinicApplication" finished-at="2021-07-15T13:44:46 EDT" duration-ms="56781" status="PASS">
+        <test-method signature="loginToClinicApplication(java.lang.String)[pri:2, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T14:58:54 EDT" name="loginToClinicApplication" finished-at="2021-07-15T14:59:23 EDT" duration-ms="28279" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[82]]>
+                <![CDATA[85]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToClinicApplication -->
-        <test-method signature="loginToPatient(java.lang.String, java.lang.String)[pri:3, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T13:44:46 EDT" name="loginToPatient" finished-at="2021-07-15T13:45:17 EDT" duration-ms="31278" status="PASS">
+        <test-method signature="loginToPatient(java.lang.String, java.lang.String)[pri:3, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T14:59:23 EDT" name="loginToPatient" finished-at="2021-07-15T14:59:56 EDT" duration-ms="33435" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -87,187 +87,65 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToPatient -->
-        <test-method signature="functionsWithCM()[pri:4, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T13:45:17 EDT" name="functionsWithCM" finished-at="2021-07-15T13:46:32 EDT" duration-ms="75544" status="PASS">
+        <test-method signature="functionsWithCM()[pri:4, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T14:59:56 EDT" name="functionsWithCM" finished-at="2021-07-15T15:01:03 EDT" duration-ms="66828" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- functionsWithCM -->
-        <test-method signature="patientChats()[pri:5, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T13:46:32 EDT" name="patientChats" finished-at="2021-07-15T13:46:41 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="8290" status="PASS">
+        <test-method signature="patientChats()[pri:5, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T15:01:03 EDT" name="patientChats" finished-at="2021-07-15T15:01:12 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="8638" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- patientChats -->
-        <test-method signature="transferPatientToNurse()[pri:6, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T13:46:41 EDT" name="transferPatientToNurse" finished-at="2021-07-15T13:47:08 EDT" duration-ms="27255" status="PASS">
+        <test-method signature="transferPatientToNurse()[pri:6, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T15:01:12 EDT" name="transferPatientToNurse" finished-at="2021-07-15T15:01:39 EDT" duration-ms="27214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- transferPatientToNurse -->
-        <test-method signature="navigateToNurse(java.lang.String)[pri:7, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T13:47:08 EDT" name="navigateToNurse" finished-at="2021-07-15T13:49:01 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="113457" status="PASS">
+        <test-method signature="navigateToNurse(java.lang.String)[pri:7, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T15:01:39 EDT" name="navigateToNurse" finished-at="2021-07-15T15:02:52 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="73075" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[82]]>
+                <![CDATA[85]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToNurse -->
-        <test-method signature="patientChatsToNurse()[pri:8, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T13:49:01 EDT" name="patientChatsToNurse" finished-at="2021-07-15T13:49:10 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="8311" status="PASS">
+        <test-method signature="patientChatsToNurse()[pri:8, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T15:02:52 EDT" name="patientChatsToNurse" finished-at="2021-07-15T15:03:00 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="8304" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- patientChatsToNurse -->
-        <test-method signature="transferPatientToCoctor()[pri:9, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T13:49:10 EDT" name="transferPatientToCoctor" finished-at="2021-07-15T13:49:37 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="27200" status="PASS">
+        <test-method signature="transferPatientToCoctor()[pri:9, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T15:03:00 EDT" name="transferPatientToCoctor" finished-at="2021-07-15T15:03:27 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="27199" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- transferPatientToCoctor -->
-        <test-method signature="navigateToDr(java.lang.String)[pri:10, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T13:49:37 EDT" name="navigateToDr" finished-at="2021-07-15T13:50:19 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="42500" status="FAIL">
+        <test-method signature="navigateToDr(java.lang.String)[pri:10, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T15:03:27 EDT" name="navigateToDr" finished-at="2021-07-15T15:04:35 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="68087" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[82]]>
+                <![CDATA[85]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: By.name: email (tried for 15 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.name: email (tried for 15 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-at eqcare.helper.Utility.waitForWebElement(Utility.java:112)
-at eqcare.pages.ClinicPage.loginToApplication(ClinicPage.java:191)
-at eqcare.peerjitestcases.copy.ClinicPeerji.navigateToDr(ClinicPeerji.java:215)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.name: email
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:7:f30a:a40c:8cf0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-at java.base/java.util.Optional.orElseThrow(Optional.java:401)
-at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)
-at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-... 35 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToDr -->
-        <test-method signature="patientChatsToDoctor()[pri:11, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T13:50:19 EDT" name="patientChatsToDoctor" finished-at="2021-07-15T13:50:28 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="8205" status="PASS">
+        <test-method signature="patientChatsToDoctor()[pri:11, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T15:04:35 EDT" name="patientChatsToDoctor" finished-at="2021-07-15T15:04:44 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="8237" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- patientChatsToDoctor -->
-        <test-method signature="doctorEndConsultation()[pri:12, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T13:50:28 EDT" name="doctorEndConsultation" finished-at="2021-07-15T13:50:44 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="16457" status="PASS">
+        <test-method signature="doctorEndConsultation()[pri:12, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T15:04:44 EDT" name="doctorEndConsultation" finished-at="2021-07-15T15:05:01 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="17465" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doctorEndConsultation -->
-        <test-method signature="feedback()[pri:13, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T13:50:44 EDT" name="feedback" finished-at="2021-07-15T13:51:08 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="23601" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(text(), 'Next')] (tried for 15 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(text(), 'Next')] (tried for 15 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-at eqcare.helper.Utility.waitForWebElement(Utility.java:112)
-at eqcare.pages.FeedbackPage.ratingProvidedDRCMNurse(FeedbackPage.java:66)
-at eqcare.peerjitestcases.copy.ClinicPeerji.feedback(ClinicPeerji.java:260)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //a[contains(text(), 'Next')]
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:7:f30a:a40c:8cf0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-at java.base/java.util.Optional.orElseThrow(Optional.java:401)
-at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)
-at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-... 35 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="feedback()[pri:13, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T15:05:01 EDT" name="feedback" finished-at="2021-07-15T15:05:06 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="5359" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feedback -->
-        <test-method signature="inbox()[pri:14, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T13:51:08 EDT" name="inbox" finished-at="2021-07-15T13:51:26 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="18464" status="PASS">
+        <test-method signature="inbox()[pri:14, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T15:05:06 EDT" name="inbox" finished-at="2021-07-15T15:05:25 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="18406" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inbox -->
-        <test-method is-config="true" signature="tearDown(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T13:51:26 EDT" name="tearDown" finished-at="2021-07-15T13:51:35 EDT" duration-ms="8688" status="PASS">
+        <test-method is-config="true" signature="tearDown(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T15:05:25 EDT" name="tearDown" finished-at="2021-07-15T15:05:34 EDT" duration-ms="8813" status="PASS">
           <params>
             <param index="0">
               <value>

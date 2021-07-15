@@ -8,11 +8,19 @@
     <classes>
       <class name="eqcare.peerjitestcases.copy.ClinicPeerji">
         <methods>
-          <include name="setUp"/>
-          <include name="navigateToDr" invocation-numbers="0"/>
           <include name="tearDown"/>
-          <include name="loginToClinicApplication"/>
+          <include name="navigateToNurse"/>
+          <include name="loginToClinicApplication" invocation-numbers="0"/>
+          <include name="patientChats"/>
+          <include name="patientChatsToNurse"/>
+          <include name="doctorEndConsultation"/>
+          <include name="setUp"/>
+          <include name="functionsWithCM"/>
+          <include name="inbox"/>
+          <include name="navigateToDr"/>
+          <include name="transferPatientToCoctor"/>
           <include name="feedback"/>
+          <include name="patientChatsToDoctor"/>
         </methods>
       </class> <!-- eqcare.peerjitestcases.copy.ClinicPeerji -->
     </classes>
