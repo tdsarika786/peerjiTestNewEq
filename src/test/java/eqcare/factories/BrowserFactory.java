@@ -15,6 +15,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.devicefarm.DeviceFarmClient;
 import software.amazon.awssdk.services.devicefarm.model.CreateTestGridUrlRequest;
@@ -86,7 +87,9 @@ public class BrowserFactory {
 		
 		if (projectrun.equalsIgnoreCase("eq")) {
 			
-			System.setProperty("webdriver.chrome.driver", "/Users/sarikadhall/Documents/ChromeDriver/chromedriver-90");
+			WebDriverManager.chromedriver().setup();
+			
+			//System.setProperty("webdriver.chrome.driver", "/Users/sarikadhall/Documents/ChromeDriver/chromedriver-90");
 			
 			ChromeOptions options = new ChromeOptions();
 
