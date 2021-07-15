@@ -8,6 +8,8 @@ import eqcare.helper.Utility;
 import eqcare.pages.ClinicPage;
 import eqcare.pages.FeedbackPage;
 import eqcare.pages.HomePage;
+import eqcare.pages.InboxPage;
+import eqcare.pages.InboxPageAV;
 import eqcare.pages.LifeJourneyIntakeFormPage;
 import eqcare.pages.IntakeFormPage;
 import eqcare.pages.LoginPage;
@@ -20,6 +22,7 @@ public class ClinicPeerji extends BaseClass {
 	IntakeFormPage intake;
 	HomePage home;
 	FeedbackPage feedback;
+	InboxPage inbox;
 
 	// Patient Start Visit
 	@Parameters({ "Email", "Password" })
@@ -108,19 +111,19 @@ public class ClinicPeerji extends BaseClass {
 
 		clinic1.cannedResponses();
 
-		// clinic1.createIncident();
+		clinic1.createIncident();
 
 		clinic1.submitChats("PeerjiAuto Test Chat CM");
 
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 3, dependsOnMethods = "loginToClinicApplication")
 	public void patientChats() {
 
 		clinic.patientSubmitChats("Patient with CM");
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 4)
 	public void transferPatientToNurse() {
 
 		clinic1.transferToNurse();
@@ -130,7 +133,7 @@ public class ClinicPeerji extends BaseClass {
 	}
 
 	@Parameters({ "VisitNo" })
-	@Test(priority = 3)
+	@Test(priority = 5, dependsOnMethods = "loginToClinicApplication")
 	public void navigateToNurse(String VisitNo) throws Exception {
 
 		clinic2.navigateToClinicVisitPage(VisitNo);
@@ -159,13 +162,13 @@ public class ClinicPeerji extends BaseClass {
 
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 6, dependsOnMethods = "loginToClinicApplication")
 	public void patientChatsToNurse() {
 
-		clinic.patientSubmitChats("Patient with CM");
+		clinic.patientSubmitChats("Patient with Nurse");
 	}
 
-	@Test(priority = 3)
+	@Test(priority = 7, dependsOnMethods = "loginToClinicApplication")
 	public void transferPatientToCoctor() {
 
 		clinic2.transferToDoctor();
@@ -175,7 +178,7 @@ public class ClinicPeerji extends BaseClass {
 	}
 
 	@Parameters({ "VisitNo" })
-	@Test(priority = 4)
+	@Test(priority = 8, dependsOnMethods = "loginToClinicApplication")
 	public void navigateToDr(String VisitNo) throws Exception {
 
 		clinic3.navigateToClinicVisitPage(VisitNo);
@@ -206,20 +209,40 @@ public class ClinicPeerji extends BaseClass {
 
 		clinic3.submitChats("PeerjiAuto Test Chat DR");
 
-		clinic3.patientSubmitChats("Patient with DR");
+	}
 
-		clinic3.endConsultation();
+	@Test(priority = 9, dependsOnMethods = "loginToClinicApplication")
+	public void patientChatsToDoctor() {
+
+		clinic3.patientSubmitChats("Patient with DR");
+	}
+
+	@Test(priority = 10, dependsOnMethods = "loginToClinicApplication")
+	public void doctorEndConsultation() {
+
+		clinic.endConsultation();
 
 		System.out.println("Log:INFO- DOCTOR END CONSULTATION");
 
 	}
 
-	@Test(priority = 5)
+	@Test(priority = 11, dependsOnMethods = "loginToClinicApplication")
 	public void feedback() throws Exception {
 
 		feedback = PageFactory.initElements(driver, FeedbackPage.class);
 
 		feedback.ratingProvidedDRCMNurse();
+
+	}
+	
+	@Test(priority = 12, dependsOnMethods = "loginToClinicApplication")
+	public void inbox() throws Exception {
+
+		inbox = PageFactory.initElements(driver, InboxPage.class);
+
+		inbox.navigateToInboxPage();
+
+		inbox.verifyMyInboxTabs();
 
 	}
 
