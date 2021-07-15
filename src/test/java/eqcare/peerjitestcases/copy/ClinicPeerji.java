@@ -108,13 +108,20 @@ public class ClinicPeerji extends BaseClass {
 
 		clinic1.cannedResponses();
 
+		// clinic1.createIncident();
 
-
-		//clinic1.createIncident();
-		
 		clinic1.submitChats("PeerjiAuto Test Chat CM");
 
-		clinic1.patientSubmitChats("Patient with CM");
+	}
+
+	@Test(priority = 3)
+	public void patientChats() {
+
+		clinic.patientSubmitChats("Patient with CM");
+	}
+
+	@Test(priority = 3)
+	public void transferPatientToNurse() {
 
 		clinic1.transferToNurse();
 
@@ -148,9 +155,18 @@ public class ClinicPeerji extends BaseClass {
 
 		clinic2.cannedResponses();
 
-		 clinic2.submitChats("PeerjiAuto Test Chat Nurse");
-			
-			clinic2.patientSubmitChats("Patient with Nurse");
+		clinic2.submitChats("PeerjiAuto Test Chat Nurse");
+
+	}
+
+	@Test(priority = 3)
+	public void patientChatsToNurse() {
+
+		clinic.patientSubmitChats("Patient with CM");
+	}
+
+	@Test(priority = 3)
+	public void transferPatientToCoctor() {
 
 		clinic2.transferToDoctor();
 
