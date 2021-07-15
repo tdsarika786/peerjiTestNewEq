@@ -48,7 +48,7 @@ public class TC1_RegisterationScenariosAV extends BaseClass {
 
 		register.EnrolledUser();
 
-				register.Registeration("sarikaqa7+av1@gmail.com",
+				register.Registeration(email,
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
@@ -76,7 +76,7 @@ public class TC1_RegisterationScenariosAV extends BaseClass {
 
 		register.EnrolledUser();
 		
-				register.Registeration("sarikaqa7+avw1@gmail.com",
+				register.Registeration(email,
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
