@@ -9,13 +9,68 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">575,016</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">13</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">588,281</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">eqcare.peerjitestcases.copy.ClinicPeerji</td><td><a href="#m0">loginToClinicApplication</a></td><td rowspan="1">1626305097859</td><td rowspan="1">148115</td></tr><tr class="passedeven"><td><a href="#m1">loginToPatient</a></td><td rowspan="1">1626305022381</td><td rowspan="1">75451</td></tr><tr class="passedeven"><td><a href="#m2">navigateToDr</a></td><td rowspan="1">1626305386544</td><td rowspan="1">93068</td></tr><tr class="passedeven"><td><a href="#m3">navigateToNurse</a></td><td rowspan="1">1626305245982</td><td rowspan="1">140561</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">eqcare.peerjitestcases.copy.ClinicPeerji</td><td><a href="#m0">feedback</a></td><td rowspan="1">1626371444596</td><td rowspan="1">23601</td></tr><tr class="failedeven"><td><a href="#m1">navigateToDr</a></td><td rowspan="1">1626371377409</td><td rowspan="1">42500</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="13">eqcare.peerjitestcases.copy.ClinicPeerji</td><td><a href="#m2">doctorEndConsultation</a></td><td rowspan="1">1626371428137</td><td rowspan="1">16457</td></tr><tr class="passedeven"><td><a href="#m3">functionsWithCM</a></td><td rowspan="1">1626371117342</td><td rowspan="1">75544</td></tr><tr class="passedeven"><td><a href="#m4">inbox</a></td><td rowspan="1">1626371468200</td><td rowspan="1">18464</td></tr><tr class="passedeven"><td><a href="#m5">loginAsCM</a></td><td rowspan="1">1626371004866</td><td rowspan="1">24397</td></tr><tr class="passedeven"><td><a href="#m6">loginAsDRNurse</a></td><td rowspan="1">1626371029279</td><td rowspan="1">0</td></tr><tr class="passedeven"><td><a href="#m7">loginToClinicApplication</a></td><td rowspan="1">1626371029279</td><td rowspan="1">56781</td></tr><tr class="passedeven"><td><a href="#m8">loginToPatient</a></td><td rowspan="1">1626371086062</td><td rowspan="1">31278</td></tr><tr class="passedeven"><td><a href="#m9">navigateToNurse</a></td><td rowspan="1">1626371228434</td><td rowspan="1">113457</td></tr><tr class="passedeven"><td><a href="#m10">patientChats</a></td><td rowspan="1">1626371192889</td><td rowspan="1">8290</td></tr><tr class="passedeven"><td><a href="#m11">patientChatsToDoctor</a></td><td rowspan="1">1626371419931</td><td rowspan="1">8205</td></tr><tr class="passedeven"><td><a href="#m12">patientChatsToNurse</a></td><td rowspan="1">1626371341896</td><td rowspan="1">8311</td></tr><tr class="passedeven"><td><a href="#m13">transferPatientToCoctor</a></td><td rowspan="1">1626371350208</td><td rowspan="1">27200</td></tr><tr class="passedeven"><td><a href="#m14">transferPatientToNurse</a></td><td rowspan="1">1626371201179</td><td rowspan="1">27255</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">eqcare.peerjitestcases.copy.ClinicPeerji#loginToClinicApplication</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">eqcare.peerjitestcases.copy.ClinicPeerji#loginToPatient</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>sdhall@eqcare.com</td><td>secret</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">eqcare.peerjitestcases.copy.ClinicPeerji#navigateToDr</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">eqcare.peerjitestcases.copy.ClinicPeerji#navigateToNurse</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">eqcare.peerjitestcases.copy.ClinicPeerji#feedback</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(text(), &apos;Next&apos;)] (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at eqcare.helper.Utility.waitForWebElement(Utility.java:112)
+	at eqcare.pages.FeedbackPage.ratingProvidedDRCMNurse(FeedbackPage.java:66)
+	at eqcare.peerjitestcases.copy.ClinicPeerji.feedback(ClinicPeerji.java:260)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //a[contains(text(), &apos;Next&apos;)]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;EQ-MAC-25.local&apos;, ip: &apos;fe80:0:0:0:7:f30a:a40c:8cf0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;14.0.2&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:401)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	... 35 more
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">eqcare.peerjitestcases.copy.ClinicPeerji#navigateToDr</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>82</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.name: email (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at eqcare.helper.Utility.waitForWebElement(Utility.java:112)
+	at eqcare.pages.ClinicPage.loginToApplication(ClinicPage.java:191)
+	at eqcare.peerjitestcases.copy.ClinicPeerji.navigateToDr(ClinicPeerji.java:215)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.name: email
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;EQ-MAC-25.local&apos;, ip: &apos;fe80:0:0:0:7:f30a:a40c:8cf0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;14.0.2&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:401)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	... 35 more
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">eqcare.peerjitestcases.copy.ClinicPeerji#doctorEndConsultation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">eqcare.peerjitestcases.copy.ClinicPeerji#functionsWithCM</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">eqcare.peerjitestcases.copy.ClinicPeerji#inbox</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">eqcare.peerjitestcases.copy.ClinicPeerji#loginAsCM</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>82</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">eqcare.peerjitestcases.copy.ClinicPeerji#loginAsDRNurse</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>82</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">eqcare.peerjitestcases.copy.ClinicPeerji#loginToClinicApplication</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>82</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">eqcare.peerjitestcases.copy.ClinicPeerji#loginToPatient</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>sdhall@eqcare.com</td><td>secret</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">eqcare.peerjitestcases.copy.ClinicPeerji#navigateToNurse</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>82</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">eqcare.peerjitestcases.copy.ClinicPeerji#patientChats</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">eqcare.peerjitestcases.copy.ClinicPeerji#patientChatsToDoctor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">eqcare.peerjitestcases.copy.ClinicPeerji#patientChatsToNurse</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">eqcare.peerjitestcases.copy.ClinicPeerji#transferPatientToCoctor</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">eqcare.peerjitestcases.copy.ClinicPeerji#transferPatientToNurse</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

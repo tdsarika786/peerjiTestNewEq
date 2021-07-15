@@ -45,8 +45,12 @@ public class InboxPageAV {
 	public void verifyMyInboxTabs() {
 
 		Utility.waitForWebElement(driver, messagesLink).click();
+		
+		Utility.wait(7);
 
 		Utility.waitForWebElement(driver, carePlansLink).click();
+		
+		Utility.wait(7);
 
 		Utility.waitForWebElement(driver, appointmentsLink).click();
 

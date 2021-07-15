@@ -44,15 +44,56 @@ public class ClinicPeerji extends BaseClass {
 		intake.fillIntakeForm();
 	}
 
-	@Parameters({ "Email", "Password" })
+	@Parameters({ "VisitNo" })
 	@Test(priority = 1)
-	public void loginToPatient(String email, String password) throws Exception {
+	public void loginAsCM(String VisitNo) throws Exception {
 
 		login = PageFactory.initElements(driver, LoginPage.class);
 
 		home = PageFactory.initElements(driver, HomePage.class);
 
 		clinic = PageFactory.initElements(driver, ClinicPage.class);
+
+		clinic2 = PageFactory.initElements(driver2, ClinicPage.class);
+
+		clinic2.loginToApplication("nurse@eqcare.com", "secret");
+	}
+
+	// CM Test
+	@Parameters({ "VisitNo" })
+	@Test(priority = 2)
+	public void loginToClinicApplication(String VisitNo) throws Exception {
+
+		clinic1 = PageFactory.initElements(driver1, ClinicPage.class);
+
+		clinic1.loginToApplication("cm@eqcare.com", "secret");
+
+		clinic1.navigateToClinicVisitPage(VisitNo);
+
+		try {
+			clinic1.takePatient();
+		}
+
+		catch (Exception ex) {
+			clinic1.loginToApplication("cm@eqcare.com", "secret");
+
+			clinic1.navigateToClinicVisitPage(VisitNo);
+
+			clinic1.takePatient();
+
+		}
+
+	}
+
+	@Parameters({ "VisitNo" })
+	@Test(priority = 1)
+	public void loginAsDRNurse(String VisitNo) throws Exception {
+
+	}
+
+	@Parameters({ "Email", "Password" })
+	@Test(priority = 3)
+	public void loginToPatient(String email, String password) throws Exception {
 
 		login.loginToApplication(email, password);
 
@@ -66,74 +107,52 @@ public class ClinicPeerji extends BaseClass {
 
 		System.out.println("Log:INFO- PATIENT VISIT STARTS");
 
-		clinic1 = PageFactory.initElements(driver1, ClinicPage.class);
-
-		clinic1.loginToApplication("cm@eqcare.com", "secret");
-
-		clinic2 = PageFactory.initElements(driver2, ClinicPage.class);
-
-		clinic2.loginToApplication("nurse@eqcare.com", "secret");
-
-		clinic3 = PageFactory.initElements(driver3, ClinicPage.class);
-
-		clinic3.loginToApplication("doctor@eqcare.com", "secret");
 	}
 
-	// CM Test
-	@Parameters({ "VisitNo" })
-	@Test(priority = 2)
-	public void loginToClinicApplication(String VisitNo) throws Exception {
-
-		//clinic1.navigateToClinicVisitPage(VisitNo);
-
-		try {
-			clinic1.takePatient();
-		}
-
-		catch (Exception ex) {
-			clinic1.loginToApplication("cm@eqcare.com", "secret");
-
-			//clinic1.navigateToClinicVisitPage(VisitNo);
-
-			clinic1.takePatient();
-
-		}
+	@Test(priority = 4)
+	public void functionsWithCM() {
 
 		clinic1.addComments("sai-pic CM", "sai-pic.jpeg");
 
-		clinic1.addComments("test1 CM", "test1.jpeg");
-
 		clinic1.addComments("Sample CM", "sample.pdf");
+
+		clinic1.cannedResponses();
 
 		clinic1.patientsTab();
 
 		clinic1.visitTab();
 
-		clinic1.cannedResponses();
-
 		clinic1.createIncident();
 
-		clinic1.submitChats("PeerjiAuto Test Chat CM");
+		clinic1.submitChats("PeerjiAuto Test Chat CM-1");
+
+		System.out.println("Log:INFO- CM with patients - comments, canned, create incidents, chats");
 
 	}
 
-	@Test(priority = 3, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 5, dependsOnMethods = "loginToClinicApplication")
 	public void patientChats() {
 
-		clinic.patientSubmitChats("Patient with CM");
+		clinic.patientSubmitChats("Patient with CM-2");
 	}
 
-	@Test(priority = 4)
+	@Test(priority = 6)
 	public void transferPatientToNurse() {
-
 		clinic1.transferToNurse();
 
 		System.out.println("Log:INFO- CM TRANSFER PATIENT TO NURSE");
+	}
+	
+	@Test(priority = 7)
+	public void onlineDoctor() {
+	
+	clinic3 = PageFactory.initElements(driver3, ClinicPage.class);
 
+	clinic3.loginToApplication("doctor@eqcare.com", "secret");
 	}
 
 	@Parameters({ "VisitNo" })
-	@Test(priority = 5, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 8, dependsOnMethods = "loginToClinicApplication")
 	public void navigateToNurse(String VisitNo) throws Exception {
 
 		clinic2.navigateToClinicVisitPage(VisitNo);
@@ -148,27 +167,27 @@ public class ClinicPeerji extends BaseClass {
 		}
 		clinic2.addComments("sai-pic Nurse", "sai-pic.jpeg");
 
-		clinic2.addComments("test1 Nurse", "test1.jpeg");
-
 		clinic2.addComments("Sample Nurse", "sample.pdf");
+
+		clinic2.cannedResponses();
 
 		clinic2.patientsTab();
 
 		clinic2.visitTab();
 
-		clinic2.cannedResponses();
+		clinic2.submitChats("PeerjiAuto Test Chat Nurse-3");
 
-		clinic2.submitChats("PeerjiAuto Test Chat Nurse");
+		System.out.println("Log:INFO- Nurse with patients - comments, canned, create incidents, chats");
 
 	}
 
-	@Test(priority = 6, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 9, dependsOnMethods = "loginToClinicApplication")
 	public void patientChatsToNurse() {
 
-		clinic.patientSubmitChats("Patient with Nurse");
+		clinic.patientSubmitChats("Patient with Nurse-4");
 	}
 
-	@Test(priority = 7, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 10, dependsOnMethods = "loginToClinicApplication")
 	public void transferPatientToCoctor() {
 
 		clinic2.transferToDoctor();
@@ -178,7 +197,7 @@ public class ClinicPeerji extends BaseClass {
 	}
 
 	@Parameters({ "VisitNo" })
-	@Test(priority = 8, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 11, dependsOnMethods = "loginToClinicApplication")
 	public void navigateToDr(String VisitNo) throws Exception {
 
 		clinic3.navigateToClinicVisitPage(VisitNo);
@@ -197,27 +216,27 @@ public class ClinicPeerji extends BaseClass {
 
 		clinic2.addComments("sai-pic DR", "sai-pic.jpeg");
 
-		clinic3.addComments("test1 DR", "test1.jpeg");
-
 		clinic3.addComments("Sample DR", "sample.pdf");
+
+		clinic3.cannedResponses();
 
 		clinic3.patientsTab();
 
 		clinic3.visitTab();
 
-		clinic3.cannedResponses();
+		clinic3.submitChats("PeerjiAuto Test Chat DR-5");
 
-		clinic3.submitChats("PeerjiAuto Test Chat DR");
+		System.out.println("Log:INFO- Doctor with patients - comments, canned, create incidents, chats");
 
 	}
 
-	@Test(priority = 9, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 12, dependsOnMethods = "loginToClinicApplication")
 	public void patientChatsToDoctor() {
 
-		clinic.patientSubmitChats("Patient with DR");
+		clinic.patientSubmitChats("Patient with DR-6");
 	}
 
-	@Test(priority = 10, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 13, dependsOnMethods = "loginToClinicApplication")
 	public void doctorEndConsultation() {
 
 		clinic3.endConsultation();
@@ -226,18 +245,18 @@ public class ClinicPeerji extends BaseClass {
 
 	}
 
-	@Test(priority = 11, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 14, dependsOnMethods = "loginToClinicApplication")
 	public void feedback() throws Exception {
 
 		feedback = PageFactory.initElements(driver, FeedbackPage.class);
 
 		feedback.ratingProvidedDRCMNurse();
-		
+
 		System.out.println("Log:INFO- Feedback provided");
 
 	}
-	
-	@Test(priority = 12, dependsOnMethods = "loginToClinicApplication")
+
+	@Test(priority = 15, dependsOnMethods = "loginToClinicApplication")
 	public void inbox() throws Exception {
 
 		inbox = PageFactory.initElements(driver, InboxPage.class);
@@ -245,7 +264,7 @@ public class ClinicPeerji extends BaseClass {
 		inbox.navigateToInboxPage();
 
 		inbox.verifyMyInboxTabs();
-		
+
 		System.out.println("Log:INFO- Inbox redirected");
 
 	}

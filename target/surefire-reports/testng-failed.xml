@@ -9,8 +9,10 @@
       <class name="eqcare.peerjitestcases.copy.ClinicPeerji">
         <methods>
           <include name="setUp"/>
-          <include name="navigateToDr"/>
+          <include name="navigateToDr" invocation-numbers="0"/>
           <include name="tearDown"/>
+          <include name="loginToClinicApplication"/>
+          <include name="feedback"/>
         </methods>
       </class> <!-- eqcare.peerjitestcases.copy.ClinicPeerji -->
     </classes>

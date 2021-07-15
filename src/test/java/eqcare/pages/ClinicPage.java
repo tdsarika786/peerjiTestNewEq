@@ -165,17 +165,18 @@ public class ClinicPage {
 	// CM take Patient
 
 	By takePatientButton = By.xpath("//div[contains(text(), 'Take Patient')]//parent::button");
-	
-	By takePatientButtonDash = By.xpath("((//div[contains(text(), 'Waiting Room')]//parent::div//parent::nav//following-sibling::div)[2]//h2[contains(text(),'Sarika')]//parent::div//parent::div//parent::div//parent::div//parent::div//following-sibling::div)[8]//button//child::div[contains(text(),'Take Patient')]");
-	
-	
-	
-	
+
+	By waitingRoom = By.xpath("//div[contains(text(), 'Waiting Room')]");
+
+	By takePatientButtonDash = By.xpath(
+			"((//div[contains(text(), 'Waiting Room')]//parent::div//parent::nav//following-sibling::div)[2]//h2[contains(text(),'Sarika')]//parent::div//parent::div//parent::div//parent::div//parent::div//following-sibling::div)[8]//button//child::div[contains(text(),'Take Patient')]");
+
 	// Chats
 
 	By patientChatsText = By.xpath("//textarea[contains(@placeholder, 'Type your message')]");
 
-	By patientChatsSubmit = By.xpath("//textarea[contains(@placeholder, 'Type your message')]//parent::div/following-sibling::div[2]");
+	By patientChatsSubmit = By
+			.xpath("//textarea[contains(@placeholder, 'Type your message')]//parent::div/following-sibling::div[2]");
 
 	public void loginToApplication1(String userName, String passWord) {
 		Utility.waitForWebElement(driver, email).sendKeys(userName);
@@ -218,17 +219,17 @@ public class ClinicPage {
 
 	public void navigateToClinicVisitPage(String visitNo) {
 
-		Utility.navigateToURL(driver, "https://clinic.eqserviceqa1.eqcaredev.com/visits/"+visitNo);
+		Utility.navigateToURL(driver, "https://clinic.eqserviceqa1.eqcaredev.com/visits/" + visitNo);
 
 	}
 
 	public void takePatient() {
 
-		//Utility.waitForWebElement(driver, takePatientButton).click();
-		
-		Utility.waitForWebElement(driver, takePatientButtonDash).click();
-		
-		
+		// Utility.waitForWebElement(driver, waitingRoom).click();
+
+		Utility.waitForWebElement(driver, takePatientButton).click();
+
+		// Utility.waitForWebElement(driver, takePatientButtonDash).click();
 
 	}
 
@@ -253,7 +254,12 @@ public class ClinicPage {
 
 		// Utility.waitForWebElement(driver, commentsButton).click();
 
-		Utility.waitForWebElement(driver, commentsLink).click();
+		// Utility.waitForWebElement(driver, commentsLink).click();
+
+		WebElement buttontest = driver.findElement(By.xpath("//a[contains(text(), 'Comments')]"));
+
+		JavascriptExecutor executortest = (JavascriptExecutor) driver;
+		executortest.executeScript("arguments[0].click()", buttontest);
 
 		WebElement uploadFileElement = driver.findElement(By.xpath("(//input[@type='file'])[2]"));
 		JavascriptExecutor executorFile = (JavascriptExecutor) driver;
@@ -317,7 +323,7 @@ public class ClinicPage {
 
 	public void navigateToDoctor() {
 
-		//navigateToClinicVisitPage();
+		// navigateToClinicVisitPage();
 
 	}
 
@@ -427,7 +433,12 @@ public class ClinicPage {
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
 		executor.executeScript("arguments[0].click()", button);
 
-		Utility.waitForWebElement(driver, commentsLink).click();
+		// Utility.waitForWebElement(driver, commentsLink).click();
+
+		WebElement buttontest = driver.findElement(By.xpath("//a[contains(text(), 'Comments')]"));
+
+		JavascriptExecutor executortest = (JavascriptExecutor) driver;
+		executortest.executeScript("arguments[0].click()", buttontest);
 
 		WebElement uploadFileElement = driver.findElement(By.xpath("(//input[@type='file'])[2]"));
 		JavascriptExecutor executorFile = (JavascriptExecutor) driver;
@@ -497,8 +508,7 @@ public class ClinicPage {
 		Utility.wait(7);
 
 	}
-	
-	
+
 	public void patientSubmitChats(String text) {
 
 		Utility.waitForWebElement(driver, patientChatsText).sendKeys(text);
@@ -508,8 +518,6 @@ public class ClinicPage {
 		Utility.wait(7);
 
 	}
-	
-	
 
 	public void transferToDoctor() {
 
