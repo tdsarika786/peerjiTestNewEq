@@ -10,7 +10,7 @@
   <test name="Test" preserve-order="true" thread-count="3" >
     <classes>
        
-         <class name="eqcare.peerjitestcases.copy.LJStartVisit"/> 
+         <class name="eqcare.peerjitestcases.copy.AVStartVisit"/> 
            
           <!--   <class name="eqcare.peerjitestcases.copy.TC3_EndToEndScenarios"/> -->
       
