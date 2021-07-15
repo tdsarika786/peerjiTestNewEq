@@ -34,7 +34,7 @@ public class IntakeFormPage extends runWithAttachments {
 
 	By checkBox = By.xpath("//input[@type='checkbox']");
 
-	By uploadFile = By.xpath("//input[@type='file']");
+	By uploadFile = By.xpath("(//input[@type='file'])[1]");
 
 	By startCall = By.xpath("//a[@data-role='start-call-button']");
 
@@ -86,10 +86,12 @@ public class IntakeFormPage extends runWithAttachments {
 
 		Utility.waitForWebElement(driver, startCall).click();
 		
-		Utility.wait(10);
+		Utility.wait(20);
 		// Utility.selectValueFromCalendar(Utility.waitForMultipleWebElement(driver,
 		// calen), "25");
 		uploadFiles();
+		
+		Utility.wait(20);
 		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 16, 0), "0");
 	} catch (Exception ex) {
 		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 16, 0), "7");
