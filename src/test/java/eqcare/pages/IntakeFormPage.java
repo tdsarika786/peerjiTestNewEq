@@ -89,6 +89,7 @@ public class IntakeFormPage extends runWithAttachments {
 		Utility.wait(10);
 		// Utility.selectValueFromCalendar(Utility.waitForMultipleWebElement(driver,
 		// calen), "25");
+		uploadFiles();
 		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 16, 0), "0");
 	} catch (Exception ex) {
 		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 16, 0), "7");
