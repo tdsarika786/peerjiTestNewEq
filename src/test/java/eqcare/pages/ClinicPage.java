@@ -166,6 +166,10 @@ public class ClinicPage {
 
 	By takePatientButton = By.xpath("//div[contains(text(), 'Take Patient')]//parent::button");
 	
+	By takePatientButtonDash = By.xpath("((//div[contains(text(), 'Waiting Room')]//parent::div//parent::nav//following-sibling::div)[2]//h2[contains(text(),'Sarika')]//parent::div//parent::div//parent::div//parent::div//parent::div//following-sibling::div)[8]//button//child::div[contains(text(),'Take Patient')]");
+	
+	
+	
 	
 	// Chats
 
@@ -220,7 +224,11 @@ public class ClinicPage {
 
 	public void takePatient() {
 
-		Utility.waitForWebElement(driver, takePatientButton).click();
+		//Utility.waitForWebElement(driver, takePatientButton).click();
+		
+		Utility.waitForWebElement(driver, takePatientButtonDash).click();
+		
+		
 
 	}
 

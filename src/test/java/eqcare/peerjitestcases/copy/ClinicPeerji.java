@@ -84,7 +84,7 @@ public class ClinicPeerji extends BaseClass {
 	@Test(priority = 2)
 	public void loginToClinicApplication(String VisitNo) throws Exception {
 
-		clinic1.navigateToClinicVisitPage(VisitNo);
+		//clinic1.navigateToClinicVisitPage(VisitNo);
 
 		try {
 			clinic1.takePatient();
@@ -93,7 +93,7 @@ public class ClinicPeerji extends BaseClass {
 		catch (Exception ex) {
 			clinic1.loginToApplication("cm@eqcare.com", "secret");
 
-			clinic1.navigateToClinicVisitPage(VisitNo);
+			//clinic1.navigateToClinicVisitPage(VisitNo);
 
 			clinic1.takePatient();
 
