@@ -10,9 +10,12 @@
   <test name="Test" preserve-order="true" thread-count="3" >
     <classes>
        
-           <class name="eqcare.peerjitestcases.Novapeerji2"/> 
+         <class name="eqcare.peerjitestcases.copy.CreateStaff"/> 
+           
+          <!--   <class name="eqcare.peerjitestcases.copy.TC3_EndToEndScenarios"/> -->
+      
+      <!-- <class name="eqcare.peerjitestcases.copy.TC4_LifeJourneyEndScenarios "/> -->
        
-         
     </classes>
     
   </test> <!-- Test -->
