@@ -117,7 +117,7 @@ public class ClinicAV extends BaseClass {
 
 		clinic1.submitChats("PeerjiAuto Test Chat CM");
 
-		clinic1.patientSubmitChats("Patient with CM");
+		clinic.patientSubmitChats("Patient with CM");
 
 		clinic1.transferToNurse();
 
@@ -153,7 +153,7 @@ public class ClinicAV extends BaseClass {
 
 		clinic2.submitChats("PeerjiAuto Test Chat Nurse");
 
-		clinic2.patientSubmitChats("Patient with Nurse");
+		clinic.patientSubmitChats("Patient with Nurse");
 
 		clinic2.transferToDoctor();
 
@@ -193,7 +193,7 @@ public class ClinicAV extends BaseClass {
 
 	    clinic3.submitChats("PeerjiAuto Test Chat DR");
 		
-		clinic3.patientSubmitChats("Patient with DR");
+		clinic.patientSubmitChats("Patient with DR");
 		
 
 		clinic3.endConsultation();
