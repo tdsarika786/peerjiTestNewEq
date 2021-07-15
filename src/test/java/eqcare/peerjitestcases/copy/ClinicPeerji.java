@@ -214,13 +214,13 @@ public class ClinicPeerji extends BaseClass {
 	@Test(priority = 9, dependsOnMethods = "loginToClinicApplication")
 	public void patientChatsToDoctor() {
 
-		clinic3.patientSubmitChats("Patient with DR");
+		clinic.patientSubmitChats("Patient with DR");
 	}
 
 	@Test(priority = 10, dependsOnMethods = "loginToClinicApplication")
 	public void doctorEndConsultation() {
 
-		clinic.endConsultation();
+		clinic3.endConsultation();
 
 		System.out.println("Log:INFO- DOCTOR END CONSULTATION");
 
@@ -232,6 +232,8 @@ public class ClinicPeerji extends BaseClass {
 		feedback = PageFactory.initElements(driver, FeedbackPage.class);
 
 		feedback.ratingProvidedDRCMNurse();
+		
+		System.out.println("Log:INFO- Feedback provided");
 
 	}
 	
@@ -243,6 +245,8 @@ public class ClinicPeerji extends BaseClass {
 		inbox.navigateToInboxPage();
 
 		inbox.verifyMyInboxTabs();
+		
+		System.out.println("Log:INFO- Inbox redirected");
 
 	}
 

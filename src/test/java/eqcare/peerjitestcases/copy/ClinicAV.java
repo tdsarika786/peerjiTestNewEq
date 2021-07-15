@@ -118,7 +118,7 @@ public class ClinicAV extends BaseClass {
 		clinic1.submitChats("PeerjiAuto Test Chat CM");
 
 	}
-	
+
 	@Test(priority = 3, dependsOnMethods = "loginToClinicApplication")
 	public void patientChats() {
 
@@ -163,7 +163,7 @@ public class ClinicAV extends BaseClass {
 		clinic2.submitChats("PeerjiAuto Test Chat Nurse");
 
 	}
-	
+
 	@Test(priority = 6, dependsOnMethods = "loginToClinicApplication")
 	public void patientChatsToNurse() {
 
@@ -209,20 +209,20 @@ public class ClinicAV extends BaseClass {
 
 		clinic3.cannedResponses();
 
-	    clinic3.submitChats("PeerjiAuto Test Chat DR");
+		clinic3.submitChats("PeerjiAuto Test Chat DR");
 
 	}
-	
+
 	@Test(priority = 9, dependsOnMethods = "loginToClinicApplication")
 	public void patientChatsToDoctor() {
 
-		clinic3.patientSubmitChats("Patient with DR");
+		clinic.patientSubmitChats("Patient with DR");
 	}
 
 	@Test(priority = 10, dependsOnMethods = "loginToClinicApplication")
 	public void doctorEndConsultation() {
 
-		clinic.endConsultation();
+		clinic3.endConsultation();
 
 		System.out.println("Log:INFO- DOCTOR END CONSULTATION");
 
@@ -235,9 +235,10 @@ public class ClinicAV extends BaseClass {
 
 		feedback.ratingProvidedDRCMNurse();
 
+		System.out.println("Log:INFO- Feedback provided");
+
 	}
-	
-	
+
 	@Test(priority = 12, dependsOnMethods = "loginToClinicApplication")
 	public void inbox() throws Exception {
 
@@ -246,6 +247,8 @@ public class ClinicAV extends BaseClass {
 		inbox.navigateToInboxPage();
 
 		inbox.verifyMyInboxTabs();
+
+		System.out.println("Log:INFO- Inbox redirected");
 
 	}
 
