@@ -24,6 +24,10 @@ public class FeedbackPage {
 	By homeButton = By.xpath("//a[contains(text(), 'Homepage')]");
 
 	By visitFeedbackInput = By.xpath("//textarea[@name='textFieldInput']");
+	
+	By nextLink = By.xpath("//a[contains(text(), 'Next')]");
+	
+	
 
 	public void verifyFeedbackPageUrl()
 
@@ -39,6 +43,28 @@ public class FeedbackPage {
 
 		Utility.waitForWebElement(driver, visitFeedbackInput).sendKeys("A Good");
 
+		Utility.waitForWebElement(driver, submitLink).click();
+
+		Utility.waitForWebElement(driver, homeButton).click();
+
+	}
+	
+	public void ratingProvidedDRCMNurse() {
+
+		Utility.waitForWebElement(driver, ratingHeart).click();
+
+		Utility.waitForWebElement(driver, visitFeedbackInput).sendKeys("A Good");
+
+		Utility.waitForWebElement(driver, nextLink).click();
+		
+		Utility.waitForWebElement(driver, ratingHeart).click();
+		
+		Utility.waitForWebElement(driver, nextLink).click();
+		
+	    Utility.waitForWebElement(driver, ratingHeart).click();
+		
+		Utility.waitForWebElement(driver, nextLink).click();
+		
 		Utility.waitForWebElement(driver, submitLink).click();
 
 		Utility.waitForWebElement(driver, homeButton).click();

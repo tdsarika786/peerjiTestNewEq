@@ -165,6 +165,13 @@ public class ClinicPage {
 	// CM take Patient
 
 	By takePatientButton = By.xpath("//div[contains(text(), 'Take Patient')]//parent::button");
+	
+	
+	// Chats
+
+	By patientChatsText = By.xpath("//textarea[contains(@placeholder, 'Type your message')]");
+
+	By patientChatsSubmit = By.xpath("//textarea[contains(@placeholder, 'Type your message')]//parent::div/following-sibling::div[2]");
 
 	public void loginToApplication1(String userName, String passWord) {
 		Utility.waitForWebElement(driver, email).sendKeys(userName);
@@ -473,15 +480,28 @@ public class ClinicPage {
 
 	}
 
-	public void submitChats() {
+	public void submitChats(String text) {
 
-		Utility.waitForWebElement(driver, chatsText).sendKeys("PeerjiAuto Test Chat");
+		Utility.waitForWebElement(driver, chatsText).sendKeys(text);
 
 		Utility.waitForWebElement(driver, chatsSubmit).click();
 
 		Utility.wait(7);
 
 	}
+	
+	
+	public void patientSubmitChats(String text) {
+
+		Utility.waitForWebElement(driver, patientChatsText).sendKeys(text);
+
+		Utility.waitForWebElement(driver, patientChatsSubmit).click();
+
+		Utility.wait(7);
+
+	}
+	
+	
 
 	public void transferToDoctor() {
 

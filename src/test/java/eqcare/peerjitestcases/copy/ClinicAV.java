@@ -9,6 +9,7 @@ import eqcare.pages.ClinicPage;
 import eqcare.pages.FeedbackPageAV;
 import eqcare.pages.HomePage;
 import eqcare.pages.HomePageAV;
+import eqcare.pages.InboxPageAV;
 import eqcare.pages.LifeJourneyIntakeFormPage;
 import eqcare.pages.IntakeFormPage;
 import eqcare.pages.IntakeFormPageAV;
@@ -23,6 +24,7 @@ public class ClinicAV extends BaseClass {
 	IntakeFormPageAV intake;
 	HomePageAV home;
 	FeedbackPageAV feedback;
+	InboxPageAV inbox;
 
 	// Patient Start Visit
 	@Parameters({ "Email", "Password" })
@@ -57,13 +59,13 @@ public class ClinicAV extends BaseClass {
 		login.loginToApplication(email, password);
 
 		clinic.navigateToPatientVisitPage();
-		
+
 		home.navigateToHomePage();
-		
+
 		clinic.nextStep();
-		
+
 		clinic.navigateToPatientVisitPage();
-		
+
 		System.out.println("Log:INFO- PATIENT VISIT STARTS");
 
 		clinic1 = PageFactory.initElements(driver1, ClinicPage.class);
@@ -80,7 +82,7 @@ public class ClinicAV extends BaseClass {
 	}
 
 	// CM Test
-	@Parameters({ "VisitNo"})
+	@Parameters({ "VisitNo" })
 	@Test(priority = 2)
 	public void loginToClinicApplication(String VisitNo) throws Exception {
 
@@ -94,9 +96,9 @@ public class ClinicAV extends BaseClass {
 			clinic1.loginToApplication("cm@eqcare.com", "secret");
 
 			clinic1.navigateToClinicVisitPage(VisitNo);
-			
+
 			clinic1.takePatient();
-			
+
 		}
 
 		clinic1.addComments("sai-pic CM", "sai-pic.jpeg");
@@ -111,17 +113,19 @@ public class ClinicAV extends BaseClass {
 
 		clinic1.cannedResponses();
 
-		clinic1.submitChats();
-		
 		clinic1.createIncident();
 
+		clinic1.submitChats("PeerjiAuto Test Chat CM");
+
+		clinic1.patientSubmitChats("Patient with CM");
+
 		clinic1.transferToNurse();
-		
+
 		System.out.println("Log:INFO- CM TRANSFER PATIENT TO NURSE");
 
 	}
 
-	@Parameters({ "VisitNo"})
+	@Parameters({ "VisitNo" })
 	@Test(priority = 3)
 	public void navigateToNurse(String VisitNo) throws Exception {
 
@@ -136,7 +140,7 @@ public class ClinicAV extends BaseClass {
 			clinic2.navigateToClinicVisitPage(VisitNo);
 		}
 		clinic2.addComments("sai-pic Nurse", "sai-pic.jpeg");
-		
+
 		clinic2.addComments("test1 Nurse", "test1.jpeg");
 
 		clinic2.addComments("Sample Nurse", "sample.pdf");
@@ -147,15 +151,17 @@ public class ClinicAV extends BaseClass {
 
 		clinic2.cannedResponses();
 
-		clinic2.submitChats();
+		clinic2.submitChats("PeerjiAuto Test Chat Nurse");
+
+		clinic2.patientSubmitChats("Patient with Nurse");
 
 		clinic2.transferToDoctor();
-		
+
 		System.out.println("Log:INFO- NURSE TRANSFER PATIENT TO DOCTOR");
 
 	}
 
-	@Parameters({ "VisitNo"})
+	@Parameters({ "VisitNo" })
 	@Test(priority = 4)
 	public void navigateToDr(String VisitNo) throws Exception {
 
@@ -169,12 +175,12 @@ public class ClinicAV extends BaseClass {
 			clinic3.loginToApplication("doctor@eqcare.com", "secret");
 
 			clinic3.navigateToClinicVisitPage(VisitNo);
-			
+
 			clinic3.takePatient();
 		}
 
 		clinic2.addComments("sai-pic DR", "sai-pic.jpeg");
-		
+
 		clinic3.addComments("test1 DR", "test1.jpeg");
 
 		clinic3.addComments("Sample DR", "sample.pdf");
@@ -185,20 +191,35 @@ public class ClinicAV extends BaseClass {
 
 		clinic3.cannedResponses();
 
-		clinic3.submitChats();
+	    clinic3.submitChats("PeerjiAuto Test Chat DR");
+		
+		clinic3.patientSubmitChats("Patient with DR");
+		
 
 		clinic3.endConsultation();
-		
+
 		System.out.println("Log:INFO- DOCTOR END CONSULTATION");
 
 	}
-	
+
 	@Test(priority = 5)
 	public void feedback() throws Exception {
 
 		feedback = PageFactory.initElements(driver, FeedbackPageAV.class);
 
-		feedback.ratingProvided();
+		feedback.ratingProvidedDRCMNurse();
+
+	}
+	
+	
+	@Test(priority = 6, dependsOnMethods = "loginToApplication")
+	public void inbox() throws Exception {
+
+		inbox = PageFactory.initElements(driver, InboxPageAV.class);
+
+		inbox.navigateToInboxPage();
+
+		inbox.verifyMyInboxTabs();
 
 	}
 

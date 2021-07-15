@@ -54,13 +54,13 @@ public class ClinicPeerji extends BaseClass {
 		login.loginToApplication(email, password);
 
 		clinic.navigateToPatientVisitPage();
-		
+
 		home.navigateToHomePage();
-		
+
 		clinic.nextStep();
-		
+
 		clinic.navigateToPatientVisitPage();
-		
+
 		System.out.println("Log:INFO- PATIENT VISIT STARTS");
 
 		clinic1 = PageFactory.initElements(driver1, ClinicPage.class);
@@ -77,7 +77,7 @@ public class ClinicPeerji extends BaseClass {
 	}
 
 	// CM Test
-	@Parameters({ "VisitNo"})
+	@Parameters({ "VisitNo" })
 	@Test(priority = 2)
 	public void loginToClinicApplication(String VisitNo) throws Exception {
 
@@ -91,9 +91,9 @@ public class ClinicPeerji extends BaseClass {
 			clinic1.loginToApplication("cm@eqcare.com", "secret");
 
 			clinic1.navigateToClinicVisitPage(VisitNo);
-			
+
 			clinic1.takePatient();
-			
+
 		}
 
 		clinic1.addComments("sai-pic CM", "sai-pic.jpeg");
@@ -108,17 +108,21 @@ public class ClinicPeerji extends BaseClass {
 
 		clinic1.cannedResponses();
 
-		clinic1.submitChats();
-		
+
+
 		clinic1.createIncident();
+		
+		clinic1.submitChats("PeerjiAuto Test Chat CM");
+
+		clinic1.patientSubmitChats("Patient with CM");
 
 		clinic1.transferToNurse();
-		
+
 		System.out.println("Log:INFO- CM TRANSFER PATIENT TO NURSE");
 
 	}
 
-	@Parameters({ "VisitNo"})
+	@Parameters({ "VisitNo" })
 	@Test(priority = 3)
 	public void navigateToNurse(String VisitNo) throws Exception {
 
@@ -133,7 +137,7 @@ public class ClinicPeerji extends BaseClass {
 			clinic2.navigateToClinicVisitPage(VisitNo);
 		}
 		clinic2.addComments("sai-pic Nurse", "sai-pic.jpeg");
-		
+
 		clinic2.addComments("test1 Nurse", "test1.jpeg");
 
 		clinic2.addComments("Sample Nurse", "sample.pdf");
@@ -144,15 +148,17 @@ public class ClinicPeerji extends BaseClass {
 
 		clinic2.cannedResponses();
 
-		clinic2.submitChats();
+		 clinic2.submitChats("PeerjiAuto Test Chat Nurse");
+			
+			clinic2.patientSubmitChats("Patient with Nurse");
 
 		clinic2.transferToDoctor();
-		
+
 		System.out.println("Log:INFO- NURSE TRANSFER PATIENT TO DOCTOR");
 
 	}
 
-	@Parameters({ "VisitNo"})
+	@Parameters({ "VisitNo" })
 	@Test(priority = 4)
 	public void navigateToDr(String VisitNo) throws Exception {
 
@@ -166,12 +172,12 @@ public class ClinicPeerji extends BaseClass {
 			clinic3.loginToApplication("doctor@eqcare.com", "secret");
 
 			clinic3.navigateToClinicVisitPage(VisitNo);
-			
+
 			clinic3.takePatient();
 		}
 
 		clinic2.addComments("sai-pic DR", "sai-pic.jpeg");
-		
+
 		clinic3.addComments("test1 DR", "test1.jpeg");
 
 		clinic3.addComments("Sample DR", "sample.pdf");
@@ -182,20 +188,22 @@ public class ClinicPeerji extends BaseClass {
 
 		clinic3.cannedResponses();
 
-		clinic3.submitChats();
+		clinic3.submitChats("PeerjiAuto Test Chat DR");
+
+		clinic3.patientSubmitChats("Patient with DR");
 
 		clinic3.endConsultation();
-		
+
 		System.out.println("Log:INFO- DOCTOR END CONSULTATION");
 
 	}
-	
+
 	@Test(priority = 5)
 	public void feedback() throws Exception {
 
 		feedback = PageFactory.initElements(driver, FeedbackPage.class);
 
-		feedback.ratingProvided();
+		feedback.ratingProvidedDRCMNurse();
 
 	}
 
