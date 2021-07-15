@@ -5,7 +5,7 @@ import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import eqcare.helper.Utility;
-import eqcare.pages.ClinicPage;
+import eqcare.pages.ClinicPageAV;
 import eqcare.pages.FeedbackPage;
 import eqcare.pages.FeedbackPageAV;
 import eqcare.pages.HomePage;
@@ -21,7 +21,7 @@ import eqcare.pages.copy.BaseClass;
 
 public class ClinicAV extends BaseClass {
 
-	ClinicPage clinic, clinic1, clinic2, clinic3;
+	ClinicPageAV clinic, clinic1, clinic2, clinic3;
 	LoginPageAV login;
 	IntakeFormPageAV intake;
 	HomePageAV home;
@@ -56,13 +56,13 @@ public class ClinicAV extends BaseClass {
 
 		home = PageFactory.initElements(driver, HomePageAV.class);
 
-		clinic = PageFactory.initElements(driver, ClinicPage.class);
+		clinic = PageFactory.initElements(driver, ClinicPageAV.class);
 
-		clinic2 = PageFactory.initElements(driver2, ClinicPage.class);
+		clinic2 = PageFactory.initElements(driver2, ClinicPageAV.class);
 
 		clinic2.loginToApplication("nurse@eqcare.com", "secret");
 			
-		clinic3 = PageFactory.initElements(driver3, ClinicPage.class);
+		clinic3 = PageFactory.initElements(driver3, ClinicPageAV.class);
 
 		clinic3.loginToApplication("doctor@eqcare.com", "secret");
 	}
@@ -72,7 +72,7 @@ public class ClinicAV extends BaseClass {
 	@Test(priority = 2)
 	public void loginToClinicApplication(String VisitNo) throws Exception {
 		
-		clinic1 = PageFactory.initElements(driver1, ClinicPage.class);
+		clinic1 = PageFactory.initElements(driver1, ClinicPageAV.class);
 
 		clinic1.loginToApplication("cm@eqcare.com", "secret");
 

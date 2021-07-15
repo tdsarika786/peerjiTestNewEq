@@ -45,15 +45,15 @@ public class IntakeFormPageAV {
 
 	public void fillIntakeForm() throws Exception {
 
-		Utility.waitForWebElement(driver, reasonVisitInput).sendKeys("Test Visit by Sarika Peerji");
+		Utility.waitForWebElement(driver, reasonVisitInput).sendKeys("Test Visit by Sarika Peerji A");
 
-		Utility.waitForWebElement(driver, durationSymptomsInput).sendKeys("7 weeks");
+		Utility.waitForWebElement(driver, durationSymptomsInput).sendKeys("7 weeks ");
 
-		Utility.waitForWebElement(driver, currentAllergies).sendKeys("Amoxyllin");
+		Utility.waitForWebElement(driver, currentAllergies).sendKeys("Amoxyllin A");
 
 		Utility.waitForWebElement(driver, addCurrentAllergies).click();
 
-		Utility.waitForWebElement(driver, currentMedication).sendKeys("Tyenol Liquid Gels");
+		Utility.waitForWebElement(driver, currentMedication).sendKeys("Tyenol Liquid Gels A");
 
 		Utility.waitForWebElement(driver, addCurrentMedication).click();
 

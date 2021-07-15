@@ -292,7 +292,7 @@ public class AccountPageAV extends runWithAttachments {
 
 			Utility.waitForWebElement(driver, postal_code).sendKeys("H2X 0C8");
 
-			//Utility.waitForWebElement(driver, date_of_birth).sendKeys("2000-07-14");
+			Utility.waitForWebElement(driver, date_of_birth).sendKeys("2000-03-28");
 
 			Utility.waitForWebElement(driver, health_card).sendKeys("9012345677");
 
