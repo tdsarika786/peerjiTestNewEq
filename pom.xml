@@ -99,6 +99,7 @@
 						<PlanType>${PlanType}</PlanType>
 						<ProjectARN>${ProjectARN}</ProjectARN>
 						<AppType>${AppType}</AppType>
+						<VisitNo>${VisitNo}</VisitNo>
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>

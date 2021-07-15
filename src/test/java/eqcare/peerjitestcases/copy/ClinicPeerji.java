@@ -77,10 +77,11 @@ public class ClinicPeerji extends BaseClass {
 	}
 
 	// CM Test
+	@Parameters({ "VisitNo"})
 	@Test(priority = 2)
-	public void loginToClinicApplication() throws Exception {
+	public void loginToClinicApplication(String VisitNo) throws Exception {
 
-		clinic1.navigateToClinicVisitPage();
+		clinic1.navigateToClinicVisitPage(VisitNo);
 
 		try {
 			clinic1.takePatient();
@@ -89,7 +90,7 @@ public class ClinicPeerji extends BaseClass {
 		catch (Exception ex) {
 			clinic1.loginToApplication("cm@eqcare.com", "secret");
 
-			clinic1.navigateToClinicVisitPage();
+			clinic1.navigateToClinicVisitPage(VisitNo);
 			
 			clinic1.takePatient();
 			
@@ -117,11 +118,11 @@ public class ClinicPeerji extends BaseClass {
 
 	}
 
+	@Parameters({ "VisitNo"})
 	@Test(priority = 3)
-	public void navigateToNurse() throws Exception {
+	public void navigateToNurse(String VisitNo) throws Exception {
 
-		clinic2.navigateToClinicVisitPage();
-
+		clinic2.navigateToClinicVisitPage(VisitNo);
 		try {
 			clinic2.addComments("sai-pic", "sai-pic.jpeg");
 		}
@@ -129,7 +130,7 @@ public class ClinicPeerji extends BaseClass {
 		catch (Exception ex) {
 			clinic2.loginToApplication("nurse@eqcare.com", "secret");
 
-			clinic2.navigateToClinicVisitPage();
+			clinic2.navigateToClinicVisitPage(VisitNo);
 		}
 		clinic2.addComments("sai-pic Nurse", "sai-pic.jpeg");
 		
@@ -151,11 +152,11 @@ public class ClinicPeerji extends BaseClass {
 
 	}
 
+	@Parameters({ "VisitNo"})
 	@Test(priority = 4)
-	public void navigateToDr() throws Exception {
+	public void navigateToDr(String VisitNo) throws Exception {
 
-		clinic3.navigateToClinicVisitPage();
-
+		clinic3.navigateToClinicVisitPage(VisitNo);
 		try {
 
 			clinic3.takePatient();
@@ -164,7 +165,7 @@ public class ClinicPeerji extends BaseClass {
 		catch (Exception ex) {
 			clinic3.loginToApplication("doctor@eqcare.com", "secret");
 
-			clinic3.navigateToClinicVisitPage();
+			clinic3.navigateToClinicVisitPage(VisitNo);
 			
 			clinic3.takePatient();
 		}

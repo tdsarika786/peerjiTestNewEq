@@ -205,9 +205,9 @@ public class ClinicPage {
 
 	}
 
-	public void navigateToClinicVisitPage() {
+	public void navigateToClinicVisitPage(String visitNo) {
 
-		Utility.navigateToURL(driver, "https://clinic.eqserviceqa1.eqcaredev.com/visits/71");
+		Utility.navigateToURL(driver, "https://clinic.eqserviceqa1.eqcaredev.com/visits/"+visitNo);
 
 	}
 
@@ -302,7 +302,7 @@ public class ClinicPage {
 
 	public void navigateToDoctor() {
 
-		navigateToClinicVisitPage();
+		//navigateToClinicVisitPage();
 
 	}
 
