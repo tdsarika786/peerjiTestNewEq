@@ -56,11 +56,11 @@ public class ClinicEQ extends BaseClass {
 
 		clinic2 = PageFactory.initElements(driver2, ClinicPage.class);
 
-		clinic2.loginToApplication("nurse@eqcare.com", "secret");
+		clinic2.loginToApplication("saru@eqcare.com", "secret");
 		
 		clinic3 = PageFactory.initElements(driver3, ClinicPage.class);
 
-		clinic3.loginToApplication("doctor@eqcare.com", "secret");
+		clinic3.loginToApplication("anu@eqcare.com", "secret");
 	}
 
 	// CM Test
@@ -70,7 +70,7 @@ public class ClinicEQ extends BaseClass {
 
 		clinic1 = PageFactory.initElements(driver1, ClinicPage.class);
 
-		clinic1.loginToApplication("cm@eqcare.com", "secret");
+		clinic1.loginToApplication("anku@eqcare.com", "secret");
 
 		clinic1.navigateToClinicVisitPage(VisitNo);
 
@@ -79,7 +79,7 @@ public class ClinicEQ extends BaseClass {
 		}
 
 		catch (Exception ex) {
-			clinic1.loginToApplication("cm@eqcare.com", "secret");
+			clinic1.loginToApplication("anku@eqcare.com", "secret");
 
 			clinic1.navigateToClinicVisitPage(VisitNo);
 
