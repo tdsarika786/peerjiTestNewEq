@@ -69,7 +69,10 @@ public class IntakeFormPageAV {
 		Utility.waitForWebElement(driver, startCall).click();
 		// Utility.selectValueFromCalendar(Utility.waitForMultipleWebElement(driver,
 		// calen), "25");
-
+		uploadFiles();
+		
+		Utility.wait(10);
+	
 	}
 
 	public void uploadFiles() throws Exception {
