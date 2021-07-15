@@ -68,21 +68,22 @@ public class BaseClass implements ITestListener {
 
 		System.out.println("Log:INFO- Browser and application is ready");
 	}
-
+	
+	@Parameters({"Browser","AppURL", "ProjectRun","ClinicAppURL","AppType" })
 	@AfterClass
-	public void tearDown() {
+	public void tearDown(String browser, String appurl, String projectrun, String ClinicAppURL, String AppType) {
 		System.out.println("Log:INFO- Terminating browser");
 
 		BrowserFactory.closeApplication(driver);
 		
-
+		if (AppType.equalsIgnoreCase("clinic")) {
 		BrowserFactory.closeApplication(driver1);
 		
 		
 		BrowserFactory.closeApplication(driver2);
 		
 		
-		BrowserFactory.closeApplication(driver3);
+		BrowserFactory.closeApplication(driver3);}
 
 		System.out.println("Log:INFO- Browser terminated");
 	}
