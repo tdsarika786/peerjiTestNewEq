@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="16" passed="15" failed="0" skipped="0">
+<testng-results ignored="1" total="16" passed="0" failed="0" skipped="15">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-15T14:56:24 EDT" name="Suite" finished-at="2021-07-15T15:05:34 EDT" duration-ms="549551">
+  <suite started-at="2021-07-15T18:34:02 EDT" name="Suite" finished-at="2021-07-15T18:34:08 EDT" duration-ms="6271">
     <groups>
     </groups>
-    <test started-at="2021-07-15T14:56:24 EDT" name="Test" finished-at="2021-07-15T15:05:34 EDT" duration-ms="549551">
+    <test started-at="2021-07-15T18:34:02 EDT" name="Test" finished-at="2021-07-15T18:34:08 EDT" duration-ms="6271">
       <class name="eqcare.peerjitestcases.copy.ClinicPeerji">
-        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T14:56:24 EDT" name="setUp" finished-at="2021-07-15T14:58:30 EDT" duration-ms="125703" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3]" started-at="2021-07-15T18:34:02 EDT" name="setUp" finished-at="2021-07-15T18:34:08 EDT" duration-ms="6234" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -31,148 +31,1202 @@
             </param>
             <param index="4">
               <value>
-                <![CDATA[clinic]]>
+                <![CDATA[clinic1]]>
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 92
+Current browser version is 91.0.4472.114 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:7:f30a:a40c:8cf0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010d6f5eb9 chromedriver + 3059385
+1   chromedriver                        0x000000010de01963 chromedriver + 10447203
+2   chromedriver                        0x000000010d4352e8 chromedriver + 172776
+3   chromedriver                        0x000000010d45b16d chromedriver + 328045
+4   chromedriver                        0x000000010d456ca6 chromedriver + 310438
+5   chromedriver                        0x000000010d4537be chromedriver + 296894
+6   chromedriver                        0x000000010d48c54b chromedriver + 529739
+7   chromedriver                        0x000000010d486b83 chromedriver + 506755
+8   chromedriver                        0x000000010d45d480 chromedriver + 337024
+9   chromedriver                        0x000000010d45e615 chromedriver + 341525
+10  chromedriver                        0x000000010d6c0d9f chromedriver + 2842015
+11  chromedriver                        0x000000010d6d1562 chromedriver + 2909538
+12  chromedriver                        0x000000010d6d27cc chromedriver + 2914252
+13  chromedriver                        0x000000010d6a5f41 chromedriver + 2731841
+14  chromedriver                        0x000000010d6d2c9f chromedriver + 2915487
+15  chromedriver                        0x000000010d6b648c chromedriver + 2798732
+16  chromedriver                        0x000000010d6eac68 chromedriver + 3013736
+17  chromedriver                        0x000000010d6eadf1 chromedriver + 3014129
+18  chromedriver                        0x000000010d6fbb68 chromedriver + 3083112
+19  libsystem_pthread.dylib             0x00007fff2057e954 _pthread_start + 224
+20  libsystem_pthread.dylib             0x00007fff2057a4a7 thread_start + 15
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 92
+Current browser version is 91.0.4472.114 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:7:f30a:a40c:8cf0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010d6f5eb9 chromedriver + 3059385
+1   chromedriver                        0x000000010de01963 chromedriver + 10447203
+2   chromedriver                        0x000000010d4352e8 chromedriver + 172776
+3   chromedriver                        0x000000010d45b16d chromedriver + 328045
+4   chromedriver                        0x000000010d456ca6 chromedriver + 310438
+5   chromedriver                        0x000000010d4537be chromedriver + 296894
+6   chromedriver                        0x000000010d48c54b chromedriver + 529739
+7   chromedriver                        0x000000010d486b83 chromedriver + 506755
+8   chromedriver                        0x000000010d45d480 chromedriver + 337024
+9   chromedriver                        0x000000010d45e615 chromedriver + 341525
+10  chromedriver                        0x000000010d6c0d9f chromedriver + 2842015
+11  chromedriver                        0x000000010d6d1562 chromedriver + 2909538
+12  chromedriver                        0x000000010d6d27cc chromedriver + 2914252
+13  chromedriver                        0x000000010d6a5f41 chromedriver + 2731841
+14  chromedriver                        0x000000010d6d2c9f chromedriver + 2915487
+15  chromedriver                        0x000000010d6b648c chromedriver + 2798732
+16  chromedriver                        0x000000010d6eac68 chromedriver + 3013736
+17  chromedriver                        0x000000010d6eadf1 chromedriver + 3014129
+18  chromedriver                        0x000000010d6fbb68 chromedriver + 3083112
+19  libsystem_pthread.dylib             0x00007fff2057e954 _pthread_start + 224
+20  libsystem_pthread.dylib             0x00007fff2057a4a7 thread_start + 15
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+at eqcare.factories.BrowserFactory.getApplication(BrowserFactory.java:101)
+at eqcare.pages.copy.BaseClass.setUp(BaseClass.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="loginAsCM(java.lang.String)[pri:1, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T14:58:30 EDT" name="loginAsCM" finished-at="2021-07-15T14:58:54 EDT" duration-ms="24436" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[85]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="loginAsCM(java.lang.String)[pri:1, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3]" started-at="2021-07-15T18:34:08 EDT" name="loginAsCM" finished-at="2021-07-15T18:34:08 EDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 92
+Current browser version is 91.0.4472.114 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:7:f30a:a40c:8cf0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010d6f5eb9 chromedriver + 3059385
+1   chromedriver                        0x000000010de01963 chromedriver + 10447203
+2   chromedriver                        0x000000010d4352e8 chromedriver + 172776
+3   chromedriver                        0x000000010d45b16d chromedriver + 328045
+4   chromedriver                        0x000000010d456ca6 chromedriver + 310438
+5   chromedriver                        0x000000010d4537be chromedriver + 296894
+6   chromedriver                        0x000000010d48c54b chromedriver + 529739
+7   chromedriver                        0x000000010d486b83 chromedriver + 506755
+8   chromedriver                        0x000000010d45d480 chromedriver + 337024
+9   chromedriver                        0x000000010d45e615 chromedriver + 341525
+10  chromedriver                        0x000000010d6c0d9f chromedriver + 2842015
+11  chromedriver                        0x000000010d6d1562 chromedriver + 2909538
+12  chromedriver                        0x000000010d6d27cc chromedriver + 2914252
+13  chromedriver                        0x000000010d6a5f41 chromedriver + 2731841
+14  chromedriver                        0x000000010d6d2c9f chromedriver + 2915487
+15  chromedriver                        0x000000010d6b648c chromedriver + 2798732
+16  chromedriver                        0x000000010d6eac68 chromedriver + 3013736
+17  chromedriver                        0x000000010d6eadf1 chromedriver + 3014129
+18  chromedriver                        0x000000010d6fbb68 chromedriver + 3083112
+19  libsystem_pthread.dylib             0x00007fff2057e954 _pthread_start + 224
+20  libsystem_pthread.dylib             0x00007fff2057a4a7 thread_start + 15
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 92
+Current browser version is 91.0.4472.114 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:7:f30a:a40c:8cf0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010d6f5eb9 chromedriver + 3059385
+1   chromedriver                        0x000000010de01963 chromedriver + 10447203
+2   chromedriver                        0x000000010d4352e8 chromedriver + 172776
+3   chromedriver                        0x000000010d45b16d chromedriver + 328045
+4   chromedriver                        0x000000010d456ca6 chromedriver + 310438
+5   chromedriver                        0x000000010d4537be chromedriver + 296894
+6   chromedriver                        0x000000010d48c54b chromedriver + 529739
+7   chromedriver                        0x000000010d486b83 chromedriver + 506755
+8   chromedriver                        0x000000010d45d480 chromedriver + 337024
+9   chromedriver                        0x000000010d45e615 chromedriver + 341525
+10  chromedriver                        0x000000010d6c0d9f chromedriver + 2842015
+11  chromedriver                        0x000000010d6d1562 chromedriver + 2909538
+12  chromedriver                        0x000000010d6d27cc chromedriver + 2914252
+13  chromedriver                        0x000000010d6a5f41 chromedriver + 2731841
+14  chromedriver                        0x000000010d6d2c9f chromedriver + 2915487
+15  chromedriver                        0x000000010d6b648c chromedriver + 2798732
+16  chromedriver                        0x000000010d6eac68 chromedriver + 3013736
+17  chromedriver                        0x000000010d6eadf1 chromedriver + 3014129
+18  chromedriver                        0x000000010d6fbb68 chromedriver + 3083112
+19  libsystem_pthread.dylib             0x00007fff2057e954 _pthread_start + 224
+20  libsystem_pthread.dylib             0x00007fff2057a4a7 thread_start + 15
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+at eqcare.factories.BrowserFactory.getApplication(BrowserFactory.java:101)
+at eqcare.pages.copy.BaseClass.setUp(BaseClass.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAsCM -->
-        <test-method signature="loginAsDRNurse(java.lang.String)[pri:1, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T14:58:54 EDT" name="loginAsDRNurse" finished-at="2021-07-15T14:58:54 EDT" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[85]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="loginAsDRNurse(java.lang.String)[pri:1, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3]" started-at="2021-07-15T18:34:08 EDT" name="loginAsDRNurse" finished-at="2021-07-15T18:34:08 EDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 92
+Current browser version is 91.0.4472.114 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:7:f30a:a40c:8cf0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010d6f5eb9 chromedriver + 3059385
+1   chromedriver                        0x000000010de01963 chromedriver + 10447203
+2   chromedriver                        0x000000010d4352e8 chromedriver + 172776
+3   chromedriver                        0x000000010d45b16d chromedriver + 328045
+4   chromedriver                        0x000000010d456ca6 chromedriver + 310438
+5   chromedriver                        0x000000010d4537be chromedriver + 296894
+6   chromedriver                        0x000000010d48c54b chromedriver + 529739
+7   chromedriver                        0x000000010d486b83 chromedriver + 506755
+8   chromedriver                        0x000000010d45d480 chromedriver + 337024
+9   chromedriver                        0x000000010d45e615 chromedriver + 341525
+10  chromedriver                        0x000000010d6c0d9f chromedriver + 2842015
+11  chromedriver                        0x000000010d6d1562 chromedriver + 2909538
+12  chromedriver                        0x000000010d6d27cc chromedriver + 2914252
+13  chromedriver                        0x000000010d6a5f41 chromedriver + 2731841
+14  chromedriver                        0x000000010d6d2c9f chromedriver + 2915487
+15  chromedriver                        0x000000010d6b648c chromedriver + 2798732
+16  chromedriver                        0x000000010d6eac68 chromedriver + 3013736
+17  chromedriver                        0x000000010d6eadf1 chromedriver + 3014129
+18  chromedriver                        0x000000010d6fbb68 chromedriver + 3083112
+19  libsystem_pthread.dylib             0x00007fff2057e954 _pthread_start + 224
+20  libsystem_pthread.dylib             0x00007fff2057a4a7 thread_start + 15
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 92
+Current browser version is 91.0.4472.114 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:7:f30a:a40c:8cf0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010d6f5eb9 chromedriver + 3059385
+1   chromedriver                        0x000000010de01963 chromedriver + 10447203
+2   chromedriver                        0x000000010d4352e8 chromedriver + 172776
+3   chromedriver                        0x000000010d45b16d chromedriver + 328045
+4   chromedriver                        0x000000010d456ca6 chromedriver + 310438
+5   chromedriver                        0x000000010d4537be chromedriver + 296894
+6   chromedriver                        0x000000010d48c54b chromedriver + 529739
+7   chromedriver                        0x000000010d486b83 chromedriver + 506755
+8   chromedriver                        0x000000010d45d480 chromedriver + 337024
+9   chromedriver                        0x000000010d45e615 chromedriver + 341525
+10  chromedriver                        0x000000010d6c0d9f chromedriver + 2842015
+11  chromedriver                        0x000000010d6d1562 chromedriver + 2909538
+12  chromedriver                        0x000000010d6d27cc chromedriver + 2914252
+13  chromedriver                        0x000000010d6a5f41 chromedriver + 2731841
+14  chromedriver                        0x000000010d6d2c9f chromedriver + 2915487
+15  chromedriver                        0x000000010d6b648c chromedriver + 2798732
+16  chromedriver                        0x000000010d6eac68 chromedriver + 3013736
+17  chromedriver                        0x000000010d6eadf1 chromedriver + 3014129
+18  chromedriver                        0x000000010d6fbb68 chromedriver + 3083112
+19  libsystem_pthread.dylib             0x00007fff2057e954 _pthread_start + 224
+20  libsystem_pthread.dylib             0x00007fff2057a4a7 thread_start + 15
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+at eqcare.factories.BrowserFactory.getApplication(BrowserFactory.java:101)
+at eqcare.pages.copy.BaseClass.setUp(BaseClass.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginAsDRNurse -->
-        <test-method signature="loginToClinicApplication(java.lang.String)[pri:2, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T14:58:54 EDT" name="loginToClinicApplication" finished-at="2021-07-15T14:59:23 EDT" duration-ms="28279" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[85]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="loginToClinicApplication(java.lang.String)[pri:2, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3]" started-at="2021-07-15T18:34:08 EDT" name="loginToClinicApplication" finished-at="2021-07-15T18:34:08 EDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 92
+Current browser version is 91.0.4472.114 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:7:f30a:a40c:8cf0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010d6f5eb9 chromedriver + 3059385
+1   chromedriver                        0x000000010de01963 chromedriver + 10447203
+2   chromedriver                        0x000000010d4352e8 chromedriver + 172776
+3   chromedriver                        0x000000010d45b16d chromedriver + 328045
+4   chromedriver                        0x000000010d456ca6 chromedriver + 310438
+5   chromedriver                        0x000000010d4537be chromedriver + 296894
+6   chromedriver                        0x000000010d48c54b chromedriver + 529739
+7   chromedriver                        0x000000010d486b83 chromedriver + 506755
+8   chromedriver                        0x000000010d45d480 chromedriver + 337024
+9   chromedriver                        0x000000010d45e615 chromedriver + 341525
+10  chromedriver                        0x000000010d6c0d9f chromedriver + 2842015
+11  chromedriver                        0x000000010d6d1562 chromedriver + 2909538
+12  chromedriver                        0x000000010d6d27cc chromedriver + 2914252
+13  chromedriver                        0x000000010d6a5f41 chromedriver + 2731841
+14  chromedriver                        0x000000010d6d2c9f chromedriver + 2915487
+15  chromedriver                        0x000000010d6b648c chromedriver + 2798732
+16  chromedriver                        0x000000010d6eac68 chromedriver + 3013736
+17  chromedriver                        0x000000010d6eadf1 chromedriver + 3014129
+18  chromedriver                        0x000000010d6fbb68 chromedriver + 3083112
+19  libsystem_pthread.dylib             0x00007fff2057e954 _pthread_start + 224
+20  libsystem_pthread.dylib             0x00007fff2057a4a7 thread_start + 15
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 92
+Current browser version is 91.0.4472.114 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:7:f30a:a40c:8cf0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010d6f5eb9 chromedriver + 3059385
+1   chromedriver                        0x000000010de01963 chromedriver + 10447203
+2   chromedriver                        0x000000010d4352e8 chromedriver + 172776
+3   chromedriver                        0x000000010d45b16d chromedriver + 328045
+4   chromedriver                        0x000000010d456ca6 chromedriver + 310438
+5   chromedriver                        0x000000010d4537be chromedriver + 296894
+6   chromedriver                        0x000000010d48c54b chromedriver + 529739
+7   chromedriver                        0x000000010d486b83 chromedriver + 506755
+8   chromedriver                        0x000000010d45d480 chromedriver + 337024
+9   chromedriver                        0x000000010d45e615 chromedriver + 341525
+10  chromedriver                        0x000000010d6c0d9f chromedriver + 2842015
+11  chromedriver                        0x000000010d6d1562 chromedriver + 2909538
+12  chromedriver                        0x000000010d6d27cc chromedriver + 2914252
+13  chromedriver                        0x000000010d6a5f41 chromedriver + 2731841
+14  chromedriver                        0x000000010d6d2c9f chromedriver + 2915487
+15  chromedriver                        0x000000010d6b648c chromedriver + 2798732
+16  chromedriver                        0x000000010d6eac68 chromedriver + 3013736
+17  chromedriver                        0x000000010d6eadf1 chromedriver + 3014129
+18  chromedriver                        0x000000010d6fbb68 chromedriver + 3083112
+19  libsystem_pthread.dylib             0x00007fff2057e954 _pthread_start + 224
+20  libsystem_pthread.dylib             0x00007fff2057a4a7 thread_start + 15
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+at eqcare.factories.BrowserFactory.getApplication(BrowserFactory.java:101)
+at eqcare.pages.copy.BaseClass.setUp(BaseClass.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToClinicApplication -->
-        <test-method signature="loginToPatient(java.lang.String, java.lang.String)[pri:3, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T14:59:23 EDT" name="loginToPatient" finished-at="2021-07-15T14:59:56 EDT" duration-ms="33435" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sdhall@eqcare.com]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[secret]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="loginToPatient(java.lang.String, java.lang.String)[pri:3, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3]" started-at="2021-07-15T18:34:08 EDT" name="loginToPatient" finished-at="2021-07-15T18:34:08 EDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 92
+Current browser version is 91.0.4472.114 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:7:f30a:a40c:8cf0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010d6f5eb9 chromedriver + 3059385
+1   chromedriver                        0x000000010de01963 chromedriver + 10447203
+2   chromedriver                        0x000000010d4352e8 chromedriver + 172776
+3   chromedriver                        0x000000010d45b16d chromedriver + 328045
+4   chromedriver                        0x000000010d456ca6 chromedriver + 310438
+5   chromedriver                        0x000000010d4537be chromedriver + 296894
+6   chromedriver                        0x000000010d48c54b chromedriver + 529739
+7   chromedriver                        0x000000010d486b83 chromedriver + 506755
+8   chromedriver                        0x000000010d45d480 chromedriver + 337024
+9   chromedriver                        0x000000010d45e615 chromedriver + 341525
+10  chromedriver                        0x000000010d6c0d9f chromedriver + 2842015
+11  chromedriver                        0x000000010d6d1562 chromedriver + 2909538
+12  chromedriver                        0x000000010d6d27cc chromedriver + 2914252
+13  chromedriver                        0x000000010d6a5f41 chromedriver + 2731841
+14  chromedriver                        0x000000010d6d2c9f chromedriver + 2915487
+15  chromedriver                        0x000000010d6b648c chromedriver + 2798732
+16  chromedriver                        0x000000010d6eac68 chromedriver + 3013736
+17  chromedriver                        0x000000010d6eadf1 chromedriver + 3014129
+18  chromedriver                        0x000000010d6fbb68 chromedriver + 3083112
+19  libsystem_pthread.dylib             0x00007fff2057e954 _pthread_start + 224
+20  libsystem_pthread.dylib             0x00007fff2057a4a7 thread_start + 15
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 92
+Current browser version is 91.0.4472.114 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:7:f30a:a40c:8cf0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010d6f5eb9 chromedriver + 3059385
+1   chromedriver                        0x000000010de01963 chromedriver + 10447203
+2   chromedriver                        0x000000010d4352e8 chromedriver + 172776
+3   chromedriver                        0x000000010d45b16d chromedriver + 328045
+4   chromedriver                        0x000000010d456ca6 chromedriver + 310438
+5   chromedriver                        0x000000010d4537be chromedriver + 296894
+6   chromedriver                        0x000000010d48c54b chromedriver + 529739
+7   chromedriver                        0x000000010d486b83 chromedriver + 506755
+8   chromedriver                        0x000000010d45d480 chromedriver + 337024
+9   chromedriver                        0x000000010d45e615 chromedriver + 341525
+10  chromedriver                        0x000000010d6c0d9f chromedriver + 2842015
+11  chromedriver                        0x000000010d6d1562 chromedriver + 2909538
+12  chromedriver                        0x000000010d6d27cc chromedriver + 2914252
+13  chromedriver                        0x000000010d6a5f41 chromedriver + 2731841
+14  chromedriver                        0x000000010d6d2c9f chromedriver + 2915487
+15  chromedriver                        0x000000010d6b648c chromedriver + 2798732
+16  chromedriver                        0x000000010d6eac68 chromedriver + 3013736
+17  chromedriver                        0x000000010d6eadf1 chromedriver + 3014129
+18  chromedriver                        0x000000010d6fbb68 chromedriver + 3083112
+19  libsystem_pthread.dylib             0x00007fff2057e954 _pthread_start + 224
+20  libsystem_pthread.dylib             0x00007fff2057a4a7 thread_start + 15
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+at eqcare.factories.BrowserFactory.getApplication(BrowserFactory.java:101)
+at eqcare.pages.copy.BaseClass.setUp(BaseClass.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToPatient -->
-        <test-method signature="functionsWithCM()[pri:4, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T14:59:56 EDT" name="functionsWithCM" finished-at="2021-07-15T15:01:03 EDT" duration-ms="66828" status="PASS">
+        <test-method signature="functionsWithCM()[pri:4, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3]" started-at="2021-07-15T18:34:08 EDT" name="functionsWithCM" finished-at="2021-07-15T18:34:08 EDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 92
+Current browser version is 91.0.4472.114 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:7:f30a:a40c:8cf0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010d6f5eb9 chromedriver + 3059385
+1   chromedriver                        0x000000010de01963 chromedriver + 10447203
+2   chromedriver                        0x000000010d4352e8 chromedriver + 172776
+3   chromedriver                        0x000000010d45b16d chromedriver + 328045
+4   chromedriver                        0x000000010d456ca6 chromedriver + 310438
+5   chromedriver                        0x000000010d4537be chromedriver + 296894
+6   chromedriver                        0x000000010d48c54b chromedriver + 529739
+7   chromedriver                        0x000000010d486b83 chromedriver + 506755
+8   chromedriver                        0x000000010d45d480 chromedriver + 337024
+9   chromedriver                        0x000000010d45e615 chromedriver + 341525
+10  chromedriver                        0x000000010d6c0d9f chromedriver + 2842015
+11  chromedriver                        0x000000010d6d1562 chromedriver + 2909538
+12  chromedriver                        0x000000010d6d27cc chromedriver + 2914252
+13  chromedriver                        0x000000010d6a5f41 chromedriver + 2731841
+14  chromedriver                        0x000000010d6d2c9f chromedriver + 2915487
+15  chromedriver                        0x000000010d6b648c chromedriver + 2798732
+16  chromedriver                        0x000000010d6eac68 chromedriver + 3013736
+17  chromedriver                        0x000000010d6eadf1 chromedriver + 3014129
+18  chromedriver                        0x000000010d6fbb68 chromedriver + 3083112
+19  libsystem_pthread.dylib             0x00007fff2057e954 _pthread_start + 224
+20  libsystem_pthread.dylib             0x00007fff2057a4a7 thread_start + 15
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 92
+Current browser version is 91.0.4472.114 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:7:f30a:a40c:8cf0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010d6f5eb9 chromedriver + 3059385
+1   chromedriver                        0x000000010de01963 chromedriver + 10447203
+2   chromedriver                        0x000000010d4352e8 chromedriver + 172776
+3   chromedriver                        0x000000010d45b16d chromedriver + 328045
+4   chromedriver                        0x000000010d456ca6 chromedriver + 310438
+5   chromedriver                        0x000000010d4537be chromedriver + 296894
+6   chromedriver                        0x000000010d48c54b chromedriver + 529739
+7   chromedriver                        0x000000010d486b83 chromedriver + 506755
+8   chromedriver                        0x000000010d45d480 chromedriver + 337024
+9   chromedriver                        0x000000010d45e615 chromedriver + 341525
+10  chromedriver                        0x000000010d6c0d9f chromedriver + 2842015
+11  chromedriver                        0x000000010d6d1562 chromedriver + 2909538
+12  chromedriver                        0x000000010d6d27cc chromedriver + 2914252
+13  chromedriver                        0x000000010d6a5f41 chromedriver + 2731841
+14  chromedriver                        0x000000010d6d2c9f chromedriver + 2915487
+15  chromedriver                        0x000000010d6b648c chromedriver + 2798732
+16  chromedriver                        0x000000010d6eac68 chromedriver + 3013736
+17  chromedriver                        0x000000010d6eadf1 chromedriver + 3014129
+18  chromedriver                        0x000000010d6fbb68 chromedriver + 3083112
+19  libsystem_pthread.dylib             0x00007fff2057e954 _pthread_start + 224
+20  libsystem_pthread.dylib             0x00007fff2057a4a7 thread_start + 15
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+at eqcare.factories.BrowserFactory.getApplication(BrowserFactory.java:101)
+at eqcare.pages.copy.BaseClass.setUp(BaseClass.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- functionsWithCM -->
-        <test-method signature="patientChats()[pri:5, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T15:01:03 EDT" name="patientChats" finished-at="2021-07-15T15:01:12 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="8638" status="PASS">
+        <test-method signature="patientChats()[pri:5, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3]" started-at="2021-07-15T18:34:08 EDT" name="patientChats" finished-at="2021-07-15T18:34:08 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method ClinicPeerji.patientChats()[pri:5, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method ClinicPeerji.patientChats()[pri:5, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- patientChats -->
-        <test-method signature="transferPatientToNurse()[pri:6, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T15:01:12 EDT" name="transferPatientToNurse" finished-at="2021-07-15T15:01:39 EDT" duration-ms="27214" status="PASS">
+        <test-method signature="transferPatientToNurse()[pri:6, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3]" started-at="2021-07-15T18:34:08 EDT" name="transferPatientToNurse" finished-at="2021-07-15T18:34:08 EDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[session not created: This version of ChromeDriver only supports Chrome version 92
+Current browser version is 91.0.4472.114 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:7:f30a:a40c:8cf0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010d6f5eb9 chromedriver + 3059385
+1   chromedriver                        0x000000010de01963 chromedriver + 10447203
+2   chromedriver                        0x000000010d4352e8 chromedriver + 172776
+3   chromedriver                        0x000000010d45b16d chromedriver + 328045
+4   chromedriver                        0x000000010d456ca6 chromedriver + 310438
+5   chromedriver                        0x000000010d4537be chromedriver + 296894
+6   chromedriver                        0x000000010d48c54b chromedriver + 529739
+7   chromedriver                        0x000000010d486b83 chromedriver + 506755
+8   chromedriver                        0x000000010d45d480 chromedriver + 337024
+9   chromedriver                        0x000000010d45e615 chromedriver + 341525
+10  chromedriver                        0x000000010d6c0d9f chromedriver + 2842015
+11  chromedriver                        0x000000010d6d1562 chromedriver + 2909538
+12  chromedriver                        0x000000010d6d27cc chromedriver + 2914252
+13  chromedriver                        0x000000010d6a5f41 chromedriver + 2731841
+14  chromedriver                        0x000000010d6d2c9f chromedriver + 2915487
+15  chromedriver                        0x000000010d6b648c chromedriver + 2798732
+16  chromedriver                        0x000000010d6eac68 chromedriver + 3013736
+17  chromedriver                        0x000000010d6eadf1 chromedriver + 3014129
+18  chromedriver                        0x000000010d6fbb68 chromedriver + 3083112
+19  libsystem_pthread.dylib             0x00007fff2057e954 _pthread_start + 224
+20  libsystem_pthread.dylib             0x00007fff2057a4a7 thread_start + 15
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 92
+Current browser version is 91.0.4472.114 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:7:f30a:a40c:8cf0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: 0   chromedriver                        0x000000010d6f5eb9 chromedriver + 3059385
+1   chromedriver                        0x000000010de01963 chromedriver + 10447203
+2   chromedriver                        0x000000010d4352e8 chromedriver + 172776
+3   chromedriver                        0x000000010d45b16d chromedriver + 328045
+4   chromedriver                        0x000000010d456ca6 chromedriver + 310438
+5   chromedriver                        0x000000010d4537be chromedriver + 296894
+6   chromedriver                        0x000000010d48c54b chromedriver + 529739
+7   chromedriver                        0x000000010d486b83 chromedriver + 506755
+8   chromedriver                        0x000000010d45d480 chromedriver + 337024
+9   chromedriver                        0x000000010d45e615 chromedriver + 341525
+10  chromedriver                        0x000000010d6c0d9f chromedriver + 2842015
+11  chromedriver                        0x000000010d6d1562 chromedriver + 2909538
+12  chromedriver                        0x000000010d6d27cc chromedriver + 2914252
+13  chromedriver                        0x000000010d6a5f41 chromedriver + 2731841
+14  chromedriver                        0x000000010d6d2c9f chromedriver + 2915487
+15  chromedriver                        0x000000010d6b648c chromedriver + 2798732
+16  chromedriver                        0x000000010d6eac68 chromedriver + 3013736
+17  chromedriver                        0x000000010d6eadf1 chromedriver + 3014129
+18  chromedriver                        0x000000010d6fbb68 chromedriver + 3083112
+19  libsystem_pthread.dylib             0x00007fff2057e954 _pthread_start + 224
+20  libsystem_pthread.dylib             0x00007fff2057a4a7 thread_start + 15
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:181)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:168)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:157)
+at eqcare.factories.BrowserFactory.getApplication(BrowserFactory.java:101)
+at eqcare.pages.copy.BaseClass.setUp(BaseClass.java:39)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:63)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:348)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:176)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:122)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- transferPatientToNurse -->
-        <test-method signature="navigateToNurse(java.lang.String)[pri:7, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T15:01:39 EDT" name="navigateToNurse" finished-at="2021-07-15T15:02:52 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="73075" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[85]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="navigateToNurse(java.lang.String)[pri:7, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3]" started-at="2021-07-15T18:34:08 EDT" name="navigateToNurse" finished-at="2021-07-15T18:34:08 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method ClinicPeerji.navigateToNurse(java.lang.String)[pri:7, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method ClinicPeerji.navigateToNurse(java.lang.String)[pri:7, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToNurse -->
-        <test-method signature="patientChatsToNurse()[pri:8, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T15:02:52 EDT" name="patientChatsToNurse" finished-at="2021-07-15T15:03:00 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="8304" status="PASS">
+        <test-method signature="patientChatsToNurse()[pri:8, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3]" started-at="2021-07-15T18:34:08 EDT" name="patientChatsToNurse" finished-at="2021-07-15T18:34:08 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method ClinicPeerji.patientChatsToNurse()[pri:8, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method ClinicPeerji.patientChatsToNurse()[pri:8, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- patientChatsToNurse -->
-        <test-method signature="transferPatientToCoctor()[pri:9, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T15:03:00 EDT" name="transferPatientToCoctor" finished-at="2021-07-15T15:03:27 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="27199" status="PASS">
+        <test-method signature="transferPatientToCoctor()[pri:9, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3]" started-at="2021-07-15T18:34:08 EDT" name="transferPatientToCoctor" finished-at="2021-07-15T18:34:08 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method ClinicPeerji.transferPatientToCoctor()[pri:9, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method ClinicPeerji.transferPatientToCoctor()[pri:9, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- transferPatientToCoctor -->
-        <test-method signature="navigateToDr(java.lang.String)[pri:10, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T15:03:27 EDT" name="navigateToDr" finished-at="2021-07-15T15:04:35 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="68087" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[85]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="navigateToDr(java.lang.String)[pri:10, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3]" started-at="2021-07-15T18:34:08 EDT" name="navigateToDr" finished-at="2021-07-15T18:34:08 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method ClinicPeerji.navigateToDr(java.lang.String)[pri:10, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method ClinicPeerji.navigateToDr(java.lang.String)[pri:10, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToDr -->
-        <test-method signature="patientChatsToDoctor()[pri:11, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T15:04:35 EDT" name="patientChatsToDoctor" finished-at="2021-07-15T15:04:44 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="8237" status="PASS">
+        <test-method signature="patientChatsToDoctor()[pri:11, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3]" started-at="2021-07-15T18:34:08 EDT" name="patientChatsToDoctor" finished-at="2021-07-15T18:34:08 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method ClinicPeerji.patientChatsToDoctor()[pri:11, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method ClinicPeerji.patientChatsToDoctor()[pri:11, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- patientChatsToDoctor -->
-        <test-method signature="doctorEndConsultation()[pri:12, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T15:04:44 EDT" name="doctorEndConsultation" finished-at="2021-07-15T15:05:01 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="17465" status="PASS">
+        <test-method signature="doctorEndConsultation()[pri:12, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3]" started-at="2021-07-15T18:34:08 EDT" name="doctorEndConsultation" finished-at="2021-07-15T18:34:08 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method ClinicPeerji.doctorEndConsultation()[pri:12, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method ClinicPeerji.doctorEndConsultation()[pri:12, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doctorEndConsultation -->
-        <test-method signature="feedback()[pri:13, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T15:05:01 EDT" name="feedback" finished-at="2021-07-15T15:05:06 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="5359" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feedback -->
-        <test-method signature="inbox()[pri:14, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T15:05:06 EDT" name="inbox" finished-at="2021-07-15T15:05:25 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="18406" status="PASS">
+        <test-method signature="inbox()[pri:14, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3]" started-at="2021-07-15T18:34:08 EDT" name="inbox" finished-at="2021-07-15T18:34:08 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method ClinicPeerji.inbox()[pri:14, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method ClinicPeerji.inbox()[pri:14, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- inbox -->
-        <test-method is-config="true" signature="tearDown(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:eqcare.peerjitestcases.copy.ClinicPeerji@649bec2e]" started-at="2021-07-15T15:05:25 EDT" name="tearDown" finished-at="2021-07-15T15:05:34 EDT" duration-ms="8813" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://av.eqserviceqa1.eqcaredev.com/login]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[eq]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[https://clinic.eqserviceqa1.eqcaredev.com/login]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[clinic]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="feedback()[pri:13, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3]" started-at="2021-07-15T18:34:08 EDT" name="feedback" finished-at="2021-07-15T18:34:08 EDT" depends-on-methods="eqcare.peerjitestcases.copy.ClinicPeerji.loginToClinicApplication" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method ClinicPeerji.feedback()[pri:13, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method ClinicPeerji.feedback()[pri:13, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:101)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feedback -->
+        <test-method is-config="true" signature="tearDown(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3]" started-at="2021-07-15T18:34:08 EDT" name="tearDown" finished-at="1969-12-31T19:00:00 EST" duration-ms="-1626388448853" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

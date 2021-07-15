@@ -1,6 +1,7 @@
 AutomatedTests/TC1_PatientToClinicCall.class
 eqcare/pages/ClinicPage.class
 eqcare/pages/ForgotPasswordPage.class
+eqcare/pages/ClinicPageAV.class
 eqcare/helper/Utility.class
 LifeJourneyAutomatedTests/TC2_RegisterationScenarios.class
 eqcare/pages/LoginPage.class
