@@ -24,7 +24,7 @@ public class LJStartVisit extends BaseClass {
 	// Patient Start Visit
 	@Parameters({ "Email", "Password" })
 	@Test(priority = 0)
-	public void loginToPatientApplication(String email, String password) throws Exception {
+	public void loginToApplication(String email, String password) throws Exception {
 
 		login = PageFactory.initElements(driver, LoginPage.class);
 
