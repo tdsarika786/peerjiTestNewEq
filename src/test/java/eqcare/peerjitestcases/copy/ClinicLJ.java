@@ -87,7 +87,7 @@ public class ClinicLJ extends BaseClass {
 		clinic1.navigateToClinicVisitPage(VisitNo, ClinicAppURL);
 
 		try {
-			//clinic1.takePatient();
+			clinic1.takePatient();
 		}
 
 		catch (Exception ex) {
@@ -95,7 +95,7 @@ public class ClinicLJ extends BaseClass {
 
 			clinic1.navigateToClinicVisitPage(VisitNo, ClinicAppURL);
 
-			clinic1.takePatient();
+			//clinic1.takePatient();
 
 		}
 		System.out.println("------------------");
@@ -298,7 +298,7 @@ public class ClinicLJ extends BaseClass {
 
 		try {
 
-			//clinic3.takePatient();
+			clinic3.takePatient();
 		}
 
 		catch (Exception ex) {
@@ -306,7 +306,7 @@ public class ClinicLJ extends BaseClass {
 
 			clinic3.navigateToClinicVisitPage(VisitNo, ClinicAppURL);
 
-			clinic3.takePatient();
+			//clinic3.takePatient();
 		}
 
 		System.out.println("Log:INFO- 10. Doctor Take Patient");
@@ -352,7 +352,7 @@ public class ClinicLJ extends BaseClass {
 
 
 	@Test(priority = 22, dependsOnMethods = "loginToClinicApplication")
-	public void functionsWithDR5() {
+	public void functionsWithDR4() {
 
 		clinic3.submitChats("PeerjiAuto Test Chat DR-1");
 

@@ -121,28 +121,65 @@ public class ClinicEQ extends BaseClass {
 
 	}
 
-	@Test(priority = 4)
-	public void functionsWithCM() {
+	@Test(priority = 4, dependsOnMethods = "loginToClinicApplication")
+	public void functionsWithCM1() {
 
 		clinic1.addComments("sai-pic CM", "sai-pic.jpeg");
 
 		clinic1.addComments("Sample CM", "sample.pdf");
 
+		System.out.println("------------------");
+
+		System.out.println("Log:INFO- 4.1 CM with patients - comments");
+
+	}
+
+	@Test(priority = 5, dependsOnMethods = "loginToClinicApplication")
+	public void functionsWithCM2() {
+
 		clinic1.cannedResponses();
+
+		System.out.println("------------------");
+
+		System.out.println("Log:INFO- 4.2 CM with patients - canned responses");
+
+	}
+
+	@Test(priority = 6, dependsOnMethods = "loginToClinicApplication")
+	public void functionsWithCM3() {
 
 		clinic1.patientsTab();
 
-		clinic1.visitTab();
+		clinic1.visitTabLJ();
+
+		System.out.println("------------------");
+
+		System.out.println("Log:INFO- 4.3 CM with patients - visit, patient tabs");
+
+	}
+
+	@Test(priority = 7, dependsOnMethods = "loginToClinicApplication")
+	public void functionsWithCM4() {
 
 		clinic1.createIncident();
 
-		clinic1.submitChats("PeerjiAuto Test Chat CM-1");
-		
-		System.out.println("--------------------");
+		System.out.println("------------------");
 
-		System.out.println("Log:INFO- 4. CM with patients - comments, canned, create incidents, chats");
+		System.out.println("Log:INFO- 4.4 CM with patients - comments, canned, create incidents, chats");
 
 	}
+
+	@Test(priority = 8, dependsOnMethods = "loginToClinicApplication")
+	public void functionsWithCM5() {
+
+		clinic1.submitChats("PeerjiAuto Test Chat CM-1");
+
+		System.out.println("------------------");
+
+		System.out.println("Log:INFO- 4.5 CM with patients - chats");
+
+	}
+
 
 	@Test(priority = 5, dependsOnMethods = "loginToClinicApplication")
 	public void patientChats() {
@@ -180,24 +217,61 @@ public class ClinicEQ extends BaseClass {
 
 			clinic2.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
 		}
+		
+
+		System.out.println("Log:INFO- 7. Nurse with patients");
+
+
+	}
+	
+	@Test(priority = 12, dependsOnMethods = "loginToClinicApplication")
+	public void functionsWithNR1() {
+
 		clinic2.addComments("sai-pic Nurse", "sai-pic.jpeg");
 
 		clinic2.addComments("Sample Nurse", "sample.pdf");
 
+		System.out.println("------------------");
+
+		System.out.println("Log:INFO- 7.1 Nurse with patients - comments");
+
+	}
+
+	@Test(priority = 13, dependsOnMethods = "loginToClinicApplication")
+	public void functionsWithNR2() {
+
 		clinic2.cannedResponses();
+
+		System.out.println("------------------");
+
+		System.out.println("Log:INFO- 7.2 Nurse with patients - canned responses");
+
+	}
+
+	@Test(priority = 14, dependsOnMethods = "loginToClinicApplication")
+	public void functionsWithNR3() {
 
 		clinic2.patientsTab();
 
-		clinic2.visitTab();
+		clinic2.visitTabLJ();
 
-		clinic2.submitChats("PeerjiAuto Test Chat Nurse-3");
-		
-		System.out.println("--------------------");
+		System.out.println("------------------");
 
-		System.out.println("Log:INFO- 7. Nurse with patients - comments, canned, create incidents, chats");
-
+		System.out.println("Log:INFO- 7.3 CM with patients - visit, patient tabs");
 
 	}
+
+	@Test(priority = 15, dependsOnMethods = "loginToClinicApplication")
+	public void functionsWithNR4() {
+
+		clinic2.submitChats("PeerjiAuto Test Chat Nurse-3");
+
+		System.out.println("------------------");
+
+		System.out.println("Log:INFO- 7.4 Nurse with patients - chats");
+
+	}
+
 
 	@Test(priority = 8, dependsOnMethods = "loginToClinicApplication")
 	public void patientChatsToNurse() {
@@ -239,21 +313,57 @@ public class ClinicEQ extends BaseClass {
 			clinic3.takePatient();
 		}
 
+		
+		System.out.println("Log:INFO- 10. Doctor with patients ");
+
+	}
+	
+	@Test(priority = 19, dependsOnMethods = "loginToClinicApplication")
+	public void functionsWithDR1() {
+
 		clinic3.addComments("sai-pic DR", "sai-pic.jpeg");
 
 		clinic3.addComments("Sample DR", "sample.pdf");
 
+		System.out.println("------------------");
+
+		System.out.println("Log:INFO- 10.1 DR with patients - comments");
+
+	}
+
+	@Test(priority = 20, dependsOnMethods = "loginToClinicApplication")
+	public void functionsWithDR2() {
+
 		clinic3.cannedResponses();
+
+		System.out.println("------------------");
+
+		System.out.println("Log:INFO- 10.2 DR with patients - canned responses");
+
+	}
+
+	@Test(priority = 21, dependsOnMethods = "loginToClinicApplication")
+	public void functionsWithDR3() {
 
 		clinic3.patientsTab();
 
-		clinic3.visitTab();
+		clinic3.visitTabLJ();
 
-		clinic3.submitChats("PeerjiAuto Test Chat DR-5");
-		
-		System.out.println("--------------------");
+		System.out.println("------------------");
 
-		System.out.println("Log:INFO- 10. Doctor with patients - comments, canned, create incidents, chats");
+		System.out.println("Log:INFO- 10.3 DR with patients - visit, patient tabs");
+
+	}
+
+
+	@Test(priority = 22, dependsOnMethods = "loginToClinicApplication")
+	public void functionsWithDR5() {
+
+		clinic3.submitChats("PeerjiAuto Test Chat DR-1");
+
+		System.out.println("------------------");
+
+		System.out.println("Log:INFO- 10.4 DR with patients - chats");
 
 	}
 
