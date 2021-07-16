@@ -64,15 +64,15 @@ public class ClinicEQ extends BaseClass {
 	}
 
 	// CM Test
-	@Parameters({ "VisitNo" })
+	@Parameters({ "VisitNo","ClinicAppURL" })
 	@Test(priority = 2)
-	public void loginToClinicApplication(String VisitNo) throws Exception {
+	public void loginToClinicApplication(String VisitNo,String ClinicAppURL) throws Exception {
 
 		clinic1 = PageFactory.initElements(driver1, ClinicPage.class);
 
 		clinic1.loginToApplication("anku@eqcare.com", "secret");
 
-		clinic1.navigateToClinicVisitPage(VisitNo);
+		clinic3.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
 
 		try {
 			clinic1.takePatient();
@@ -81,7 +81,7 @@ public class ClinicEQ extends BaseClass {
 		catch (Exception ex) {
 			clinic1.loginToApplication("anku@eqcare.com", "secret");
 
-			clinic1.navigateToClinicVisitPage(VisitNo);
+			clinic3.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
 
 			clinic1.takePatient();
 
@@ -154,11 +154,11 @@ public class ClinicEQ extends BaseClass {
 	
 	
 
-	@Parameters({ "VisitNo" })
+	@Parameters({ "VisitNo","ClinicAppURL" })
 	@Test(priority = 7, dependsOnMethods = "loginToClinicApplication")
-	public void navigateToNurse(String VisitNo) throws Exception {
+	public void navigateToNurse(String VisitNo,String ClinicAppURL) throws Exception {
 
-		clinic2.navigateToClinicVisitPage(VisitNo);
+		clinic3.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
 		try {
 			clinic2.addComments("sai-pic", "sai-pic.jpeg");
 		}
@@ -166,7 +166,7 @@ public class ClinicEQ extends BaseClass {
 		catch (Exception ex) {
 			clinic2.loginToApplication("nurse@eqcare.com", "secret");
 
-			clinic2.navigateToClinicVisitPage(VisitNo);
+			clinic3.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
 		}
 		clinic2.addComments("sai-pic Nurse", "sai-pic.jpeg");
 
@@ -199,11 +199,11 @@ public class ClinicEQ extends BaseClass {
 
 	}
 
-	@Parameters({ "VisitNo" })
+	@Parameters({ "VisitNo", "ClinicAppURL" })
 	@Test(priority = 10, dependsOnMethods = "loginToClinicApplication")
-	public void navigateToDr(String VisitNo) throws Exception {
+	public void navigateToDr(String VisitNo, String ClinicAppURL) throws Exception {
 
-		clinic3.navigateToClinicVisitPage(VisitNo);
+		clinic3.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
 		try {
 
 			clinic3.takePatient();
@@ -212,7 +212,7 @@ public class ClinicEQ extends BaseClass {
 		catch (Exception ex) {
 			clinic3.loginToApplication("doctor@eqcare.com", "secret");
 
-			clinic3.navigateToClinicVisitPage(VisitNo);
+			clinic3.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
 
 			clinic3.takePatient();
 		}
