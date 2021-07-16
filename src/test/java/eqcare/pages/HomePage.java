@@ -36,7 +36,7 @@ public class HomePage extends runWithAttachments {
 
 	By continueToVisitText = By.xpath("//a[contains(text(), 'Continue To Visit')]");
 
-	By homeLink = By.xpath("//*[@id=\"app\"]/div[1]/div[1]/div[1]/div[2]/a[1]");
+	By homeLink = By.xpath("//span[contains(text(),'Home')]//parent::div//parent::a");
 
 	By logoutButton = By.xpath("//a[contains(text(), 'Logout')]");
 

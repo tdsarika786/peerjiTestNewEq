@@ -226,7 +226,7 @@ public class ClinicPageAV {
 			Utility.navigateToURL(driver, URL);
 			
 
-			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA1"+URL);
+			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA1 "+URL);
 		}
 
 		else if (ClinicAppURL.contains("qa2")) {
@@ -235,7 +235,7 @@ public class ClinicPageAV {
 
 			Utility.navigateToURL(driver, URL);
 			
-			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA2"+URL);
+			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA2 "+URL);
 		}
 
 		else if (ClinicAppURL.contains("qa3")) {
@@ -244,7 +244,7 @@ public class ClinicPageAV {
 
 			Utility.navigateToURL(driver, URL);
 			
-			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA3"+URL);
+			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA3 "+URL);
 		}
 
 		else if (ClinicAppURL.contains("qa4")) {
@@ -253,11 +253,11 @@ public class ClinicPageAV {
 
 			Utility.navigateToURL(driver, URL);
 			
-			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA4"+URL);
+			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA4 "+URL);
 		}
 		
 		else{
-			System.out.println("********* ERROR in NAVIGATING " + ClinicAppURL);
+			System.out.println("********* ERROR in NAVIGATING VISIT ********* " + ClinicAppURL);
 		}
 
 		

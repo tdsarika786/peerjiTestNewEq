@@ -68,6 +68,8 @@ public class ClinicLJ extends BaseClass {
 		
 		System.out.println(TEXT_GREEN + "Log:INFO- *******PEERJI START LJ*********************");
 		
+		System.out.println();System.out.println();
+		
 		System.out.println(TEXT_GREEN + "Log:INFO- 1. Login as Nurse and Doctor");
 	}
 
@@ -94,7 +96,7 @@ public class ClinicLJ extends BaseClass {
 			clinic1.takePatient();
 
 		}
-		
+		System.out.println();
 		System.out.println(TEXT_GREEN + "Log:INFO- 2. Login as CM and navigate to Visit page and take patient");
 	}
 
@@ -111,8 +113,10 @@ public class ClinicLJ extends BaseClass {
 		clinic.nextStep();
 
 		clinic.navigateToPatientLJVisitPage();
+		
+		System.out.println();
 
-		System.out.println(TEXT_GREEN +"TEXT_GREEN +Log:INFO- 3. PATIENT VISIT STARTS");
+		System.out.println(TEXT_GREEN + "Log:INFO- 3. PATIENT VISIT STARTS");
 
 	}
 
@@ -132,6 +136,8 @@ public class ClinicLJ extends BaseClass {
 		clinic1.createIncident();
 
 		clinic1.submitChats("PeerjiAuto Test Chat CM-1");
+		
+		System.out.println();
 
 		System.out.println(TEXT_GREEN +"Log:INFO- 4. CM with patients - comments, canned, create incidents, chats");
 
@@ -142,12 +148,17 @@ public class ClinicLJ extends BaseClass {
 
 		clinic.patientSubmitChats("Patient with CM-2");
 		
+		System.out.println();
+		
 		System.out.println(TEXT_GREEN +"Log:INFO- 5. Patient submit chats to CM");
 	}
 
 	@Test(priority = 6, dependsOnMethods = "loginToClinicApplication")
 	public void transferPatientToNurse() {
+		
 		clinic1.transferToNurse();
+		
+		System.out.println();
 
 		System.out.println(TEXT_GREEN +"Log:INFO- 6. CM TRANSFER PATIENT TO NURSE");
 	}
@@ -180,8 +191,10 @@ public class ClinicLJ extends BaseClass {
 		clinic2.visitTabLJ();
 
 		clinic2.submitChats("PeerjiAuto Test Chat Nurse-3");
+		
+		System.out.println();
 
-		System.out.println(TEXT_GREEN +"Log:INFO-7.  Nurse with patients - comments, canned, create incidents, chats");
+		System.out.println(TEXT_GREEN +"Log:INFO- 7.  Nurse with patients - comments, canned, create incidents, chats");
 
 	}
 
@@ -190,6 +203,8 @@ public class ClinicLJ extends BaseClass {
 
 		clinic.patientSubmitChats("Patient with Nurse-4");
 		
+		System.out.println();
+		
 		System.out.println(TEXT_GREEN +"Log:INFO- 8. Patient submit chats to Nurse");
 	}
 
@@ -197,8 +212,10 @@ public class ClinicLJ extends BaseClass {
 	public void transferPatientToCoctor() {
 
 		clinic2.transferToDoctor();
+		
+		System.out.println();
 
-		System.out.println(TEXT_GREEN +"Log:INFO 9.- NURSE TRANSFER PATIENT TO DOCTOR");
+		System.out.println(TEXT_GREEN +"Log:INFO 9. NURSE TRANSFER PATIENT TO DOCTOR");
 
 	}
 
@@ -220,18 +237,32 @@ public class ClinicLJ extends BaseClass {
 
 			clinic3.takePatient();
 		}
+		
+		System.out.println("10.1 DR take patient"); 
 
 		clinic3.addComments("sai-pic DR", "sai-pic.jpeg");
 
 		clinic3.addComments("Sample DR", "sample.pdf");
+		
+		System.out.println("10.2 DR comments"); 
 
 		clinic3.cannedResponses();
+		
+		System.out.println("10.3 DR canned responses"); 
 
 		clinic3.patientsTab();
+		
+		System.out.println("10.4 DR patient tab"); 
 
 		clinic3.visitTabLJ();
+		
+		System.out.println("10.5 DR visit tab"); 
 
 		clinic3.submitChats("PeerjiAuto Test Chat DR-5");
+		
+		System.out.println("10.6 DR submit chats"); 
+		
+		System.out.println();
 
 		System.out.println(TEXT_GREEN +"Log:INFO- 10. Doctor with patients - comments, canned, create incidents, chats");
 
@@ -249,6 +280,8 @@ public class ClinicLJ extends BaseClass {
 	public void doctorEndConsultation() {
 
 		clinic3.endConsultation();
+		
+		System.out.println();
 
 		System.out.println(TEXT_GREEN +"Log:INFO - 12. DOCTOR END CONSULTATION");
 
@@ -260,8 +293,10 @@ public class ClinicLJ extends BaseClass {
 		feedback = PageFactory.initElements(driver, FeedbackPage.class);
 
 		feedback.ratingProvidedDRCMNurse();
+		
+		System.out.println();
 
-		System.out.println(TEXT_GREEN +"Log:13. INFO- Feedback provided");
+		System.out.println(TEXT_GREEN +"Log:INFO- 13. Feedback provided");
 
 	}
 
@@ -274,7 +309,11 @@ public class ClinicLJ extends BaseClass {
 
 		inbox.verifyMyInboxTabs();
 
-		System.out.println("Log:INFO- Inbox redirected");
+		System.out.println(); 
+		
+		System.out.println("Log:INFO- 14. Inbox redirected");
+		
+		System.out.println();System.out.println();
 		
 		System.out.println(TEXT_GREEN +"Log:INFO- **********END LJ******************");
 		
