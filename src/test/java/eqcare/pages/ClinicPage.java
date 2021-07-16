@@ -234,22 +234,22 @@ public class ClinicPage {
 
 	public void navigateToClinicVisitPage(String visitNo, String ClinicAppURL) {
 
-		if (ClinicAppURL.equalsIgnoreCase("qa1")) {
+		if (ClinicAppURL.contains("qa1")) {
 
 			Utility.navigateToURL(driver, "https://clinic.eqserviceqa1.eqcaredev.com/visits/" + visitNo);
 		}
 
-		if (ClinicAppURL.equalsIgnoreCase("qa2")) {
+		if (ClinicAppURL.contains("qa2")) {
 
 			Utility.navigateToURL(driver, "https://clinic.eqserviceqa2.eqcaredev.com/visits/" + visitNo);
 		}
 
-		if (ClinicAppURL.equalsIgnoreCase("qa3")) {
+		if (ClinicAppURL.contains("qa3")) {
 
 			Utility.navigateToURL(driver, "https://clinic.eqserviceqa3.eqcaredev.com/visits/" + visitNo);
 		}
 
-		if (ClinicAppURL.equalsIgnoreCase("qa4")) {
+		if (ClinicAppURL.contains("qa4")) {
 
 			Utility.navigateToURL(driver, "https://clinic.eqserviceqa4.eqcaredev.com/visits/" + visitNo);
 		}
