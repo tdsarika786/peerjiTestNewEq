@@ -508,6 +508,8 @@ public class NovaHomePage {
 			Select objTokenLabelP = new Select(roleElement);
 
 			objTokenLabelP.selectByValue("practitioner");
+			
+			
 
 		}
 
@@ -570,6 +572,8 @@ public class NovaHomePage {
 
 		JavascriptExecutor executorSub = (JavascriptExecutor) driver;
 		executorSub.executeScript("arguments[0].click()", buttonSub);
+		
+		Utility.wait(7);
 	}
 
 	public void createEmployer1733(String searchEmployer, String CoverageToken, String CoverageType) {
