@@ -158,6 +158,10 @@ public class ClinicPage {
 
 	// Resume CAll
 
+	By resumeLifeJourneyVisit = By.xpath("//a[contains(text(), 'Resume the LifeJourney™ Visit')]");
+	
+	// Resume CAll Life Journey
+
 	By resumeCall = By.xpath("//a[contains(text(), 'Resume the Call')]");
 
 	By nextStepText = By.xpath("//a[contains(text(), 'Next Step')]");
@@ -206,6 +210,17 @@ public class ClinicPage {
 		// "https://patient.eqserviceqa1.eqcaredev.com/visits/67");
 
 		Utility.waitForWebElement(driver, resumeCall).click();
+
+		Utility.wait(10);
+
+	}
+	
+	public void navigateToPatientLJVisitPage() {
+
+		// Utility.navigateToURL(driver,
+		// "https://patient.eqserviceqa1.eqcaredev.com/visits/67");
+
+		Utility.waitForWebElement(driver, resumeLifeJourneyVisit).click();
 
 		Utility.wait(10);
 
@@ -386,6 +401,24 @@ public class ClinicPage {
 		executor3.executeScript("arguments[0].click()", button3);
 
 		Utility.wait(10);
+
+	}
+	
+	public void visitTabLJ() {
+
+		Utility.waitForWebElement(driver, visitLink).click();
+
+		Utility.waitForWebElement(driver, visitTypeLabel);
+
+		Utility.waitForWebElement(driver, reasonvVisitLabel);
+
+		Utility.waitForWebElement(driver, filesLabel);
+
+		WebElement button1 = driver.findElement(By.xpath("(//input[@type='file'])[1]"));
+
+		button1.sendKeys(System.getProperty("user.dir") + "/TestData/sai-pic.jpeg");
+
+		Utility.wait(7);
 
 	}
 
