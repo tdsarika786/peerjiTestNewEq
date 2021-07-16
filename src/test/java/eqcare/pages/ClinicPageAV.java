@@ -217,10 +217,50 @@ public class ClinicPageAV {
 
 	}
 
-	public void navigateToClinicVisitPage(String visitNo) {
+	public void navigateToClinicVisitPage(String visitNo, String ClinicAppURL) {
 
-		Utility.navigateToURL(driver, "https://clinic.eqserviceqa2.eqcaredev.com/visits/" + visitNo);
+		if (ClinicAppURL.contains("qa1")) {
+			
+			String URL="https://clinic.eqserviceqa1.eqcaredev.com/visits/"+visitNo;
 
+			Utility.navigateToURL(driver, URL);
+			
+
+			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA1"+URL);
+		}
+
+		else if (ClinicAppURL.contains("qa2")) {
+			
+			String URL="https://clinic.eqserviceqa2.eqcaredev.com/visits/"+visitNo;
+
+			Utility.navigateToURL(driver, URL);
+			
+			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA2"+URL);
+		}
+
+		else if (ClinicAppURL.contains("qa3")) {
+
+			String URL="https://clinic.eqserviceqa3.eqcaredev.com/visits/"+visitNo;
+
+			Utility.navigateToURL(driver, URL);
+			
+			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA3"+URL);
+		}
+
+		else if (ClinicAppURL.contains("qa4")) {
+
+			String URL="https://clinic.eqserviceqa4.eqcaredev.com/visits/"+visitNo;
+
+			Utility.navigateToURL(driver, URL);
+			
+			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA4"+URL);
+		}
+		
+		else{
+			System.out.println("********* ERROR in NAVIGATING " + ClinicAppURL);
+		}
+
+		
 	}
 
 	public void takePatient() {

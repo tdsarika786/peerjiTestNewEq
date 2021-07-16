@@ -235,36 +235,47 @@ public class ClinicPage {
 	public void navigateToClinicVisitPage(String visitNo, String ClinicAppURL) {
 
 		if (ClinicAppURL.contains("qa1")) {
+			
+			String URL="https://clinic.eqserviceqa1.eqcaredev.com/visits/"+visitNo;
 
-			Utility.navigateToURL(driver, "https://clinic.eqserviceqa1.eqcaredev.com/visits/"+visitNo);
+			Utility.navigateToURL(driver, URL);
 			
 
-			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA1"+ClinicAppURL);
+			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA1"+URL);
 		}
 
-		if (ClinicAppURL.contains("qa2")) {
-
-			Utility.navigateToURL(driver, "https://clinic.eqserviceqa2.eqcaredev.com/visits/"+visitNo);
+		else if (ClinicAppURL.contains("qa2")) {
 			
-			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA2"+ClinicAppURL);
+			String URL="https://clinic.eqserviceqa2.eqcaredev.com/visits/"+visitNo;
+
+			Utility.navigateToURL(driver, URL);
+			
+			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA2"+URL);
 		}
 
-		if (ClinicAppURL.contains("qa3")) {
+		else if (ClinicAppURL.contains("qa3")) {
 
-			Utility.navigateToURL(driver, "https://clinic.eqserviceqa3.eqcaredev.com/visits/"+visitNo);
+			String URL="https://clinic.eqserviceqa3.eqcaredev.com/visits/"+visitNo;
+
+			Utility.navigateToURL(driver, URL);
 			
-			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA3"+ClinicAppURL);
+			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA3"+URL);
 		}
 
-		if (ClinicAppURL.contains("qa4")) {
+		else if (ClinicAppURL.contains("qa4")) {
 
-			Utility.navigateToURL(driver, "https://clinic.eqserviceqa4.eqcaredev.com/visits/"+visitNo);
+			String URL="https://clinic.eqserviceqa4.eqcaredev.com/visits/"+visitNo;
+
+			Utility.navigateToURL(driver, URL);
 			
-			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA4"+ClinicAppURL);
+			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA4"+URL);
 		}
 		
-		System.out.println("********* ERROR in NAVIGATING " + ClinicAppURL);
+		else{
+			System.out.println("********* ERROR in NAVIGATING " + ClinicAppURL);
+		}
 
+		
 	}
 
 	public void takePatient() {

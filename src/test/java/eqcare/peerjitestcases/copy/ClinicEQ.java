@@ -72,7 +72,7 @@ public class ClinicEQ extends BaseClass {
 
 		clinic1.loginToApplication("anku@eqcare.com", "secret");
 
-		clinic3.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
+		clinic1.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
 
 		try {
 			clinic1.takePatient();
@@ -81,7 +81,7 @@ public class ClinicEQ extends BaseClass {
 		catch (Exception ex) {
 			clinic1.loginToApplication("anku@eqcare.com", "secret");
 
-			clinic3.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
+			clinic1.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
 
 			clinic1.takePatient();
 
@@ -158,7 +158,8 @@ public class ClinicEQ extends BaseClass {
 	@Test(priority = 7, dependsOnMethods = "loginToClinicApplication")
 	public void navigateToNurse(String VisitNo,String ClinicAppURL) throws Exception {
 
-		clinic3.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
+		clinic2.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
+		
 		try {
 			clinic2.addComments("sai-pic", "sai-pic.jpeg");
 		}
@@ -166,7 +167,7 @@ public class ClinicEQ extends BaseClass {
 		catch (Exception ex) {
 			clinic2.loginToApplication("nurse@eqcare.com", "secret");
 
-			clinic3.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
+			clinic2.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
 		}
 		clinic2.addComments("sai-pic Nurse", "sai-pic.jpeg");
 
@@ -217,7 +218,7 @@ public class ClinicEQ extends BaseClass {
 			clinic3.takePatient();
 		}
 
-		clinic2.addComments("sai-pic DR", "sai-pic.jpeg");
+		clinic3.addComments("sai-pic DR", "sai-pic.jpeg");
 
 		clinic3.addComments("Sample DR", "sample.pdf");
 

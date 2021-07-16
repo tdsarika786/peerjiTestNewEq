@@ -76,7 +76,7 @@ public class ClinicAV extends BaseClass {
 
 		clinic1.loginToApplication("cm@eqcare.com", "secret");
 
-		clinic1.navigateToClinicVisitPage(VisitNo);
+		//clinic1.navigateToClinicVisitPage(VisitNo);
 
 		try {
 			clinic1.takePatient();
@@ -85,7 +85,7 @@ public class ClinicAV extends BaseClass {
 		catch (Exception ex) {
 			clinic1.loginToApplication("cm@eqcare.com", "secret");
 
-		     clinic1.navigateToClinicVisitPage(VisitNo);
+		    // clinic1.navigateToClinicVisitPage(VisitNo);
 
 			clinic1.takePatient();
 
@@ -156,7 +156,7 @@ public class ClinicAV extends BaseClass {
 	@Test(priority = 7, dependsOnMethods = "loginToClinicApplication")
 	public void navigateToNurse(String VisitNo) throws Exception {
 
-		clinic2.navigateToClinicVisitPage(VisitNo);
+		//clinic2.navigateToClinicVisitPage(VisitNo);
 		try {
 			clinic2.addComments("sai-pic", "sai-pic.jpeg");
 		}
@@ -164,7 +164,7 @@ public class ClinicAV extends BaseClass {
 		catch (Exception ex) {
 			clinic2.loginToApplication("nurse@eqcare.com", "secret");
 
-			clinic2.navigateToClinicVisitPage(VisitNo);
+			//clinic2.navigateToClinicVisitPage(VisitNo);
 		}
 		clinic2.addComments("sai-pic Nurse", "sai-pic.jpeg");
 
@@ -202,7 +202,7 @@ public class ClinicAV extends BaseClass {
 	@Test(priority = 10, dependsOnMethods = "loginToClinicApplication")
 	public void navigateToDr(String VisitNo) throws Exception {
 
-		clinic3.navigateToClinicVisitPage(VisitNo);
+		//clinic3.navigateToClinicVisitPage(VisitNo);
 		try {
 
 			clinic3.takePatient();
@@ -211,7 +211,7 @@ public class ClinicAV extends BaseClass {
 		catch (Exception ex) {
 			clinic3.loginToApplication("doctor@eqcare.com", "secret");
 
-			clinic3.navigateToClinicVisitPage(VisitNo);
+		//	clinic3.navigateToClinicVisitPage(VisitNo);
 
 			clinic3.takePatient();
 		}
