@@ -101,13 +101,13 @@ public class ClinicLJ extends BaseClass {
 
 		login.loginToApplication(email, password);
 
-		clinic.navigateToPatientVisitPage();
+		clinic.navigateToPatientLJVisitPage();
 
 		home.navigateToHomePage();
 
 		clinic.nextStep();
 
-		clinic.navigateToPatientVisitPage();
+		clinic.navigateToPatientLJVisitPage();
 		
 		System.out.println();
 		
