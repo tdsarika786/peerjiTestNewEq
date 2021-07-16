@@ -236,23 +236,34 @@ public class ClinicPage {
 
 		if (ClinicAppURL.contains("qa1")) {
 
-			Utility.navigateToURL(driver, "https://clinic.eqserviceqa1.eqcaredev.com/visits/" + visitNo);
+			Utility.navigateToURL(driver, "https://clinic.eqserviceqa1.eqcaredev.com/visits/"+visitNo);
+			
+
+			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA1"+ClinicAppURL);
 		}
 
 		if (ClinicAppURL.contains("qa2")) {
 
-			Utility.navigateToURL(driver, "https://clinic.eqserviceqa2.eqcaredev.com/visits/" + visitNo);
+			Utility.navigateToURL(driver, "https://clinic.eqserviceqa2.eqcaredev.com/visits/"+visitNo);
+			
+			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA2"+ClinicAppURL);
 		}
 
 		if (ClinicAppURL.contains("qa3")) {
 
-			Utility.navigateToURL(driver, "https://clinic.eqserviceqa3.eqcaredev.com/visits/" + visitNo);
+			Utility.navigateToURL(driver, "https://clinic.eqserviceqa3.eqcaredev.com/visits/"+visitNo);
+			
+			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA3"+ClinicAppURL);
 		}
 
 		if (ClinicAppURL.contains("qa4")) {
 
-			Utility.navigateToURL(driver, "https://clinic.eqserviceqa4.eqcaredev.com/visits/" + visitNo);
+			Utility.navigateToURL(driver, "https://clinic.eqserviceqa4.eqcaredev.com/visits/"+visitNo);
+			
+			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA4"+ClinicAppURL);
 		}
+		
+		System.out.println("********* ERROR in NAVIGATING " + ClinicAppURL);
 
 	}
 
