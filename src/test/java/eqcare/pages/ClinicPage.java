@@ -311,10 +311,7 @@ public class ClinicPage {
 
 		// Utility.waitForWebElement(driver, commentsLink).click();
 
-		WebElement buttontest = driver.findElement(By.xpath("//a[contains(text(), 'Comments')]"));
-
-		JavascriptExecutor executortest = (JavascriptExecutor) driver;
-		executortest.executeScript("arguments[0].click()", buttontest);
+		driver.findElement(By.xpath("//html")).click();
 
 		WebElement uploadFileElement = driver.findElement(By.xpath("(//input[@type='file'])[2]"));
 		JavascriptExecutor executorFile = (JavascriptExecutor) driver;
@@ -508,10 +505,7 @@ public class ClinicPage {
 
 		// Utility.waitForWebElement(driver, commentsLink).click();
 
-		WebElement buttontest = driver.findElement(By.xpath("//a[contains(text(), 'Comments')]"));
-
-		JavascriptExecutor executortest = (JavascriptExecutor) driver;
-		executortest.executeScript("arguments[0].click()", buttontest);
+		driver.findElement(By.xpath("//html")).click();
 
 		WebElement uploadFileElement = driver.findElement(By.xpath("(//input[@type='file'])[2]"));
 		JavascriptExecutor executorFile = (JavascriptExecutor) driver;

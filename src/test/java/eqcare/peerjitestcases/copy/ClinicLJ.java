@@ -114,7 +114,7 @@ public class ClinicLJ extends BaseClass {
 
 		//clinic.navigateToPatientLJVisitPage();
 		
-		System.out.println("----------------------------");
+		System.out.println("------------------");
 
 		System.out.println("Log:INFO- 3. PATIENT VISIT STARTS");
 
@@ -137,7 +137,7 @@ public class ClinicLJ extends BaseClass {
 
 		clinic1.submitChats("PeerjiAuto Test Chat CM-1");
 		
-		System.out.println("-------------------");
+		System.out.println("------------------");
 
 		System.out.println("Log:INFO- 4. CM with patients - comments, canned, create incidents, chats");
 
@@ -148,7 +148,7 @@ public class ClinicLJ extends BaseClass {
 
 		clinic.patientSubmitChats("Patient with CM-2");
 		
-		System.out.println("-----------------");
+		System.out.println("------------------");
 		
 		System.out.println("Log:INFO- 5. Patient submit chats to CM");
 	}
@@ -158,7 +158,7 @@ public class ClinicLJ extends BaseClass {
 		
 		clinic1.transferToNurse();
 		
-		System.out.println("----------------");
+		System.out.println("------------------");
 
 		System.out.println("Log:INFO- 6. CM TRANSFER PATIENT TO NURSE");
 	}
@@ -192,7 +192,7 @@ public class ClinicLJ extends BaseClass {
 
 		clinic2.submitChats("PeerjiAuto Test Chat Nurse-3");
 		
-		System.out.println("-----------------------");
+		System.out.println("------------------");
 
 		System.out.println("Log:INFO- 7.  Nurse with patients - comments, canned, create incidents, chats");
 
@@ -213,7 +213,7 @@ public class ClinicLJ extends BaseClass {
 
 		clinic2.transferToDoctor();
 		
-		System.out.println("-----------------");
+		System.out.println("------------------");
 
 		System.out.println("Log:INFO 9. NURSE TRANSFER PATIENT TO DOCTOR");
 
@@ -237,7 +237,7 @@ public class ClinicLJ extends BaseClass {
 
 			clinic3.takePatient();
 		}
-		System.out.println();
+		System.out.println("------------------");
 		
 		System.out.println("10.1 DR take patient"); 
 
