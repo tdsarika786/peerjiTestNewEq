@@ -66,11 +66,11 @@ public class ClinicLJ extends BaseClass {
 		
 		System.out.println();System.out.println();
 		
-		System.out.println(TEXT_GREEN + "Log:INFO- *******PEERJI START LJ*********************");
+		System.out.println(" **************Log:INFO-PEERJI START LJ*********************");
 		
 		System.out.println();System.out.println();
 		
-		System.out.println(TEXT_GREEN + "Log:INFO- 1. Login as Nurse and Doctor");
+		System.out.println("Log:INFO- 1. Login as Nurse and Doctor");
 	}
 
 	// CM Test
@@ -96,8 +96,8 @@ public class ClinicLJ extends BaseClass {
 			clinic1.takePatient();
 
 		}
-		System.out.println();
-		System.out.println(TEXT_GREEN + "Log:INFO- 2. Login as CM and navigate to Visit page and take patient");
+		System.out.println("------------------");
+		System.out.println("Log:INFO- 2. Login as CM and navigate to Visit page and take patient");
 	}
 
 	@Parameters({ "Email", "Password" })
@@ -108,15 +108,15 @@ public class ClinicLJ extends BaseClass {
 
 		clinic.navigateToPatientLJVisitPage();
 
-		home.navigateToHomePage();
+		//home.navigateToHomePage();
 
-		clinic.nextStep();
+		//clinic.nextStep();
 
-		clinic.navigateToPatientLJVisitPage();
+		//clinic.navigateToPatientLJVisitPage();
 		
-		System.out.println();
+		System.out.println("----------------------------");
 
-		System.out.println(TEXT_GREEN + "Log:INFO- 3. PATIENT VISIT STARTS");
+		System.out.println("Log:INFO- 3. PATIENT VISIT STARTS");
 
 	}
 
@@ -137,9 +137,9 @@ public class ClinicLJ extends BaseClass {
 
 		clinic1.submitChats("PeerjiAuto Test Chat CM-1");
 		
-		System.out.println();
+		System.out.println("-------------------");
 
-		System.out.println(TEXT_GREEN +"Log:INFO- 4. CM with patients - comments, canned, create incidents, chats");
+		System.out.println("Log:INFO- 4. CM with patients - comments, canned, create incidents, chats");
 
 	}
 
@@ -148,9 +148,9 @@ public class ClinicLJ extends BaseClass {
 
 		clinic.patientSubmitChats("Patient with CM-2");
 		
-		System.out.println();
+		System.out.println("-----------------");
 		
-		System.out.println(TEXT_GREEN +"Log:INFO- 5. Patient submit chats to CM");
+		System.out.println("Log:INFO- 5. Patient submit chats to CM");
 	}
 
 	@Test(priority = 6, dependsOnMethods = "loginToClinicApplication")
@@ -158,9 +158,9 @@ public class ClinicLJ extends BaseClass {
 		
 		clinic1.transferToNurse();
 		
-		System.out.println();
+		System.out.println("----------------");
 
-		System.out.println(TEXT_GREEN +"Log:INFO- 6. CM TRANSFER PATIENT TO NURSE");
+		System.out.println("Log:INFO- 6. CM TRANSFER PATIENT TO NURSE");
 	}
 	
 	
@@ -192,9 +192,9 @@ public class ClinicLJ extends BaseClass {
 
 		clinic2.submitChats("PeerjiAuto Test Chat Nurse-3");
 		
-		System.out.println();
+		System.out.println("-----------------------");
 
-		System.out.println(TEXT_GREEN +"Log:INFO- 7.  Nurse with patients - comments, canned, create incidents, chats");
+		System.out.println("Log:INFO- 7.  Nurse with patients - comments, canned, create incidents, chats");
 
 	}
 
@@ -203,9 +203,9 @@ public class ClinicLJ extends BaseClass {
 
 		clinic.patientSubmitChats("Patient with Nurse-4");
 		
-		System.out.println();
+		System.out.println("------------------");
 		
-		System.out.println(TEXT_GREEN +"Log:INFO- 8. Patient submit chats to Nurse");
+		System.out.println("Log:INFO- 8. Patient submit chats to Nurse");
 	}
 
 	@Test(priority = 9, dependsOnMethods = "loginToClinicApplication")
@@ -213,9 +213,9 @@ public class ClinicLJ extends BaseClass {
 
 		clinic2.transferToDoctor();
 		
-		System.out.println();
+		System.out.println("-----------------");
 
-		System.out.println(TEXT_GREEN +"Log:INFO 9. NURSE TRANSFER PATIENT TO DOCTOR");
+		System.out.println("Log:INFO 9. NURSE TRANSFER PATIENT TO DOCTOR");
 
 	}
 
@@ -237,6 +237,7 @@ public class ClinicLJ extends BaseClass {
 
 			clinic3.takePatient();
 		}
+		System.out.println();
 		
 		System.out.println("10.1 DR take patient"); 
 
@@ -262,9 +263,9 @@ public class ClinicLJ extends BaseClass {
 		
 		System.out.println("10.6 DR submit chats"); 
 		
-		System.out.println();
+		System.out.println("-----------------------");
 
-		System.out.println(TEXT_GREEN +"Log:INFO- 10. Doctor with patients - comments, canned, create incidents, chats");
+		System.out.println("Log:INFO- 10. Doctor with patients - comments, canned, create incidents, chats");
 
 	}
 
@@ -273,17 +274,19 @@ public class ClinicLJ extends BaseClass {
 
 		clinic.patientSubmitChats("Patient with DR-6");
 		
-		System.out.println(TEXT_GREEN +"Log:INFO- 11. Patient submit chats to Doctor");
+		System.out.println("----------------");
+		
+		System.out.println("Log:INFO- 11. Patient submit chats to Doctor");
 	}
 
 	@Test(priority = 12, dependsOnMethods = "loginToClinicApplication")
 	public void doctorEndConsultation() {
 
-		clinic3.endConsultation();
+		//clinic3.endConsultation();
 		
-		System.out.println();
+		System.out.println("---------------");
 
-		System.out.println(TEXT_GREEN +"Log:INFO - 12. DOCTOR END CONSULTATION");
+		System.out.println("Log:INFO- 12. DOCTOR END CONSULTATION");
 
 	}
 
@@ -294,9 +297,9 @@ public class ClinicLJ extends BaseClass {
 
 		feedback.ratingProvidedDRCMNurse();
 		
-		System.out.println();
+		System.out.println("-----------------");
 
-		System.out.println(TEXT_GREEN +"Log:INFO- 13. Feedback provided");
+		System.out.println("Log:INFO- 13. Feedback provided");
 
 	}
 
@@ -309,13 +312,13 @@ public class ClinicLJ extends BaseClass {
 
 		inbox.verifyMyInboxTabs();
 
-		System.out.println(); 
+		System.out.println("------------------------"); 
 		
 		System.out.println("Log:INFO- 14. Inbox redirected");
 		
 		System.out.println();System.out.println();
 		
-		System.out.println(TEXT_GREEN +"Log:INFO- **********END LJ******************");
+		System.out.println("Log:INFO- **********END LJ******************");
 		
 		System.out.println(); System.out.println();
 
