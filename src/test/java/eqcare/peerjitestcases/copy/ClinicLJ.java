@@ -166,7 +166,7 @@ public class ClinicLJ extends BaseClass {
 
 		System.out.println("------------------");
 
-		System.out.println("Log:INFO- 4.4 CM with patients - comments, canned, create incidents, chats");
+		System.out.println("Log:INFO- 4.4 CM with patients - create incidents");
 
 	}
 

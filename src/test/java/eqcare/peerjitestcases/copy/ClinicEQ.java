@@ -150,7 +150,7 @@ public class ClinicEQ extends BaseClass {
 
 		clinic1.patientsTab();
 
-		clinic1.visitTabLJ();
+		clinic1.visitTab();
 
 		System.out.println("------------------");
 
@@ -217,7 +217,7 @@ public class ClinicEQ extends BaseClass {
 
 			clinic2.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
 		}
-		
+		System.out.println("--------------------");
 
 		System.out.println("Log:INFO- 7. Nurse with patients");
 
@@ -253,7 +253,7 @@ public class ClinicEQ extends BaseClass {
 
 		clinic2.patientsTab();
 
-		clinic2.visitTabLJ();
+		clinic2.visitTab();
 
 		System.out.println("------------------");
 
@@ -273,7 +273,7 @@ public class ClinicEQ extends BaseClass {
 	}
 
 
-	@Test(priority = 8, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 16, dependsOnMethods = "loginToClinicApplication")
 	public void patientChatsToNurse() {
 
 		clinic.patientSubmitChats("Patient with Nurse-4");
@@ -283,7 +283,7 @@ public class ClinicEQ extends BaseClass {
 		System.out.println("Log:INFO- 8. Patient submit chats to Nurse");
 	}
 
-	@Test(priority = 9, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 17, dependsOnMethods = "loginToClinicApplication")
 	public void transferPatientToCoctor() {
 
 		clinic2.transferToDoctor();
@@ -296,7 +296,7 @@ public class ClinicEQ extends BaseClass {
 	}
 
 	@Parameters({ "VisitNo", "ClinicAppURL" })
-	@Test(priority = 10, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 18, dependsOnMethods = "loginToClinicApplication")
 	public void navigateToDr(String VisitNo, String ClinicAppURL) throws Exception {
 
 		clinic3.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
@@ -312,7 +312,7 @@ public class ClinicEQ extends BaseClass {
 
 			clinic3.takePatient();
 		}
-
+		System.out.println("--------------------");
 		
 		System.out.println("Log:INFO- 10. Doctor with patients ");
 
@@ -347,7 +347,7 @@ public class ClinicEQ extends BaseClass {
 
 		clinic3.patientsTab();
 
-		clinic3.visitTabLJ();
+		clinic3.visitTab();
 
 		System.out.println("------------------");
 
@@ -367,7 +367,7 @@ public class ClinicEQ extends BaseClass {
 
 	}
 
-	@Test(priority = 11, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 23, dependsOnMethods = "loginToClinicApplication")
 	public void patientChatsToDoctor() {
 
 		clinic.patientSubmitChats("Patient with DR-6");
@@ -377,7 +377,7 @@ public class ClinicEQ extends BaseClass {
 		System.out.println("Log:INFO- 11. Patient submit chats to Doctor");
 	}
 
-	@Test(priority = 12, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 24, dependsOnMethods = "loginToClinicApplication")
 	public void doctorEndConsultation() {
 
 		clinic3.endConsultation();
@@ -388,7 +388,7 @@ public class ClinicEQ extends BaseClass {
 
 	}
 
-	@Test(priority = 13, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 25, dependsOnMethods = "loginToClinicApplication")
 	public void feedback() throws Exception {
 
 		feedback = PageFactory.initElements(driver, FeedbackPage.class);
@@ -401,7 +401,7 @@ public class ClinicEQ extends BaseClass {
 
 	}
 
-	@Test(priority = 14, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 26, dependsOnMethods = "loginToClinicApplication")
 	public void inbox() throws Exception {
 
 		inbox = PageFactory.initElements(driver, InboxPage.class);
