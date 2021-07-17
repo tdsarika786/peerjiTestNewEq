@@ -24,8 +24,6 @@ public class ClinicLJ extends BaseClass {
 	FeedbackPage feedback;
 	InboxPage inbox;
 
-	public static final String TEXT_GREEN = "\u001B[32m";
-
 	// Patient Start Visit
 	@Parameters({ "Email", "Password" })
 	@Test(priority = 0, enabled = false)
@@ -146,42 +144,52 @@ public class ClinicLJ extends BaseClass {
 
 	}
 
+
 	@Test(priority = 6, dependsOnMethods = "loginToClinicApplication")
 	public void functionsWithCM3() {
 
 		clinic1.patientsTab();
 
+		System.out.println("------------------");
+
+		System.out.println("Log:INFO- 4.3 CM with patients - patient tab check");
+
+	}
+	
+	@Test(priority = 7, dependsOnMethods = "loginToClinicApplication")
+	public void functionsWithCM4() {
+
 		clinic1.visitTabLJ();
 
 		System.out.println("------------------");
 
-		System.out.println("Log:INFO- 4.3 CM with patients - visit, patient tabs");
-
-	}
-
-	@Test(priority = 7, dependsOnMethods = "loginToClinicApplication")
-	public void functionsWithCM4() {
-
-		clinic1.createIncident();
-
-		System.out.println("------------------");
-
-		System.out.println("Log:INFO- 4.4 CM with patients - create incidents");
+		System.out.println("Log:INFO- 4.4 CM with patients - visit tab and upload files");
 
 	}
 
 	@Test(priority = 8, dependsOnMethods = "loginToClinicApplication")
 	public void functionsWithCM5() {
 
-		clinic1.submitChats("PeerjiAuto Test Chat CM-1");
+		clinic1.createIncident();
 
 		System.out.println("------------------");
 
-		System.out.println("Log:INFO- 4.5 CM with patients - chats");
+		System.out.println("Log:INFO- 4.5 CM with patients - create incidents");
 
 	}
 
 	@Test(priority = 9, dependsOnMethods = "loginToClinicApplication")
+	public void functionsWithCM6() {
+
+		clinic1.submitChats("PeerjiAuto Test Chat CM-1");
+
+		System.out.println("------------------");
+
+		System.out.println("Log:INFO- 4.6 CM with patients - chats");
+
+	}
+
+	@Test(priority = 10, dependsOnMethods = "loginToClinicApplication")
 	public void patientChats() {
 
 		clinic.patientSubmitChats("Patient with CM-2");
@@ -191,7 +199,7 @@ public class ClinicLJ extends BaseClass {
 		System.out.println("Log:INFO- 5. Patient submit chats to CM");
 	}
 
-	@Test(priority = 10, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 11, dependsOnMethods = "loginToClinicApplication")
 	public void transferPatientToNurse() {
 
 		clinic1.transferToNurse();
@@ -202,7 +210,7 @@ public class ClinicLJ extends BaseClass {
 	}
 
 	@Parameters({ "VisitNo", "ClinicAppURL" })
-	@Test(priority = 11, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 12, dependsOnMethods = "loginToClinicApplication")
 	public void navigateToNurse(String VisitNo, String ClinicAppURL) throws Exception {
 
 		clinic2.navigateToClinicVisitPage(VisitNo, ClinicAppURL);
@@ -223,7 +231,7 @@ public class ClinicLJ extends BaseClass {
 
 	}
 
-	@Test(priority = 12, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 13, dependsOnMethods = "loginToClinicApplication")
 	public void functionsWithNR1() {
 
 		clinic2.addComments("sai-pic Nurse", "sai-pic.jpeg");
@@ -236,7 +244,7 @@ public class ClinicLJ extends BaseClass {
 
 	}
 
-	@Test(priority = 13, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 14, dependsOnMethods = "loginToClinicApplication")
 	public void functionsWithNR2() {
 
 		clinic2.cannedResponses();
@@ -247,21 +255,30 @@ public class ClinicLJ extends BaseClass {
 
 	}
 
-	@Test(priority = 14, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 15, dependsOnMethods = "loginToClinicApplication")
 	public void functionsWithNR3() {
 
-		clinic2.patientsTab();
-
-		clinic2.visitTabLJ();
+		clinic1.patientsTab();
 
 		System.out.println("------------------");
 
-		System.out.println("Log:INFO- 7.3 CM with patients - visit, patient tabs");
+		System.out.println("Log:INFO- 7.4 CM with patients - patient tab check");
+
+	}
+	
+	@Test(priority = 16, dependsOnMethods = "loginToClinicApplication")
+	public void functionsWithNR4() {
+
+		clinic1.visitTabLJ();
+
+		System.out.println("------------------");
+
+		System.out.println("Log:INFO- 7.5 CM with patients - visit tab and upload files");
 
 	}
 
-	@Test(priority = 15, dependsOnMethods = "loginToClinicApplication")
-	public void functionsWithNR4() {
+	@Test(priority = 17, dependsOnMethods = "loginToClinicApplication")
+	public void functionsWithNR5() {
 
 		clinic2.submitChats("PeerjiAuto Test Chat Nurse-3");
 
@@ -271,7 +288,7 @@ public class ClinicLJ extends BaseClass {
 
 	}
 
-	@Test(priority = 16, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 18, dependsOnMethods = "loginToClinicApplication")
 	public void patientChatsToNurse() {
 
 		clinic.patientSubmitChats("Patient with Nurse-4");
@@ -281,7 +298,7 @@ public class ClinicLJ extends BaseClass {
 		System.out.println("Log:INFO- 8. Patient submit chats to Nurse");
 	}
 
-	@Test(priority = 17, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 19, dependsOnMethods = "loginToClinicApplication")
 	public void transferPatientToCoctor() {
 
 		clinic2.transferToDoctor();
@@ -293,7 +310,7 @@ public class ClinicLJ extends BaseClass {
 	}
 
 	@Parameters({ "VisitNo", "ClinicAppURL" })
-	@Test(priority = 18, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 20, dependsOnMethods = "loginToClinicApplication")
 	public void navigateToDr(String VisitNo, String ClinicAppURL) throws Exception {
 
 		clinic3.navigateToClinicVisitPage(VisitNo, ClinicAppURL);
@@ -315,7 +332,7 @@ public class ClinicLJ extends BaseClass {
 
 	}
 
-	@Test(priority = 19, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 21, dependsOnMethods = "loginToClinicApplication")
 	public void functionsWithDR1() {
 
 		clinic3.addComments("sai-pic DR", "sai-pic.jpeg");
@@ -328,7 +345,7 @@ public class ClinicLJ extends BaseClass {
 
 	}
 
-	@Test(priority = 20, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 22, dependsOnMethods = "loginToClinicApplication")
 	public void functionsWithDR2() {
 
 		clinic3.cannedResponses();
@@ -339,32 +356,41 @@ public class ClinicLJ extends BaseClass {
 
 	}
 
-	@Test(priority = 21, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 23, dependsOnMethods = "loginToClinicApplication")
 	public void functionsWithDR3() {
 
-		clinic3.patientsTab();
-
-		clinic3.visitTabLJ();
+		clinic1.patientsTab();
 
 		System.out.println("------------------");
 
-		System.out.println("Log:INFO- 10.3 DR with patients - visit, patient tabs");
+		System.out.println("Log:INFO- 10.3 CM with patients - patient tab check");
+
+	}
+	
+	@Test(priority = 24, dependsOnMethods = "loginToClinicApplication")
+	public void functionsWithDR4() {
+
+		clinic1.visitTabLJ();
+
+		System.out.println("------------------");
+
+		System.out.println("Log:INFO- 10.4 CM with patients - visit tab and upload files");
 
 	}
 
 
-	@Test(priority = 22, dependsOnMethods = "loginToClinicApplication")
-	public void functionsWithDR4() {
+	@Test(priority = 25, dependsOnMethods = "loginToClinicApplication")
+	public void functionsWithDR5() {
 
 		clinic3.submitChats("PeerjiAuto Test Chat DR-1");
 
 		System.out.println("------------------");
 
-		System.out.println("Log:INFO- 10.4 DR with patients - chats");
+		System.out.println("Log:INFO- 10.5 DR with patients - chats");
 
 	}
 
-	@Test(priority = 23, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 26, dependsOnMethods = "loginToClinicApplication")
 	public void patientChatsToDoctor() {
 
 		clinic.patientSubmitChats("Patient with DR-6");
@@ -374,7 +400,7 @@ public class ClinicLJ extends BaseClass {
 		System.out.println("Log:INFO- 11. Patient submit chats to Doctor");
 	}
 
-	@Test(priority = 24, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 27, dependsOnMethods = "loginToClinicApplication")
 	public void doctorEndConsultation() {
 
 		// clinic3.endConsultation();
@@ -385,7 +411,7 @@ public class ClinicLJ extends BaseClass {
 
 	}
 
-	@Test(priority = 25, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 28, dependsOnMethods = "loginToClinicApplication")
 	public void feedback() throws Exception {
 
 		feedback = PageFactory.initElements(driver, FeedbackPage.class);
@@ -398,7 +424,7 @@ public class ClinicLJ extends BaseClass {
 
 	}
 
-	@Test(priority = 26, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 29, dependsOnMethods = "loginToClinicApplication")
 	public void inbox() throws Exception {
 
 		inbox = PageFactory.initElements(driver, InboxPage.class);
