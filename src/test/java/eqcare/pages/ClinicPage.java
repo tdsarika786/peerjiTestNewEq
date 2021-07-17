@@ -111,6 +111,17 @@ public class ClinicPage {
 	By currentMedicationLabel = By.xpath("//p[contains(text(), 'Current medication')]");
 
 	By filesLabel = By.xpath("//div[contains(text(), 'Files')]");
+	
+	//Visit Status
+
+		By visitStatusLink = By.xpath("(//a[contains(text(), 'Visit Status')])");
+
+		By triageOutcomeLabel = By.xpath("//span[contains(text(), 'Triage')]");
+
+		By visitStatusTypeLabel = By.xpath("//span[contains(text(), 'Visit Type')]");
+		
+		By consultationOutcomeLabel = By.xpath("//span[contains(text(), 'Consultation Outcome:')]");
+		
 
 	// Canned Responses
 
@@ -663,8 +674,23 @@ public class ClinicPage {
 
 		// Utility.waitForWebElement(driver, transferToDoctor).click();
 
-		Utility.wait(20);
+		Utility.wait(7);
+
+	}
+	
+	public void visitStatus() {
+
+		Utility.waitForWebElement(driver, visitStatusLink).click();
+
+		Utility.waitForWebElement(driver, triageOutcomeLabel);
+
+		Utility.waitForWebElement(driver, visitStatusTypeLabel);
+
+		Utility.waitForWebElement(driver, consultationOutcomeLabel);
+
+		Utility.wait(7);
 
 	}
 
+	
 }

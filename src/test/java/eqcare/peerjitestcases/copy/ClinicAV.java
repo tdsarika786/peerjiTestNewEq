@@ -393,7 +393,18 @@ public class ClinicAV extends BaseClass {
 		System.out.println("Log:INFO- 10.5 DR with patients - chats");
 
 	}
+	
 	@Test(priority = 26, dependsOnMethods = "loginToClinicApplication")
+	public void functionsWithDR6() {
+
+		clinic3.visitStatus();
+
+		System.out.println("------------------");
+
+		System.out.println("Log:INFO- 10.6 DR with patients - visit status");
+
+	}
+	@Test(priority = 27, dependsOnMethods = "loginToClinicApplication")
 	public void patientChatsToDoctor() {
 
 		clinic.patientSubmitChats("Patient with DR-6");
@@ -403,7 +414,7 @@ public class ClinicAV extends BaseClass {
 		System.out.println("Log:INFO- 11. Patient submit chats to Doctor");
 	}
 
-	@Test(priority = 27, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 28, dependsOnMethods = "loginToClinicApplication")
 	public void doctorEndConsultation() {
 
 		clinic3.endConsultation();
@@ -414,7 +425,7 @@ public class ClinicAV extends BaseClass {
 
 	}
 
-	@Test(priority = 28, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 29, dependsOnMethods = "loginToClinicApplication")
 	public void feedback() throws Exception {
 
 		feedback = PageFactory.initElements(driver, FeedbackPageAV.class);
@@ -427,7 +438,7 @@ public class ClinicAV extends BaseClass {
 
 	}
 
-	@Test(priority = 29, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 30, dependsOnMethods = "loginToClinicApplication")
 	public void inbox() throws Exception {
 
 		inbox = PageFactory.initElements(driver, InboxPageAV.class);
