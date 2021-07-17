@@ -296,7 +296,13 @@ public class ClinicPage {
 
 	public void addComments(String text, String file) {
 
-		Utility.waitForWebElement(driver, commentsLink).click();
+		//Utility.waitForWebElement(driver, commentsLink).click();
+		
+		WebElement buttonC = driver.findElement(By.xpath("//a[contains(text(), 'Comments')]"));
+
+		JavascriptExecutor executorC = (JavascriptExecutor) driver;
+		executorC.executeScript("arguments[0].click()", buttonC);
+		
 
 		Utility.waitForWebElement(driver, commentsTextArea).sendKeys(text + " " + Utility.getCurrentTime());
 
@@ -483,7 +489,10 @@ public class ClinicPage {
 
 	public void cannedResponses() {
 
-		Utility.waitForWebElement(driver, commentsLink).click();
+		WebElement buttonC = driver.findElement(By.xpath("//a[contains(text(), 'Comments')]"));
+
+		JavascriptExecutor executorC = (JavascriptExecutor) driver;
+		executorC.executeScript("arguments[0].click()", buttonC);
 
 		WebElement button1 = driver.findElement(By.xpath("//div[contains(text(), 'Canned Responses')]//parent::div"));
 

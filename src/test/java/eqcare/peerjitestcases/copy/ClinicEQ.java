@@ -75,7 +75,7 @@ public class ClinicEQ extends BaseClass {
 
 	// CM Test
 	@Parameters({ "VisitNo","ClinicAppURL" })
-	@Test(priority = 2)
+	@Test(priority = 2, dependsOnMethods = "loginAsCM")
 	public void loginToClinicApplication(String VisitNo,String ClinicAppURL) throws Exception {
 
 		clinic1 = PageFactory.initElements(driver1, ClinicPage.class);
@@ -102,7 +102,7 @@ public class ClinicEQ extends BaseClass {
 
 
 	@Parameters({ "Email", "Password" })
-	@Test(priority = 3)
+	@Test(priority = 3, dependsOnMethods = "loginToClinicApplication")
 	public void loginToPatient(String email, String password) throws Exception {
 
 		login.loginToApplication(email, password);
@@ -181,7 +181,7 @@ public class ClinicEQ extends BaseClass {
 	}
 
 
-	@Test(priority = 5, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 9, dependsOnMethods = "loginToClinicApplication")
 	public void patientChats() {
 
 		clinic.patientSubmitChats("Patient with CM-2");
@@ -191,7 +191,7 @@ public class ClinicEQ extends BaseClass {
 		System.out.println("Log:INFO- 5. Patient submit chats to CM");
 	}
 
-	@Test(priority = 6)
+	@Test(priority = 10, dependsOnMethods = "loginToClinicApplication")
 	public void transferPatientToNurse() {
 		clinic1.transferToNurse();
 		
@@ -203,7 +203,7 @@ public class ClinicEQ extends BaseClass {
 	
 
 	@Parameters({ "VisitNo","ClinicAppURL" })
-	@Test(priority = 7, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 11, dependsOnMethods = "loginToClinicApplication")
 	public void navigateToNurse(String VisitNo,String ClinicAppURL) throws Exception {
 
 		clinic2.navigateToClinicVisitPage(VisitNo,ClinicAppURL);

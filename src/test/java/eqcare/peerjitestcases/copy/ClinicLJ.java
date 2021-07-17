@@ -216,6 +216,8 @@ public class ClinicLJ extends BaseClass {
 
 			clinic2.navigateToClinicVisitPage(VisitNo, ClinicAppURL);
 		}
+		
+		System.out.println("------------------");
 
 		System.out.println("Log:INFO- 7.  Nurse with patients");
 
@@ -308,7 +310,7 @@ public class ClinicLJ extends BaseClass {
 
 			//clinic3.takePatient();
 		}
-
+		System.out.println("------------------");
 		System.out.println("Log:INFO- 10. Doctor Take Patient");
 
 	}
