@@ -573,7 +573,7 @@ public class ClinicPageAV {
 		JavascriptExecutor executor2 = (JavascriptExecutor) driver;
 		executor2.executeScript("arguments[0].click()", button2);
 
-		WebElement button3 = driver.findElement(By.xpath("(//div[contains(text(), 'Leduc')])[1]"));
+		WebElement button3 = driver.findElement(By.xpath("(//div[contains(text(), 'SarikaPa')])[1]"));
 
 		JavascriptExecutor executor3 = (JavascriptExecutor) driver;
 		executor3.executeScript("arguments[0].click()", button3);
@@ -609,7 +609,7 @@ public class ClinicPageAV {
 		JavascriptExecutor executor2 = (JavascriptExecutor) driver;
 		executor2.executeScript("arguments[0].click()", button2);
 
-		WebElement button3 = driver.findElement(By.xpath("(//div[contains(text(), 'Alice')])[1]"));
+		WebElement button3 = driver.findElement(By.xpath("(//div[contains(text(), 'SarikaNu')])[1]"));
 
 		JavascriptExecutor executor3 = (JavascriptExecutor) driver;
 		executor3.executeScript("arguments[0].click()", button3);
