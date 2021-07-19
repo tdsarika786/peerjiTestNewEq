@@ -39,6 +39,8 @@ public class IntakeFormPage extends runWithAttachments {
 	By startCall = By.xpath("//a[@data-role='start-call-button']");
 
 	By cancelButton = By.xpath("//a[@data-role='cancel-button']");
+	
+	By uploadDiv = By.xpath("(//p[contains(text(),'Chat')]/following-sibling::div)[1]");
 
 	public void verifyIntakeFormPageUrl() throws Exception
 
@@ -89,6 +91,10 @@ public class IntakeFormPage extends runWithAttachments {
 		Utility.wait(20);
 		// Utility.selectValueFromCalendar(Utility.waitForMultipleWebElement(driver,
 		// calen), "25");
+		
+
+		Utility.waitForWebElement(driver, uploadDiv).click();
+		
 		uploadFiles("test2.jpeg");
 		
 		Utility.wait(20);

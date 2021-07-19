@@ -109,6 +109,8 @@ public class Novapeerji1733 extends BaseClass {
 		String groupNo ="PCLJ2";
 
         home.createEmployer1733(searchemployer1,null,null); 
+        
+	    home.createCoverage1797(searchemployer1,null, "primary_care");
 		
 		home.createCoverage1797(searchemployer1,null, "lifejourney");
 		
