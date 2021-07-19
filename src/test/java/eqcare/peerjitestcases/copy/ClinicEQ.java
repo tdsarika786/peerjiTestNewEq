@@ -91,7 +91,7 @@ public class ClinicEQ extends BaseClass {
 
 			clinic1.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
 
-			//clinic1.takePatient();
+			clinic1.takePatient();
 
 		}
 		System.out.println("------------------");
@@ -340,7 +340,7 @@ public class ClinicEQ extends BaseClass {
 
 			clinic3.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
 
-			//clinic3.takePatient();
+			clinic3.takePatient();
 		}
 		System.out.println("--------------------");
 		
@@ -431,7 +431,7 @@ public class ClinicEQ extends BaseClass {
 	@Test(priority = 28, dependsOnMethods = "navigateToDr")
 	public void doctorEndConsultation() {
 
-		//clinic3.endConsultation();
+		clinic3.endConsultation();
 		
 		System.out.println("--------------------");
 
