@@ -125,6 +125,20 @@ public class ClinicEQ extends BaseClass {
 		clinic1.addComments("sai-pic CM", "sai-pic.jpeg");
 
 		clinic1.addComments("Sample CM", "sample.pdf");
+		
+		clinic1.addComments("Sample CM", "Testfilepng.png");
+		
+		clinic1.addComments("Sample CM", "Testfilewebp.webp");
+		
+		clinic1.addComments("Sample CM", "Testfilejpg.jpg");
+		
+		clinic1.addComments("Sample CM", "Testfileheic.heic");
+		
+		clinic1.addComments("Sample CM", "Testfileheif.heif");;
+		
+		clinic1.addComments("Sample CM", "Testfilegif.gif");
+		
+		clinic1.addComments("Sample CM", "Testfilebmp.bmp");
 
 		System.out.println("------------------");
 
@@ -318,7 +332,7 @@ public class ClinicEQ extends BaseClass {
 		clinic3.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
 		try {
 
-			clinic3.takePatient();
+			//clinic3.takePatient();
 		}
 
 		catch (Exception ex) {
@@ -334,7 +348,7 @@ public class ClinicEQ extends BaseClass {
 
 	}
 	
-	@Test(priority = 21, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 21, dependsOnMethods = "navigateToDr")
 	public void functionsWithDR1() {
 
 		clinic3.addComments("sai-pic DR", "sai-pic.jpeg");
@@ -347,7 +361,7 @@ public class ClinicEQ extends BaseClass {
 
 	}
 
-	@Test(priority = 22, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 22, dependsOnMethods = "navigateToDr")
 	public void functionsWithDR2() {
 
 		clinic3.cannedResponses();
@@ -358,7 +372,7 @@ public class ClinicEQ extends BaseClass {
 
 	}
 
-	@Test(priority = 23, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 23, dependsOnMethods = "navigateToDr")
 	public void functionsWithDR3() {
 
 		clinic1.patientsTab();
@@ -369,7 +383,7 @@ public class ClinicEQ extends BaseClass {
 
 	}
 	
-	@Test(priority = 24, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 24, dependsOnMethods = "navigateToDr")
 	public void functionsWithDR4() {
 
 		clinic1.visitTab();
@@ -381,7 +395,7 @@ public class ClinicEQ extends BaseClass {
 	}
 
 
-	@Test(priority = 25, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 25, dependsOnMethods = "navigateToDr")
 	public void functionsWithDR5() {
 
 		clinic3.submitChats("PeerjiAuto Test Chat DR-1");
@@ -392,7 +406,7 @@ public class ClinicEQ extends BaseClass {
 
 	}
 	
-	@Test(priority = 26, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 26, dependsOnMethods = "navigateToDr")
 	public void functionsWithDR6() {
 
 		clinic3.visitStatus();
@@ -404,7 +418,7 @@ public class ClinicEQ extends BaseClass {
 	}
 
 
-	@Test(priority = 27, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 27, dependsOnMethods = "navigateToDr")
 	public void patientChatsToDoctor() {
 
 		clinic.patientSubmitChats("Patient with DR-6");
@@ -414,10 +428,10 @@ public class ClinicEQ extends BaseClass {
 		System.out.println("Log:INFO- 11. Patient submit chats to Doctor");
 	}
 
-	@Test(priority = 28, dependsOnMethods = "loginToClinicApplication")
+	@Test(priority = 28, dependsOnMethods = "navigateToDr")
 	public void doctorEndConsultation() {
 
-		clinic3.endConsultation();
+		//clinic3.endConsultation();
 		
 		System.out.println("--------------------");
 
