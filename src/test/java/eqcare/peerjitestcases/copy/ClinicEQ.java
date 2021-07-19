@@ -91,7 +91,7 @@ public class ClinicEQ extends BaseClass {
 
 			clinic1.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
 
-			clinic1.takePatient();
+			//clinic1.takePatient();
 
 		}
 		System.out.println("------------------");
@@ -332,7 +332,7 @@ public class ClinicEQ extends BaseClass {
 		clinic3.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
 		try {
 
-			//clinic3.takePatient();
+			clinic3.takePatient();
 		}
 
 		catch (Exception ex) {
@@ -340,7 +340,7 @@ public class ClinicEQ extends BaseClass {
 
 			clinic3.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
 
-			clinic3.takePatient();
+			//clinic3.takePatient();
 		}
 		System.out.println("--------------------");
 		
