@@ -546,7 +546,7 @@ public class ClinicPage {
 		Utility.waitForWebElement(driver, reportIncidentLink).click();
 
 		// Utility.waitForWebElement(driver, incidentTechnicalCheck).click();
-		WebElement button1 = driver.findElement(By.xpath("//input[contains(@aria-label, 'Technical')]"));
+		WebElement button1 = driver.findElement(By.xpath("//input[contains(@aria-label, '	')]"));
 
 		JavascriptExecutor executor1 = (JavascriptExecutor) driver;
 		executor1.executeScript("arguments[0].click()", button1);

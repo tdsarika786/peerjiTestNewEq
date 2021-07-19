@@ -122,23 +122,23 @@ public class ClinicEQ extends BaseClass {
 	@Test(priority = 4, dependsOnMethods = "loginToClinicApplication")
 	public void functionsWithCM1() {
 
-		clinic1.addComments("sai-pic CM", "sai-pic.jpeg");
+		clinic1.addComments("sai-pic CM JPEG", "sai-pic.jpeg");
 
-		clinic1.addComments("Sample CM", "sample.pdf");
+		clinic1.addComments("Sample CM PDF", "sample.pdf");
 		
-		clinic1.addComments("Sample CM", "Testfilepng.png");
+		clinic1.addComments("Sample CM PNG", "Testfilepng.png");
 		
-		clinic1.addComments("Sample CM", "Testfilewebp.webp");
+		clinic1.addComments("Sample CM WEBP", "Testfilewebp.webp");
 		
-		clinic1.addComments("Sample CM", "Testfilejpg.jpg");
+		clinic1.addComments("Sample CM JPG", "Testfilejpg.jpg");
 		
-		clinic1.addComments("Sample CM", "Testfileheic.heic");
+		clinic1.addComments("Sample CM HEIC", "Testfileheic.heic");
 		
-		clinic1.addComments("Sample CM", "Testfileheif.heif");;
+		clinic1.addComments("Sample CM HEIF", "Testfileheif.heif");;
 		
-		clinic1.addComments("Sample CM", "Testfilegif.gif");
+		clinic1.addComments("Sample CM GIF", "Testfilegif.gif");
 		
-		clinic1.addComments("Sample CM", "Testfilebmp.bmp");
+		clinic1.addComments("Sample CM BMP", "Testfilebmp.bmp");
 
 		System.out.println("------------------");
 
