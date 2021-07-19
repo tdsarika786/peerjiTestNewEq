@@ -111,17 +111,16 @@ public class ClinicPage {
 	By currentMedicationLabel = By.xpath("//p[contains(text(), 'Current medication')]");
 
 	By filesLabel = By.xpath("//div[contains(text(), 'Files')]");
-	
-	//Visit Status
 
-		By visitStatusLink = By.xpath("(//a[contains(text(), 'Visit Status')])");
+	// Visit Status
 
-		By triageOutcomeLabel = By.xpath("//span[contains(text(), 'Triage')]");
+	By visitStatusLink = By.xpath("(//a[contains(text(), 'Visit Status')])");
 
-		By visitStatusTypeLabel = By.xpath("//span[contains(text(), 'Visit Type')]");
-		
-		By consultationOutcomeLabel = By.xpath("//span[contains(text(), 'Consultation Outcome:')]");
-		
+	By triageOutcomeLabel = By.xpath("//span[contains(text(), 'Triage')]");
+
+	By visitStatusTypeLabel = By.xpath("//span[contains(text(), 'Visit Type')]");
+
+	By consultationOutcomeLabel = By.xpath("//span[contains(text(), 'Consultation Outcome:')]");
 
 	// Canned Responses
 
@@ -170,7 +169,7 @@ public class ClinicPage {
 	// Resume CAll
 
 	By resumeLifeJourneyVisit = By.xpath("//a[contains(text(), 'Resume the LifeJourney™ Visit')]");
-	
+
 	// Resume CAll Life Journey
 
 	By resumeCall = By.xpath("//a[contains(text(), 'Resume the Call')]");
@@ -225,7 +224,7 @@ public class ClinicPage {
 		Utility.wait(10);
 
 	}
-	
+
 	public void navigateToPatientLJVisitPage() {
 
 		// Utility.navigateToURL(driver,
@@ -246,47 +245,45 @@ public class ClinicPage {
 	public void navigateToClinicVisitPage(String visitNo, String ClinicAppURL) {
 
 		if (ClinicAppURL.contains("qa1")) {
-			
-			String URL="https://clinic.eqserviceqa1.eqcaredev.com/visits/"+visitNo;
+
+			String URL = "https://clinic.eqserviceqa1.eqcaredev.com/visits/" + visitNo;
 
 			Utility.navigateToURL(driver, URL);
-			
 
-			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA1 "+URL);
+			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA1 " + URL);
 		}
 
 		else if (ClinicAppURL.contains("qa2")) {
-			
-			String URL="https://clinic.eqserviceqa2.eqcaredev.com/visits/"+visitNo;
+
+			String URL = "https://clinic.eqserviceqa2.eqcaredev.com/visits/" + visitNo;
 
 			Utility.navigateToURL(driver, URL);
-			
-			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA2 "+URL);
+
+			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA2 " + URL);
 		}
 
 		else if (ClinicAppURL.contains("qa3")) {
 
-			String URL="https://clinic.eqserviceqa3.eqcaredev.com/visits/"+visitNo;
+			String URL = "https://clinic.eqserviceqa3.eqcaredev.com/visits/" + visitNo;
 
 			Utility.navigateToURL(driver, URL);
-			
-			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA3 "+URL);
+
+			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA3 " + URL);
 		}
 
 		else if (ClinicAppURL.contains("qa4")) {
 
-			String URL="https://clinic.eqserviceqa4.eqcaredev.com/visits/"+visitNo;
+			String URL = "https://clinic.eqserviceqa4.eqcaredev.com/visits/" + visitNo;
 
 			Utility.navigateToURL(driver, URL);
-			
-			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA4 "+URL);
+
+			System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA4 " + URL);
 		}
-		
-		else{
+
+		else {
 			System.out.println("********* ERROR in NAVIGATING " + ClinicAppURL);
 		}
 
-		
 	}
 
 	public void takePatient() {
@@ -307,13 +304,12 @@ public class ClinicPage {
 
 	public void addComments(String text, String file) {
 
-		//Utility.waitForWebElement(driver, commentsLink).click();
-		
+		// Utility.waitForWebElement(driver, commentsLink).click();
+
 		WebElement buttonC = driver.findElement(By.xpath("//a[contains(text(), 'Comments')]"));
 
 		JavascriptExecutor executorC = (JavascriptExecutor) driver;
 		executorC.executeScript("arguments[0].click()", buttonC);
-		
 
 		Utility.waitForWebElement(driver, commentsTextArea).sendKeys(text + " " + Utility.getCurrentTime());
 
@@ -346,8 +342,13 @@ public class ClinicPage {
 	}
 
 	public void patientsTab() {
+				
+		WebElement patientLink = driver.findElement(By.xpath("(//a[contains(text(), 'Patient')])[1]"));
 
-		Utility.waitForWebElement(driver, patientsLink).click();
+		JavascriptExecutor executor1 = (JavascriptExecutor) driver;
+	    executor1.executeScript("arguments[0].click()", patientLink);		
+
+		//Utility.waitForWebElement(driver, patientsLink).click();
 
 		Utility.waitForWebElement(driver, primaryEmployeeLabel);
 
@@ -439,7 +440,7 @@ public class ClinicPage {
 		Utility.wait(10);
 
 	}
-	
+
 	public void visitTabLJ() {
 
 		Utility.waitForWebElement(driver, visitLink).click();
@@ -459,8 +460,13 @@ public class ClinicPage {
 	}
 
 	public void visitTab() {
+		
+		WebElement visitLink = driver.findElement(By.xpath("(//a[contains(text(), 'Visit')])[1]"));
 
-		Utility.waitForWebElement(driver, visitLink).click();
+		JavascriptExecutor executor1 = (JavascriptExecutor) driver;
+	    executor1.executeScript("arguments[0].click()", visitLink);	
+
+		//Utility.waitForWebElement(driver, visitLink).click();
 
 		Utility.waitForWebElement(driver, visitTypeLabel);
 
@@ -546,7 +552,7 @@ public class ClinicPage {
 		Utility.waitForWebElement(driver, reportIncidentLink).click();
 
 		// Utility.waitForWebElement(driver, incidentTechnicalCheck).click();
-		WebElement button1 = driver.findElement(By.xpath("//input[contains(@aria-label, '	')]"));
+		WebElement button1 = driver.findElement(By.xpath("//input[contains(@aria-label, 'Technical')]"));
 
 		JavascriptExecutor executor1 = (JavascriptExecutor) driver;
 		executor1.executeScript("arguments[0].click()", button1);
@@ -677,7 +683,7 @@ public class ClinicPage {
 		Utility.wait(7);
 
 	}
-	
+
 	public void visitStatus() {
 
 		Utility.waitForWebElement(driver, visitStatusLink).click();
@@ -692,5 +698,4 @@ public class ClinicPage {
 
 	}
 
-	
 }

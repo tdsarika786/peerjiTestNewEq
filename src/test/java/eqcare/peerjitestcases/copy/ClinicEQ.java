@@ -126,9 +126,9 @@ public class ClinicEQ extends BaseClass {
 
 		clinic1.addComments("Sample CM PDF", "sample.pdf");
 		
-		clinic1.addComments("Sample CM PNG", "Testfilepng.png");
+		clinic1.addComments("Sample CM PNG", "medical-card.jpeg");
 		
-		clinic1.addComments("Sample CM WEBP", "Testfilewebp.webp");
+		/*clinic1.addComments("Sample CM WEBP", "Testfilewebp.webp");
 		
 		clinic1.addComments("Sample CM JPG", "Testfilejpg.jpg");
 		
@@ -138,7 +138,7 @@ public class ClinicEQ extends BaseClass {
 		
 		clinic1.addComments("Sample CM GIF", "Testfilegif.gif");
 		
-		clinic1.addComments("Sample CM BMP", "Testfilebmp.bmp");
+		clinic1.addComments("Sample CM BMP", "Testfilebmp.bmp");*/
 
 		System.out.println("------------------");
 
