@@ -220,7 +220,7 @@ public class RegistrationPageAV extends runWithAttachments {
 
 	public void notEnrolledUser() {
 
-		navigateToRegisterationPage();
+		//navigateToRegisterationPage();
 
 		Utility.waitForWebElement(driver, notCoverageButton).click();
 		
@@ -401,9 +401,10 @@ public class RegistrationPageAV extends runWithAttachments {
 
 	}
 
-	public void navigateToRegisterationPage() {
+	
+	public void navigateToRegisterationPage(String url) {
 
-		Utility.navigateToURL(driver, DataProviderFactory.getConfig().getValue("ponyRegister"));
+		Utility.navigateToURL(driver, url);
 	}
 
 }
