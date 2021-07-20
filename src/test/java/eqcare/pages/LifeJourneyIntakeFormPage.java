@@ -19,11 +19,11 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 	public LifeJourneyIntakeFormPage(WebDriver driver) {
 		this.driver = driver;
 	}
-	
+
 	By startVisitLink = By.xpath("//a[@data-role='start-visit-button']");
 
 	By reasonVisitInput = By.xpath("//div[@data-role='intake-reason-input']/textarea");
-	
+
 	By durationSymptomsInput = By.xpath("//div[@data-role='intake-symptoms-duration-input']/input");
 
 	By currentAllergies = By.xpath("//div[@data-role='intake-allergies-input']/div/input");
@@ -158,6 +158,8 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 	// Flower Icon
 
 	By infoBodyLink = By.xpath("(//div[contains(@class,'link-body')])[1]]");
+	
+	By uploadDiv = By.xpath("(//p[contains(text(),'Chat')]/following-sibling::div)[1]");
 
 	public void verifyIntakeFormPageUrl() throws Exception
 
@@ -173,8 +175,6 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 	}
 
 	public void fillIntakeForm() throws Exception {
-		
-		
 
 		Utility.waitForWebElement(driver, startVisitLink).click();
 
@@ -202,7 +202,7 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 		Utility.waitForWebElement(driver, startCall).click();
 		// Utility.selectValueFromCalendar(Utility.waitForMultipleWebElement(driver,
 		// calen), "25");
-		
+
 		Utility.waitForWebElement(driver, videoEndCallButton).click();
 
 		Utility.waitForWebElement(driver, confirmEndCallButton).click();
@@ -256,7 +256,7 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 		Utility.waitForWebElement(driver, mentalNextStep).click();
 
 		Utility.waitForWebElement(driver, lifeJourneyIntakeCompleted).click();
-		
+
 		Utility.waitForWebElement(driver, videoEndCallButton).click();
 
 		Utility.waitForWebElement(driver, confirmEndCallButton).click();
@@ -266,7 +266,6 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 		Utility.waitForWebElement(driver, submitText).click();
 
 		Utility.waitForWebElement(driver, homeButton).click();
-
 
 	}
 
@@ -285,11 +284,9 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 		// Utility.waitForWebElement(driver, startVisitButton).click();
 
 	}
-	
-	
-	
-	public void fillIntakeFormLifeJourney(){
-		
+
+	public void fillIntakeFormLifeJourney() {
+
 		Utility.waitForWebElement(driver, startLifeJourneyButton).click();
 
 		Utility.waitForWebElement(driver, lifeJourneyreasonVisitInput).sendKeys("Test Visit by Sarika Peerji");
@@ -302,7 +299,7 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 		Utility.waitForWebElement(driver, startLifeJourneyButton).click();
 
 		deviceCheck();
-		
+
 		fillIntakeFormLifeJourney();
 
 		// EDucation
@@ -376,7 +373,7 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 		JavascriptExecutor executor4 = (JavascriptExecutor) driver;
 		executor4.executeScript("arguments[0].click()", button4);
 
-		//Utility.waitForWebElement(driver, pregnantOption).click();
+		// Utility.waitForWebElement(driver, pregnantOption).click();
 
 		Utility.waitForWebElement(driver, changesInHealthOption).click();
 
@@ -434,7 +431,7 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 
 		// Utility.wait(2);
 
-		//flowerInformationCheck();
+		// flowerInformationCheck();
 
 	}
 
@@ -444,55 +441,54 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 
 		JavascriptExecutor executor1 = (JavascriptExecutor) driver;
 		executor1.executeScript("arguments[0].click()", button1);
-		
+
 		Utility.wait(2);
-		
+
 		WebElement button2 = driver.findElement(By.xpath("(//div[contains(@class,'link-mind')])[1]"));
 
 		JavascriptExecutor executor2 = (JavascriptExecutor) driver;
 		executor2.executeScript("arguments[0].click()", button2);
-		
+
 		Utility.wait(2);
-		
+
 		WebElement button3 = driver.findElement(By.xpath("(//div[contains(@class,'link-social')])[1]"));
 
 		JavascriptExecutor executor3 = (JavascriptExecutor) driver;
 		executor3.executeScript("arguments[0].click()", button3);
-		
+
 		Utility.wait(2);
-		
+
 		WebElement button4 = driver.findElement(By.xpath("(//div[contains(@class,'link-finance')])[1]"));
 
 		JavascriptExecutor executor4 = (JavascriptExecutor) driver;
 		executor4.executeScript("arguments[0].click()", button4);
-		
+
 		Utility.wait(2);
-		
+
 		WebElement button5 = driver.findElement(By.xpath("(//div[contains(@class,'link-work')])[1]"));
 
 		JavascriptExecutor executor5 = (JavascriptExecutor) driver;
 		executor5.executeScript("arguments[0].click()", button5);
-		
+
 		Utility.wait(2);
-		
+
 		WebElement button6 = driver.findElement(By.xpath("(//div[contains(@class,'link-purpose')])[1]"));
 
 		JavascriptExecutor executor6 = (JavascriptExecutor) driver;
 		executor6.executeScript("arguments[0].click()", button6);
-		
+
 		Utility.wait(2);
 
 		// Utility.waitForWebElement(driver, button2).click();
 
 	}
 
-	
-	public void startLifeJourneyVisit() {
+	public void startLifeJourneyVisit() throws Exception {
 
 		Utility.waitForWebElement(driver, startLifeJourneyButton).click();
 
 		deviceCheck();
-		
+
 		fillIntakeFormLifeJourney();
 
 		// EDucation
@@ -566,7 +562,7 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 		JavascriptExecutor executor4 = (JavascriptExecutor) driver;
 		executor4.executeScript("arguments[0].click()", button4);
 
-		//Utility.waitForWebElement(driver, pregnantOption).click();
+		// Utility.waitForWebElement(driver, pregnantOption).click();
 
 		Utility.waitForWebElement(driver, changesInHealthOption).click();
 
@@ -605,8 +601,32 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 		// Completed
 
 		Utility.waitForWebElement(driver, lifeJourneyIntakeCompleted).click();
-		
+
 		Utility.wait(10);
 
+		Utility.waitForWebElement(driver, uploadDiv).click();
+
+		uploadFiles("test2.jpeg");
+
+		Utility.wait(20);
+
+	}
+	
+	public void uploadFiles(String text) throws Exception {
+		try {
+			WebElement fileButton = driver.findElement(By.xpath("(//input[@type='file'])[1]"));
+			JavascriptExecutor executor = (JavascriptExecutor) driver;
+			executor.executeScript("arguments[0].style.display='block';", fileButton);
+
+			Utility.waitForWebElement(driver, uploadFile)
+					.sendKeys(System.getProperty("user.dir") + "/TestData/"+text);
+
+			Utility.wait(2);
+//		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 4, 0), "0");
+		} catch (Exception ex) {
+			// runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 4,
+			// 0), "7");
+			throw ex;
+		}
 	}
 }
