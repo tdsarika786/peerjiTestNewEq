@@ -48,7 +48,7 @@ public class TC1_RegisterationScenariosAV extends BaseClass {
 
 		register.EnrolledUser();
 
-				register.Registeration(email,
+				register.Registeration("sarikaqa7+av@gmail.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
@@ -63,6 +63,37 @@ public class TC1_RegisterationScenariosAV extends BaseClass {
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 9),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 10), false,"pdf");
+
+		register.registerationCompleteWithValidInput();
+
+
+	}
+	
+	@Parameters({"Email","AppURL"})
+	@Test(priority = 1, dependsOnMethods = "verifyPage")
+	public void validInputRegisterationTestForPatients2(String email, String url) {
+
+		register = PageFactory.initElements(driver, RegistrationPageAV.class);
+		
+		register.navigateToRegisterationPage(url);
+
+		register.EnrolledUser();
+
+				register.Registeration("sarikaqa7+avp@gmail.com",
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
+				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 4),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 5),
+				DataProviderFactory.getExcel().getCellData("Users", 2, 6),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 7),
+				DataProviderFactory.getExcel().getCellData("Users", 2, 8),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 9),
+				DataProviderFactory.getExcel().getCellData("Users", 2, 10), true,"img");
 
 		register.registerationCompleteWithValidInput();
 
