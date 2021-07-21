@@ -49,7 +49,7 @@ public class HelpPage {
 		
 		//Utility.waitForWebElement(driver, helpLink);
 
-		Utility.wait(2);
+		Utility.wait(5);
 
 		WebElement ele = Utility.waitForWebElement(driver, helpHeader);
 		String helpHeaderText = ele.getText();

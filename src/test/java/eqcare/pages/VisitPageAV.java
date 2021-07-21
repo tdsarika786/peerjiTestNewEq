@@ -40,6 +40,8 @@ public class VisitPageAV {
 		Utility.waitForWebElement(driver, videoEndCallButton).click();
 
 		Utility.waitForWebElement(driver, confirmEndCallButton).click();
+		
+		Utility.wait(7);
 
 	}
 

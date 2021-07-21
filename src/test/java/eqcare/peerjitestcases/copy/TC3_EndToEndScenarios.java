@@ -116,7 +116,7 @@ public class TC3_EndToEndScenarios extends BaseClass {
 		account.deleteChild();
 
 	}
-
+/*
 	@Test(priority = 9, dependsOnMethods = "loginToApplication")
 	public void startVideoConsultation() throws Exception {
 
@@ -192,5 +192,5 @@ public class TC3_EndToEndScenarios extends BaseClass {
 
 		//logger.info("Help Page Header verified");
 	}
-
+*/
 }

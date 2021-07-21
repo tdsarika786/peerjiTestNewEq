@@ -206,6 +206,9 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 		Utility.waitForWebElement(driver, videoEndCallButton).click();
 
 		Utility.waitForWebElement(driver, confirmEndCallButton).click();
+		
+		Utility.wait(7);
+
 
 		Utility.waitForWebElement(driver, ratingHeart).click();
 
@@ -416,8 +419,10 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 		Utility.wait(2);
 
 		Utility.waitForWebElement(driver, videoEndCallButton).click();
-
+		
 		Utility.waitForWebElement(driver, confirmEndCallButton).click();
+		
+		Utility.wait(7);
 
 		Utility.waitForWebElement(driver, ratingHeart).click();
 
