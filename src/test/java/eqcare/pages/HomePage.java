@@ -126,6 +126,8 @@ public class HomePage extends runWithAttachments {
 	}
 
 	public void deviceCheck() {
+		
+		try {
 
 		Utility.waitForWebElement(driver, startVisitButton).click();
 
@@ -138,6 +140,15 @@ public class HomePage extends runWithAttachments {
 		Utility.waitForWebElement(driver, continueToVisitText).click();
 
 		// Utility.waitForWebElement(driver, startVisitButton).click();
+		}
+		catch(Exception ex) {
+			
+			Utility.waitForWebElement(driver, nextStepText).click();
+
+			Utility.waitForWebElement(driver, continueToVisitText).click();
+
+			
+		}
 
 	}
 
