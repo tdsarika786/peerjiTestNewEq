@@ -412,6 +412,8 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 		// Completed
 
 		Utility.waitForWebElement(driver, lifeJourneyIntakeCompleted).click();
+		
+		Utility.wait(2);
 
 		Utility.waitForWebElement(driver, videoEndCallButton).click();
 

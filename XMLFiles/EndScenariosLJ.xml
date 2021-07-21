@@ -14,7 +14,7 @@
 
    	<class name="eqcare.peerjitestcases.copy.TC2_ForgotPasswordScenarios" />  
       
-  <class name="eqcare.peerjitestcases.copy.TC4_LifeJourneyEndScenarios"/>
+  <class name="eqcare.peerjitestcases.copy.TC4_LifeJourneyEndScenariosLJ"/>
        
     </classes>
     
