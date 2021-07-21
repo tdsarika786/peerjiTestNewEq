@@ -6,27 +6,18 @@
   </listeners>
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="eqcare.peerjitestcases.copy.ClinicPeerji">
+      <class name="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV">
         <methods>
-          <include name="loginAsDRNurse"/>
+          <include name="verifyPage"/>
+          <include name="setupReport"/>
           <include name="tearDown"/>
-          <include name="navigateToNurse"/>
-          <include name="loginToClinicApplication"/>
-          <include name="patientChats"/>
-          <include name="patientChatsToNurse"/>
-          <include name="doctorEndConsultation"/>
+          <include name="fillIntakeFormWithAllFields"/>
+          <include name="tearDownReport"/>
           <include name="setUp"/>
-          <include name="functionsWithCM"/>
-          <include name="inbox"/>
-          <include name="navigateToDr"/>
-          <include name="loginAsCM"/>
-          <include name="loginToPatient"/>
-          <include name="transferPatientToCoctor"/>
-          <include name="transferPatientToNurse"/>
-          <include name="feedback"/>
-          <include name="patientChatsToDoctor"/>
+          <include name="deviceCheck"/>
+          <include name="loginToApplication"/>
         </methods>
-      </class> <!-- eqcare.peerjitestcases.copy.ClinicPeerji -->
+      </class> <!-- eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,34 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 17, Failures: 1, Errors: 0, Skipped: 16, Time elapsed: 7.367 s <<< FAILURE! - in TestSuite
-eqcare.peerjitestcases.copy.ClinicPeerji.setUp  Time elapsed: 6.625 s  <<< FAILURE!
-org.openqa.selenium.SessionNotCreatedException: 
-session not created: This version of ChromeDriver only supports Chrome version 92
-Current browser version is 91.0.4472.114 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+Tests run: 16, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 177.315 s <<< FAILURE! - in TestSuite
+eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV.fillIntakeFormWithAllFields  Time elapsed: 44.978 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for element to be clickable: By.xpath: //input[@type='file'] (tried for 15 second(s) with 500 milliseconds interval)
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:7:f30a:a40c:8cf0%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
-Driver info: driver.version: ChromeDriver
-remote stacktrace: 0   chromedriver                        0x000000010d6f5eb9 chromedriver + 3059385
-1   chromedriver                        0x000000010de01963 chromedriver + 10447203
-2   chromedriver                        0x000000010d4352e8 chromedriver + 172776
-3   chromedriver                        0x000000010d45b16d chromedriver + 328045
-4   chromedriver                        0x000000010d456ca6 chromedriver + 310438
-5   chromedriver                        0x000000010d4537be chromedriver + 296894
-6   chromedriver                        0x000000010d48c54b chromedriver + 529739
-7   chromedriver                        0x000000010d486b83 chromedriver + 506755
-8   chromedriver                        0x000000010d45d480 chromedriver + 337024
-9   chromedriver                        0x000000010d45e615 chromedriver + 341525
-10  chromedriver                        0x000000010d6c0d9f chromedriver + 2842015
-11  chromedriver                        0x000000010d6d1562 chromedriver + 2909538
-12  chromedriver                        0x000000010d6d27cc chromedriver + 2914252
-13  chromedriver                        0x000000010d6a5f41 chromedriver + 2731841
-14  chromedriver                        0x000000010d6d2c9f chromedriver + 2915487
-15  chromedriver                        0x000000010d6b648c chromedriver + 2798732
-16  chromedriver                        0x000000010d6eac68 chromedriver + 3013736
-17  chromedriver                        0x000000010d6eadf1 chromedriver + 3014129
-18  chromedriver                        0x000000010d6fbb68 chromedriver + 3083112
-19  libsystem_pthread.dylib             0x00007fff2057e954 _pthread_start + 224
-20  libsystem_pthread.dylib             0x00007fff2057a4a7 thread_start + 15
-
+System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:c5c:69f7:98fb:3150%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: /var/folders/l9/4pwqxcnj26b...}, goog:chromeOptions: {debuggerAddress: localhost:56208}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d8ff563dd2c791872be0795081d12b78
+	at eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV.fillIntakeFormWithAllFields(TC1_EndToEndScenariosAV.java:229)
 

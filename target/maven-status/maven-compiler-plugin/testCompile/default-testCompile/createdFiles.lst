@@ -5,7 +5,6 @@ eqcare/pages/ClinicPageAV.class
 eqcare/helper/Utility.class
 LifeJourneyAutomatedTests/TC2_RegisterationScenarios.class
 eqcare/pages/LoginPage.class
-eqcare/peerjitestcases/copy/Novapeerji2.class
 nova/testcases/NovaLoginScenarios.class
 eqcare/pages/LifeJourneyIntakeFormPage.class
 NotRequiredClasses/AdminPage.class
@@ -15,13 +14,9 @@ eqcare/testcases/TC1_AccountScenarios.class
 eqcare/pages/Base.class
 eqcare/pages/RegistrationPage.class
 eqcare/peerjitestcases/TC2_RegisterationScenarios.class
-eqcare/peerjitestcases/copy/LJStartVisit.class
 eqcare/pages/Listeners.class
-eqcare/peerjitestcases/copy/TC1_RegisterationScenarios.class
-eqcare/peerjitestcases/copy/Novapeerji1797.class
 AutomatedTests/TC1_CovidResultsForm.class
 eqcare/pages/HRAPages.class
-eqcare/peerjitestcases/copy/AVStartVisit.class
 eqcare/factories/ExcelProvider.class
 eqcare/peerjitestcases/TC1_HRAEndScenarios.class
 LifeJourneyAutomatedTests/TC1_EndToEndScenarios.class
@@ -38,7 +33,6 @@ com/practitest/examples/runWithAttachments$1.class
 AutomatedTests/LoginScenarios.class
 eqcare/pages/BaseClass.class
 eqcare/peerjitestcases/copy/TC1_EndToEndScenariosAV.class
-eqcare/peerjitestcases/copy/TC1_RegisterationScenariosWithProfilePicNova1797.class
 com/practitest/examples/practitestPostProjectTestResults.class
 AutomatedTests/TC2_RegisterationScenarios.class
 TC1_EndToEndScenarios.class
@@ -49,11 +43,8 @@ eqcare/pages/AccountPage.class
 eqcare/factories/ErrorCodesProvider.class
 eqcare/peerjitestcases/TC3_ForgotPasswordScenarios.class
 NotRequiredClasses/LoginScenariosTC1.class
-eqcare/peerjitestcases/copy/Novapeerji3.class
 TC1_EndToEndScenariosAV.class
 nova/pages/AdminPage.class
-eqcare/peerjitestcases/copy/ClinicPeerji.class
-eqcare/peerjitestcases/copy/ClinicPeerjiStartVisit.class
 eqcare/testcases/TC6_HomeScenarios.class
 eqcare/peerjitestcases/Novapeerji.class
 eqcare/peerjitestcases/copy/ClinicAV.class
@@ -70,7 +61,6 @@ nova/pages/NovaHomePage.class
 eqcare/pages/VisitPage.class
 eqcare/peerjitestcases/copy/TC1_RegisterationScenariosAV.class
 AutomatedTests/TC1_EndToEndScenarios.class
-eqcare/peerjitestcases/copy/TC1_RegisterationScenariosWithProfilePicAV.class
 eqcare/pages/FeedbackPageAV.class
 eqcare/pages/HelpPageAV.class
 nova/pages/LogoutPage.class
@@ -79,9 +69,7 @@ eqcare/peerjitestcases/TC1_LifeJourneyEndScenarios.class
 TC2_RegisterationScenariosAV.class
 eqcare/pages/LoginPageAV.class
 eqcare/peerjitestcases/Novapeerji3.class
-eqcare/peerjitestcases/copy/EQStartVisit.class
 eqcare/pages/VisitPageAV.class
-eqcare/peerjitestcases/copy/TC1_RegisterationScenariosWithProfilePicNova.class
 LifeJourneyAutomatedTests/TC1_LifeJourneyEndScenarios.class
 eqcare/pages/ChooseProfilePage.class
 eqcare/pages/CovidFormPage.class
@@ -102,12 +90,10 @@ eqcare/pages/HelpPage.class
 eqcare/pages/TestBaseClass.class
 eqcare/pages/LifeJourneyHomePage.class
 eqcare/testcases/TC4_NotEnrolledPatientRegisteration.class
-eqcare/peerjitestcases/copy/Novapeerji.class
 eqcare/testcases/TC5_RegisterNovaCreateEmployee.class
 eqcare/pages/copy/Base.class
 eqcare/pages/LogoutPage.class
 eqcare/pages/copy/BaseClass.class
-eqcare/peerjitestcases/copy/TC1_RegisterationScenariosWithProfilePic.class
 eqcare/testcases/TC5_EnrolledUserRegisteration4.class
 nova/pages/ClinicPage.class
 eqcare/pages/IntakeFormPage.class

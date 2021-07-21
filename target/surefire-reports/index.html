@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-skipped">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>clinic.xml</span>
+                    <span>test.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,91 +91,105 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">15 methods,  15 skipped,  </span>
+                    <span class="method-stats">16 methods, 1 failed,   15 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content skipped suite-Suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.ClinicPeerji" class="method navigator-link" hash-for-method="doctorEndConsultation">doctorEndConsultation</a> <!-- method navigator-link -->
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV" class="method navigator-link" hash-for-method="fillIntakeFormWithAllFields">fillIntakeFormWithAllFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV" class="method navigator-link" hash-for-method="addChild">addChild</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.ClinicPeerji" class="method navigator-link" hash-for-method="feedback">feedback</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV" class="method navigator-link" hash-for-method="deleteChild">deleteChild</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.ClinicPeerji" class="method navigator-link" hash-for-method="functionsWithCM">functionsWithCM</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV" class="method navigator-link" hash-for-method="deviceCheck">deviceCheck</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.ClinicPeerji" class="method navigator-link" hash-for-method="inbox">inbox</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV" class="method navigator-link" hash-for-method="editAccountInformation">editAccountInformation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.ClinicPeerji" class="method navigator-link" hash-for-method="loginAsCM">loginAsCM</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV" class="method navigator-link" hash-for-method="editPersonalInformation">editPersonalInformation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.ClinicPeerji" class="method navigator-link" hash-for-method="loginAsDRNurse">loginAsDRNurse</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV" class="method navigator-link" hash-for-method="endVisit">endVisit</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.ClinicPeerji" class="method navigator-link" hash-for-method="loginToClinicApplication">loginToClinicApplication</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV" class="method navigator-link" hash-for-method="familyTab">familyTab</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.ClinicPeerji" class="method navigator-link" hash-for-method="loginToPatient">loginToPatient</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV" class="method navigator-link" hash-for-method="feedback">feedback</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.ClinicPeerji" class="method navigator-link" hash-for-method="navigateToDr">navigateToDr</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV" class="method navigator-link" hash-for-method="help">help</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.ClinicPeerji" class="method navigator-link" hash-for-method="navigateToNurse">navigateToNurse</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV" class="method navigator-link" hash-for-method="inbox">inbox</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.ClinicPeerji" class="method navigator-link" hash-for-method="patientChats">patientChats</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV" class="method navigator-link" hash-for-method="loginToApplication(sarikaqa7+avp@gmail.com, Sarika#123)">loginToApplication(sarikaqa7+avp@gmail.com, Sarika#123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.ClinicPeerji" class="method navigator-link" hash-for-method="patientChatsToDoctor">patientChatsToDoctor</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV" class="method navigator-link" hash-for-method="startVideoConsultation">startVideoConsultation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.ClinicPeerji" class="method navigator-link" hash-for-method="patientChatsToNurse">patientChatsToNurse</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV" class="method navigator-link" hash-for-method="uploadGovernmentID">uploadGovernmentID</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.ClinicPeerji" class="method navigator-link" hash-for-method="transferPatientToCoctor">transferPatientToCoctor</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV" class="method navigator-link" hash-for-method="uploadProfilePic">uploadProfilePic</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.ClinicPeerji" class="method navigator-link" hash-for-method="transferPatientToNurse">transferPatientToNurse</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV" class="method navigator-link" hash-for-method="verifyPage">verifyPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -187,21 +201,89 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-skipped">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">eqcare.peerjitestcases.copy.ClinicPeerji</span>
+              <img src="failed.png"/>
+              <span class="class-name">eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="doctorEndConsultation">
-                  </a> <!-- doctorEndConsultation -->
-                  <span class="method-name">doctorEndConsultation</span>
-                  <div class="stack-trace">java.lang.Throwable: Method ClinicPeerji.doctorEndConsultation()[pri:12, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3] depends on not successfully finished methods
+                  <a name="fillIntakeFormWithAllFields">
+                  </a> <!-- fillIntakeFormWithAllFields -->
+                  <span class="method-name">fillIntakeFormWithAllFields</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //input[@type=&apos;file&apos;] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;EQ-MAC-25.local&apos;, ip: &apos;fe80:0:0:0:c5c:69f7:98fb:3150%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: /var/folders/l9/4pwqxcnj26b...}, goog:chromeOptions: {debuggerAddress: localhost:56208}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d8ff563dd2c791872be0795081d12b78
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at eqcare.helper.Utility.waitForWebElement(Utility.java:112)
+	at eqcare.pages.IntakeFormPageAV.uploadFiles(IntakeFormPageAV.java:89)
+	at eqcare.pages.IntakeFormPageAV.fillIntakeForm(IntakeFormPageAV.java:75)
+	at eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV.fillIntakeFormWithAllFields(TC1_EndToEndScenariosAV.java:229)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 22 stack frames
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addChild">
+                  </a> <!-- addChild -->
+                  <span class="method-name">addChild</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteChild">
+                  </a> <!-- deleteChild -->
+                  <span class="method-name">deleteChild</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deviceCheck">
+                  </a> <!-- deviceCheck -->
+                  <span class="method-name">deviceCheck</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editAccountInformation">
+                  </a> <!-- editAccountInformation -->
+                  <span class="method-name">editAccountInformation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="editPersonalInformation">
+                  </a> <!-- editPersonalInformation -->
+                  <span class="method-name">editPersonalInformation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="endVisit">
+                  </a> <!-- endVisit -->
+                  <span class="method-name">endVisit</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="familyTab">
+                  </a> <!-- familyTab -->
+                  <span class="method-name">familyTab</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -209,71 +291,13 @@
                   <a name="feedback">
                   </a> <!-- feedback -->
                   <span class="method-name">feedback</span>
-                  <div class="stack-trace">java.lang.Throwable: Method ClinicPeerji.feedback()[pri:13, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="functionsWithCM">
-                  </a> <!-- functionsWithCM -->
-                  <span class="method-name">functionsWithCM</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 92
-Current browser version is 91.0.4472.114 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;EQ-MAC-25.local&apos;, ip: &apos;fe80:0:0:0:7:f30a:a40c:8cf0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;14.0.2&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: 0   chromedriver                        0x000000010d6f5eb9 chromedriver + 3059385
-1   chromedriver                        0x000000010de01963 chromedriver + 10447203
-2   chromedriver                        0x000000010d4352e8 chromedriver + 172776
-3   chromedriver                        0x000000010d45b16d chromedriver + 328045
-4   chromedriver                        0x000000010d456ca6 chromedriver + 310438
-5   chromedriver                        0x000000010d4537be chromedriver + 296894
-6   chromedriver                        0x000000010d48c54b chromedriver + 529739
-7   chromedriver                        0x000000010d486b83 chromedriver + 506755
-8   chromedriver                        0x000000010d45d480 chromedriver + 337024
-9   chromedriver                        0x000000010d45e615 chromedriver + 341525
-10  chromedriver                        0x000000010d6c0d9f chromedriver + 2842015
-11  chromedriver                        0x000000010d6d1562 chromedriver + 2909538
-12  chromedriver                        0x000000010d6d27cc chromedriver + 2914252
-13  chromedriver                        0x000000010d6a5f41 chromedriver + 2731841
-14  chromedriver                        0x000000010d6d2c9f chromedriver + 2915487
-15  chromedriver                        0x000000010d6b648c chromedriver + 2798732
-16  chromedriver                        0x000000010d6eac68 chromedriver + 3013736
-17  chromedriver                        0x000000010d6eadf1 chromedriver + 3014129
-18  chromedriver                        0x000000010d6fbb68 chromedriver + 3083112
-19  libsystem_pthread.dylib             0x00007fff2057e954 _pthread_start + 224
-20  libsystem_pthread.dylib             0x00007fff2057a4a7 thread_start + 15
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
-	at eqcare.factories.BrowserFactory.getApplication(BrowserFactory.java:101)
-	at eqcare.pages.copy.BaseClass.setUp(BaseClass.java:39)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 34 stack frames
-</div> <!-- stack-trace -->
+                  <a name="help">
+                  </a> <!-- help -->
+                  <span class="method-name">help</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -281,389 +305,50 @@ remote stacktrace: 0   chromedriver                        0x000000010d6f5eb9 ch
                   <a name="inbox">
                   </a> <!-- inbox -->
                   <span class="method-name">inbox</span>
-                  <div class="stack-trace">java.lang.Throwable: Method ClinicPeerji.inbox()[pri:14, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginAsCM">
-                  </a> <!-- loginAsCM -->
-                  <span class="method-name">loginAsCM</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 92
-Current browser version is 91.0.4472.114 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;EQ-MAC-25.local&apos;, ip: &apos;fe80:0:0:0:7:f30a:a40c:8cf0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;14.0.2&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: 0   chromedriver                        0x000000010d6f5eb9 chromedriver + 3059385
-1   chromedriver                        0x000000010de01963 chromedriver + 10447203
-2   chromedriver                        0x000000010d4352e8 chromedriver + 172776
-3   chromedriver                        0x000000010d45b16d chromedriver + 328045
-4   chromedriver                        0x000000010d456ca6 chromedriver + 310438
-5   chromedriver                        0x000000010d4537be chromedriver + 296894
-6   chromedriver                        0x000000010d48c54b chromedriver + 529739
-7   chromedriver                        0x000000010d486b83 chromedriver + 506755
-8   chromedriver                        0x000000010d45d480 chromedriver + 337024
-9   chromedriver                        0x000000010d45e615 chromedriver + 341525
-10  chromedriver                        0x000000010d6c0d9f chromedriver + 2842015
-11  chromedriver                        0x000000010d6d1562 chromedriver + 2909538
-12  chromedriver                        0x000000010d6d27cc chromedriver + 2914252
-13  chromedriver                        0x000000010d6a5f41 chromedriver + 2731841
-14  chromedriver                        0x000000010d6d2c9f chromedriver + 2915487
-15  chromedriver                        0x000000010d6b648c chromedriver + 2798732
-16  chromedriver                        0x000000010d6eac68 chromedriver + 3013736
-17  chromedriver                        0x000000010d6eadf1 chromedriver + 3014129
-18  chromedriver                        0x000000010d6fbb68 chromedriver + 3083112
-19  libsystem_pthread.dylib             0x00007fff2057e954 _pthread_start + 224
-20  libsystem_pthread.dylib             0x00007fff2057a4a7 thread_start + 15
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
-	at eqcare.factories.BrowserFactory.getApplication(BrowserFactory.java:101)
-	at eqcare.pages.copy.BaseClass.setUp(BaseClass.java:39)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 34 stack frames
-</div> <!-- stack-trace -->
+                  <a name="loginToApplication(sarikaqa7+avp@gmail.com, Sarika#123)">
+                  </a> <!-- loginToApplication(sarikaqa7+avp@gmail.com, Sarika#123) -->
+                  <span class="method-name">loginToApplication</span>
+                  <span class="parameters">(sarikaqa7+avp@gmail.com, Sarika#123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginAsDRNurse">
-                  </a> <!-- loginAsDRNurse -->
-                  <span class="method-name">loginAsDRNurse</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 92
-Current browser version is 91.0.4472.114 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;EQ-MAC-25.local&apos;, ip: &apos;fe80:0:0:0:7:f30a:a40c:8cf0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;14.0.2&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: 0   chromedriver                        0x000000010d6f5eb9 chromedriver + 3059385
-1   chromedriver                        0x000000010de01963 chromedriver + 10447203
-2   chromedriver                        0x000000010d4352e8 chromedriver + 172776
-3   chromedriver                        0x000000010d45b16d chromedriver + 328045
-4   chromedriver                        0x000000010d456ca6 chromedriver + 310438
-5   chromedriver                        0x000000010d4537be chromedriver + 296894
-6   chromedriver                        0x000000010d48c54b chromedriver + 529739
-7   chromedriver                        0x000000010d486b83 chromedriver + 506755
-8   chromedriver                        0x000000010d45d480 chromedriver + 337024
-9   chromedriver                        0x000000010d45e615 chromedriver + 341525
-10  chromedriver                        0x000000010d6c0d9f chromedriver + 2842015
-11  chromedriver                        0x000000010d6d1562 chromedriver + 2909538
-12  chromedriver                        0x000000010d6d27cc chromedriver + 2914252
-13  chromedriver                        0x000000010d6a5f41 chromedriver + 2731841
-14  chromedriver                        0x000000010d6d2c9f chromedriver + 2915487
-15  chromedriver                        0x000000010d6b648c chromedriver + 2798732
-16  chromedriver                        0x000000010d6eac68 chromedriver + 3013736
-17  chromedriver                        0x000000010d6eadf1 chromedriver + 3014129
-18  chromedriver                        0x000000010d6fbb68 chromedriver + 3083112
-19  libsystem_pthread.dylib             0x00007fff2057e954 _pthread_start + 224
-20  libsystem_pthread.dylib             0x00007fff2057a4a7 thread_start + 15
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
-	at eqcare.factories.BrowserFactory.getApplication(BrowserFactory.java:101)
-	at eqcare.pages.copy.BaseClass.setUp(BaseClass.java:39)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 34 stack frames
-</div> <!-- stack-trace -->
+                  <a name="startVideoConsultation">
+                  </a> <!-- startVideoConsultation -->
+                  <span class="method-name">startVideoConsultation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginToClinicApplication">
-                  </a> <!-- loginToClinicApplication -->
-                  <span class="method-name">loginToClinicApplication</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 92
-Current browser version is 91.0.4472.114 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;EQ-MAC-25.local&apos;, ip: &apos;fe80:0:0:0:7:f30a:a40c:8cf0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;14.0.2&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: 0   chromedriver                        0x000000010d6f5eb9 chromedriver + 3059385
-1   chromedriver                        0x000000010de01963 chromedriver + 10447203
-2   chromedriver                        0x000000010d4352e8 chromedriver + 172776
-3   chromedriver                        0x000000010d45b16d chromedriver + 328045
-4   chromedriver                        0x000000010d456ca6 chromedriver + 310438
-5   chromedriver                        0x000000010d4537be chromedriver + 296894
-6   chromedriver                        0x000000010d48c54b chromedriver + 529739
-7   chromedriver                        0x000000010d486b83 chromedriver + 506755
-8   chromedriver                        0x000000010d45d480 chromedriver + 337024
-9   chromedriver                        0x000000010d45e615 chromedriver + 341525
-10  chromedriver                        0x000000010d6c0d9f chromedriver + 2842015
-11  chromedriver                        0x000000010d6d1562 chromedriver + 2909538
-12  chromedriver                        0x000000010d6d27cc chromedriver + 2914252
-13  chromedriver                        0x000000010d6a5f41 chromedriver + 2731841
-14  chromedriver                        0x000000010d6d2c9f chromedriver + 2915487
-15  chromedriver                        0x000000010d6b648c chromedriver + 2798732
-16  chromedriver                        0x000000010d6eac68 chromedriver + 3013736
-17  chromedriver                        0x000000010d6eadf1 chromedriver + 3014129
-18  chromedriver                        0x000000010d6fbb68 chromedriver + 3083112
-19  libsystem_pthread.dylib             0x00007fff2057e954 _pthread_start + 224
-20  libsystem_pthread.dylib             0x00007fff2057a4a7 thread_start + 15
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
-	at eqcare.factories.BrowserFactory.getApplication(BrowserFactory.java:101)
-	at eqcare.pages.copy.BaseClass.setUp(BaseClass.java:39)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 34 stack frames
-</div> <!-- stack-trace -->
+                  <a name="uploadGovernmentID">
+                  </a> <!-- uploadGovernmentID -->
+                  <span class="method-name">uploadGovernmentID</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="loginToPatient">
-                  </a> <!-- loginToPatient -->
-                  <span class="method-name">loginToPatient</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 92
-Current browser version is 91.0.4472.114 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;EQ-MAC-25.local&apos;, ip: &apos;fe80:0:0:0:7:f30a:a40c:8cf0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;14.0.2&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: 0   chromedriver                        0x000000010d6f5eb9 chromedriver + 3059385
-1   chromedriver                        0x000000010de01963 chromedriver + 10447203
-2   chromedriver                        0x000000010d4352e8 chromedriver + 172776
-3   chromedriver                        0x000000010d45b16d chromedriver + 328045
-4   chromedriver                        0x000000010d456ca6 chromedriver + 310438
-5   chromedriver                        0x000000010d4537be chromedriver + 296894
-6   chromedriver                        0x000000010d48c54b chromedriver + 529739
-7   chromedriver                        0x000000010d486b83 chromedriver + 506755
-8   chromedriver                        0x000000010d45d480 chromedriver + 337024
-9   chromedriver                        0x000000010d45e615 chromedriver + 341525
-10  chromedriver                        0x000000010d6c0d9f chromedriver + 2842015
-11  chromedriver                        0x000000010d6d1562 chromedriver + 2909538
-12  chromedriver                        0x000000010d6d27cc chromedriver + 2914252
-13  chromedriver                        0x000000010d6a5f41 chromedriver + 2731841
-14  chromedriver                        0x000000010d6d2c9f chromedriver + 2915487
-15  chromedriver                        0x000000010d6b648c chromedriver + 2798732
-16  chromedriver                        0x000000010d6eac68 chromedriver + 3013736
-17  chromedriver                        0x000000010d6eadf1 chromedriver + 3014129
-18  chromedriver                        0x000000010d6fbb68 chromedriver + 3083112
-19  libsystem_pthread.dylib             0x00007fff2057e954 _pthread_start + 224
-20  libsystem_pthread.dylib             0x00007fff2057a4a7 thread_start + 15
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
-	at eqcare.factories.BrowserFactory.getApplication(BrowserFactory.java:101)
-	at eqcare.pages.copy.BaseClass.setUp(BaseClass.java:39)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 34 stack frames
-</div> <!-- stack-trace -->
+                  <a name="uploadProfilePic">
+                  </a> <!-- uploadProfilePic -->
+                  <span class="method-name">uploadProfilePic</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="navigateToDr">
-                  </a> <!-- navigateToDr -->
-                  <span class="method-name">navigateToDr</span>
-                  <div class="stack-trace">java.lang.Throwable: Method ClinicPeerji.navigateToDr(java.lang.String)[pri:10, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="navigateToNurse">
-                  </a> <!-- navigateToNurse -->
-                  <span class="method-name">navigateToNurse</span>
-                  <div class="stack-trace">java.lang.Throwable: Method ClinicPeerji.navigateToNurse(java.lang.String)[pri:7, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="patientChats">
-                  </a> <!-- patientChats -->
-                  <span class="method-name">patientChats</span>
-                  <div class="stack-trace">java.lang.Throwable: Method ClinicPeerji.patientChats()[pri:5, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="patientChatsToDoctor">
-                  </a> <!-- patientChatsToDoctor -->
-                  <span class="method-name">patientChatsToDoctor</span>
-                  <div class="stack-trace">java.lang.Throwable: Method ClinicPeerji.patientChatsToDoctor()[pri:11, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="patientChatsToNurse">
-                  </a> <!-- patientChatsToNurse -->
-                  <span class="method-name">patientChatsToNurse</span>
-                  <div class="stack-trace">java.lang.Throwable: Method ClinicPeerji.patientChatsToNurse()[pri:8, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="transferPatientToCoctor">
-                  </a> <!-- transferPatientToCoctor -->
-                  <span class="method-name">transferPatientToCoctor</span>
-                  <div class="stack-trace">java.lang.Throwable: Method ClinicPeerji.transferPatientToCoctor()[pri:9, instance:eqcare.peerjitestcases.copy.ClinicPeerji@306f16f3] depends on not successfully finished methods
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 22 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="transferPatientToNurse">
-                  </a> <!-- transferPatientToNurse -->
-                  <span class="method-name">transferPatientToNurse</span>
-                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: session not created: This version of ChromeDriver only supports Chrome version 92
-Current browser version is 91.0.4472.114 with binary path /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
-Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
-System info: host: &apos;EQ-MAC-25.local&apos;, ip: &apos;fe80:0:0:0:7:f30a:a40c:8cf0%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;14.0.2&apos;
-Driver info: driver.version: ChromeDriver
-remote stacktrace: 0   chromedriver                        0x000000010d6f5eb9 chromedriver + 3059385
-1   chromedriver                        0x000000010de01963 chromedriver + 10447203
-2   chromedriver                        0x000000010d4352e8 chromedriver + 172776
-3   chromedriver                        0x000000010d45b16d chromedriver + 328045
-4   chromedriver                        0x000000010d456ca6 chromedriver + 310438
-5   chromedriver                        0x000000010d4537be chromedriver + 296894
-6   chromedriver                        0x000000010d48c54b chromedriver + 529739
-7   chromedriver                        0x000000010d486b83 chromedriver + 506755
-8   chromedriver                        0x000000010d45d480 chromedriver + 337024
-9   chromedriver                        0x000000010d45e615 chromedriver + 341525
-10  chromedriver                        0x000000010d6c0d9f chromedriver + 2842015
-11  chromedriver                        0x000000010d6d1562 chromedriver + 2909538
-12  chromedriver                        0x000000010d6d27cc chromedriver + 2914252
-13  chromedriver                        0x000000010d6a5f41 chromedriver + 2731841
-14  chromedriver                        0x000000010d6d2c9f chromedriver + 2915487
-15  chromedriver                        0x000000010d6b648c chromedriver + 2798732
-16  chromedriver                        0x000000010d6eac68 chromedriver + 3013736
-17  chromedriver                        0x000000010d6eadf1 chromedriver + 3014129
-18  chromedriver                        0x000000010d6fbb68 chromedriver + 3083112
-19  libsystem_pthread.dylib             0x00007fff2057e954 _pthread_start + 224
-20  libsystem_pthread.dylib             0x00007fff2057a4a7 thread_start + 15
-
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
-	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
-	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
-	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
-	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
-	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
-	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
-	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
-	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
-	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
-	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:157)
-	at eqcare.factories.BrowserFactory.getApplication(BrowserFactory.java:101)
-	at eqcare.pages.copy.BaseClass.setUp(BaseClass.java:39)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 34 stack frames
-</div> <!-- stack-trace -->
+                  <a name="verifyPage">
+                  </a> <!-- verifyPage -->
+                  <span class="method-name">verifyPage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/sarikadhall/git/peerjiTestNewEqjune2021/XMLFiles/clinic.xml</span>
+            <span class="header-content">/Users/sarikadhall/git/peerjiTestNewEqjune2021/XMLFiles/test.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -675,7 +360,7 @@ remote stacktrace: 0   chromedriver                        0x000000010d6f5eb9 ch
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;3&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;eqcare.peerjitestcases.copy.ClinicPeerji&quot;/&gt;
+      &lt;class name=&quot;eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -715,72 +400,76 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(15);
+data.addRows(16);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'patientChatsToNurse')
-data.setCell(0, 2, 'eqcare.peerjitestcases.copy.ClinicPeerji')
-data.setCell(0, 3, 0);
+data.setCell(0, 1, 'fillIntakeFormWithAllFields')
+data.setCell(0, 2, 'eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV')
+data.setCell(0, 3, 44972);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'navigateToNurse')
-data.setCell(1, 2, 'eqcare.peerjitestcases.copy.ClinicPeerji')
-data.setCell(1, 3, 0);
+data.setCell(1, 1, 'editPersonalInformation')
+data.setCell(1, 2, 'eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV')
+data.setCell(1, 3, 23804);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'transferPatientToCoctor')
-data.setCell(2, 2, 'eqcare.peerjitestcases.copy.ClinicPeerji')
-data.setCell(2, 3, 0);
+data.setCell(2, 1, 'inbox')
+data.setCell(2, 2, 'eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV')
+data.setCell(2, 3, 18345);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'patientChats')
-data.setCell(3, 2, 'eqcare.peerjitestcases.copy.ClinicPeerji')
-data.setCell(3, 3, 0);
+data.setCell(3, 1, 'editAccountInformation')
+data.setCell(3, 2, 'eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV')
+data.setCell(3, 3, 13765);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'functionsWithCM')
-data.setCell(4, 2, 'eqcare.peerjitestcases.copy.ClinicPeerji')
-data.setCell(4, 3, 0);
+data.setCell(4, 1, 'addChild')
+data.setCell(4, 2, 'eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV')
+data.setCell(4, 3, 10614);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'loginToClinicApplication')
-data.setCell(5, 2, 'eqcare.peerjitestcases.copy.ClinicPeerji')
-data.setCell(5, 3, 0);
+data.setCell(5, 1, 'familyTab')
+data.setCell(5, 2, 'eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV')
+data.setCell(5, 3, 9635);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'navigateToDr')
-data.setCell(6, 2, 'eqcare.peerjitestcases.copy.ClinicPeerji')
-data.setCell(6, 3, 0);
+data.setCell(6, 1, 'endVisit')
+data.setCell(6, 2, 'eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV')
+data.setCell(6, 3, 8182);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'patientChatsToDoctor')
-data.setCell(7, 2, 'eqcare.peerjitestcases.copy.ClinicPeerji')
-data.setCell(7, 3, 0);
+data.setCell(7, 1, 'deviceCheck')
+data.setCell(7, 2, 'eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV')
+data.setCell(7, 3, 6000);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'transferPatientToNurse')
-data.setCell(8, 2, 'eqcare.peerjitestcases.copy.ClinicPeerji')
-data.setCell(8, 3, 0);
+data.setCell(8, 1, 'deleteChild')
+data.setCell(8, 2, 'eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV')
+data.setCell(8, 3, 5999);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'inbox')
-data.setCell(9, 2, 'eqcare.peerjitestcases.copy.ClinicPeerji')
-data.setCell(9, 3, 0);
+data.setCell(9, 1, 'uploadProfilePic')
+data.setCell(9, 2, 'eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV')
+data.setCell(9, 3, 4353);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'doctorEndConsultation')
-data.setCell(10, 2, 'eqcare.peerjitestcases.copy.ClinicPeerji')
-data.setCell(10, 3, 0);
+data.setCell(10, 1, 'uploadGovernmentID')
+data.setCell(10, 2, 'eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV')
+data.setCell(10, 3, 4174);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'loginToPatient')
-data.setCell(11, 2, 'eqcare.peerjitestcases.copy.ClinicPeerji')
-data.setCell(11, 3, 0);
+data.setCell(11, 1, 'loginToApplication')
+data.setCell(11, 2, 'eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV')
+data.setCell(11, 3, 3943);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'feedback')
-data.setCell(12, 2, 'eqcare.peerjitestcases.copy.ClinicPeerji')
-data.setCell(12, 3, 0);
+data.setCell(12, 2, 'eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV')
+data.setCell(12, 3, 3088);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'loginAsCM')
-data.setCell(13, 2, 'eqcare.peerjitestcases.copy.ClinicPeerji')
-data.setCell(13, 3, 0);
+data.setCell(13, 1, 'help')
+data.setCell(13, 2, 'eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV')
+data.setCell(13, 3, 2604);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'loginAsDRNurse')
-data.setCell(14, 2, 'eqcare.peerjitestcases.copy.ClinicPeerji')
-data.setCell(14, 3, 0);
+data.setCell(14, 1, 'startVideoConsultation')
+data.setCell(14, 2, 'eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV')
+data.setCell(14, 3, 588);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyPage')
+data.setCell(15, 2, 'eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV')
+data.setCell(15, 3, 25);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 0 ms</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -799,9 +488,9 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">eqcare.peerjitestcases.copy.ClinicPeerji</span>
+              <span class="ignored-class-name">eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">loginToPatientApplication</span>
+                <span class="ignored-method-name">chooseProfile</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -813,76 +502,148 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">eqcare.peerjitestcases.copy.ClinicPeerji</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">setUp(Chrome, https://av.eqserviceqa1.eqcaredev.com/login, eq, https://clinic.eqserviceqa1.eqcaredev.com/l...)</span>
+              <div class="chronological-class-name">eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupReport</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(Chrome, https://av.eqserviceqa4.eqcaredev.com/login, eq)</span>
+                <span class="method-start">14 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">loginAsCM</span>
-                <span class="method-start">6246 ms</span>
+                <span class="method-name">verifyPage</span>
+                <span class="method-start">13093 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownReport([TestResult name=verifyPage status=SUCCESS method=TC1_EndToEndScenariosAV.verifyPage()[pri:0, instan...)</span>
+                <span class="method-start">13120 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">loginAsDRNurse</span>
-                <span class="method-start">6251 ms</span>
+                <span class="method-name">loginToApplication(sarikaqa7+avp@gmail.com, Sarika#123)</span>
+                <span class="method-start">13369 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownReport([TestResult name=loginToApplication status=SUCCESS method=TC1_EndToEndScenariosAV.loginToApplication...)</span>
+                <span class="method-start">17313 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">loginToClinicApplication</span>
-                <span class="method-start">6252 ms</span>
+                <span class="method-name">editPersonalInformation</span>
+                <span class="method-start">17325 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownReport([TestResult name=editPersonalInformation status=SUCCESS method=TC1_EndToEndScenariosAV.editPersonalI...)</span>
+                <span class="method-start">41130 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">loginToPatient</span>
-                <span class="method-start">6253 ms</span>
+                <span class="method-name">editAccountInformation</span>
+                <span class="method-start">41151 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownReport([TestResult name=editAccountInformation status=SUCCESS method=TC1_EndToEndScenariosAV.editAccountInf...)</span>
+                <span class="method-start">54917 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">functionsWithCM</span>
-                <span class="method-start">6254 ms</span>
+                <span class="method-name">uploadProfilePic</span>
+                <span class="method-start">54937 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownReport([TestResult name=uploadProfilePic status=SUCCESS method=TC1_EndToEndScenariosAV.uploadProfilePic()[p...)</span>
+                <span class="method-start">59291 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">patientChats</span>
-                <span class="method-start">6255 ms</span>
+                <span class="method-name">uploadGovernmentID</span>
+                <span class="method-start">59301 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownReport([TestResult name=uploadGovernmentID status=SUCCESS method=TC1_EndToEndScenariosAV.uploadGovernmentID...)</span>
+                <span class="method-start">63476 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">transferPatientToNurse</span>
-                <span class="method-start">6255 ms</span>
+                <span class="method-name">familyTab</span>
+                <span class="method-start">63494 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownReport([TestResult name=familyTab status=SUCCESS method=TC1_EndToEndScenariosAV.familyTab()[pri:6, instance...)</span>
+                <span class="method-start">73130 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">navigateToNurse</span>
-                <span class="method-start">6256 ms</span>
+                <span class="method-name">addChild</span>
+                <span class="method-start">73155 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownReport([TestResult name=addChild status=SUCCESS method=TC1_EndToEndScenariosAV.addChild()[pri:7, instance:e...)</span>
+                <span class="method-start">83769 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">patientChatsToNurse</span>
-                <span class="method-start">6257 ms</span>
+                <span class="method-name">deleteChild</span>
+                <span class="method-start">83792 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownReport([TestResult name=deleteChild status=SUCCESS method=TC1_EndToEndScenariosAV.deleteChild()[pri:8, inst...)</span>
+                <span class="method-start">89791 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">transferPatientToCoctor</span>
-                <span class="method-start">6258 ms</span>
+                <span class="method-name">startVideoConsultation</span>
+                <span class="method-start">89814 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownReport([TestResult name=startVideoConsultation status=SUCCESS method=TC1_EndToEndScenariosAV.startVideoCons...)</span>
+                <span class="method-start">90402 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">navigateToDr</span>
-                <span class="method-start">6258 ms</span>
+                <span class="method-name">deviceCheck</span>
+                <span class="method-start">90409 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownReport([TestResult name=deviceCheck status=SUCCESS method=TC1_EndToEndScenariosAV.deviceCheck()[pri:10, ins...)</span>
+                <span class="method-start">96409 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">patientChatsToDoctor</span>
-                <span class="method-start">6259 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">fillIntakeFormWithAllFields</span>
+                <span class="method-start">96424 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownReport([TestResult name=fillIntakeFormWithAllFields status=FAILURE method=TC1_EndToEndScenariosAV.fillIntak...)</span>
+                <span class="method-start">141404 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
-                <span class="method-name">doctorEndConsultation</span>
-                <span class="method-start">6259 ms</span>
+                <span class="method-name">endVisit</span>
+                <span class="method-start">141854 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownReport([TestResult name=endVisit status=SUCCESS method=TC1_EndToEndScenariosAV.endVisit()[pri:12, instance:...)</span>
+                <span class="method-start">150037 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">feedback</span>
-                <span class="method-start">6260 ms</span>
+                <span class="method-start">150058 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownReport([TestResult name=feedback status=SUCCESS method=TC1_EndToEndScenariosAV.feedback()[pri:13, instance:...)</span>
+                <span class="method-start">153147 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">help</span>
+                <span class="method-start">153152 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownReport([TestResult name=help status=SUCCESS method=TC1_EndToEndScenariosAV.help()[pri:14, instance:eqcare.p...)</span>
+                <span class="method-start">155756 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">inbox</span>
-                <span class="method-start">6260 ms</span>
+                <span class="method-start">155769 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownReport([TestResult name=inbox status=SUCCESS method=TC1_EndToEndScenariosAV.inbox()[pri:14, instance:eqcare...)</span>
+                <span class="method-start">174115 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">6261 ms</span>
+                <span class="method-start">174138 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
