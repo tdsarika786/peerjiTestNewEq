@@ -26,6 +26,8 @@ public class StartVisitAVP extends BaseClass {
 	public void loginToApplication() throws Exception {
 
 		login = PageFactory.initElements(driver, LoginPageAV.class);
+		
+		login.AccessVirtualURL();
 
 		login.loginToApplication("sarikaqa7+avp@gmail.com", "Sarika#123");
 
