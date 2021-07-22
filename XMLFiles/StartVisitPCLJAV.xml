@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+<listener class-name="eqcare.pages.Listeners"> </listener>
+
+</listeners>
+
+  <test name="Test" preserve-order="true" thread-count="5" >
+    <classes>
+       
+         <class name="eqcare.peerjitestcases.copy.StartVisitAV2"/> 
+         
+         <class name="eqcare.peerjitestcases.copy.StartVisitAVP"/> 
+         
+         <class name="eqcare.peerjitestcases.copy.StartVisitLJ2"/> 
+          
+                  <class name="eqcare.peerjitestcases.copy.StartVisitPC"/> 
+                  
+                        <class name="eqcare.peerjitestcases.copy.StartVisitPCLJ"/> 
+           
+          <!--   <class name="eqcare.peerjitestcases.copy.TC3_EndToEndScenarios"/> -->
+      
+      <!-- <class name="eqcare.peerjitestcases.copy.TC4_LifeJourneyEndScenarios "/> -->
+       
+    </classes>
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
