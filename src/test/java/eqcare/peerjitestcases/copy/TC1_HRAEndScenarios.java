@@ -59,17 +59,17 @@ public class TC1_HRAEndScenarios extends BaseClass {
 	@Test(priority = 2, dependsOnMethods = "verifyPage")
 	public void verifyHRAPages() throws Exception {
 		
-		home.navigateToHRAContentLibrary();
+		//home.navigateToHRAContentLibrary();
 		
-		home.verifyHRAContentLibrary();
+		//home.verifyHRAContentLibrary();
 		
-		//home.navigateToHRAIntakePage();
+		home.navigateToHRAIntakePage();
 
-		//home.verifyHRAPhysicalIntakeForms();
+		home.verifyHRAPhysicalIntakeForms();
 		
-		//home.verifyHRALifeStyle();
+		home.verifyHRALifeStyle();
 		
-		//home.verifyMedical();
+		home.verifyMedical();
 
 	}
 	

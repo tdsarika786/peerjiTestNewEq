@@ -112,7 +112,7 @@ public class Novapeerji1733 extends BaseClass {
         
 	    home.createCoverage1797(searchemployer1,null, "primary_care");
 		
-		home.createCoverage1797(searchemployer1,null, "lifejourney");
+	    home.createCoverageUpdate1797(searchemployer1,null, "lifejourney");
 		
 		home.createService1797(searchemployer1,null,null);
 		
