@@ -34,6 +34,8 @@ public class IntakeFormPageAV {
 	By uploadFile = By.xpath("//input[@type='file']");
 
 	By startCall = By.xpath("//a[@data-role='start-call-button']");
+	
+	By uploadDiv = By.xpath("(//p[contains(text(),'Chat')]/following-sibling::div)[1]");
 
 	public void verifyIntakeFormPageUrl()
 
@@ -71,6 +73,8 @@ public class IntakeFormPageAV {
 		// calen), "25");
 		
 		Utility.wait(20);
+		
+		Utility.waitForWebElement(driver, uploadDiv).click();
 		
 		uploadFiles("test2.jpeg");
 		
