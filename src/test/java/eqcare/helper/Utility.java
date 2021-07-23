@@ -104,6 +104,20 @@ public class Utility {
 		
 		
 	}
+	
+	
+	public static WebElement waitForWebElementVisible(WebDriver driver, By byLocator) {
+
+		WebDriverWait wait = new WebDriverWait(driver, 15);
+		//WebElement element = wait.until(ExpectedConditions.elementToBeClickable(byLocator));
+		
+		WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(byLocator));
+		
+		
+		highLightElement(driver, element);
+
+		return element;
+	}
 
 	
 	public static WebElement waitForWebElement(WebDriver driver, By byLocator) {
