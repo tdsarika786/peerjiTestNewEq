@@ -6,18 +6,22 @@
   </listeners>
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV">
+      <class name="eqcare.peerjitestcases.copy.TC1_HRANewScenarios">
         <methods>
-          <include name="verifyPage"/>
-          <include name="setupReport"/>
-          <include name="tearDown"/>
-          <include name="fillIntakeFormWithAllFields"/>
-          <include name="tearDownReport"/>
           <include name="setUp"/>
-          <include name="deviceCheck"/>
-          <include name="loginToApplication"/>
+          <include name="verifyLifeStyleQuesStressHappiness1"/>
+          <include name="verifyHRAIntroPage"/>
+          <include name="verifyPhysicalQues3"/>
+          <include name="verifyPhysicalQues2"/>
+          <include name="verifyLifeStyleQuesSmoking2"/>
+          <include name="verifyHRACompletition"/>
+          <include name="tearDown"/>
+          <include name="verifyLifeStyleQuesDrinking1"/>
+          <include name="verifyPage"/>
+          <include name="verifyLifeStyleQuesSleep1"/>
+          <include name="verifyPhysicalQues1"/>
         </methods>
-      </class> <!-- eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV -->
+      </class> <!-- eqcare.peerjitestcases.copy.TC1_HRANewScenarios -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

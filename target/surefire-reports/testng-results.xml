@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="17" passed="15" failed="1" skipped="0">
+<testng-results ignored="5" total="16" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-21T15:13:14 EDT" name="Suite" finished-at="2021-07-21T15:16:11 EDT" duration-ms="176427">
+  <suite started-at="2021-07-22T21:38:19 EDT" name="Suite" finished-at="2021-07-22T21:40:59 EDT" duration-ms="160724">
     <groups>
     </groups>
-    <test started-at="2021-07-21T15:13:14 EDT" name="Test" finished-at="2021-07-21T15:16:11 EDT" duration-ms="176427">
-      <class name="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV">
-        <test-method is-config="true" signature="setupReport()[pri:0, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:13:14 EDT" name="setupReport" finished-at="2021-07-21T15:13:14 EDT" duration-ms="7" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setupReport -->
-        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:13:14 EDT" name="setUp" finished-at="2021-07-21T15:13:27 EDT" duration-ms="13074" status="PASS">
+    <test started-at="2021-07-22T21:38:19 EDT" name="Test" finished-at="2021-07-22T21:40:59 EDT" duration-ms="160724">
+      <class name="eqcare.peerjitestcases.copy.TC1_HRANewScenarios">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:eqcare.peerjitestcases.copy.TC1_HRANewScenarios@10163d6]" started-at="2021-07-22T21:38:19 EDT" name="setUp" finished-at="2021-07-22T21:38:38 EDT" duration-ms="19180" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -20,7 +16,7 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://av.eqserviceqa4.eqcaredev.com/login]]>
+                <![CDATA[https://patient.eqserviceqa1.eqcaredev.com/login]]>
               </value>
             </param>
             <param index="2">
@@ -28,324 +24,108 @@
                 <![CDATA[eq]]>
               </value>
             </param>
+            <param index="3">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyPage()[pri:0, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:13:27 EDT" name="verifyPage" finished-at="2021-07-21T15:13:28 EDT" duration-ms="25" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyPage -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:13:28 EDT" name="tearDownReport" finished-at="2021-07-21T15:13:28 EDT" duration-ms="247" status="PASS">
+        <test-method signature="verifyPage(java.lang.String, java.lang.String)[pri:1, instance:eqcare.peerjitestcases.copy.TC1_HRANewScenarios@10163d6]" started-at="2021-07-22T21:38:38 EDT" name="verifyPage" finished-at="2021-07-22T21:38:53 EDT" duration-ms="15470" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyPage status=SUCCESS method=TC1_EndToEndScenariosAV.verifyPage()[pri:0, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="loginToApplication(java.lang.String, java.lang.String)[pri:1, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:13:28 EDT" name="loginToApplication" finished-at="2021-07-21T15:13:32 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV.verifyPage" duration-ms="3943" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[sarikaqa7+avp@gmail.com]]>
+                <![CDATA[sdhall@eqcare.com]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[Sarika#123]]>
+                <![CDATA[secret]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginToApplication -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:13:32 EDT" name="tearDownReport" finished-at="2021-07-21T15:13:32 EDT" duration-ms="11" status="PASS">
+        </test-method> <!-- verifyPage -->
+        <test-method signature="verifyHRAIntroPage()[pri:2, instance:eqcare.peerjitestcases.copy.TC1_HRANewScenarios@10163d6]" started-at="2021-07-22T21:38:53 EDT" name="verifyHRAIntroPage" finished-at="2021-07-22T21:38:57 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_HRANewScenarios.verifyPage" duration-ms="3451" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHRAIntroPage -->
+        <test-method signature="verifyPhysicalQues1()[pri:3, instance:eqcare.peerjitestcases.copy.TC1_HRANewScenarios@10163d6]" started-at="2021-07-22T21:38:57 EDT" name="verifyPhysicalQues1" finished-at="2021-07-22T21:39:02 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_HRANewScenarios.verifyHRAIntroPage" duration-ms="5244" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPhysicalQues1 -->
+        <test-method signature="verifyPhysicalQues2()[pri:4, instance:eqcare.peerjitestcases.copy.TC1_HRANewScenarios@10163d6]" started-at="2021-07-22T21:39:02 EDT" name="verifyPhysicalQues2" finished-at="2021-07-22T21:39:07 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_HRANewScenarios.verifyPhysicalQues1" duration-ms="5093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPhysicalQues2 -->
+        <test-method signature="verifyPhysicalQues3()[pri:5, instance:eqcare.peerjitestcases.copy.TC1_HRANewScenarios@10163d6]" started-at="2021-07-22T21:39:07 EDT" name="verifyPhysicalQues3" finished-at="2021-07-22T21:39:17 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_HRANewScenarios.verifyPhysicalQues2" duration-ms="9708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPhysicalQues3 -->
+        <test-method signature="verifyLifeStyleQuesSleep1()[pri:6, instance:eqcare.peerjitestcases.copy.TC1_HRANewScenarios@10163d6]" started-at="2021-07-22T21:39:17 EDT" name="verifyLifeStyleQuesSleep1" finished-at="2021-07-22T21:39:19 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_HRANewScenarios.verifyPhysicalQues3" duration-ms="2391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLifeStyleQuesSleep1 -->
+        <test-method signature="verifyLifeStyleQuesSmoking2()[pri:7, instance:eqcare.peerjitestcases.copy.TC1_HRANewScenarios@10163d6]" started-at="2021-07-22T21:39:19 EDT" name="verifyLifeStyleQuesSmoking2" finished-at="2021-07-22T21:39:41 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_HRANewScenarios.verifyLifeStyleQuesSleep1" duration-ms="22065" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLifeStyleQuesSmoking2 -->
+        <test-method signature="verifyLifeStyleQuesDrinking1()[pri:8, instance:eqcare.peerjitestcases.copy.TC1_HRANewScenarios@10163d6]" started-at="2021-07-22T21:39:41 EDT" name="verifyLifeStyleQuesDrinking1" finished-at="2021-07-22T21:39:53 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_HRANewScenarios.verifyLifeStyleQuesSmoking2" duration-ms="11186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLifeStyleQuesDrinking1 -->
+        <test-method signature="verifyLifeStyleQuesStressHappiness1()[pri:9, instance:eqcare.peerjitestcases.copy.TC1_HRANewScenarios@10163d6]" started-at="2021-07-22T21:39:53 EDT" name="verifyLifeStyleQuesStressHappiness1" finished-at="2021-07-22T21:40:05 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_HRANewScenarios.verifyLifeStyleQuesDrinking1" duration-ms="12291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLifeStyleQuesStressHappiness1 -->
+        <test-method signature="verifyMedical()[pri:10, instance:eqcare.peerjitestcases.copy.TC1_HRANewScenarios@10163d6]" started-at="2021-07-22T21:40:05 EDT" name="verifyMedical" finished-at="2021-07-22T21:40:31 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_HRANewScenarios.verifyLifeStyleQuesStressHappiness1" duration-ms="25872" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMedical -->
+        <test-method signature="verifyHRACompletition()[pri:11, instance:eqcare.peerjitestcases.copy.TC1_HRANewScenarios@10163d6]" started-at="2021-07-22T21:40:31 EDT" name="verifyHRACompletition" finished-at="2021-07-22T21:40:58 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_HRANewScenarios.verifyLifeStyleQuesStressHappiness1" duration-ms="27237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyHRACompletition -->
+        <test-method is-config="true" signature="tearDown(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:eqcare.peerjitestcases.copy.TC1_HRANewScenarios@10163d6]" started-at="2021-07-22T21:40:58 EDT" name="tearDown" finished-at="2021-07-22T21:40:59 EDT" duration-ms="1455" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=loginToApplication status=SUCCESS method=TC1_EndToEndScenariosAV.loginToApplication(java.lang.String, java.lang.String)[pri:1, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45] output={null}]]]>
+                <![CDATA[Chrome]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="editPersonalInformation()[pri:2, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:13:32 EDT" name="editPersonalInformation" finished-at="2021-07-21T15:13:56 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV.loginToApplication" duration-ms="23804" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editPersonalInformation -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:13:56 EDT" name="tearDownReport" finished-at="2021-07-21T15:13:56 EDT" duration-ms="20" status="PASS">
-          <params>
-            <param index="0">
+            <param index="1">
               <value>
-                <![CDATA[[TestResult name=editPersonalInformation status=SUCCESS method=TC1_EndToEndScenariosAV.editPersonalInformation()[pri:2, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45] output={null}]]]>
+                <![CDATA[https://patient.eqserviceqa1.eqcaredev.com/login]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="editAccountInformation()[pri:3, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:13:56 EDT" name="editAccountInformation" finished-at="2021-07-21T15:14:09 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV.loginToApplication" duration-ms="13765" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editAccountInformation -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:14:09 EDT" name="tearDownReport" finished-at="2021-07-21T15:14:09 EDT" duration-ms="19" status="PASS">
-          <params>
-            <param index="0">
+            <param index="2">
               <value>
-                <![CDATA[[TestResult name=editAccountInformation status=SUCCESS method=TC1_EndToEndScenariosAV.editAccountInformation()[pri:3, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45] output={null}]]]>
+                <![CDATA[eq]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="uploadProfilePic()[pri:4, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:14:09 EDT" name="uploadProfilePic" finished-at="2021-07-21T15:14:14 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV.loginToApplication" duration-ms="4353" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- uploadProfilePic -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:14:14 EDT" name="tearDownReport" finished-at="2021-07-21T15:14:14 EDT" duration-ms="9" status="PASS">
-          <params>
-            <param index="0">
+            <param index="3">
               <value>
-                <![CDATA[[TestResult name=uploadProfilePic status=SUCCESS method=TC1_EndToEndScenariosAV.uploadProfilePic()[pri:4, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45] output={null}]]]>
+                <![CDATA[]]>
               </value>
             </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="uploadGovernmentID()[pri:5, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:14:14 EDT" name="uploadGovernmentID" finished-at="2021-07-21T15:14:18 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV.loginToApplication" duration-ms="4174" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- uploadGovernmentID -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:14:18 EDT" name="tearDownReport" finished-at="2021-07-21T15:14:18 EDT" duration-ms="18" status="PASS">
-          <params>
-            <param index="0">
+            <param index="4">
               <value>
-                <![CDATA[[TestResult name=uploadGovernmentID status=SUCCESS method=TC1_EndToEndScenariosAV.uploadGovernmentID()[pri:5, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45] output={null}]]]>
+                <![CDATA[]]>
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="familyTab()[pri:6, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:14:18 EDT" name="familyTab" finished-at="2021-07-21T15:14:28 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV.loginToApplication" duration-ms="9635" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- familyTab -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:14:28 EDT" name="tearDownReport" finished-at="2021-07-21T15:14:28 EDT" duration-ms="24" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=familyTab status=SUCCESS method=TC1_EndToEndScenariosAV.familyTab()[pri:6, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="addChild()[pri:7, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:14:28 EDT" name="addChild" finished-at="2021-07-21T15:14:38 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV.familyTab" duration-ms="10614" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addChild -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:14:38 EDT" name="tearDownReport" finished-at="2021-07-21T15:14:38 EDT" duration-ms="23" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=addChild status=SUCCESS method=TC1_EndToEndScenariosAV.addChild()[pri:7, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="deleteChild()[pri:8, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:14:38 EDT" name="deleteChild" finished-at="2021-07-21T15:14:44 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV.familyTab" duration-ms="5999" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteChild -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:14:44 EDT" name="tearDownReport" finished-at="2021-07-21T15:14:44 EDT" duration-ms="23" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=deleteChild status=SUCCESS method=TC1_EndToEndScenariosAV.deleteChild()[pri:8, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="startVideoConsultation()[pri:9, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:14:44 EDT" name="startVideoConsultation" finished-at="2021-07-21T15:14:45 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV.loginToApplication" duration-ms="588" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startVideoConsultation -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:14:45 EDT" name="tearDownReport" finished-at="2021-07-21T15:14:45 EDT" duration-ms="6" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=startVideoConsultation status=SUCCESS method=TC1_EndToEndScenariosAV.startVideoConsultation()[pri:9, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="deviceCheck()[pri:10, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:14:45 EDT" name="deviceCheck" finished-at="2021-07-21T15:14:51 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV.loginToApplication" duration-ms="6000" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deviceCheck -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:14:51 EDT" name="tearDownReport" finished-at="2021-07-21T15:14:51 EDT" duration-ms="14" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=deviceCheck status=SUCCESS method=TC1_EndToEndScenariosAV.deviceCheck()[pri:10, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="fillIntakeFormWithAllFields()[pri:11, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:14:51 EDT" name="fillIntakeFormWithAllFields" finished-at="2021-07-21T15:15:36 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV.deviceCheck" duration-ms="44972" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for element to be clickable: By.xpath: //input[@type='file'] (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:c5c:69f7:98fb:3150%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: /var/folders/l9/4pwqxcnj26b...}, goog:chromeOptions: {debuggerAddress: localhost:56208}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d8ff563dd2c791872be0795081d12b78]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //input[@type='file'] (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:c5c:69f7:98fb:3150%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: /var/folders/l9/4pwqxcnj26b...}, goog:chromeOptions: {debuggerAddress: localhost:56208}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d8ff563dd2c791872be0795081d12b78
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-at eqcare.helper.Utility.waitForWebElement(Utility.java:112)
-at eqcare.pages.IntakeFormPageAV.uploadFiles(IntakeFormPageAV.java:89)
-at eqcare.pages.IntakeFormPageAV.fillIntakeForm(IntakeFormPageAV.java:75)
-at eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV.fillIntakeFormWithAllFields(TC1_EndToEndScenariosAV.java:229)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:377)
-at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
-at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
-at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- fillIntakeFormWithAllFields -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:15:36 EDT" name="tearDownReport" finished-at="2021-07-21T15:15:36 EDT" duration-ms="450" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=fillIntakeFormWithAllFields status=FAILURE method=TC1_EndToEndScenariosAV.fillIntakeFormWithAllFields()[pri:11, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="endVisit()[pri:12, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:15:36 EDT" name="endVisit" finished-at="2021-07-21T15:15:44 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV.deviceCheck" duration-ms="8182" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- endVisit -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:15:44 EDT" name="tearDownReport" finished-at="2021-07-21T15:15:44 EDT" duration-ms="21" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=endVisit status=SUCCESS method=TC1_EndToEndScenariosAV.endVisit()[pri:12, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="feedback()[pri:13, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:15:44 EDT" name="feedback" finished-at="2021-07-21T15:15:48 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV.deviceCheck" duration-ms="3088" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feedback -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:15:48 EDT" name="tearDownReport" finished-at="2021-07-21T15:15:48 EDT" duration-ms="5" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=feedback status=SUCCESS method=TC1_EndToEndScenariosAV.feedback()[pri:13, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="help()[pri:14, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:15:48 EDT" name="help" finished-at="2021-07-21T15:15:50 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV.loginToApplication" duration-ms="2604" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- help -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:15:50 EDT" name="tearDownReport" finished-at="2021-07-21T15:15:50 EDT" duration-ms="12" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=help status=SUCCESS method=TC1_EndToEndScenariosAV.help()[pri:14, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method signature="inbox()[pri:14, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:15:50 EDT" name="inbox" finished-at="2021-07-21T15:16:09 EDT" depends-on-methods="eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV.loginToApplication" duration-ms="18345" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- inbox -->
-        <test-method is-config="true" signature="tearDownReport(org.testng.ITestResult)[pri:0, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:16:09 EDT" name="tearDownReport" finished-at="2021-07-21T15:16:09 EDT" duration-ms="23" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=inbox status=SUCCESS method=TC1_EndToEndScenariosAV.inbox()[pri:14, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownReport -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV@48974e45]" started-at="2021-07-21T15:16:09 EDT" name="tearDown" finished-at="2021-07-21T15:16:11 EDT" duration-ms="2296" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV -->
+      </class> <!-- eqcare.peerjitestcases.copy.TC1_HRANewScenarios -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -1,14 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 16, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 177.315 s <<< FAILURE! - in TestSuite
-eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV.fillIntakeFormWithAllFields  Time elapsed: 44.978 s  <<< FAILURE!
-org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for element to be clickable: By.xpath: //input[@type='file'] (tried for 15 second(s) with 500 milliseconds interval)
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:c5c:69f7:98fb:3150%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.43 (8c61b7e2989f2..., userDataDir: /var/folders/l9/4pwqxcnj26b...}, goog:chromeOptions: {debuggerAddress: localhost:56208}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: d8ff563dd2c791872be0795081d12b78
-	at eqcare.peerjitestcases.copy.TC1_EndToEndScenariosAV.fillIntakeFormWithAllFields(TC1_EndToEndScenariosAV.java:229)
-
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 162.63 s - in TestSuite
