@@ -21,13 +21,13 @@ public class StartVisitAV2 extends BaseClass {
 	IntakeFormPageAV intake;
 	HomePageAV home;
 
-
+	@Parameters({ "AVAppURL"})
 	@Test(priority = 0)
-	public void loginToApplication() throws Exception {
+	public void loginToApplication(String AVAppURL ) throws Exception {
 
 		login = PageFactory.initElements(driver, LoginPageAV.class);
 		
-		login.AccessVirtualURL();
+		login.AccessVirtualURL(AVAppURL);
 
 		login.loginToApplication("sarikaqa7+av@gmail.com", "Sarika#123");
 

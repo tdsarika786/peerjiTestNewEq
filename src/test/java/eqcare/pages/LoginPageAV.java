@@ -212,9 +212,9 @@ public class LoginPageAV extends runWithAttachments {
 	
 	
 	
-	public void AccessVirtualURL() {
+	public void AccessVirtualURL(String AVAppURL) {
 
-		Utility.navigateToURL(driver, "https://av.eqserviceqa2.eqcaredev.com/login");
+		Utility.navigateToURL(driver, AVAppURL);
 	}
 
 	public void navigateToLoginPage() {

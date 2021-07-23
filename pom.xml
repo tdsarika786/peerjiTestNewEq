@@ -90,6 +90,7 @@
 					<systemPropertyVariables>
 					<Browser>${Browser}</Browser>
 						<AppURL>${AppURL}</AppURL>
+						<AVAppURL>${AVAppURL}</AVAppURL>
 						<ClinicAppURL>${ClinicAppURL}</ClinicAppURL>
 							<Email>${Email}</Email>
 						<Password>${Password}</Password>
