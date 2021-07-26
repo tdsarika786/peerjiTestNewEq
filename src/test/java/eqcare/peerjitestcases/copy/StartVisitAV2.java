@@ -31,7 +31,7 @@ public class StartVisitAV2 extends BaseClass {
 
 		login.loginToApplication("sarikaqa7+av@gmail.com", "Sarika#123");
 
-		login.verifyUrlAfterLogin();
+		login.verifyUrlAfterLogin(); //peerji
 
 	}
 
