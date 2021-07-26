@@ -7,6 +7,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import eqcare.factories.DataProviderFactory;
 import eqcare.helper.Utility;
 
 public class IntakeFormPageAV {
@@ -94,6 +95,76 @@ public class IntakeFormPageAV {
 					.sendKeys(System.getProperty("user.dir") + "/TestData/"+text);
 
 			Utility.wait(2);
+//		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 4, 0), "0");
+		} catch (Exception ex) {
+			// runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 4,
+			// 0), "7");
+			throw ex;
+		}
+	}
+	
+public void fillIntakeForm1() throws Exception {
+		
+		try {
+
+		Utility.waitForWebElement(driver, reasonVisitInput).sendKeys("Test Visit by Sarika Peerji A");
+
+		Utility.waitForWebElement(driver, durationSymptomsInput).sendKeys("7 weeks A");
+
+		Utility.waitForWebElement(driver, currentAllergies).sendKeys("Amoxyllin A");
+
+		Utility.waitForWebElement(driver, addCurrentAllergies).click();
+
+		Utility.waitForWebElement(driver, currentMedication).sendKeys("Tyenol Liquid Gels A");
+
+		Utility.waitForWebElement(driver, addCurrentMedication).click();
+
+		//uploadFiles("test1.jpeg");
+
+		// Utility.waitForWebElement(driver, checkBox).click();
+
+		WebElement button = driver.findElement(By.xpath("//input[@type='checkbox']"));
+
+		JavascriptExecutor executor1 = (JavascriptExecutor) driver;
+		executor1.executeScript("arguments[0].click()", button);
+
+		Utility.waitForWebElement(driver, startCall).click();
+		
+		Utility.wait(20);
+		// Utility.selectValueFromCalendar(Utility.waitForMultipleWebElement(driver,
+		// calen), "25");
+		
+
+		Utility.waitForWebElement(driver, uploadDiv).click();
+		
+		//uploadAuthFiles(text);
+		
+		Utility.wait(10);
+		//runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 16, 0), "0");
+	} catch (Exception ex) {
+		//runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 16, 0), "7");
+		throw ex;
+	}
+
+	}
+	
+	
+	public void uploadAuthFiles(String text) throws Exception {
+		try {
+			WebElement fileButton = driver.findElement(By.xpath("(//input[@type='file'])[1]"));
+			JavascriptExecutor executor = (JavascriptExecutor) driver;
+			executor.executeScript("arguments[0].style.display='block';", fileButton);
+
+			Utility.waitForWebElement(driver, uploadFile)
+					.sendKeys(System.getProperty("user.dir") + "/TestData2/"+text);
+			
+			System.out.println(System.getProperty("user.dir") + "/TestData2/"+text);
+
+			Utility.wait(35);
+			
+			
+			
+			
 //		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 4, 0), "0");
 		} catch (Exception ex) {
 			// runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 4,
