@@ -190,7 +190,7 @@ public void fillIntakeForm1(String text) throws Exception {
 			executor.executeScript("arguments[0].style.display='block';", fileButton);
 
 			Utility.waitForWebElement(driver, uploadFile)
-					.sendKeys(System.getProperty("user.dir") + "/TestData1/"+text);
+					.sendKeys(System.getProperty("user.dir") + "/TestData2/"+text);
 
 			Utility.wait(15);
 			
