@@ -57,7 +57,9 @@ public class StartVisitEQUploadFiles extends BaseClass {
 
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
 
-		intake.fillIntakeForm1("1sample.pdf");
+		intake.fillIntakeForm1();
+		
+		intake.uploadAuthFiles("1sample.pdf");
 		
 		intake.uploadAuthFiles("2test1.jpeg");
 		
@@ -67,7 +69,7 @@ public class StartVisitEQUploadFiles extends BaseClass {
 		
 		intake.uploadAuthFiles("5Testfilejpg.jpg");
 		
-		intake.uploadAuthFiles("6Testfilepng.png");	
+		//intake.uploadAuthFiles("6Testfilepng.png");	
 
 		intake.uploadAuthFiles("7Testfilewebp.webp");
 	}

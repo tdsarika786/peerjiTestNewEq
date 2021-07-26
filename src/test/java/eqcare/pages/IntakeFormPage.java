@@ -137,7 +137,7 @@ public class IntakeFormPage extends runWithAttachments {
 	}
 	}
 	
-public void fillIntakeForm1(String text) throws Exception {
+public void fillIntakeForm1() throws Exception {
 		
 		try {
 
@@ -153,7 +153,7 @@ public void fillIntakeForm1(String text) throws Exception {
 
 		Utility.waitForWebElement(driver, addCurrentMedication).click();
 
-		uploadFiles("test1.jpeg");
+		//uploadFiles("test1.jpeg");
 
 		// Utility.waitForWebElement(driver, checkBox).click();
 
@@ -171,9 +171,9 @@ public void fillIntakeForm1(String text) throws Exception {
 
 		Utility.waitForWebElement(driver, uploadDiv).click();
 		
-		uploadAuthFiles(text);
+		//uploadAuthFiles(text);
 		
-		Utility.wait(20);
+		Utility.wait(10);
 		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 16, 0), "0");
 	} catch (Exception ex) {
 		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 16, 0), "7");
@@ -194,7 +194,7 @@ public void fillIntakeForm1(String text) throws Exception {
 			
 			System.out.println(System.getProperty("user.dir") + "/TestData2/"+text);
 
-			Utility.wait(15);
+			Utility.wait(35);
 			
 			
 			
