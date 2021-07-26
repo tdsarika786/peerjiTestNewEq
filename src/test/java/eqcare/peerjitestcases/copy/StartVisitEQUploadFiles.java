@@ -72,5 +72,7 @@ public class StartVisitEQUploadFiles extends BaseClass {
 		//intake.uploadAuthFiles("6Testfilepng.png");	
 
 		intake.uploadAuthFiles("7Testfilewebp.webp");
+		
+		Utility.wait(50);
 	}
 }
