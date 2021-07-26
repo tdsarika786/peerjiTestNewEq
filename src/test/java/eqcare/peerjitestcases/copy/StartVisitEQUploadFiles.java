@@ -59,16 +59,16 @@ public class StartVisitEQUploadFiles extends BaseClass {
 
 		intake.fillIntakeForm1("1sample.pdf");
 		
-		intake.fillIntakeForm1("2test1.jpeg");
+		intake.uploadAuthFiles("2test1.jpeg");
 		
-		intake.fillIntakeForm1("3Testfilebmp.bmp");
+		intake.uploadAuthFiles("3Testfilebmp.bmp");
 		
-		intake.fillIntakeForm1("4Testfilegif.gif");
+		intake.uploadAuthFiles("4Testfilegif.gif");
 		
-		intake.fillIntakeForm1("5Testfilejpg.jpg");
+		intake.uploadAuthFiles("5Testfilejpg.jpg");
 		
-		intake.fillIntakeForm1("6Testfilepng.png");	
+		intake.uploadAuthFiles("6Testfilepng.png");	
 
-		intake.fillIntakeForm1("7Testfilewebp.webp");
+		intake.uploadAuthFiles("7Testfilewebp.webp");
 	}
 }
