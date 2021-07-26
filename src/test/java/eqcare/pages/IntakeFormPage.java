@@ -191,6 +191,8 @@ public void fillIntakeForm1(String text) throws Exception {
 
 			Utility.waitForWebElement(driver, uploadFile)
 					.sendKeys(System.getProperty("user.dir") + "/TestData2/"+text);
+			
+			System.out.println(System.getProperty("user.dir") + "/TestData2/"+text);
 
 			Utility.wait(15);
 			
