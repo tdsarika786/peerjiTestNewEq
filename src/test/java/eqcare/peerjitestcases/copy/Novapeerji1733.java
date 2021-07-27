@@ -45,8 +45,9 @@ public class Novapeerji1733 extends BaseClass {
 		
 		String searchemployer1 ="Sarika-Test-NewLJ1";
 		String groupNo ="LJ1";
+		String empID ="700";
 
-        home.createEmployer1733(searchemployer1,null,null); 
+        home.createEmployer1733(searchemployer1,empID,null); 
 		
 		home.createCoverage1797(searchemployer1,null, "lifejourney");
 		
@@ -65,8 +66,9 @@ public class Novapeerji1733 extends BaseClass {
 		
 		String searchemployer1 ="Sarika-Test-NewPC1";
 		String groupNo ="PC1";
+		String empID ="701";
 
-        home.createEmployer1733(searchemployer1,null,null); 
+        home.createEmployer1733(searchemployer1,empID,null); 
 		
     	home.createCoverage1797(searchemployer1,null, "primary_care");
 		
@@ -85,8 +87,9 @@ public class Novapeerji1733 extends BaseClass {
 		
 		String searchemployer1 ="Sarika-Test-NewPCLJ1";
 		String groupNo ="PCLJ1";
+		String empID ="702";
 
-        home.createEmployer1733(searchemployer1,null,null); 
+        home.createEmployer1733(searchemployer1,empID,null); 
 		
 	    home.createCoverage1797(searchemployer1,null, "primary_care");
 		
@@ -107,8 +110,9 @@ public class Novapeerji1733 extends BaseClass {
 		
 		String searchemployer1 ="Sarika-Test-NewPCLJ2";
 		String groupNo ="PCLJ2";
+		String empID ="703";
 
-        home.createEmployer1733(searchemployer1,null,null); 
+        home.createEmployer1733(searchemployer1,empID,null); 
         
 	    home.createCoverage1797(searchemployer1,null, "primary_care");
 		

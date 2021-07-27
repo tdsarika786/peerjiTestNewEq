@@ -576,7 +576,7 @@ public class NovaHomePage {
 		Utility.wait(7);
 	}
 
-	public void createEmployer1733(String searchEmployer, String CoverageToken, String CoverageType) {
+	public void createEmployer1733(String searchEmployer, String empID, String CoverageType) {
 
 		Utility.waitForWebElement(driver, EmployerLink).click();
 
@@ -588,7 +588,7 @@ public class NovaHomePage {
 		// Utility.waitForWebElement(driver, createEmployerLink).click();
 
 		// Change ID for NEW Employer NEW
-		// Utility.waitForWebElement(driver, employerIDInput).sendKeys(CoverageToken);
+		Utility.waitForWebElement(driver, employerIDInput).sendKeys(empID);
 		// // Modify
 
 		Utility.waitForWebElement(driver, companyNameInput).sendKeys(searchEmployer); // Modify
