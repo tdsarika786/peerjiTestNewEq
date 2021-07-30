@@ -588,7 +588,7 @@ public class NovaHomePage {
 		// Utility.waitForWebElement(driver, createEmployerLink).click();
 
 		// Change ID for NEW Employer NEW
-		//Utility.waitForWebElement(driver, employerIDInput).sendKeys(empID);
+		Utility.waitForWebElement(driver, employerIDInput).sendKeys(empID);
 		// // Modify
 
 		Utility.waitForWebElement(driver, companyNameInput).sendKeys(searchEmployer); // Modify
