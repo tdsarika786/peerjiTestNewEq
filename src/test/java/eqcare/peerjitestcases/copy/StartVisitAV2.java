@@ -29,7 +29,7 @@ public class StartVisitAV2 extends BaseClass {
 		
 		login.AccessVirtualURL(AVAppURL);
 
-		login.loginToApplication("sarikaqa7+av@gmail.com", "Sarika#123");
+		login.loginToApplication("sarikaqa7+av1@gmail.com", "Sarika#123");
 
 		login.verifyUrlAfterLogin(); //peerji
 
