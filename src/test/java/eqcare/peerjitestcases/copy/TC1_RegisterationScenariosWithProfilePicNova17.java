@@ -43,7 +43,7 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 	}
 	
 	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
-	@Test(priority = 2, dependsOnMethods = "verifyPage")
+	@Test(priority = 1, dependsOnMethods = "verifyPage")
 	public void validInputEnrolledRegisterationTest(String email, String coveragetoken, String coverageidentifier, String AppUrl) {
 		
 		register.navigateToRegisterationPage(AppUrl);
@@ -71,7 +71,7 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 	}
 	
 	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
-	@Test(priority = 3, dependsOnMethods = "verifyPage")
+	@Test(priority = 2, dependsOnMethods = "verifyPage")
 	public void validInputEnrolledRegisterationTest1(String email, String coveragetoken, String coverageidentifier, String AppUrl) {
 		
 		register.navigateToRegisterationPage(AppUrl);
@@ -99,7 +99,7 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 	}
 	
 	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
-	@Test(priority = 4, dependsOnMethods = "verifyPage")
+	@Test(priority = 3, dependsOnMethods = "verifyPage")
 	public void validInputEnrolledRegisterationTest2(String email, String coveragetoken, String coverageidentifier,String AppUrl) {
 		
 		register.navigateToRegisterationPage(AppUrl);
@@ -127,7 +127,7 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 	}
 	
 	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
-	@Test(priority = 5, dependsOnMethods = "verifyPage")
+	@Test(priority = 4, dependsOnMethods = "verifyPage")
 	public void validInputEnrolledRegisterationTest3(String email, String coveragetoken, String coverageidentifier,String AppUrl) {
 		
 		register.navigateToRegisterationPage(AppUrl);
@@ -155,7 +155,7 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 	}
 	
 	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
-	@Test(priority = 6, dependsOnMethods = "verifyPage")
+	@Test(priority = 5, dependsOnMethods = "verifyPage")
 	public void validInputEnrolledRegisterationTest4(String email, String coveragetoken, String coverageidentifier,String AppUrl) {
 		
 		register.navigateToRegisterationPage(AppUrl);
@@ -183,7 +183,7 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 	}
 	
 	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
-	@Test(priority = 7, dependsOnMethods = "verifyPage")
+	@Test(priority = 6, dependsOnMethods = "verifyPage")
 	public void validInputEnrolledRegisterationTest5(String email, String coveragetoken, String coverageidentifier,String AppUrl) {
 		
 		register.navigateToRegisterationPage(AppUrl);
@@ -209,6 +209,94 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 		register.registerationCompleteWithValidInput();
 
 	}
+	
+	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
+	@Test(priority = 6, dependsOnMethods = "verifyPage")
+	public void validInputEnrolledRegisterationTest6(String email, String coveragetoken, String coverageidentifier,String AppUrl) {
+		
+		register.navigateToRegisterationPage(AppUrl);
+		
+		register.EnrolledUserWithValidInput("emp0001","anu");
+		
+		register.Registeration1("sarikaqa7+emppchra1@gmail.com",
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
+				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 4),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 5),
+				DataProviderFactory.getExcel().getCellData("Users", 2, 6),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 7),
+				DataProviderFactory.getExcel().getCellData("Users", 2, 8),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 9),
+				"Sarika#123", false, "img");
+
+		register.registerationCompleteWithValidInput();
+
+	}
+
+	
+	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
+	@Test(priority = 7, dependsOnMethods = "verifyPage")
+	public void validInputEnrolledRegisterationTest7(String email, String coveragetoken, String coverageidentifier,String AppUrl) {
+		
+		register.navigateToRegisterationPage(AppUrl);
+		
+		register.EnrolledUserWithValidInput("emp0001","anu1");
+		
+		register.Registeration1("sarikaqa7+emppcljhra1@gmail.com",
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
+				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 4),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 5),
+				DataProviderFactory.getExcel().getCellData("Users", 2, 6),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 7),
+				DataProviderFactory.getExcel().getCellData("Users", 2, 8),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 9),
+				"Sarika#123", false, "img");
+
+		register.registerationCompleteWithValidInput();
+
+	}
+
+	
+	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
+	@Test(priority = 8, dependsOnMethods = "verifyPage")
+	public void validInputEnrolledRegisterationTest8(String email, String coveragetoken, String coverageidentifier,String AppUrl) {
+		
+		register.navigateToRegisterationPage(AppUrl);
+		
+		register.EnrolledUserWithValidInput("PCHRA1","anu1");
+		
+		register.Registeration1("sarikaqa7+empljhra1@gmail.com",
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
+				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 4),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 5),
+				DataProviderFactory.getExcel().getCellData("Users", 2, 6),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 7),
+				DataProviderFactory.getExcel().getCellData("Users", 2, 8),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 9),
+				"Sarika#123", false, "img");
+
+		register.registerationCompleteWithValidInput();
+
+	}
+
+
 
 
 }

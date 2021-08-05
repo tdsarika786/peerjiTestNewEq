@@ -131,6 +131,9 @@ public class Novapeerji1733 extends BaseClass {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
 		
+		String searchemployer1 ="employer1";
+		
+		/*
 		String searchemployer1 ="Sarika-Test-NewPCLJHRA1";
 		String groupNo ="PCLJHRA1";
 		String empID ="704";
@@ -146,8 +149,10 @@ public class Novapeerji1733 extends BaseClass {
 		home.createService1797(searchemployer1,null,null);
 		
 	    home.createGroupNo(groupNo,searchemployer1); // then create employee 
+	    
+	    */
 		
-		home.createEmployee(searchemployer1,"anu1","single");
+		home.createEmployee(searchemployer1,"anu","single");
 	}
 	
 	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
@@ -155,6 +160,10 @@ public class Novapeerji1733 extends BaseClass {
 	public void CreateEmployer5(String searchemployer, String coveragetoken, String coveragetype ) throws InterruptedException {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
+		
+		String searchemployer1 ="employer1";
+		
+		/*
 		
 		String searchemployer1 ="Sarika-Test-NewPCHRA1";
 		String groupNo ="PCHRA1";
@@ -169,8 +178,39 @@ public class Novapeerji1733 extends BaseClass {
 		home.createService1797(searchemployer1,null,null);
 		
 	    home.createGroupNo(groupNo,searchemployer1); // then create employee 
+	    
+	    */
 		
 		home.createEmployee(searchemployer1,"anu1","single");
+	}
+	
+	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
+	@Test(priority = 2, dependsOnMethods = "loginToApplication")
+	public void CreateEmployer6(String searchemployer, String coveragetoken, String coveragetype ) throws InterruptedException {
+		
+		home = PageFactory.initElements(driver, NovaHomePage.class);
+		
+		String searchemployer1 ="employer1";
+		
+		/*
+		
+		String searchemployer1 ="Sarika-Test-NewPCHRA1";
+		String groupNo ="PCHRA1";
+		String empID ="705";
+
+        home.createEmployer1733(searchemployer1,empID,null); 
+        
+	    home.createCoverage1797(searchemployer1,null, "primary_care");
+		
+	    home.createCoverageUpdate1797(searchemployer1,null, "hra");
+		
+		home.createService1797(searchemployer1,null,null);
+		
+	    home.createGroupNo(groupNo,searchemployer1); // then create employee 
+	    
+	    */
+		
+		home.createEmployee(searchemployer1,"anu2","single");
 	}
 	
 	
