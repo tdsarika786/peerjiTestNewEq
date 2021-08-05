@@ -103,7 +103,7 @@ public class Novapeerji1733 extends BaseClass {
 	}
 	
 	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
-	@Test(priority = 2, dependsOnMethods = "loginToApplication")
+	@Test(priority = 3, dependsOnMethods = "loginToApplication")
 	public void CreateEmployer3(String searchemployer, String coveragetoken, String coveragetype ) throws InterruptedException {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
@@ -124,6 +124,55 @@ public class Novapeerji1733 extends BaseClass {
 		
 		home.createEmployee(searchemployer1,"anu3","single");
 	}
+	
+	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
+	@Test(priority = 3, dependsOnMethods = "loginToApplication")
+	public void CreateEmployer4(String searchemployer, String coveragetoken, String coveragetype ) throws InterruptedException {
+		
+		home = PageFactory.initElements(driver, NovaHomePage.class);
+		
+		String searchemployer1 ="Sarika-Test-NewPCLJHRA1";
+		String groupNo ="PCLJHRA1";
+		String empID ="704";
+
+        home.createEmployer1733(searchemployer1,empID,null); 
+        
+	    home.createCoverage1797(searchemployer1,null, "primary_care");
+		
+	    home.createCoverageUpdate1797(searchemployer1,null, "lifejourney");
+	    
+	    home.createCoverageUpdate1797(searchemployer1,null, "hra");
+		
+		home.createService1797(searchemployer1,null,null);
+		
+	    home.createGroupNo(groupNo,searchemployer1); // then create employee 
+		
+		home.createEmployee(searchemployer1,"anu1","single");
+	}
+	
+	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
+	@Test(priority = 2, dependsOnMethods = "loginToApplication")
+	public void CreateEmployer5(String searchemployer, String coveragetoken, String coveragetype ) throws InterruptedException {
+		
+		home = PageFactory.initElements(driver, NovaHomePage.class);
+		
+		String searchemployer1 ="Sarika-Test-NewPCHRA1";
+		String groupNo ="PCHRA1";
+		String empID ="705";
+
+        home.createEmployer1733(searchemployer1,empID,null); 
+        
+	    home.createCoverage1797(searchemployer1,null, "primary_care");
+		
+	    home.createCoverageUpdate1797(searchemployer1,null, "hra");
+		
+		home.createService1797(searchemployer1,null,null);
+		
+	    home.createGroupNo(groupNo,searchemployer1); // then create employee 
+		
+		home.createEmployee(searchemployer1,"anu1","single");
+	}
+	
 	
 	@Parameters({"SearchEmployer","CoverageIdentifier", "PlanType"})
 	@Test(priority = 3, dependsOnMethods = "loginToApplication" , enabled=false)

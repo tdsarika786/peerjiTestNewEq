@@ -71,7 +71,7 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 	}
 	
 	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
-	@Test(priority = 2, dependsOnMethods = "verifyPage")
+	@Test(priority = 3, dependsOnMethods = "verifyPage")
 	public void validInputEnrolledRegisterationTest1(String email, String coveragetoken, String coverageidentifier, String AppUrl) {
 		
 		register.navigateToRegisterationPage(AppUrl);
@@ -99,7 +99,7 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 	}
 	
 	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
-	@Test(priority = 2, dependsOnMethods = "verifyPage")
+	@Test(priority = 4, dependsOnMethods = "verifyPage")
 	public void validInputEnrolledRegisterationTest2(String email, String coveragetoken, String coverageidentifier,String AppUrl) {
 		
 		register.navigateToRegisterationPage(AppUrl);
@@ -127,7 +127,7 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 	}
 	
 	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
-	@Test(priority = 2, dependsOnMethods = "verifyPage")
+	@Test(priority = 5, dependsOnMethods = "verifyPage")
 	public void validInputEnrolledRegisterationTest3(String email, String coveragetoken, String coverageidentifier,String AppUrl) {
 		
 		register.navigateToRegisterationPage(AppUrl);
@@ -135,6 +135,62 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 		register.EnrolledUserWithValidInput("PCLJ2","anu3");
 		
 		register.Registeration1("sarikaqa7+pclj2@gmail.com",
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
+				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 4),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 5),
+				DataProviderFactory.getExcel().getCellData("Users", 2, 6),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 7),
+				DataProviderFactory.getExcel().getCellData("Users", 2, 8),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 9),
+				"Sarika#123", false, "img");
+
+		register.registerationCompleteWithValidInput();
+
+	}
+	
+	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
+	@Test(priority = 6, dependsOnMethods = "verifyPage")
+	public void validInputEnrolledRegisterationTest4(String email, String coveragetoken, String coverageidentifier,String AppUrl) {
+		
+		register.navigateToRegisterationPage(AppUrl);
+		
+		register.EnrolledUserWithValidInput("PCLJHRA1","anu1");
+		
+		register.Registeration1("sarikaqa7+pcljhra1@gmail.com",
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
+				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 4),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 5),
+				DataProviderFactory.getExcel().getCellData("Users", 2, 6),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 7),
+				DataProviderFactory.getExcel().getCellData("Users", 2, 8),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 9),
+				"Sarika#123", true, "img");
+
+		register.registerationCompleteWithValidInput();
+
+	}
+	
+	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
+	@Test(priority = 7, dependsOnMethods = "verifyPage")
+	public void validInputEnrolledRegisterationTest5(String email, String coveragetoken, String coverageidentifier,String AppUrl) {
+		
+		register.navigateToRegisterationPage(AppUrl);
+		
+		register.EnrolledUserWithValidInput("PCHRA1","anu1");
+		
+		register.Registeration1("sarikaqa7+pchra1@gmail.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
