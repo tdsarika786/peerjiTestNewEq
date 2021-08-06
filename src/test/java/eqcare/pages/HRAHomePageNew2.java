@@ -332,6 +332,8 @@ public class HRAHomePageNew2 extends runWithAttachments {
 	By pageNo3 = By.xpath("//*[@id='scrollable-container']//li[text()=' 3 ']");
 
 	// images:aa
+	
+	//By aa List<WebElement> = By.xpath("//*[@id='scrollable-container']//li[text()=' 3 ']");
 
 	//By List<WebElement>elementName=By.xpath("//*[@id='scrollable-container']//li[text()=' 3 ']");
 
@@ -556,7 +558,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 			for (WebElement articleImage : allArticleImages) {
 
-				articleImage.click();
+				Utility.highLightElement(driver,articleImage);
 
 				System.out.println("*********************************************************************");
 			}
@@ -568,7 +570,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 			for (WebElement articleImage : allArticleImages) {
 
-				articleImage.click();
+				Utility.highLightElement(driver,articleImage);
 
 				System.out.println("*********************************************************************");
 			}
