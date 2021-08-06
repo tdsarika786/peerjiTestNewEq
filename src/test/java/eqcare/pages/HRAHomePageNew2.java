@@ -321,13 +321,19 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 	By article20 = By.xpath("//p[contains(text(), ' Why Mediation is Good and How to Make it Work for You ')]");
 
-	By article21 = By.xpath("//p[contains(text(), '  Your Guide to the Ultimate Personalized Self-Care Routine  ')]");
+	By article21 = By.xpath("//p[contains(text(), ' Your Guide to the Ultimate Personalized Self-Care Routine ')]");
 
-	By article22 = By.xpath("//p[contains(text(), '  5 Tips to Fit in Activity When Life Throws You a Curveball  ')]");
+	By article22 = By.xpath("//p[contains(text(), ' 5 Tips to Fit in Activity When Life Throws You a Curveball ')]");
 
 	By pageNo2 = By.xpath("//*[@id='scrollable-container']//li[text()=' 2 ']");
 
 	By pageNo3 = By.xpath("//*[@id='scrollable-container']//li[text()=' 3 ']");
+	
+	//images:
+	
+	
+	
+	
 	// Home Page
 
 	By updateMyAnswerLink = By.xpath("(//a[contains(text(), 'Update my answers')])[2]");
