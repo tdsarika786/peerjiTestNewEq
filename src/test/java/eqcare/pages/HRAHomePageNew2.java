@@ -551,13 +551,11 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		System.out.println("10 " + getarticle10);
 
 		List<WebElement> allArticleImages = driver
-				.findElements(By.xpath("//*[@id='scrollable-container']/div/ul/li/div/div/div[1]"));
+				.findElements(By.xpath("//li/div"));
 
 		for (WebElement articleImage : allArticleImages) {
 
 			articleImage.click();
-
-			System.out.println(articleImage.getText());
 
 			System.out.println("*********************************************************************");
 		}
