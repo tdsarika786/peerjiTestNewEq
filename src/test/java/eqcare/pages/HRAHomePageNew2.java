@@ -294,6 +294,13 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 	By viewHealthScoreLink = By.xpath("//a[contains(text(), 'View Health Scor')]");
 
+	// Close button
+	By closeCTA = By.xpath("(//div[@class='close-button'])[1]");
+
+	By getScoreLabel = By.xpath("(//p)[1]");
+
+	By getScorePercentage = By.xpath("(//p)[1]");
+
 	public HRAHomePageNew2(WebDriver ldriver) {
 		this.driver = ldriver;
 	}
@@ -327,6 +334,16 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		Utility.waitForWebElement(driver, viewHealthScoreLink).click();
 
 		Utility.wait(25);
+
+		String getScore = Utility.waitForWebElement(driver, getScoreLabel).getText();
+
+		System.out.println(getScore);
+
+		String getPercentage = Utility.waitForWebElement(driver, getScorePercentage).getText();
+
+		System.out.println(getPercentage);
+		
+		Utility.waitForWebElement(driver, closeCTA).click();
 
 	}
 
@@ -600,79 +617,78 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 			Utility.waitForWebElement(driver, hraLifeStyleDrinikingLabel);
 
-		}
-		else {
-		if (option.equalsIgnoreCase("option2")) {
+		} else {
+			if (option.equalsIgnoreCase("option2")) {
 
-			Utility.waitForWebElement(driver, hraLifeStyleSmokingOptionFormerOccasional).click();
+				Utility.waitForWebElement(driver, hraLifeStyleSmokingOptionFormerOccasional).click();
 
-			// Cigrattes
-			Utility.waitForWebElement(driver, hraLifestyleQuestionCigrattesImg);
+				// Cigrattes
+				Utility.waitForWebElement(driver, hraLifestyleQuestionCigrattesImg);
 
-			Utility.waitForWebElement(driver, hraLifeStyleSmokePerWeekLabel);
+				Utility.waitForWebElement(driver, hraLifeStyleSmokePerWeekLabel);
 
-			Utility.waitForWebElement(driver, hraLifeStyleSmokePastPerWeekInput).sendKeys(smokeNO);
-		}
+				Utility.waitForWebElement(driver, hraLifeStyleSmokePastPerWeekInput).sendKeys(smokeNO);
+			}
 
-		if (option.equalsIgnoreCase("option3")) {
+			if (option.equalsIgnoreCase("option3")) {
 
-			// Smoking Former Daily
-			Utility.waitForWebElement(driver, hraLifeStyleSmokingOptionFormerDaily).click();
+				// Smoking Former Daily
+				Utility.waitForWebElement(driver, hraLifeStyleSmokingOptionFormerDaily).click();
 
-			// Cigrattes
-			Utility.waitForWebElement(driver, hraLifestyleQuestionCigrattesImg);
+				// Cigrattes
+				Utility.waitForWebElement(driver, hraLifestyleQuestionCigrattesImg);
 
-			Utility.waitForWebElement(driver, hraLifeStyleSmokePerDayLabel);
+				Utility.waitForWebElement(driver, hraLifeStyleSmokePerDayLabel);
 
-			Utility.waitForWebElement(driver, hraLifeStyleSmokePastPerDayInput).sendKeys(smokeNO);
-		}
+				Utility.waitForWebElement(driver, hraLifeStyleSmokePastPerDayInput).sendKeys(smokeNO);
+			}
 
-		if (option.equalsIgnoreCase("option4")) {
+			if (option.equalsIgnoreCase("option4")) {
 
-			// Smoking Occassional
-			Utility.waitForWebElement(driver, hraLifestyleQuestion2SmokingImg);
-			Utility.waitForWebElement(driver, hraLifeStyleSmokingLabel);
-			Utility.waitForWebElement(driver, hraLifeStyleSmokingOptionOccasional).click();
+				// Smoking Occassional
+				Utility.waitForWebElement(driver, hraLifestyleQuestion2SmokingImg);
+				Utility.waitForWebElement(driver, hraLifeStyleSmokingLabel);
+				Utility.waitForWebElement(driver, hraLifeStyleSmokingOptionOccasional).click();
 
-			// Cigrattes
-			Utility.waitForWebElement(driver, hraLifestyleQuestionCigrattesImg);
+				// Cigrattes
+				Utility.waitForWebElement(driver, hraLifestyleQuestionCigrattesImg);
 
-			Utility.waitForWebElement(driver, hraLifeStyleSmokePerWeekLabel);
+				Utility.waitForWebElement(driver, hraLifeStyleSmokePerWeekLabel);
 
-			Utility.waitForWebElement(driver, hraLifeStyleSmokePerWeekInput).sendKeys(smokeNO);
-		}
+				Utility.waitForWebElement(driver, hraLifeStyleSmokePerWeekInput).sendKeys(smokeNO);
+			}
 
-		if (option.equalsIgnoreCase("option5")) {
+			if (option.equalsIgnoreCase("option5")) {
 
-			// Smoking Daily
-			Utility.waitForWebElement(driver, hraLifestyleQuestion2SmokingImg);
-			Utility.waitForWebElement(driver, hraLifeStyleSmokingLabel);
-			Utility.waitForWebElement(driver, hraLifeStyleSmokingOptionDaily).click();
+				// Smoking Daily
+				Utility.waitForWebElement(driver, hraLifestyleQuestion2SmokingImg);
+				Utility.waitForWebElement(driver, hraLifeStyleSmokingLabel);
+				Utility.waitForWebElement(driver, hraLifeStyleSmokingOptionDaily).click();
 
-			// Cigrattes
-			Utility.waitForWebElement(driver, hraLifestyleQuestionCigrattesImg);
+				// Cigrattes
+				Utility.waitForWebElement(driver, hraLifestyleQuestionCigrattesImg);
 
-			Utility.waitForWebElement(driver, hraLifeStyleSmokePerDayLabel);
+				Utility.waitForWebElement(driver, hraLifeStyleSmokePerDayLabel);
 
-			Utility.waitForWebElement(driver, hraLifeStyleSmokePerDayInput).sendKeys(smokeNO);
-		}
+				Utility.waitForWebElement(driver, hraLifeStyleSmokePerDayInput).sendKeys(smokeNO);
+			}
 
-		if (option.equalsIgnoreCase("option6")) {
+			if (option.equalsIgnoreCase("option6")) {
 
-			// Smoking Occassional
-			Utility.waitForWebElement(driver, hraLifestyleQuestion2SmokingImg);
-			Utility.waitForWebElement(driver, hraLifeStyleSmokingLabel);
-			Utility.waitForWebElement(driver, hraLifeStyleSmokingOptionOccasional).click();
+				// Smoking Occassional
+				Utility.waitForWebElement(driver, hraLifestyleQuestion2SmokingImg);
+				Utility.waitForWebElement(driver, hraLifeStyleSmokingLabel);
+				Utility.waitForWebElement(driver, hraLifeStyleSmokingOptionOccasional).click();
 
-			// Cigrattes
-			Utility.waitForWebElement(driver, hraLifestyleQuestionCigrattesImg);
+				// Cigrattes
+				Utility.waitForWebElement(driver, hraLifestyleQuestionCigrattesImg);
 
-			Utility.waitForWebElement(driver, hraLifeStyleSmokePerWeekLabel);
+				Utility.waitForWebElement(driver, hraLifeStyleSmokePerWeekLabel);
 
-			Utility.waitForWebElement(driver, hraLifeStyleSmokePerWeekInput).sendKeys(smokeNO);
-		}
+				Utility.waitForWebElement(driver, hraLifeStyleSmokePerWeekInput).sendKeys(smokeNO);
+			}
 
-		Utility.waitForWebElement(driver, hraLifeStyleNextLink2b).click();
+			Utility.waitForWebElement(driver, hraLifeStyleNextLink2b).click();
 		}
 	}
 
@@ -693,40 +709,41 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 			Utility.waitForWebElement(driver, hraLifeStyleStressLabel);
 		}
-		
+
 		else {
 
-		if (option.equalsIgnoreCase("option2")) {
+			if (option.equalsIgnoreCase("option2")) {
 
-			// Currently Drink
-			Utility.waitForWebElement(driver, hraLifestyleQuestionDrinkingImg);
-			Utility.waitForWebElement(driver, hraLifeStyleDrinikingLabel);
-			Utility.waitForWebElement(driver, hraLifeStyleDrinkingCurrentlyDrink).click();
+				// Currently Drink
+				Utility.waitForWebElement(driver, hraLifestyleQuestionDrinkingImg);
+				Utility.waitForWebElement(driver, hraLifeStyleDrinikingLabel);
+				Utility.waitForWebElement(driver, hraLifeStyleDrinkingCurrentlyDrink).click();
 
-			// Alcoholic
-			Utility.waitForWebElement(driver, hraLifestyleQuestionAlcoholImg);
+				// Alcoholic
+				Utility.waitForWebElement(driver, hraLifestyleQuestionAlcoholImg);
 
-			Utility.waitForWebElement(driver, hraLifeStyleAlcoholPerWeekLabel);
+				Utility.waitForWebElement(driver, hraLifeStyleAlcoholPerWeekLabel);
 
-			Utility.waitForWebElement(driver, hraLifeStyleAlcoholPerWeeCurrentDrinkInput).sendKeys("7");
+				Utility.waitForWebElement(driver, hraLifeStyleAlcoholPerWeeCurrentDrinkInput).sendKeys("7");
 
+			}
+
+			if (option.equalsIgnoreCase("option3")) {
+
+				// Former Drink
+				Utility.waitForWebElement(driver, hraLifestyleQuestionDrinkingImg);
+				Utility.waitForWebElement(driver, hraLifeStyleDrinikingLabel);
+				Utility.waitForWebElement(driver, hraLifeStyleDrinkingFormerDrink).click();
+
+				// Alcholic Input
+				Utility.waitForWebElement(driver, hraLifestyleQuestionAlcoholImg);
+				Utility.waitForWebElement(driver, hraLifeStyleAlcoholPerWeekLabel);
+				Utility.waitForWebElement(driver, hraLifeStyleAlcoholPerWeePastDrinksInput).sendKeys("7");
+
+			}
+
+			Utility.waitForWebElement(driver, hraLifeStyleAlchoholNextLink).click();
 		}
-
-		if (option.equalsIgnoreCase("option3")) {
-
-			// Former Drink
-			Utility.waitForWebElement(driver, hraLifestyleQuestionDrinkingImg);
-			Utility.waitForWebElement(driver, hraLifeStyleDrinikingLabel);
-			Utility.waitForWebElement(driver, hraLifeStyleDrinkingFormerDrink).click();
-
-			// Alcholic Input
-			Utility.waitForWebElement(driver, hraLifestyleQuestionAlcoholImg);
-			Utility.waitForWebElement(driver, hraLifeStyleAlcoholPerWeekLabel);
-			Utility.waitForWebElement(driver, hraLifeStyleAlcoholPerWeePastDrinksInput).sendKeys("7");
-
-		}
-
-		Utility.waitForWebElement(driver, hraLifeStyleAlchoholNextLink).click();}
 	}
 
 	public void verifyHRALifeStyleQuesStress(String option) throws Exception {

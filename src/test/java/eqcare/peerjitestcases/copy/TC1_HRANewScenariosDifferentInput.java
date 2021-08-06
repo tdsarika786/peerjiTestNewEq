@@ -52,7 +52,7 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage")
 	public void bestScenario() throws Exception {
 		
-		//Percentage 59 percentage = 
+		//Percentage 59 percentage = Keep an eye on it.
 
 		home.verifyHRAPhysicalIntakeFormsQues1("60", "157", "87");
 
