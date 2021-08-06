@@ -659,6 +659,30 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		String getarticle22 = Utility.waitForWebElement(driver, article22).getText();
 
 		System.out.println("22 " + getarticle22);
+		
+		try {
+			List<WebElement> allArticleImages = driver
+					.findElements(By.xpath("//li/div"));
+
+			for (WebElement articleImage : allArticleImages) {
+
+				Utility.highLightElement(driver,articleImage);
+
+				System.out.println("*********************************************************************");
+			}
+		}
+		catch(org.openqa.selenium.StaleElementReferenceException ex)
+		{
+			List<WebElement> allArticleImages = driver
+					.findElements(By.xpath("//li/div"));
+
+			for (WebElement articleImage : allArticleImages) {
+
+				Utility.highLightElement(driver,articleImage);
+
+				System.out.println("*********************************************************************");
+			}
+		}
 
 	}
 
