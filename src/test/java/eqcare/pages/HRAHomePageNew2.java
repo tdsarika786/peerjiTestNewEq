@@ -280,15 +280,54 @@ public class HRAHomePageNew2 extends runWithAttachments {
 	By spanNutrition = By.xpath("//span[contains(text(), 'Nutrition')]");
 
 	By spanCardio2 = By.xpath("(//span[contains(text(), 'Cardio')])[2]");
-	
-	By article1 = By.xpath("//p[contains(text(), ' The Amazing Power of Veggies! ')]");
-	
-	By article2 = By.xpath("//p[contains(text(), 'Easy Ways to Add Exercise to your Day')]");
-	
-	By article3 = By.xpath("//p[contains(text(), 'Easy Ways to Add Exercise to your Day')]");
-	
-	
 
+	By article1 = By.xpath("//p[contains(text(), ' The Amazing Power of Veggies! ')]");
+
+	By article2 = By.xpath("//p[contains(text(), 'Easy Ways to Add Exercise to your Day')]");
+
+	By article3 = By.xpath("//p[contains(text(), ' Give a Little Thanks to Make Everyone’s Day Better! ')]");
+
+	By article4 = By.xpath("//p[contains(text(), ' Live Your Best Life By Practicing Self-Care! ')]");
+
+	By article5 = By.xpath("//p[contains(text(), ' Kick start your healthy habit-building process! ')]");
+
+	By article6 = By.xpath("//p[contains(text(), ' Go With Your Gut ')]");
+
+	By article7 = By.xpath("//p[contains(text(), ' Financial Tips Everyone Should Know ')]");
+
+	By article8 = By.xpath("//p[contains(text(), ' 6 Tips to Lighten Your Mood ')]");
+
+	By article9 = By.xpath("//p[contains(text(), ' 5 Ways Getting Outside Promotes Mental and Physical Wellness ')]");
+
+	By article10 = By.xpath("//p[contains(text(), ' 5 Tips for Taking Productive Breaks ')]");
+
+	By article11 = By.xpath("//p[contains(text(), ' 5 Simple Steps For a Healthy Heart ')]");
+
+	By article12 = By.xpath("//p[contains(text(), ' 5 Easy Strategies To Help Protect Our Planet ')]");
+
+	By article13 = By.xpath("//p[contains(text(), ' How to Make More Time for Your Loved Ones ')]");
+
+	By article14 = By.xpath("//p[contains(text(), ' How to Sneak in Activity Throughout Your Day ')]");
+
+	By article15 = By.xpath("//p[contains(text(), ' Is 10,000 Steps the Magic Number? ')]");
+
+	By article16 = By.xpath("//p[contains(text(), ' How To Learn To Love Your Veggies ')]");
+
+	By article17 = By.xpath("//p[contains(text(), ' Listen to Your Gut: 5 Foods to Improve Your Gut Health ')]");
+
+	By article18 = By.xpath("//p[contains(text(), ' Your Meal Prep Guide for a Week of Healthy Dinners ')]");
+
+	By article19 = By.xpath("//p[contains(text(), ' Top Tips to Stay On Track to Reach Your Goals ')]");
+
+	By article20 = By.xpath("//p[contains(text(), ' Why Mediation is Good and How to Make it Work for You ')]");
+
+	By article21 = By.xpath("//p[contains(text(), '  Your Guide to the Ultimate Personalized Self-Care Routine  ')]");
+
+	By article22 = By.xpath("//p[contains(text(), '  5 Tips to Fit in Activity When Life Throws You a Curveball  ')]");
+
+	By pageNo2 = By.xpath("//*[@id='scrollable-container']//li[text()=' 2 ']");
+
+	By pageNo3 = By.xpath("//*[@id='scrollable-container']//li[text()=' 3 ']");
 	// Home Page
 
 	By updateMyAnswerLink = By.xpath("(//a[contains(text(), 'Update my answers')])[2]");
@@ -311,7 +350,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 	By getScoreLabel = By.xpath("(//p)[1]");
 
 	By getScorePercentage = By.xpath("(//p)[8]");
-	
+
 	// Access Library
 	By accLibrarayLink = By.xpath("//a[contains(text(), 'LIBRARY')]");
 
@@ -366,49 +405,47 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		if (percentage <= 49 && percentage >= 0) {
 
 			Assert.assertEquals(getScore, "There’s room for improvement.");
-			System.out.println("Assertion Pass " + getScore +" " + percentage);
+			System.out.println("Assertion Pass " + getScore + " " + percentage);
 		} else if (percentage <= 61 && percentage >= 50) {
 			Assert.assertEquals(getScore, "Keep an eye on it.");
-			System.out.println("Assertion Pass " + getScore+" " + percentage);
+			System.out.println("Assertion Pass " + getScore + " " + percentage);
 		} else if (percentage <= 73 && percentage >= 62) {
 			Assert.assertEquals(getScore, "Keep it up.");
-			System.out.println("Assertion Pass " + getScore+" " + percentage);
+			System.out.println("Assertion Pass " + getScore + " " + percentage);
 		} else if (percentage <= 85 && percentage >= 74) {
 
 			Assert.assertEquals(getScore, "You’re doing very well.");
-			System.out.println("Assertion Pass " + getScore+" " + percentage);
+			System.out.println("Assertion Pass " + getScore + " " + percentage);
 		} else if (percentage <= 100 && percentage >= 86) {
 			Assert.assertEquals(getScore, "You’re doing very great.");
-			System.out.println("Assertion Pass " + getScore+" " + percentage);
+			System.out.println("Assertion Pass " + getScore + " " + percentage);
 		}
 
-		/*if (getPercentage.equalsIgnoreCase("72%")) {
-
-			Assert.assertEquals(getScore, "Keep it up.");
-
-			System.out.println("Assertion Pass " + getScore);
-		}
-
-		if (getPercentage.equalsIgnoreCase("56%")) {
-
-			Assert.assertEquals(getScore, "Keep an eye on it.");
-
-			System.out.println("Assertion Pass " + getScore);
-		}
-
-		if (getPercentage.equalsIgnoreCase("81%")) {
-
-			Assert.assertEquals(getScore, "You’re doing very well.");
-
-			System.out.println("Assertion Pass " + getScore);
-		}
-
-		if (getPercentage.equalsIgnoreCase("33%")) {
-
-			Assert.assertEquals(getScore, "There’s room for improvement.");
-
-			System.out.println("Assertion Pass " + getScore);
-		}*/
+		/*
+		 * if (getPercentage.equalsIgnoreCase("72%")) {
+		 * 
+		 * Assert.assertEquals(getScore, "Keep it up.");
+		 * 
+		 * System.out.println("Assertion Pass " + getScore); }
+		 * 
+		 * if (getPercentage.equalsIgnoreCase("56%")) {
+		 * 
+		 * Assert.assertEquals(getScore, "Keep an eye on it.");
+		 * 
+		 * System.out.println("Assertion Pass " + getScore); }
+		 * 
+		 * if (getPercentage.equalsIgnoreCase("81%")) {
+		 * 
+		 * Assert.assertEquals(getScore, "You’re doing very well.");
+		 * 
+		 * System.out.println("Assertion Pass " + getScore); }
+		 * 
+		 * if (getPercentage.equalsIgnoreCase("33%")) {
+		 * 
+		 * Assert.assertEquals(getScore, "There’s room for improvement.");
+		 * 
+		 * System.out.println("Assertion Pass " + getScore); }
+		 */
 
 		Utility.waitForWebElement(driver, closeCTA).click();
 
@@ -418,15 +455,14 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 		try {
 
-			 Utility.waitForWebElement(driver, calculateHealthScore).click();
-			
+			Utility.waitForWebElement(driver, calculateHealthScore).click();
 
 			// runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 12,
 			// 0), "0");
 		} catch (Exception ex) {
 			// runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 12,
 			// 0), "7");
-			//throw ex;
+			// throw ex;
 			Utility.waitForWebElement(driver, updateMyAnswerLink).click();
 		}
 	}
@@ -462,7 +498,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 	}
 
 	public void verifyHRAContentLibrary() {
-		
+
 		Utility.waitForWebElement(driver, accLibrarayLink).click();
 
 		Utility.waitForWebElement(driver, spanFeel);
@@ -478,6 +514,54 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		Utility.waitForWebElement(driver, spanNutrition);
 
 		Utility.waitForWebElement(driver, spanCardio2);
+
+		Utility.waitForWebElement(driver, article1);
+
+		Utility.waitForWebElement(driver, article2);
+
+		Utility.waitForWebElement(driver, article3);
+
+		Utility.waitForWebElement(driver, article4);
+
+		Utility.waitForWebElement(driver, article5);
+
+		Utility.waitForWebElement(driver, article6);
+
+		Utility.waitForWebElement(driver, article7);
+
+		Utility.waitForWebElement(driver, article8);
+
+		Utility.waitForWebElement(driver, article9);
+
+		Utility.waitForWebElement(driver, article10);
+
+		Utility.waitForWebElement(driver, pageNo2).click();
+
+		Utility.waitForWebElement(driver, article11);
+
+		Utility.waitForWebElement(driver, article12);
+
+		Utility.waitForWebElement(driver, article13);
+
+		Utility.waitForWebElement(driver, article14);
+
+		Utility.waitForWebElement(driver, article15);
+
+		Utility.waitForWebElement(driver, article16);
+
+		Utility.waitForWebElement(driver, article17);
+
+		Utility.waitForWebElement(driver, article18);
+
+		Utility.waitForWebElement(driver, article19);
+
+		Utility.waitForWebElement(driver, article20);
+
+		Utility.waitForWebElement(driver, pageNo3).click();
+		
+		Utility.waitForWebElement(driver, article21);
+		
+		Utility.waitForWebElement(driver, article22);
 
 	}
 
