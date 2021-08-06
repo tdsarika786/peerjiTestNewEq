@@ -349,16 +349,22 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		if (getPercentage.equalsIgnoreCase("72%")) {
 
 			Assert.assertEquals(getScore, "Keep it up.");
+			
+			System.out.println("Assertion Pass "+getScore);
 		}
 
 		if (getPercentage.equalsIgnoreCase("56%")) {
 
 			Assert.assertEquals(getScore, "Keep an eye on it.");
+			
+			System.out.println("Assertion Pass "+getScore);
 		}
 
 		if (getPercentage.equalsIgnoreCase("84%")) {
 
 			Assert.assertEquals(getScore, "You’re doing very well.");
+			
+			System.out.println("Assertion Pass "+getScore);
 		}
 
 		Utility.waitForWebElement(driver, closeCTA).click();
