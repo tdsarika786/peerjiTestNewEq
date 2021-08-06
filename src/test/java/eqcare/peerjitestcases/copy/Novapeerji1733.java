@@ -57,6 +57,10 @@ public class Novapeerji1733 extends BaseClass {
 		
 		home.createEmployee(searchemployer1,"anu","family");
 		
+		System.out.println("**********************************");
+		
+		System.out.println("***************START*******************");
+		
 		System.out.println("*********1 Sarika-Test-NewLJ1***********");
 	}
 	
@@ -163,6 +167,8 @@ public class Novapeerji1733 extends BaseClass {
 	    */
 		
 		home.createEmployee(searchemployer1,"anu70","single");
+		
+		System.out.println("5 - *********EMP 1***********");
 	}
 	
 	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
@@ -192,6 +198,8 @@ public class Novapeerji1733 extends BaseClass {
 	    */
 		
 		home.createEmployee(searchemployer1,"anu71","single");
+		
+		System.out.println("6 - *********EMP 2***********");
 	}
 	
 	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
@@ -221,6 +229,8 @@ public class Novapeerji1733 extends BaseClass {
 	    */
 		
 		home.createEmployee(searchemployer1,"anu72","single");
+		
+		System.out.println("7 - *********EMP 3***********");
 	}
 	
 	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
@@ -250,6 +260,12 @@ public class Novapeerji1733 extends BaseClass {
 	    */
 		
 		home.createEmployee(searchemployer1,"anu73","single");
+		
+		System.out.println("8 - *********EMP 4***********");
+		
+		System.out.println("**********************************");
+		
+		System.out.println("***************END*******************");
 	}
 	
 	@Parameters({"SearchEmployer","CoverageIdentifier", "PlanType"})

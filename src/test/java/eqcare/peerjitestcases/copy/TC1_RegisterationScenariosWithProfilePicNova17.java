@@ -67,6 +67,12 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 				"Sarika#123", true, "img");
 
 		register.registerationCompleteWithValidInput();
+		
+		System.out.println("**********************************");
+		
+		System.out.println("***************START*******************");
+		
+		System.out.println("*************** 1- sarikaqa7+lj1@gmail.com *******************");
 
 	}
 	
@@ -95,6 +101,8 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 				"Sarika#123", true, "pdf");
 
 		register.registerationCompleteWithValidInput();
+		
+		System.out.println("*************** 2- sarikaqa7+pc1@gmail.com *******************");
 
 	}
 	
@@ -123,6 +131,8 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 				"Sarika#123", true, "img");
 
 		register.registerationCompleteWithValidInput();
+		
+		System.out.println("*************** 3- sarikaqa7+pclj1@gmail.com *******************");
 
 	}
 	
@@ -152,6 +162,8 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 				"Sarika#123", true, "img");
 
 		register.registerationCompleteWithValidInput();
+		
+		System.out.println("*************** 4- sarikaqa7+pcljhra1@gmail.com *******************");
 
 	}
 	
@@ -180,6 +192,8 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 				"Sarika#123", false, "img");
 
 		register.registerationCompleteWithValidInput();
+		
+		System.out.println("*************** 5- sarikaqa7+pcljhra1@gmail.com *******************");
 
 	}
 	
@@ -208,6 +222,8 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 				"Sarika#123", false, "img");
 
 		register.registerationCompleteWithValidInput();
+		
+		System.out.println("*************** 6- sarikaqa7+emp71@gmail.com *******************");
 
 	}
 
@@ -237,6 +253,8 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 				"Sarika#123", true, "img");
 
 		register.registerationCompleteWithValidInput();
+		
+		System.out.println("*************** 7- sarikaqa7+emp72@gmail.com *******************");
 
 	}
 
@@ -266,6 +284,11 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 				"Sarika#123", true, "img");
 
 		register.registerationCompleteWithValidInput();
+		
+		System.out.println("*************** 8- sarikaqa7+emp73@gmail.com *******************");
+		
+		
+		System.out.println("***************END*******************");
 
 	}
 
