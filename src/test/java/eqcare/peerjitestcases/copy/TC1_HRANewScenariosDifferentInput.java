@@ -119,9 +119,9 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 		//sleep = 1, option 2 = 10,  Med No
 		
 
-		home.calculateHealthScoreLink();
+		//home.calculateHealthScoreLink();
 
-		home.verifyHRAIntroductionPage();
+		//home.verifyHRAIntroductionPage();
 
 		System.out.println("*******PEERJI HRA START Scenario 2***********");
 
