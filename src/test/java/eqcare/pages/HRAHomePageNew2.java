@@ -601,7 +601,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 			Utility.waitForWebElement(driver, hraLifeStyleDrinikingLabel);
 
 		}
-
+		else {
 		if (option.equalsIgnoreCase("option2")) {
 
 			Utility.waitForWebElement(driver, hraLifeStyleSmokingOptionFormerOccasional).click();
@@ -673,6 +673,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		}
 
 		Utility.waitForWebElement(driver, hraLifeStyleNextLink2b).click();
+		}
 	}
 
 	public void verifyHRALifeStyleQuesDrinking1(String option, String alcoholNo) throws Exception {
