@@ -280,6 +280,14 @@ public class HRAHomePageNew2 extends runWithAttachments {
 	By spanNutrition = By.xpath("//span[contains(text(), 'Nutrition')]");
 
 	By spanCardio2 = By.xpath("(//span[contains(text(), 'Cardio')])[2]");
+	
+	By article1 = By.xpath("//p[contains(text(), ' The Amazing Power of Veggies! ')]");
+	
+	By article2 = By.xpath("//p[contains(text(), 'Easy Ways to Add Exercise to your Day')]");
+	
+	By article3 = By.xpath("//p[contains(text(), 'Easy Ways to Add Exercise to your Day')]");
+	
+	
 
 	// Home Page
 
@@ -454,6 +462,8 @@ public class HRAHomePageNew2 extends runWithAttachments {
 	}
 
 	public void verifyHRAContentLibrary() {
+		
+		Utility.waitForWebElement(driver, accLibrarayLink).click();
 
 		Utility.waitForWebElement(driver, spanFeel);
 

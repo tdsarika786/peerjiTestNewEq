@@ -49,7 +49,7 @@ public class HRAScoreKeepItUp extends BaseClass {
 
 	}
 
-	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage", enabled = false)
+	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage")
 	public void hraKeepItUpScenario() throws Exception {
 
 		// Keep it up.

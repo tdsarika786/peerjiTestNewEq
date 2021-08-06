@@ -49,7 +49,7 @@ public class HRAScoreDoingVeryWell extends BaseClass {
 
 	}
 
-	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage", enabled = false)
+	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage")
 	public void hraDoingVeryWellScenario() throws Exception {
 
 		String height = "250";
