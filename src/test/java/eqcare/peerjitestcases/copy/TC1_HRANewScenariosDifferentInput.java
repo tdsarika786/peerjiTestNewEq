@@ -85,7 +85,21 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 		System.out.println("verifyHRALifeStyleQuesHappiness");
 
 		home.verifyMedical("Med1", "No", "No");
+		
+		home.verifyMedical("Med2", "No", "No");
+		
+		home.verifyMedical("Med3", "No", "No");
 
+		home.verifyMedical("Med4", "No", "No");
+		
+		home.verifyMedical("Med5", "No", "No");
+		
+		home.verifyMedical("Med6", "No", "No");
+		
+		home.verifyMedical("Med7", "No", "No");
+		
+		home.verifyMedical("Med8", "No", "No");
+		
 		System.out.println("verifyMedical");
 
 		home.hraCompletionPage();
