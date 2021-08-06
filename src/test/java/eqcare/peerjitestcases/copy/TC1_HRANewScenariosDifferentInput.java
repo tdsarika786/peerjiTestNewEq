@@ -66,7 +66,7 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 
 		System.out.println("verifyHRAPhysicalIntakeFormsQues1");
 
-		home.verifyHRALifeStyleQuesSleep1("9");
+		home.verifyHRALifeStyleQuesSleep1("2");
 
 		System.out.println("verifyHRALifeStyleQuesSleep1");
 
