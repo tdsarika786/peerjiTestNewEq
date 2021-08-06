@@ -39,7 +39,7 @@ public class HRAContent extends BaseClass {
 	}
 
 
-	@Test(priority = 1, dependsOnMethods = "verifyPage", enabled = false)
+	@Test(priority = 1, dependsOnMethods = "verifyPage")
 	public void verifyHRAPages() throws Exception {
 
 		// home.navigateToHRAContentLibrary();
