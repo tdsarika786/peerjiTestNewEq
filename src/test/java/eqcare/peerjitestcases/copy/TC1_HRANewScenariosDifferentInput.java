@@ -72,9 +72,9 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 		String noDrinks="10";
 		
 		
-		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist+" "+height+" "+weight+ " "+waist);
+		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
 
-		System.out.println("1- HRAPhysicalIntakeForms Ques1");
+		System.out.println("1-HRA PhysicalIntakeForms Ques1"+" "+height+" "+weight+ " "+waist);
 		
 
 		
@@ -243,18 +243,37 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 
 	}
 
+	
 	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage", enabled = false)
 	public void hraDoingVeryWellScenario() throws Exception {
 
-		// Percentage 59 percentage = Keep an eye on it.
+		String height = "154";
+		String weight = "40";
+		String waist = "80";
 
-		home.verifyHRAPhysicalIntakeFormsQues1("250", "125", "87");
+		String[] options = { "option1", "option2", "option3", "option4", "option5" };
 
-		System.out.println("verifyHRAPhysicalIntakeFormsQues1");
+		String[] medQues = { "Med1", "Med2", "Med3", "Med4", "Med5", "Med6", "Med7", "Med8" };
+
+		String[] yesNoOption = { "yes", "no" };
+		
+		String sleepHrs="2";
+		
+		String noSmokes="10";
+		
+		String noDrinks="10";
+
+		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist+" "+height+" "+weight+ " "+waist);
+
+		System.out.println("1- HRAPhysicalIntakeForms Ques1");
+		
+		
 
 		home.verifyHRAPhysicalIntakeFormsQues2("option3");
 
-		System.out.println("verifyHRAPhysicalIntakeFormsQues3");
+		System.out.println("2- HRA PhysicalIntakeFormsQues2");
+		
+		
 
 		home.verifyHRAPhysicalIntakeFormsQues3("option1");
 
