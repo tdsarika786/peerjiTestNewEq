@@ -303,6 +303,9 @@ public class HRAHomePageNew2 extends runWithAttachments {
 	By getScoreLabel = By.xpath("(//p)[1]");
 
 	By getScorePercentage = By.xpath("(//p)[8]");
+	
+	// Access Library
+	By accLibrarayLink = By.xpath("//a[contains(text(), 'LIBRARY')]");
 
 	public HRAHomePageNew2(WebDriver ldriver) {
 		this.driver = ldriver;
@@ -345,65 +348,59 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		String getPercentage = Utility.waitForWebElement(driver, getScorePercentage).getText();
 
 		System.out.println(getPercentage);
-		
-		
+
 		Assert.assertEquals(getScore, scoreLabel);
-		
+
 		String strPercentage = getPercentage.substring(0, getPercentage.length() - 1);
-		
-		int percentage = Integer.parseInt(strPercentage); 
-		
-		if( percentage<=49 && percentage>=0 ) {
 
-	    	
-	    	Assert.assertEquals(getScore, "There’s room for improvement.");
-	    	System.out.println("Assertion Pass "+getScore);
-	    }
-		else if( percentage<=61 && percentage>=50 ) {
-	    	Assert.assertEquals(getScore, "Keep an eye on it.");
-	    	System.out.println("Assertion Pass "+getScore);
-	    }
-	    else if( percentage<=73 && percentage>=62 ) {
-	    	Assert.assertEquals(getScore, "Keep it up.");
-	    	System.out.println("Assertion Pass "+getScore);
-	    }
-	    else if( percentage<=85 && percentage>=74 ) {
-	    	
-	    	Assert.assertEquals(getScore, "You’re doing very well.");
-	    	System.out.println("Assertion Pass "+getScore);
-	    }
-	    else if( percentage<=100 && percentage>=86 ) {
-	    	Assert.assertEquals(getScore, "You’re doing very great.");
-	    	System.out.println("Assertion Pass "+getScore);
-	    }
+		int percentage = Integer.parseInt(strPercentage);
 
-		if (getPercentage.equalsIgnoreCase("72%")) {
+		if (percentage <= 49 && percentage >= 0) {
+
+			Assert.assertEquals(getScore, "There’s room for improvement.");
+			System.out.println("Assertion Pass " + getScore +" " + percentage);
+		} else if (percentage <= 61 && percentage >= 50) {
+			Assert.assertEquals(getScore, "Keep an eye on it.");
+			System.out.println("Assertion Pass " + getScore+" " + percentage);
+		} else if (percentage <= 73 && percentage >= 62) {
+			Assert.assertEquals(getScore, "Keep it up.");
+			System.out.println("Assertion Pass " + getScore+" " + percentage);
+		} else if (percentage <= 85 && percentage >= 74) {
+
+			Assert.assertEquals(getScore, "You’re doing very well.");
+			System.out.println("Assertion Pass " + getScore+" " + percentage);
+		} else if (percentage <= 100 && percentage >= 86) {
+			Assert.assertEquals(getScore, "You’re doing very great.");
+			System.out.println("Assertion Pass " + getScore+" " + percentage);
+		}
+
+		/*if (getPercentage.equalsIgnoreCase("72%")) {
 
 			Assert.assertEquals(getScore, "Keep it up.");
-			
-			System.out.println("Assertion Pass "+getScore);
+
+			System.out.println("Assertion Pass " + getScore);
 		}
 
 		if (getPercentage.equalsIgnoreCase("56%")) {
 
 			Assert.assertEquals(getScore, "Keep an eye on it.");
-			
-			System.out.println("Assertion Pass "+getScore);
+
+			System.out.println("Assertion Pass " + getScore);
 		}
 
 		if (getPercentage.equalsIgnoreCase("81%")) {
 
 			Assert.assertEquals(getScore, "You’re doing very well.");
-			
-			System.out.println("Assertion Pass "+getScore);
+
+			System.out.println("Assertion Pass " + getScore);
 		}
-		
+
 		if (getPercentage.equalsIgnoreCase("33%")) {
 
 			Assert.assertEquals(getScore, "There’s room for improvement.");
-			
-			System.out.println("Assertion Pass "+getScore);
-		}
+
+			System.out.println("Assertion Pass " + getScore);
+		}*/
 
 		Utility.waitForWebElement(driver, closeCTA).click();
 
@@ -413,16 +410,16 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 		try {
 
-			// Utility.waitForWebElement(driver, calculateHealthScore).click();
-			Utility.waitForWebElement(driver, updateMyAnswerLink).click();
+			 Utility.waitForWebElement(driver, calculateHealthScore).click();
+			
 
 			// runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 12,
 			// 0), "0");
 		} catch (Exception ex) {
 			// runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 12,
 			// 0), "7");
-			throw ex;
-
+			//throw ex;
+			Utility.waitForWebElement(driver, updateMyAnswerLink).click();
 		}
 	}
 
