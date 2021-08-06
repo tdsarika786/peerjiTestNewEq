@@ -186,7 +186,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 	By hraLifeStyleSmokePastPerWeekInput = By.xpath("//input[@id='past_cigarettes_per_week']");
 
 	By hraLifeStyleNextLink2b = By.xpath("//a[@data-role='hra-lifestyle-question-2b-next-button']");
-	
+
 	By hraLifeStyleNextLink2a = By.xpath("//a[@data-role='hra-lifestyle-question-2a-next-button']");
 
 	// when never drank selected - daily stress question
@@ -345,17 +345,22 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		String getPercentage = Utility.waitForWebElement(driver, getScorePercentage).getText();
 
 		System.out.println(getPercentage);
-		
+
 		if (getPercentage.equalsIgnoreCase("72%")) {
-		
-		Assert.assertEquals(getScore, "Keep it up.");
+
+			Assert.assertEquals(getScore, "Keep it up.");
 		}
-		
+
 		if (getPercentage.equalsIgnoreCase("56%")) {
-			
+
 			Assert.assertEquals(getScore, "Keep an eye on it.");
-			}
-		
+		}
+
+		if (getPercentage.equalsIgnoreCase("84%")) {
+
+			Assert.assertEquals(getScore, "You’re doing very well.");
+		}
+
 		Utility.waitForWebElement(driver, closeCTA).click();
 
 	}
@@ -641,7 +646,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				Utility.waitForWebElement(driver, hraLifeStyleSmokePerWeekLabel);
 
 				Utility.waitForWebElement(driver, hraLifeStyleSmokePastPerWeekInput).sendKeys(smokeNO);
-				
+
 				Utility.waitForWebElement(driver, hraLifeStyleNextLink2a).click();
 			}
 
@@ -656,7 +661,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				Utility.waitForWebElement(driver, hraLifeStyleSmokePerDayLabel);
 
 				Utility.waitForWebElement(driver, hraLifeStyleSmokePastPerDayInput).sendKeys(smokeNO);
-				
+
 				Utility.waitForWebElement(driver, hraLifeStyleNextLink2b).click();
 			}
 
@@ -673,7 +678,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				Utility.waitForWebElement(driver, hraLifeStyleSmokePerWeekLabel);
 
 				Utility.waitForWebElement(driver, hraLifeStyleSmokePerWeekInput).sendKeys(smokeNO);
-				
+
 				Utility.waitForWebElement(driver, hraLifeStyleNextLink2b).click();
 			}
 
@@ -690,7 +695,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				Utility.waitForWebElement(driver, hraLifeStyleSmokePerDayLabel);
 
 				Utility.waitForWebElement(driver, hraLifeStyleSmokePerDayInput).sendKeys(smokeNO);
-				
+
 				Utility.waitForWebElement(driver, hraLifeStyleNextLink2b).click();
 			}
 
@@ -707,12 +712,12 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				Utility.waitForWebElement(driver, hraLifeStyleSmokePerWeekLabel);
 
 				Utility.waitForWebElement(driver, hraLifeStyleSmokePerWeekInput).sendKeys(smokeNO);
-				
+
 				Utility.waitForWebElement(driver, hraLifeStyleNextLink2b).click();
 
 			}
 
-			//Utility.waitForWebElement(driver, hraLifeStyleNextLink2b).click();
+			// Utility.waitForWebElement(driver, hraLifeStyleNextLink2b).click();
 		}
 	}
 

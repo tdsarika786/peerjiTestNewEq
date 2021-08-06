@@ -72,7 +72,7 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 		String noDrinks="10";
 		
 		
-		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
+		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist+" "+height+" "+weight+ " "+waist);
 
 		System.out.println("1- HRAPhysicalIntakeForms Ques1");
 		
@@ -102,7 +102,7 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 		
 		
 		
-		home.verifyHRALifeStyleQuesDrinking1(options[1], "10");
+		home.verifyHRALifeStyleQuesDrinking1(options[1], noDrinks);
 
 		System.out.println("6- LifeStyleQues Drinking1");
 			
@@ -172,7 +172,7 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 
 		home.verifyHRAPhysicalIntakeFormsQues1(height,weight, waist);
 
-		System.out.println("1-HRA PhysicalIntakeForms Ques1"+height+" "+weight+ " "+waist);
+		System.out.println("1-HRA PhysicalIntakeForms Ques1"+" "+height+" "+weight+ " "+waist);
 		
 
 		home.verifyHRAPhysicalIntakeFormsQues2("option3");
