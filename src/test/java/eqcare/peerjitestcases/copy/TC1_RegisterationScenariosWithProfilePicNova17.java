@@ -245,9 +245,9 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 		
 		register.navigateToRegisterationPage(AppUrl);
 		
-		register.EnrolledUserWithValidInput("emp0001","anu1");
+		register.EnrolledUserWithValidInput("emp0001","anu2");
 		
-		register.Registeration1("sarikaqa7+emppcljhra1@gmail.com",
+		register.Registeration1("sarikaqa7+emppcljhra2@gmail.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
