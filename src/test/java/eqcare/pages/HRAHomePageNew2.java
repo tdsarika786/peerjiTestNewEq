@@ -1,5 +1,7 @@
 package eqcare.pages;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -328,12 +330,11 @@ public class HRAHomePageNew2 extends runWithAttachments {
 	By pageNo2 = By.xpath("//*[@id='scrollable-container']//li[text()=' 2 ']");
 
 	By pageNo3 = By.xpath("//*[@id='scrollable-container']//li[text()=' 3 ']");
-	
-	//images:aa
-	
-	
-	
-	
+
+	// images:aa
+
+	//By List<WebElement>elementName=By.xpath("//*[@id='scrollable-container']//li[text()=' 3 ']");
+
 	// Home Page
 
 	By updateMyAnswerLink = By.xpath("(//a[contains(text(), 'Update my answers')])[2]");
@@ -511,101 +512,122 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 		String getarticle1 = Utility.waitForWebElement(driver, article1).getText();
 
-		System.out.println("1 "+getarticle1);
+		System.out.println("1 " + getarticle1);
 
 		String getarticle2 = Utility.waitForWebElement(driver, article2).getText();
 
-		System.out.println("2 "+getarticle2);
+		System.out.println("2 " + getarticle2);
 
 		String getarticle3 = Utility.waitForWebElement(driver, article3).getText();
 
-		System.out.println("3 "+getarticle3);
+		System.out.println("3 " + getarticle3);
 
 		String getarticle4 = Utility.waitForWebElement(driver, article4).getText();
 
-		System.out.println("4 "+getarticle4);
+		System.out.println("4 " + getarticle4);
 
 		String getarticle5 = Utility.waitForWebElement(driver, article5).getText();
 
-		System.out.println("5 "+getarticle5);
+		System.out.println("5 " + getarticle5);
 
 		String getarticle6 = Utility.waitForWebElement(driver, article6).getText();
 
-		System.out.println("6 "+getarticle6);
+		System.out.println("6 " + getarticle6);
 
 		String getarticle7 = Utility.waitForWebElement(driver, article7).getText();
 
-		System.out.println("7 "+getarticle7);
+		System.out.println("7 " + getarticle7);
 
 		String getarticle8 = Utility.waitForWebElement(driver, article8).getText();
 
-		System.out.println("8 "+getarticle8);
+		System.out.println("8 " + getarticle8);
 
 		String getarticle9 = Utility.waitForWebElement(driver, article9).getText();
 
-		System.out.println("9 "+getarticle9);
+		System.out.println("9 " + getarticle9);
 
 		String getarticle10 = Utility.waitForWebElement(driver, article10).getText();
 
-		System.out.println("10 "+getarticle10);
+		System.out.println("10 " + getarticle10);
+
+		List<WebElement> allArticleImages = driver
+				.findElements(By.xpath("//*[@id='scrollable-container']/div/ul/li/div/div/div[1]"));
+
+		for (WebElement articleImage : allArticleImages) {
+
+			articleImage.click();
+
+			System.out.println(articleImage.getText());
+
+			System.out.println("*********************************************************************");
+		}
 
 		// Page 2
 
 		Utility.waitForWebElement(driver, pageNo2).click();
-		
+
 		Utility.wait(5);
 
 		String getarticle11 = Utility.waitForWebElement(driver, article11).getText();
 
-		System.out.println("11 "+getarticle11);
+		System.out.println("11 " + getarticle11);
 
 		String getarticle12 = Utility.waitForWebElement(driver, article12).getText();
 
-		System.out.println("12 "+getarticle12);
+		System.out.println("12 " + getarticle12);
 
 		String getarticle13 = Utility.waitForWebElement(driver, article13).getText();
 
-		System.out.println("13 "+getarticle13);
+		System.out.println("13 " + getarticle13);
 
 		String getarticle14 = Utility.waitForWebElement(driver, article14).getText();
 
-		System.out.println("14 "+getarticle14);
+		System.out.println("14 " + getarticle14);
 
 		String getarticle15 = Utility.waitForWebElement(driver, article15).getText();
 
-		System.out.println("15 "+getarticle15);
+		System.out.println("15 " + getarticle15);
 
 		String getarticle16 = Utility.waitForWebElement(driver, article16).getText();
 
-		System.out.println("16 "+getarticle16);
+		System.out.println("16 " + getarticle16);
 
 		String getarticle17 = Utility.waitForWebElement(driver, article17).getText();
 
-		System.out.println("17 "+getarticle17);
+		System.out.println("17 " + getarticle17);
 
 		String getarticle18 = Utility.waitForWebElement(driver, article18).getText();
 
-		System.out.println("18 "+getarticle18);
+		System.out.println("18 " + getarticle18);
 
 		String getarticle19 = Utility.waitForWebElement(driver, article19).getText();
 
-		System.out.println("19 "+getarticle19);
+		System.out.println("19 " + getarticle19);
 
 		String getarticle20 = Utility.waitForWebElement(driver, article20).getText();
 
-		System.out.println("20 "+getarticle20);
+		System.out.println("20 " + getarticle20);
+
+		for (WebElement articleImage : allArticleImages) {
+
+			articleImage.click();
+
+			System.out.println(articleImage.getText());
+
+			System.out.println("*********************************************************************");
+		}
 
 		Utility.waitForWebElement(driver, pageNo3).click();
-		
+
 		Utility.wait(5);
 
 		String getarticle21 = Utility.waitForWebElement(driver, article21).getText();
 
-		System.out.println("21 "+getarticle21);
+		System.out.println("21 " + getarticle21);
 
 		String getarticle22 = Utility.waitForWebElement(driver, article22).getText();
 
-		System.out.println("22 "+getarticle22);
+		System.out.println("22 " + getarticle22);
 
 	}
 
