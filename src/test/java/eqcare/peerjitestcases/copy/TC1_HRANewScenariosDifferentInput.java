@@ -45,12 +45,14 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 
 		home.verifyHRAIntroductionPage();
 
-		System.out.println("*******PEERJI HRA START***********");
+		System.out.println("*******PEERJI HRA START Scenario 1***********");
 
 	}
 
 	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage")
 	public void bestScenario() throws Exception {
+		
+		//Percentage 59 percentage = 
 
 		home.verifyHRAPhysicalIntakeFormsQues1("60", "157", "87");
 
@@ -110,6 +112,77 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 
 	}
 
+
+	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage")
+	public void bestScenario2() throws Exception {
+		
+		//sleep = 1, option 2 = 10,  Med No
+		
+
+		home.calculateHealthScoreLink();
+
+		home.verifyHRAIntroductionPage();
+
+		System.out.println("*******PEERJI HRA START Scenario 2***********");
+
+		home.verifyHRAPhysicalIntakeFormsQues1("60", "157", "87");
+
+		System.out.println("verifyHRAPhysicalIntakeFormsQues1");
+
+		home.verifyHRAPhysicalIntakeFormsQues2("option3");
+
+		System.out.println("verifyHRAPhysicalIntakeFormsQues2");
+
+		home.verifyHRAPhysicalIntakeFormsQues3("option1");
+
+		System.out.println("verifyHRAPhysicalIntakeFormsQues3");
+
+		home.verifyHRALifeStyleQuesSleep1("1");
+
+		System.out.println("verifyHRALifeStyleQuesSleep1");
+
+		home.verifyHRALifeStyleQuesSmoking2("option2", "10");
+
+		System.out.println("verifyHRALifeStyleQuesSmoking2");
+
+		home.verifyHRALifeStyleQuesDrinking1("option2", "10");
+
+		System.out.println("verifyLifeStyleQuesDrinking1");
+
+		home.verifyHRALifeStyleQuesStress("option2");
+
+		System.out.println("verifyHRALifeStyleQuesStress");
+
+		home.verifyHRALifeStyleQuesHappiness("option2");
+
+		System.out.println("verifyHRALifeStyleQuesHappiness");
+
+		home.verifyMedical("Med1", "No", "No");
+		
+		home.verifyMedical("Med2", "No", "No");
+		
+		home.verifyMedical("Med3", "No", "No");
+
+		home.verifyMedical("Med4", "No", "No");
+		
+		home.verifyMedical("Med5", "No", "No");
+		
+		home.verifyMedical("Med6", "No", "No");
+		
+		home.verifyMedical("Med7", "No", "No");
+		
+		home.verifyMedical("Med8", "No", "No");
+		
+		System.out.println("verifyMedical");
+
+		home.hraCompletionPage();
+
+		System.out.println("HRA Completition");
+
+		System.out.println("*******END***********");
+
+	}
+	
 	@Test(priority = 3, dependsOnMethods = "verifyPage", enabled = false)
 	public void verifyHRAPhysicalIntakeForms() throws Exception {
 
