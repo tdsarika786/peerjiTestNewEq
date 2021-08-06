@@ -185,6 +185,8 @@ public class HRAHomePageNew2 extends runWithAttachments {
 	By hraLifeStyleSmokePastPerWeekInput = By.xpath("//input[@id='past_cigarettes_per_week']");
 
 	By hraLifeStyleNextLink2b = By.xpath("//a[@data-role='hra-lifestyle-question-2b-next-button']");
+	
+	By hraLifeStyleNextLink2a = By.xpath("//a[@data-role='hra-lifestyle-question-2a-next-button']");
 
 	// when never drank selected - daily stress question
 
@@ -628,6 +630,8 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				Utility.waitForWebElement(driver, hraLifeStyleSmokePerWeekLabel);
 
 				Utility.waitForWebElement(driver, hraLifeStyleSmokePastPerWeekInput).sendKeys(smokeNO);
+				
+				Utility.waitForWebElement(driver, hraLifeStyleNextLink2a).click();
 			}
 
 			if (option.equalsIgnoreCase("option3")) {
@@ -641,6 +645,8 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				Utility.waitForWebElement(driver, hraLifeStyleSmokePerDayLabel);
 
 				Utility.waitForWebElement(driver, hraLifeStyleSmokePastPerDayInput).sendKeys(smokeNO);
+				
+				Utility.waitForWebElement(driver, hraLifeStyleNextLink2b).click();
 			}
 
 			if (option.equalsIgnoreCase("option4")) {
@@ -656,6 +662,8 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				Utility.waitForWebElement(driver, hraLifeStyleSmokePerWeekLabel);
 
 				Utility.waitForWebElement(driver, hraLifeStyleSmokePerWeekInput).sendKeys(smokeNO);
+				
+				Utility.waitForWebElement(driver, hraLifeStyleNextLink2b).click();
 			}
 
 			if (option.equalsIgnoreCase("option5")) {
@@ -671,6 +679,8 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				Utility.waitForWebElement(driver, hraLifeStyleSmokePerDayLabel);
 
 				Utility.waitForWebElement(driver, hraLifeStyleSmokePerDayInput).sendKeys(smokeNO);
+				
+				Utility.waitForWebElement(driver, hraLifeStyleNextLink2b).click();
 			}
 
 			if (option.equalsIgnoreCase("option6")) {
@@ -686,9 +696,12 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				Utility.waitForWebElement(driver, hraLifeStyleSmokePerWeekLabel);
 
 				Utility.waitForWebElement(driver, hraLifeStyleSmokePerWeekInput).sendKeys(smokeNO);
+				
+				Utility.waitForWebElement(driver, hraLifeStyleNextLink2b).click();
+
 			}
 
-			Utility.waitForWebElement(driver, hraLifeStyleNextLink2b).click();
+			//Utility.waitForWebElement(driver, hraLifeStyleNextLink2b).click();
 		}
 	}
 
