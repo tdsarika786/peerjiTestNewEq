@@ -71,6 +71,8 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 		
 		String noDrinks="10";
 		
+		String scoreLabel="Keep an eye on it.";
+		
 		
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
 
@@ -138,7 +140,7 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 
 		System.out.println("9- HRA Medical");
 
-		home.hraCompletionPage();
+		home.hraCompletionPage(scoreLabel);
 		
 
 		System.out.println("10- HRA Completition");
@@ -168,6 +170,8 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 		String noSmokes="10";
 		
 		String noDrinks="10";
+		
+		String scoreLabel="Keep it up.";
 		
 
 		home.verifyHRAPhysicalIntakeFormsQues1(height,weight, waist);
@@ -234,7 +238,7 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 
 		System.out.println("9-HRA Medical");
 
-		home.hraCompletionPage();
+		home.hraCompletionPage(scoreLabel);
 		
 
 		System.out.println("10-HRA Completition");
@@ -262,6 +266,8 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 		String noSmokes="10";
 		
 		String noDrinks="10";
+		
+		String scoreLabel="TYou’re doing very well.";
 
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
 
@@ -327,7 +333,7 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 
 		System.out.println("9- HRA Medical");
 
-		home.hraCompletionPage();
+		home.hraCompletionPage(scoreLabel);
 		
 		
 		System.out.println("10- HRA Completition");
@@ -391,7 +397,7 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 
 		System.out.println("verifyMedical");
 
-		home.hraCompletionPage();
+		//home.hraCompletionPage();
 
 		System.out.println("HRA Completition");
 
@@ -460,7 +466,7 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 
 		System.out.println("verifyMedical");
 
-		home.hraCompletionPage();
+		//home.hraCompletionPage();
 
 		System.out.println("HRA Completition");
 
@@ -493,6 +499,8 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 		String noSmokes="10";
 		
 		String noDrinks="10";
+		
+		String scoreLabel="There’s room for improvement.";
 			
 
 		System.out.println("*******PEERJI HRA START Scenario 3***********");
@@ -517,7 +525,6 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 		System.out.println("4- HRA LifeStyleQuesSleep1");
 		
 		
-
 		home.verifyHRALifeStyleQuesSmoking2(options[2], noSmokes);
 
 		System.out.println("5- HRA LifeStyleQuesSmoking2");
@@ -556,7 +563,7 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 
 		System.out.println("9- HRA Medical");
 
-		home.hraCompletionPage();
+		home.hraCompletionPage(scoreLabel);
 
 		System.out.println("10- HRA Completition");
 
@@ -626,7 +633,7 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 
 		System.out.println("verifyMedical");
 
-		home.hraCompletionPage();
+		//home.hraCompletionPage();
 
 		System.out.println("HRA Completition");
 
@@ -696,7 +703,7 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 
 		System.out.println("verifyMedical");
 
-		home.hraCompletionPage();
+		//home.hraCompletionPage();
 
 		System.out.println("HRA Completition");
 
