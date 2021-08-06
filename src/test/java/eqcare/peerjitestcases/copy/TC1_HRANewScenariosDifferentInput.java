@@ -255,11 +255,11 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 
 	}
 	
-	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage")
+	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage", enabled=false)
 	public void bestScenario4() throws Exception {
 		
 		//There’s room for improvement.
-		//34%, option =3
+		//23%, option =3
 		
 
 		//home.calculateHealthScoreLink();
@@ -311,6 +311,77 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 		home.verifyMedical("Med5", "Yes", "No");
 		
 		home.verifyMedical("Med6", "Yes", "No");
+		
+		home.verifyMedical("Med7", "Yes", "No");
+		
+		home.verifyMedical("Med8", "Yes", "No");
+		
+		System.out.println("verifyMedical");
+
+		home.hraCompletionPage();
+
+		System.out.println("HRA Completition");
+
+		System.out.println("*******END***********");
+
+	}
+	
+	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage")
+	public void bestScenario5() throws Exception {
+		
+		//There’s room for improvement.
+		//23%, option =3
+		
+
+		//home.calculateHealthScoreLink();
+
+		//home.verifyHRAIntroductionPage();
+
+		System.out.println("*******PEERJI HRA START Scenario 3***********");
+
+		home.verifyHRAPhysicalIntakeFormsQues1("65", "175", "85");
+
+		System.out.println("verifyHRAPhysicalIntakeFormsQues1");
+
+		home.verifyHRAPhysicalIntakeFormsQues2("option3");
+
+		System.out.println("verifyHRAPhysicalIntakeFormsQues2");
+
+		home.verifyHRAPhysicalIntakeFormsQues3("option4");
+
+		System.out.println("verifyHRAPhysicalIntakeFormsQues3");
+
+		home.verifyHRALifeStyleQuesSleep1("1");
+
+		System.out.println("verifyHRALifeStyleQuesSleep1");
+
+		home.verifyHRALifeStyleQuesSmoking2("option4", "10");
+
+		System.out.println("verifyHRALifeStyleQuesSmoking2");
+
+		home.verifyHRALifeStyleQuesDrinking1("option4", "10");
+
+		System.out.println("verifyLifeStyleQuesDrinking1");
+
+		home.verifyHRALifeStyleQuesStress("option4");
+
+		System.out.println("verifyHRALifeStyleQuesStress");
+
+		home.verifyHRALifeStyleQuesHappiness("option4");
+
+		System.out.println("verifyHRALifeStyleQuesHappiness");
+
+		home.verifyMedical("Med1", "Yes", "Yes");
+		
+		home.verifyMedical("Med2", "Yes", "Yes");
+		
+		home.verifyMedical("Med3", "Yes", "Yes");
+
+		home.verifyMedical("Med4", "Yes", "Yes");
+		
+		home.verifyMedical("Med5", "Yes", "Yes");
+		
+		home.verifyMedical("Med6", "Yes", "Yes");
 		
 		home.verifyMedical("Med7", "Yes", "No");
 		
