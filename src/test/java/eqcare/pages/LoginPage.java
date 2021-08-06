@@ -48,7 +48,7 @@ public class LoginPage extends runWithAttachments {
 
 	By languageFRLink = By.xpath("//a[contains(text(), 'FR')]");
 	
-	By languageLink = By.xpath("//*[@id=\"scrollable-container\"]/div[2]/div[1]/a[2]");
+	By languageLink = By.xpath("(//*[@id='scrollable-container']//a[2])[1]");
 
 	By registerLink = By.xpath("//*[@data-role='register-button']");
 
