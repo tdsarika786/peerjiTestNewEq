@@ -123,7 +123,7 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 
 		//home.verifyHRAIntroductionPage();
 
-		System.out.println("*******PEERJI HRA START Scenario 2***********");
+		System.out.println("*******PEERJI HRA START Scenario 1***********");
 
 		home.verifyHRAPhysicalIntakeFormsQues1("60", "157", "87");
 
@@ -268,7 +268,7 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 
 		System.out.println("*******PEERJI HRA START Scenario 3***********");
 
-		home.verifyHRAPhysicalIntakeFormsQues1("50", "157", "85");
+		home.verifyHRAPhysicalIntakeFormsQues1("65", "175", "85");
 
 		System.out.println("verifyHRAPhysicalIntakeFormsQues1");
 
