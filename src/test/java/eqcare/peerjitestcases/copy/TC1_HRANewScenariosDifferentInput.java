@@ -292,7 +292,7 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 
 		System.out.println("verifyLifeStyleQuesDrinking1");
 
-		home.verifyHRALifeStyleQuesStress("option");
+		home.verifyHRALifeStyleQuesStress("option3");
 
 		System.out.println("verifyHRALifeStyleQuesStress");
 
