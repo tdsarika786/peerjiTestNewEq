@@ -79,11 +79,11 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 
 		System.out.println("verifyLifeStyleQuesDrinking1");
 
-		home.verifyHRALifeStyleQuesStress("option2");
+		home.verifyHRALifeStyleQuesStress("option5");
 
 		System.out.println("verifyHRALifeStyleQuesStress");
 
-		home.verifyHRALifeStyleQuesHappiness("option2");
+		home.verifyHRALifeStyleQuesHappiness("option5");
 
 		System.out.println("verifyHRALifeStyleQuesHappiness");
 
@@ -99,9 +99,9 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 		
 		home.verifyMedical("Med6", "Yes", "Yes");
 		
-		home.verifyMedical("Med7", "No", "No");
+		home.verifyMedical("Med7", "Yes", "No");
 		
-		home.verifyMedical("Med8", "No", "No");
+		home.verifyMedical("Med8", "Yes", "No");
 		
 		System.out.println("verifyMedical");
 
