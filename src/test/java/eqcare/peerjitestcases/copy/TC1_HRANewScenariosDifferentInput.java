@@ -50,6 +50,69 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 	}
 
 	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage", enabled=false)
+	public void hraDoingVeryWellScenario() throws Exception {
+		
+		//Percentage 59 percentage = Keep an eye on it.
+
+		home.verifyHRAPhysicalIntakeFormsQues1("250", "125", "87");
+
+		System.out.println("verifyHRAPhysicalIntakeFormsQues1");
+
+		home.verifyHRAPhysicalIntakeFormsQues2("option3");
+
+		System.out.println("verifyHRAPhysicalIntakeFormsQues3");
+
+		home.verifyHRAPhysicalIntakeFormsQues3("option1");
+
+		System.out.println("verifyHRAPhysicalIntakeFormsQues1");
+
+		home.verifyHRALifeStyleQuesSleep1("9");
+
+		System.out.println("verifyHRALifeStyleQuesSleep1");
+
+		home.verifyHRALifeStyleQuesSmoking2("option1", "0");
+
+		System.out.println("verifyHRALifeStyleQuesSmoking2");
+
+		home.verifyHRALifeStyleQuesDrinking1("option1", "0");
+
+		System.out.println("verifyLifeStyleQuesDrinking1");
+
+		home.verifyHRALifeStyleQuesStress("option1");
+
+		System.out.println("verifyHRALifeStyleQuesStress");
+
+		home.verifyHRALifeStyleQuesHappiness("option1");
+
+		System.out.println("verifyHRALifeStyleQuesHappiness");
+
+		home.verifyMedical("Med1", "No", "No");
+		
+		home.verifyMedical("Med2", "No", "No");
+		
+		home.verifyMedical("Med3", "No", "No");
+
+		home.verifyMedical("Med4", "No", "No");
+		
+		home.verifyMedical("Med5", "No", "No");
+		
+		home.verifyMedical("Med6", "No", "No");
+		
+		home.verifyMedical("Med7", "No", "No");
+		
+		home.verifyMedical("Med8", "No", "No");
+		
+		System.out.println("verifyMedical");
+
+		home.hraCompletionPage();
+
+		System.out.println("HRA Completition");
+
+		System.out.println("*******END***********");
+
+	}
+
+	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage", enabled=false)
 	public void bestScenario() throws Exception {
 		
 		//Percentage 59 percentage = Keep an eye on it.
@@ -326,11 +389,11 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 
 	}
 	
-	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage")
+	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage", enabled=false)
 	public void bestScenario5() throws Exception {
 		
 		//There’s room for improvement.
-		//23%, option =3
+		//27%, option =3
 		
 
 		//home.calculateHealthScoreLink();
