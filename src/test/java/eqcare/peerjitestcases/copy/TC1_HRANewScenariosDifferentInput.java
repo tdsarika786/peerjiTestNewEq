@@ -49,7 +49,7 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 
 	}
 
-	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage")
+	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage", enabled = false)
 	public void hraKeepEyeOnItScenario() throws Exception {
 
 		// Keep an eye on it.
