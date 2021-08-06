@@ -360,7 +360,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 			System.out.println("Assertion Pass "+getScore);
 		}
 
-		if (getPercentage.equalsIgnoreCase("84%")) {
+		if (getPercentage.equalsIgnoreCase("81%")) {
 
 			Assert.assertEquals(getScore, "You’re doing very well.");
 			
