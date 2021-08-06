@@ -113,10 +113,10 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 	}
 
 
-	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage")
+	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage", enabled=false)
 	public void bestScenario2() throws Exception {
 		
-		//sleep = 1, option 2 = 10,  Med No
+		//Percentage 59 percentage = Keep an eye on it., option =2
 		
 
 		//home.calculateHealthScoreLink();
@@ -129,15 +129,15 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 
 		System.out.println("verifyHRAPhysicalIntakeFormsQues1");
 
-		home.verifyHRAPhysicalIntakeFormsQues2("option3");
+		home.verifyHRAPhysicalIntakeFormsQues2("option2");
 
 		System.out.println("verifyHRAPhysicalIntakeFormsQues2");
 
-		home.verifyHRAPhysicalIntakeFormsQues3("option1");
+		home.verifyHRAPhysicalIntakeFormsQues3("option2");
 
 		System.out.println("verifyHRAPhysicalIntakeFormsQues3");
 
-		home.verifyHRALifeStyleQuesSleep1("1");
+		home.verifyHRALifeStyleQuesSleep1("2");
 
 		System.out.println("verifyHRALifeStyleQuesSleep1");
 
@@ -182,6 +182,78 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 		System.out.println("*******END***********");
 
 	}
+	
+	
+	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage")
+	public void bestScenario3() throws Exception {
+		
+		//Percentage 59 percentage = Keep an eye on it., option =3
+		
+
+		//home.calculateHealthScoreLink();
+
+		//home.verifyHRAIntroductionPage();
+
+		System.out.println("*******PEERJI HRA START Scenario 3***********");
+
+		home.verifyHRAPhysicalIntakeFormsQues1("60", "157", "87");
+
+		System.out.println("verifyHRAPhysicalIntakeFormsQues1");
+
+		home.verifyHRAPhysicalIntakeFormsQues2("option3");
+
+		System.out.println("verifyHRAPhysicalIntakeFormsQues2");
+
+		home.verifyHRAPhysicalIntakeFormsQues3("option3");
+
+		System.out.println("verifyHRAPhysicalIntakeFormsQues3");
+
+		home.verifyHRALifeStyleQuesSleep1("1");
+
+		System.out.println("verifyHRALifeStyleQuesSleep1");
+
+		home.verifyHRALifeStyleQuesSmoking2("option3", "10");
+
+		System.out.println("verifyHRALifeStyleQuesSmoking2");
+
+		home.verifyHRALifeStyleQuesDrinking1("option3", "10");
+
+		System.out.println("verifyLifeStyleQuesDrinking1");
+
+		home.verifyHRALifeStyleQuesStress("option3");
+
+		System.out.println("verifyHRALifeStyleQuesStress");
+
+		home.verifyHRALifeStyleQuesHappiness("option3");
+
+		System.out.println("verifyHRALifeStyleQuesHappiness");
+
+		home.verifyMedical("Med1", "No", "No");
+		
+		home.verifyMedical("Med2", "No", "No");
+		
+		home.verifyMedical("Med3", "No", "No");
+
+		home.verifyMedical("Med4", "No", "No");
+		
+		home.verifyMedical("Med5", "No", "No");
+		
+		home.verifyMedical("Med6", "No", "No");
+		
+		home.verifyMedical("Med7", "No", "No");
+		
+		home.verifyMedical("Med8", "No", "No");
+		
+		System.out.println("verifyMedical");
+
+		home.hraCompletionPage();
+
+		System.out.println("HRA Completition");
+
+		System.out.println("*******END***********");
+
+	}
+	
 	
 	@Test(priority = 3, dependsOnMethods = "verifyPage", enabled = false)
 	public void verifyHRAPhysicalIntakeForms() throws Exception {
