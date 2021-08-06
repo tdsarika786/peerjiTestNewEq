@@ -630,7 +630,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 			for (WebElement articleImage : allArticleImages) {
 
-				articleImage.click();
+				Utility.highLightElement(driver,articleImage);
 
 				System.out.println("*********************************************************************");
 			}
@@ -642,7 +642,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 			for (WebElement articleImage : allArticleImages) {
 
-				articleImage.click();
+				Utility.highLightElement(driver,articleImage);
 
 				System.out.println("*********************************************************************");
 			}
