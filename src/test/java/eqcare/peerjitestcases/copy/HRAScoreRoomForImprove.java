@@ -45,7 +45,7 @@ public class HRAScoreRoomForImprove extends BaseClass {
 
 		home.verifyHRAIntroductionPage();
 
-		System.out.println("*******PEERJI HRA START Scenario 1***********");
+		System.out.println("*******HRA Introduction Page***********");
 
 	}
 
@@ -77,7 +77,7 @@ public class HRAScoreRoomForImprove extends BaseClass {
 
 		String scoreLabel = "There’s room for improvement.";
 
-		System.out.println("*******PEERJI HRA START Scenario 3***********");
+		System.out.println("********HRA Room for improvement. **********");
 
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
 

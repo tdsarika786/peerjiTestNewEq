@@ -45,7 +45,7 @@ public class HRAScoreKeepItUp extends BaseClass {
 
 		home.verifyHRAIntroductionPage();
 
-		System.out.println("*******PEERJI HRA START Scenario 1***********");
+		System.out.println("*******HRA Introduction Page***********");
 
 	}
 
@@ -72,6 +72,8 @@ public class HRAScoreKeepItUp extends BaseClass {
 		String noDrinks = "10";
 
 		String scoreLabel = "Keep it up.";
+		
+		System.out.println("********HRA Keep It Up **********");
 
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
 
