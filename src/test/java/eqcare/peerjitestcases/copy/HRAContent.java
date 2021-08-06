@@ -38,18 +38,8 @@ public class HRAContent extends BaseClass {
 
 	}
 
-	@Test(priority = 2, dependsOnMethods = "verifyPage")
-	public void verifyHRAIntroPage() throws Exception {
 
-		home.calculateHealthScoreLink();
-
-		home.verifyHRAIntroductionPage();
-
-		System.out.println("*******PEERJI HRA START Scenario 1***********");
-
-	}
-	
-	@Test(priority = 2, dependsOnMethods = "verifyPage", enabled = false)
+	@Test(priority = 1, dependsOnMethods = "verifyPage", enabled = false)
 	public void verifyHRAPages() throws Exception {
 
 		// home.navigateToHRAContentLibrary();

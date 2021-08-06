@@ -45,7 +45,7 @@ public class HRAScoreDoingVeryWell extends BaseClass {
 
 		home.verifyHRAIntroductionPage();
 
-		System.out.println("*******PEERJI HRA START Scenario 1***********");
+		System.out.println("*******HRA Introduction Page***********");
 
 	}
 
@@ -68,7 +68,9 @@ public class HRAScoreDoingVeryWell extends BaseClass {
 
 		String noDrinks = "10";
 
-		String scoreLabel = "TYou’re doing very well.";
+		String scoreLabel = "You’re doing very well.";
+		
+		System.out.println("********HRA Doing Very Well Scenario**********");
 
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
 

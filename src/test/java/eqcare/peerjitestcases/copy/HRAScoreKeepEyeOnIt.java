@@ -45,7 +45,7 @@ public class HRAScoreKeepEyeOnIt extends BaseClass {
 
 		home.verifyHRAIntroductionPage();
 
-		System.out.println("*******PEERJI HRA START Scenario 1***********");
+		System.out.println("*******HRA Introduction Page***********");
 
 	}
 
@@ -72,6 +72,8 @@ public class HRAScoreKeepEyeOnIt extends BaseClass {
 		String noDrinks = "10";
 
 		String scoreLabel = "Keep an eye on it.";
+		
+		System.out.println("********HRA Keep Eye On It Scenario**********");
 
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
 
