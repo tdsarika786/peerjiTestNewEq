@@ -299,7 +299,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 	By getScoreLabel = By.xpath("(//p)[1]");
 
-	By getScorePercentage = By.xpath("(//p)[1]");
+	By getScorePercentage = By.xpath("(//p)[8]");
 
 	public HRAHomePageNew2(WebDriver ldriver) {
 		this.driver = ldriver;

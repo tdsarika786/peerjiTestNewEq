@@ -49,7 +49,7 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 
 	}
 
-	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage")
+	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage", enabled=false)
 	public void bestScenario() throws Exception {
 		
 		//Percentage 59 percentage = Keep an eye on it.
