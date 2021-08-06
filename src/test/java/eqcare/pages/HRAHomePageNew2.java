@@ -693,6 +693,8 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 			Utility.waitForWebElement(driver, hraLifeStyleStressLabel);
 		}
+		
+		else {
 
 		if (option.equalsIgnoreCase("option2")) {
 
@@ -724,7 +726,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 		}
 
-		Utility.waitForWebElement(driver, hraLifeStyleAlchoholNextLink).click();
+		Utility.waitForWebElement(driver, hraLifeStyleAlchoholNextLink).click();}
 	}
 
 	public void verifyHRALifeStyleQuesStress(String option) throws Exception {
