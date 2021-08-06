@@ -56,10 +56,12 @@ public class Novapeerji1733 extends BaseClass {
 	    home.createGroupNo(groupNo,searchemployer1); // then create employee 
 		
 		home.createEmployee(searchemployer1,"anu","family");
+		
+		System.out.println("*********1 Sarika-Test-NewLJ1***********");
 	}
 	
 	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
-	@Test(priority = 2, dependsOnMethods = "loginToApplication")
+	@Test(priority = 3, dependsOnMethods = "loginToApplication")
 	public void CreateEmployer1(String searchemployer, String coveragetoken, String coveragetype ) throws InterruptedException {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
@@ -77,10 +79,12 @@ public class Novapeerji1733 extends BaseClass {
 	    home.createGroupNo(groupNo,searchemployer1); // then create employee 
 		
 		home.createEmployee(searchemployer1,"anu1","family");
+		
+		System.out.println("*********2 Sarika-Test-NewPC1***********");
 	}
 
 	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
-	@Test(priority = 2, dependsOnMethods = "loginToApplication")
+	@Test(priority = 4, dependsOnMethods = "loginToApplication")
 	public void CreateEmployer2(String searchemployer, String coveragetoken, String coveragetype ) throws InterruptedException {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
@@ -100,16 +104,18 @@ public class Novapeerji1733 extends BaseClass {
 	    home.createGroupNo(groupNo,searchemployer1); // then create employee 
 		
 		home.createEmployee(searchemployer1,"anu2","family");
+		
+		System.out.println("*********3 Sarika-Test-NewPCLJ1***********");
 	}
 	
 	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
-	@Test(priority = 3, dependsOnMethods = "loginToApplication")
+	@Test(priority = 5, dependsOnMethods = "loginToApplication")
 	public void CreateEmployer3(String searchemployer, String coveragetoken, String coveragetype ) throws InterruptedException {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
 		
-		String searchemployer1 ="Sarika-Test-NewPCLJ2";
-		String groupNo ="PCLJ2";
+		String searchemployer1 ="Sarika-Test-NewPCLJHRA1";
+		String groupNo ="PCLJHRA1";
 		String empID ="703";
 
         home.createEmployer1733(searchemployer1,empID,null); 
@@ -117,16 +123,20 @@ public class Novapeerji1733 extends BaseClass {
 	    home.createCoverage1797(searchemployer1,null, "primary_care");
 		
 	    home.createCoverageUpdate1797(searchemployer1,null, "lifejourney");
+	    
+	    home.createCoverageUpdate1797(searchemployer1,null, "hra");
 		
 		home.createService1797(searchemployer1,null,null);
 		
 	    home.createGroupNo(groupNo,searchemployer1); // then create employee 
 		
 		home.createEmployee(searchemployer1,"anu3","single");
+		
+		System.out.println("*********4 Sarika-Test-NewPCLJ2***********");
 	}
 	
 	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
-	@Test(priority = 3, dependsOnMethods = "loginToApplication")
+	@Test(priority = 6, dependsOnMethods = "loginToApplication")
 	public void CreateEmployer4(String searchemployer, String coveragetoken, String coveragetype ) throws InterruptedException {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
@@ -156,7 +166,7 @@ public class Novapeerji1733 extends BaseClass {
 	}
 	
 	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
-	@Test(priority = 2, dependsOnMethods = "loginToApplication")
+	@Test(priority = 7, dependsOnMethods = "loginToApplication")
 	public void CreateEmployer5(String searchemployer, String coveragetoken, String coveragetype ) throws InterruptedException {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
@@ -185,7 +195,7 @@ public class Novapeerji1733 extends BaseClass {
 	}
 	
 	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
-	@Test(priority = 2, dependsOnMethods = "loginToApplication")
+	@Test(priority = 8, dependsOnMethods = "loginToApplication")
 	public void CreateEmployer6(String searchemployer, String coveragetoken, String coveragetype ) throws InterruptedException {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
@@ -214,7 +224,7 @@ public class Novapeerji1733 extends BaseClass {
 	}
 	
 	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
-	@Test(priority = 2, dependsOnMethods = "loginToApplication")
+	@Test(priority = 9, dependsOnMethods = "loginToApplication")
 	public void CreateEmployer7(String searchemployer, String coveragetoken, String coveragetype ) throws InterruptedException {
 		
 		home = PageFactory.initElements(driver, NovaHomePage.class);
