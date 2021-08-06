@@ -549,16 +549,32 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		String getarticle10 = Utility.waitForWebElement(driver, article10).getText();
 
 		System.out.println("10 " + getarticle10);
+		
+		try {
+			List<WebElement> allArticleImages = driver
+					.findElements(By.xpath("//li/div"));
 
-		List<WebElement> allArticleImages = driver
-				.findElements(By.xpath("//li/div"));
+			for (WebElement articleImage : allArticleImages) {
 
-		for (WebElement articleImage : allArticleImages) {
+				articleImage.click();
 
-			articleImage.click();
-
-			System.out.println("*********************************************************************");
+				System.out.println("*********************************************************************");
+			}
 		}
+		catch(org.openqa.selenium.StaleElementReferenceException ex)
+		{
+			List<WebElement> allArticleImages = driver
+					.findElements(By.xpath("//li/div"));
+
+			for (WebElement articleImage : allArticleImages) {
+
+				articleImage.click();
+
+				System.out.println("*********************************************************************");
+			}
+		}
+
+		
 
 		// Page 2
 
@@ -606,13 +622,28 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 		System.out.println("20 " + getarticle20);
 
-		for (WebElement articleImage : allArticleImages) {
+		try {
+			List<WebElement> allArticleImages = driver
+					.findElements(By.xpath("//li/div"));
 
-			articleImage.click();
+			for (WebElement articleImage : allArticleImages) {
 
-			System.out.println(articleImage.getText());
+				articleImage.click();
 
-			System.out.println("*********************************************************************");
+				System.out.println("*********************************************************************");
+			}
+		}
+		catch(org.openqa.selenium.StaleElementReferenceException ex)
+		{
+			List<WebElement> allArticleImages = driver
+					.findElements(By.xpath("//li/div"));
+
+			for (WebElement articleImage : allArticleImages) {
+
+				articleImage.click();
+
+				System.out.println("*********************************************************************");
+			}
 		}
 
 		Utility.waitForWebElement(driver, pageNo3).click();
