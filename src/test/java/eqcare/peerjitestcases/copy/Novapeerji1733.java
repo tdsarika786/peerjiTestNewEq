@@ -152,7 +152,7 @@ public class Novapeerji1733 extends BaseClass {
 	    
 	    */
 		
-		home.createEmployee(searchemployer1,"anu","single");
+		home.createEmployee(searchemployer1,"anu70","single");
 	}
 	
 	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
@@ -181,7 +181,7 @@ public class Novapeerji1733 extends BaseClass {
 	    
 	    */
 		
-		home.createEmployee(searchemployer1,"anu1","single");
+		home.createEmployee(searchemployer1,"anu71","single");
 	}
 	
 	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
@@ -210,7 +210,7 @@ public class Novapeerji1733 extends BaseClass {
 	    
 	    */
 		
-		home.createEmployee(searchemployer1,"anu2","single");
+		home.createEmployee(searchemployer1,"anu72","single");
 	}
 	
 	@Parameters({"SearchEmployer","CoverageToken","CoverageType"})
@@ -239,7 +239,7 @@ public class Novapeerji1733 extends BaseClass {
 	    
 	    */
 		
-		home.createEmployee(searchemployer1,"anu3","single");
+		home.createEmployee(searchemployer1,"anu73","single");
 	}
 	
 	@Parameters({"SearchEmployer","CoverageIdentifier", "PlanType"})
