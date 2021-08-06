@@ -10,10 +10,8 @@
   <test name="Test" preserve-order="true" thread-count="3" >
     <classes>
        
-           <class name="eqcare.peerjitestcases.copy.HRAScoreDoingVeryWell"/>  
-            <class name="eqcare.peerjitestcases.copy.HRAScoreKeepEyeOnIt"/>  
-             <class name="eqcare.peerjitestcases.copy.HRAScoreKeepItUp"/>  
-              <class name="eqcare.peerjitestcases.copy.HRAScoreRoomForImprove"/>  
+           <class name="eqcare.peerjitestcases.copy.HRAContent"/>  
+          
          
     </classes>
     
