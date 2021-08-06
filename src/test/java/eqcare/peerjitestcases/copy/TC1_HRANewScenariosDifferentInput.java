@@ -50,9 +50,74 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 	}
 	
 	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage")
+	public void hraKeepItScenario() throws Exception {
+		
+		//Keep it up.
+		//72%
+
+		home.verifyHRAPhysicalIntakeFormsQues1("154", "40", "80");
+
+		System.out.println("verifyHRAPhysicalIntakeFormsQues1");
+
+		home.verifyHRAPhysicalIntakeFormsQues2("option3");
+
+		System.out.println("verifyHRAPhysicalIntakeFormsQues3");
+
+		home.verifyHRAPhysicalIntakeFormsQues3("option1");
+
+		System.out.println("verifyHRAPhysicalIntakeFormsQues1");
+
+		home.verifyHRALifeStyleQuesSleep1("2");
+
+		System.out.println("verifyHRALifeStyleQuesSleep1");
+
+		home.verifyHRALifeStyleQuesSmoking2("option2", "10");
+
+		System.out.println("verifyHRALifeStyleQuesSmoking2");
+
+		home.verifyHRALifeStyleQuesDrinking1("option2", "10");
+
+		System.out.println("verifyLifeStyleQuesDrinking1");
+
+		home.verifyHRALifeStyleQuesStress("option2");
+
+		System.out.println("verifyHRALifeStyleQuesStress");
+
+		home.verifyHRALifeStyleQuesHappiness("option2");
+
+		System.out.println("verifyHRALifeStyleQuesHappiness");
+
+		home.verifyMedical("Med1", "Yes", "No");
+		
+		home.verifyMedical("Med2", "Yes", "No");
+		
+		home.verifyMedical("Med3", "Yes", "Yes");
+
+		home.verifyMedical("Med4", "Yes", "Yes");
+		
+		home.verifyMedical("Med5", "Yes", "Yes");
+		
+		home.verifyMedical("Med6", "Yes", "Yes");
+		
+		home.verifyMedical("Med7", "No", "No");
+		
+		home.verifyMedical("Med8", "No", "No");
+		
+		System.out.println("verifyMedical");
+
+		home.hraCompletionPage();
+
+		System.out.println("HRA Completition");
+
+		System.out.println("*******END***********");
+
+	}
+	
+	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage")
 	public void hraKeepItUpScenario() throws Exception {
 		
-		//Percentage 59 percentage = Keep an eye on it.
+		//Keep it up.
+		//72%
 
 		home.verifyHRAPhysicalIntakeFormsQues1("154", "40", "80");
 
