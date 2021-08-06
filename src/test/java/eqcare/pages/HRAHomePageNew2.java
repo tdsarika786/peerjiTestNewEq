@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 import eqcare.factories.DataProviderFactory;
+import eqcare.factories.ErrorCodesProvider;
 import eqcare.helper.Utility;
 
 import com.practitest.examples.runWithAttachments;
@@ -344,6 +345,16 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		String getPercentage = Utility.waitForWebElement(driver, getScorePercentage).getText();
 
 		System.out.println(getPercentage);
+		
+		if (getPercentage.equalsIgnoreCase("72%")) {
+		
+		Assert.assertEquals(getScore, "Keep it up.");
+		}
+		
+		if (getPercentage.equalsIgnoreCase("56%")) {
+			
+			Assert.assertEquals(getScore, "Keep an eye on it.");
+			}
 		
 		Utility.waitForWebElement(driver, closeCTA).click();
 

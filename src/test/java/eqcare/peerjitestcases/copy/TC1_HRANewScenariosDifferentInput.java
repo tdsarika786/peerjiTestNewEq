@@ -49,71 +49,105 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 
 	}
 
-	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage", enabled = false)
+	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage")
 	public void hraKeepEyeOnItScenario() throws Exception {
 
 		// Keep an eye on it.
 		// 56%
+		
+		String height = "154";
+		String weight = "40";
+		String waist = "80";
 
-		home.verifyHRAPhysicalIntakeFormsQues1("154", "40", "80");
+		String[] options = { "option1", "option2", "option3", "option4", "option5" };
 
-		System.out.println("verifyHRAPhysicalIntakeFormsQues1");
+		String[] medQues = { "Med1", "Med2", "Med3", "Med4", "Med5", "Med6", "Med7", "Med8" };
 
-		home.verifyHRAPhysicalIntakeFormsQues2("option3");
+		String[] yesNoOption = { "yes", "no" };
+		
+		String sleepHrs="2";
+		
+		String noSmokes="10";
+		
+		String noDrinks="10";
+		
+		
+		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
 
-		System.out.println("verifyHRAPhysicalIntakeFormsQues3");
+		System.out.println("1- HRAPhysicalIntakeForms Ques1");
+		
 
-		home.verifyHRAPhysicalIntakeFormsQues3("option1");
+		
+		home.verifyHRAPhysicalIntakeFormsQues2(options[2]);
 
-		System.out.println("verifyHRAPhysicalIntakeFormsQues1");
+		System.out.println("2- HRA PhysicalIntakeForms Ques2");
+		
 
-		home.verifyHRALifeStyleQuesSleep1("2");
+		
+		home.verifyHRAPhysicalIntakeFormsQues3(options[0]);
+		
+		System.out.println("3- HRA PhysicalIntakeForms Ques3");
+		
+		
+		
+		home.verifyHRALifeStyleQuesSleep1(sleepHrs);
 
-		System.out.println("verifyHRALifeStyleQuesSleep1");
+		System.out.println("4- HRALifeStyleQues Sleep1");
+		
+		
 
-		home.verifyHRALifeStyleQuesSmoking2("option2", "10");
+		home.verifyHRALifeStyleQuesSmoking2(options[1], noSmokes);
 
-		System.out.println("verifyHRALifeStyleQuesSmoking2");
+		System.out.println("5- HRA LifeStyleQues Smoking2");
+		
+		
+		
+		home.verifyHRALifeStyleQuesDrinking1(options[1], "10");
 
-		home.verifyHRALifeStyleQuesDrinking1("option2", "10");
+		System.out.println("6- LifeStyleQues Drinking1");
+			
 
-		System.out.println("verifyLifeStyleQuesDrinking1");
+		
+		home.verifyHRALifeStyleQuesStress(options[4]);
 
-		home.verifyHRALifeStyleQuesStress("option5");
+		System.out.println("7 -HRALifeStyleQuesStress");
+		
+		
 
-		System.out.println("verifyHRALifeStyleQuesStress");
+		home.verifyHRALifeStyleQuesHappiness(options[4]);
 
-		home.verifyHRALifeStyleQuesHappiness("option5");
+		System.out.println("8- HRALifeStyleQuesHappiness");
+		
+		
+		home.verifyMedical(medQues[0], yesNoOption[0], yesNoOption[1]);
 
-		System.out.println("verifyHRALifeStyleQuesHappiness");
+		home.verifyMedical(medQues[1], yesNoOption[0], yesNoOption[1]);
 
-		home.verifyMedical("Med1", "Yes", "No");
+		home.verifyMedical(medQues[2], yesNoOption[0], yesNoOption[0]);
 
-		home.verifyMedical("Med2", "Yes", "No");
+		home.verifyMedical(medQues[3], yesNoOption[0], yesNoOption[0]);
 
-		home.verifyMedical("Med3", "Yes", "Yes");
+		home.verifyMedical(medQues[4], yesNoOption[0], yesNoOption[0]);
 
-		home.verifyMedical("Med4", "Yes", "Yes");
+		home.verifyMedical(medQues[5], yesNoOption[0], yesNoOption[0]);
 
-		home.verifyMedical("Med5", "Yes", "Yes");
+		home.verifyMedical(medQues[6], yesNoOption[0], yesNoOption[0]);
 
-		home.verifyMedical("Med6", "Yes", "Yes");
+		home.verifyMedical(medQues[7], yesNoOption[0],yesNoOption[0]);
+		
 
-		home.verifyMedical("Med7", "Yes", "No");
-
-		home.verifyMedical("Med8", "Yes", "No");
-
-		System.out.println("verifyMedical");
+		System.out.println("9- HRA Medical");
 
 		home.hraCompletionPage();
+		
 
-		System.out.println("HRA Completition");
+		System.out.println("10- HRA Completition");
 
 		System.out.println("*******END***********");
 
 	}
 
-	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage")
+	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage", enabled = false)
 	public void hraKeepItUpScenario() throws Exception {
 
 		// Keep it up.
@@ -201,6 +235,7 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 		System.out.println("9-HRA Medical");
 
 		home.hraCompletionPage();
+		
 
 		System.out.println("10-HRA Completition");
 
