@@ -32,7 +32,7 @@ public class StartVisitHRAWellScore extends BaseClass {
 
 		login.verifyUrlAfterLogin();
 		
-		System.out.println("*************START VISIT ******************** "+email);
+		System.out.println("*************START VISIT StartVisitHRAWellScore ******************** "+email);
 
 	}
 

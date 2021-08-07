@@ -28,11 +28,11 @@ public class StartVisitHRAKeepEyeScore extends BaseClass {
 
 		login = PageFactory.initElements(driver, LoginPage.class);
 
-		login.loginToApplication("sarikaqa7+emp70@gmail.com", "Sarika#123");
+		login.loginToApplication("sarikaqa7+emp72@gmail.com", "Sarika#123");
 
 		login.verifyUrlAfterLogin();
 		
-		System.out.println("*************START VISIT ******************** "+email);
+		System.out.println("*************START VISIT StartVisitHRAKeepEyeScore ******************** "+email);
 
 	}
 

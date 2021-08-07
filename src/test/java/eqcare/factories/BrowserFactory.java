@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
@@ -87,6 +88,8 @@ public class BrowserFactory {
 		
 		if (projectrun.equalsIgnoreCase("eq")) {
 			
+			if (browser.equalsIgnoreCase("chrome")) {
+			
 			WebDriverManager.chromedriver().setup();
 			
 			//System.setProperty("webdriver.chrome.driver", "/Users/sarikadhall/Documents/ChromeDriver/chromedriver-90");
@@ -103,6 +106,13 @@ public class BrowserFactory {
 			driver.manage().window().maximize();
 			
 			}
+			
+			else {
+				System.setProperty("webdriver.gecko.driver", "/Users/sarikadhall/Downloads/geckodriver");
+				driver = new FirefoxDriver(); //Creating an object of FirefoxDriver
+				driver.manage().window().maximize();
+			}
+		}
 		
 		if (projectrun.equalsIgnoreCase("anu")) {
 			
