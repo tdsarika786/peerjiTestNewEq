@@ -56,7 +56,7 @@ public class TC1_HRANewScenarios extends BaseClass {
 		
 		home.verifyHRAPhysicalIntakeFormsQues1();
 		
-		System.out.println("verifyHRAPhysicalIntakeFormsQues1");
+		System.out.println("1-verifyHRAPhysicalIntakeFormsQues1");
 
 	}
 	
@@ -65,7 +65,7 @@ public class TC1_HRANewScenarios extends BaseClass {
 		
 		home.verifyHRAPhysicalIntakeFormsQues2();
 		
-		System.out.println("verifyHRAPhysicalIntakeFormsQues2");
+		System.out.println("2-verifyHRAPhysicalIntakeFormsQues2");
 
 	}
 	
@@ -74,7 +74,7 @@ public class TC1_HRANewScenarios extends BaseClass {
 		
 		home.verifyHRAPhysicalIntakeFormsQues3();
 		
-		System.out.println("verifyHRAPhysicalIntakeFormsQues3");
+		System.out.println("3-verifyHRAPhysicalIntakeFormsQues3");
 
 	}
 	
@@ -83,7 +83,7 @@ public class TC1_HRANewScenarios extends BaseClass {
 		
 		home.verifyHRALifeStyleQuesSleep1();
 		
-		System.out.println("verifyHRALifeStyleQuesSleep1");
+		System.out.println("4-verifyHRALifeStyleQuesSleep1");
 
 	}
 	
@@ -93,7 +93,7 @@ public class TC1_HRANewScenarios extends BaseClass {
 		
 		home.verifyHRALifeStyleQuesSmoking2();
 		
-		System.out.println("verifyHRALifeStyleQuesSmoking2");
+		System.out.println("5-verifyHRALifeStyleQuesSmoking2");
 
 	}
 	
@@ -102,7 +102,7 @@ public class TC1_HRANewScenarios extends BaseClass {
 		
 		home.verifyHRALifeStyleQuesDrinking1();
 		
-		System.out.println("verifyLifeStyleQuesDrinking1");
+		System.out.println("6-verifyLifeStyleQuesDrinking1");
 
 	}
 	
@@ -111,7 +111,7 @@ public class TC1_HRANewScenarios extends BaseClass {
 		
 		home.verifyHRALifeStyleQuesStressHappiness();
 		
-		System.out.println("verifyHRALifeStyleQuesStressHappiness");
+		System.out.println("7-verifyHRALifeStyleQuesStressHappiness");
 
 	}
 	
@@ -120,7 +120,7 @@ public class TC1_HRANewScenarios extends BaseClass {
 		
 		home.verifyMedical();
 		
-		System.out.println("verifyMedical");
+		System.out.println("8-verifyMedical");
 
 	}
 	
@@ -130,7 +130,7 @@ public class TC1_HRANewScenarios extends BaseClass {
 		
 		home.hraCompletionPage();
 		
-		System.out.println("HRA Completition");
+		System.out.println("9-HRA Completition");
 		
 		System.out.println("*******END***********");
 

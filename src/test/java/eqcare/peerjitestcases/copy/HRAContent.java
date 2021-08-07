@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import NotRequiredClasses.ContactUsPage;
 
 import eqcare.pages.HRAHomePageNew2;
+import eqcare.pages.HomePage;
 import eqcare.pages.LifeJourneyIntakeFormPage;
 import eqcare.pages.LoginPage;
 import eqcare.pages.LogoutPage;
@@ -20,6 +21,7 @@ public class HRAContent extends BaseClass {
 	HRAHomePageNew2 home;
 	LifeJourneyIntakeFormPage intakeForm;
 	ClinicPage clinic;
+	HomePage home1;
 
 	@Parameters({ "Email", "Password" })
 	@Test(priority = 1)
@@ -45,6 +47,8 @@ public class HRAContent extends BaseClass {
 	public void verifyHRAPages() throws Exception {
 
 		// home.navigateToHRAContentLibrary();
+		
+		home1.hraCompleteLater();
 
 	    home.verifyHRAContentLibrary();
 	    
