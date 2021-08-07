@@ -509,6 +509,11 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 		
 				Utility.waitForWebElement(driver, talkToCareLink).click();
+				
+				
+				String url = driver.getCurrentUrl();
+				
+				System.out.println("URL "+url);
 		
 		//Utility.waitForWebElement(driver, closeCTA).click();
 
