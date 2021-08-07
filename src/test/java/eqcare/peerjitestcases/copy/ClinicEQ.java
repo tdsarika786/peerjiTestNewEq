@@ -64,7 +64,7 @@ public class ClinicEQ extends BaseClass {
 		
 		System.out.println();System.out.println();
 		
-		System.out.println("Log:INFO- *******PEERJI START EQ*********************");
+		System.out.println("Log:INFO- *******PEERJI START Clinic EQ*********************");
 		
 		System.out.println();System.out.println();
 		

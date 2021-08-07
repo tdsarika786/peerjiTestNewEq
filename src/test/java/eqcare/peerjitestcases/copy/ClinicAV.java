@@ -46,6 +46,8 @@ public class ClinicAV extends BaseClass {
 		home.deviceCheck();
 
 		intake.fillIntakeForm();
+		
+		
 	}
 
 	@Parameters({ "VisitNo" })
@@ -69,7 +71,7 @@ public class ClinicAV extends BaseClass {
 		System.out.println();
 		System.out.println();
 
-		System.out.println("Log:INFO- *******PEERJI START AV*********************");
+		System.out.println("Log:INFO- *******PEERJI START Clinic AV  *********************");
 		
 		System.out.println();System.out.println();
 

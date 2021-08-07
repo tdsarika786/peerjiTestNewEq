@@ -35,6 +35,8 @@ public class HRAScoreDoingVeryWellEmail extends BaseClass {
 		home.navigateToHomePage();
 
 		home.verifyUrl();
+		
+		System.out.println("*******START HRA SCore Doing Very WEll *********** sarikaqa7+emp70@gmail.com");
 
 	}
 

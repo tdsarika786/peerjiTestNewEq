@@ -34,6 +34,8 @@ public class CreateStaff extends BaseClass {
 				novapassword);
 		
 		login.verifyUrlAfterLogin();
+		
+		System.out.println("************* START Staff ************************** "+novaemail);
 
 	}
 	
@@ -44,6 +46,8 @@ public class CreateStaff extends BaseClass {
 		home = PageFactory.initElements(driver, NovaHomePage.class);
 
         home.addStaff("saru@eqcare.com", "secret", "Nurse");
+        
+        System.out.println("************* Added Nurse saru@eqcare.com **************************");
 	}
 	
 	@Test(priority = 3, dependsOnMethods = "loginToApplication")
@@ -52,6 +56,8 @@ public class CreateStaff extends BaseClass {
 		home = PageFactory.initElements(driver, NovaHomePage.class);
 
         home.addStaff("anku@eqcare.com", "secret", "CareManager");
+        
+        System.out.println("************* Added CM anku@eqcare.com **************************");
 	}
 	
 	@Test(priority = 4, dependsOnMethods = "loginToApplication")
@@ -60,6 +66,8 @@ public class CreateStaff extends BaseClass {
 		home = PageFactory.initElements(driver, NovaHomePage.class);
 
         home.addStaff("anu@eqcare.com", "secret", "Practitioner");
+        
+        System.out.println("************* Added Practitioner anu@eqcare.com **************************");
 	}
 	
 	

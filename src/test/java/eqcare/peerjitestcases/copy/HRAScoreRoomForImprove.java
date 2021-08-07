@@ -35,6 +35,8 @@ public class HRAScoreRoomForImprove extends BaseClass {
 		home.navigateToHomePage();
 
 		home.verifyUrl();
+		
+		System.out.println("*******START Score Room for Improve *********** "+email);
 
 	}
 

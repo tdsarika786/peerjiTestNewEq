@@ -35,6 +35,8 @@ public class HRAScoreKeepEyeOnIt extends BaseClass {
 		home.navigateToHomePage();
 
 		home.verifyUrl();
+		
+		System.out.println("*******START Keep Eye On IT *********** "+email);
 
 	}
 

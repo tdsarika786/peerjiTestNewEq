@@ -35,6 +35,9 @@ public class HRAScoreKeepItUp extends BaseClass {
 		home.navigateToHomePage();
 
 		home.verifyUrl();
+		
+		
+		System.out.println("*******START Keep IT UP *********** " + email);
 
 	}
 

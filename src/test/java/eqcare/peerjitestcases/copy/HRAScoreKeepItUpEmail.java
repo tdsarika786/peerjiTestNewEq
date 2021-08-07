@@ -35,6 +35,8 @@ public class HRAScoreKeepItUpEmail extends BaseClass {
 		home.navigateToHomePage();
 
 		home.verifyUrl();
+		
+		System.out.println("*******START Keep IT UP *********** sarikaqa7+emp71@gmail.com ");
 
 	}
 
