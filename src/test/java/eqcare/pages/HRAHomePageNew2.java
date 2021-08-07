@@ -362,6 +362,31 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 	// Access Library
 	By accLibrarayLink = By.xpath("//a[contains(text(), 'LIBRARY')]");
+	
+	//Score Modal
+	By overallScoreLabel = By.xpath("(//p[contains(text(), 'Overall')])[2]");
+	
+	By moveScoreLabel = By.xpath("(//p[contains(text(), 'Move')])[2]");
+	
+	By feelScoreLabel = By.xpath("(//p[contains(text(), 'Feel')])[2]");
+	
+	By mindScoreLabel = By.xpath("(//p[contains(text(), 'Mind')])[2]");
+	
+	By updateMyAnswerScoreLink = By.xpath("(//a[contains(text(), 'Update my answers')])[1]");
+	
+	By talkToCareLink = By.xpath("//a[contains(text(), 'Talk to a Care')]");
+	
+	By calculationTab = By.xpath("//p[contains(text(), 'Calculation')]");
+	
+	By myScoreTab = By.xpath("//p[contains(text(), 'My Score')]");
+	
+	By myPhysicalityTab = By.xpath("//p[contains(text(), 'Phyicality')]");
+	
+	By physicalGuideTabActive = By.xpath("//a[contains(text(), 'Activity')]");
+	
+	By physicalGuideTabSitting = By.xpath("//a[contains(text(), 'Sitting')]");
+	
+	By scoreHeading = By.xpath("//h2[contains(text(),'My Health Score')]");
 
 	public HRAHomePageNew2(WebDriver ldriver) {
 		this.driver = ldriver;
@@ -429,6 +454,32 @@ public class HRAHomePageNew2 extends runWithAttachments {
 			Assert.assertEquals(getScore, "You’re doing very great.");
 			System.out.println("Assertion Pass " + getScore + " " + percentage);
 		}
+		
+		//SCORE MODAL
+		
+		Utility.waitForWebElement(driver, scoreHeading);
+		
+				Utility.waitForWebElement(driver, overallScoreLabel);
+				
+				Utility.waitForWebElement(driver, moveScoreLabel);
+				
+				Utility.waitForWebElement(driver, feelScoreLabel);
+				
+				Utility.waitForWebElement(driver, mindScoreLabel);
+				
+				Utility.waitForWebElement(driver, updateMyAnswerScoreLink);
+				
+				Utility.waitForWebElement(driver, talkToCareLink);
+				
+				Utility.waitForWebElement(driver, calculationTab).click();
+				
+				Utility.waitForWebElement(driver, myScoreTab).click();
+				
+				Utility.waitForWebElement(driver, myPhysicalityTab).click();
+				
+				Utility.waitForWebElement(driver, physicalGuideTabActive).click();
+				
+				Utility.waitForWebElement(driver, physicalGuideTabSitting).click();
 
 		/*
 		 * if (getPercentage.equalsIgnoreCase("72%")) {
@@ -456,6 +507,9 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		 * System.out.println("Assertion Pass " + getScore); }
 		 */
 
+		
+		
+		
 		Utility.waitForWebElement(driver, closeCTA).click();
 
 	}
