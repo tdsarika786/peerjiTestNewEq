@@ -32,7 +32,7 @@ public class StartVisitAV extends BaseClass {
 
 		login.verifyUrlAfterLogin();
 		
-		System.out.println("*************START VISIT ********************");
+		System.out.println("*************START VISIT ******************** " + email);
 
 
 	}

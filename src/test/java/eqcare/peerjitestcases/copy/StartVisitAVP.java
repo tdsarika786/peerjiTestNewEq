@@ -33,7 +33,7 @@ public class StartVisitAVP extends BaseClass {
 
 		login.verifyUrlAfterLogin();
 		
-		System.out.println("*************START VISIT ********************");
+		System.out.println("*************START VISIT AV ******************** + sarikaqa7+avp1@gmail.com");
 
 	}
 

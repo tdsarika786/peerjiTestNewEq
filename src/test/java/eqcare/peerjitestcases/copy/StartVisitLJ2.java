@@ -57,7 +57,7 @@ public class StartVisitLJ2 extends BaseClass {
 		
 		System.out.println("************* 2 - start LifeJourney Visit ********************");
 		
-		System.out.println("************* 2 - start LifeJourney Visit ********************");
+		System.out.println("************* END ********************");
 
 	}
 }
