@@ -31,6 +31,8 @@ public class StartVisitLJ2 extends BaseClass {
 		login.loginToApplication("sarikaqa7+lj1@gmail.com", "Sarika#123");
 
 		login.verifyUrlAfterLogin();
+		
+		System.out.println("*************START VISIT sarikaqa7+lj1@gmail.com ********************");
 
 	}
 
@@ -40,6 +42,8 @@ public class StartVisitLJ2 extends BaseClass {
 		home = PageFactory.initElements(driver, HomePage.class);
 
 		home.navigateToHomePage();
+		
+		System.out.println("************* 1-start Video ConsultationT ********************");
 
 	}
 
@@ -50,6 +54,10 @@ public class StartVisitLJ2 extends BaseClass {
 		intakeForm = PageFactory.initElements(driver, LifeJourneyIntakeFormPage.class);
 
 		intakeForm.startLifeJourneyVisit();
+		
+		System.out.println("************* 2 - start LifeJourney Visit ********************");
+		
+		System.out.println("************* 2 - start LifeJourney Visit ********************");
 
 	}
 }

@@ -81,6 +81,10 @@ public class IntakeFormPageAV {
 		
 		Utility.wait(20);
 		
+		String currentURL = driver.getCurrentUrl();
+		
+		System.out.println("URL - "+ currentURL );
+		
 		
 	
 	}

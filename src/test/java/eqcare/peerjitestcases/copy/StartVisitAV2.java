@@ -21,17 +21,19 @@ public class StartVisitAV2 extends BaseClass {
 	IntakeFormPageAV intake;
 	HomePageAV home;
 
-	@Parameters({ "AVAppURL"})
+	@Parameters({ "AVAppURL" })
 	@Test(priority = 0)
-	public void loginToApplication(String AVAppURL ) throws Exception {
+	public void loginToApplication(String AVAppURL) throws Exception {
 
 		login = PageFactory.initElements(driver, LoginPageAV.class);
-		
+
 		login.AccessVirtualURL(AVAppURL);
 
 		login.loginToApplication("sarikaqa7+av1@gmail.com", "Sarika#123");
 
-		login.verifyUrlAfterLogin(); //peerji
+		login.verifyUrlAfterLogin(); // peerji
+
+		System.out.println("*************START VISIT ********************");
 
 	}
 
@@ -42,6 +44,8 @@ public class StartVisitAV2 extends BaseClass {
 
 		home.navigateToHomePage();
 
+		System.out.println("************* 1-start Video ConsultationT ********************");
+
 	}
 
 	@Test(priority = 2, dependsOnMethods = "loginToApplication")
@@ -51,6 +55,8 @@ public class StartVisitAV2 extends BaseClass {
 
 		home.deviceCheck();
 
+		System.out.println("************* 2-device Check ********************");
+
 	}
 
 	@Test(priority = 3, dependsOnMethods = "deviceCheck")
@@ -59,6 +65,10 @@ public class StartVisitAV2 extends BaseClass {
 		intake = PageFactory.initElements(driver, IntakeFormPageAV.class);
 
 		intake.fillIntakeForm();
+
+		System.out.println("************* 3-device Check ********************");
+
+		System.out.println("*************END ********************");
 
 	}
 

@@ -31,6 +31,8 @@ public class StartVisitEQ extends BaseClass {
 		login.loginToApplication(email, password);
 
 		login.verifyUrlAfterLogin();
+		
+		System.out.println("*************START VISIT ******************** "+email);
 
 	}
 
@@ -40,6 +42,8 @@ public class StartVisitEQ extends BaseClass {
 		home = PageFactory.initElements(driver, HomePage.class);
 
 		home.navigateToHomePage();
+		
+		System.out.println("************* 1-start Video ConsultationT ********************");
 
 	}
 
@@ -49,6 +53,8 @@ public class StartVisitEQ extends BaseClass {
 		home = PageFactory.initElements(driver, HomePage.class);
 
 		home.deviceCheck();
+		
+		System.out.println("************* 2-device Check ********************");
 
 	}
 
@@ -58,5 +64,9 @@ public class StartVisitEQ extends BaseClass {
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
 
 		intake.fillIntakeForm();
+		
+		System.out.println("************* 3-device Check ********************");
+
+		System.out.println("*************END ********************");
 	}
 }

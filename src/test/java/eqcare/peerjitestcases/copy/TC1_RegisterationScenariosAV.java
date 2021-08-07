@@ -40,7 +40,7 @@ public class TC1_RegisterationScenariosAV extends BaseClass {
 
 	}
 
-	@Parameters({"Email"})
+	@Parameters({ "Email" })
 	@Test(priority = 1, dependsOnMethods = "verifyPage")
 	public void validInputRegisterationTestForPatients(String email) {
 
@@ -48,7 +48,7 @@ public class TC1_RegisterationScenariosAV extends BaseClass {
 
 		register.EnrolledUser();
 
-				register.Registeration("sarikaqa7+av1@gmail.com",
+		register.Registeration("sarikaqa7+av1@gmail.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
@@ -62,24 +62,29 @@ public class TC1_RegisterationScenariosAV extends BaseClass {
 				DataProviderFactory.getExcel().getCellData("Users", 2, 8),
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 9),
-				DataProviderFactory.getExcel().getCellData("Users", 2, 10), false,"pdf");
+				DataProviderFactory.getExcel().getCellData("Users", 2, 10), false, "pdf");
 
 		register.registerationCompleteWithValidInput();
 
+		System.out.println("**********************************");
+
+		System.out.println("*************** START AV *******************");
+
+		System.out.println("*************** 1- sarikaqa7+av1@gmail.com *******************");
 
 	}
-	
-	@Parameters({"Email","AppURL"})
+
+	@Parameters({ "Email", "AppURL" })
 	@Test(priority = 1, dependsOnMethods = "verifyPage")
 	public void validInputRegisterationTestForPatients2(String email, String url) {
 
 		register = PageFactory.initElements(driver, RegistrationPageAV.class);
-		
+
 		register.navigateToRegisterationPage(url);
 
 		register.EnrolledUser();
 
-				register.Registeration("sarikaqa7+avp1@gmail.com",
+		register.Registeration("sarikaqa7+avp1@gmail.com",
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
@@ -93,11 +98,15 @@ public class TC1_RegisterationScenariosAV extends BaseClass {
 				DataProviderFactory.getExcel().getCellData("Users", 2, 8),
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 9),
-				DataProviderFactory.getExcel().getCellData("Users", 2, 10), true,"img");
+				DataProviderFactory.getExcel().getCellData("Users", 2, 10), true, "img");
 
 		register.registerationCompleteWithValidInput();
+		
+		System.out.println("*************** 1- sarikaqa7+avp1@gmail.com *******************");
+		
+		System.out.println("****************** END ****************");
 
 
 	}
-	
+
 }

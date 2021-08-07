@@ -13,7 +13,7 @@ import eqcare.factories.DataProviderFactory;
 import eqcare.helper.Utility;
 
 public class IntakeFormPage extends runWithAttachments {
- 
+
 	WebDriver driver;
 
 	public IntakeFormPage(WebDriver driver) {
@@ -39,7 +39,7 @@ public class IntakeFormPage extends runWithAttachments {
 	By startCall = By.xpath("//a[@data-role='start-call-button']");
 
 	By cancelButton = By.xpath("//a[@data-role='cancel-button']");
-	
+
 	By uploadDiv = By.xpath("(//p[contains(text(),'Chat')]/following-sibling::div)[1]");
 
 	public void verifyIntakeFormPageUrl() throws Exception
@@ -62,47 +62,51 @@ public class IntakeFormPage extends runWithAttachments {
 	}
 
 	public void fillIntakeForm() throws Exception {
-		
+
 		try {
 
-		Utility.waitForWebElement(driver, reasonVisitInput).sendKeys("Test Visit by Sarika Peerji A");
+			Utility.waitForWebElement(driver, reasonVisitInput).sendKeys("Test Visit by Sarika Peerji A");
 
-		Utility.waitForWebElement(driver, durationSymptomsInput).sendKeys("7 weeks A");
+			Utility.waitForWebElement(driver, durationSymptomsInput).sendKeys("7 weeks A");
 
-		Utility.waitForWebElement(driver, currentAllergies).sendKeys("Amoxyllin A");
+			Utility.waitForWebElement(driver, currentAllergies).sendKeys("Amoxyllin A");
 
-		Utility.waitForWebElement(driver, addCurrentAllergies).click();
+			Utility.waitForWebElement(driver, addCurrentAllergies).click();
 
-		Utility.waitForWebElement(driver, currentMedication).sendKeys("Tyenol Liquid Gels A");
+			Utility.waitForWebElement(driver, currentMedication).sendKeys("Tyenol Liquid Gels A");
 
-		Utility.waitForWebElement(driver, addCurrentMedication).click();
+			Utility.waitForWebElement(driver, addCurrentMedication).click();
 
-		uploadFiles("test1.jpeg");
+			uploadFiles("test1.jpeg");
 
-		// Utility.waitForWebElement(driver, checkBox).click();
+			// Utility.waitForWebElement(driver, checkBox).click();
 
-		WebElement button = driver.findElement(By.xpath("//input[@type='checkbox']"));
+			WebElement button = driver.findElement(By.xpath("//input[@type='checkbox']"));
 
-		JavascriptExecutor executor1 = (JavascriptExecutor) driver;
-		executor1.executeScript("arguments[0].click()", button);
+			JavascriptExecutor executor1 = (JavascriptExecutor) driver;
+			executor1.executeScript("arguments[0].click()", button);
 
-		Utility.waitForWebElement(driver, startCall).click();
-		
-		Utility.wait(20);
-		// Utility.selectValueFromCalendar(Utility.waitForMultipleWebElement(driver,
-		// calen), "25");
-		
+			Utility.waitForWebElement(driver, startCall).click();
 
-		Utility.waitForWebElement(driver, uploadDiv).click();
-		
-		uploadFiles("test2.jpeg");
-		
-		Utility.wait(20);
-		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 16, 0), "0");
-	} catch (Exception ex) {
-		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 16, 0), "7");
-		throw ex;
-	}
+			Utility.wait(20);
+			// Utility.selectValueFromCalendar(Utility.waitForMultipleWebElement(driver,
+			// calen), "25");
+
+			Utility.waitForWebElement(driver, uploadDiv).click();
+
+			uploadFiles("test2.jpeg");
+
+			Utility.wait(20);
+
+			String url = driver.getCurrentUrl();
+
+			System.out.println("URL:" + url);
+
+			runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 16, 0), "0");
+		} catch (Exception ex) {
+			runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 16, 0), "7");
+			throw ex;
+		}
 
 	}
 
@@ -113,7 +117,7 @@ public class IntakeFormPage extends runWithAttachments {
 			executor.executeScript("arguments[0].style.display='block';", fileButton);
 
 			Utility.waitForWebElement(driver, uploadFile)
-					.sendKeys(System.getProperty("user.dir") + "/TestData/"+text);
+					.sendKeys(System.getProperty("user.dir") + "/TestData/" + text);
 
 			Utility.wait(2);
 //		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 4, 0), "0");
@@ -125,64 +129,62 @@ public class IntakeFormPage extends runWithAttachments {
 	}
 
 	public void cancelButton() throws Exception {
-		
+
 		try {
 
-		Utility.waitForWebElement(driver, cancelButton).click();
-		
-		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 16, 0), "0");
-	} catch (Exception ex) {
-		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 16, 0), "7");
-		throw ex;
+			Utility.waitForWebElement(driver, cancelButton).click();
+
+			runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 16, 0), "0");
+		} catch (Exception ex) {
+			runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 16, 0), "7");
+			throw ex;
+		}
 	}
-	}
-	
-public void fillIntakeForm1() throws Exception {
-		
+
+	public void fillIntakeForm1() throws Exception {
+
 		try {
 
-		Utility.waitForWebElement(driver, reasonVisitInput).sendKeys("Test Visit by Sarika Peerji A");
+			Utility.waitForWebElement(driver, reasonVisitInput).sendKeys("Test Visit by Sarika Peerji A");
 
-		Utility.waitForWebElement(driver, durationSymptomsInput).sendKeys("7 weeks A");
+			Utility.waitForWebElement(driver, durationSymptomsInput).sendKeys("7 weeks A");
 
-		Utility.waitForWebElement(driver, currentAllergies).sendKeys("Amoxyllin A");
+			Utility.waitForWebElement(driver, currentAllergies).sendKeys("Amoxyllin A");
 
-		Utility.waitForWebElement(driver, addCurrentAllergies).click();
+			Utility.waitForWebElement(driver, addCurrentAllergies).click();
 
-		Utility.waitForWebElement(driver, currentMedication).sendKeys("Tyenol Liquid Gels A");
+			Utility.waitForWebElement(driver, currentMedication).sendKeys("Tyenol Liquid Gels A");
 
-		Utility.waitForWebElement(driver, addCurrentMedication).click();
+			Utility.waitForWebElement(driver, addCurrentMedication).click();
 
-		//uploadFiles("test1.jpeg");
+			// uploadFiles("test1.jpeg");
 
-		// Utility.waitForWebElement(driver, checkBox).click();
+			// Utility.waitForWebElement(driver, checkBox).click();
 
-		WebElement button = driver.findElement(By.xpath("//input[@type='checkbox']"));
+			WebElement button = driver.findElement(By.xpath("//input[@type='checkbox']"));
 
-		JavascriptExecutor executor1 = (JavascriptExecutor) driver;
-		executor1.executeScript("arguments[0].click()", button);
+			JavascriptExecutor executor1 = (JavascriptExecutor) driver;
+			executor1.executeScript("arguments[0].click()", button);
 
-		Utility.waitForWebElement(driver, startCall).click();
-		
-		Utility.wait(20);
-		// Utility.selectValueFromCalendar(Utility.waitForMultipleWebElement(driver,
-		// calen), "25");
-		
+			Utility.waitForWebElement(driver, startCall).click();
 
-		Utility.waitForWebElement(driver, uploadDiv).click();
-		
-		//uploadAuthFiles(text);
-		
-		Utility.wait(10);
-		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 16, 0), "0");
-	} catch (Exception ex) {
-		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 16, 0), "7");
-		throw ex;
+			Utility.wait(20);
+			// Utility.selectValueFromCalendar(Utility.waitForMultipleWebElement(driver,
+			// calen), "25");
+
+			Utility.waitForWebElement(driver, uploadDiv).click();
+
+			// uploadAuthFiles(text);
+
+			Utility.wait(10);
+			runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 16, 0), "0");
+		} catch (Exception ex) {
+			runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 16, 0), "7");
+			throw ex;
+		}
+
 	}
 
-	}
-	
-	
 	public void uploadAuthFiles(String text) throws Exception {
 		try {
 			WebElement fileButton = driver.findElement(By.xpath("(//input[@type='file'])[1]"));
@@ -190,15 +192,12 @@ public void fillIntakeForm1() throws Exception {
 			executor.executeScript("arguments[0].style.display='block';", fileButton);
 
 			Utility.waitForWebElement(driver, uploadFile)
-					.sendKeys(System.getProperty("user.dir") + "/TestData2/"+text);
-			
-			System.out.println(System.getProperty("user.dir") + "/TestData2/"+text);
+					.sendKeys(System.getProperty("user.dir") + "/TestData2/" + text);
+
+			System.out.println(System.getProperty("user.dir") + "/TestData2/" + text);
 
 			Utility.wait(35);
-			
-			
-			
-			
+
 //		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 4, 0), "0");
 		} catch (Exception ex) {
 			// runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 4,

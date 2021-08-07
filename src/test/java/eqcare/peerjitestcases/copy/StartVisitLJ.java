@@ -31,6 +31,8 @@ public class StartVisitLJ extends BaseClass {
 		login.loginToApplication(email, password);
 
 		login.verifyUrlAfterLogin();
+		
+		System.out.println("*************START VISIT ******************** " + email);
 
 	}
 
@@ -40,6 +42,8 @@ public class StartVisitLJ extends BaseClass {
 		home = PageFactory.initElements(driver, HomePage.class);
 
 		home.navigateToHomePage();
+		
+		System.out.println("************* 1-start Video ConsultationT ********************");
 
 	}
 

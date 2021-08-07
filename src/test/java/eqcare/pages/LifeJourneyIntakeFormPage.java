@@ -616,6 +616,10 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 		uploadFiles("test2.jpeg");
 
 		Utility.wait(20);
+		
+		String url = driver.getCurrentUrl();
+		
+		System.out.println("URL:" + url);
 
 	}
 	
