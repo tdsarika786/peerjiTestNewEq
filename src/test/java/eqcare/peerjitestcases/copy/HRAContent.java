@@ -38,8 +38,6 @@ public class HRAContent extends BaseClass {
 
 		home.verifyUrl();
 
-		System.out.println(" **************Log:1- INFO-PEERJI START HRA Content*********************");
-
 	}
 
 	@Test(priority = 1, dependsOnMethods = "verifyPage")
@@ -53,20 +51,18 @@ public class HRAContent extends BaseClass {
 
 		home.scoreInfoHomePage();
 
-		System.out.println(" ************** 2- Score INFO Home Page check*********************");
-
-		home.verifyHRAContentLibrary();
-
-		System.out.println(" **************Log:2-INFO-PEERJI END HRA Content *********************");
+		System.out.println(" ************** 1- START Score INFO Home Page check*********************");
 
 	}
 
 	@Test(priority = 2, dependsOnMethods = "verifyPage")
 	public void verifyHRAContent() throws Exception {
 
+		System.out.println(" ************** 2- INFO-PEERJI START HRA Content*********************");
+
 		home.verifyHRAContentLibrary();
 
-		System.out.println(" **************Log:2-INFO-PEERJI END HRA Content *********************");
+		System.out.println(" **************INFO-PEERJI END HRA Content *********************");
 
 	}
 
