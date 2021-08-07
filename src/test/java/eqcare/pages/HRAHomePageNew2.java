@@ -457,7 +457,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		
 		//SCORE MODAL
 		
-		Utility.waitForWebElement(driver, scoreHeading);
+		//Utility.waitForWebElement(driver, scoreHeading);
 		
 				Utility.waitForWebElement(driver, overallScoreLabel);
 				
