@@ -380,7 +380,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 	
 	By myScoreTab = By.xpath("//p[contains(text(), 'My Score')]");
 	
-	By myPhysicalityTab = By.xpath("//p[contains(text(), 'Phyicality')]");
+	By myPhysicalityTab = By.xpath("//p[contains(text(), ' Physicality Guidelines ')]");
 	
 	By physicalGuideTabActive = By.xpath("//a[contains(text(), 'Activity')]");
 	
