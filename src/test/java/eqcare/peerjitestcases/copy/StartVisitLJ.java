@@ -52,6 +52,10 @@ public class StartVisitLJ extends BaseClass {
 		login = PageFactory.initElements(driver, LoginPage.class);
 
 		intakeForm = PageFactory.initElements(driver, LifeJourneyIntakeFormPage.class);
+		
+		home = PageFactory.initElements(driver, HomePage.class);
+
+		home.hraCompleteLater();
 
 		intakeForm.startLifeJourneyVisit();
 

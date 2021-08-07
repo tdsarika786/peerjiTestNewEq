@@ -152,6 +152,8 @@ public class TC3_EndToEndScenarios extends BaseClass {
 	public void deviceCheck() throws Exception {
 
 		home = PageFactory.initElements(driver, HomePage.class);
+		
+		home.hraCompleteLater();
 
 		home.deviceCheck();
 		

@@ -10,6 +10,7 @@ import eqcare.pages.LifeJourneyIntakeFormPage;
 import eqcare.pages.LoginPage;
 import eqcare.pages.LogoutPage;
 import eqcare.pages.ClinicPage;
+import eqcare.pages.HomePage;
 import eqcare.factories.DataProviderFactory;
 import eqcare.pages.copy.BaseClass;
 
@@ -19,6 +20,7 @@ public class TC4_LifeJourneyEndScenarios extends BaseClass {
 	LifeJourneyHomePage home;
 	LifeJourneyIntakeFormPage intakeForm;
 	ClinicPage clinic;
+	HomePage home1;
 
 	@Parameters({ "Email", "Password" })
 	@Test(priority = 1)
@@ -44,6 +46,10 @@ public class TC4_LifeJourneyEndScenarios extends BaseClass {
 		login = PageFactory.initElements(driver, LoginPage.class);
 
 		intakeForm = PageFactory.initElements(driver, LifeJourneyIntakeFormPage.class);
+		
+		home1 = PageFactory.initElements(driver, HomePage.class);
+
+		home1.hraCompleteLater();
 
 		intakeForm.startLifeJourneyWithoutAnsweringQues();
 
@@ -54,6 +60,10 @@ public class TC4_LifeJourneyEndScenarios extends BaseClass {
 		login = PageFactory.initElements(driver, LoginPage.class);
 
 		intakeForm = PageFactory.initElements(driver, LifeJourneyIntakeFormPage.class);
+		
+		home1 = PageFactory.initElements(driver, HomePage.class);
+
+		home1.hraCompleteLater();
 
 		intakeForm.startLifeJourneyAfterFillingIntakeForms();
 

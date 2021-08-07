@@ -62,6 +62,8 @@ public class StartVisitPC extends BaseClass {
 	public void fillIntakeFormWithAllFields() throws Exception {
 
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
+		
+		home.hraCompleteLater();
 
 		intake.fillIntakeForm();
 		

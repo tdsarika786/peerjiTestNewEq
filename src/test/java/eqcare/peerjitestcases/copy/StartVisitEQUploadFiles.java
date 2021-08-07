@@ -49,6 +49,8 @@ public class StartVisitEQUploadFiles extends BaseClass {
 	public void deviceCheck() throws Exception {
 
 		home = PageFactory.initElements(driver, HomePage.class);
+		
+		home.hraCompleteLater();
 
 		home.deviceCheck();
 

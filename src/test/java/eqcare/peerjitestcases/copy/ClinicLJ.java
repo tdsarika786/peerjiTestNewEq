@@ -38,6 +38,8 @@ public class ClinicLJ extends BaseClass {
 		login.verifyUrlAfterLogin();
 
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
+		
+		home.hraCompleteLater();
 
 		home.deviceCheck();
 

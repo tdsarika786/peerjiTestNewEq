@@ -20,6 +20,7 @@ public class StartVisitPCLJ extends BaseClass {
 	LoginPage login;
 	LifeJourneyIntakeFormPage intakeForm;
 	HomePage home;
+	HomePage home1;
 
 	// Patient Start Visit
 
@@ -52,6 +53,10 @@ public class StartVisitPCLJ extends BaseClass {
 		login = PageFactory.initElements(driver, LoginPage.class);
 
 		intakeForm = PageFactory.initElements(driver, LifeJourneyIntakeFormPage.class);
+		
+		home1 = PageFactory.initElements(driver, HomePage.class);
+
+		home1.hraCompleteLater();
 
 		intakeForm.startLifeJourneyVisit();
 		
