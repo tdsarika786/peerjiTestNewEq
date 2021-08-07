@@ -452,6 +452,20 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		Utility.waitForWebElement(driver, talkToCareLink);
 
 		viewScoreHRAComplete(scoreLabel);
+		
+		Utility.waitForWebElement(driver, scorePopUpClick).click();
+		
+		System.out.println("-------- SCORE POP UP CLICK -------");
+		
+		Utility.waitForWebElement(driver, talkToCareLink).click();
+
+		Utility.wait(10);
+
+		String url = driver.getCurrentUrl();
+
+		System.out.println("URL " + url);
+		
+		System.out.println("-------- TALK TO CARE ADVOCATE -------");
 
 	}
 
@@ -482,6 +496,14 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		Utility.waitForWebElement(driver, hraThankyouText);
 
 		Utility.waitForWebElement(driver, talkToCareLink).click();
+		
+		Utility.wait(10);
+
+		String url = driver.getCurrentUrl();
+
+		System.out.println("URL " + url);
+		
+		
 
 		//viewScoreHRAComplete(scoreLabel);
 
@@ -581,7 +603,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		 * System.out.println("Assertion Pass " + getScore); }
 		 */
 
-		// Utility.waitForWebElement(driver, closeCTA).click();
+		 Utility.waitForWebElement(driver, closeCTA).click();
 		
 	}
 
