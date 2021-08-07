@@ -53,7 +53,7 @@ public class HomePage extends runWithAttachments {
 
 	By emailLink = By.xpath("//a[contains(text(), 'support@eqcare.com')]");
 
-	By hraCompleteLater = By.xpath("//a[contains(text(), 'Complete Later')]]");
+	By hraCompleteLater = By.xpath("//a[contains(text(), 'Complete Later')]");
 
 	public HomePage(WebDriver ldriver) {
 		this.driver = ldriver;
@@ -136,7 +136,7 @@ public class HomePage extends runWithAttachments {
 		
 		
 		
-		WebElement button1 = driver.findElement(By.xpath("//a[contains(text(), 'Complete Later')]]"));
+		WebElement button1 = driver.findElement(By.xpath("//a[contains(text(), 'Complete Later')]"));
 
 		JavascriptExecutor executor1 = (JavascriptExecutor) driver;
 		executor1.executeScript("arguments[0].click()", button1);

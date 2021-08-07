@@ -147,6 +147,8 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 		account.uploadGovtID();
 
 		logger.info("Patient uploaded Govt ID");
+		
+		System.out.println("************ 4- Upload GOVT ID ******************** ");
 
 	}
 
@@ -162,6 +164,8 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 		account.createFamily();
 
 		logger.info("Create a family link validated");
+		
+		System.out.println("************ 5- Family Link ******************** ");
 
 	}
 
@@ -179,6 +183,8 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 		account.addChild();
 
 		logger.info("Patient Added Child");
+		
+		System.out.println("************ 6- Add Child ******************** ");
 
 	}
 
