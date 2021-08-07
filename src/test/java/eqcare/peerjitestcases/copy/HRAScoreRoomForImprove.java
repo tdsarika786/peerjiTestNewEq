@@ -7,6 +7,8 @@ import org.testng.annotations.Test;
 import NotRequiredClasses.ContactUsPage;
 
 import eqcare.pages.HRAHomePageNew2;
+import eqcare.pages.HomePage;
+import eqcare.pages.IntakeFormPage;
 import eqcare.pages.LifeJourneyIntakeFormPage;
 import eqcare.pages.LoginPage;
 import eqcare.pages.LogoutPage;
@@ -20,6 +22,8 @@ public class HRAScoreRoomForImprove extends BaseClass {
 	HRAHomePageNew2 home;
 	LifeJourneyIntakeFormPage intakeForm;
 	ClinicPage clinic;
+	IntakeFormPage intake;
+	HomePage home1;
 
 	@Parameters({ "Email", "Password" })
 	@Test(priority = 1)
@@ -134,6 +138,26 @@ public class HRAScoreRoomForImprove extends BaseClass {
 		home.hraCompletionPage(scoreLabel);
 
 		System.out.println("10- HRA Completition");
+
+
+	}
+	
+	@Test(priority = 4, dependsOnMethods = "roomForImprovementScenario3")
+	public void verifyTalkToCare() throws Exception {
+		
+		home.talkToCare();
+		
+
+		System.out.println("************* 11-Talk to care advocate ********************");
+		
+		//home1.deviceCheck();
+		
+		intake.fillIntakeForm();
+		
+
+		System.out.println("************* 12-Fill Intake form ********************");
+		
+		
 
 		System.out.println("*******END***********");
 

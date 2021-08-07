@@ -510,15 +510,21 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		 * System.out.println("Assertion Pass " + getScore); }
 		 */
 
+		// Utility.waitForWebElement(driver, closeCTA).click();
+
+	}
+
+	public void talkToCare() {
+
 		Utility.waitForWebElement(driver, talkToCareLink).click();
+
+		Utility.wait(5);
 
 		String url = driver.getCurrentUrl();
 
 		System.out.println("URL " + url);
-
-		Utility.wait(5);
-
-		// Utility.waitForWebElement(driver, closeCTA).click();
+		
+		
 
 	}
 

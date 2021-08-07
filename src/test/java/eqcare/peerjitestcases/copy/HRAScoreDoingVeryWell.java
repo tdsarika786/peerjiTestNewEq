@@ -35,8 +35,8 @@ public class HRAScoreDoingVeryWell extends BaseClass {
 		home.navigateToHomePage();
 
 		home.verifyUrl();
-		
-		System.out.println("*******START HRA SCore Doing Very WEll *********** "+email);
+
+		System.out.println("*******START HRA SCore Doing Very WEll *********** " + email);
 
 	}
 
@@ -71,7 +71,7 @@ public class HRAScoreDoingVeryWell extends BaseClass {
 		String noDrinks = "10";
 
 		String scoreLabel = "You’re doing very well.";
-		
+
 		System.out.println("********HRA Doing Very Well Scenario**********");
 
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
@@ -133,6 +133,7 @@ public class HRAScoreDoingVeryWell extends BaseClass {
 	}
 
 	
+
 	@Test(priority = 2, dependsOnMethods = "verifyPage", enabled = false)
 	public void verifyHRAPages() throws Exception {
 
@@ -149,6 +150,5 @@ public class HRAScoreDoingVeryWell extends BaseClass {
 		// home.verifyMedical();
 
 	}
-
 
 }
