@@ -35,6 +35,8 @@ public class TC4_LifeJourneyEndScenarios extends BaseClass {
 
 		home.verifyUrl();
 
+		System.out.println("************* START PC LJ  EndToEndScenarios ************************** " + email);
+
 	}
 
 	@Test(priority = 2, dependsOnMethods = "verifyPage", enabled = false)
@@ -54,6 +56,8 @@ public class TC4_LifeJourneyEndScenarios extends BaseClass {
 		intakeForm = PageFactory.initElements(driver, LifeJourneyIntakeFormPage.class);
 
 		intakeForm.startLifeJourneyAfterFillingIntakeForms();
+
+		System.out.println("************* 1- startLifeJourneyAfterFillingIntakeForms ************************** ");
 
 	}
 
@@ -76,6 +80,10 @@ public class TC4_LifeJourneyEndScenarios extends BaseClass {
 		home.navigateToHomePage();
 
 		intakeForm.flowerInformationCheck();
+
+		System.out.println("************* 2 - flowerInformationCheck************************** ");
+
+		System.out.println("************* END ************************** ");
 
 	}
 

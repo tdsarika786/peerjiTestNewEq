@@ -202,6 +202,8 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 		account.deleteChild();
 
 		logger.info("Patient Deleted Child");
+		
+		System.out.println("************ 7- Delete Child ******************** ");
 
 	}
 
@@ -217,6 +219,8 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 		home.navigateToHomePage();
 
 		logger.info("Validating Home Page Url");
+		
+		System.out.println("************ 7 - Video Consultation ******************** ");
 
 	}
 
@@ -230,6 +234,8 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 		home.deviceCheck();
 
 		logger.info("Patint device check completed test");
+		
+		System.out.println("************ 8- device Check ******************** ");
 
 	}
 
@@ -243,6 +249,8 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 		intake.fillIntakeForm();
 
 		logger.info("Patint device check completed");
+		
+		System.out.println("************ 9- fillIntake FormWith AllFields ******************** ");
 	}
 
 	@Test(priority = 12, dependsOnMethods = "deviceCheck")
@@ -255,6 +263,8 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 		visit.endCall();
 
 		logger.info("Patint device check completed");
+		
+		System.out.println("************ 10- End Call ******************** ");
 	}
 
 	@Test(priority = 13, dependsOnMethods = "deviceCheck")
@@ -267,6 +277,9 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 		feedback.ratingProvided();
 
 		logger.info("Patient provided feeback");
+		
+		
+		System.out.println("************ 11- Feedback Rating******************** ");
 	}
 
 	@Test(priority = 14, dependsOnMethods = "loginToApplication")
@@ -279,6 +292,8 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 		help.navigateToHelpPage();
 
 		logger.info("Help Page Header verified");
+		
+		System.out.println("************ 12- Help ******************** ");
 	}
 
 	@Test(priority = 14, dependsOnMethods = "loginToApplication")
@@ -293,6 +308,8 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 		inbox.verifyMyInboxTabs();
 
 		logger.info("Help Page Header verified");
+		
+		System.out.println("************ 11- Feedback ******************** ");
 	}
 
 	@Test(priority = 14, dependsOnMethods = "loginToApplication", enabled=false)
@@ -307,6 +324,10 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 		inbox.verifyMyInboxTabs();
 
 		logger.info("Help Page Header verified");
+		
+		System.out.println("************ 11- Inbox ******************** ");
+		
+		System.out.println("************END******************** ");
 	}
 
 }

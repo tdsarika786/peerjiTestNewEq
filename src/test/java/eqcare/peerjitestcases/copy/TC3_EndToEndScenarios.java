@@ -135,13 +135,16 @@ public class TC3_EndToEndScenarios extends BaseClass {
 		System.out.println("************* 7- Delete Child ************************** ");
 
 	}
-/*
+
 	@Test(priority = 9, dependsOnMethods = "loginToApplication")
 	public void startVideoConsultation() throws Exception {
 
 		home = PageFactory.initElements(driver, HomePage.class);
 
 		home.navigateToHomePage();
+		
+		System.out.println("************* 8- start Video Consultation ************************** ");
+		
 
 	}
 
@@ -151,6 +154,8 @@ public class TC3_EndToEndScenarios extends BaseClass {
 		home = PageFactory.initElements(driver, HomePage.class);
 
 		home.deviceCheck();
+		
+		System.out.println("************* 9- Device Check ************************** ");
 
 	}
 
@@ -160,6 +165,11 @@ public class TC3_EndToEndScenarios extends BaseClass {
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
 
 		intake.fillIntakeForm();
+		
+
+		System.out.println("************* 10- fill IntakeForm WithAllFields ************************** ");
+
+		
 	}
 
 	@Test(priority = 12, dependsOnMethods = "deviceCheck")
@@ -168,6 +178,8 @@ public class TC3_EndToEndScenarios extends BaseClass {
 		visit = PageFactory.initElements(driver, VisitPage.class);
 
 		visit.endCall();
+		
+		System.out.println("************* 11- endCalls ************************** ");
 	}
 
 	@Test(priority = 13, dependsOnMethods = "deviceCheck")
@@ -176,6 +188,8 @@ public class TC3_EndToEndScenarios extends BaseClass {
 		feedback = PageFactory.initElements(driver, FeedbackPage.class);
 
 		feedback.ratingProvided();
+		
+		System.out.println("************* 12- rating Provided ************************** ");
 
 	}
 
@@ -185,6 +199,8 @@ public class TC3_EndToEndScenarios extends BaseClass {
 		help = PageFactory.initElements(driver, HelpPage.class);
 
 		help.navigateToHelpPage();
+		
+		System.out.println("************* 13- Help Page ************************** ");
 	}
 
 	@Test(priority = 14, dependsOnMethods = "loginToApplication")
@@ -195,6 +211,12 @@ public class TC3_EndToEndScenarios extends BaseClass {
 		inbox.navigateToInboxPage();
 
 		inbox.verifyMyInboxTabs();
+		
+		System.out.println("************* 14- INbox Page ************************** ");
+		
+		System.out.println("************* END ************************** ");
+		
+		
 
 	}
 
@@ -211,5 +233,5 @@ public class TC3_EndToEndScenarios extends BaseClass {
 
 		//logger.info("Help Page Header verified");
 	}
-*/
+
 }

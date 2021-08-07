@@ -70,7 +70,7 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 		
 		System.out.println("**********************************");
 		
-		System.out.println("***************START*******************");
+		System.out.println("***************START REGISTER *******************");
 		
 		System.out.println("*************** 1- sarikaqa7+lj1@gmail.com *******************");
 

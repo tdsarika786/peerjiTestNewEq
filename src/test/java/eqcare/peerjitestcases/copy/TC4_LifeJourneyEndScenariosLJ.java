@@ -34,6 +34,8 @@ public class TC4_LifeJourneyEndScenariosLJ extends BaseClass {
 		home.navigateToHomePage();
 
 		home.verifyUrl();
+		
+		System.out.println("************* START LJ  EndToEndScenarios ************************** "+email);
 
 	}
 
@@ -44,6 +46,8 @@ public class TC4_LifeJourneyEndScenariosLJ extends BaseClass {
 		intakeForm = PageFactory.initElements(driver, LifeJourneyIntakeFormPage.class);
 
 		intakeForm.startLifeJourneyWithoutAnsweringQues();
+		
+		
 
 	}
 
@@ -54,6 +58,8 @@ public class TC4_LifeJourneyEndScenariosLJ extends BaseClass {
 		intakeForm = PageFactory.initElements(driver, LifeJourneyIntakeFormPage.class);
 
 		intakeForm.startLifeJourneyAfterFillingIntakeForms();
+		
+		System.out.println("************* 1- startLifeJourneyAfterFillingIntakeForms ************************** ");
 
 	}
 
@@ -65,6 +71,10 @@ public class TC4_LifeJourneyEndScenariosLJ extends BaseClass {
 		home.navigateToHomePage();
 
 		intakeForm.flowerInformationCheck();
+		
+		System.out.println("************* 2 - flowerInformationCheck************************** ");
+		
+		System.out.println("************* END ************************** ");
 
 	}
 
