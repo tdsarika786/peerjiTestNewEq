@@ -508,9 +508,9 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		 */
 
 		
+				Utility.waitForWebElement(driver, talkToCareLink).click();
 		
-		
-		Utility.waitForWebElement(driver, closeCTA).click();
+		//Utility.waitForWebElement(driver, closeCTA).click();
 
 	}
 
