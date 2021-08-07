@@ -400,6 +400,8 @@ public class HRAHomePageNew2 extends runWithAttachments {
 	By feelScoreLabelHome = By.xpath("(//p[contains(text(), 'Feel')])[2]");
 	
 	By mindScoreLabelHome = By.xpath("(//p[contains(text(), 'Mind')])[2]");
+	
+	By divLibrary = By.xpath("//div[contains(text(), 'access to your library')]");
 
 	public HRAHomePageNew2(WebDriver ldriver) {
 		this.driver = ldriver;
@@ -541,9 +543,9 @@ public class HRAHomePageNew2 extends runWithAttachments {
 	}
 
 	public void scoreInfoHomePage() {
-		// SCORE MODAL
+		
 
-		Utility.waitForWebElement(driver, scoreHeading);
+		//Utility.waitForWebElement(driver, scoreHeading);
 
 		Utility.waitForWebElement(driver, overallScoreLabelHome);
 
@@ -553,19 +555,9 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 		Utility.waitForWebElement(driver, mindScoreLabelHome);
 
-		Utility.waitForWebElement(driver, updateMyAnswerScoreLink);
+		Utility.waitForWebElement(driver, divLibrary);
 
-		Utility.waitForWebElement(driver, talkToCareLink);
-
-		Utility.waitForWebElement(driver, calculationTab).click();
-
-		Utility.waitForWebElement(driver, myScoreTab).click();
-
-		Utility.waitForWebElement(driver, myPhysicalityTab).click();
-
-		Utility.waitForWebElement(driver, physicalGuideTabActive).click();
-
-		Utility.waitForWebElement(driver, physicalGuideTabSitting).click();
+		
 	}
 
 	public void calculateHealthScoreLink() throws Exception {
