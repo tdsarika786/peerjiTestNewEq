@@ -129,7 +129,7 @@ public class HRAScoreKeepEyeOnIt extends BaseClass {
 
 		home.hraCompletionPage1(scoreLabel);
 
-		System.out.println("10- HRA Completition");
+		System.out.println("10- HRA CompletitioN, SCORE POP UP CLICK FROM HOME,TALK TO CARE ADVOCATE ");
 
 		System.out.println("*******END***********");
 
