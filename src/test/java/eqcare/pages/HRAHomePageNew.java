@@ -328,16 +328,15 @@ public class HRAHomePageNew extends runWithAttachments {
 
 		try {
 
-			//Utility.waitForWebElement(driver, calculateHealthScore).click();
-			Utility.waitForWebElement(driver, updateMyAnswerLink).click();
+			Utility.waitForWebElement(driver, calculateHealthScore).click();
 
 			// runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 12,
 			// 0), "0");
 		} catch (Exception ex) {
 			// runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 12,
 			// 0), "7");
-			throw ex;
-
+			// throw ex;
+			Utility.waitForWebElement(driver, updateMyAnswerLink).click();
 		}
 	}
 

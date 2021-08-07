@@ -390,18 +390,28 @@ public class HRAHomePageNew2 extends runWithAttachments {
 	By physicalGuideTabSitting = By.xpath("//a[contains(text(), 'Sitting')]");
 
 	By scoreHeading = By.xpath("//h2[contains(text(),'My Health Score')]");
-	
+
 	// Score ModalHome
-	
+
 	By overallScoreLabelHome = By.xpath("(//p[contains(text(), 'Overall')])[2]");
-	
+
 	By moveScoreLabelHome = By.xpath("(//p[contains(text(), 'Move')])[2]");
-	
+
 	By feelScoreLabelHome = By.xpath("(//p[contains(text(), 'Feel')])[2]");
-	
+
 	By mindScoreLabelHome = By.xpath("(//p[contains(text(), 'Mind')])[2]");
-	
+
 	By divLibrary = By.xpath("//div[contains(text(), 'access to your library')]");
+	
+	// Score ModalHome TBA
+
+		By overallScoreLabelHomeTBA = By.xpath("(//p[contains(text(), 'Overall')])");
+
+		By moveScoreLabelHomeTBA = By.xpath("(//p[contains(text(), 'Move')])");
+
+		By feelScoreLabelHomeTBA = By.xpath("(//p[contains(text(), 'Feel')])");
+
+		By mindScoreLabelHomeTBA = By.xpath("(//p[contains(text(), 'Mind')])");
 
 	public HRAHomePageNew2(WebDriver ldriver) {
 		this.driver = ldriver;
@@ -432,7 +442,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		Utility.waitForWebElement(driver, hraThankyouHeader);
 
 		Utility.waitForWebElement(driver, hraThankyouText);
-		
+
 		Utility.waitForWebElement(driver, talkToCareLink);
 
 		Utility.waitForWebElement(driver, viewHealthScoreLink).click();
@@ -537,27 +547,43 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		String url = driver.getCurrentUrl();
 
 		System.out.println("URL " + url);
-		
-		
 
 	}
 
 	public void scoreInfoHomePage() {
-		
 
-		//Utility.waitForWebElement(driver, scoreHeading);
+		try {
 
-		Utility.waitForWebElement(driver, overallScoreLabelHome);
+			Utility.waitForWebElement(driver, calculateHealthScore);
 
-		Utility.waitForWebElement(driver, moveScoreLabelHome);
+			Utility.waitForWebElement(driver, overallScoreLabelHomeTBA);
 
-		Utility.waitForWebElement(driver, feelScoreLabelHome);
+			Utility.waitForWebElement(driver, moveScoreLabelHomeTBA);
 
-		Utility.waitForWebElement(driver, mindScoreLabelHome);
+			Utility.waitForWebElement(driver, feelScoreLabelHomeTBA);
 
-		Utility.waitForWebElement(driver, divLibrary);
+			Utility.waitForWebElement(driver, mindScoreLabelHomeTBA);
 
-		
+			// runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 12,
+			// 0), "0");
+		} catch (Exception ex) {
+			// runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 12,
+			// 0), "7");
+			// throw ex;
+			Utility.waitForWebElement(driver, updateMyAnswerLink);
+
+			Utility.waitForWebElement(driver, overallScoreLabelHome);
+
+			Utility.waitForWebElement(driver, moveScoreLabelHome);
+
+			Utility.waitForWebElement(driver, feelScoreLabelHome);
+
+			Utility.waitForWebElement(driver, mindScoreLabelHome);
+
+			Utility.waitForWebElement(driver, divLibrary);
+
+		}
+
 	}
 
 	public void calculateHealthScoreLink() throws Exception {

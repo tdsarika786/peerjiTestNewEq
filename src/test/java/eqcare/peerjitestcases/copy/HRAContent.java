@@ -37,31 +37,37 @@ public class HRAContent extends BaseClass {
 		home.navigateToHomePage();
 
 		home.verifyUrl();
-		
+
 		System.out.println(" **************Log:1- INFO-PEERJI START HRA Content*********************");
 
 	}
-
 
 	@Test(priority = 1, dependsOnMethods = "verifyPage")
 	public void verifyHRAPages() throws Exception {
 
 		// home.navigateToHRAContentLibrary();
-		
+
 		home1 = PageFactory.initElements(driver, HomePage.class);
-		
+
 		home1.hraCompleteLater();
-		
+
 		home.scoreInfoHomePage();
-		
-	    System.out.println(" ************** 2- Score INFO Home Page check*********************");
 
-	    home.verifyHRAContentLibrary();
-	    
-	    System.out.println(" **************Log:2-INFO-PEERJI END HRA Content *********************");
+		System.out.println(" ************** 2- Score INFO Home Page check*********************");
 
-		
+		home.verifyHRAContentLibrary();
+
+		System.out.println(" **************Log:2-INFO-PEERJI END HRA Content *********************");
+
 	}
 
+	@Test(priority = 2, dependsOnMethods = "verifyPage")
+	public void verifyHRAContent() throws Exception {
+
+		home.verifyHRAContentLibrary();
+
+		System.out.println(" **************Log:2-INFO-PEERJI END HRA Content *********************");
+
+	}
 
 }
