@@ -570,6 +570,8 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		Utility.waitForWebElement(driver, physicalGuideTabActive).click();
 
 		Utility.waitForWebElement(driver, physicalGuideTabSitting).click();
+		
+		Utility.waitForWebElement(driver, closeCTA).click();
 
 	}
 
