@@ -129,7 +129,7 @@ public class HRAScoreKeepItUp extends BaseClass {
 
 		System.out.println("9-HRA Medical");
 
-		home.hraCompletionPage(scoreLabel);
+		home.hraCompletionPageAndTalkToCare();
 
 		System.out.println("10-HRA Completition");
 
