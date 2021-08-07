@@ -148,6 +148,32 @@ public class HomePage extends runWithAttachments {
 		
 
 	}
+	
+	public void deviceCheckHRA() {
+
+		try {
+
+			//Utility.waitForWebElement(driver, startVisitButton).click();
+
+			// Utility.waitForWebElement(driver, startVisitButton).click();
+
+			Utility.waitForWebElement(driver, nextStepText).click();
+
+			// Utility.waitForWebElement(driver, nextStepText).click();
+
+			Utility.waitForWebElement(driver, continueToVisitText).click();
+
+			// Utility.waitForWebElement(driver, startVisitButton).click();
+		} catch (Exception ex) {
+
+			Utility.waitForWebElement(driver, nextStepText).click();
+
+			Utility.waitForWebElement(driver, continueToVisitText).click();
+
+		}
+
+	}
+
 
 	public void deviceCheck() {
 

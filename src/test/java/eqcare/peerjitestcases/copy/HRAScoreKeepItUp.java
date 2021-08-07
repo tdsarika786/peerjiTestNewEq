@@ -146,7 +146,7 @@ public class HRAScoreKeepItUp extends BaseClass {
 
 		System.out.println("************* 11-HRA Complete page and Talk to care advocate ********************");
 
-		home1.deviceCheck();
+		home1.deviceCheckHRA();
 
 		intake.fillIntakeForm();
 
