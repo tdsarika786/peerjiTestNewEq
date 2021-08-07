@@ -514,6 +514,8 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				String url = driver.getCurrentUrl();
 				
 				System.out.println("URL "+url);
+				
+				Utility.wait(5);
 		
 		//Utility.waitForWebElement(driver, closeCTA).click();
 
@@ -792,12 +794,12 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				Utility.waitForWebElement(driver, hraPhysicalQuesSecondOption1).click();
 			}
 
-			if (option.equalsIgnoreCase("option2")) {
+			else if (option.equalsIgnoreCase("option2")) {
 
 				Utility.waitForWebElement(driver, hraPhysicalQuesSecondOption2).click();
 			}
 
-			if (option.equalsIgnoreCase("option3")) {
+			else if (option.equalsIgnoreCase("option3")) {
 
 				Utility.waitForWebElement(driver, hraPhysicalQuesSecondOption3).click();
 			}
@@ -826,16 +828,16 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				Utility.waitForWebElement(driver, hraPhysicalQuesThirdOption1).click();
 			}
 
-			if (option.equalsIgnoreCase("option2")) {
+			else if (option.equalsIgnoreCase("option2")) {
 
 				Utility.waitForWebElement(driver, hraPhysicalQuesThirdOption2).click();
 			}
 
-			if (option.equalsIgnoreCase("option3")) {
+			else if (option.equalsIgnoreCase("option3")) {
 
 				Utility.waitForWebElement(driver, hraPhysicalQuesThirdOption3).click();
 			}
-			if (option.equalsIgnoreCase("option4")) {
+			else if (option.equalsIgnoreCase("option4")) {
 				Utility.waitForWebElement(driver, hraPhysicalQuesThirdOption4).click();
 			}
 		} catch (Exception ex) {
@@ -965,7 +967,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				Utility.waitForWebElement(driver, hraLifeStyleNextLink2a).click();
 			}
 
-			if (option.equalsIgnoreCase("option3")) {
+			else if (option.equalsIgnoreCase("option3")) {
 
 				// Smoking Former Daily
 				Utility.waitForWebElement(driver, hraLifeStyleSmokingOptionFormerDaily).click();
@@ -980,7 +982,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				Utility.waitForWebElement(driver, hraLifeStyleNextLink2b).click();
 			}
 
-			if (option.equalsIgnoreCase("option4")) {
+			else if (option.equalsIgnoreCase("option4")) {
 
 				// Smoking Occassional
 				Utility.waitForWebElement(driver, hraLifestyleQuestion2SmokingImg);
@@ -997,7 +999,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				Utility.waitForWebElement(driver, hraLifeStyleNextLink2b).click();
 			}
 
-			if (option.equalsIgnoreCase("option5")) {
+			else if (option.equalsIgnoreCase("option5")) {
 
 				// Smoking Daily
 				Utility.waitForWebElement(driver, hraLifestyleQuestion2SmokingImg);
@@ -1014,7 +1016,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				Utility.waitForWebElement(driver, hraLifeStyleNextLink2b).click();
 			}
 
-			if (option.equalsIgnoreCase("option6")) {
+			else if (option.equalsIgnoreCase("option6")) {
 
 				// Smoking Occassional
 				Utility.waitForWebElement(driver, hraLifestyleQuestion2SmokingImg);
@@ -1056,7 +1058,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 		else {
 
-			if (option.equalsIgnoreCase("option2")) {
+		 if (option.equalsIgnoreCase("option2")) {
 
 				// Currently Drink
 				Utility.waitForWebElement(driver, hraLifestyleQuestionDrinkingImg);
@@ -1072,7 +1074,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 			}
 
-			if (option.equalsIgnoreCase("option3")) {
+		else if (option.equalsIgnoreCase("option3")) {
 
 				// Former Drink
 				Utility.waitForWebElement(driver, hraLifestyleQuestionDrinkingImg);
@@ -1103,7 +1105,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 		}
 
-		if (option.equalsIgnoreCase("option2")) {
+		else if (option.equalsIgnoreCase("option2")) {
 			// STRESS QUEST Optipon2
 
 			Utility.waitForWebElement(driver, hraLifestyleQuestion4StressImg);
@@ -1115,7 +1117,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		}
 
 		// STRESS QUEST Optipon3
-		if (option.equalsIgnoreCase("option3")) {
+		else if (option.equalsIgnoreCase("option3")) {
 			Utility.waitForWebElement(driver, hraLifestyleQuestion4StressImg);
 
 			Utility.waitForWebElement(driver, hraLifeStyleStressLabel);
@@ -1125,7 +1127,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		}
 
 		// STRESS QUEST Optipon4
-		if (option.equalsIgnoreCase("option4")) {
+		else if (option.equalsIgnoreCase("option4")) {
 
 			Utility.waitForWebElement(driver, hraLifestyleQuestion4StressImg);
 
@@ -1135,7 +1137,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 		}
 
-		if (option.equalsIgnoreCase("option5")) {
+		else if (option.equalsIgnoreCase("option5")) {
 
 			// STRESS QUEST Optipon5
 
@@ -1163,7 +1165,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 		}
 
-		if (option.equalsIgnoreCase("option2")) {
+		else if (option.equalsIgnoreCase("option2")) {
 
 			// Happiness QUEST
 
@@ -1175,7 +1177,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 		}
 
-		if (option.equalsIgnoreCase("option3")) {
+		else if (option.equalsIgnoreCase("option3")) {
 
 			// Happiness QUEST
 
@@ -1187,7 +1189,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 		}
 
-		if (option.equalsIgnoreCase("option4")) {
+		else if (option.equalsIgnoreCase("option4")) {
 
 			// Happiness QUEST
 
@@ -1199,7 +1201,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 		}
 
-		if (option.equalsIgnoreCase("option5")) {
+		else if (option.equalsIgnoreCase("option5")) {
 
 			// Happiness QUEST
 
@@ -1444,7 +1446,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 			}
 		}
 
-		if (ques.equalsIgnoreCase("Med2")) {
+		else if (ques.equalsIgnoreCase("Med2")) {
 
 			// Cardio
 
@@ -1473,7 +1475,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 			}
 		}
 
-		if (ques.equalsIgnoreCase("Med3")) {
+		else if (ques.equalsIgnoreCase("Med3")) {
 
 			// Blood pressure
 
@@ -1502,7 +1504,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 			}
 		}
 
-		if (ques.equalsIgnoreCase("Med4")) {
+		else if (ques.equalsIgnoreCase("Med4")) {
 
 			// osteoarthritis
 
@@ -1531,7 +1533,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 			}
 		}
 
-		if (ques.equalsIgnoreCase("Med5")) {
+		else if (ques.equalsIgnoreCase("Med5")) {
 
 			// Lung Disease
 
@@ -1560,7 +1562,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 			}
 		}
 
-		if (ques.equalsIgnoreCase("Med6")) {
+		else if (ques.equalsIgnoreCase("Med6")) {
 
 			// Lower backpain
 
@@ -1589,7 +1591,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 			}
 		}
 
-		if (ques.equalsIgnoreCase("Med7")) {
+		else if (ques.equalsIgnoreCase("Med7")) {
 
 			// Type II Immediate
 
@@ -1605,7 +1607,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 		}
 
-		if (ques.equalsIgnoreCase("Med8")) {
+		else if (ques.equalsIgnoreCase("Med8")) {
 
 			// Type II Immediate
 
