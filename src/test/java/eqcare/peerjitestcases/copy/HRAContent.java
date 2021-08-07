@@ -38,7 +38,7 @@ public class HRAContent extends BaseClass {
 
 		home.verifyUrl();
 		
-		System.out.println(" **************Log:INFO-PEERJI START HRA Content*********************");
+		System.out.println(" **************Log:1- INFO-PEERJI START HRA Content*********************");
 
 	}
 
@@ -54,7 +54,13 @@ public class HRAContent extends BaseClass {
 
 	    home.verifyHRAContentLibrary();
 	    
-	    System.out.println(" **************Log:INFO-PEERJI END HRA Content *********************");
+	    System.out.println(" **************Log:2-INFO-PEERJI END HRA Content *********************");
+	    
+	    home.scoreInfoHomePage();
+	    
+	    System.out.println(" ************** 3- Score INFO Home Page check*********************");
+	    
+	    System.out.println(" ************** END *********************");
 
 		
 	}

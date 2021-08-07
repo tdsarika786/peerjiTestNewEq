@@ -332,10 +332,13 @@ public class HRAHomePageNew2 extends runWithAttachments {
 	By pageNo3 = By.xpath("//*[@id='scrollable-container']//li[text()=' 3 ']");
 
 	// images:aa
-	
-	//By aa List<WebElement> = By.xpath("//*[@id='scrollable-container']//li[text()=' 3 ']");
 
-	//By List<WebElement>elementName=By.xpath("//*[@id='scrollable-container']//li[text()=' 3 ']");
+	// By aa List<WebElement> =
+	// By.xpath("//*[@id='scrollable-container']//li[text()=' 3 ']");
+
+	// By
+	// List<WebElement>elementName=By.xpath("//*[@id='scrollable-container']//li[text()='
+	// 3 ']");
 
 	// Home Page
 
@@ -362,30 +365,30 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 	// Access Library
 	By accLibrarayLink = By.xpath("//a[contains(text(), 'LIBRARY')]");
-	
-	//Score Modal
+
+	// Score Modal
 	By overallScoreLabel = By.xpath("(//p[contains(text(), 'Overall')])[2]");
-	
+
 	By moveScoreLabel = By.xpath("(//p[contains(text(), 'Move')])[2]");
-	
+
 	By feelScoreLabel = By.xpath("(//p[contains(text(), 'Feel')])[2]");
-	
+
 	By mindScoreLabel = By.xpath("(//p[contains(text(), 'Mind')])[2]");
-	
+
 	By updateMyAnswerScoreLink = By.xpath("(//a[contains(text(), 'Update my answers')])[1]");
-	
+
 	By talkToCareLink = By.xpath("//a[contains(text(), 'Talk to a Care')]");
-	
+
 	By calculationTab = By.xpath("//p[contains(text(), 'Calculation')]");
-	
+
 	By myScoreTab = By.xpath("//p[contains(text(), 'My Score')]");
-	
+
 	By myPhysicalityTab = By.xpath("//p[contains(text(), ' Physicality Guidelines ')]");
-	
+
 	By physicalGuideTabActive = By.xpath("//a[contains(text(), 'Activity')]");
-	
+
 	By physicalGuideTabSitting = By.xpath("//a[contains(text(), 'Sitting')]");
-	
+
 	By scoreHeading = By.xpath("//h2[contains(text(),'My Health Score')]");
 
 	public HRAHomePageNew2(WebDriver ldriver) {
@@ -454,32 +457,32 @@ public class HRAHomePageNew2 extends runWithAttachments {
 			Assert.assertEquals(getScore, "You’re doing very great.");
 			System.out.println("Assertion Pass " + getScore + " " + percentage);
 		}
-		
-		//SCORE MODAL
-		
-		//Utility.waitForWebElement(driver, scoreHeading);
-		
-				Utility.waitForWebElement(driver, overallScoreLabel);
-				
-				Utility.waitForWebElement(driver, moveScoreLabel);
-				
-				Utility.waitForWebElement(driver, feelScoreLabel);
-				
-				Utility.waitForWebElement(driver, mindScoreLabel);
-				
-				Utility.waitForWebElement(driver, updateMyAnswerScoreLink);
-				
-				Utility.waitForWebElement(driver, talkToCareLink);
-				
-				Utility.waitForWebElement(driver, calculationTab).click();
-				
-				Utility.waitForWebElement(driver, myScoreTab).click();
-				
-				Utility.waitForWebElement(driver, myPhysicalityTab).click();
-				
-				Utility.waitForWebElement(driver, physicalGuideTabActive).click();
-				
-				Utility.waitForWebElement(driver, physicalGuideTabSitting).click();
+
+		// SCORE MODAL
+
+		// Utility.waitForWebElement(driver, scoreHeading);
+
+		Utility.waitForWebElement(driver, overallScoreLabel);
+
+		Utility.waitForWebElement(driver, moveScoreLabel);
+
+		Utility.waitForWebElement(driver, feelScoreLabel);
+
+		Utility.waitForWebElement(driver, mindScoreLabel);
+
+		Utility.waitForWebElement(driver, updateMyAnswerScoreLink);
+
+		Utility.waitForWebElement(driver, talkToCareLink);
+
+		Utility.waitForWebElement(driver, calculationTab).click();
+
+		Utility.waitForWebElement(driver, myScoreTab).click();
+
+		Utility.waitForWebElement(driver, myPhysicalityTab).click();
+
+		Utility.waitForWebElement(driver, physicalGuideTabActive).click();
+
+		Utility.waitForWebElement(driver, physicalGuideTabSitting).click();
 
 		/*
 		 * if (getPercentage.equalsIgnoreCase("72%")) {
@@ -507,18 +510,44 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		 * System.out.println("Assertion Pass " + getScore); }
 		 */
 
-		
-				Utility.waitForWebElement(driver, talkToCareLink).click();
-				
-				
-				String url = driver.getCurrentUrl();
-				
-				System.out.println("URL "+url);
-				
-				Utility.wait(5);
-		
-		//Utility.waitForWebElement(driver, closeCTA).click();
+		Utility.waitForWebElement(driver, talkToCareLink).click();
 
+		String url = driver.getCurrentUrl();
+
+		System.out.println("URL " + url);
+
+		Utility.wait(5);
+
+		// Utility.waitForWebElement(driver, closeCTA).click();
+
+	}
+
+	public void scoreInfoHomePage() {
+		// SCORE MODAL
+
+		Utility.waitForWebElement(driver, scoreHeading);
+
+		Utility.waitForWebElement(driver, overallScoreLabel);
+
+		Utility.waitForWebElement(driver, moveScoreLabel);
+
+		Utility.waitForWebElement(driver, feelScoreLabel);
+
+		Utility.waitForWebElement(driver, mindScoreLabel);
+
+		Utility.waitForWebElement(driver, updateMyAnswerScoreLink);
+
+		Utility.waitForWebElement(driver, talkToCareLink);
+
+		Utility.waitForWebElement(driver, calculationTab).click();
+
+		Utility.waitForWebElement(driver, myScoreTab).click();
+
+		Utility.waitForWebElement(driver, myPhysicalityTab).click();
+
+		Utility.waitForWebElement(driver, physicalGuideTabActive).click();
+
+		Utility.waitForWebElement(driver, physicalGuideTabSitting).click();
 	}
 
 	public void calculateHealthScoreLink() throws Exception {
@@ -612,32 +641,26 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		String getarticle10 = Utility.waitForWebElement(driver, article10).getText();
 
 		System.out.println("10 " + getarticle10);
-		
+
 		try {
-			List<WebElement> allArticleImages = driver
-					.findElements(By.xpath("//li/div"));
+			List<WebElement> allArticleImages = driver.findElements(By.xpath("//li/div"));
 
 			for (WebElement articleImage : allArticleImages) {
 
-				Utility.highLightElement(driver,articleImage);
+				Utility.highLightElement(driver, articleImage);
+
+				System.out.println("*********************************************************************");
+			}
+		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
+			List<WebElement> allArticleImages = driver.findElements(By.xpath("//li/div"));
+
+			for (WebElement articleImage : allArticleImages) {
+
+				Utility.highLightElement(driver, articleImage);
 
 				System.out.println("*********************************************************************");
 			}
 		}
-		catch(org.openqa.selenium.StaleElementReferenceException ex)
-		{
-			List<WebElement> allArticleImages = driver
-					.findElements(By.xpath("//li/div"));
-
-			for (WebElement articleImage : allArticleImages) {
-
-				Utility.highLightElement(driver,articleImage);
-
-				System.out.println("*********************************************************************");
-			}
-		}
-
-		
 
 		// Page 2
 
@@ -686,24 +709,20 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		System.out.println("20 " + getarticle20);
 
 		try {
-			List<WebElement> allArticleImages = driver
-					.findElements(By.xpath("//li/div"));
+			List<WebElement> allArticleImages = driver.findElements(By.xpath("//li/div"));
 
 			for (WebElement articleImage : allArticleImages) {
 
-				Utility.highLightElement(driver,articleImage);
+				Utility.highLightElement(driver, articleImage);
 
 				System.out.println("*********************************************************************");
 			}
-		}
-		catch(org.openqa.selenium.StaleElementReferenceException ex)
-		{
-			List<WebElement> allArticleImages = driver
-					.findElements(By.xpath("//li/div"));
+		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
+			List<WebElement> allArticleImages = driver.findElements(By.xpath("//li/div"));
 
 			for (WebElement articleImage : allArticleImages) {
 
-				Utility.highLightElement(driver,articleImage);
+				Utility.highLightElement(driver, articleImage);
 
 				System.out.println("*********************************************************************");
 			}
@@ -720,26 +739,22 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		String getarticle22 = Utility.waitForWebElement(driver, article22).getText();
 
 		System.out.println("22 " + getarticle22);
-		
+
 		try {
-			List<WebElement> allArticleImages = driver
-					.findElements(By.xpath("//li/div"));
+			List<WebElement> allArticleImages = driver.findElements(By.xpath("//li/div"));
 
 			for (WebElement articleImage : allArticleImages) {
 
-				Utility.highLightElement(driver,articleImage);
+				Utility.highLightElement(driver, articleImage);
 
 				System.out.println("*********************************************************************");
 			}
-		}
-		catch(org.openqa.selenium.StaleElementReferenceException ex)
-		{
-			List<WebElement> allArticleImages = driver
-					.findElements(By.xpath("//li/div"));
+		} catch (org.openqa.selenium.StaleElementReferenceException ex) {
+			List<WebElement> allArticleImages = driver.findElements(By.xpath("//li/div"));
 
 			for (WebElement articleImage : allArticleImages) {
 
-				Utility.highLightElement(driver,articleImage);
+				Utility.highLightElement(driver, articleImage);
 
 				System.out.println("*********************************************************************");
 			}
@@ -836,8 +851,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 			else if (option.equalsIgnoreCase("option3")) {
 
 				Utility.waitForWebElement(driver, hraPhysicalQuesThirdOption3).click();
-			}
-			else if (option.equalsIgnoreCase("option4")) {
+			} else if (option.equalsIgnoreCase("option4")) {
 				Utility.waitForWebElement(driver, hraPhysicalQuesThirdOption4).click();
 			}
 		} catch (Exception ex) {
@@ -1058,7 +1072,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 		else {
 
-		 if (option.equalsIgnoreCase("option2")) {
+			if (option.equalsIgnoreCase("option2")) {
 
 				// Currently Drink
 				Utility.waitForWebElement(driver, hraLifestyleQuestionDrinkingImg);
@@ -1074,7 +1088,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 			}
 
-		else if (option.equalsIgnoreCase("option3")) {
+			else if (option.equalsIgnoreCase("option3")) {
 
 				// Former Drink
 				Utility.waitForWebElement(driver, hraLifestyleQuestionDrinkingImg);
