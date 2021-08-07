@@ -131,6 +131,26 @@ public class HRAScoreDoingVeryWell extends BaseClass {
 		System.out.println("*******END***********");
 
 	}
+	@Test(priority = 4, dependsOnMethods = "hraDoingVeryWellScenario")
+	public void verifyTalkToCare() throws Exception {
+		
+		home.talkToCare();
+		
+
+		System.out.println("************* 11-Talk to care advocate ********************");
+		
+		//home1.deviceCheck();
+		
+		intakeForm.startLifeJourneyVisit();
+		
+
+		System.out.println("************* 12-LJ Fill Intake form ********************");
+		
+		
+
+		System.out.println("*******END***********");
+
+	}
 
 	
 
