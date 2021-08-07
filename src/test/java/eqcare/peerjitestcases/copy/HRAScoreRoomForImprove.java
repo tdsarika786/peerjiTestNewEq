@@ -152,7 +152,7 @@ public class HRAScoreRoomForImprove extends BaseClass {
 		home.talkToCare();
 		
 
-		System.out.println("************* 11-Talk to care advocate ********************");
+		System.out.println("************* 11-Talk to care advocate AFTER VIEW SCORE MODAL AND CLICK TALK TO CARE ADVOCATE ********************");
 		
 		//home1.deviceCheck();
 		
