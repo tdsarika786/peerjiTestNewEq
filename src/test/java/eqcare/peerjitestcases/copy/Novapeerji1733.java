@@ -168,7 +168,7 @@ public class Novapeerji1733 extends BaseClass {
 		 * 
 		 */
 
-		home.createEmployee(searchemployer1, "anu70", "single");
+		home.createEmployee(searchemployer1, "anu70", "family");
 
 		System.out.println("5 - *********EMP 1***********");
 	}
@@ -199,7 +199,7 @@ public class Novapeerji1733 extends BaseClass {
 		 * 
 		 */
 
-		home.createEmployee(searchemployer1, "anu71", "single");
+		home.createEmployee(searchemployer1, "anu71", "family");
 
 		System.out.println("6 - *********EMP 2***********");
 	}
@@ -230,7 +230,7 @@ public class Novapeerji1733 extends BaseClass {
 		 * 
 		 */
 
-		home.createEmployee(searchemployer1, "anu72", "single");
+		home.createEmployee(searchemployer1, "anu72", "family");
 
 		System.out.println("7 - *********EMP 3***********");
 	}
