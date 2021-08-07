@@ -412,13 +412,10 @@ public class HRAHomePageNew2 extends runWithAttachments {
 	By feelScoreLabelHomeTBA = By.xpath("(//p[contains(text(), 'Feel')])");
 
 	By mindScoreLabelHomeTBA = By.xpath("(//p[contains(text(), 'Mind')])");
-	
-	//Score Home Pop up
-	
-	
-	
+
+	// Score Home Pop up
+
 	By scorePopUpClick = By.xpath("//*[@id=\"scrollable-container\"]/div[3]/div[3]/div[3]/div[1]/div");
-	
 
 	public HRAHomePageNew2(WebDriver ldriver) {
 		this.driver = ldriver;
@@ -514,9 +511,9 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		Utility.waitForWebElement(driver, physicalGuideTabActive).click();
 
 		Utility.waitForWebElement(driver, physicalGuideTabSitting).click();
-		
-		System.out.println("---- HRA Complete Page Score Popup Overall, Move, feel, Mind, CTA etc. check calculation, score, physical tab----");
 
+		System.out.println(
+				"---- HRA Complete Page Score Popup Overall, Move, feel, Mind, CTA etc. check calculation, score, physical tab----");
 
 		/*
 		 * if (getPercentage.equalsIgnoreCase("72%")) {
@@ -549,10 +546,8 @@ public class HRAHomePageNew2 extends runWithAttachments {
 	}
 
 	public void scoreModal() {
-			
+
 		Utility.waitForWebElement(driver, scorePopUpClick).click();
-		
-		Utility.waitForWebElement(driver, scoreHeading);
 
 		Utility.waitForWebElement(driver, overallScoreLabel);
 
@@ -575,8 +570,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		Utility.waitForWebElement(driver, physicalGuideTabActive).click();
 
 		Utility.waitForWebElement(driver, physicalGuideTabSitting).click();
-		
-		
+
 	}
 
 	public void talkToCare() {
@@ -597,6 +591,8 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 			Utility.waitForWebElement(driver, calculateHealthScore);
 
+			Utility.waitForWebElement(driver, scoreHeading);
+
 			Utility.waitForWebElement(driver, overallScoreLabelHomeTBA);
 
 			Utility.waitForWebElement(driver, moveScoreLabelHomeTBA);
@@ -604,7 +600,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 			Utility.waitForWebElement(driver, feelScoreLabelHomeTBA);
 
 			Utility.waitForWebElement(driver, mindScoreLabelHomeTBA);
-			
+
 			System.out.println("----Home Page HRA Info Check TBA Overall, Move, feel, Mind----");
 
 			// runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 12,
@@ -624,12 +620,13 @@ public class HRAHomePageNew2 extends runWithAttachments {
 			Utility.waitForWebElement(driver, mindScoreLabelHome);
 
 			Utility.waitForWebElement(driver, divLibrary);
-			
+
 			System.out.println("----Home Page HRA Info Check Scores Overall, Move, feel, Mind----");
-			
+
 			scoreModal();
-			
-			System.out.println("----Home Page HRA Score Popup Overall, Move, feel, Mind, CTA etc. check calculation, score, physical tab----");
+
+			System.out.println(
+					"----Home Page HRA Score Popup Overall, Move, feel, Mind, CTA etc. check calculation, score, physical tab----");
 
 		}
 
