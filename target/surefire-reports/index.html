@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,71 +91,80 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">11 methods,   11 passed</span>
+                    <span class="method-stats">11 methods, 1 failed,  10 skipped,  </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.TC1_HRANewScenarios" class="method navigator-link" hash-for-method="verifyPage(patient@eqcare.com, secret)">verifyPage(patient@eqcare.com, secret)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.TC1_HRANewScenarios" class="method navigator-link" hash-for-method="verifyHRACompletition">verifyHRACompletition</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.TC1_HRANewScenarios" class="method navigator-link" hash-for-method="verifyHRAIntroPage">verifyHRAIntroPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.TC1_HRANewScenarios" class="method navigator-link" hash-for-method="verifyLifeStyleQuesDrinking1">verifyLifeStyleQuesDrinking1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.TC1_HRANewScenarios" class="method navigator-link" hash-for-method="verifyLifeStyleQuesSleep1">verifyLifeStyleQuesSleep1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.TC1_HRANewScenarios" class="method navigator-link" hash-for-method="verifyLifeStyleQuesSmoking2">verifyLifeStyleQuesSmoking2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.TC1_HRANewScenarios" class="method navigator-link" hash-for-method="verifyLifeStyleQuesStressHappiness1">verifyLifeStyleQuesStressHappiness1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.TC1_HRANewScenarios" class="method navigator-link" hash-for-method="verifyMedical">verifyMedical</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.TC1_HRANewScenarios" class="method navigator-link" hash-for-method="verifyPage(sdhall@eqcare.com, secret)">verifyPage(sdhall@eqcare.com, secret)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.TC1_HRANewScenarios" class="method navigator-link" hash-for-method="verifyPhysicalQues1">verifyPhysicalQues1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.TC1_HRANewScenarios" class="method navigator-link" hash-for-method="verifyPhysicalQues2">verifyPhysicalQues2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
+                        <img src="skipped.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="eqcare.peerjitestcases.copy.TC1_HRANewScenarios" class="method navigator-link" hash-for-method="verifyPhysicalQues3">verifyPhysicalQues3</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -167,9 +176,49 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
+              <span class="class-name">eqcare.peerjitestcases.copy.TC1_HRANewScenarios</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPage(patient@eqcare.com, secret)">
+                  </a> <!-- verifyPage(patient@eqcare.com, secret) -->
+                  <span class="method-name">verifyPage</span>
+                  <span class="parameters">(patient@eqcare.com, secret)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(text(), &apos;Logout&apos;)] (tried for 15 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at eqcare.helper.Utility.waitForWebElement(Utility.java:126)
+	at eqcare.pages.HRAHomePageNew.verifyUrl(HRAHomePageNew.java:1152)
+	at eqcare.peerjitestcases.copy.TC1_HRANewScenarios.verifyPage(TC1_HRANewScenarios.java:39)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //a[contains(text(), &apos;Logout&apos;)]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;EQ-MAC-25.local&apos;, ip: &apos;fe80:0:0:0:10ad:563f:ab85:ddc1%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;14.0.2&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:401)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)
+	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	... 35 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
               <span class="class-name">eqcare.peerjitestcases.copy.TC1_HRANewScenarios</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -178,6 +227,10 @@
                   <a name="verifyHRACompletition">
                   </a> <!-- verifyHRACompletition -->
                   <span class="method-name">verifyHRACompletition</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TC1_HRANewScenarios.verifyHRACompletition()[pri:11, instance:eqcare.peerjitestcases.copy.TC1_HRANewScenarios@10163d6] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -185,6 +238,10 @@
                   <a name="verifyHRAIntroPage">
                   </a> <!-- verifyHRAIntroPage -->
                   <span class="method-name">verifyHRAIntroPage</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TC1_HRANewScenarios.verifyHRAIntroPage()[pri:2, instance:eqcare.peerjitestcases.copy.TC1_HRANewScenarios@10163d6] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -192,6 +249,10 @@
                   <a name="verifyLifeStyleQuesDrinking1">
                   </a> <!-- verifyLifeStyleQuesDrinking1 -->
                   <span class="method-name">verifyLifeStyleQuesDrinking1</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TC1_HRANewScenarios.verifyLifeStyleQuesDrinking1()[pri:8, instance:eqcare.peerjitestcases.copy.TC1_HRANewScenarios@10163d6] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -199,6 +260,10 @@
                   <a name="verifyLifeStyleQuesSleep1">
                   </a> <!-- verifyLifeStyleQuesSleep1 -->
                   <span class="method-name">verifyLifeStyleQuesSleep1</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TC1_HRANewScenarios.verifyLifeStyleQuesSleep1()[pri:6, instance:eqcare.peerjitestcases.copy.TC1_HRANewScenarios@10163d6] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -206,6 +271,10 @@
                   <a name="verifyLifeStyleQuesSmoking2">
                   </a> <!-- verifyLifeStyleQuesSmoking2 -->
                   <span class="method-name">verifyLifeStyleQuesSmoking2</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TC1_HRANewScenarios.verifyLifeStyleQuesSmoking2()[pri:7, instance:eqcare.peerjitestcases.copy.TC1_HRANewScenarios@10163d6] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -213,6 +282,10 @@
                   <a name="verifyLifeStyleQuesStressHappiness1">
                   </a> <!-- verifyLifeStyleQuesStressHappiness1 -->
                   <span class="method-name">verifyLifeStyleQuesStressHappiness1</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TC1_HRANewScenarios.verifyLifeStyleQuesStressHappiness1()[pri:9, instance:eqcare.peerjitestcases.copy.TC1_HRANewScenarios@10163d6] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -220,14 +293,10 @@
                   <a name="verifyMedical">
                   </a> <!-- verifyMedical -->
                   <span class="method-name">verifyMedical</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyPage(sdhall@eqcare.com, secret)">
-                  </a> <!-- verifyPage(sdhall@eqcare.com, secret) -->
-                  <span class="method-name">verifyPage</span>
-                  <span class="parameters">(sdhall@eqcare.com, secret)</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TC1_HRANewScenarios.verifyMedical()[pri:10, instance:eqcare.peerjitestcases.copy.TC1_HRANewScenarios@10163d6] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -235,6 +304,10 @@
                   <a name="verifyPhysicalQues1">
                   </a> <!-- verifyPhysicalQues1 -->
                   <span class="method-name">verifyPhysicalQues1</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TC1_HRANewScenarios.verifyPhysicalQues1()[pri:3, instance:eqcare.peerjitestcases.copy.TC1_HRANewScenarios@10163d6] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -242,6 +315,10 @@
                   <a name="verifyPhysicalQues2">
                   </a> <!-- verifyPhysicalQues2 -->
                   <span class="method-name">verifyPhysicalQues2</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TC1_HRANewScenarios.verifyPhysicalQues2()[pri:4, instance:eqcare.peerjitestcases.copy.TC1_HRANewScenarios@10163d6] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -249,10 +326,14 @@
                   <a name="verifyPhysicalQues3">
                   </a> <!-- verifyPhysicalQues3 -->
                   <span class="method-name">verifyPhysicalQues3</span>
+                  <div class="stack-trace">java.lang.Throwable: Method TC1_HRANewScenarios.verifyPhysicalQues3()[pri:5, instance:eqcare.peerjitestcases.copy.TC1_HRANewScenarios@10163d6] depends on not successfully finished methods
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -310,54 +391,54 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(11);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyHRACompletition')
+data.setCell(0, 1, 'verifyPage')
 data.setCell(0, 2, 'eqcare.peerjitestcases.copy.TC1_HRANewScenarios')
-data.setCell(0, 3, 27237);
+data.setCell(0, 3, 32659);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyMedical')
+data.setCell(1, 1, 'verifyLifeStyleQuesStressHappiness1')
 data.setCell(1, 2, 'eqcare.peerjitestcases.copy.TC1_HRANewScenarios')
-data.setCell(1, 3, 25872);
+data.setCell(1, 3, 0);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyLifeStyleQuesSmoking2')
 data.setCell(2, 2, 'eqcare.peerjitestcases.copy.TC1_HRANewScenarios')
-data.setCell(2, 3, 22065);
+data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyPage')
+data.setCell(3, 1, 'verifyMedical')
 data.setCell(3, 2, 'eqcare.peerjitestcases.copy.TC1_HRANewScenarios')
-data.setCell(3, 3, 15470);
+data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyLifeStyleQuesStressHappiness1')
+data.setCell(4, 1, 'verifyPhysicalQues3')
 data.setCell(4, 2, 'eqcare.peerjitestcases.copy.TC1_HRANewScenarios')
-data.setCell(4, 3, 12291);
+data.setCell(4, 3, 0);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyLifeStyleQuesDrinking1')
+data.setCell(5, 1, 'verifyHRACompletition')
 data.setCell(5, 2, 'eqcare.peerjitestcases.copy.TC1_HRANewScenarios')
-data.setCell(5, 3, 11186);
+data.setCell(5, 3, 0);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyPhysicalQues3')
+data.setCell(6, 1, 'verifyLifeStyleQuesSleep1')
 data.setCell(6, 2, 'eqcare.peerjitestcases.copy.TC1_HRANewScenarios')
-data.setCell(6, 3, 9708);
+data.setCell(6, 3, 0);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'verifyPhysicalQues1')
 data.setCell(7, 2, 'eqcare.peerjitestcases.copy.TC1_HRANewScenarios')
-data.setCell(7, 3, 5244);
+data.setCell(7, 3, 0);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyPhysicalQues2')
+data.setCell(8, 1, 'verifyHRAIntroPage')
 data.setCell(8, 2, 'eqcare.peerjitestcases.copy.TC1_HRANewScenarios')
-data.setCell(8, 3, 5093);
+data.setCell(8, 3, 0);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyHRAIntroPage')
+data.setCell(9, 1, 'verifyLifeStyleQuesDrinking1')
 data.setCell(9, 2, 'eqcare.peerjitestcases.copy.TC1_HRANewScenarios')
-data.setCell(9, 3, 3451);
+data.setCell(9, 3, 0);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verifyLifeStyleQuesSleep1')
+data.setCell(10, 1, 'verifyPhysicalQues2')
 data.setCell(10, 2, 'eqcare.peerjitestcases.copy.TC1_HRANewScenarios')
-data.setCell(10, 3, 2391);
+data.setCell(10, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 32 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -400,56 +481,60 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">eqcare.peerjitestcases.copy.TC1_HRANewScenarios</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUp(Chrome, https://patient.eqserviceqa1.eqcaredev.com/login, eq, , )</span>
+                <span class="method-name">setUp(ff, https://patient.eqserviceqa1.eqcaredev.com/, eq, , )</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">verifyPage(sdhall@eqcare.com, secret)</span>
-                <span class="method-start">19208 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyPage(patient@eqcare.com, secret)</span>
+                <span class="method-start">21976 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyHRAIntroPage</span>
-                <span class="method-start">34690 ms</span>
+                <span class="method-start">54650 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyPhysicalQues1</span>
-                <span class="method-start">38142 ms</span>
+                <span class="method-start">54651 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyPhysicalQues2</span>
-                <span class="method-start">43387 ms</span>
+                <span class="method-start">54651 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyPhysicalQues3</span>
-                <span class="method-start">48481 ms</span>
+                <span class="method-start">54651 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyLifeStyleQuesSleep1</span>
-                <span class="method-start">58190 ms</span>
+                <span class="method-start">54652 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyLifeStyleQuesSmoking2</span>
-                <span class="method-start">60582 ms</span>
+                <span class="method-start">54652 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyLifeStyleQuesDrinking1</span>
-                <span class="method-start">82648 ms</span>
+                <span class="method-start">54652 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyLifeStyleQuesStressHappiness1</span>
-                <span class="method-start">93835 ms</span>
+                <span class="method-start">54653 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyMedical</span>
-                <span class="method-start">106128 ms</span>
+                <span class="method-start">54653 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyHRACompletition</span>
-                <span class="method-start">132002 ms</span>
+                <span class="method-start">54654 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
-                <span class="method-name">tearDown(Chrome, https://patient.eqserviceqa1.eqcaredev.com/login, eq, , )</span>
-                <span class="method-start">159240 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">tearDown(ff, https://patient.eqserviceqa1.eqcaredev.com/, eq, , )</span>
+                <span class="method-start">54654 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

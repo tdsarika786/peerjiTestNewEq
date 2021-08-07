@@ -1,5 +1,6 @@
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/pages/AccountPage.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/pages/LoginPage.java
+/Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/StartVisitAVHRA.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy1/AVStartVisit.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/StartVisitAV2.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/CreateStaff.java
@@ -30,6 +31,7 @@
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/TC1_HRAEndScenarios.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/pages/ClinicPageAV.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy1/TC3_EndToEndScenarios.java
+/Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/StartVisitHRAKeepEyeScore.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/TC1_RegisterationScenariosWithProfilePicNova17.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/pages/ClinicPage.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/nova/pages/ClinicPage.java
@@ -47,7 +49,9 @@
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/TC2_RegisterationScenarios.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/nova/testcases/TC1_NovaCreateEmployee.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/TC2_RegisterationScenariosAV.java
+/Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/HRAScoreKeepItUp.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/pages/copy/BaseClass.java
+/Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/StartVisitEQUploadFiles.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/AutomatedTests/ForgotPasswordScenarios.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/pages/FeedbackPageAV.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/com/practitest/examples/runWithAttachments.java
@@ -60,11 +64,13 @@
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/nova/pages/ContactUsPage.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy1/TC1_RegisterationScenariosWithProfilePicAV.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/TC1_LifeJourneyEndScenarios.java
+/Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/HRAScoreKeepEyeOnIt.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy1/Novapeerji.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/pages/copy/Base.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/pages/Listeners.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy1/ClinicAV.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy1/ClinicPeerjiStartVisit.java
+/Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/pages/HRAHomePageNew2.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/NotRequiredClasses/LoginScenariosTC1.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/StartVisitPCLJ.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/pages/HomePage.java
@@ -72,14 +78,18 @@
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/pages/AccountPageAV.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/Novapeerji2.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy1/TC1_RegisterationScenarios.java
+/Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/StartVisitHRAKeepUpScore.java
+/Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/HRAScoreDoingVeryWell.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/AutomatedTests/TC1_EndToEndScenarios.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/pages/LogoutPage.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/pages/FeedbackPage.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy1/TC1_RegisterationScenariosWithProfilePicNova17.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/TC4_LifeJourneyEndScenarios.java
+/Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/HRAScoreKeepEyeOnItEmail.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/LifeJourneyAutomatedTests/NovaLifeJourneyEmployee.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy1/TC1_EndToEndScenariosAV.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/TC1_LifeJourneyEndScenarios.java
+/Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/HRAScoreDoingVeryWellEmail.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/TC1_LoginScenarios.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/testcases/TC1_AccountScenarios.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/factories/BrowserFactory.java
@@ -88,6 +98,7 @@
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/testcases/TC3_ForgotPasswordScenarios.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/LifeJourneyAutomatedTests/TC1_LifeJourneyEndScenarios.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/AutomatedTests/TC2_RegisterationScenarios.java
+/Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/StartVisitHRAWellScore.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy1/TC1_HRAEndScenarios.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/TC2_LoginScenarios.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/pages/LifeJourneyHomePage.java
@@ -96,6 +107,7 @@
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/pages/LoginPageAV.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/TC1_EndToEndScenarios.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/AutomatedTests/TC1_PatientToClinicCall.java
+/Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/StartVisitHRARoomImpScore.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/factories/DataProviderFactory.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/testcases/TC5_RegisterNovaCreateEmployee.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/TC2_ForgotPasswordScenarios.java
@@ -103,6 +115,7 @@
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/pages/VerifyPage.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/factories/ExcelProvider.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/nova/pages/LoginPage.java
+/Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/HRAContent.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/StartVisitPC.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/StartVisitAV.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy1/Novapeerji1733.java
@@ -118,6 +131,7 @@
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/AccessVirtualAutomatedTestCases/TC2_RegisterationScenariosAV.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/testcases/TC2_LoginScenarios.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/AccessVirtualAutomatedTestCases/TC1_EndToEndScenariosAV.java
+/Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/HRAScoreKeepItUpEmail.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/pages/VisitPage.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/NotRequiredClasses/ContactUsPage.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/AutomatedTests/LoginScenarios.java
@@ -129,10 +143,14 @@
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy1/TC1_RegisterationScenariosWithProfilePicNova1797.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/nova/pages/NovaHomePage.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/StartVisitLJ2.java
+/Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/TC1_HRANewScenariosDifferentInput.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/ClinicAV.java
+/Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/HRAScoreRoomForImproveEmail.java
+/Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/HRAScoreRoomForImprove.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/pages/VisitPageAV.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/nova/pages/BaseClass.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/pages/HelpPageAV.java
+/Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/StartVisitAVUploadFiles.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/nova/testcases/NovaLifeJourneyEmployee.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/ClinicEQ.java
 /Users/sarikadhall/git/peerjiTestNewEqjune2021/src/test/java/eqcare/peerjitestcases/copy/StartVisitLJ.java
