@@ -142,7 +142,7 @@ public class HRAScoreKeepItUp extends BaseClass {
 
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
 
-		home.hraCompletionPageAndTalkToCare();
+		//home.hraCompletionPageAndTalkToCare();
 
 		System.out.println("************* 11-HRA Complete page and Talk to care advocate ********************");
 
