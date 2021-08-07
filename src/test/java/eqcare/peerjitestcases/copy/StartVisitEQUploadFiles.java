@@ -32,6 +32,8 @@ public class StartVisitEQUploadFiles extends BaseClass {
 
 		login.verifyUrlAfterLogin();
 
+		System.out.println("*************START EQ VISIT Upload Files ******************** " + email);
+
 	}
 
 	@Test(priority = 1, dependsOnMethods = "loginToApplication")
@@ -50,6 +52,8 @@ public class StartVisitEQUploadFiles extends BaseClass {
 
 		home.deviceCheck();
 
+		System.out.println("************* 1- Device Check ******************** ");
+
 	}
 
 	@Test(priority = 3, dependsOnMethods = "deviceCheck")
@@ -58,21 +62,26 @@ public class StartVisitEQUploadFiles extends BaseClass {
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
 
 		intake.fillIntakeForm1();
-		
+
 		intake.uploadAuthFiles("1sample.pdf");
-		
+
 		intake.uploadAuthFiles("2test1.jpeg");
-		
+
 		intake.uploadAuthFiles("3Testfilebmp.bmp");
-		
+
 		intake.uploadAuthFiles("4Testfilegif.gif");
-		
+
 		intake.uploadAuthFiles("5Testfilejpg.jpg");
-		
-		//intake.uploadAuthFiles("6Testfilepng.png");	
+
+		// intake.uploadAuthFiles("6Testfilepng.png");
 
 		intake.uploadAuthFiles("7Testfilewebp.webp");
-		
+
 		Utility.wait(50);
+
+		System.out.println("************* 2- Upload Files ******************** ");
+
+		System.out.println("************* END ******************** ");
+
 	}
 }

@@ -51,6 +51,9 @@ public class HomePage extends runWithAttachments {
 	By phoneNoLink = By.xpath("//a[contains(text(), '1-855-449-4994')]");
 
 	By emailLink = By.xpath("//a[contains(text(), 'support@eqcare.com')]");
+	
+	By hraCompleteLater = By.xpath("//a[contains(text(), 'Complete Later')]]");
+	
 
 	public HomePage(WebDriver ldriver) {
 		this.driver = ldriver;
@@ -127,6 +130,11 @@ public class HomePage extends runWithAttachments {
 
 	public void deviceCheck() {
 		
+		try {
+			Utility.waitForWebElement(driver, hraCompleteLater).click();
+		}
+		
+		catch(Exception ex) {}
 		try {
 
 		Utility.waitForWebElement(driver, startVisitButton).click();

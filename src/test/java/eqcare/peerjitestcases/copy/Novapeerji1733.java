@@ -35,7 +35,7 @@ public class Novapeerji1733 extends BaseClass {
 
 		System.out.println("**********************************");
 
-		System.out.println("***************START LOGGED IN to Application*******************");
+		System.out.println("***************START NOVA LOGGED IN to Application******************* "+novaemail);
 
 	}
 

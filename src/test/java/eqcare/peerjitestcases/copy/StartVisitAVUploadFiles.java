@@ -31,6 +31,8 @@ public class StartVisitAVUploadFiles extends BaseClass {
 		login.loginToApplication(email, password);
 
 		login.verifyUrlAfterLogin();
+		
+		System.out.println("*************START EQ VISIT Upload Files ******************** " + email);
 
 	}
 
@@ -49,6 +51,8 @@ public class StartVisitAVUploadFiles extends BaseClass {
 		home = PageFactory.initElements(driver, HomePageAV.class);
 
 		home.deviceCheck();
+		
+		System.out.println("************* 1- Device Check ******************** ");
 
 	}
 
@@ -74,6 +78,10 @@ public class StartVisitAVUploadFiles extends BaseClass {
 		intake.uploadAuthFiles("7Testfilewebp.webp");
 		
 		Utility.wait(50);
+		
+		System.out.println("************* 2- Upload Files ******************** ");
+		
+		System.out.println("************* END ******************** ");
 
 	}
 
