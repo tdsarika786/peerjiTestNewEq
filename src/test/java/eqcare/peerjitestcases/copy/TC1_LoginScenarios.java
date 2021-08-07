@@ -28,6 +28,8 @@ public class TC1_LoginScenarios extends BaseClass {
 
 		login.verifyUrlBeforeLogin();
 		
+		System.out.println("************* 1- START Login Page ************************** ");
+		
 		
 
 	}
@@ -39,6 +41,8 @@ public class TC1_LoginScenarios extends BaseClass {
 		login.navigateToLoginPage(appurl);
 
 		login.validateShowPasswordLink();
+		
+		System.out.println("************* 1- validate Show Password Link ************************** ");
 
 	}
 
@@ -60,6 +64,8 @@ public class TC1_LoginScenarios extends BaseClass {
 		// login.loginToApplication("automationsaru@gmail.com", "Abcde#123");
 
 		login.emptyFieldsTest();
+		
+		System.out.println("************* 2- emptyFieldsTest ************************** ");
 	}
 
 	@Test(priority = 4, dependsOnMethods = "verifyPage")
@@ -68,6 +74,8 @@ public class TC1_LoginScenarios extends BaseClass {
 		login.loginToApplication("automationsaru@gmail.com", "Sarika#123");
 
 		login.errorMessagesIncorrectEmailPassword();
+		
+		System.out.println("************* 3- error Messages Incorrect Email Password ************************** ");
 
 	}
 
@@ -75,6 +83,8 @@ public class TC1_LoginScenarios extends BaseClass {
 	public void verifyHomeFooter() throws Exception {
 
 		login.verifyHomeFooter();
+		
+		System.out.println("************* 4-Footer ************************** ");
 
 	}
 	
@@ -89,6 +99,8 @@ public class TC1_LoginScenarios extends BaseClass {
 		login.signUpRedirectionTest();
 
 		logger.info("Validated redirection to the registeration page");
+		
+		
 	}
 
 	@Parameters({ "Email", "Password" })
@@ -99,6 +111,8 @@ public class TC1_LoginScenarios extends BaseClass {
 
 		login.verifyUrlAfterLogin();
 		
+		System.out.println("************* 5-Logged In to Application  ************************** ");
+		
 
 	}
 
@@ -106,6 +120,10 @@ public class TC1_LoginScenarios extends BaseClass {
 	public void logoutFromApplication() {
 
 		login.logOutFromApplication();
+		
+		System.out.println("************* 6 -  Logged Out ************************** ");
+		
+		System.out.println("************* END ************************** ");
 
 	}
 	

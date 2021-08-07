@@ -38,6 +38,8 @@ public class TC3_EndToEndScenarios extends BaseClass {
 		login = PageFactory.initElements(driver, LoginPage.class);
 
 		login.verifyUrlBeforeLogin();
+		
+		
 
 	}
 	
@@ -49,6 +51,8 @@ public class TC3_EndToEndScenarios extends BaseClass {
 				password);
 		
 		login.verifyUrlAfterLogin();
+		
+		System.out.println("************* START  EndToEndScenarios ************************** "+email);
 	}
 
 	@Test(priority = 2, dependsOnMethods = "loginToApplication")
@@ -61,6 +65,8 @@ public class TC3_EndToEndScenarios extends BaseClass {
 		account.verifyUrlAfterLogin();
 
 		account.editUserPersonalInfo();
+		
+		System.out.println("************* 1- Edit Personal Information  ************************** ");
 
 	}
 
@@ -70,6 +76,8 @@ public class TC3_EndToEndScenarios extends BaseClass {
 		account = PageFactory.initElements(driver, AccountPage.class);
 
 		account.editUserAccountInfo();
+		
+		System.out.println("************* 2- Edit Account Information  ************************** ");
 
 	}
 
@@ -79,6 +87,9 @@ public class TC3_EndToEndScenarios extends BaseClass {
 		account = PageFactory.initElements(driver, AccountPage.class);
 
 		account.uploadProfilePic();
+		
+		System.out.println("************* 3- Upload Profile Pic  ************************** ");
+		
 	}
 
 	@Test(priority = 5, dependsOnMethods = "loginToApplication")
@@ -87,6 +98,8 @@ public class TC3_EndToEndScenarios extends BaseClass {
 		account = PageFactory.initElements(driver, AccountPage.class);
 
 		account.uploadGovtID();
+		
+		System.out.println("************* 4- Upload GOVt ID ************************** ");
 
 	}
 
@@ -96,6 +109,8 @@ public class TC3_EndToEndScenarios extends BaseClass {
 		account = PageFactory.initElements(driver, AccountPage.class);
 
 		account.createFamily();
+		
+		System.out.println("************* 5- Creat family ************************** ");
 
 	}
 
@@ -105,6 +120,8 @@ public class TC3_EndToEndScenarios extends BaseClass {
 		account = PageFactory.initElements(driver, AccountPage.class);
 
 		account.addChild();
+		
+		System.out.println("************* 6- Add Child ************************** ");
 
 	}
 
@@ -114,6 +131,8 @@ public class TC3_EndToEndScenarios extends BaseClass {
 		account = PageFactory.initElements(driver, AccountPage.class);
 
 		account.deleteChild();
+		
+		System.out.println("************* 7- Delete Child ************************** ");
 
 	}
 /*

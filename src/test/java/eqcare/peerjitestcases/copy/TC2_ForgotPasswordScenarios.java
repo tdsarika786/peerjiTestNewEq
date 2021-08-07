@@ -29,6 +29,8 @@ public class TC2_ForgotPasswordScenarios extends BaseClass {
 		forgot.navigateToForgortPasswordModal();
 
 		forgot.verifyResetPasswordModal();
+		
+		System.out.println("************* START  1- Forgot Password Modal ************************** ");
 
 	}
 
@@ -40,6 +42,8 @@ public class TC2_ForgotPasswordScenarios extends BaseClass {
 		forgot.navigateToForgortPasswordModal();
 
 		forgot.errorMessageEmptyEmail();
+		
+		System.out.println("************* 2- Reset Password ************************** ");
 
 		//logger.info("Patient ");
 	}
@@ -53,6 +57,10 @@ public class TC2_ForgotPasswordScenarios extends BaseClass {
 		forgot.navigateToForgortPasswordModal();
 
 		forgot.resetPasswordNotification(email);
+		
+		System.out.println("************* 3- Reset Password Notification ************************** ");
+		
+		System.out.println("************* END ************************** ");
 
 		//logger.info("Patient ");
 	}
