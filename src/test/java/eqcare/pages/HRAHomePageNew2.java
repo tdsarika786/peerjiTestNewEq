@@ -449,6 +449,26 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 		Utility.waitForWebElement(driver, talkToCareLink);
 
+		viewScoreHRAComplete(scoreLabel);
+
+	}
+	
+	public void hraCompletionPageAndTalkToCare() {
+
+		Utility.waitForWebElement(driver, hraThankYouImg);
+
+		Utility.waitForWebElement(driver, hraThankyouHeader);
+
+		Utility.waitForWebElement(driver, hraThankyouText);
+
+		Utility.waitForWebElement(driver, talkToCareLink).click();
+
+		//viewScoreHRAComplete(scoreLabel);
+
+	}
+	
+	public void viewScoreHRAComplete(String scoreLabel) {
+		
 		Utility.waitForWebElement(driver, viewHealthScoreLink).click();
 
 		Utility.wait(25);
@@ -542,7 +562,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		 */
 
 		// Utility.waitForWebElement(driver, closeCTA).click();
-
+		
 	}
 
 	public void scoreModal() {

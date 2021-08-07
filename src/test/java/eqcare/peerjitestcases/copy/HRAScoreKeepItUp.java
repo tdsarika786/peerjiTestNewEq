@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import NotRequiredClasses.ContactUsPage;
 
 import eqcare.pages.HRAHomePageNew2;
+import eqcare.pages.IntakeFormPage;
 import eqcare.pages.LifeJourneyIntakeFormPage;
 import eqcare.pages.LoginPage;
 import eqcare.pages.LogoutPage;
@@ -20,6 +21,7 @@ public class HRAScoreKeepItUp extends BaseClass {
 	HRAHomePageNew2 home;
 	LifeJourneyIntakeFormPage intakeForm;
 	ClinicPage clinic;
+	IntakeFormPage intake;
 
 	@Parameters({ "Email", "Password" })
 	@Test(priority = 1)
@@ -35,8 +37,7 @@ public class HRAScoreKeepItUp extends BaseClass {
 		home.navigateToHomePage();
 
 		home.verifyUrl();
-		
-		
+
 		System.out.println("*******START Keep IT UP *********** " + email);
 
 	}
@@ -75,7 +76,7 @@ public class HRAScoreKeepItUp extends BaseClass {
 		String noDrinks = "10";
 
 		String scoreLabel = "Keep it up.";
-		
+
 		System.out.println("********HRA Keep It Up **********");
 
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
@@ -132,24 +133,24 @@ public class HRAScoreKeepItUp extends BaseClass {
 
 		System.out.println("10-HRA Completition");
 
-		System.out.println("*******END***********");
-
 	}
 
-	@Test(priority = 2, dependsOnMethods = "verifyPage", enabled = false)
-	public void verifyHRAPages() throws Exception {
+	@Test(priority = 4, dependsOnMethods = "hraDoingVeryWellScenario")
+	public void verifyTalkToCare() throws Exception {
 
-		// home.navigateToHRAContentLibrary();
+		intake = PageFactory.initElements(driver, IntakeFormPage.class);
 
-		// home.verifyHRAContentLibrary();
+		home.hraCompletionPageAndTalkToCare();
 
-		home.navigateToHRAIntakePage();
+		System.out.println("************* 11-HRA Complete page and Talk to care advocate ********************");
 
-		home.verifyHRAPhysicalIntakeForms();
+		// home1.deviceCheck();
 
-		home.verifyHRALifeStyle();
+		intake.fillIntakeForm();
 
-		// home.verifyMedical();
+		System.out.println("************* 12-Fill Intake form ********************");
+
+		System.out.println("*******END***********");
 
 	}
 
