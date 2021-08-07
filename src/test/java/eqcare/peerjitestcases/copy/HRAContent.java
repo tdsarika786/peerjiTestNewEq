@@ -51,16 +51,14 @@ public class HRAContent extends BaseClass {
 		home1 = PageFactory.initElements(driver, HomePage.class);
 		
 		home1.hraCompleteLater();
+		
+		home.scoreInfoHomePage();
+		
+	    System.out.println(" ************** 2- Score INFO Home Page check*********************");
 
 	    home.verifyHRAContentLibrary();
 	    
 	    System.out.println(" **************Log:2-INFO-PEERJI END HRA Content *********************");
-	    
-	    home.scoreInfoHomePage();
-	    
-	    System.out.println(" ************** 3- Score INFO Home Page check*********************");
-	    
-	    System.out.println(" ************** END *********************");
 
 		
 	}
