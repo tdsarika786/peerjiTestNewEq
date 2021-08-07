@@ -147,6 +147,8 @@ public class HRAScoreRoomForImprove extends BaseClass {
 		
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
 		
+		home1 = PageFactory.initElements(driver, HomePage.class);
+		
 		home.talkToCare();
 		
 

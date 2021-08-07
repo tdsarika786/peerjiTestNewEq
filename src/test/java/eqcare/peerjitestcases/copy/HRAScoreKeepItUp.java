@@ -141,6 +141,8 @@ public class HRAScoreKeepItUp extends BaseClass {
 	public void verifyTalkToCare() throws Exception {
 
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
+		
+		home1 = PageFactory.initElements(driver, HomePage.class);
 
 		//home.hraCompletionPageAndTalkToCare();
 

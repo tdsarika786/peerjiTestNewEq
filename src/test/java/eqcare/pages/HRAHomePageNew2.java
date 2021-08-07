@@ -438,8 +438,26 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		Utility.navigateToURL(driver, "https://patient.eqserviceqa1.eqcaredev.com/hra/content-library");
 
 	}
+	
+	public void hraCompletionPage1(String scoreLabel) {
+		
+		Utility.wait(5);
+
+		Utility.waitForWebElement(driver, hraThankYouImg);
+
+		Utility.waitForWebElement(driver, hraThankyouHeader);
+
+		Utility.waitForWebElement(driver, hraThankyouText);
+
+		Utility.waitForWebElement(driver, talkToCareLink);
+
+		viewScoreHRAComplete(scoreLabel);
+
+	}
 
 	public void hraCompletionPage(String scoreLabel) {
+		
+		Utility.wait(5);
 
 		Utility.waitForWebElement(driver, hraThankYouImg);
 
@@ -454,6 +472,8 @@ public class HRAHomePageNew2 extends runWithAttachments {
 	}
 	
 	public void hraCompletionPageAndTalkToCare() {
+		
+		Utility.wait(5);
 
 		Utility.waitForWebElement(driver, hraThankYouImg);
 
