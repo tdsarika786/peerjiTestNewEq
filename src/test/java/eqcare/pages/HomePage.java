@@ -51,24 +51,23 @@ public class HomePage extends runWithAttachments {
 	By phoneNoLink = By.xpath("//a[contains(text(), '1-855-449-4994')]");
 
 	By emailLink = By.xpath("//a[contains(text(), 'support@eqcare.com')]");
-	
+
 	By hraCompleteLater = By.xpath("//a[contains(text(), 'Complete Later')]]");
-	
 
 	public HomePage(WebDriver ldriver) {
 		this.driver = ldriver;
 	}
 
 	public void logOutFromApplication() throws Exception {
-		
+
 		try {
 
-		Utility.wait(4);
+			Utility.wait(4);
 
-		Utility.waitForWebElement(driver, logoutText).click();
-		
-		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 14, 0), "0");
-		
+			Utility.waitForWebElement(driver, logoutText).click();
+
+			runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 14, 0), "0");
+
 		} catch (Exception ex) {
 			runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 14, 0), "7");
 			throw ex;
@@ -90,15 +89,15 @@ public class HomePage extends runWithAttachments {
 	}
 
 	public void verifyHomeFooter() throws Exception {
-		
+
 		try {
 
-		Utility.waitForWebElement(driver, needHelpText);
+			Utility.waitForWebElement(driver, needHelpText);
 
-		Utility.waitForWebElement(driver, phoneNoLink);
+			Utility.waitForWebElement(driver, phoneNoLink);
 
-		Utility.waitForWebElement(driver, emailLink);
-		runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 13, 0), "0");
+			Utility.waitForWebElement(driver, emailLink);
+			runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 13, 0), "0");
 		} catch (Exception ex) {
 			runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 13, 0), "7");
 			throw ex;
@@ -108,7 +107,9 @@ public class HomePage extends runWithAttachments {
 
 	public void startVideoConsultationClick() {
 
-		Utility.waitForWebElement(driver, startCallButton).click();
+		Utility.waitForWebElement(driver, hraCompleteLater).click();
+		
+		Utility.wait(5);
 
 	}
 
@@ -128,34 +129,33 @@ public class HomePage extends runWithAttachments {
 
 	}
 
-	public void deviceCheck() {
-		
-		try {
-			Utility.waitForWebElement(driver, hraCompleteLater).click();
-		}
-		
-		catch(Exception ex) {}
-		try {
+	public void hraCompleteLater() {
 
 		Utility.waitForWebElement(driver, startVisitButton).click();
 
-		// Utility.waitForWebElement(driver, startVisitButton).click();
+	}
 
-		Utility.waitForWebElement(driver, nextStepText).click();
+	public void deviceCheck() {
 
-		// Utility.waitForWebElement(driver, nextStepText).click();
+		try {
 
-		Utility.waitForWebElement(driver, continueToVisitText).click();
+			Utility.waitForWebElement(driver, startVisitButton).click();
 
-		// Utility.waitForWebElement(driver, startVisitButton).click();
-		}
-		catch(Exception ex) {
-			
+			// Utility.waitForWebElement(driver, startVisitButton).click();
+
+			Utility.waitForWebElement(driver, nextStepText).click();
+
+			// Utility.waitForWebElement(driver, nextStepText).click();
+
+			Utility.waitForWebElement(driver, continueToVisitText).click();
+
+			// Utility.waitForWebElement(driver, startVisitButton).click();
+		} catch (Exception ex) {
+
 			Utility.waitForWebElement(driver, nextStepText).click();
 
 			Utility.waitForWebElement(driver, continueToVisitText).click();
 
-			
 		}
 
 	}
