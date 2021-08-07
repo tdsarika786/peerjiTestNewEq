@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import NotRequiredClasses.ContactUsPage;
 
 import eqcare.pages.HRAHomePageNew2;
+import eqcare.pages.HomePage;
 import eqcare.pages.IntakeFormPage;
 import eqcare.pages.LifeJourneyIntakeFormPage;
 import eqcare.pages.LoginPage;
@@ -22,6 +23,7 @@ public class HRAScoreKeepItUp extends BaseClass {
 	LifeJourneyIntakeFormPage intakeForm;
 	ClinicPage clinic;
 	IntakeFormPage intake;
+	HomePage home1;
 
 	@Parameters({ "Email", "Password" })
 	@Test(priority = 1)
@@ -144,7 +146,7 @@ public class HRAScoreKeepItUp extends BaseClass {
 
 		System.out.println("************* 11-HRA Complete page and Talk to care advocate ********************");
 
-		// home1.deviceCheck();
+		home1.deviceCheck();
 
 		intake.fillIntakeForm();
 
