@@ -70,6 +70,8 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 		//login.verifyUrlAfterLogin();
 
 		logger.info("Patient Logged in");
+		
+		System.out.println("*************START VISIT ******************** "+email);
 	}
 
 	@Test(priority = 2, dependsOnMethods = "loginToApplication")
@@ -90,6 +92,8 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 		account.editUserPersonalInfo();
 
 		logger.info("Patint saved user personal information");
+		
+		System.out.println("*************1 -edit UserP ersonal Info******************** ");
 
 	}
 

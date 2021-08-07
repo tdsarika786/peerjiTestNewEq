@@ -1,6 +1,7 @@
 package eqcare.pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -131,7 +132,15 @@ public class HomePage extends runWithAttachments {
 
 	public void hraCompleteLater() {
 
-		Utility.waitForWebElement(driver, startVisitButton).click();
+		Utility.waitForWebElement(driver, hraCompleteLater).click();
+		
+		/*
+		
+		WebElement button1 = driver.findElement(By.xpath("//a[@href='/profile']"));
+
+		JavascriptExecutor executor1 = (JavascriptExecutor) driver;
+		executor1.executeScript("arguments[0].click()", button1);
+		*/
 
 	}
 
