@@ -367,13 +367,13 @@ public class HRAHomePageNew2 extends runWithAttachments {
 	By accLibrarayLink = By.xpath("//a[contains(text(), 'LIBRARY')]");
 
 	// Score Modal
-	By overallScoreLabel = By.xpath("(//p[contains(text(), 'Overall')])[2]");
+	By overallScoreLabel = By.xpath("(//p[contains(text(), 'Overall')])[1]");
 
-	By moveScoreLabel = By.xpath("(//p[contains(text(), 'Move')])[2]");
+	By moveScoreLabel = By.xpath("(//p[contains(text(), 'Move')])[1]");
 
-	By feelScoreLabel = By.xpath("(//p[contains(text(), 'Feel')])[2]");
+	By feelScoreLabel = By.xpath("(//p[contains(text(), 'Feel')])[1]");
 
-	By mindScoreLabel = By.xpath("(//p[contains(text(), 'Mind')])[2]");
+	By mindScoreLabel = By.xpath("(//p[contains(text(), 'Mind')])[1]");
 
 	By updateMyAnswerScoreLink = By.xpath("(//a[contains(text(), 'Update my answers')])[1]");
 
@@ -390,6 +390,16 @@ public class HRAHomePageNew2 extends runWithAttachments {
 	By physicalGuideTabSitting = By.xpath("//a[contains(text(), 'Sitting')]");
 
 	By scoreHeading = By.xpath("//h2[contains(text(),'My Health Score')]");
+	
+	// Score ModalHome
+	
+	By overallScoreLabelHome = By.xpath("(//p[contains(text(), 'Overall')])[2]");
+	
+	By moveScoreLabelHome = By.xpath("(//p[contains(text(), 'Move')])[2]");
+	
+	By feelScoreLabelHome = By.xpath("(//p[contains(text(), 'Feel')])[2]");
+	
+	By mindScoreLabelHome = By.xpath("(//p[contains(text(), 'Mind')])[2]");
 
 	public HRAHomePageNew2(WebDriver ldriver) {
 		this.driver = ldriver;
@@ -420,6 +430,8 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		Utility.waitForWebElement(driver, hraThankyouHeader);
 
 		Utility.waitForWebElement(driver, hraThankyouText);
+		
+		Utility.waitForWebElement(driver, talkToCareLink);
 
 		Utility.waitForWebElement(driver, viewHealthScoreLink).click();
 
@@ -533,13 +545,13 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 		Utility.waitForWebElement(driver, scoreHeading);
 
-		Utility.waitForWebElement(driver, overallScoreLabel);
+		Utility.waitForWebElement(driver, overallScoreLabelHome);
 
-		Utility.waitForWebElement(driver, moveScoreLabel);
+		Utility.waitForWebElement(driver, moveScoreLabelHome);
 
-		Utility.waitForWebElement(driver, feelScoreLabel);
+		Utility.waitForWebElement(driver, feelScoreLabelHome);
 
-		Utility.waitForWebElement(driver, mindScoreLabel);
+		Utility.waitForWebElement(driver, mindScoreLabelHome);
 
 		Utility.waitForWebElement(driver, updateMyAnswerScoreLink);
 
