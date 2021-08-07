@@ -132,15 +132,15 @@ public class HomePage extends runWithAttachments {
 
 	public void hraCompleteLater() {
 
-		Utility.waitForWebElement(driver, hraCompleteLater).click();
+		//Utility.waitForWebElement(driver, hraCompleteLater).click();
 		
-		/*
 		
-		WebElement button1 = driver.findElement(By.xpath("//a[@href='/profile']"));
+		
+		WebElement button1 = driver.findElement(By.xpath("//a[contains(text(), 'Complete Later')]]"));
 
 		JavascriptExecutor executor1 = (JavascriptExecutor) driver;
 		executor1.executeScript("arguments[0].click()", button1);
-		*/
+		
 
 	}
 

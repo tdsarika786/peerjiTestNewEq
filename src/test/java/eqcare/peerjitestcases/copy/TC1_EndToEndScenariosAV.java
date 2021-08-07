@@ -109,6 +109,8 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 		account.editUserAccountInfo();
 
 		logger.info("Patint saved user account information");
+		
+		System.out.println("*************2 -edit Account Info******************** ");
 
 	}
 
@@ -126,6 +128,8 @@ public class TC1_EndToEndScenariosAV extends BaseClass {
 		account.uploadProfilePic();
 
 		logger.info("Patint uploaded profile pic");
+		
+		System.out.println("************ 3- Upload Profile Pic ******************** ");
 
 	}
 
