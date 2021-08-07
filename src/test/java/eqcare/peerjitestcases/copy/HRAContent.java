@@ -48,6 +48,8 @@ public class HRAContent extends BaseClass {
 
 		// home.navigateToHRAContentLibrary();
 		
+		home1 = PageFactory.initElements(driver, HomePage.class);
+		
 		home1.hraCompleteLater();
 
 	    home.verifyHRAContentLibrary();
