@@ -40,6 +40,9 @@ public class EQ1_HRAScoreDoingVeryWellEmail extends BaseClass {
 
 		home.verifyUrl();
 		
+		System.out.println("");
+		System.out.println("");
+		
 	System.out.println("***********************************************************");
 		
 		

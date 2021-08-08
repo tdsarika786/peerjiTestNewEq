@@ -39,6 +39,9 @@ public class EQ4_HRAScoreRoomForImprove extends BaseClass {
 		home.navigateToHomePage();
 
 		home.verifyUrl();
+		
+		System.out.println("");
+		System.out.println("");
 
 		System.out.println("***********************************************************");
 

@@ -40,6 +40,9 @@ public class EQ3_HRAScoreKeepEyeOnIt extends BaseClass {
 
 		home.verifyUrl();
 		
+		System.out.println("");
+		System.out.println("");
+		
 		System.out.println("***********************************************************");
 
 		System.out.println("####### START HRAScoreKeepEyeOnIt_EQ3 ######## " + email);

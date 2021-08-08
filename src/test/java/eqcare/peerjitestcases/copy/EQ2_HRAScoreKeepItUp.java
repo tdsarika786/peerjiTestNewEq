@@ -40,6 +40,9 @@ public class EQ2_HRAScoreKeepItUp extends BaseClass {
 
 		home.verifyUrl();
 		
+		System.out.println("");
+		System.out.println("");
+		
 	System.out.println("***********************************************************");
 		
 

@@ -40,7 +40,8 @@ public class EQ1_HRAScoreDoingVeryWell extends BaseClass {
 
 		home.verifyUrl();
 		
-	
+		System.out.println("");
+		System.out.println("");
 		
 		System.out.println("***********************************************************");
 
