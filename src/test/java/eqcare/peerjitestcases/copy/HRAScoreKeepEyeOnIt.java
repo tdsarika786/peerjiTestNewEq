@@ -39,8 +39,8 @@ public class HRAScoreKeepEyeOnIt extends BaseClass {
 		home.navigateToHomePage();
 
 		home.verifyUrl();
-		
-		System.out.println("*******START Keep Eye On IT *********** "+email);
+
+		System.out.println("*******START Keep Eye On IT *********** " + email);
 
 	}
 
@@ -78,7 +78,7 @@ public class HRAScoreKeepEyeOnIt extends BaseClass {
 		String noDrinks = "10";
 
 		String scoreLabel = "Keep an eye on it.";
-		
+
 		System.out.println("********HRA Keep Eye On It Scenario**********");
 
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
@@ -133,21 +133,22 @@ public class HRAScoreKeepEyeOnIt extends BaseClass {
 
 		home.hraCompletionPage1(scoreLabel);
 
-		System.out.println("10- HRA Form CompletitioN, View Score, CLose and on HOME SCORE POP UP and  CLICK TALK TO CARE ADVOCATE ");
+		System.out.println("10- - HRA Form Complete\r\n" + "- View Score Modal\r\n" + "- Close pop up\r\n"
+				+ "- On Home Click on Score pop up\r\n" + "- In modal CLICK TALK TO CARE ADVOCATE\r\n" + "");
 
 	}
 
 	@Test(priority = 4, dependsOnMethods = "hraKeepEyeOnItScenario")
 	public void verifyTalkToCare() throws Exception {
-		
-		//****************** EQ 1 **************************** //
+
+		// ****************** EQ 1 **************************** //
 
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
 
 		home1 = PageFactory.initElements(driver, HomePage.class);
-		
-		String coverage="LJ";
-		
+
+		String coverage = "LJ";
+
 		if (coverage.equalsIgnoreCase("EQ")) {
 			// home.talkToCare();
 
@@ -160,20 +161,17 @@ public class HRAScoreKeepEyeOnIt extends BaseClass {
 			System.out.println("************* 11- EQ Regular Fiilling INTAKE FORM ********************");
 
 		}
-		
+
 		else if (coverage.equalsIgnoreCase("LJ")) {
-			
-			//intakeForm.deviceCheck();
-			
+
+			// intakeForm.deviceCheck();
+
 			intakeForm.hraLifeJourneyVisit();
-			
+
 			System.out.println("************* 11- LJ  Filling INTAKE FORM ********************");
 
 		}
-		
-		
 
-		
 		System.out.println("*******END***********");
 
 	}

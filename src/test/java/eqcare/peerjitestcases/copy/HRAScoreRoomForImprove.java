@@ -165,7 +165,7 @@ public class HRAScoreRoomForImprove extends BaseClass {
 			System.out.println("************* 12-Regular Fill Intake form ********************");
 		} else if (coverage.equalsIgnoreCase("LJ")) {
 
-			// intakeForm.deviceCheck();
+			intakeForm.deviceCheck();
 
 			intakeForm.hraLifeJourneyVisit();
 
