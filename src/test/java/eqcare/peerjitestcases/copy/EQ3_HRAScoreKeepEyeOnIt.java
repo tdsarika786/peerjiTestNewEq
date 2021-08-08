@@ -16,7 +16,7 @@ import eqcare.pages.ClinicPage;
 import eqcare.factories.DataProviderFactory;
 import eqcare.pages.copy.BaseClass;
 
-public class HRAScoreKeepItUp_EQ2 extends BaseClass {
+public class EQ3_HRAScoreKeepEyeOnIt extends BaseClass {
 
 	LoginPage login;
 	HRAHomePageNew2 home;
@@ -40,7 +40,7 @@ public class HRAScoreKeepItUp_EQ2 extends BaseClass {
 
 		home.verifyUrl();
 
-		System.out.println("******* START HRAScoreKeepItUp_EQ2 *********** " + email);
+		System.out.println("*******START HRAScoreKeepEyeOnIt_EQ3 *********** " + email);
 
 	}
 
@@ -56,10 +56,10 @@ public class HRAScoreKeepItUp_EQ2 extends BaseClass {
 	}
 
 	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage")
-	public void hraKeepItUpScenario() throws Exception {
+	public void hraKeepEyeOnItScenario() throws Exception {
 
-		// Keep it up.
-		// 72%
+		// Keep an eye on it.
+		// 56%
 
 		String height = "154";
 		String weight = "40";
@@ -77,75 +77,72 @@ public class HRAScoreKeepItUp_EQ2 extends BaseClass {
 
 		String noDrinks = "10";
 
-		String scoreLabel = "Keep it up.";
+		String scoreLabel = "Keep an eye on it.";
 
-		System.out.println("********HRA Keep It Up **********");
+		System.out.println("********HRA Keep Eye On It Scenario**********");
 
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
 
 		System.out.println("1-HRA PhysicalIntakeForms Ques1" + " " + height + " " + weight + " " + waist);
 
-		home.verifyHRAPhysicalIntakeFormsQues2("option3");
+		home.verifyHRAPhysicalIntakeFormsQues2(options[2]);
 
-		System.out.println("2-HRA PhysicalIntakeFormsQues2");
+		System.out.println("2- HRA PhysicalIntakeForms Ques2");
 
 		home.verifyHRAPhysicalIntakeFormsQues3(options[0]);
 
-		System.out.println("3-HRA PhysicalIntakeForms Ques3");
+		System.out.println("3- HRA PhysicalIntakeForms Ques3");
 
 		home.verifyHRALifeStyleQuesSleep1(sleepHrs);
 
-		System.out.println("4-HRALifeStyleQues Sleep1");
+		System.out.println("4- HRALifeStyleQues Sleep1");
 
 		home.verifyHRALifeStyleQuesSmoking2(options[1], noSmokes);
 
-		System.out.println("5-HRA LifeStyleQues Smoking2");
+		System.out.println("5- HRA LifeStyleQues Smoking2");
 
 		home.verifyHRALifeStyleQuesDrinking1(options[1], noDrinks);
 
-		System.out.println("6-HRA LifeStyleQues Drinking1");
+		System.out.println("6- LifeStyleQues Drinking1");
 
-		home.verifyHRALifeStyleQuesStress(options[1]);
+		home.verifyHRALifeStyleQuesStress(options[4]);
 
-		System.out.println("7-HRA LifeStyleQues Stress1");
+		System.out.println("7 -HRALifeStyleQuesStress");
 
-		home.verifyHRALifeStyleQuesHappiness(options[1]);
+		home.verifyHRALifeStyleQuesHappiness(options[4]);
 
-		System.out.println("8-HRA LifeStyle QuesHappiness1");
+		System.out.println("8- HRALifeStyleQuesHappiness");
 
 		home.verifyMedical(medQues[0], yesNoOption[0], yesNoOption[1]);
 
 		home.verifyMedical(medQues[1], yesNoOption[0], yesNoOption[1]);
 
-		home.verifyMedical(medQues[2], yesNoOption[1], yesNoOption[1]);
+		home.verifyMedical(medQues[2], yesNoOption[0], yesNoOption[0]);
 
-		home.verifyMedical(medQues[3], yesNoOption[1], yesNoOption[1]);
+		home.verifyMedical(medQues[3], yesNoOption[0], yesNoOption[0]);
 
-		home.verifyMedical(medQues[4], yesNoOption[1], yesNoOption[1]);
+		home.verifyMedical(medQues[4], yesNoOption[0], yesNoOption[0]);
 
-		home.verifyMedical(medQues[5], yesNoOption[1], yesNoOption[1]);
+		home.verifyMedical(medQues[5], yesNoOption[0], yesNoOption[0]);
 
-		home.verifyMedical(medQues[6], yesNoOption[1], yesNoOption[1]);
+		home.verifyMedical(medQues[6], yesNoOption[0], yesNoOption[0]);
 
-		home.verifyMedical(medQues[7], yesNoOption[1], yesNoOption[1]);
+		home.verifyMedical(medQues[7], yesNoOption[0], yesNoOption[0]);
 
-		System.out.println("9-HRA Medical");
+		System.out.println("9- HRA Medical");
 
-		home.hraCompletionPageAndTalkToCare();
+		home.hraCompletionPage1(scoreLabel);
 
-		System.out.println("10-HRA Completition");
-
-		System.out.println(
-				"************* 11- - HRA Form Complete\r\n"
-				+ "- THERE ONLY Thank you page -> Talk to Care Advocate ********************");
+		System.out.println("10- - HRA Form Complete\r\n" + "- View Score Modal\r\n" + "- Close pop up\r\n"
+				+ "- On Home Click on Score pop up\r\n" + "- In modal CLICK TALK TO CARE ADVOCATE\r\n" + "");
 
 	}
 
 	@Parameters({ "Coverage"})
-	@Test(priority = 4, dependsOnMethods = "hraKeepItUpScenario")
+	@Test(priority = 4, dependsOnMethods = "hraKeepEyeOnItScenario")
 	public void verifyTalkToCare(String coverage) throws Exception {
 
-		System.out.println("// ****************** EQ-2 **************************** //");
+		System.out.println("// ****************** EQ-3 **************************** //");
 
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
 
@@ -156,14 +153,15 @@ public class HRAScoreKeepItUp_EQ2 extends BaseClass {
 		if (coverage.equalsIgnoreCase("EQ")) {
 			
 			System.out.println("Covergae Type "+coverage );
+			// home.talkToCare();
 
-			// home.hraCompletionPageAndTalkToCare();
+			System.out.println("************* 11-  DEVICE CHECK********************");
 
-			home1.deviceCheckHRA();
+		     home1.deviceCheckHRA();
 
 			intake.fillIntakeForm();
 
-			System.out.println("************* 12- Regular Fill Intake form ********************");
+			System.out.println("************* 11-  Regular Fiilling INTAKE FORM ********************");
 
 		}
 
@@ -173,11 +171,9 @@ public class HRAScoreKeepItUp_EQ2 extends BaseClass {
 
 			intakeForm.deviceCheck();
 
-			System.out.println("************* 12 Device CHeck ********************");
-
 			intakeForm.hraLifeJourneyVisit();
 
-			System.out.println("************* 12 LJ  Filling INTAKE FORM ********************");
+			System.out.println("************* 11- LJ  Filling INTAKE FORM ********************");
 
 		}
 

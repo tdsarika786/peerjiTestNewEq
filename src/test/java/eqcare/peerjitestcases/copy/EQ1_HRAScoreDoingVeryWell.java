@@ -16,7 +16,7 @@ import eqcare.pages.ClinicPage;
 import eqcare.factories.DataProviderFactory;
 import eqcare.pages.copy.BaseClass;
 
-public class HRAScoreDoingVeryWell_EQ1 extends BaseClass {
+public class EQ1_HRAScoreDoingVeryWell extends BaseClass {
 
 	LoginPage login;
 	HRAHomePageNew2 home;
@@ -143,7 +143,7 @@ public class HRAScoreDoingVeryWell_EQ1 extends BaseClass {
 	@Test(priority = 4, dependsOnMethods = "hraKeepItUpScenario")
 	public void verifyTalkToCare(String coverage) throws Exception {
 
-		System.out.println("// ****************** EQ-2 **************************** //");
+		System.out.println("// ****************** EQ-1 **************************** //");
 
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
 

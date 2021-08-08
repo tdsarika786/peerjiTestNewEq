@@ -16,7 +16,7 @@ import eqcare.pages.ClinicPage;
 import eqcare.factories.DataProviderFactory;
 import eqcare.pages.copy.BaseClass;
 
-public class HRAScoreKeepEyeOnItEmail_EQ3 extends BaseClass {
+public class EQ3_HRAScoreKeepEyeOnItEmail extends BaseClass {
 
 	LoginPage login;
 	HRAHomePageNew2 home;
@@ -142,7 +142,7 @@ public class HRAScoreKeepEyeOnItEmail_EQ3 extends BaseClass {
 	@Test(priority = 4, dependsOnMethods = "hraKeepEyeOnItScenario")
 	public void verifyTalkToCare(String coverage) throws Exception {
 
-		System.out.println("// ****************** EQ-1 **************************** //");
+		System.out.println("// ****************** EQ-3 **************************** //");
 
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
 

@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import NotRequiredClasses.ContactUsPage;
 import eqcare.pages.HRAHomePage;
 import eqcare.pages.HRAHomePageNew;
+import eqcare.pages.HRAHomePageNew2;
 import eqcare.pages.LifeJourneyIntakeFormPage;
 import eqcare.pages.LoginPage;
 import eqcare.pages.LogoutPage;
@@ -21,6 +22,7 @@ public class TC1_HRANewScenarios extends BaseClass {
 	HRAHomePageNew home;
 	LifeJourneyIntakeFormPage intakeForm;
 	ClinicPage clinic;
+	HRAHomePageNew2 homeNew;
 
 	@Parameters({"Email","Password"})
 	@Test(priority = 1)
@@ -31,6 +33,8 @@ public class TC1_HRANewScenarios extends BaseClass {
 				password);
 
 		home = PageFactory.initElements(driver, HRAHomePageNew.class);
+		
+		homeNew = PageFactory.initElements(driver, HRAHomePageNew2.class);
 		
 		intakeForm = PageFactory.initElements(driver, LifeJourneyIntakeFormPage.class);
 
@@ -128,7 +132,9 @@ public class TC1_HRANewScenarios extends BaseClass {
 	@Test(priority = 11, dependsOnMethods = "verifyLifeStyleQuesStressHappiness1")
 	public void verifyHRACompletition() throws Exception {
 		
-		home.hraCompletionPage();
+		String scoreLabel = "You’re doing very well.";
+		
+		homeNew.hraCompletionPage(scoreLabel);
 		
 		System.out.println("9-HRA Completition");
 		
