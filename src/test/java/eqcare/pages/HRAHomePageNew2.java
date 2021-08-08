@@ -1606,6 +1606,8 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				}
 
 			}
+			
+			System.out.println("Medical Ques 1");
 		}
 
 		else if (ques.equalsIgnoreCase("Med2")) {
@@ -1635,6 +1637,8 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				}
 
 			}
+			
+			System.out.println("Medical Ques 2");
 		}
 
 		else if (ques.equalsIgnoreCase("Med3")) {
@@ -1664,6 +1668,8 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				}
 
 			}
+			
+			System.out.println("Medical Ques 3");
 		}
 
 		else if (ques.equalsIgnoreCase("Med4")) {
@@ -1693,6 +1699,8 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				}
 
 			}
+			
+			System.out.println("Medical Ques 4");
 		}
 
 		else if (ques.equalsIgnoreCase("Med5")) {
@@ -1722,6 +1730,8 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				}
 
 			}
+			
+			System.out.println("Medical Ques 5");
 		}
 
 		else if (ques.equalsIgnoreCase("Med6")) {
@@ -1751,6 +1761,8 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				}
 
 			}
+			
+			System.out.println("Medical Ques 6");
 		}
 
 		else if (ques.equalsIgnoreCase("Med7")) {
@@ -1767,6 +1779,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				Utility.waitForWebElement(driver, hraYesLink).click();
 			}
 
+			System.out.println("Medical Ques 7");
 		}
 
 		else if (ques.equalsIgnoreCase("Med8")) {
@@ -1783,6 +1796,8 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				Utility.waitForWebElement(driver, hraYesLink).click();
 			}
 		}
+		
+		System.out.println("Medical Ques 8");
 
 		Utility.wait(10);
 
