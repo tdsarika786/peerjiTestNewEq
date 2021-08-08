@@ -7,6 +7,8 @@ import org.testng.annotations.Test;
 import NotRequiredClasses.ContactUsPage;
 
 import eqcare.pages.HRAHomePageNew2;
+import eqcare.pages.HomePage;
+import eqcare.pages.IntakeFormPage;
 import eqcare.pages.LifeJourneyIntakeFormPage;
 import eqcare.pages.LoginPage;
 import eqcare.pages.LogoutPage;
@@ -20,6 +22,8 @@ public class HRAScoreKeepEyeOnIt extends BaseClass {
 	HRAHomePageNew2 home;
 	LifeJourneyIntakeFormPage intakeForm;
 	ClinicPage clinic;
+	IntakeFormPage intake;
+	HomePage home1;
 
 	@Parameters({ "Email", "Password" })
 	@Test(priority = 1)
@@ -131,24 +135,26 @@ public class HRAScoreKeepEyeOnIt extends BaseClass {
 
 		System.out.println("10- HRA CompletitioN, SCORE POP UP CLICK FROM HOME,TALK TO CARE ADVOCATE ");
 
-		System.out.println("*******END***********");
-
 	}
 
-	@Test(priority = 2, dependsOnMethods = "verifyPage", enabled = false)
-	public void verifyHRAPages() throws Exception {
+	@Test(priority = 4, dependsOnMethods = "roomForImprovementScenario3")
+	public void verifyTalkToCare() throws Exception {
 
-		// home.navigateToHRAContentLibrary();
+		intake = PageFactory.initElements(driver, IntakeFormPage.class);
 
-		// home.verifyHRAContentLibrary();
+		home1 = PageFactory.initElements(driver, HomePage.class);
 
-		home.navigateToHRAIntakePage();
+		// home.talkToCare();
 
-		home.verifyHRAPhysicalIntakeForms();
+		System.out.println("************* 11- DEVICE CHECK********************");
 
-		home.verifyHRALifeStyle();
+		// home1.deviceCheck();
 
-		// home.verifyMedical();
+		intake.fillIntakeForm();
+
+		System.out.println("************* 11- INTAKE FORM ********************");
+
+		System.out.println("*******END***********");
 
 	}
 
