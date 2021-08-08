@@ -65,7 +65,7 @@ public class HRAIntroPageTalkCare extends BaseClass {
 	
 
 	@Parameters({ "Coverage" })
-	@Test(priority = 4, dependsOnMethods = "hraKeepItUpScenario")
+	@Test(priority = 4, dependsOnMethods = "verifyHRAIntroPage")
 	public void verifyTalkToCare(String coverage) throws Exception {
 		
 		try {
