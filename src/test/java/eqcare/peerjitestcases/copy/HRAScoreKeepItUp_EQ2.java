@@ -137,7 +137,7 @@ public class HRAScoreKeepItUp_EQ2 extends BaseClass {
 
 		System.out.println(
 				"************* 11- - HRA Form Complete\r\n"
-				+ "- THERE ONLY Talk to care advocate********************");
+				+ "- THERE ONLY Thank you page -> Talk to Care Advocate ********************");
 
 	}
 
