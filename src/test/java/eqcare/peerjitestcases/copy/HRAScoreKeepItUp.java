@@ -134,7 +134,7 @@ public class HRAScoreKeepItUp extends BaseClass {
 		home.hraCompletionPageAndTalkToCare();
 
 		System.out.println("10-HRA Completition");
-		
+
 		System.out.println(
 				"************* 11-HRA Form Complete page and THERE ONLY Talk to care advocate ********************");
 
@@ -153,8 +153,6 @@ public class HRAScoreKeepItUp extends BaseClass {
 
 			// home.hraCompletionPageAndTalkToCare();
 
-			
-
 			home1.deviceCheckHRA();
 
 			intake.fillIntakeForm();
@@ -165,7 +163,7 @@ public class HRAScoreKeepItUp extends BaseClass {
 
 		else if (coverage.equalsIgnoreCase("LJ")) {
 
-			// intakeForm.deviceCheck();
+			intakeForm.deviceCheck();
 
 			intakeForm.hraLifeJourneyVisit();
 
