@@ -144,7 +144,7 @@ public class EQ1_HRAScoreDoingVeryWell extends BaseClass {
 	}
 
 	@Parameters({ "Coverage" })
-	@Test(priority = 4, dependsOnMethods = "hraKeepItUpScenario")
+	@Test(priority = 4, dependsOnMethods = "hraDoingVeryWellScenario")
 	public void verifyTalkToCare(String coverage) throws Exception {
 
 		System.out.println(
