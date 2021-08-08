@@ -145,6 +145,8 @@ public class EQ3_HRAScoreKeepEyeOnItEmail extends BaseClass {
 	@Parameters({ "Coverage" })
 	@Test(priority = 4, dependsOnMethods = "hraKeepEyeOnItScenario")
 	public void verifyTalkToCare(String coverage) throws Exception {
+		
+		try {
 
 		System.out.println(
 				"************* EQ3 - HRA Form Complete, View Score Modal, Close pop up, On Home Click on Score pop up, In modal CLICK TALK TO CARE ADVOCATE *************");
@@ -189,6 +191,18 @@ public class EQ3_HRAScoreKeepEyeOnItEmail extends BaseClass {
 	System.out.println("***********************************************************");
 		
 		System.out.println("***********************************************************");
+
+		System.out.println("");
+		System.out.println("");
+		
+		}
+		
+		catch(Exception ex) {
+			System.out.println("******************** FAILED ***************************************");
+			
+			System.out.println("");
+			System.out.println("");
+		}
 
 	}
 }

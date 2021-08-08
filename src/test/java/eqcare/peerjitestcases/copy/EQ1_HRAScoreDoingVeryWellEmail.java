@@ -149,6 +149,8 @@ public class EQ1_HRAScoreDoingVeryWellEmail extends BaseClass {
 	@Parameters({ "Coverage" })
 	@Test(priority = 4, dependsOnMethods = "hraDoingVeryWellScenario")
 	public void verifyTalkToCare(String coverage) throws Exception {
+		
+		try {
 
 		System.out.println("// ****************** EQ 1 Talk To Care from Home Page **************************** //");
 
@@ -182,24 +184,21 @@ public class EQ1_HRAScoreDoingVeryWellEmail extends BaseClass {
 		
 		System.out.println("***********************************************************");
 
+		System.out.println("");
+		System.out.println("");
+		
+		}
+		
+		catch(Exception ex) {
+			System.out.println("******************** FAILED ***************************************");
+			
+			System.out.println("");
+			System.out.println("");
+		}
 
+		
 	}
 
-	@Test(priority = 2, dependsOnMethods = "verifyPage", enabled = false)
-	public void verifyHRAPages() throws Exception {
-
-		// home.navigateToHRAContentLibrary();
-
-		// home.verifyHRAContentLibrary();
-
-		home.navigateToHRAIntakePage();
-
-		home.verifyHRAPhysicalIntakeForms();
-
-		home.verifyHRALifeStyle();
-
-		// home.verifyMedical();
-
-	}
+	
 
 }

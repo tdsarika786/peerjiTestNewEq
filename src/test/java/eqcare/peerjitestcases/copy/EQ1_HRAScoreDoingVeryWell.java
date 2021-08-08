@@ -147,6 +147,8 @@ public class EQ1_HRAScoreDoingVeryWell extends BaseClass {
 	@Parameters({ "Coverage" })
 	@Test(priority = 4, dependsOnMethods = "hraDoingVeryWellScenario")
 	public void verifyTalkToCare(String coverage) throws Exception {
+		
+		try {
 
 		System.out.println(
 				"************* EQ2 - HRA Form Complete IN Thank you page Talk to Care Advocate ********************");
@@ -192,6 +194,18 @@ public class EQ1_HRAScoreDoingVeryWell extends BaseClass {
 		System.out.println("***********************************************************");
 
 		System.out.println("***********************************************************");
+		
+		System.out.println("");
+		System.out.println("");
+		
+		}
+		
+		catch(Exception ex) {
+			System.out.println("******************** FAILED ***************************************");
+			
+			System.out.println("");
+			System.out.println("");
+		}
 
 	}
 }

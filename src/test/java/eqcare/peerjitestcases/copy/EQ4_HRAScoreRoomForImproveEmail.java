@@ -149,6 +149,8 @@ public class EQ4_HRAScoreRoomForImproveEmail extends BaseClass {
 	@Parameters({ "Coverage" })
 	@Test(priority = 4, dependsOnMethods = "roomForImprovementScenario3")
 	public void verifyTalkToCare(String coverage) throws Exception {
+		
+		try {
 
 		System.out.println("********EQ - HRA Form Complete View Score Modal In modal CLICK TALK TO CARE ADVOCATE");
 
@@ -192,25 +194,17 @@ public class EQ4_HRAScoreRoomForImproveEmail extends BaseClass {
 
 		System.out.println("***********************************************************");
 
-	}
-
-	@Test(priority = 2, dependsOnMethods = "verifyPage", enabled = false)
-	public void verifyHRAPages() throws Exception {
-
-		// home.navigateToHRAContentLibrary();
-
-		// home.verifyHRAContentLibrary();
-
-		home.navigateToHRAIntakePage();
-
-		home.verifyHRAPhysicalIntakeForms();
-
-		home.verifyHRALifeStyle();
-
-		// home.verifyMedical();
+		System.out.println("");
+		System.out.println("");
 		
-	
+		}
+		
+		catch(Exception ex) {
+			System.out.println("******************** FAILED ***************************************");
+			
+			System.out.println("");
+			System.out.println("");
+		}
 
 	}
-
 }

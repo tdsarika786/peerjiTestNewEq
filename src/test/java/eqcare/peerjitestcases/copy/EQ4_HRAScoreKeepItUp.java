@@ -147,6 +147,8 @@ public class EQ4_HRAScoreKeepItUp extends BaseClass {
 	@Test(priority = 4, dependsOnMethods = "hraKeepItUpScenario")
 	public void verifyTalkToCare(String coverage) throws Exception {
 		
+		try {
+		
 		System.out.println("********EQ - HRA Form Complete View Score Modal In modal CLICK TALK TO CARE ADVOCATE");
 
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
@@ -188,5 +190,17 @@ public class EQ4_HRAScoreKeepItUp extends BaseClass {
 		System.out.println("***********************************************************");
 
 		System.out.println("***********************************************************");
+		System.out.println("");
+		System.out.println("");
+		
+		}
+		
+		catch(Exception ex) {
+			System.out.println("******************** FAILED ***************************************");
+			
+			System.out.println("");
+			System.out.println("");
+		}
+
 	}
 }

@@ -148,6 +148,7 @@ public class EQ2_HRAScoreKeepItUp extends BaseClass {
 	@Test(priority = 4, dependsOnMethods = "hraKeepItUpScenario")
 	public void verifyTalkToCare(String coverage) throws Exception {
 
+		try {
 		System.out.println(
 				"************* EQ2 - HRA Form Complete IN Thank you page Talk to Care Advocate ********************");
 
@@ -192,6 +193,20 @@ public class EQ2_HRAScoreKeepItUp extends BaseClass {
 		System.out.println("***********************************************************");
 
 		System.out.println("***********************************************************");
+		
+		System.out.println("");
+		System.out.println("");
+		
+		}
+		
+		catch(Exception ex) {
+			System.out.println("******************** FAILED ***************************************");
+			
+			System.out.println("");
+			System.out.println("");
+		}
+
+		
 
 	}
 
