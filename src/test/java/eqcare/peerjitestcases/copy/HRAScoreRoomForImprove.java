@@ -147,7 +147,7 @@ public class HRAScoreRoomForImprove extends BaseClass {
 	@Test(priority = 4, dependsOnMethods = "roomForImprovementScenario3")
 	public void verifyTalkToCare() throws Exception {
 
-		// ****************** EQ **************************** //
+		// ****************** EQ-3 **************************** //
 
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
 
