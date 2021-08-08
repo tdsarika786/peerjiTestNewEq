@@ -40,7 +40,7 @@ public class EQ1_HRAScoreDoingVeryWellEmail extends BaseClass {
 
 		home.verifyUrl();
 		
-		System.out.println("*******START HRAScoreDoingVeryWellEmail_EQ1 *********** sarikaqa7+emp70@gmail.com");
+		System.out.println("#############START HRAScoreDoingVeryWellEmail_EQ1###############sarikaqa7+emp70@gmail.com");
 
 	}
 
@@ -76,7 +76,7 @@ public class EQ1_HRAScoreDoingVeryWellEmail extends BaseClass {
 
 		String scoreLabel = "You’re doing very well.";
 		
-		System.out.println("********HRA Doing Very Well Scenario**********");
+		System.out.println("Score Label should be********HRA Doing Very Well Scenario**********");
 
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
 
@@ -136,42 +136,22 @@ public class EQ1_HRAScoreDoingVeryWellEmail extends BaseClass {
 		
 		System.out.println("11 - Score pop up close");
 
-		System.out.println("*******END***********");
-
 	}
 	@Parameters({ "Coverage"})
 	@Test(priority = 4, dependsOnMethods = "hraDoingVeryWellScenario")
 	public void verifyTalkToCare(String coverage) throws Exception {
 		
-		System.out.println("// ****************** EQ-1 **************************** //");
+		System.out.println("// ****************** EQ 1 Talk To Care from Home Page **************************** //");
 
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
 
 		home1 = PageFactory.initElements(driver, HomePage.class);
 
-		home.talkToCare();
+		intakeForm.startLifeJourneyVisit();
+		
+		System.out.println("12 - Started life journey visit");
 
-		//String coverage = "LJ";
-
-		if (coverage.equalsIgnoreCase("EQ")) {
-			
-			System.out.println("Covergae Type "+coverage );
-			home1.deviceCheckHRA();
-
-			intake.fillIntakeForm();
-
-			System.out.println("************* 12-Regular Fill Intake form ********************");
-		} else if (coverage.equalsIgnoreCase("LJ")) {
-			
-			System.out.println("Covergae Type "+coverage );
-
-			intakeForm.startLifeJourneyVisit();
-
-			System.out.println("************* 12 LJ  Filling INTAKE FORM ********************");
-
-		}
-
-		System.out.println("*******END***********");
+		System.out.println("############# END EQ1_HRAScoreDoingVeryWellEmail #########");
 
 	}
 	
