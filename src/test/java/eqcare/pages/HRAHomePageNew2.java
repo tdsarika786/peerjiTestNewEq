@@ -441,7 +441,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 	
 	public void hraCompletionPage1(String scoreLabel) {
 		
-		Utility.wait(5);
+		Utility.wait(10);
 
 		Utility.waitForWebElement(driver, hraThankYouImg);
 

@@ -151,6 +151,8 @@ public class HRAScoreKeepEyeOnIt_EQ1 extends BaseClass {
 		//String coverage = "LJ";
 
 		if (coverage.equalsIgnoreCase("EQ")) {
+			
+			System.out.println("Covergae Type "+coverage );
 			// home.talkToCare();
 
 			System.out.println("************* 11-  DEVICE CHECK********************");
@@ -164,6 +166,8 @@ public class HRAScoreKeepEyeOnIt_EQ1 extends BaseClass {
 		}
 
 		else if (coverage.equalsIgnoreCase("LJ")) {
+			
+			System.out.println("Covergae Type "+coverage );
 
 			intakeForm.deviceCheck();
 

@@ -159,12 +159,16 @@ public class HRAScoreRoomForImprove_EQ3 extends BaseClass {
 		//String coverage = "LJ";
 
 		if (coverage.equalsIgnoreCase("EQ")) {
+			
+			System.out.println("Covergae Type "+coverage );
 			// home1.deviceCheck();
 
 			intake.fillIntakeForm();
 
 			System.out.println("************* 12-Regular Fill Intake form ********************");
 		} else if (coverage.equalsIgnoreCase("LJ")) {
+			
+			System.out.println("Covergae Type "+coverage );
 
 			intakeForm.deviceCheck();
 
