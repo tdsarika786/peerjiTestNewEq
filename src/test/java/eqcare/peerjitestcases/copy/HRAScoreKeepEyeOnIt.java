@@ -143,17 +143,35 @@ public class HRAScoreKeepEyeOnIt extends BaseClass {
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
 
 		home1 = PageFactory.initElements(driver, HomePage.class);
+		
+		String coverage="LJ";
+		
+		if (coverage.equalsIgnoreCase("EQ")) {
+			// home.talkToCare();
 
-		// home.talkToCare();
+			System.out.println("************* 11- DEVICE CHECK********************");
 
-		System.out.println("************* 11- DEVICE CHECK********************");
+			// home1.deviceCheck();
 
-		// home1.deviceCheck();
+			intake.fillIntakeForm();
 
-		intake.fillIntakeForm();
+			System.out.println("************* 11- INTAKE FORM ********************");
 
-		System.out.println("************* 11- INTAKE FORM ********************");
+		}
+		
+		else if (coverage.equalsIgnoreCase("LJ")) {
+			
+			//intakeForm.deviceCheck();
+			
+			intakeForm.hraLifeJourneyVisit();
+			
+			System.out.println("************* 11- INTAKE FORM ********************");
 
+		}
+		
+		
+
+		
 		System.out.println("*******END***********");
 
 	}
