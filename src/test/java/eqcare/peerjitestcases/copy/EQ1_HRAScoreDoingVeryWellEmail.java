@@ -24,7 +24,7 @@ public class EQ1_HRAScoreDoingVeryWellEmail extends BaseClass {
 	ClinicPage clinic;
 	IntakeFormPage intake;
 	HomePage home1;
-	
+
 	@Parameters({ "Email", "Password" })
 	@Test(priority = 1)
 	public void verifyPage(String email, String password) throws Exception {
@@ -39,8 +39,9 @@ public class EQ1_HRAScoreDoingVeryWellEmail extends BaseClass {
 		home.navigateToHomePage();
 
 		home.verifyUrl();
-		
-		System.out.println("#############START HRAScoreDoingVeryWellEmail_EQ1###############sarikaqa7+emp70@gmail.com");
+
+		System.out
+				.println("############# START HRAScoreDoingVeryWellEmail_EQ1 ###############sarikaqa7+emp70@gmail.com");
 
 	}
 
@@ -75,12 +76,12 @@ public class EQ1_HRAScoreDoingVeryWellEmail extends BaseClass {
 		String noDrinks = "10";
 
 		String scoreLabel = "You’re doing very well.";
-		
+
 		System.out.println("Score Label should be********HRA Doing Very Well Scenario**********");
 
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
 
-		System.out.println("1-HRA PhysicalIntakeForms Ques1" + " " + height + " " + weight + " " + waist);
+		System.out.println("1- HRA PhysicalIntakeForms Ques1" + " " + height + " " + weight + " " + waist);
 
 		home.verifyHRAPhysicalIntakeFormsQues2(options[0]);
 
@@ -131,30 +132,52 @@ public class EQ1_HRAScoreDoingVeryWellEmail extends BaseClass {
 		home.hraCompletionPage(scoreLabel);
 
 		System.out.println("10- HRA Completition");
-		
+
 		home.scoreModalClose();
-		
+
 		System.out.println("11 - Score pop up close");
 
 	}
-	@Parameters({ "Coverage"})
+
+	@Parameters({ "Coverage" })
 	@Test(priority = 4, dependsOnMethods = "hraDoingVeryWellScenario")
 	public void verifyTalkToCare(String coverage) throws Exception {
-		
+
 		System.out.println("// ****************** EQ 1 Talk To Care from Home Page **************************** //");
 
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
 
 		home1 = PageFactory.initElements(driver, HomePage.class);
 
-		intakeForm.startLifeJourneyVisit();
-		
-		System.out.println("12 - Started life journey visit");
+		if (coverage.equalsIgnoreCase("EQ")) {
+
+			System.out.println("Covergae Type " + coverage);
+			
+			home.deviceCheck();
+			
+			intake.fillIntakeForm();
+			
+			System.out.println("12- Regular Fill Intake form");
+		}
+
+		else if (coverage.equalsIgnoreCase("LJ")) {
+
+			System.out.println("Covergae Type - " + coverage);
+
+			intakeForm.startLifeJourneyVisit();
+
+			System.out.println("12 - Started life journey visit");
+		}
 
 		System.out.println("############# END EQ1_HRAScoreDoingVeryWellEmail #########");
+		
+		System.out.println("***********************************************************");
+		
+		System.out.println("***********************************************************");
+
 
 	}
-	
+
 	@Test(priority = 2, dependsOnMethods = "verifyPage", enabled = false)
 	public void verifyHRAPages() throws Exception {
 
@@ -171,6 +194,5 @@ public class EQ1_HRAScoreDoingVeryWellEmail extends BaseClass {
 		// home.verifyMedical();
 
 	}
-
 
 }

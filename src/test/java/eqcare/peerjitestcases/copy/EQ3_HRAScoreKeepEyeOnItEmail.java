@@ -79,7 +79,7 @@ public class EQ3_HRAScoreKeepEyeOnItEmail extends BaseClass {
 
 		String scoreLabel = "Keep an eye on it.";
 
-		System.out.println("********HRA Keep Eye On It Scenario**********");
+		System.out.println("Score Label should be********HRA Keep Eye On It Scenario**********");
 
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
 
@@ -180,6 +180,10 @@ public class EQ3_HRAScoreKeepEyeOnItEmail extends BaseClass {
 		}
 
 		System.out.println("######### END EQ4_HRAScoreRoomForImproveEmail #######");
+		
+	System.out.println("***********************************************************");
+		
+		System.out.println("***********************************************************");
 
 	}
 }

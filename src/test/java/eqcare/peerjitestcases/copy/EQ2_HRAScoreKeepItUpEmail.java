@@ -79,7 +79,7 @@ public class EQ2_HRAScoreKeepItUpEmail extends BaseClass {
 
 		String scoreLabel = "Keep it up.";
 
-		System.out.println("Score Label should be********HRA Keep It Up **********");
+		System.out.println("Score Label should be ********HRA Keep It Up **********");
 
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
 
@@ -181,6 +181,10 @@ public class EQ2_HRAScoreKeepItUpEmail extends BaseClass {
 		}
 
 		System.out.println("######### END EQ2_HRAScoreKeepItUpEmail ###########");
+		
+	System.out.println("***********************************************************");
+		
+		System.out.println("***********************************************************");
 
 	}
 

@@ -354,7 +354,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 	By hraThankyouText = By.xpath("//p[contains(text(), 'Thank you for filling')]");
 
-	By viewHealthScoreLink = By.xpath("//a[contains(text(), 'View Health Scor')]");
+	By viewHealthScoreLink = By.xpath("//a[contains(text(), 'View Health Score')]");
 
 	// Close button
 	By closeCTA = By.xpath("(//div[@class='close-button'])[1]");
@@ -438,9 +438,9 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		Utility.navigateToURL(driver, "https://patient.eqserviceqa1.eqcaredev.com/hra/content-library");
 
 	}
-	
+
 	public void hraCompletionPage1(String scoreLabel) {
-		
+
 		Utility.wait(10);
 
 		Utility.waitForWebElement(driver, hraThankYouImg);
@@ -452,27 +452,27 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		Utility.waitForWebElement(driver, talkToCareLink);
 
 		viewScoreHRAComplete(scoreLabel);
-		
+
 		Utility.waitForWebElement(driver, closeCTA).click();
-		
+
 		Utility.waitForWebElement(driver, scorePopUpClick).click();
-		
-		System.out.println("-------- SCORE POP UP CLICK -------");
-		
+
+		System.out.println("10.1 View Score pop closed");
+
 		Utility.waitForWebElement(driver, talkToCareLink).click();
+
+		System.out.println("10.2 On Home Click on Score pop up, In modal CLICK TALK TO CARE ADVOCATE");
 
 		Utility.wait(5);
 
 		String url = driver.getCurrentUrl();
 
 		System.out.println("URL " + url);
-		
-		System.out.println("-------- TALK TO CARE ADVOCATE -------");
 
 	}
 
 	public void hraCompletionPage(String scoreLabel) {
-		
+
 		Utility.wait(10);
 
 		Utility.waitForWebElement(driver, hraThankYouImg);
@@ -486,9 +486,9 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		viewScoreHRAComplete(scoreLabel);
 
 	}
-	
+
 	public void hraCompletionPageAndTalkToCare() {
-		
+
 		Utility.wait(10);
 
 		Utility.waitForWebElement(driver, hraThankYouImg);
@@ -498,24 +498,26 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		Utility.waitForWebElement(driver, hraThankyouText);
 
 		Utility.waitForWebElement(driver, talkToCareLink).click();
-		
+
 		Utility.wait(5);
 
 		String url = driver.getCurrentUrl();
 
 		System.out.println("URL " + url);
-		
-		
 
-		//viewScoreHRAComplete(scoreLabel);
+		// viewScoreHRAComplete(scoreLabel);
 
 	}
-	
+
 	public void viewScoreHRAComplete(String scoreLabel) {
-		
+
+		System.out.println("View Health Score");
+
 		Utility.waitForWebElement(driver, viewHealthScoreLink).click();
 
 		Utility.wait(5);
+
+		System.out.println("View Health Score");
 
 		String getScore = Utility.waitForWebElement(driver, getScoreLabel).getText();
 
@@ -564,7 +566,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 		Utility.waitForWebElement(driver, updateMyAnswerScoreLink);
 
-		//Utility.waitForWebElement(driver, talkToCareLink);
+		// Utility.waitForWebElement(driver, talkToCareLink);
 
 		Utility.waitForWebElement(driver, calculationTab).click();
 
@@ -606,9 +608,9 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		 */
 
 		// Utility.waitForWebElement(driver, closeCTA).click();
-		
+
 	}
-	
+
 	public void scoreModalClose() {
 		Utility.waitForWebElement(driver, closeCTA).click();
 	}
@@ -638,7 +640,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		Utility.waitForWebElement(driver, physicalGuideTabActive).click();
 
 		Utility.waitForWebElement(driver, physicalGuideTabSitting).click();
-		
+
 		Utility.waitForWebElement(driver, closeCTA).click();
 
 	}
@@ -1610,7 +1612,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				}
 
 			}
-			
+
 			System.out.println("Medical Ques 1");
 		}
 
@@ -1641,7 +1643,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				}
 
 			}
-			
+
 			System.out.println("Medical Ques 2");
 		}
 
@@ -1672,7 +1674,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				}
 
 			}
-			
+
 			System.out.println("Medical Ques 3");
 		}
 
@@ -1703,7 +1705,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				}
 
 			}
-			
+
 			System.out.println("Medical Ques 4");
 		}
 
@@ -1734,7 +1736,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				}
 
 			}
-			
+
 			System.out.println("Medical Ques 5");
 		}
 
@@ -1765,7 +1767,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 				}
 
 			}
-			
+
 			System.out.println("Medical Ques 6");
 		}
 
@@ -1801,10 +1803,6 @@ public class HRAHomePageNew2 extends runWithAttachments {
 			}
 			System.out.println("Medical Ques 8");
 		}
-		
-		
-
-	
 
 	}
 

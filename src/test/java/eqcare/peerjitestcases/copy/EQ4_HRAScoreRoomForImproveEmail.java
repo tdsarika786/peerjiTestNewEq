@@ -82,7 +82,7 @@ public class EQ4_HRAScoreRoomForImproveEmail extends BaseClass {
 
 		String scoreLabel = "There’s room for improvement.";
 
-		System.out.println("********HRA Room for improvement. **********");
+		System.out.println("Score Label should be********HRA Room for improvement. **********");
 
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
 
@@ -138,17 +138,14 @@ public class EQ4_HRAScoreRoomForImproveEmail extends BaseClass {
 
 		System.out.println("10- HRA Completition Form");
 
-		System.out.println("************* 11- EQ - HRA Form Complete\r\n" + "- View Score Modal\r\n"
-				+ "- In modal CLICK TALK TO CARE ADVOCATE********************");
-
+		
 	}
 
 	@Parameters({ "Coverage" })
 	@Test(priority = 4, dependsOnMethods = "roomForImprovementScenario3")
 	public void verifyTalkToCare(String coverage) throws Exception {
 
-		System.out.println(
-				"************* EQ4 - HRA Form Complete, View Score Modal, In modal CLICK TALK TO CARE ADVOCATE ********************");
+		System.out.println("********EQ - HRA Form Complete View Score Modal In modal CLICK TALK TO CARE ADVOCATE");
 
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
 
@@ -203,6 +200,10 @@ public class EQ4_HRAScoreRoomForImproveEmail extends BaseClass {
 		home.verifyHRALifeStyle();
 
 		// home.verifyMedical();
+		
+	System.out.println("***********************************************************");
+		
+		System.out.println("***********************************************************");
 
 	}
 
