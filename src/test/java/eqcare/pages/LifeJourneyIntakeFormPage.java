@@ -492,7 +492,9 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 	
 	public void hraLifeJourneyVisit() {
 		
-		fillIntakeFormLifeJourney();
+		Utility.waitForWebElement(driver, lifeJourneyreasonVisitInput).sendKeys("Test Visit by Sarika Peerji");
+
+		Utility.waitForWebElement(driver, reasonVisitNextStep).click();
 
 		// EDucation
 

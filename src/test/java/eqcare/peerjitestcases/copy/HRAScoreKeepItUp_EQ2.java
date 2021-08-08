@@ -16,7 +16,7 @@ import eqcare.pages.ClinicPage;
 import eqcare.factories.DataProviderFactory;
 import eqcare.pages.copy.BaseClass;
 
-public class HRAScoreKeepItUp extends BaseClass {
+public class HRAScoreKeepItUp_EQ2 extends BaseClass {
 
 	LoginPage login;
 	HRAHomePageNew2 home;
