@@ -136,7 +136,8 @@ public class HRAScoreKeepItUp extends BaseClass {
 		System.out.println("10-HRA Completition");
 
 		System.out.println(
-				"************* 11-HRA Form Complete page and THERE ONLY Talk to care advocate ********************");
+				"************* 11- - HRA Form Complete\r\n"
+				+ "- THERE ONLY Talk to care advocate********************");
 
 	}
 
@@ -159,7 +160,7 @@ public class HRAScoreKeepItUp extends BaseClass {
 
 			intake.fillIntakeForm();
 
-			System.out.println("************* 12-EQ Regular Fill Intake form ********************");
+			System.out.println("************* 12- Regular Fill Intake form ********************");
 
 		}
 

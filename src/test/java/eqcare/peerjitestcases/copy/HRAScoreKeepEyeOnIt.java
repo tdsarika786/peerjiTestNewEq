@@ -141,7 +141,7 @@ public class HRAScoreKeepEyeOnIt extends BaseClass {
 	@Test(priority = 4, dependsOnMethods = "hraKeepEyeOnItScenario")
 	public void verifyTalkToCare() throws Exception {
 
-		// ****************** EQ 1 **************************** //
+		System.out.println("// ****************** EQ 1 **************************** //");
 
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
 
@@ -152,19 +152,19 @@ public class HRAScoreKeepEyeOnIt extends BaseClass {
 		if (coverage.equalsIgnoreCase("EQ")) {
 			// home.talkToCare();
 
-			System.out.println("************* 11- EQ DEVICE CHECK********************");
+			System.out.println("************* 11-  DEVICE CHECK********************");
 
 			// home1.deviceCheck();
 
 			intake.fillIntakeForm();
 
-			System.out.println("************* 11- EQ Regular Fiilling INTAKE FORM ********************");
+			System.out.println("************* 11-  Regular Fiilling INTAKE FORM ********************");
 
 		}
 
 		else if (coverage.equalsIgnoreCase("LJ")) {
 
-			// intakeForm.deviceCheck();
+			intakeForm.deviceCheck();
 
 			intakeForm.hraLifeJourneyVisit();
 

@@ -453,6 +453,8 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 		viewScoreHRAComplete(scoreLabel);
 		
+		Utility.waitForWebElement(driver, closeCTA).click();
+		
 		Utility.waitForWebElement(driver, scorePopUpClick).click();
 		
 		System.out.println("-------- SCORE POP UP CLICK -------");
