@@ -194,6 +194,8 @@ public class EQ1_HRAScoreDoingVeryWellEmail extends BaseClass {
 			
 			System.out.println("");
 			System.out.println("");
+			
+			throw ex;
 		}
 
 		

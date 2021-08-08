@@ -204,6 +204,8 @@ public class EQ3_HRAScoreKeepEyeOnIt extends BaseClass {
 			
 			System.out.println("");
 			System.out.println("");
+			
+			throw ex;
 		}
 	}
 

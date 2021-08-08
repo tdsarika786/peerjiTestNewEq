@@ -204,6 +204,8 @@ public class EQ2_HRAScoreKeepItUp extends BaseClass {
 			
 			System.out.println("");
 			System.out.println("");
+			
+			throw ex;
 		}
 
 		

@@ -189,7 +189,7 @@ public class EQ1_HRAScoreDoingVeryWell extends BaseClass {
 
 		}
 
-		System.out.println("######### END EQ2_HRAScoreKeepItUpEmail ###########");
+		System.out.println("######### END hraDoingVeryWellScenario ###########");
 
 		System.out.println("***********************************************************");
 
@@ -205,6 +205,8 @@ public class EQ1_HRAScoreDoingVeryWell extends BaseClass {
 			
 			System.out.println("");
 			System.out.println("");
+			
+			throw ex;
 		}
 
 	}

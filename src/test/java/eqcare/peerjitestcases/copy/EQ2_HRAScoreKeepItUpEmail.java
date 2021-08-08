@@ -203,6 +203,8 @@ public class EQ2_HRAScoreKeepItUpEmail extends BaseClass {
 			
 			System.out.println("");
 			System.out.println("");
+			
+			throw ex;
 		}
 	}
 

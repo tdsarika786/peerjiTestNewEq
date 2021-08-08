@@ -204,6 +204,8 @@ public class EQ4_HRAScoreRoomForImproveEmail extends BaseClass {
 			
 			System.out.println("");
 			System.out.println("");
+			
+			throw ex;
 		}
 
 	}

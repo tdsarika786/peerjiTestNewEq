@@ -202,6 +202,8 @@ public class EQ3_HRAScoreKeepEyeOnItEmail extends BaseClass {
 			
 			System.out.println("");
 			System.out.println("");
+			
+			throw ex;
 		}
 
 	}
