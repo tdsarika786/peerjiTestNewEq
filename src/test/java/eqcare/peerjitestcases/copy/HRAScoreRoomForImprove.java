@@ -39,8 +39,8 @@ public class HRAScoreRoomForImprove extends BaseClass {
 		home.navigateToHomePage();
 
 		home.verifyUrl();
-		
-		System.out.println("*******START Score Room for Improve *********** "+email);
+
+		System.out.println("*******START Score Room for Improve *********** " + email);
 
 	}
 
@@ -138,39 +138,38 @@ public class HRAScoreRoomForImprove extends BaseClass {
 		home.hraCompletionPage(scoreLabel);
 
 		System.out.println("10- HRA Completition Form");
-		
-		System.out.println("************* 11-Talk to care advocate AFTER VIEW SCORE MODAL AND CLICK TALK TO CARE ADVOCATE ********************");
-		
 
+		System.out.println("************* 11- EQ - HRA Form Complete\r\n" + "- View Score Modal\r\n"
+				+ "- In modal CLICK TALK TO CARE ADVOCATE********************");
 
 	}
-	
+
 	@Test(priority = 4, dependsOnMethods = "roomForImprovementScenario3")
 	public void verifyTalkToCare() throws Exception {
-		
-		intake = PageFactory.initElements(driver, IntakeFormPage.class);
-		
-		home1 = PageFactory.initElements(driver, HomePage.class);
-		
-		home.talkToCare();
-		
-		String coverage = "LJ";
-		
-		if (coverage.equalsIgnoreCase("EQ")) {
-		//home1.deviceCheck();
-		
-		intake.fillIntakeForm();
-		
 
-		System.out.println("************* 12-Regular Fill Intake form ********************");
-		}
-		else if (coverage.equalsIgnoreCase("LJ")) {
+		// ****************** EQ **************************** //
+
+		intake = PageFactory.initElements(driver, IntakeFormPage.class);
+
+		home1 = PageFactory.initElements(driver, HomePage.class);
+
+		home.talkToCare();
+
+		String coverage = "LJ";
+
+		if (coverage.equalsIgnoreCase("EQ")) {
+			// home1.deviceCheck();
+
+			intake.fillIntakeForm();
+
+			System.out.println("************* 12-Regular Fill Intake form ********************");
+		} else if (coverage.equalsIgnoreCase("LJ")) {
 
 			// intakeForm.deviceCheck();
 
 			intakeForm.hraLifeJourneyVisit();
 
-			System.out.println("************* 112 LJ  Filling INTAKE FORM ********************");
+			System.out.println("************* 12 LJ  Filling INTAKE FORM ********************");
 
 		}
 

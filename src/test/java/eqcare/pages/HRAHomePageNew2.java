@@ -603,7 +603,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		 * System.out.println("Assertion Pass " + getScore); }
 		 */
 
-		 Utility.waitForWebElement(driver, closeCTA).click();
+		// Utility.waitForWebElement(driver, closeCTA).click();
 		
 	}
 

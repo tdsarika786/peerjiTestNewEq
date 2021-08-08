@@ -143,6 +143,8 @@ public class HRAScoreKeepItUp extends BaseClass {
 	@Test(priority = 4, dependsOnMethods = "hraKeepItUpScenario")
 	public void verifyTalkToCare() throws Exception {
 
+		// ****************** EQ 2**************************** //
+
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
 
 		home1 = PageFactory.initElements(driver, HomePage.class);
@@ -165,9 +167,11 @@ public class HRAScoreKeepItUp extends BaseClass {
 
 			intakeForm.deviceCheck();
 
+			System.out.println("************* 12 Device CHeck ********************");
+
 			intakeForm.hraLifeJourneyVisit();
 
-			System.out.println("************* 112 LJ  Filling INTAKE FORM ********************");
+			System.out.println("************* 12 LJ  Filling INTAKE FORM ********************");
 
 		}
 
