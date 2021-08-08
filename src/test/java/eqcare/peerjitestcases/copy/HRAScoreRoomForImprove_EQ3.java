@@ -40,7 +40,7 @@ public class HRAScoreRoomForImprove_EQ3 extends BaseClass {
 
 		home.verifyUrl();
 
-		System.out.println("*******START Score Room for Improve *********** " + email);
+		System.out.println("*******START HRAScoreRoomForImprove_EQ3 *********** " + email);
 
 	}
 
@@ -146,8 +146,8 @@ public class HRAScoreRoomForImprove_EQ3 extends BaseClass {
 
 	@Test(priority = 4, dependsOnMethods = "roomForImprovementScenario3")
 	public void verifyTalkToCare() throws Exception {
-
-		// ****************** EQ-3 **************************** //
+		
+		System.out.println("// ****************** EQ-3 **************************** //");
 
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
 

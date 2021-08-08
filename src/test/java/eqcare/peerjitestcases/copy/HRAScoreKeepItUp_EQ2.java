@@ -40,7 +40,7 @@ public class HRAScoreKeepItUp_EQ2 extends BaseClass {
 
 		home.verifyUrl();
 
-		System.out.println("*******START Keep IT UP *********** " + email);
+		System.out.println("******* START HRAScoreKeepItUp_EQ2 *********** " + email);
 
 	}
 
