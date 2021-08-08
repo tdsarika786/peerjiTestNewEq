@@ -854,7 +854,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 			JavascriptExecutor executor1 = (JavascriptExecutor) driver;
 			executor1.executeScript("arguments[0].click()", button);
 
-			Utility.waitForWebElement(driver, skipHRAFormButton);
+			Utility.waitForWebElement(driver, skipHRAFormButton).click();
 
 			//Utility.waitForWebElement(driver, startHRAFormButton).click();
 
