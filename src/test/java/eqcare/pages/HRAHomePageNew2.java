@@ -836,6 +836,37 @@ public class HRAHomePageNew2 extends runWithAttachments {
 			Utility.waitForWebElement(driver, updateMyAnswerLink).click();
 		}
 	}
+	
+
+	public void verifyHRAIntroductionPageTalkCare() throws Exception {
+
+		try {
+			// Utility.waitForWebElement(driver, healthScoreButton).click();
+
+			Utility.waitForWebElement(driver, introPageImage);
+
+			Utility.waitForWebElement(driver, introPageHeader);
+
+			Utility.waitForWebElement(driver, introPageMinsText);
+
+			WebElement button = driver.findElement(By.xpath("//input[@type='checkbox']"));
+
+			JavascriptExecutor executor1 = (JavascriptExecutor) driver;
+			executor1.executeScript("arguments[0].click()", button);
+
+			Utility.waitForWebElement(driver, skipHRAFormButton);
+
+			//Utility.waitForWebElement(driver, startHRAFormButton).click();
+
+			// runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 12,
+			// 0), "0");
+		} catch (Exception ex) {
+			// runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 12,
+			// 0), "7");
+			throw ex;
+
+		}
+	}
 
 	public void verifyHRAIntroductionPage() throws Exception {
 
