@@ -144,7 +144,7 @@ public class HRAScoreKeepItUp extends BaseClass {
 	@Test(priority = 4, dependsOnMethods = "hraKeepItUpScenario")
 	public void verifyTalkToCare() throws Exception {
 
-		// ****************** EQ 2**************************** //
+		System.out.println("// ****************** EQ-2 **************************** //");
 
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
 
