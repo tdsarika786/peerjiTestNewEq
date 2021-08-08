@@ -81,7 +81,7 @@ public class EQ4_HRAScoreKeepItUp extends BaseClass {
 
 		String scoreLabel = "Keep it up.";
 
-		System.out.println("********HRA Keep It Up **********");
+		System.out.println("Score Label should be********HRA Keep It Up **********");
 
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
 
@@ -137,15 +137,14 @@ public class EQ4_HRAScoreKeepItUp extends BaseClass {
 
 		System.out.println("10- HRA Completition Form");
 
-		System.out.println("************* 11- EQ - HRA Form Complete\r\n" + "- View Score Modal\r\n"
-				+ "- In modal CLICK TALK TO CARE ADVOCATE********************");
+		
 	}
 
 	@Parameters({ "Coverage"})
 	@Test(priority = 4, dependsOnMethods = "hraKeepItUpScenario")
 	public void verifyTalkToCare(String coverage) throws Exception {
 		
-		System.out.println("// ****************** EQ-4 **************************** //");
+		System.out.println("********EQ - HRA Form Complete View Score Modal In modal CLICK TALK TO CARE ADVOCATE");
 
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
 
@@ -153,31 +152,38 @@ public class EQ4_HRAScoreKeepItUp extends BaseClass {
 
 		home.talkToCare();
 
-		//String coverage = "LJ";
+		// String coverage = "LJ";
 
 		if (coverage.equalsIgnoreCase("EQ")) {
-			
-			System.out.println("Covergae Type "+coverage );
-			home1.deviceCheck();
+
+			System.out.println("Covergae Type " + coverage);
+
+			home1.deviceCheckHRA();
+
+			System.out.println("11-Device check page");
 
 			intake.fillIntakeForm();
 
-			System.out.println("************* 12-Regular Fill Intake form ********************");
+			System.out.println("12- Regular Fill Intake form");
+
 		} else if (coverage.equalsIgnoreCase("LJ")) {
-			
-			System.out.println("Covergae Type "+coverage );
+
+			System.out.println("Covergae Type " + coverage);
 
 			intakeForm.deviceCheck();
 
+			System.out.println("11-Life Journey Device check page");
+
 			intakeForm.hraLifeJourneyVisit();
 
-			System.out.println("************* 12 LJ  Filling INTAKE FORM ********************");
+			System.out.println("12- Life Journey Fill Intake form");
 
 		}
 
-		System.out.println("*******END***********");
+		System.out.println("############### END EQ4_HRAScoreRoomForImproveEmail ############");
 
+		System.out.println("***********************************************************");
+
+		System.out.println("***********************************************************");
 	}
-
-
 }

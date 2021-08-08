@@ -85,7 +85,7 @@ public class EQ4_HRAScoreRoomForImproveEmail extends BaseClass {
 
 		String scoreLabel = "There’s room for improvement.";
 
-		System.out.println("Score Label should be********HRA Room for improvement. **********");
+		System.out.println("Score Label should be ********HRA Room for improvement. **********");
 
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
 
@@ -141,7 +141,6 @@ public class EQ4_HRAScoreRoomForImproveEmail extends BaseClass {
 
 		System.out.println("10- HRA Completition Form");
 
-		
 	}
 
 	@Parameters({ "Coverage" })
@@ -170,13 +169,12 @@ public class EQ4_HRAScoreRoomForImproveEmail extends BaseClass {
 
 			System.out.println("12- Regular Fill Intake form");
 
-			
 		} else if (coverage.equalsIgnoreCase("LJ")) {
 
 			System.out.println("Covergae Type " + coverage);
 
 			intakeForm.deviceCheck();
-			
+
 			System.out.println("11-Life Journey Device check page");
 
 			intakeForm.hraLifeJourneyVisit();
@@ -184,13 +182,11 @@ public class EQ4_HRAScoreRoomForImproveEmail extends BaseClass {
 			System.out.println("12- Life Journey Fill Intake form");
 
 		}
-		
-
 
 		System.out.println("############### END EQ4_HRAScoreRoomForImproveEmail ############");
-		
-System.out.println("***********************************************************");
-		
+
+		System.out.println("***********************************************************");
+
 		System.out.println("***********************************************************");
 
 	}
