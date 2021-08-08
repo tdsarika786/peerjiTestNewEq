@@ -39,10 +39,14 @@ public class EQ1_HRAScoreDoingVeryWellEmail extends BaseClass {
 		home.navigateToHomePage();
 
 		home.verifyUrl();
+		
+	System.out.println("***********************************************************");
+		
+		
 
 		System.out
-				.println("############# START HRAScoreDoingVeryWellEmail_EQ1 ###############sarikaqa7+emp70@gmail.com");
-
+				.println("############# START HRAScoreDoingVeryWellEmail_EQ1 ############### sarikaqa7+emp70@gmail.com");
+		System.out.println("***********************************************************");
 	}
 
 	@Test(priority = 2, dependsOnMethods = "verifyPage")
@@ -77,7 +81,7 @@ public class EQ1_HRAScoreDoingVeryWellEmail extends BaseClass {
 
 		String scoreLabel = "You’re doing very well.";
 
-		System.out.println("Score Label should be********HRA Doing Very Well Scenario**********");
+		System.out.println("Score Label should be ********HRA Doing Very Well Scenario**********");
 
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
 

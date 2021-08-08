@@ -39,9 +39,11 @@ public class EQ4_HRAScoreKeepItUp extends BaseClass {
 		home.navigateToHomePage();
 
 		home.verifyUrl();
+		
+		System.out.println("***********************************************************");
 
-		System.out.println("******* START HRAScoreKeepItUp_EQ4 *********** " + email);
-
+		System.out.println("######## START HRAScoreKeepItUp_EQ4 #############" + email);
+		System.out.println("***********************************************************");
 	}
 
 	@Test(priority = 2, dependsOnMethods = "verifyPage")

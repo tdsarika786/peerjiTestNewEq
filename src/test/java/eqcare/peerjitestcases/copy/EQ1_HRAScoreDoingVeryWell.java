@@ -39,8 +39,14 @@ public class EQ1_HRAScoreDoingVeryWell extends BaseClass {
 		home.navigateToHomePage();
 
 		home.verifyUrl();
+		
+	
+		
+		System.out.println("***********************************************************");
 
-		System.out.println("*******START HRAScoreDoingVeryWell_EQ1 *********** " + email);
+		System.out.println("########## START HRAScoreDoingVeryWell_EQ1 ########## " + email);
+		
+		System.out.println("***********************************************************");
 
 	}
 
@@ -76,7 +82,7 @@ public class EQ1_HRAScoreDoingVeryWell extends BaseClass {
 
 		String scoreLabel = "You’re doing very well.";
 
-		System.out.println("********HRA Doing Very Well Scenario**********");
+		System.out.println("Score Label should be ******** HRA Doing Very Well Scenario**********");
 
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
 
@@ -132,71 +138,59 @@ public class EQ1_HRAScoreDoingVeryWell extends BaseClass {
 
 		System.out.println("10-HRA Completition");
 
-		System.out.println(
-				"************* 11- - HRA Form Complete\r\n"
-				+ "- THERE ONLY Thank you page -> Talk to Care Advocate ********************");
+		
 
 
 	}
 
-	@Parameters({ "Coverage"})
-	@Test(priority = 4, dependsOnMethods = "hraDoingVeryWellScenario")
+	@Parameters({ "Coverage" })
+	@Test(priority = 4, dependsOnMethods = "hraKeepItUpScenario")
 	public void verifyTalkToCare(String coverage) throws Exception {
 
-		System.out.println("// ****************** EQ-1 **************************** //");
+		System.out.println(
+				"************* EQ2 - HRA Form Complete IN Thank you page Talk to Care Advocate ********************");
 
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
 
 		home1 = PageFactory.initElements(driver, HomePage.class);
 
-		//String coverage = "LJ";
+		// String coverage = "LJ";
 
 		if (coverage.equalsIgnoreCase("EQ")) {
-			
-			System.out.println("Covergae Type "+coverage );
+
+			System.out.println("Covergae Type " + coverage);
 
 			// home.hraCompletionPageAndTalkToCare();
 
 			home1.deviceCheckHRA();
 
+			System.out.println("11-Device check page");
+
 			intake.fillIntakeForm();
 
-			System.out.println("************* 12- Regular Fill Intake form ********************");
+			System.out.println("12- Regular Fill Intake form");
 
 		}
 
 		else if (coverage.equalsIgnoreCase("LJ")) {
-			
-			System.out.println("Covergae Type "+coverage );
+
+			System.out.println("Covergae Type " + coverage);
 
 			intakeForm.deviceCheck();
 
-			System.out.println("************* 12 Device CHeck ********************");
+			System.out.println("11-Life Journey Device check page");
 
 			intakeForm.hraLifeJourneyVisit();
 
-			System.out.println("************* 12 LJ  Filling INTAKE FORM ********************");
+			System.out.println("12- Life Journey Fill Intake form");
 
 		}
 
-		System.out.println("*******END***********");
+		System.out.println("######### END EQ2_HRAScoreKeepItUpEmail ###########");
+
+		System.out.println("***********************************************************");
+
+		System.out.println("***********************************************************");
 
 	}
-	@Test(priority = 2, dependsOnMethods = "verifyPage", enabled = false)
-	public void verifyHRAPages() throws Exception {
-
-		// home.navigateToHRAContentLibrary();
-
-		// home.verifyHRAContentLibrary();
-
-		home.navigateToHRAIntakePage();
-
-		home.verifyHRAPhysicalIntakeForms();
-
-		home.verifyHRALifeStyle();
-
-		// home.verifyMedical();
-
-	}
-
 }

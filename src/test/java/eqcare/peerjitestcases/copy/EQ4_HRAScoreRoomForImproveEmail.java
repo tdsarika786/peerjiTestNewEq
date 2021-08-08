@@ -39,8 +39,11 @@ public class EQ4_HRAScoreRoomForImproveEmail extends BaseClass {
 		home.navigateToHomePage();
 
 		home.verifyUrl();
+		
+		System.out.println("***********************************************************");
 
 		System.out.println("########## START HRAScoreRoomForImproveEmail_EQ4 ######### sarikaqa7+emp73@gmail.com ");
+		System.out.println("***********************************************************");
 	}
 
 	@Test(priority = 2, dependsOnMethods = "verifyPage")
@@ -181,8 +184,14 @@ public class EQ4_HRAScoreRoomForImproveEmail extends BaseClass {
 			System.out.println("12- Life Journey Fill Intake form");
 
 		}
+		
+
 
 		System.out.println("############### END EQ4_HRAScoreRoomForImproveEmail ############");
+		
+System.out.println("***********************************************************");
+		
+		System.out.println("***********************************************************");
 
 	}
 
@@ -201,9 +210,7 @@ public class EQ4_HRAScoreRoomForImproveEmail extends BaseClass {
 
 		// home.verifyMedical();
 		
-	System.out.println("***********************************************************");
-		
-		System.out.println("***********************************************************");
+	
 
 	}
 
