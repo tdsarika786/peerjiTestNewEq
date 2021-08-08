@@ -16,21 +16,21 @@ import eqcare.pages.ClinicPage;
 import eqcare.factories.DataProviderFactory;
 import eqcare.pages.copy.BaseClass;
 
-public class HRAScoreKeepItUpEmail extends BaseClass {
+public class HRAScoreDoingVeryWell_EQ1 extends BaseClass {
 
 	LoginPage login;
 	HRAHomePageNew2 home;
 	LifeJourneyIntakeFormPage intakeForm;
 	ClinicPage clinic;
-	IntakeFormPage intake;
 	HomePage home1;
+	IntakeFormPage intake;
 
 	@Parameters({ "Email", "Password" })
 	@Test(priority = 1)
 	public void verifyPage(String email, String password) throws Exception {
 		login = PageFactory.initElements(driver, LoginPage.class);
 
-		login.loginToApplication("sarikaqa7+emp71@gmail.com", "Sarika#123");
+		login.loginToApplication(email, password);
 
 		home = PageFactory.initElements(driver, HRAHomePageNew2.class);
 
@@ -39,8 +39,8 @@ public class HRAScoreKeepItUpEmail extends BaseClass {
 		home.navigateToHomePage();
 
 		home.verifyUrl();
-		
-		System.out.println("*******START Keep IT UP *********** sarikaqa7+emp71@gmail.com ");
+
+		System.out.println("*******START HRAScoreDoingVeryWell_EQ1 *********** " + email);
 
 	}
 
@@ -56,14 +56,11 @@ public class HRAScoreKeepItUpEmail extends BaseClass {
 	}
 
 	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage")
-	public void hraKeepItUpScenario() throws Exception {
+	public void hraDoingVeryWellScenario() throws Exception {
 
-		// Keep it up.
-		// 72%
-
-		String height = "154";
-		String weight = "40";
-		String waist = "80";
+		String height = "250";
+		String weight = "125";
+		String waist = "87";
 
 		String[] options = { "option1", "option2", "option3", "option4", "option5" };
 
@@ -71,51 +68,51 @@ public class HRAScoreKeepItUpEmail extends BaseClass {
 
 		String[] yesNoOption = { "yes", "no" };
 
-		String sleepHrs = "2";
+		String sleepHrs = "9";
 
 		String noSmokes = "10";
 
 		String noDrinks = "10";
 
-		String scoreLabel = "Keep it up.";
+		String scoreLabel = "You’re doing very well.";
 
-		System.out.println("********HRA Keep It Up **********");
+		System.out.println("********HRA Doing Very Well Scenario**********");
 
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
 
 		System.out.println("1-HRA PhysicalIntakeForms Ques1" + " " + height + " " + weight + " " + waist);
 
-		home.verifyHRAPhysicalIntakeFormsQues2("option3");
+		home.verifyHRAPhysicalIntakeFormsQues2(options[0]);
 
-		System.out.println("2-HRA PhysicalIntakeFormsQues2");
+		System.out.println("2- HRA PhysicalIntakeFormsQues2");
 
 		home.verifyHRAPhysicalIntakeFormsQues3(options[0]);
 
-		System.out.println("3-HRA PhysicalIntakeForms Ques3");
+		System.out.println("3- HRA PhysicalIntakeFormsQues3");
 
 		home.verifyHRALifeStyleQuesSleep1(sleepHrs);
 
-		System.out.println("4-HRALifeStyleQues Sleep1");
+		System.out.println("4- HRALifeStyleQuesSleep1");
 
-		home.verifyHRALifeStyleQuesSmoking2(options[1], noSmokes);
+		home.verifyHRALifeStyleQuesSmoking2(options[0], null);
 
-		System.out.println("5-HRA LifeStyleQues Smoking2");
+		System.out.println("5- HRA LifeStyleQuesSmoking2");
 
-		home.verifyHRALifeStyleQuesDrinking1(options[1], noDrinks);
+		home.verifyHRALifeStyleQuesDrinking1(options[0], null);
 
-		System.out.println("6-HRA LifeStyleQues Drinking1");
+		System.out.println("6- HRA LifeStyleQuesDrinking1");
 
-		home.verifyHRALifeStyleQuesStress(options[1]);
+		home.verifyHRALifeStyleQuesStress(options[0]);
 
-		System.out.println("7-HRA LifeStyleQues Stress1");
+		System.out.println("7- HRALifeStyleQuesStress");
 
-		home.verifyHRALifeStyleQuesHappiness(options[1]);
+		home.verifyHRALifeStyleQuesHappiness(options[0]);
 
-		System.out.println("8-HRA LifeStyle QuesHappiness1");
+		System.out.println("8- HRA LifeStyleQuesHappiness");
 
-		home.verifyMedical(medQues[0], yesNoOption[0], yesNoOption[1]);
+		home.verifyMedical(medQues[0], yesNoOption[1], yesNoOption[1]);
 
-		home.verifyMedical(medQues[1], yesNoOption[0], yesNoOption[1]);
+		home.verifyMedical(medQues[1], yesNoOption[1], yesNoOption[1]);
 
 		home.verifyMedical(medQues[2], yesNoOption[1], yesNoOption[1]);
 
@@ -129,7 +126,7 @@ public class HRAScoreKeepItUpEmail extends BaseClass {
 
 		home.verifyMedical(medQues[7], yesNoOption[1], yesNoOption[1]);
 
-		System.out.println("9-HRA Medical");
+		System.out.println("9- HRA Medical");
 
 		home.hraCompletionPageAndTalkToCare();
 
@@ -138,6 +135,7 @@ public class HRAScoreKeepItUpEmail extends BaseClass {
 		System.out.println(
 				"************* 11- - HRA Form Complete\r\n"
 				+ "- THERE ONLY Thank you page -> Talk to Care Advocate ********************");
+
 
 	}
 
@@ -182,6 +180,22 @@ public class HRAScoreKeepItUpEmail extends BaseClass {
 		}
 
 		System.out.println("*******END***********");
+
+	}
+	@Test(priority = 2, dependsOnMethods = "verifyPage", enabled = false)
+	public void verifyHRAPages() throws Exception {
+
+		// home.navigateToHRAContentLibrary();
+
+		// home.verifyHRAContentLibrary();
+
+		home.navigateToHRAIntakePage();
+
+		home.verifyHRAPhysicalIntakeForms();
+
+		home.verifyHRALifeStyle();
+
+		// home.verifyMedical();
 
 	}
 

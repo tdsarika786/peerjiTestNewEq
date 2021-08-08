@@ -608,6 +608,10 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		// Utility.waitForWebElement(driver, closeCTA).click();
 		
 	}
+	
+	public void scoreModalClose() {
+		Utility.waitForWebElement(driver, closeCTA).click();
+	}
 
 	public void scoreModal() {
 

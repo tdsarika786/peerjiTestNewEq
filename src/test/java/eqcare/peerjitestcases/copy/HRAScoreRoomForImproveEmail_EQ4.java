@@ -16,7 +16,7 @@ import eqcare.pages.ClinicPage;
 import eqcare.factories.DataProviderFactory;
 import eqcare.pages.copy.BaseClass;
 
-public class HRAScoreRoomForImproveEmail extends BaseClass {
+public class HRAScoreRoomForImproveEmail_EQ4 extends BaseClass {
 
 	LoginPage login;
 	HRAHomePageNew2 home;
@@ -40,7 +40,7 @@ public class HRAScoreRoomForImproveEmail extends BaseClass {
 
 		home.verifyUrl();
 
-		System.out.println("*******START Room for Improve *********** sarikaqa7+emp73@gmail.com ");
+		System.out.println("*******START HRAScoreRoomForImproveEmail_EQ4 *********** sarikaqa7+emp73@gmail.com ");
 	}
 
 	@Test(priority = 2, dependsOnMethods = "verifyPage")
@@ -160,7 +160,7 @@ public class HRAScoreRoomForImproveEmail extends BaseClass {
 		if (coverage.equalsIgnoreCase("EQ")) {
 			
 			System.out.println("Covergae Type "+coverage );
-			// home1.deviceCheck();
+			home1.deviceCheckHRA();
 
 			intake.fillIntakeForm();
 

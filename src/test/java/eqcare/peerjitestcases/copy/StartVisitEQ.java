@@ -67,7 +67,7 @@ public class StartVisitEQ extends BaseClass {
 
 		intake.fillIntakeForm();
 		
-		System.out.println("************* 3-device Check ********************");
+		System.out.println("************* 3-Intake Form ********************");
 
 		System.out.println("*************END ********************");
 	}

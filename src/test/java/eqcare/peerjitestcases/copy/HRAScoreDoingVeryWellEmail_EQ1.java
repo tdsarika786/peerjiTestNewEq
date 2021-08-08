@@ -7,6 +7,8 @@ import org.testng.annotations.Test;
 import NotRequiredClasses.ContactUsPage;
 
 import eqcare.pages.HRAHomePageNew2;
+import eqcare.pages.HomePage;
+import eqcare.pages.IntakeFormPage;
 import eqcare.pages.LifeJourneyIntakeFormPage;
 import eqcare.pages.LoginPage;
 import eqcare.pages.LogoutPage;
@@ -14,12 +16,14 @@ import eqcare.pages.ClinicPage;
 import eqcare.factories.DataProviderFactory;
 import eqcare.pages.copy.BaseClass;
 
-public class HRAScoreDoingVeryWellEmail extends BaseClass {
+public class HRAScoreDoingVeryWellEmail_EQ1 extends BaseClass {
 
 	LoginPage login;
 	HRAHomePageNew2 home;
 	LifeJourneyIntakeFormPage intakeForm;
 	ClinicPage clinic;
+	IntakeFormPage intake;
+	HomePage home1;
 	
 	@Parameters({ "Email", "Password" })
 	@Test(priority = 1)
@@ -36,7 +40,7 @@ public class HRAScoreDoingVeryWellEmail extends BaseClass {
 
 		home.verifyUrl();
 		
-		System.out.println("*******START HRA SCore Doing Very WEll *********** sarikaqa7+emp70@gmail.com");
+		System.out.println("*******START HRAScoreDoingVeryWellEmail_EQ1 *********** sarikaqa7+emp70@gmail.com");
 
 	}
 
@@ -127,11 +131,49 @@ public class HRAScoreDoingVeryWellEmail extends BaseClass {
 		home.hraCompletionPage(scoreLabel);
 
 		System.out.println("10- HRA Completition");
+		
+		home.scoreModalClose();
+		
+		System.out.println("11 - Score pop up close");
 
 		System.out.println("*******END***********");
 
 	}
+	@Parameters({ "Coverage"})
+	@Test(priority = 4, dependsOnMethods = "roomForImprovementScenario3")
+	public void verifyTalkToCare(String coverage) throws Exception {
+		
+		System.out.println("// ****************** EQ-1 **************************** //");
 
+		intake = PageFactory.initElements(driver, IntakeFormPage.class);
+
+		home1 = PageFactory.initElements(driver, HomePage.class);
+
+		home.talkToCare();
+
+		//String coverage = "LJ";
+
+		if (coverage.equalsIgnoreCase("EQ")) {
+			
+			System.out.println("Covergae Type "+coverage );
+			home1.deviceCheckHRA();
+
+			intake.fillIntakeForm();
+
+			System.out.println("************* 12-Regular Fill Intake form ********************");
+		} else if (coverage.equalsIgnoreCase("LJ")) {
+			
+			System.out.println("Covergae Type "+coverage );
+
+			intakeForm.startLifeJourneyVisit();
+
+			System.out.println("************* 12 LJ  Filling INTAKE FORM ********************");
+
+		}
+
+		System.out.println("*******END***********");
+
+	}
 	
 	@Test(priority = 2, dependsOnMethods = "verifyPage", enabled = false)
 	public void verifyHRAPages() throws Exception {

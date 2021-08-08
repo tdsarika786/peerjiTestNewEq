@@ -269,6 +269,41 @@ public class Novapeerji1733 extends BaseClass {
 
 		System.out.println("***************END*******************");
 	}
+	
+	@Parameters({ "SearchEmployer", "CoverageToken", "CoverageType" })
+	@Test(priority = 9, dependsOnMethods = "loginToApplication")
+	public void CreateEmployer8(String searchemployer, String coveragetoken, String coveragetype)
+			throws InterruptedException {
+
+		home = PageFactory.initElements(driver, NovaHomePage.class);
+
+		String searchemployer1 = "employer1";
+
+		/*
+		 * 
+		 * String searchemployer1 ="Sarika-Test-NewPCHRA1"; String groupNo ="PCHRA1";
+		 * String empID ="705";
+		 * 
+		 * home.createEmployer1733(searchemployer1,empID,null);
+		 * 
+		 * home.createCoverage1797(searchemployer1,null, "primary_care");
+		 * 
+		 * home.createCoverageUpdate1797(searchemployer1,null, "hra");
+		 * 
+		 * home.createService1797(searchemployer1,null,null);
+		 * 
+		 * home.createGroupNo(groupNo,searchemployer1); // then create employee
+		 * 
+		 */
+
+		home.createEmployee(searchemployer1, "anu74", "single");
+
+		System.out.println("8 - *********EMP 4***********");
+
+		System.out.println("**********************************");
+
+		System.out.println("***************END*******************");
+	}
 
 	@Parameters({ "SearchEmployer", "CoverageIdentifier", "PlanType" })
 	@Test(priority = 3, dependsOnMethods = "loginToApplication", enabled = false)

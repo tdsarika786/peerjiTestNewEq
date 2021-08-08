@@ -292,6 +292,38 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 
 	}
 
+	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
+	@Test(priority = 9, dependsOnMethods = "verifyPage")
+	public void validInputEnrolledRegisterationTest9(String email, String coveragetoken, String coverageidentifier,String AppUrl) {
+		
+		register.navigateToRegisterationPage(AppUrl);
+		
+		register.EnrolledUserWithValidInput("emp0001","anu74");
+		
+		register.Registeration1("sarikaqa7+emp74@gmail.com",
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 1),
+				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 4),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 5),
+				DataProviderFactory.getExcel().getCellData("Users", 2, 6),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 7),
+				DataProviderFactory.getExcel().getCellData("Users", 2, 8),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 9),
+				"Sarika#123", true, "img");
+
+		register.registerationCompleteWithValidInput();
+		
+		System.out.println("*************** 9- sarikaqa7+emp74@gmail.com *******************");
+		
+		
+		System.out.println("***************END*******************");
+
+	}
 
 
 
