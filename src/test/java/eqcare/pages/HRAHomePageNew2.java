@@ -470,6 +470,123 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		System.out.println("URL " + url);
 
 	}
+	
+	public void hraCompletionPage() {
+
+		Utility.wait(10);
+
+		Utility.waitForWebElement(driver, hraThankYouImg);
+
+		Utility.waitForWebElement(driver, hraThankyouHeader);
+
+		Utility.waitForWebElement(driver, hraThankyouText);
+
+		Utility.waitForWebElement(driver, talkToCareLink);
+
+		viewScoreHRAComplete();
+
+	}
+	public void viewScoreHRAComplete() {
+
+		System.out.println("View Health Score");
+
+		Utility.waitForWebElement(driver, viewHealthScoreLink).click();
+
+		Utility.wait(5);
+
+		System.out.println("View Health Score");
+
+		String getScore = Utility.waitForWebElement(driver, getScoreLabel).getText();
+
+		System.out.println(getScore);
+
+		String getPercentage = Utility.waitForWebElement(driver, getScorePercentage).getText();
+
+		System.out.println(getPercentage);
+
+		//Assert.assertEquals(getScore, scoreLabel);
+
+		String strPercentage = getPercentage.substring(0, getPercentage.length() - 1);
+
+		int percentage = Integer.parseInt(strPercentage);
+
+		if (percentage <= 49 && percentage >= 0) {
+
+			Assert.assertEquals(getScore, "There’s room for improvement.");
+			System.out.println("Assertion Pass " + getScore + " " + percentage);
+		} else if (percentage <= 61 && percentage >= 50) {
+			Assert.assertEquals(getScore, "Keep an eye on it.");
+			System.out.println("Assertion Pass " + getScore + " " + percentage);
+		} else if (percentage <= 73 && percentage >= 62) {
+			Assert.assertEquals(getScore, "Keep it up.");
+			System.out.println("Assertion Pass " + getScore + " " + percentage);
+		} else if (percentage <= 85 && percentage >= 74) {
+
+			Assert.assertEquals(getScore, "You’re doing very well.");
+			System.out.println("Assertion Pass " + getScore + " " + percentage);
+		} else if (percentage <= 100 && percentage >= 86) {
+			Assert.assertEquals(getScore, "You’re doing very great.");
+			System.out.println("Assertion Pass " + getScore + " " + percentage);
+		}
+
+		// SCORE MODAL
+
+		// Utility.waitForWebElement(driver, scoreHeading);
+
+		Utility.waitForWebElement(driver, overallScoreLabel);
+
+		Utility.waitForWebElement(driver, moveScoreLabel);
+
+		Utility.waitForWebElement(driver, feelScoreLabel);
+
+		Utility.waitForWebElement(driver, mindScoreLabel);
+
+		Utility.waitForWebElement(driver, updateMyAnswerScoreLink);
+
+		// Utility.waitForWebElement(driver, talkToCareLink);
+
+		Utility.waitForWebElement(driver, calculationTab).click();
+
+		Utility.waitForWebElement(driver, myScoreTab).click();
+
+		Utility.waitForWebElement(driver, myPhysicalityTab).click();
+
+		Utility.waitForWebElement(driver, physicalGuideTabActive).click();
+
+		Utility.waitForWebElement(driver, physicalGuideTabSitting).click();
+
+		System.out.println(
+				"---- HRA Complete Page Score Popup Overall, Move, feel, Mind, CTA etc. check calculation, score, physical tab----");
+
+		/*
+		 * if (getPercentage.equalsIgnoreCase("72%")) {
+		 * 
+		 * Assert.assertEquals(getScore, "Keep it up.");
+		 * 
+		 * System.out.println("Assertion Pass " + getScore); }
+		 * 
+		 * if (getPercentage.equalsIgnoreCase("56%")) {
+		 * 
+		 * Assert.assertEquals(getScore, "Keep an eye on it.");
+		 * 
+		 * System.out.println("Assertion Pass " + getScore); }
+		 * 
+		 * if (getPercentage.equalsIgnoreCase("81%")) {
+		 * 
+		 * Assert.assertEquals(getScore, "You’re doing very well.");
+		 * 
+		 * System.out.println("Assertion Pass " + getScore); }
+		 * 
+		 * if (getPercentage.equalsIgnoreCase("33%")) {
+		 * 
+		 * Assert.assertEquals(getScore, "There’s room for improvement.");
+		 * 
+		 * System.out.println("Assertion Pass " + getScore); }
+		 */
+
+		// Utility.waitForWebElement(driver, closeCTA).click();
+
+	}
 
 	public void hraCompletionPage(String scoreLabel) {
 
