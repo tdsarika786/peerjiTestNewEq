@@ -134,6 +134,9 @@ public class HRAScoreKeepItUp extends BaseClass {
 		home.hraCompletionPageAndTalkToCare();
 
 		System.out.println("10-HRA Completition");
+		
+		System.out.println(
+				"************* 11-HRA Form Complete page and THERE ONLY Talk to care advocate ********************");
 
 	}
 
@@ -141,18 +144,34 @@ public class HRAScoreKeepItUp extends BaseClass {
 	public void verifyTalkToCare() throws Exception {
 
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
-		
+
 		home1 = PageFactory.initElements(driver, HomePage.class);
 
-		//home.hraCompletionPageAndTalkToCare();
+		String coverage = "LJ";
 
-		System.out.println("************* 11-HRA Complete page and THERE ONLY Talk to care advocate ********************");
+		if (coverage.equalsIgnoreCase("EQ")) {
 
-		home1.deviceCheckHRA();
+			// home.hraCompletionPageAndTalkToCare();
 
-		intake.fillIntakeForm();
+			
 
-		System.out.println("************* 12-Fill Intake form ********************");
+			home1.deviceCheckHRA();
+
+			intake.fillIntakeForm();
+
+			System.out.println("************* 12-EQ Regular Fill Intake form ********************");
+
+		}
+
+		else if (coverage.equalsIgnoreCase("LJ")) {
+
+			// intakeForm.deviceCheck();
+
+			intakeForm.hraLifeJourneyVisit();
+
+			System.out.println("************* 112 LJ  Filling INTAKE FORM ********************");
+
+		}
 
 		System.out.println("*******END***********");
 

@@ -137,7 +137,10 @@ public class HRAScoreRoomForImprove extends BaseClass {
 
 		home.hraCompletionPage(scoreLabel);
 
-		System.out.println("10- HRA Completition");
+		System.out.println("10- HRA Completition Form");
+		
+		System.out.println("************* 11-Talk to care advocate AFTER VIEW SCORE MODAL AND CLICK TALK TO CARE ADVOCATE ********************");
+		
 
 
 	}
@@ -151,17 +154,25 @@ public class HRAScoreRoomForImprove extends BaseClass {
 		
 		home.talkToCare();
 		
-
-		System.out.println("************* 11-Talk to care advocate AFTER VIEW SCORE MODAL AND CLICK TALK TO CARE ADVOCATE ********************");
+		String coverage = "LJ";
 		
+		if (coverage.equalsIgnoreCase("EQ")) {
 		//home1.deviceCheck();
 		
 		intake.fillIntakeForm();
 		
 
-		System.out.println("************* 12-Fill Intake form ********************");
-		
-		
+		System.out.println("************* 12-Regular Fill Intake form ********************");
+		}
+		else if (coverage.equalsIgnoreCase("LJ")) {
+
+			// intakeForm.deviceCheck();
+
+			intakeForm.hraLifeJourneyVisit();
+
+			System.out.println("************* 112 LJ  Filling INTAKE FORM ********************");
+
+		}
 
 		System.out.println("*******END***********");
 

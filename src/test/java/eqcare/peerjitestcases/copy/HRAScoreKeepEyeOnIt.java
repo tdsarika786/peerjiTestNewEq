@@ -133,7 +133,7 @@ public class HRAScoreKeepEyeOnIt extends BaseClass {
 
 		home.hraCompletionPage1(scoreLabel);
 
-		System.out.println("10- HRA CompletitioN, SCORE POP UP CLICK FROM HOME,TALK TO CARE ADVOCATE ");
+		System.out.println("10- HRA Form CompletitioN, SCORE POP UP CLICK FROM HOME,TALK TO CARE ADVOCATE ");
 
 	}
 
@@ -155,7 +155,7 @@ public class HRAScoreKeepEyeOnIt extends BaseClass {
 
 			intake.fillIntakeForm();
 
-			System.out.println("************* 11- INTAKE FORM ********************");
+			System.out.println("************* 11- EQ Regular Fiilling INTAKE FORM ********************");
 
 		}
 		
@@ -165,7 +165,7 @@ public class HRAScoreKeepEyeOnIt extends BaseClass {
 			
 			intakeForm.hraLifeJourneyVisit();
 			
-			System.out.println("************* 11- INTAKE FORM ********************");
+			System.out.println("************* 11- LJ  Filling INTAKE FORM ********************");
 
 		}
 		
