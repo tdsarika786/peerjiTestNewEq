@@ -473,7 +473,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 	public void hraCompletionPage(String scoreLabel) {
 		
-		Utility.wait(5);
+		Utility.wait(10);
 
 		Utility.waitForWebElement(driver, hraThankYouImg);
 
@@ -489,7 +489,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 	
 	public void hraCompletionPageAndTalkToCare() {
 		
-		Utility.wait(5);
+		Utility.wait(10);
 
 		Utility.waitForWebElement(driver, hraThankYouImg);
 
@@ -515,7 +515,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		
 		Utility.waitForWebElement(driver, viewHealthScoreLink).click();
 
-		Utility.wait(14);
+		Utility.wait(5);
 
 		String getScore = Utility.waitForWebElement(driver, getScoreLabel).getText();
 
@@ -643,7 +643,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 		Utility.waitForWebElement(driver, talkToCareLink).click();
 
-		Utility.wait(10);
+		Utility.wait(7);
 
 		String url = driver.getCurrentUrl();
 
@@ -1795,11 +1795,12 @@ public class HRAHomePageNew2 extends runWithAttachments {
 			if (option.equalsIgnoreCase("yes")) {
 				Utility.waitForWebElement(driver, hraYesLink).click();
 			}
+			System.out.println("Medical Ques 8");
 		}
 		
-		System.out.println("Medical Ques 8");
+		
 
-		Utility.wait(10);
+	
 
 	}
 
