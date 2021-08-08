@@ -564,7 +564,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 		Utility.waitForWebElement(driver, updateMyAnswerScoreLink);
 
-		Utility.waitForWebElement(driver, talkToCareLink);
+		//Utility.waitForWebElement(driver, talkToCareLink);
 
 		Utility.waitForWebElement(driver, calculationTab).click();
 
