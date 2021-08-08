@@ -105,6 +105,7 @@
 						<ProjectARN>${ProjectARN}</ProjectARN>
 						<AppType>${AppType}</AppType>
 						<VisitNo>${VisitNo}</VisitNo>
+						<Coverage>${Coverage}</Coverage>
 					</systemPropertyVariables>
 				</configuration>
 			</plugin>

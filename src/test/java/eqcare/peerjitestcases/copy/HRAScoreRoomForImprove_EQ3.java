@@ -143,9 +143,10 @@ public class HRAScoreRoomForImprove_EQ3 extends BaseClass {
 				+ "- In modal CLICK TALK TO CARE ADVOCATE********************");
 
 	}
-
+	
+	@Parameters({ "Coverage"})
 	@Test(priority = 4, dependsOnMethods = "roomForImprovementScenario3")
-	public void verifyTalkToCare() throws Exception {
+	public void verifyTalkToCare(String coverage) throws Exception {
 		
 		System.out.println("// ****************** EQ-3 **************************** //");
 
@@ -155,7 +156,7 @@ public class HRAScoreRoomForImprove_EQ3 extends BaseClass {
 
 		home.talkToCare();
 
-		String coverage = "LJ";
+		//String coverage = "LJ";
 
 		if (coverage.equalsIgnoreCase("EQ")) {
 			// home1.deviceCheck();

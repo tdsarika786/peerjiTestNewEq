@@ -141,8 +141,9 @@ public class HRAScoreKeepItUp_EQ2 extends BaseClass {
 
 	}
 
+	@Parameters({ "Coverage"})
 	@Test(priority = 4, dependsOnMethods = "hraKeepItUpScenario")
-	public void verifyTalkToCare() throws Exception {
+	public void verifyTalkToCare(String coverage) throws Exception {
 
 		System.out.println("// ****************** EQ-2 **************************** //");
 
@@ -150,7 +151,7 @@ public class HRAScoreKeepItUp_EQ2 extends BaseClass {
 
 		home1 = PageFactory.initElements(driver, HomePage.class);
 
-		String coverage = "LJ";
+		//String coverage = "LJ";
 
 		if (coverage.equalsIgnoreCase("EQ")) {
 
