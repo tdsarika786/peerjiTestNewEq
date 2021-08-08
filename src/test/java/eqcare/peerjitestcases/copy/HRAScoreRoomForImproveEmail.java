@@ -7,6 +7,8 @@ import org.testng.annotations.Test;
 import NotRequiredClasses.ContactUsPage;
 
 import eqcare.pages.HRAHomePageNew2;
+import eqcare.pages.HomePage;
+import eqcare.pages.IntakeFormPage;
 import eqcare.pages.LifeJourneyIntakeFormPage;
 import eqcare.pages.LoginPage;
 import eqcare.pages.LogoutPage;
@@ -20,6 +22,8 @@ public class HRAScoreRoomForImproveEmail extends BaseClass {
 	HRAHomePageNew2 home;
 	LifeJourneyIntakeFormPage intakeForm;
 	ClinicPage clinic;
+	IntakeFormPage intake;
+	HomePage home1;
 
 	@Parameters({ "Email", "Password" })
 	@Test(priority = 1)
@@ -132,7 +136,46 @@ public class HRAScoreRoomForImproveEmail extends BaseClass {
 
 		home.hraCompletionPage(scoreLabel);
 
-		System.out.println("10- HRA Completition");
+		System.out.println("10- HRA Completition Form");
+
+		System.out.println("************* 11- EQ - HRA Form Complete\r\n" + "- View Score Modal\r\n"
+				+ "- In modal CLICK TALK TO CARE ADVOCATE********************");
+
+	}
+	
+	@Parameters({ "Coverage"})
+	@Test(priority = 4, dependsOnMethods = "roomForImprovementScenario3")
+	public void verifyTalkToCare(String coverage) throws Exception {
+		
+		System.out.println("// ****************** EQ-3 **************************** //");
+
+		intake = PageFactory.initElements(driver, IntakeFormPage.class);
+
+		home1 = PageFactory.initElements(driver, HomePage.class);
+
+		home.talkToCare();
+
+		//String coverage = "LJ";
+
+		if (coverage.equalsIgnoreCase("EQ")) {
+			
+			System.out.println("Covergae Type "+coverage );
+			// home1.deviceCheck();
+
+			intake.fillIntakeForm();
+
+			System.out.println("************* 12-Regular Fill Intake form ********************");
+		} else if (coverage.equalsIgnoreCase("LJ")) {
+			
+			System.out.println("Covergae Type "+coverage );
+
+			intakeForm.deviceCheck();
+
+			intakeForm.hraLifeJourneyVisit();
+
+			System.out.println("************* 12 LJ  Filling INTAKE FORM ********************");
+
+		}
 
 		System.out.println("*******END***********");
 
@@ -154,5 +197,6 @@ public class HRAScoreRoomForImproveEmail extends BaseClass {
 		// home.verifyMedical();
 
 	}
+
 
 }

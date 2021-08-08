@@ -7,6 +7,8 @@ import org.testng.annotations.Test;
 import NotRequiredClasses.ContactUsPage;
 
 import eqcare.pages.HRAHomePageNew2;
+import eqcare.pages.HomePage;
+import eqcare.pages.IntakeFormPage;
 import eqcare.pages.LifeJourneyIntakeFormPage;
 import eqcare.pages.LoginPage;
 import eqcare.pages.LogoutPage;
@@ -20,6 +22,8 @@ public class HRAScoreKeepEyeOnItEmail extends BaseClass {
 	HRAHomePageNew2 home;
 	LifeJourneyIntakeFormPage intakeForm;
 	ClinicPage clinic;
+	IntakeFormPage intake;
+	HomePage home1;
 
 	@Parameters({ "Email", "Password" })
 	@Test(priority = 1)
@@ -74,7 +78,7 @@ public class HRAScoreKeepEyeOnItEmail extends BaseClass {
 		String noDrinks = "10";
 
 		String scoreLabel = "Keep an eye on it.";
-		
+
 		System.out.println("********HRA Keep Eye On It Scenario**********");
 
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
@@ -127,29 +131,53 @@ public class HRAScoreKeepEyeOnItEmail extends BaseClass {
 
 		System.out.println("9- HRA Medical");
 
-		home.hraCompletionPage(scoreLabel);
+		home.hraCompletionPage1(scoreLabel);
 
-		System.out.println("10- HRA Completition");
+		System.out.println("10- - HRA Form Complete\r\n" + "- View Score Modal\r\n" + "- Close pop up\r\n"
+				+ "- On Home Click on Score pop up\r\n" + "- In modal CLICK TALK TO CARE ADVOCATE\r\n" + "");
+
+	}
+
+	@Parameters({ "Coverage"})
+	@Test(priority = 4, dependsOnMethods = "hraKeepEyeOnItScenario")
+	public void verifyTalkToCare(String coverage) throws Exception {
+
+		System.out.println("// ****************** EQ-1 **************************** //");
+
+		intake = PageFactory.initElements(driver, IntakeFormPage.class);
+
+		home1 = PageFactory.initElements(driver, HomePage.class);
+
+		//String coverage = "LJ";
+
+		if (coverage.equalsIgnoreCase("EQ")) {
+			
+			System.out.println("Covergae Type "+coverage );
+			// home.talkToCare();
+
+			System.out.println("************* 11-  DEVICE CHECK********************");
+
+			// home1.deviceCheck();
+
+			intake.fillIntakeForm();
+
+			System.out.println("************* 11-  Regular Fiilling INTAKE FORM ********************");
+
+		}
+
+		else if (coverage.equalsIgnoreCase("LJ")) {
+			
+			System.out.println("Covergae Type "+coverage );
+
+			intakeForm.deviceCheck();
+
+			intakeForm.hraLifeJourneyVisit();
+
+			System.out.println("************* 11- LJ  Filling INTAKE FORM ********************");
+
+		}
 
 		System.out.println("*******END***********");
 
 	}
-
-	@Test(priority = 2, dependsOnMethods = "verifyPage", enabled = false)
-	public void verifyHRAPages() throws Exception {
-
-		// home.navigateToHRAContentLibrary();
-
-		// home.verifyHRAContentLibrary();
-
-		home.navigateToHRAIntakePage();
-
-		home.verifyHRAPhysicalIntakeForms();
-
-		home.verifyHRALifeStyle();
-
-		// home.verifyMedical();
-
-	}
-
 }
