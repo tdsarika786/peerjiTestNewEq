@@ -132,7 +132,7 @@ public class TC1_HRANewScenarios extends BaseClass {
 	@Test(priority = 11, dependsOnMethods = "verifyLifeStyleQuesStressHappiness1")
 	public void verifyHRACompletition() throws Exception {
 		
-		String scoreLabel = "You’re doing very well.";
+		String scoreLabel = "There’s room for improvement.";
 		
 		homeNew.hraCompletionPage(scoreLabel);
 		
