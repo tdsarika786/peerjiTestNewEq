@@ -179,12 +179,6 @@ public class EQ4_HRAScoreRoomForImproveEmail extends BaseClass {
 		} else if (coverage.equalsIgnoreCase("LJ")) {
 
 			System.out.println("Covergae Type " + coverage);
-
-			/*intakeForm.deviceCheck();
-
-			System.out.println("11-Life Journey Device check page");
-
-			intakeForm.hraLifeJourneyVisit();*/
 			
 			intakeForm.startLifeJourneyVisit();
 
