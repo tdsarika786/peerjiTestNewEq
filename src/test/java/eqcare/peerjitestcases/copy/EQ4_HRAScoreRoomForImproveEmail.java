@@ -178,11 +178,13 @@ public class EQ4_HRAScoreRoomForImproveEmail extends BaseClass {
 
 			System.out.println("Covergae Type " + coverage);
 
-			intakeForm.deviceCheck();
+			/*intakeForm.deviceCheck();
 
 			System.out.println("11-Life Journey Device check page");
 
-			intakeForm.hraLifeJourneyVisit();
+			intakeForm.hraLifeJourneyVisit();*/
+			
+			intakeForm.startLifeJourneyVisit();
 
 			System.out.println("12- Life Journey Fill Intake form");
 

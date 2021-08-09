@@ -179,13 +179,15 @@ public class EQ1_HRAScoreDoingVeryWell extends BaseClass {
 
 			System.out.println("Covergae Type " + coverage);
 
-			intakeForm.deviceCheck();
+			//intakeForm.deviceCheck();
 
-			System.out.println("11-Life Journey Device check page");
+			//System.out.println("11-Life Journey Device check page");
 
-			intakeForm.hraLifeJourneyVisit();
+			//intakeForm.hraLifeJourneyVisit();
 
-			System.out.println("12- Life Journey Fill Intake form");
+			//System.out.println("12- Life Journey Fill Intake form");
+			
+			intakeForm.startLifeJourneyVisit();
 
 		}
 
