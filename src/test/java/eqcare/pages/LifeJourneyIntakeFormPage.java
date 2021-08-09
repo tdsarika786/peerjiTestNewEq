@@ -761,7 +761,7 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 	}
 	
 	public void startLifeJourneyVisitHRA() throws Exception {
-		deviceCheck();
+		//deviceCheck();
 
 		fillIntakeFormLifeJourney();
 		
