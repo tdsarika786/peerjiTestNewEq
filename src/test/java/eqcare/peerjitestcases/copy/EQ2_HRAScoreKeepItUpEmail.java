@@ -178,10 +178,17 @@ public class EQ2_HRAScoreKeepItUpEmail extends BaseClass {
 		else if (coverage.equalsIgnoreCase("LJ")) {
 
 			System.out.println("Covergae Type " + coverage);
+
+			intakeForm.deviceCheck();
+
+			System.out.println("11-Life Journey Device check page");
+
+			//intakeForm.hraLifeJourneyVisit();
 			
-			intakeForm.startLifeJourneyVisit();
+			intakeForm.startLifeJourneyVisitHRA();
 
 			System.out.println("12- Life Journey Fill Intake form");
+
 
 		}
 
