@@ -193,7 +193,7 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 
 		register.registerationCompleteWithValidInput();
 		
-		System.out.println("*************** 5- sarikaqa7+pcljhra1@gmail.com *******************");
+		System.out.println("*************** 5- sarikaqa7+emp70@gmail.com *******************");
 
 	}
 	
