@@ -71,7 +71,7 @@ public class EQ4_HRAScoreRoomForImproveEmail extends BaseClass {
 		// home.verifyHRAIntroductionPage();
 
 		String height = "154";
-		String weight = "70";
+		String weight = "100";
 		String waist = "87";
 
 		String[] options = { "option1", "option2", "option3", "option4", "option5" };

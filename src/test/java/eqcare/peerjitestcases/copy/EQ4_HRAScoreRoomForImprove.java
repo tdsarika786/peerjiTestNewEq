@@ -71,7 +71,7 @@ public class EQ4_HRAScoreRoomForImprove extends BaseClass {
 		// home.verifyHRAIntroductionPage();
 
 		String height = "154";
-		String weight = "70";
+		String weight = "100";
 		String waist = "87";
 
 		String[] options = { "option1", "option2", "option3", "option4", "option5" };
@@ -116,11 +116,11 @@ public class EQ4_HRAScoreRoomForImprove extends BaseClass {
 
 		System.out.println("6- HAR LifeStyleQuesDrinking1");
 
-		home.verifyHRALifeStyleQuesStress(options[2]);
+		home.verifyHRALifeStyleQuesStress(options[5]);
 
 		System.out.println("7- HRA LifeStyleQuesStress");
 
-		home.verifyHRALifeStyleQuesHappiness(options[2]);
+		home.verifyHRALifeStyleQuesHappiness(options[5]);
 
 		System.out.println("8- HRA LifeStyleQuesHappiness");
 
