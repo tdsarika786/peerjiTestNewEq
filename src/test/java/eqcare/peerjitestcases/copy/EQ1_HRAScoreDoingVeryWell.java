@@ -84,10 +84,12 @@ public class EQ1_HRAScoreDoingVeryWell extends BaseClass {
 		String scoreLabel = "You’re doing very well.";
 
 		System.out.println("Score Label should be ******** HRA Doing Very Well Scenario**********");
+		
+		System.out.println("IN 1-HRA PhysicalIntakeForms Ques1" + " " + height + " " + weight + " " + waist);
 
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
 
-		System.out.println("1-HRA PhysicalIntakeForms Ques1" + " " + height + " " + weight + " " + waist);
+		System.out.println("1-HRA PhysicalIntakeForms Ques1 done" + " " + height + " " + weight + " " + waist);
 
 		home.verifyHRAPhysicalIntakeFormsQues2(options[0]);
 

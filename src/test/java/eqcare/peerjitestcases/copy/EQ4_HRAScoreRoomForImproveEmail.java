@@ -70,8 +70,8 @@ public class EQ4_HRAScoreRoomForImproveEmail extends BaseClass {
 
 		// home.verifyHRAIntroductionPage();
 
-		String height = "67";
-		String weight = "157";
+		String height = "154";
+		String weight = "70";
 		String waist = "87";
 
 		String[] options = { "option1", "option2", "option3", "option4", "option5" };
@@ -90,9 +90,11 @@ public class EQ4_HRAScoreRoomForImproveEmail extends BaseClass {
 
 		System.out.println("Score Label should be ********HRA Room for improvement. **********");
 
+		System.out.println("IN 1-HRA PhysicalIntakeForms Ques1" + " " + height + " " + weight + " " + waist);
+
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
 
-		System.out.println("1-HRA PhysicalIntakeForms Ques1" + " " + height + " " + weight + " " + waist);
+		System.out.println("1-HRA PhysicalIntakeForms Ques1 done" + " " + height + " " + weight + " " + waist);
 
 		home.verifyHRAPhysicalIntakeFormsQues2(options[2]);
 

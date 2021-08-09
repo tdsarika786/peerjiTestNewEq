@@ -88,9 +88,11 @@ public class EQ3_HRAScoreKeepEyeOnIt extends BaseClass {
 
 		System.out.println("Score Label should be********HRA Keep Eye On It Scenario**********");
 
+		System.out.println("IN 1-HRA PhysicalIntakeForms Ques1" + " " + height + " " + weight + " " + waist);
+
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
 
-		System.out.println("1-HRA PhysicalIntakeForms Ques1" + " " + height + " " + weight + " " + waist);
+		System.out.println("1-HRA PhysicalIntakeForms Ques1 done" + " " + height + " " + weight + " " + waist);
 
 		home.verifyHRAPhysicalIntakeFormsQues2(options[2]);
 

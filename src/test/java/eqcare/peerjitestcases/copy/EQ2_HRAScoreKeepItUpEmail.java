@@ -86,9 +86,11 @@ public class EQ2_HRAScoreKeepItUpEmail extends BaseClass {
 
 		System.out.println("Score Label should be ********HRA Keep It Up **********");
 
+		System.out.println("IN 1-HRA PhysicalIntakeForms Ques1" + " " + height + " " + weight + " " + waist);
+
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
 
-		System.out.println("1-HRA PhysicalIntakeForms Ques1" + " " + height + " " + weight + " " + waist);
+		System.out.println("1-HRA PhysicalIntakeForms Ques1 done" + " " + height + " " + weight + " " + waist);
 
 		home.verifyHRAPhysicalIntakeFormsQues2("option3");
 
