@@ -318,7 +318,11 @@ public class Novapeerji1734Existing extends BaseClass {
 
 		home.createEmployer1733(searchemployer1, empID, null);
 
-		home.createCoverage1797(searchemployer1, null, "lifejourney");
+		home.createCoverage1797(searchemployer1, null, "primary_care");
+
+		home.createCoverageUpdate1797(searchemployer1, null, "lifejourney");
+
+		home.createCoverageUpdate1797(searchemployer1, null, "hra");
 
 		home.createService1797(searchemployer1, null, null);
 
@@ -342,7 +346,11 @@ public class Novapeerji1734Existing extends BaseClass {
 
 		home.createEmployer1733(searchemployer1, empID, null);
 
-		home.createCoverage1797(searchemployer1, null, "lifejourney");
+		home.createCoverage1797(searchemployer1, null, "primary_care");
+
+		home.createCoverageUpdate1797(searchemployer1, null, "lifejourney");
+
+		home.createCoverageUpdate1797(searchemployer1, null, "hra");
 
 		home.createService1797(searchemployer1, null, null);
 
