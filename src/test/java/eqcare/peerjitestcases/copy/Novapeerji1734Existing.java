@@ -358,7 +358,7 @@ public class Novapeerji1734Existing extends BaseClass {
 
 		home.createEmployee(searchemployer1, "anu1", "family");
 
-		System.out.println("********* 1 Sarika-Test-NewLJ70 ***********");
+		System.out.println("********* ABC company ***********");
 	}
 
 	@Parameters({ "SearchEmployer", "CoverageIdentifier", "PlanType" })

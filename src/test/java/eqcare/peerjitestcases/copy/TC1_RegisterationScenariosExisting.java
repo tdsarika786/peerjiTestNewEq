@@ -300,7 +300,7 @@ public class TC1_RegisterationScenariosExisting extends BaseClass {
 		
 		register.EnrolledUserWithValidInput("emp0001","anuemp5");
 		
-		register.Registeration1("sarikaqa7+anuemp4@gmail.com",
+		register.Registeration1("sarikaqa7+anuemp5@gmail.com",
 
 				"Sarika-TestEmpTestE",
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
@@ -360,7 +360,7 @@ public class TC1_RegisterationScenariosExisting extends BaseClass {
 	
 	
 	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
-	@Test(priority = 10, dependsOnMethods = "verifyPage")
+	@Test(priority = 11, dependsOnMethods = "verifyPage")
 	public void validInputEnrolledRegisterationTest11(String email, String coveragetoken, String coverageidentifier,String AppUrl) {
 		
 		register.navigateToRegisterationPage(AppUrl);
