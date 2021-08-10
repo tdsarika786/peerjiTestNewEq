@@ -304,6 +304,54 @@ public class Novapeerji1734Existing extends BaseClass {
 
 		System.out.println("***************END*******************");
 	}
+	
+	@Parameters({ "SearchEmployer", "CoverageToken", "CoverageType" })
+	@Test(priority = 10, dependsOnMethods = "loginToApplication")
+	public void CreateEmployer10(String searchemployer, String coveragetoken, String coveragetype)
+			throws InterruptedException {
+
+		home = PageFactory.initElements(driver, NovaHomePage.class);
+
+		String searchemployer1 = "AGEECLP (Cégep de La Pocatière)";
+		String groupNo = "AG70";
+		String empID = "74";
+
+		home.createEmployer1733(searchemployer1, empID, null);
+
+		home.createCoverage1797(searchemployer1, null, "lifejourney");
+
+		home.createService1797(searchemployer1, null, null);
+
+		home.createGroupNo(groupNo, searchemployer1); // then create employee
+
+		home.createEmployee(searchemployer1, "anu1", "family");
+
+		System.out.println("********* 9 AGEECLP (Cégep de La Pocatière)0 ***********");
+	}
+	
+	@Parameters({ "SearchEmployer", "CoverageToken", "CoverageType" })
+	@Test(priority = 11, dependsOnMethods = "loginToApplication")
+	public void CreateEmployer11(String searchemployer, String coveragetoken, String coveragetype)
+			throws InterruptedException {
+
+		home = PageFactory.initElements(driver, NovaHomePage.class);
+
+		String searchemployer1 = "ABC company";
+		String groupNo = "AB70";
+		String empID = "75";
+
+		home.createEmployer1733(searchemployer1, empID, null);
+
+		home.createCoverage1797(searchemployer1, null, "lifejourney");
+
+		home.createService1797(searchemployer1, null, null);
+
+		home.createGroupNo(groupNo, searchemployer1); // then create employee
+
+		home.createEmployee(searchemployer1, "anu1", "family");
+
+		System.out.println("********* 1 Sarika-Test-NewLJ70 ***********");
+	}
 
 	@Parameters({ "SearchEmployer", "CoverageIdentifier", "PlanType" })
 	@Test(priority = 3, dependsOnMethods = "loginToApplication", enabled = false)
