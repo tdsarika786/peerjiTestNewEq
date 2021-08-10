@@ -65,9 +65,9 @@ public class HRADiiferentScoreScenarios1 extends BaseClass {
 	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage")
 	public void hraDoingVeryWellScenario() throws Exception {
 
-		String height = "100";
-		String weight = "200";
-		String waist = "95";
+		String height = "150";
+		String weight = "100";
+		String waist = "100";
 
 		String[] options = { "option1", "option2", "option3", "option4", "option5" };
 
