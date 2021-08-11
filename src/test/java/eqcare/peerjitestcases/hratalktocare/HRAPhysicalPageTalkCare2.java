@@ -47,7 +47,7 @@ public class HRAPhysicalPageTalkCare2 extends BaseClass {
 		
 		System.out.println("***********************************************************");
 
-		System.out.println("########## START HRAIntroPageTalkCare ########## " + email);
+		System.out.println("########## START HRAPhysicalPageTalkCare2 ########## " + email);
 		
 		System.out.println("***********************************************************");
 
