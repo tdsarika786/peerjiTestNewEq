@@ -837,6 +837,10 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		}
 	}
 	
+	public void verifyHRAPhysicalPageTalkCare() {
+		
+	}
+	
 
 	public void verifyHRAIntroductionPageTalkCare() throws Exception {
 
