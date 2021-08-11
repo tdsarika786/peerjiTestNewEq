@@ -64,7 +64,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 	By introPageHeader = By.xpath("//h3[contains(text(), 'health score assessment')]");
 
-	By introPageMinsText = By.xpath("//p[contains(text(), 'mins')]");
+	By introPageMinsText = By.xpath("//p[contains(text(), 'minutes')]");
 
 	By startHRAFormButton = By.xpath("//a[@data-role='start-hra-form-button']");
 
