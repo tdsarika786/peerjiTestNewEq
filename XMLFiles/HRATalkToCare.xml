@@ -12,11 +12,9 @@
 		<classes>
 		
 		
-			<class
-				name="eqcare.peerjitestcases.hratalktocare.HRAIntroPageSkipToTalkCare3" />
+		
 
-
-			<!-- <class
+		<class
 				name="eqcare.peerjitestcases.hratalktocare.HRAIntroPageTalkCare" />
 				
 					<class
@@ -26,7 +24,7 @@
              <class name="eqcare.peerjitestcases.copy.EQ2_HRAScoreKeepItUp"/>
                 <class name="eqcare.peerjitestcases.copy.EQ3_HRAScoreKeepEyeOnIt"/>   
               <class name="eqcare.peerjitestcases.copy.EQ4_HRAScoreRoomForImprove"/>  
-                     <class name="eqcare.peerjitestcases.copy.EQ4_HRAScoreKeepItUp"/>  -->
+                     <class name="eqcare.peerjitestcases.copy.EQ4_HRAScoreKeepItUp"/>  
 			
 
 		</classes>
