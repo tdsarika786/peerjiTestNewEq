@@ -98,7 +98,7 @@ public class HRAIntroPageTalkCare extends BaseClass {
 
 			//intakeForm.deviceCheck();
 			
-			intakeForm.startLifeJourneyVisit();
+			intakeForm.startLifeJourneyMethod();
 
 			System.out.println("11-Life Journey Device check page");
 

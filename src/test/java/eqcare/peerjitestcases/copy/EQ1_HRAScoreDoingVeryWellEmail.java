@@ -166,7 +166,7 @@ public class EQ1_HRAScoreDoingVeryWellEmail extends BaseClass {
 			
 			home.deviceCheck();
 			
-			intake.fillIntakeForm();
+			intakeForm.startLifeJourneyMethod();
 			
 			System.out.println("12- Regular Fill Intake form");
 		}

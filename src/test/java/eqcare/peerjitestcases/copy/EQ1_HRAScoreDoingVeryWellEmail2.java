@@ -175,7 +175,7 @@ public class EQ1_HRAScoreDoingVeryWellEmail2 extends BaseClass {
 
 			System.out.println("Covergae Type - " + coverage);
 
-			intakeForm.startLifeJourneyVisit();
+			intakeForm.startLifeJourneyMethod();
 
 			System.out.println("12 - Started life journey visit");
 		}

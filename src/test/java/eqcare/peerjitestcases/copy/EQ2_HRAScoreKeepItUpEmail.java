@@ -187,7 +187,7 @@ public class EQ2_HRAScoreKeepItUpEmail extends BaseClass {
 
 			//System.out.println("12- Life Journey Fill Intake form");
 			
-			intakeForm.startLifeJourneyVisit();
+			intakeForm.startLifeJourneyMethod();
 			
 			System.out.println("11-Life Journey Device check page");
 
