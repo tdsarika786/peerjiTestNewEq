@@ -327,6 +327,12 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 		fillIntakeFormLifeJourney();
 
 		LifeFourneyForms();
+		
+		Utility.wait(7);
+
+		String url = driver.getCurrentUrl();
+
+		System.out.println("URL:" + url);
 
 	}
 
