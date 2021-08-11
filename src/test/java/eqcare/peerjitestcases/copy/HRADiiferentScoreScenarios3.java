@@ -105,7 +105,7 @@ public class HRADiiferentScoreScenarios3 extends BaseClass {
 
 		System.out.println("5- HRA LifeStyleQuesSmoking2");
 
-		home.verifyHRALifeStyleQuesDrinking1(options[4], noDrinks);
+		home.verifyHRALifeStyleQuesDrinking1(options[2], noDrinks);
 
 		System.out.println("6- HRA LifeStyleQuesDrinking1");
 
