@@ -193,7 +193,7 @@ public class HRAScoreDoingVeryWellSkipToTalkHome extends BaseClass {
 
 			//System.out.println("12- Life Journey Fill Intake form");
 			
-			intakeForm.startLifeJourneySkipToCareMethodHRA();
+			intakeForm.startLifeJourneySkipToCareMethod();
 			
 			System.out.println("11-Life Journey Device check page");
 

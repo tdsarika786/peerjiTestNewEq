@@ -318,13 +318,11 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 
 	}
 
-	public void startLifeJourneySkipToCareMethodHRA() throws Exception {
+	public void startLifeJourneySkipToCareMethod() throws Exception {
 
-		
+		startLifeJourneyVisitCTA();
 
 		deviceCheck();
-		
-		startLifeJourneyVisitCTA();
 
 		fillIntakeFormLifeJourney();
 
