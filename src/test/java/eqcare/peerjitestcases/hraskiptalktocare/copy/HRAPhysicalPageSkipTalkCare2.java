@@ -68,7 +68,7 @@ public class HRAPhysicalPageSkipTalkCare2 extends BaseClass {
 
 		System.out.println("*******HRA Physical Page Talk Care***********");
 		
-		//home.talkToCare();
+		home.talkToCare();
 
 	}
 
