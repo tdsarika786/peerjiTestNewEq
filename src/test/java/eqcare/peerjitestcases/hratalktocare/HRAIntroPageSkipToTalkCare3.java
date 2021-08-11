@@ -108,7 +108,7 @@ public class HRAIntroPageSkipToTalkCare3 extends BaseClass {
 
 		}
 
-		System.out.println("######### END EQ2_HRAScoreKeepItUpEmail ###########");
+		System.out.println("######### END HRAIntroPageSkipToTalkCare3 ###########");
 
 		System.out.println("***********************************************************");
 

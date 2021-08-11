@@ -118,7 +118,7 @@ public class HRAPhysicalPageTalkCare2 extends BaseClass {
 
 		}
 
-		System.out.println("######### END EQ2_HRAScoreKeepItUpEmail ###########");
+		System.out.println("######### END HRAPhysicalPageTalkCare2 ###########");
 
 		System.out.println("***********************************************************");
 
