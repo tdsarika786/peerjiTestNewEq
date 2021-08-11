@@ -859,6 +859,12 @@ public class HRAHomePageNew2 extends runWithAttachments {
 			executor1.executeScript("arguments[0].click()", button);
 
 			Utility.waitForWebElement(driver, skipHRAFormButton).click();
+			
+			Utility.wait(7);
+
+			String url = driver.getCurrentUrl();
+
+			System.out.println("URL " + url);
 
 			//Utility.waitForWebElement(driver, startHRAFormButton).click();
 
