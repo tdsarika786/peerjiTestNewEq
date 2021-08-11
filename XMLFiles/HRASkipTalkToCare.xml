@@ -14,9 +14,6 @@
 		
 			<class
 				name="eqcare.peerjitestcases.hraskiptalktocare.copy.HRAIntroPageSkipToTalkCare3" />
-
-<class
-				name="eqcare.peerjitestcases.hraskiptalktocare.copy.HRAPhysicalPageSkipTalkCare2" />
 				
 				
 				<class
@@ -24,7 +21,11 @@
 				
 				
 				<class
-				name="eqcare.peerjitestcases.hraskiptalktocare.copy.HRAPhysicalPageSkipTalkCare2" />
+				name="eqcare.peerjitestcases.hraskiptalktocare.copy.HRAScoreDoingVeryWelllSkipToTalk" />
+				
+				<class
+				name="eqcare.peerjitestcases.hraskiptalktocare.copy.HRAScoreKeepItUpSkipToTalk" />
+				
 
 
 		</classes>
