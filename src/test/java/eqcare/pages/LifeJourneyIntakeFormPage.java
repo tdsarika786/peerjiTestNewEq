@@ -160,12 +160,10 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 	By infoBodyLink = By.xpath("(//div[contains(@class,'link-body')])[1]]");
 
 	By uploadDiv = By.xpath("(//p[contains(text(),'Chat')]/following-sibling::div)[1]");
-	
-	
-	//Skip to Care
-	
+
+	// Skip to Care
+
 	By skipTalkToCareButton = By.xpath("//a[@data-role='tale-to-care-advocate-button']");
-	
 
 	public void verifyIntakeFormPageUrl() throws Exception
 
@@ -303,15 +301,14 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 	}
 
 	public void skipTalkToCareCTA() {
-		
+
 		deviceCheck();
-		
 
 		Utility.waitForWebElement(driver, skipTalkToCareButton).click();
-		
-	
-		
-		fillIntakeFormLifeJourney();
+
+		Utility.waitForWebElement(driver, lifeJourneyreasonVisitInput).sendKeys("Test Visit by Sarika Peerji");
+
+		Utility.waitForWebElement(driver, reasonVisitNextStep).click();
 
 	}
 
