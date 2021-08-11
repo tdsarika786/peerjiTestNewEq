@@ -303,10 +303,13 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 	}
 
 	public void skipTalkToCareCTA() {
+		
+		deviceCheck();
+		
 
 		Utility.waitForWebElement(driver, skipTalkToCareButton).click();
 		
-		deviceCheck();
+	
 		
 		fillIntakeFormLifeJourney();
 
