@@ -18,7 +18,11 @@
 					<class
 				name="eqcare.peerjitestcases.hratalktocare.HRAPhysicalPageTalkCare2" />
 			
-			
+			     <class name="eqcare.peerjitestcases.copy.EQ1_HRAScoreDoingVeryWellEmail2"/>       
+             <class name="eqcare.peerjitestcases.copy.EQ2_HRAScoreKeepItUp"/>
+                <class name="eqcare.peerjitestcases.copy.EQ3_HRAScoreKeepEyeOnIt"/>   
+              <class name="eqcare.peerjitestcases.copy.EQ4_HRAScoreRoomForImprove"/>  
+                     <class name="eqcare.peerjitestcases.copy.EQ4_HRAScoreKeepItUp"/> 
 			
 
 		</classes>
