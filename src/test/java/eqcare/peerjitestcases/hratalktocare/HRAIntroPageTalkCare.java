@@ -1,4 +1,4 @@
-package eqcare.peerjitestcases.copy;
+package eqcare.peerjitestcases.hratalktocare;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Parameters;
@@ -30,7 +30,7 @@ public class HRAIntroPageTalkCare extends BaseClass {
 	public void verifyPage(String email, String password) throws Exception {
 		login = PageFactory.initElements(driver, LoginPage.class);
 
-		login.loginToApplication("sarikaqa7+emp70@gmail.com", "Sarika#123");
+		login.loginToApplication(email, password);
 
 		home = PageFactory.initElements(driver, HRAHomePageNew2.class);
 
