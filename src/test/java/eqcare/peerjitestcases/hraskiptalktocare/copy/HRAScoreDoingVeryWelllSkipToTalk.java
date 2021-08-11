@@ -1,4 +1,4 @@
-package eqcare.peerjitestcases.copy;
+package eqcare.peerjitestcases.hraskiptalktocare.copy;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Parameters;
@@ -16,7 +16,7 @@ import eqcare.pages.ClinicPage;
 import eqcare.factories.DataProviderFactory;
 import eqcare.pages.copy.BaseClass;
 
-public class EQ1_HRAScoreDoingVeryWellEmail extends BaseClass {
+public class HRAScoreDoingVeryWelllSkipToTalk extends BaseClass {
 
 	LoginPage login;
 	HRAHomePageNew2 home;
@@ -30,7 +30,7 @@ public class EQ1_HRAScoreDoingVeryWellEmail extends BaseClass {
 	public void verifyPage(String email, String password) throws Exception {
 		login = PageFactory.initElements(driver, LoginPage.class);
 
-		login.loginToApplication(email, password);
+		login.loginToApplication("sarikaqa7+emp70@gmail.com", "Sarika#123");
 
 		home = PageFactory.initElements(driver, HRAHomePageNew2.class);
 
@@ -48,7 +48,7 @@ public class EQ1_HRAScoreDoingVeryWellEmail extends BaseClass {
 		
 
 		System.out
-				.println("############# START HRAScoreDoingVeryWellEmail_EQ1 ############### sarikaqa7+emp70@gmail.com");
+				.println("############# START HRAScoreDoingVeryWelllSkipToTalk ############### sarikaqa7+emp70@gmail.com");
 		System.out.println("***********************************************************");
 	}
 
@@ -172,15 +172,20 @@ public class EQ1_HRAScoreDoingVeryWellEmail extends BaseClass {
 		}
 
 		else if (coverage.equalsIgnoreCase("LJ")) {
+			System.out.println("Covergae Type " + coverage);
 
-			System.out.println("Covergae Type - " + coverage);
+			//intakeForm.deviceCheck();
+			
+			intakeForm.skipTalkToCareCTA();
 
-			intakeForm.startLifeJourneyVisit();
+			System.out.println("11-Life Journey Device check page");
 
-			System.out.println("12 - Started life journey visit");
+			//intakeForm.hraLifeJourneyVisit();
+
+			System.out.println("12- Life Journey Fill Intake form");
 		}
 
-		System.out.println("############# END EQ1_HRAScoreDoingVeryWellEmail #########");
+		System.out.println("############# END HRAScoreDoingVeryWelllSkipToTalk #########");
 		
 		System.out.println("***********************************************************");
 		
