@@ -11,6 +11,8 @@
 	<test name="Test" preserve-order="true" thread-count="3">
 		<classes>
 
+	<class
+				name="eqcare.peerjitestcases.hratalktocare.HRAIntroPageSkipToTalkCare3" />
 
 			<class
 				name="eqcare.peerjitestcases.hratalktocare.HRAIntroPageTalkCare" />
