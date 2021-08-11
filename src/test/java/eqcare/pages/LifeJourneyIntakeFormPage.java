@@ -309,6 +309,12 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 		Utility.waitForWebElement(driver, lifeJourneyreasonVisitInput).sendKeys("Test Visit by Sarika Peerji");
 
 		Utility.waitForWebElement(driver, reasonVisitNextStep).click();
+		
+		Utility.wait(7);
+
+		String url = driver.getCurrentUrl();
+
+		System.out.println("URL:" + url);
 
 	}
 
