@@ -11,14 +11,17 @@
 	<test name="Test" preserve-order="true" thread-count="3">
 		<classes>
 		
+		<class
+				name="eqcare.peerjitestcases.hraskiptalktocare.copy.HRAScoreDoingVeryWellSkipToTalkHome" />
+				
 		
-		<!-- 	<class
+			<!-- <class
 				name="eqcare.peerjitestcases.hraskiptalktocare.copy.HRAIntroPageSkipToTalkCare3" />
 				
 				
 				<class
 				name="eqcare.peerjitestcases.hraskiptalktocare.copy.HRAPhysicalPageSkipTalkCare2" />
-				 -->
+			
 				
 				<class
 				name="eqcare.peerjitestcases.hraskiptalktocare.copy.HRAScoreDoingVeryWelllSkipToTalk" />
@@ -26,7 +29,7 @@
 				<class
 				name="eqcare.peerjitestcases.hraskiptalktocare.copy.HRAScoreKeepItUpSkipToTalk" />
 				
-
+ -->
 
 		</classes>
 
