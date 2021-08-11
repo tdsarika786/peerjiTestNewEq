@@ -12,13 +12,13 @@
 		<classes>
 		
 		
-			<class
+		<!-- 	<class
 				name="eqcare.peerjitestcases.hraskiptalktocare.copy.HRAIntroPageSkipToTalkCare3" />
 				
 				
 				<class
 				name="eqcare.peerjitestcases.hraskiptalktocare.copy.HRAPhysicalPageSkipTalkCare2" />
-				
+				 -->
 				
 				<class
 				name="eqcare.peerjitestcases.hraskiptalktocare.copy.HRAScoreDoingVeryWelllSkipToTalk" />
