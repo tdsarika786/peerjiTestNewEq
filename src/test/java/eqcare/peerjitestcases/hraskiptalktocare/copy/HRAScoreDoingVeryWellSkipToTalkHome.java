@@ -137,9 +137,13 @@ public class HRAScoreDoingVeryWellSkipToTalkHome extends BaseClass {
 
 		System.out.println("9- HRA Medical");
 
-		home.hraCompletionPageAndTalkToCare();
+		home.hraCompletionPage(scoreLabel);
 
-		System.out.println("10-HRA Completition");
+		System.out.println("10- HRA Completition");
+
+		home.scoreModalClose();
+
+		System.out.println("11 - Score pop up close");
 
 		
 
@@ -189,7 +193,7 @@ public class HRAScoreDoingVeryWellSkipToTalkHome extends BaseClass {
 
 			//System.out.println("12- Life Journey Fill Intake form");
 			
-			intakeForm.startLifeJourneySkipToCareMethod();
+			intakeForm.startLifeJourneySkipToCareMethodHRA();
 			
 			System.out.println("11-Life Journey Device check page");
 
