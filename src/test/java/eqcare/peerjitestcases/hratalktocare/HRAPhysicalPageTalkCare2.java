@@ -73,7 +73,7 @@ public class HRAPhysicalPageTalkCare2 extends BaseClass {
 	
 
 	@Parameters({ "Coverage" })
-	@Test(priority = 4, dependsOnMethods = "verifyHRAIntroPage")
+	@Test(priority = 4, dependsOnMethods = "verifyHRAPhysicalPage")
 	public void verifyTalkToCare(String coverage) throws Exception {
 		
 		try {
