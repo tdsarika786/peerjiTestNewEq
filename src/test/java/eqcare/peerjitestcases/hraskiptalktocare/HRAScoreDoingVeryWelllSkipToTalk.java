@@ -1,4 +1,4 @@
-package eqcare.peerjitestcases.hraskiptalktocare.copy;
+package eqcare.peerjitestcases.hraskiptalktocare;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Parameters;
@@ -16,21 +16,22 @@ import eqcare.pages.ClinicPage;
 import eqcare.factories.DataProviderFactory;
 import eqcare.pages.copy.BaseClass;
 
-public class HRAScoreDoingVeryWellSkipToTalkHome extends BaseClass {
+public class HRAScoreDoingVeryWelllSkipToTalk extends BaseClass {
 
 	LoginPage login;
 	HRAHomePageNew2 home;
 	LifeJourneyIntakeFormPage intakeForm;
 	ClinicPage clinic;
-	HomePage home1;
 	IntakeFormPage intake;
+	HomePage home1;
+
 
 	@Parameters({ "Email", "Password" })
 	@Test(priority = 1)
 	public void verifyPage(String email, String password) throws Exception {
 		login = PageFactory.initElements(driver, LoginPage.class);
 
-		login.loginToApplication("sarikaqa7+anuemp4@gmail.com", "Sarika#123");
+		login.loginToApplication("sarikaqa7+anuemp3@gmail.com", "Sarika#123");
 
 		home = PageFactory.initElements(driver, HRAHomePageNew2.class);
 
@@ -43,12 +44,13 @@ public class HRAScoreDoingVeryWellSkipToTalkHome extends BaseClass {
 		System.out.println("");
 		System.out.println("");
 		
-		System.out.println("***********************************************************");
-
-		System.out.println("########## START HRAScoreDoingVeryWell_EQ1 ########## " + "sarikaqa7+anuemp4@gmail.com");
+	System.out.println("***********************************************************");
 		
-		System.out.println("***********************************************************");
+		
 
+		System.out
+				.println("############# START HRAScoreDoingVeryWelllSkipToTalk ############### sarikaqa7+anuemp3@gmail.com");
+		System.out.println("***********************************************************");
 	}
 
 	@Test(priority = 2, dependsOnMethods = "verifyPage")
@@ -83,8 +85,8 @@ public class HRAScoreDoingVeryWellSkipToTalkHome extends BaseClass {
 
 		String scoreLabel = "You’re doing very well.";
 
-		System.out.println("Score Label should be ******** HRA Doing Very Well Scenario**********");
-		
+		System.out.println("Score Label should be ********HRA Doing Very Well Scenario**********");
+
 		System.out.println("IN 1-HRA PhysicalIntakeForms Ques1" + " " + height + " " + weight + " " + waist);
 
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
@@ -145,9 +147,6 @@ public class HRAScoreDoingVeryWellSkipToTalkHome extends BaseClass {
 
 		System.out.println("11 - Score pop up close");
 
-		
-
-
 	}
 
 	@Parameters({ "Coverage" })
@@ -156,57 +155,43 @@ public class HRAScoreDoingVeryWellSkipToTalkHome extends BaseClass {
 		
 		try {
 
-		System.out.println(
-				"************* EQ2 - HRA Form Complete IN Thank you page Talk to Care Advocate ********************");
+		System.out.println("// ****************** EQ 1 Talk To Care from Home Page **************************** //");
 
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
 
 		home1 = PageFactory.initElements(driver, HomePage.class);
 
-		// String coverage = "LJ";
-
 		if (coverage.equalsIgnoreCase("EQ")) {
 
 			System.out.println("Covergae Type " + coverage);
-
-			// home.hraCompletionPageAndTalkToCare();
-
-			home1.deviceCheckHRA();
-
-			System.out.println("11-Device check page");
-
-			intake.fillIntakeForm();
-
+			
+			home.deviceCheck();
+			
+			intakeForm.startLifeJourneyMethod();
+			
 			System.out.println("12- Regular Fill Intake form");
-
 		}
 
 		else if (coverage.equalsIgnoreCase("LJ")) {
-
 			System.out.println("Covergae Type " + coverage);
 
 			//intakeForm.deviceCheck();
+			
+			intakeForm.skipTalkToCareCTA();
 
-			//System.out.println("11-Life Journey Device check page");
+			System.out.println("11-Life Journey Device check page");
 
 			//intakeForm.hraLifeJourneyVisit();
 
-			//System.out.println("12- Life Journey Fill Intake form");
-			
-			intakeForm.startLifeJourneySkipToCareMethod();
-			
-			System.out.println("11-Life Journey Device check page");
-
 			System.out.println("12- Life Journey Fill Intake form");
-
 		}
 
-		System.out.println("######### END HRAScoreDoingVeryWellSkipToTalkHome ###########");
-
-		System.out.println("***********************************************************");
-
+		System.out.println("############# END HRAScoreDoingVeryWelllSkipToTalk #########");
+		
 		System.out.println("***********************************************************");
 		
+		System.out.println("***********************************************************");
+
 		System.out.println("");
 		System.out.println("");
 		
@@ -221,5 +206,9 @@ public class HRAScoreDoingVeryWellSkipToTalkHome extends BaseClass {
 			throw ex;
 		}
 
+		
 	}
+
+	
+
 }

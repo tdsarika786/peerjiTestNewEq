@@ -1,4 +1,4 @@
-package eqcare.peerjitestcases.hraskiptalktocare.copy;
+package eqcare.peerjitestcases.hraskiptalktocare;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Parameters;
