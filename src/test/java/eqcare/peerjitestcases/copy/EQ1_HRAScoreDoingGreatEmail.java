@@ -65,6 +65,9 @@ public class EQ1_HRAScoreDoingGreatEmail extends BaseClass {
 
 	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage")
 	public void hraGreatScenario() throws Exception {
+		
+		
+		//90 %%%
 
 		String height = "173";
 		String weight = "58";
