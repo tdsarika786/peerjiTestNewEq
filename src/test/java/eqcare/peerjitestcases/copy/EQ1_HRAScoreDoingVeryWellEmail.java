@@ -30,7 +30,7 @@ public class EQ1_HRAScoreDoingVeryWellEmail extends BaseClass {
 	public void verifyPage(String email, String password) throws Exception {
 		login = PageFactory.initElements(driver, LoginPage.class);
 
-		login.loginToApplication(email, password);
+		login.loginToApplication("sarikaqa7+emp70@gmail.com", "Sarika#123");
 
 		home = PageFactory.initElements(driver, HRAHomePageNew2.class);
 
