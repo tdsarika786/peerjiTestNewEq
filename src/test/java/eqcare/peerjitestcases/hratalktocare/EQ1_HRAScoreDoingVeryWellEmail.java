@@ -166,7 +166,7 @@ public class EQ1_HRAScoreDoingVeryWellEmail extends BaseClass {
 
 			// home.hraCompletionPageAndTalkToCare();
 
-			home1.deviceCheckHRA();
+			home1.deviceCheck();
 
 			System.out.println("11-Device check page");
 
