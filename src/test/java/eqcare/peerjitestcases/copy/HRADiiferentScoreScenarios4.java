@@ -45,7 +45,7 @@ public class HRADiiferentScoreScenarios4 extends BaseClass {
 		
 		System.out.println("***********************************************************");
 
-		System.out.println("########## START HRADiiferentScoreScenarios3 ########## " + email);
+		System.out.println("########## START HRADiiferentScoreScenarios4 ########## " + email);
 		
 		System.out.println("***********************************************************");
 
