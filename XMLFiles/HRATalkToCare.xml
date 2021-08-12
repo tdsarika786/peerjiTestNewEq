@@ -20,7 +20,7 @@
 					<class
 				name="eqcare.peerjitestcases.hratalktocare.HRAPhysicalPageTalkCare2" />
 			
-			     <class name="eqcare.peerjitestcases.hratalktocare.EQ1_HRAScoreDoingVeryWellEmail2"/>       
+			     <class name="eqcare.peerjitestcases.hratalktocare.EQ1_HRAScoreDoingVeryWellEmail"/>       
              <class name="eqcare.peerjitestcases.hratalktocare.EQ2_HRAScoreKeepItUp"/>
                 <class name="eqcare.peerjitestcases.hratalktocare.EQ3_HRAScoreKeepEyeOnIt"/>   
               <class name="eqcare.peerjitestcases.hratalktocare.EQ4_HRAScoreRoomForImprove"/>  
