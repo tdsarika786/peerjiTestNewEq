@@ -47,7 +47,7 @@ public class HRAPhysicalPageSkipTalkCare2 extends BaseClass {
 		
 		System.out.println("***********************************************************");
 
-		System.out.println("########## START HRAPhysicalPageTalkCare2 ########## " + email);
+		System.out.println("########## START HRAPhysicalPageTalkCare2 ########## " + "sarikaqa7+anuemp2@gmail.com");
 		
 		System.out.println("***********************************************************");
 
@@ -117,7 +117,7 @@ public class HRAPhysicalPageSkipTalkCare2 extends BaseClass {
 			System.out.println("12- Life Journey Fill Intake form");
 		}
 
-		System.out.println("######### END HRAPhysicalPageTalkCare2 ###########");
+		System.out.println("######### END HRAPhysicalPageSkipTalkCare2 ###########");
 
 		System.out.println("***********************************************************");
 

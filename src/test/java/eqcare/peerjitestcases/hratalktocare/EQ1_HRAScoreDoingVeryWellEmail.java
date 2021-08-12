@@ -48,7 +48,7 @@ public class EQ1_HRAScoreDoingVeryWellEmail extends BaseClass {
 		
 
 		System.out
-				.println("############# START HRAScoreDoingVeryWellEmail_EQ1 ############### sarikaqa7+emp70@gmail.com");
+				.println("############# START EQ1_HRAScoreDoingVeryWellEmail ############### sarikaqa7+emp70@gmail.com");
 		System.out.println("***********************************************************");
 	}
 

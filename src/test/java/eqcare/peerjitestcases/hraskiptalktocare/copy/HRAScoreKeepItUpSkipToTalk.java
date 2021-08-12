@@ -46,7 +46,7 @@ public class HRAScoreKeepItUpSkipToTalk extends BaseClass {
 
 		System.out.println("***********************************************************");
 
-		System.out.println("######### START HRAScoreKeepItUpSkipToTalk ######## sarikaqa7+emp71@gmail.com ");
+		System.out.println("######### START HRAScoreKeepItUpSkipToTalk ######## sarikaqa7+anuemp5@gmail.com");
 		System.out.println("***********************************************************");
 	}
 

@@ -46,7 +46,7 @@ public class HRAIntroPageSkipToTalkCare3 extends BaseClass {
 		
 		System.out.println("***********************************************************");
 
-		System.out.println("########## START HRAIntroPageSkipToTalkCare3 ########## " + email);
+		System.out.println("########## START HRAIntroPageSkipToTalkCare3 ########## " + "sarikaqa7+anuemp1@gmail.com");
 		
 		System.out.println("***********************************************************");
 

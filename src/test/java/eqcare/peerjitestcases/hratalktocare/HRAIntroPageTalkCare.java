@@ -45,7 +45,7 @@ public class HRAIntroPageTalkCare extends BaseClass {
 		
 		System.out.println("***********************************************************");
 
-		System.out.println("########## START HRAIntroPageTalkCare1 ########## " + email);
+		System.out.println("########## START HRAIntroPageTalkCare ########## " + "sarikaqa7+abc1@gmail.com");
 		
 		System.out.println("***********************************************************");
 
@@ -108,7 +108,7 @@ public class HRAIntroPageTalkCare extends BaseClass {
 
 		}
 
-		System.out.println("######### END HRAIntroPageTalkCare1 ###########");
+		System.out.println("######### END HRAIntroPageTalkCare ###########");
 
 		System.out.println("***********************************************************");
 

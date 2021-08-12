@@ -45,7 +45,7 @@ public class HRAScoreDoingVeryWellSkipToTalkHome extends BaseClass {
 		
 		System.out.println("***********************************************************");
 
-		System.out.println("########## START HRAScoreDoingVeryWell_EQ1 ########## " + email);
+		System.out.println("########## START HRAScoreDoingVeryWell_EQ1 ########## " + "sarikaqa7+anuemp4@gmail.com");
 		
 		System.out.println("***********************************************************");
 
@@ -201,7 +201,7 @@ public class HRAScoreDoingVeryWellSkipToTalkHome extends BaseClass {
 
 		}
 
-		System.out.println("######### END hraDoingVeryWellScenario ###########");
+		System.out.println("######### END HRAScoreDoingVeryWellSkipToTalkHome ###########");
 
 		System.out.println("***********************************************************");
 
