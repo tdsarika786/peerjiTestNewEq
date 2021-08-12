@@ -24,14 +24,20 @@
 				<class
 				name="eqcare.peerjitestcases.hraskiptalktocare.HRAScoreDoingVeryWelllSkipToTalk" />
 				
-				<class
-				name="eqcare.peerjitestcases.hraskiptalktocare.HRAScoreDoingVeryWellSkipToTalkHome" />
+			
 				
 				
 				<class
 				name="eqcare.peerjitestcases.hraskiptalktocare.HRAScoreKeepItUpSkipToTalk" />
 				
 
+ <class
+				name="eqcare.peerjitestcases.hraskiptalktocare.EQ3_HRAScoreKeepEyeOnItEmail" />
+				
+					<class
+				name="eqcare.peerjitestcases.hraskiptalktocare.EQ4_HRAScoreRoomForImproveEmail" />
+				
+		
 
 		</classes>
 
