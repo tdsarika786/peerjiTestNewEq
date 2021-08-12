@@ -665,7 +665,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 			Assert.assertEquals(getScore, "You’re doing very well.");
 			System.out.println("Assertion Pass " + getScore + " " + percentage);
 		} else if (percentage <= 100 && percentage >= 86) {
-			Assert.assertEquals(getScore, "You’re doing very great.");
+			Assert.assertEquals(getScore, "You’re doing great.");
 			System.out.println("Assertion Pass " + getScore + " " + percentage);
 		}
 
