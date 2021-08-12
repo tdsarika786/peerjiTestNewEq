@@ -163,11 +163,15 @@ public class EQ1_HRAScoreDoingVeryWellEmail extends BaseClass {
 		if (coverage.equalsIgnoreCase("EQ")) {
 
 			System.out.println("Covergae Type " + coverage);
-			
-			home.deviceCheck();
-			
-			intakeForm.startLifeJourneyMethod();
-			
+
+			// home.hraCompletionPageAndTalkToCare();
+
+			home1.deviceCheckHRA();
+
+			System.out.println("11-Device check page");
+
+			intake.fillIntakeForm();
+
 			System.out.println("12- Regular Fill Intake form");
 		}
 
