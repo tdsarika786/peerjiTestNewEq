@@ -23,14 +23,15 @@ public class HRAScoreKeepItUpSkipToTalk extends BaseClass {
 	LifeJourneyIntakeFormPage intakeForm;
 	ClinicPage clinic;
 	IntakeFormPage intake;
-	HomePage home1;
+	HomePage home1;	
+	
 
 	@Parameters({ "Email", "Password" })
 	@Test(priority = 1)
 	public void verifyPage(String email, String password) throws Exception {
 		login = PageFactory.initElements(driver, LoginPage.class);
 
-		login.loginToApplication(email, password);
+		login.loginToApplication("sarikaqa7+anuemp5@gmail.com", "Sarika#123");
 
 		home = PageFactory.initElements(driver, HRAHomePageNew2.class);
 
