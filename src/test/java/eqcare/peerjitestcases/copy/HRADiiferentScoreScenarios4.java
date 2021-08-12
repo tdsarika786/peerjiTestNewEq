@@ -75,7 +75,7 @@ public class HRADiiferentScoreScenarios4 extends BaseClass {
 
 		String[] yesNoOption = { "yes", "no" };
 
-		String sleepHrs = "2";
+		String sleepHrs = "10";
 
 		String noSmokes = "2";
 
@@ -83,17 +83,21 @@ public class HRADiiferentScoreScenarios4 extends BaseClass {
 
 		//String scoreLabel = "You’re doing very well.";
 
-		System.out.println("Score Label should be ******** HRA Doing Very Well Scenario**********");
+		String scoreLabel = "You’re doing great.";
+
+		System.out.println("Score Label should be ******** HRA You’re doing great Scenario **********");
+
+		System.out.println("IN 1-HRA PhysicalIntakeForms Ques1" + " " + height + " " + weight + " " + waist);
 
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
 
-		System.out.println("1-HRA PhysicalIntakeForms Ques1" + " " + height + " " + weight + " " + waist);
+		System.out.println("1-HRA PhysicalIntakeForms Ques1 done" + " " + height + " " + weight + " " + waist);
 
-		home.verifyHRAPhysicalIntakeFormsQues2(options[1]);
+		home.verifyHRAPhysicalIntakeFormsQues2(options[2]);
 
 		System.out.println("2- HRA PhysicalIntakeFormsQues2");
 
-		home.verifyHRAPhysicalIntakeFormsQues3(options[1]);
+		home.verifyHRAPhysicalIntakeFormsQues3(options[0]);
 
 		System.out.println("3- HRA PhysicalIntakeFormsQues3");
 
@@ -101,37 +105,37 @@ public class HRADiiferentScoreScenarios4 extends BaseClass {
 
 		System.out.println("4- HRALifeStyleQuesSleep1");
 
-		home.verifyHRALifeStyleQuesSmoking2(options[4], noSmokes);
+		home.verifyHRALifeStyleQuesSmoking2(options[0], null);
 
 		System.out.println("5- HRA LifeStyleQuesSmoking2");
 
-		home.verifyHRALifeStyleQuesDrinking1(options[2], noDrinks);
+		home.verifyHRALifeStyleQuesDrinking1(options[0], null);
 
 		System.out.println("6- HRA LifeStyleQuesDrinking1");
 
-		home.verifyHRALifeStyleQuesStress(options[4]);
+		home.verifyHRALifeStyleQuesStress(options[0]);
 
 		System.out.println("7- HRALifeStyleQuesStress");
 
-		home.verifyHRALifeStyleQuesHappiness(options[4]);
+		home.verifyHRALifeStyleQuesHappiness(options[0]);
 
 		System.out.println("8- HRA LifeStyleQuesHappiness");
 
-		home.verifyMedical(medQues[0], yesNoOption[1], yesNoOption[0]);
+		home.verifyMedical(medQues[0], yesNoOption[1], yesNoOption[1]);
 
-		home.verifyMedical(medQues[1], yesNoOption[1], yesNoOption[0]);
+		home.verifyMedical(medQues[1], yesNoOption[1], yesNoOption[1]);
 
-		home.verifyMedical(medQues[2], yesNoOption[1], yesNoOption[0]);
+		home.verifyMedical(medQues[2], yesNoOption[1], yesNoOption[1]);
 
-		home.verifyMedical(medQues[3], yesNoOption[1], yesNoOption[0]);
+		home.verifyMedical(medQues[3], yesNoOption[1], yesNoOption[1]);
 
-		home.verifyMedical(medQues[4], yesNoOption[1], yesNoOption[0]);
+		home.verifyMedical(medQues[4], yesNoOption[1], yesNoOption[1]);
 
-		home.verifyMedical(medQues[5], yesNoOption[1], yesNoOption[0]);
+		home.verifyMedical(medQues[5], yesNoOption[1], yesNoOption[1]);
 
-		home.verifyMedical(medQues[6], yesNoOption[1], yesNoOption[0]);
+		home.verifyMedical(medQues[6], yesNoOption[1], yesNoOption[1]);
 
-		home.verifyMedical(medQues[7], yesNoOption[1], yesNoOption[0]);
+		home.verifyMedical(medQues[7], yesNoOption[1], yesNoOption[1]);
 
 		System.out.println("9- HRA Medical");
 
