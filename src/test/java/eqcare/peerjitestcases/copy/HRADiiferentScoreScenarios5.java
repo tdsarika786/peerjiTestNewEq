@@ -48,7 +48,7 @@ public class HRADiiferentScoreScenarios5 extends BaseClass {
 		
 
 		System.out
-				.println("############# START EQ1_HRAScoreDoingGreatEmail ############### sarikaqa7+emp74@gmail.com");
+				.println("############# START HRADiiferentScoreScenarios5 ############### sarikaqa7+emp74@gmail.com");
 		System.out.println("***********************************************************");
 	}
 
