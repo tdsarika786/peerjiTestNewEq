@@ -25,6 +25,11 @@
 				<class
 				name="eqcare.peerjitestcases.copy.HRADiiferentScoreScenarios5" />
 
+<class
+				name="eqcare.peerjitestcases.copy.HRADiiferentScoreScenarios6" />
+
+
+
 		</classes>
 
 	</test> <!-- Test -->
