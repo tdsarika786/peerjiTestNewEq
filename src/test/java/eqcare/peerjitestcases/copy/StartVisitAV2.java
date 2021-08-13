@@ -66,7 +66,7 @@ public class StartVisitAV2 extends BaseClass {
 
 		intake.fillIntakeForm();
 
-		System.out.println("************* 3-device Check ********************");
+		System.out.println("************* 3-fillIntakeFormWithAllFields ********************");
 
 		System.out.println("*************END ********************");
 

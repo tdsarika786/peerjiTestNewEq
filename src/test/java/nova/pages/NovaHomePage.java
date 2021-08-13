@@ -943,7 +943,7 @@ public class NovaHomePage {
 		Utility.wait(2);
 
 	}
-	
+	//peerji
 	public void createCoverage1797(String searchEmployer, String CoverageToken, String CoverageType) {
 
 	/*	Utility.waitForWebElement(driver, EmployerLink).click();
@@ -958,6 +958,9 @@ public class NovaHomePage {
 		Utility.waitForWebElement(driver, clickEqCareEmployer).click(); */
 		
 		//Utility.waitForWebElement(driver, CreateCoverage).click();
+		
+
+		Utility.wait(2);
 		
 		WebElement CreateCoverage = driver.findElement(By.xpath("(//a[contains(text(), 'Create Coverage')])[1]"));
 
