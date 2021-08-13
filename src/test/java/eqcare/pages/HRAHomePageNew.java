@@ -67,7 +67,7 @@ public class HRAHomePageNew extends runWithAttachments {
 
 	By skipHRAFormButton = By.xpath("//a[@data-role='skip-hra-form-button']");
 
-	// HRA Physical Intake Form
+	// HRA Physical Intake Formaa
 
 	By backLink = By.xpath("//p[contains(text(), 'Back')]");
 
