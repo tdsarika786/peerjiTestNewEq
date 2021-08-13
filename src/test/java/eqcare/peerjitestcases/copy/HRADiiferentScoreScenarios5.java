@@ -16,21 +16,21 @@ import eqcare.pages.ClinicPage;
 import eqcare.factories.DataProviderFactory;
 import eqcare.pages.copy.BaseClass;
 
-public class HRADiiferentScoreScenarios4 extends BaseClass {
+public class HRADiiferentScoreScenarios5 extends BaseClass {
 
 	LoginPage login;
 	HRAHomePageNew2 home;
 	LifeJourneyIntakeFormPage intakeForm;
 	ClinicPage clinic;
-	HomePage home1;
 	IntakeFormPage intake;
+	HomePage home1;
 
 	@Parameters({ "Email", "Password" })
 	@Test(priority = 1)
 	public void verifyPage(String email, String password) throws Exception {
 		login = PageFactory.initElements(driver, LoginPage.class);
 
-		login.loginToApplication(email, password);
+		login.loginToApplication("sarikaqa7+emp74@gmail.com", "Sarika#123");
 
 		home = PageFactory.initElements(driver, HRAHomePageNew2.class);
 
@@ -43,12 +43,13 @@ public class HRADiiferentScoreScenarios4 extends BaseClass {
 		System.out.println("");
 		System.out.println("");
 		
-		System.out.println("***********************************************************");
-
-		System.out.println("########## START HRADiiferentScoreScenarios4 ########## " + email);
+	System.out.println("***********************************************************");
 		
-		System.out.println("***********************************************************");
+		
 
+		System.out
+				.println("############# START EQ1_HRAScoreDoingGreatEmail ############### sarikaqa7+emp74@gmail.com");
+		System.out.println("***********************************************************");
 	}
 
 	@Test(priority = 2, dependsOnMethods = "verifyPage")
@@ -63,13 +64,14 @@ public class HRADiiferentScoreScenarios4 extends BaseClass {
 	}
 
 	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage")
-	public void hraDoingVeryWellScenario() throws Exception {
+	public void hraGreatScenario() throws Exception {
 		
-		//86
+		
+		//90 %%%
 
-		String height = "180";
-		String weight = "70";
-		String waist = "79";
+		String height = "173";
+		String weight = "58";
+		String waist = "64";
 
 		String[] options = { "option1", "option2", "option3", "option4", "option5" };
 
@@ -77,13 +79,11 @@ public class HRADiiferentScoreScenarios4 extends BaseClass {
 
 		String[] yesNoOption = { "yes", "no" };
 
-		String sleepHrs = "10";
+		String sleepHrs = "9";
 
-		String noSmokes = "2";
+		String noSmokes = "10";
 
-		String noDrinks = "2";
-
-		//String scoreLabel = "You’re doing very well.";
+		String noDrinks = "10";
 
 		String scoreLabel = "You’re doing great.";
 
@@ -95,7 +95,7 @@ public class HRADiiferentScoreScenarios4 extends BaseClass {
 
 		System.out.println("1-HRA PhysicalIntakeForms Ques1 done" + " " + height + " " + weight + " " + waist);
 
-		home.verifyHRAPhysicalIntakeFormsQues2(options[2]);
+		home.verifyHRAPhysicalIntakeFormsQues2(options[0]);
 
 		System.out.println("2- HRA PhysicalIntakeFormsQues2");
 
@@ -141,15 +141,17 @@ public class HRADiiferentScoreScenarios4 extends BaseClass {
 
 		System.out.println("9- HRA Medical");
 
-		home.hraCompletionPage();
+		home.hraCompletionPage(scoreLabel);
 
-		System.out.println("10-HRA Completition");
+		System.out.println("10- HRA Completition");
 
-		System.out.println("");
-		System.out.println("");
+		home.scoreModalClose();
 
+		System.out.println("11 - Score pop up close");
 
 	}
 
 	
+	
+
 }

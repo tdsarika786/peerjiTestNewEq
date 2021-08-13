@@ -86,7 +86,7 @@ public class HRAHomePageNew extends runWithAttachments {
 	By weightInput = By.xpath("//label[@for='weight']//following::input[1]");
 
 	By waistInput = By.xpath("//label[@for='waist_circumference']//following::input[1]");
-
+	
 	By hraPhysicalNextButton = By.xpath("//a[@data-role='hra-physical-question-1-next-button']");
 
 	// Active working
