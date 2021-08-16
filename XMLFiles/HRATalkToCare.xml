@@ -15,7 +15,7 @@
 		  <class name="eqcare.peerjitestcases.hratalktocare.EQ1_HRAScoreDoingGreatEmail"/>
 		
 
-	<!-- 	<class
+	<class
 				name="eqcare.peerjitestcases.hratalktocare.HRAIntroPageTalkCare" />
 				
 					<class
@@ -30,7 +30,7 @@
                 <class name="eqcare.peerjitestcases.hratalktocare.EQ3_HRAScoreKeepEyeOnItEmail"/>   
                 
               <class name="eqcare.peerjitestcases.hratalktocare.EQ4_HRAScoreRoomForImproveEmail"/>  
-                    -->
+                   
 			
 
 		</classes>

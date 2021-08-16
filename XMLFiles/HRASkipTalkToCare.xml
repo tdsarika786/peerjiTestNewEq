@@ -11,7 +11,9 @@
 	<test name="Test" preserve-order="true" thread-count="3">
 		<classes>
 		
-		
+		 <class
+				name="eqcare.peerjitestcases.hraskiptalktocare.EQ1_HRAScoreDoingGreatEmailSkipToTalk" />
+				
 		
 	 <class
 				name="eqcare.peerjitestcases.hraskiptalktocare.HRAIntroPageSkipToTalkCare3" />
@@ -32,10 +34,10 @@
 				
 
  <class
-				name="eqcare.peerjitestcases.hraskiptalktocare.EQ3_HRAScoreKeepEyeOnItEmail" />
+				name="eqcare.peerjitestcases.hraskiptalktocare.EQ3_HRAScoreKeepEyeOnItEmailSkipToTalk" />
 				
 					<class
-				name="eqcare.peerjitestcases.hraskiptalktocare.EQ4_HRAScoreRoomForImproveEmail" />
+				name="eqcare.peerjitestcases.hraskiptalktocare.EQ4_HRAScoreRoomForImproveEmailSkipToTalk" />
 				
 		
 

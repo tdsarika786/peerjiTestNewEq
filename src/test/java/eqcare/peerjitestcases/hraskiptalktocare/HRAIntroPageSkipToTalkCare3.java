@@ -31,7 +31,7 @@ public class HRAIntroPageSkipToTalkCare3 extends BaseClass {
 	public void verifyPage(String email, String password) throws Exception {
 		login = PageFactory.initElements(driver, LoginPage.class);
 
-		login.loginToApplication("sarikaqa7+anuemp1@gmail.com", "Sarika#123");
+		login.loginToApplication("sarikaqa7+av1@gmail.com", "Sarika#123");
 
 		home = PageFactory.initElements(driver, HRAHomePageNew2.class);
 

@@ -75,7 +75,7 @@ public class HRADiiferentScoreScenarios6 extends BaseClass {
 
 		String[] yesNoOption = { "yes", "no" };
 
-		String sleepHrs = "9";
+		String sleepHrs = "10";
 
 		String noSmokes = "10";
 

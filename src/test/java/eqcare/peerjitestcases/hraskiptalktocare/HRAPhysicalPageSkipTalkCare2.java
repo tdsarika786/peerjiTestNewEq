@@ -32,7 +32,7 @@ public class HRAPhysicalPageSkipTalkCare2 extends BaseClass {
 
 		//login.loginToApplication("sarikaqa7+emp71@gmail.com", "Sarika#123");
 		
-		login.loginToApplication("sarikaqa7+anuemp2@gmail.com", "Sarika#123");
+		login.loginToApplication("sarikaqa7+avp1@gmail.com", "Sarika#123");
 
 		home = PageFactory.initElements(driver, HRAHomePageNew2.class);
 

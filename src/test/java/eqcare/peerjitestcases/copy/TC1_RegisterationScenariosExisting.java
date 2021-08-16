@@ -302,7 +302,7 @@ public class TC1_RegisterationScenariosExisting extends BaseClass {
 		
 		register.Registeration1("sarikaqa7+anuemp5@gmail.com",
 
-				"Sarika-TestEmpTestE",
+				"Sarika-TestEmpGreatE",
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 4),

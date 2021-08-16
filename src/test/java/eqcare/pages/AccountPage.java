@@ -243,7 +243,7 @@ public class AccountPage extends runWithAttachments {
 
 			Utility.waitForWebElement(driver, personalInfoEditLink).click();
 
-			clearFieldsPersonalInfo();
+			//clearFieldsPersonalInfo();
 
 			Utility.waitForWebElement(driver, personalInfoHeader);
 

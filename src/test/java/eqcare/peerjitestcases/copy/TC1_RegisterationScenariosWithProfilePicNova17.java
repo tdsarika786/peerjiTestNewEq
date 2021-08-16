@@ -302,7 +302,7 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 		
 		register.Registeration1("sarikaqa7+emp74@gmail.com",
 
-				"Sarika-TestEmpTest",
+				"Sarika-TestEmpGreat",
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 4),
