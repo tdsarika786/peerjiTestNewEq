@@ -236,6 +236,7 @@ public class AccountPageAV extends runWithAttachments {
 	public void editUserPersonalInfo() throws Exception {
 
 		try {
+			//peerji
 
 			navigateToProfilePage();
 
