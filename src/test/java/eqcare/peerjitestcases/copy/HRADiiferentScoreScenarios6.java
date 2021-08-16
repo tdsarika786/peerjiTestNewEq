@@ -64,6 +64,8 @@ public class HRADiiferentScoreScenarios6 extends BaseClass {
 
 	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage")
 	public void hraDoingVeryWellScenario() throws Exception {
+		
+		//86%
 
 		String height = "180";
 		String weight = "70";
