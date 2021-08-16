@@ -79,7 +79,7 @@ public class HRADiiferentScoreScenarios5 extends BaseClass {
 
 		String[] yesNoOption = { "yes", "no" };
 
-		String sleepHrs = "9";
+		String sleepHrs = "10";
 
 		String noSmokes = "10";
 
@@ -95,11 +95,11 @@ public class HRADiiferentScoreScenarios5 extends BaseClass {
 
 		System.out.println("1-HRA PhysicalIntakeForms Ques1 done" + " " + height + " " + weight + " " + waist);
 
-		home.verifyHRAPhysicalIntakeFormsQues2(options[0]);
+		home.verifyHRAPhysicalIntakeFormsQues2(options[2]);
 
 		System.out.println("2- HRA PhysicalIntakeFormsQues2");
 
-		home.verifyHRAPhysicalIntakeFormsQues3(options[2]);
+		home.verifyHRAPhysicalIntakeFormsQues3(options[0]);
 
 		System.out.println("3- HRA PhysicalIntakeFormsQues3");
 
