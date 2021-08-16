@@ -91,7 +91,7 @@ public class HRADiiferentScoreScenarios6 extends BaseClass {
 
 		System.out.println("1-HRA PhysicalIntakeForms Ques1 done" + " " + height + " " + weight + " " + waist);
 
-		home.verifyHRAPhysicalIntakeFormsQues2(options[0]);
+		home.verifyHRAPhysicalIntakeFormsQues2(options[2]);
 
 		System.out.println("2- HRA PhysicalIntakeFormsQues2");
 

@@ -99,7 +99,7 @@ public class HRADiiferentScoreScenarios5 extends BaseClass {
 
 		System.out.println("2- HRA PhysicalIntakeFormsQues2");
 
-		home.verifyHRAPhysicalIntakeFormsQues3(options[0]);
+		home.verifyHRAPhysicalIntakeFormsQues3(options[2]);
 
 		System.out.println("3- HRA PhysicalIntakeFormsQues3");
 
