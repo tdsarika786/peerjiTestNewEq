@@ -66,7 +66,7 @@ public class HRAPhysicalPageTalkCare2 extends BaseClass {
 
 		home.verifyHRAPhysicalIntakeFormsQues1("100", "450", "100");
 
-		System.out.println("*******HRA Physical Page Talk Care***********");
+		System.out.println("*******HRA Physical Page Talk Care BMI ***********");
 		
 		home.talkToCare();
 
@@ -103,16 +103,18 @@ public class HRAPhysicalPageTalkCare2 extends BaseClass {
 		}
 
 		else if (coverage.equalsIgnoreCase("LJ")) {
-
+			
 			System.out.println("Covergae Type " + coverage);
 
-			//intakeForm.deviceCheck();
+			intakeForm.startLifeJourneyTalkToCareMethod();
 			
-			intakeForm.startLifeJourneyMethod();
-
-			System.out.println("11-Life Journey Device check page");
+			
+			//intakeForm.startLifeJourneyMethod();
+			
 
 			//intakeForm.hraLifeJourneyVisit();
+
+			System.out.println("11-Life Journey Device check page");
 
 			System.out.println("12- Life Journey Fill Intake form");
 

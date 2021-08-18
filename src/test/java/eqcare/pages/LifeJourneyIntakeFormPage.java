@@ -317,6 +317,22 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 		System.out.println("URL:" + url);
 
 	}
+	
+	public void startLifeJourneyTalkToCareMethod() throws Exception {
+
+		deviceCheck();
+		
+		fillIntakeFormLifeJourney();
+	
+		LifeFourneyForms();
+		
+		Utility.wait(7);
+
+		String url = driver.getCurrentUrl();
+
+		System.out.println("URL:" + url);
+
+	}
 
 	public void startLifeJourneySkipToCareMethod() throws Exception {
 
