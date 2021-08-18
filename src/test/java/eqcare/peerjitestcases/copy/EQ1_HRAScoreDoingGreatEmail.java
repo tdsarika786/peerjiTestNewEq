@@ -48,7 +48,7 @@ public class EQ1_HRAScoreDoingGreatEmail extends BaseClass {
 		
 
 		System.out
-				.println("############# START EQ1_HRAScoreDoingGreatEmail ############### sarikaqa7+emp70@gmail.com");
+				.println("############# START EQ1_HRAScoreDoingGreatEmail ############### sarikaqa7+emp74@gmail.com");
 		System.out.println("***********************************************************");
 	}
 
@@ -79,7 +79,7 @@ public class EQ1_HRAScoreDoingGreatEmail extends BaseClass {
 
 		String[] yesNoOption = { "yes", "no" };
 
-		String sleepHrs = "9";
+		String sleepHrs = "10";
 
 		String noSmokes = "10";
 
