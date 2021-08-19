@@ -63,7 +63,7 @@ public class StartVisitPC extends BaseClass {
 
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
 		
-		home.hraCompleteLater();
+		//home.hraCompleteLater();
 
 		intake.fillIntakeForm();
 		
