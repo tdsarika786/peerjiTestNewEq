@@ -13,14 +13,14 @@
 		
 		 <class
 				name="eqcare.peerjitestcases.hraskiptalktocare.EQ1_HRAScoreDoingGreatEmailSkipToTalk" />
-				
-		
-	 <class
-				name="eqcare.peerjitestcases.hraskiptalktocare.HRAIntroPageSkipToTalkCare3" />
-				
-				
-				<class
-				name="eqcare.peerjitestcases.hraskiptalktocare.HRAPhysicalPageSkipTalkCare2" />
+
+
+	<!-- <class
+		name="eqcare.peerjitestcases.hraskiptalktocare.HRAIntroPageSkipToTalkCare3" />
+
+
+	<class
+		name="eqcare.peerjitestcases.hraskiptalktocare.HRAPhysicalPageSkipTalkCare2" /> -->
 			
 				
 				<class
