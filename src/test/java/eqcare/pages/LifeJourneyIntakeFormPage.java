@@ -302,7 +302,7 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 	
 	public void deviceCheckSkipToTalk() {
 
-		Utility.waitForWebElement(driver, startVisitButton).click();
+		Utility.waitForWebElement(driver, startLifeJourneyButton).click();
 
 		// Utility.waitForWebElement(driver, startVisitButton).click();
 
