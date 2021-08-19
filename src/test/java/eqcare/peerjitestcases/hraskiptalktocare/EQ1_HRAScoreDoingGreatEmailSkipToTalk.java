@@ -48,7 +48,7 @@ public class EQ1_HRAScoreDoingGreatEmailSkipToTalk extends BaseClass {
 		
 
 		System.out
-				.println("############# START EQ1_HRAScoreDoingGreatEmail ############### sarikaqa7+emp70@gmail.com");
+				.println("############# START EQ1_HRAScoreDoingGreatEmailSkipToTalk ############### sarikaqa7+emp70@gmail.com");
 		System.out.println("***********************************************************");
 	}
 

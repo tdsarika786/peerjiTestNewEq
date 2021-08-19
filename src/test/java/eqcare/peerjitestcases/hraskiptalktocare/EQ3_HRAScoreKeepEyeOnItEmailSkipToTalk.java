@@ -45,7 +45,7 @@ public class EQ3_HRAScoreKeepEyeOnItEmailSkipToTalk extends BaseClass {
 		
 		System.out.println("***********************************************************");
 
-		System.out.println("########## START  EQ3_HRAScoreKeepEyeOnItEmail ########### sarikaqa7+emp72@gmail.com");
+		System.out.println("########## START  EQ3_HRAScoreKeepEyeOnItEmailSkipToTalk ########### sarikaqa7+emp72@gmail.com");
 		System.out.println("***********************************************************");
 	}
 
