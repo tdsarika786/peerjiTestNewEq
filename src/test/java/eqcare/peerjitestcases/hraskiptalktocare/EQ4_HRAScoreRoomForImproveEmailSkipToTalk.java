@@ -45,7 +45,7 @@ public class EQ4_HRAScoreRoomForImproveEmailSkipToTalk extends BaseClass {
 		
 		System.out.println("***********************************************************");
 
-		System.out.println("########## START EQ4_HRAScoreRoomForImproveEmail ######### sarikaqa7+emp73@gmail.com ");
+		System.out.println("########## START EQ4_HRAScoreRoomForImproveEmailSkipToTalk ######### sarikaqa7+emp73@gmail.com ");
 		System.out.println("***********************************************************");
 	}
 

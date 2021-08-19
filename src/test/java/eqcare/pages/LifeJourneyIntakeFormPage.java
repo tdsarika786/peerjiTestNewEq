@@ -299,6 +299,34 @@ public class LifeJourneyIntakeFormPage extends runWithAttachments {
 
 		Utility.waitForWebElement(driver, reasonVisitNextStep).click();
 	}
+	
+	public void deviceCheckSkipToTalk() {
+
+		Utility.waitForWebElement(driver, startVisitButton).click();
+
+		// Utility.waitForWebElement(driver, startVisitButton).click();
+
+		Utility.waitForWebElement(driver, nextStepText).click();
+
+		// Utility.waitForWebElement(driver, nextStepText).click();
+
+		Utility.waitForWebElement(driver, continueToVisitText).click();
+
+		// Utility.waitForWebElement(driver, startVisitButton).click();
+		
+		Utility.waitForWebElement(driver, skipTalkToCareButton).click();
+
+		Utility.waitForWebElement(driver, lifeJourneyreasonVisitInput).sendKeys("Test Visit by Sarika Peerji");
+
+		Utility.waitForWebElement(driver, reasonVisitNextStep).click();
+		
+		Utility.wait(7);
+
+		String url = driver.getCurrentUrl();
+
+		System.out.println("URL:" + url);
+
+	}
 
 	public void skipTalkToCareCTA() {
 
