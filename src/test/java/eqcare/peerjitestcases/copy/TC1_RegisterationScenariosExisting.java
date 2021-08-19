@@ -177,7 +177,7 @@ public class TC1_RegisterationScenariosExisting extends BaseClass {
 		
 		register.Registeration1("sarikaqa7+anuemp1@gmail.com",
 
-				"Sarika-TestEmpWellE",
+				"Sarika-TestEmpGreatE",
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 4),
@@ -207,7 +207,7 @@ public class TC1_RegisterationScenariosExisting extends BaseClass {
 		
 		register.Registeration1("sarikaqa7+anuemp2@gmail.com",
 
-				"Sarika-TestEmpKeepE",
+				"Sarika-TestEmpWellE",
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 4),
@@ -238,7 +238,7 @@ public class TC1_RegisterationScenariosExisting extends BaseClass {
 		
 		register.Registeration1("sarikaqa7+anuemp3@gmail.com",
 
-				"Sarika-TestEmpEyeE",
+				"Sarika-TestEmpKeepE",
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 4),
@@ -269,7 +269,7 @@ public class TC1_RegisterationScenariosExisting extends BaseClass {
 		
 		register.Registeration1("sarikaqa7+anuemp4@gmail.com",
 
-				"Sarika-TestEmpImpE",
+				"Sarika-TestEmpEyeE",
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 4),
@@ -302,7 +302,7 @@ public class TC1_RegisterationScenariosExisting extends BaseClass {
 		
 		register.Registeration1("sarikaqa7+anuemp5@gmail.com",
 
-				"Sarika-TestEmpGreatE",
+				"Sarika-TestEmpImpE",
 				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
 
 				DataProviderFactory.getExcel().getCellData("Users", 2, 4),
