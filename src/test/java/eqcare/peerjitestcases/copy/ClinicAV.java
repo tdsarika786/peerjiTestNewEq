@@ -107,10 +107,14 @@ public class ClinicAV extends BaseClass {
 
 	}
 
-	@Parameters({ "Email", "Password" })
+	@Parameters({ "Email", "Password", "AVAppURL" })
 	@Test(priority = 3, dependsOnMethods = "loginToClinicApplication")
-	public void loginToPatient(String email, String password) throws Exception {
+	public void loginToPatient(String email, String password,String AVAppURL) throws Exception {
 
+		//
+		
+		login.AccessVirtualURL(AVAppURL);
+		
 		login.loginToApplication(email, password);
 
 		clinic.navigateToPatientVisitPage();
