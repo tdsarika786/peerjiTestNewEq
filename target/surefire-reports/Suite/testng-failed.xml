@@ -6,23 +6,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)" verbose="0">
     <classes>
-      <class name="eqcare.peerjitestcases.copy.TC1_HRANewScenarios">
+      <class name="android.FirstTest">
         <methods>
-          <include name="verifyHRAIntroPage"/>
-          <include name="verifyHRACompletition"/>
           <include name="tearDown"/>
-          <include name="verifyPhysicalQues1"/>
+          <include name="test"/>
           <include name="setUp"/>
-          <include name="verifyLifeStyleQuesStressHappiness1"/>
-          <include name="verifyMedical"/>
-          <include name="verifyPhysicalQues3"/>
-          <include name="verifyPhysicalQues2"/>
-          <include name="verifyLifeStyleQuesSmoking2"/>
-          <include name="verifyLifeStyleQuesDrinking1"/>
-          <include name="verifyPage" invocation-numbers="0"/>
-          <include name="verifyLifeStyleQuesSleep1"/>
         </methods>
-      </class> <!-- eqcare.peerjitestcases.copy.TC1_HRANewScenarios -->
+      </class> <!-- android.FirstTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

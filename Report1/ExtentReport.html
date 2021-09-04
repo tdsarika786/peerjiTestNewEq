@@ -53,7 +53,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Aug. 7, 2021 01:35:58 p.m.</span>
+			<span class='label blue darken-3 suite-start-time'>Sep. 4, 2021 12:02:13 a.m.</span>
 			</a>
 		</ul>
 	</div>
@@ -68,8 +68,7 @@
 				<i class='material-icons'>warning</i> Status
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
-										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -112,10 +111,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='90.909%'><span class='strong'>10</span> test(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='9.091%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> skipped
                 </div>
             </div>
         </div>
@@ -135,15 +134,15 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>verifyPage</span>
-						<span class='test-time'>Aug. 7, 2021 01:36:20 p.m.</span>
+						<span class='test-name'>test</span>
+						<span class='test-time'>Sep. 4, 2021 12:02:43 a.m.</span>
 						<span class='test-status right fail'>fail</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Aug. 7, 2021 01:36:20 p.m.</span>
-	<span class='label end-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 32s+667ms</span>
+	<span class='label start-time'>Sep. 4, 2021 12:02:43 a.m.</span>
+	<span class='label end-time'>Sep. 4, 2021 12:03:13 a.m.</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 30s+650ms</span>
 </div>
 <div class='test-steps'>
 	<table class='bordered table-results'>
@@ -157,14 +156,12 @@
 		<tbody>
 			<tr class='log' status='fail'>
 				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-				<td class='timestamp'>1:36:53 p.m.</td>
+				<td class='timestamp'>12:03:13 a.m.</td>
 				<td class='step-details'>
-						<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(text(), 'Logout')] (tried for 15 second(s) with 500 milliseconds interval)
+						<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.AccessibilityId: Search Wikipedia (tried for 30 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-	at eqcare.helper.Utility.waitForWebElement(Utility.java:126)
-	at eqcare.pages.HRAHomePageNew.verifyUrl(HRAHomePageNew.java:1152)
-	at eqcare.peerjitestcases.copy.TC1_HRANewScenarios.verifyPage(TC1_HRANewScenarios.java:39)
+	at android.FirstTest.test(FirstTest.java:17)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -197,10 +194,10 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //a[contains(text(), 'Logout')]
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.AccessibilityId: Search Wikipedia
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:10ad:563f:ab85:ddc1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:1095:27fc:a3de:2712%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
 Driver info: driver.version: unknown
 	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
 	at java.base/java.util.Optional.orElseThrow(Optional.java:401)
@@ -211,153 +208,13 @@ Driver info: driver.version: unknown
 	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)
 	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	... 35 more
+	... 33 more
 </textarea>
 					
 				</td>
 			</tr>
 		</tbody>
 	</table>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='2'>
-					<div class='test-heading'>
-						<span class='test-name'>verifyHRAIntroPage</span>
-						<span class='test-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-	<span class='label end-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='3'>
-					<div class='test-heading'>
-						<span class='test-name'>verifyPhysicalQues1</span>
-						<span class='test-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-	<span class='label end-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='4'>
-					<div class='test-heading'>
-						<span class='test-name'>verifyPhysicalQues2</span>
-						<span class='test-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-	<span class='label end-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='5'>
-					<div class='test-heading'>
-						<span class='test-name'>verifyPhysicalQues3</span>
-						<span class='test-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-	<span class='label end-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='6'>
-					<div class='test-heading'>
-						<span class='test-name'>verifyLifeStyleQuesSleep1</span>
-						<span class='test-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-	<span class='label end-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='7'>
-					<div class='test-heading'>
-						<span class='test-name'>verifyLifeStyleQuesSmoking2</span>
-						<span class='test-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-	<span class='label end-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='8'>
-					<div class='test-heading'>
-						<span class='test-name'>verifyLifeStyleQuesDrinking1</span>
-						<span class='test-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-	<span class='label end-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+1ms</span>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='9'>
-					<div class='test-heading'>
-						<span class='test-name'>verifyLifeStyleQuesStressHappiness1</span>
-						<span class='test-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-	<span class='label end-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='10'>
-					<div class='test-heading'>
-						<span class='test-name'>verifyMedical</span>
-						<span class='test-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-	<span class='label end-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
-</div>
-					</div>
-				</li>
-				<li class='test displayed active  pass' status='pass' bdd='false' test-id='11'>
-					<div class='test-heading'>
-						<span class='test-name'>verifyHRACompletition</span>
-						<span class='test-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-					<div class='test-content hide'>
-<div class='test-time-info'>
-	<span class='label start-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-	<span class='label end-time'>Aug. 7, 2021 01:36:53 p.m.</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 0m 0s+0ms</span>
 </div>
 					</div>
 				</li>
@@ -416,15 +273,13 @@ Driver info: driver.version: unknown
 								</thead>
 								<tbody>
 									<tr>
-										<td>Aug. 7, 2021 01:36:20 p.m.</td>
-										<td class='linked' test-id='1'>verifyPage</td>
+										<td>Sep. 4, 2021 12:02:43 a.m.</td>
+										<td class='linked' test-id='1'>test</td>
 										<td>
-											<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(text(), 'Logout')] (tried for 15 second(s) with 500 milliseconds interval)
+											<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.AccessibilityId: Search Wikipedia (tried for 30 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-	at eqcare.helper.Utility.waitForWebElement(Utility.java:126)
-	at eqcare.pages.HRAHomePageNew.verifyUrl(HRAHomePageNew.java:1152)
-	at eqcare.peerjitestcases.copy.TC1_HRANewScenarios.verifyPage(TC1_HRANewScenarios.java:39)
+	at android.FirstTest.test(FirstTest.java:17)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -457,10 +312,10 @@ Driver info: driver.version: unknown
 	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:138)
 	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:465)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:451)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //a[contains(text(), 'Logout')]
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.AccessibilityId: Search Wikipedia
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:10ad:563f:ab85:ddc1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:1095:27fc:a3de:2712%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
 Driver info: driver.version: unknown
 	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
 	at java.base/java.util.Optional.orElseThrow(Optional.java:401)
@@ -471,7 +326,7 @@ Driver info: driver.version: unknown
 	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:657)
 	at org.openqa.selenium.support.ui.ExpectedConditions$22.apply(ExpectedConditions.java:654)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	... 35 more
+	... 33 more
 </textarea>
 										</td>
 									</tr>
@@ -497,7 +352,7 @@ Driver info: driver.version: unknown
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>11</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -509,19 +364,19 @@ Driver info: driver.version: unknown
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug. 7, 2021 01:35:58 p.m.</div>
+					<div class='panel-lead'>Sep. 4, 2021 12:02:13 a.m.</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug. 7, 2021 01:36:54 p.m.</div>
+			 		<div class='panel-lead'>Sep. 4, 2021 12:03:16 a.m.</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 55s+552ms</div>
+					<div class='panel-lead'>0h 1m 2s+648ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -552,8 +407,8 @@ Driver info: driver.version: unknown
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 11,
-				passParent: 10,
+                parentCount: 1,
+				passParent: 0,
 				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
@@ -584,7 +439,7 @@ Driver info: driver.version: unknown
 		</script>
 		<script>
 			var timeline = {
-			        "verifyPage":32.667,"verifyHRAIntroPage":0,"verifyPhysicalQues1":0,"verifyPhysicalQues2":0,"verifyPhysicalQues3":0,"verifyLifeStyleQuesSleep1":0,"verifyLifeStyleQuesSmoking2":0,"verifyLifeStyleQuesDrinking1":0.001,"verifyLifeStyleQuesStressHappiness1":0,"verifyMedical":0,"verifyHRACompletition":0
+			        "test":30.65
 			};
 		</script>
 	

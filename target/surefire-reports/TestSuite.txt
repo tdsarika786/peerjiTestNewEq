@@ -1,24 +1,15 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 12, Failures: 2, Errors: 0, Skipped: 10, Time elapsed: 56.201 s <<< FAILURE! - in TestSuite
-eqcare.peerjitestcases.copy.TC1_HRANewScenarios.verifyPage  Time elapsed: 32.668 s  <<< FAILURE!
-org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(text(), 'Logout')] (tried for 15 second(s) with 500 milliseconds interval)
-	at eqcare.peerjitestcases.copy.TC1_HRANewScenarios.verifyPage(TC1_HRANewScenarios.java:39)
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 63.203 s <<< FAILURE! - in TestSuite
+android.FirstTest.test  Time elapsed: 30.65 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.AccessibilityId: Search Wikipedia (tried for 30 second(s) with 500 milliseconds interval)
+	at android.FirstTest.test(FirstTest.java:17)
 Caused by: org.openqa.selenium.NoSuchElementException: 
-Cannot locate an element using By.xpath: //a[contains(text(), 'Logout')]
+Cannot locate an element using By.AccessibilityId: Search Wikipedia
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:10ad:563f:ab85:ddc1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
+System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:1095:27fc:a3de:2712%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
 Driver info: driver.version: unknown
-	at eqcare.peerjitestcases.copy.TC1_HRANewScenarios.verifyPage(TC1_HRANewScenarios.java:39)
-
-eqcare.peerjitestcases.copy.TC1_HRANewScenarios.tearDown  Time elapsed: 0.558 s  <<< FAILURE!
-org.openqa.selenium.NoSuchSessionException: 
-Tried to run command without establishing a connection
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'EQ-MAC-25.local', ip: 'fe80:0:0:0:10ad:563f:ab85:ddc1%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '14.0.2'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 90.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210721174149, moz:geckodriverVersion: 0.29.1, moz:headless: false, moz:processID: 18036, moz:profile: /var/folders/l9/4pwqxcnj26b..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: MAC, platformName: MAC, platformVersion: 20.4.0, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 4e0e0b44-3e52-5b4b-a4ec-dfd16199be3e
+	at android.FirstTest.test(FirstTest.java:17)
 
