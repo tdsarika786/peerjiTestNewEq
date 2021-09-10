@@ -128,7 +128,7 @@ public class NovaHomePage {
 		JavascriptExecutor executorEmpl = (JavascriptExecutor) driver;
 		executorEmpl.executeScript("arguments[0].click()", buttonPartner);
 		
-		Utility.wait(15);
+		Utility.wait(10);
 
 		// Select Owner
 		WebElement ownerElement = driver.findElement(selectOwner);
@@ -153,7 +153,7 @@ public class NovaHomePage {
 
 		Utility.waitForWebElement(driver, accentColorInput).sendKeys("#2D863D");
 		
-		Utility.waitForWebElement(driver, portalActive).click();
+		//Utility.waitForWebElement(driver, portalActive).click();
 		
 		//Partner Portal
 		
