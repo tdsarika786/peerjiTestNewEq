@@ -162,6 +162,10 @@ public class NovaHomePage {
 		
 		//Logo
 		
+		WebElement fileLogoPartner = driver.findElement(By.xpath("//input[@id='file-logo_url_en']"));
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].style.display='block';", fileLogoPartner);
+		
 		Utility.waitForWebElement(driver, logoPartner)
 		.sendKeys(System.getProperty("user.dir") + "/TestData/sai-pic.jpeg");
 
