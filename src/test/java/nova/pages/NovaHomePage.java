@@ -121,12 +121,14 @@ public class NovaHomePage {
 
 		Utility.waitForWebElement(driver, PartnerLink).click();
 
-		Utility.wait(7);
+		Utility.wait(10);
 
 		WebElement buttonPartner = driver.findElement(By.xpath("(//a[contains(text(), 'Create Partner')])[1]"));
 
 		JavascriptExecutor executorEmpl = (JavascriptExecutor) driver;
 		executorEmpl.executeScript("arguments[0].click()", buttonPartner);
+		
+		Utility.wait(10);
 
 		// Select Owner
 		WebElement ownerElement = driver.findElement(selectOwner);
