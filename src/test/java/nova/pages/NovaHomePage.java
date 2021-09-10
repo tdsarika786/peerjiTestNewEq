@@ -152,6 +152,8 @@ public class NovaHomePage {
 		Utility.waitForWebElement(driver, subdomainInput).sendKeys(domain);
 
 		Utility.waitForWebElement(driver, accentColorInput).sendKeys("#2D863D");
+		
+		Utility.waitForWebElement(driver, portalActive).click();
 
 		// Default lang
 		WebElement langElement = driver.findElement(selectDefault);
