@@ -139,7 +139,7 @@ public class NovaHomePage {
 		
 		//Employer
 		  
-		    Utility.waitForWebElement(driver, employerButton).click();
+		    Utility.waitForWebElement(driver, employerPartner).click();
 
 			Utility.waitForWebElement(driver, searchEmployerInput).sendKeys(searchEmployer);
 
