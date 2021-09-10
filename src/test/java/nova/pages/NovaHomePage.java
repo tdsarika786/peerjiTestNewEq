@@ -164,7 +164,7 @@ public class NovaHomePage {
 		
 		WebElement fileLogoPartner = driver.findElement(By.xpath("//input[@id='file-logo_url_en']"));
 		JavascriptExecutor executor = (JavascriptExecutor) driver;
-		executor.executeScript("document.getElementById('file-logo_url_en').removeAttribute('form-file-input');", fileLogoPartner);
+		executor.executeScript("var Target = document.getElementById('file-logo_url_en');Target.className='';");
 		
 		Utility.waitForWebElement(driver, logoPartner)
 		.sendKeys(System.getProperty("user.dir") + "/TestData/sai-pic.jpeg");
