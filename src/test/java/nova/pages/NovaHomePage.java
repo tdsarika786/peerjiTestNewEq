@@ -117,7 +117,7 @@ public class NovaHomePage {
 	}
 	
 	
-	public void createPartnerPortal(String searchEmployer, String empID, String CoverageType) {
+	public void createPartnerPortal(String searchEmployer, String empID, String domain) {
 
 		Utility.waitForWebElement(driver, PartnerLink).click();
 
@@ -149,7 +149,7 @@ public class NovaHomePage {
 
 		Utility.waitForWebElement(driver, selectEqCareEmployee).click();
 
-		Utility.waitForWebElement(driver, subdomainInput).sendKeys("sarubell");
+		Utility.waitForWebElement(driver, subdomainInput).sendKeys(domain);
 
 		Utility.waitForWebElement(driver, accentColorInput).sendKeys("#2D863D");
 
