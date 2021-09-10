@@ -91,11 +91,11 @@ public class BrowserFactory {
 			if (browser.equalsIgnoreCase("chrome")) {
 				
 				// setting up property to suppress the warning
-				System.setProperty("webdriver.chrome.silentOutput","true");
+				//System.setProperty("webdriver.chrome.silentOutput","true");
 			
-			WebDriverManager.chromedriver().setup();
+			//WebDriverManager.chromedriver().setup();
 			
-			//System.setProperty("webdriver.chrome.driver", "/Users/sarikadhall/Documents/ChromeDriver/chromedriver-90");
+			System.setProperty("webdriver.chrome.driver", "/Users/sarikadhall/Downloads/chromedriver");
 			
 			ChromeOptions options = new ChromeOptions();
 
@@ -120,11 +120,13 @@ public class BrowserFactory {
 		if (projectrun.equalsIgnoreCase("anu")) {
 			
 			// setting up property to suppress the warning
-			System.setProperty("webdriver.chrome.silentOutput","true");
+			//System.setProperty("webdriver.chrome.silentOutput","true");
+			
+			System.setProperty("webdriver.chrome.driver", "/Users/sarikadhall/Downloads/chromedriver");
 			
 			//System.setProperty("webdriver.chrome.driver", "/Users/sarika/Documents/ChromeDriver/chromedriver-89");
 			
-			WebDriverManager.chromedriver().setup();
+			//WebDriverManager.chromedriver().setup();
 			
 			ChromeOptions options = new ChromeOptions();
 
