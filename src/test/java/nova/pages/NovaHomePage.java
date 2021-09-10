@@ -128,6 +128,8 @@ public class NovaHomePage {
 		JavascriptExecutor executorEmpl = (JavascriptExecutor) driver;
 		executorEmpl.executeScript("arguments[0].click()", buttonPartner);
 		
+		Utility.wait(10);
+		
 		//Select Owner
 		 WebElement ownerElement = driver.findElement(selectOwner);
 		 
