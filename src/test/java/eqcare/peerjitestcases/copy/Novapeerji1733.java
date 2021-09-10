@@ -271,7 +271,7 @@ public class Novapeerji1733 extends BaseClass {
 	}
 	
 	@Parameters({ "SearchEmployer", "CoverageToken", "CoverageType" })
-	@Test(priority = 9, dependsOnMethods = "loginToApplication")
+	@Test(priority = 10, dependsOnMethods = "loginToApplication")
 	public void CreateEmployer8(String searchemployer, String coveragetoken, String coveragetype)
 			throws InterruptedException {
 
