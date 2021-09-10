@@ -144,7 +144,7 @@ public class EQ3_HRAScoreKeepEyeOnItEmail extends BaseClass {
 	}
 
 	@Parameters({ "Coverage" })
-	@Test(priority = 4, dependsOnMethods = "hraKeepEyeOnItScenario")
+	@Test(priority = 4, dependsOnMethods = "hraKeepEyeOnItScenario", enabled=false)
 	public void verifyTalkToCare(String coverage) throws Exception {
 		
 		try {
