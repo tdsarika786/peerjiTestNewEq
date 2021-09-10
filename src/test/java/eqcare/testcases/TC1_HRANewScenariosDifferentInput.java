@@ -4,8 +4,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import NotRequiredClasses.ContactUsPage;
-
+import ExtraNotRequiredClasses.ContactUsPage;
 import eqcare.pages.HRAHomePageNew2;
 import eqcare.pages.LifeJourneyIntakeFormPage;
 import eqcare.pages.LoginPage;

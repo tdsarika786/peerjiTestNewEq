@@ -3,7 +3,7 @@ package eqcare.testcases;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
-import NotRequiredClasses.ContactUsPage;
+import ExtraNotRequiredClasses.ContactUsPage;
 import eqcare.pages.ForgotPasswordPage;
 import eqcare.pages.HomePage;
 import eqcare.pages.LoginPage;

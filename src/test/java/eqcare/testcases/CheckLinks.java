@@ -7,7 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
-import NotRequiredClasses.AdminPage;
+import ExtraNotRequiredClasses.AdminPage;
 import eqcare.factories.DataProviderFactory;
 import eqcare.pages.BaseClass;
 import eqcare.pages.LoginPage;

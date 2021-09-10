@@ -3,7 +3,7 @@
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
-import NotRequiredClasses.ContactUsPage;
+import ExtraNotRequiredClasses.ContactUsPage;
 import eqcare.pages.FeedbackPage;
 import eqcare.pages.HelpPage;
 import eqcare.pages.HomePage;
