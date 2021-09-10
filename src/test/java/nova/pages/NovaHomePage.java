@@ -664,6 +664,8 @@ public class NovaHomePage {
 	public void createEmployer1733(String searchEmployer, String empID, String CoverageType) {
 
 		Utility.waitForWebElement(driver, EmployerLink).click();
+		
+		Utility.wait(5);
 
 		WebElement buttonEmpl = driver.findElement(By.xpath("(//a[contains(text(), 'Create Employer')])[1]"));
 
@@ -673,6 +675,9 @@ public class NovaHomePage {
 		// Utility.waitForWebElement(driver, createEmployerLink).click();
 
 		// Change ID for NEW Employer NEW
+		
+		Utility.wait(5);
+		
 		Utility.waitForWebElement(driver, employerIDInput).sendKeys(empID);
 		// // Modify
 
