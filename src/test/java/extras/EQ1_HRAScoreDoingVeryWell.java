@@ -1,4 +1,4 @@
-package eqcare.peerjitestcases.copy;
+package extras;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Parameters;
@@ -16,14 +16,14 @@ import eqcare.pages.ClinicPage;
 import eqcare.factories.DataProviderFactory;
 import eqcare.pages.copy.BaseClass;
 
-public class EQ3_HRAScoreKeepEyeOnIt extends BaseClass {
+public class EQ1_HRAScoreDoingVeryWell extends BaseClass {
 
 	LoginPage login;
 	HRAHomePageNew2 home;
 	LifeJourneyIntakeFormPage intakeForm;
 	ClinicPage clinic;
-	IntakeFormPage intake;
 	HomePage home1;
+	IntakeFormPage intake;
 
 	@Parameters({ "Email", "Password" })
 	@Test(priority = 1)
@@ -45,7 +45,7 @@ public class EQ3_HRAScoreKeepEyeOnIt extends BaseClass {
 		
 		System.out.println("***********************************************************");
 
-		System.out.println("####### START HRAScoreKeepEyeOnIt_EQ3 ######## " + email);
+		System.out.println("########## START HRAScoreDoingVeryWell_EQ1 ########## " + email);
 		
 		System.out.println("***********************************************************");
 
@@ -56,21 +56,18 @@ public class EQ3_HRAScoreKeepEyeOnIt extends BaseClass {
 
 		home.calculateHealthScoreLink();
 
-		home.verifyHRAIntroductionPage();
+		//home.verifyHRAIntroductionPage();
 
 		System.out.println("*******HRA Introduction Page***********");
 
 	}
 
 	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage")
-	public void hraKeepEyeOnItScenario() throws Exception {
+	public void hraDoingVeryWellScenario() throws Exception {
 
-		// Keep an eye on it.
-		// 56%
-
-		String height = "154";
-		String weight = "40";
-		String waist = "80";
+		String height = "250";
+		String weight = "125";
+		String waist = "87";
 
 		String[] options = { "option1", "option2", "option3", "option4", "option5" };
 
@@ -78,82 +75,85 @@ public class EQ3_HRAScoreKeepEyeOnIt extends BaseClass {
 
 		String[] yesNoOption = { "yes", "no" };
 
-		String sleepHrs = "2";
+		String sleepHrs = "9";
 
 		String noSmokes = "10";
 
 		String noDrinks = "10";
 
-		String scoreLabel = "Keep an eye on it.";
+		String scoreLabel = "You’re doing very well.";
 
-		System.out.println("Score Label should be********HRA Keep Eye On It Scenario**********");
-
+		System.out.println("Score Label should be ******** HRA Doing Very Well Scenario**********");
+		
 		System.out.println("IN 1-HRA PhysicalIntakeForms Ques1" + " " + height + " " + weight + " " + waist);
 
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
 
 		System.out.println("1-HRA PhysicalIntakeForms Ques1 done" + " " + height + " " + weight + " " + waist);
 
-		home.verifyHRAPhysicalIntakeFormsQues2(options[2]);
+		home.verifyHRAPhysicalIntakeFormsQues2(options[0]);
 
-		System.out.println("2- HRA PhysicalIntakeForms Ques2");
+		System.out.println("2- HRA PhysicalIntakeFormsQues2");
 
 		home.verifyHRAPhysicalIntakeFormsQues3(options[0]);
 
-		System.out.println("3- HRA PhysicalIntakeForms Ques3");
+		System.out.println("3- HRA PhysicalIntakeFormsQues3");
 
 		home.verifyHRALifeStyleQuesSleep1(sleepHrs);
 
-		System.out.println("4- HRALifeStyleQues Sleep1");
+		System.out.println("4- HRALifeStyleQuesSleep1");
 
-		home.verifyHRALifeStyleQuesSmoking2(options[1], noSmokes);
+		home.verifyHRALifeStyleQuesSmoking2(options[0], null);
 
-		System.out.println("5- HRA LifeStyleQues Smoking2");
+		System.out.println("5- HRA LifeStyleQuesSmoking2");
 
-		home.verifyHRALifeStyleQuesDrinking1(options[1], noDrinks);
+		home.verifyHRALifeStyleQuesDrinking1(options[0], null);
 
-		System.out.println("6- LifeStyleQues Drinking1");
+		System.out.println("6- HRA LifeStyleQuesDrinking1");
 
-		home.verifyHRALifeStyleQuesStress(options[4]);
+		home.verifyHRALifeStyleQuesStress(options[0]);
 
-		System.out.println("7 -HRALifeStyleQuesStress");
+		System.out.println("7- HRALifeStyleQuesStress");
 
-		home.verifyHRALifeStyleQuesHappiness(options[4]);
+		home.verifyHRALifeStyleQuesHappiness(options[0]);
 
-		System.out.println("8- HRALifeStyleQuesHappiness");
+		System.out.println("8- HRA LifeStyleQuesHappiness");
 
-		home.verifyMedical(medQues[0], yesNoOption[0], yesNoOption[1]);
+		home.verifyMedical(medQues[0], yesNoOption[1], yesNoOption[1]);
 
-		home.verifyMedical(medQues[1], yesNoOption[0], yesNoOption[1]);
+		home.verifyMedical(medQues[1], yesNoOption[1], yesNoOption[1]);
 
-		home.verifyMedical(medQues[2], yesNoOption[0], yesNoOption[0]);
+		home.verifyMedical(medQues[2], yesNoOption[1], yesNoOption[1]);
 
-		home.verifyMedical(medQues[3], yesNoOption[0], yesNoOption[0]);
+		home.verifyMedical(medQues[3], yesNoOption[1], yesNoOption[1]);
 
-		home.verifyMedical(medQues[4], yesNoOption[0], yesNoOption[0]);
+		home.verifyMedical(medQues[4], yesNoOption[1], yesNoOption[1]);
 
-		home.verifyMedical(medQues[5], yesNoOption[0], yesNoOption[0]);
+		home.verifyMedical(medQues[5], yesNoOption[1], yesNoOption[1]);
 
-		home.verifyMedical(medQues[6], yesNoOption[0], yesNoOption[0]);
+		home.verifyMedical(medQues[6], yesNoOption[1], yesNoOption[1]);
 
-		home.verifyMedical(medQues[7], yesNoOption[0], yesNoOption[0]);
+		home.verifyMedical(medQues[7], yesNoOption[1], yesNoOption[1]);
 
 		System.out.println("9- HRA Medical");
 
-		home.hraCompletionPage1(scoreLabel);
+		home.hraCompletionPageAndTalkToCare();
 
-		System.out.println("10-HRA Completition Form");
+		System.out.println("10-HRA Completition");
+
+		
+
 
 	}
 
 	@Parameters({ "Coverage" })
-	@Test(priority = 4, dependsOnMethods = "hraKeepEyeOnItScenario")
+	@Test(priority = 4, dependsOnMethods = "hraDoingVeryWellScenario")
 	public void verifyTalkToCare(String coverage) throws Exception {
 		
 		try {
 
 		System.out.println(
-				"************* EQ3 - HRA Form Complete, View Score Modal, Close pop up, On Home Click on Score pop up, In modal CLICK TALK TO CARE ADVOCATE *************");
+				"************* EQ2 - HRA Form Complete IN Thank you page Talk to Care Advocate ********************");
 
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
 
@@ -164,7 +164,8 @@ public class EQ3_HRAScoreKeepEyeOnIt extends BaseClass {
 		if (coverage.equalsIgnoreCase("EQ")) {
 
 			System.out.println("Covergae Type " + coverage);
-			// home.talkToCare();
+
+			// home.hraCompletionPageAndTalkToCare();
 
 			home1.deviceCheckHRA();
 
@@ -196,12 +197,12 @@ public class EQ3_HRAScoreKeepEyeOnIt extends BaseClass {
 
 		}
 
-		System.out.println("######### END EQ4_HRAScoreRoomForImproveEmail #######");
-		
-	System.out.println("***********************************************************");
-		
+		System.out.println("######### END hraDoingVeryWellScenario ###########");
+
 		System.out.println("***********************************************************");
 
+		System.out.println("***********************************************************");
+		
 		System.out.println("");
 		System.out.println("");
 		
@@ -215,6 +216,6 @@ public class EQ3_HRAScoreKeepEyeOnIt extends BaseClass {
 			
 			throw ex;
 		}
-	}
 
+	}
 }

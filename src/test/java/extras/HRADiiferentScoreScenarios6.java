@@ -1,4 +1,4 @@
-package eqcare.peerjitestcases.copy;
+package extras;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Parameters;
@@ -16,7 +16,7 @@ import eqcare.pages.ClinicPage;
 import eqcare.factories.DataProviderFactory;
 import eqcare.pages.copy.BaseClass;
 
-public class HRADiiferentScoreScenarios4 extends BaseClass {
+public class HRADiiferentScoreScenarios6 extends BaseClass {
 
 	LoginPage login;
 	HRAHomePageNew2 home;
@@ -45,7 +45,7 @@ public class HRADiiferentScoreScenarios4 extends BaseClass {
 		
 		System.out.println("***********************************************************");
 
-		System.out.println("########## START HRADiiferentScoreScenarios4 ########## " + email);
+		System.out.println("########## START HRADiiferentScoreScenarios6 ########## " + email);
 		
 		System.out.println("***********************************************************");
 
@@ -56,7 +56,7 @@ public class HRADiiferentScoreScenarios4 extends BaseClass {
 
 		home.calculateHealthScoreLink();
 
-		home.verifyHRAIntroductionPage();
+		//home.verifyHRAIntroductionPage();
 
 		System.out.println("*******HRA Introduction Page***********");
 
@@ -65,7 +65,7 @@ public class HRADiiferentScoreScenarios4 extends BaseClass {
 	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage")
 	public void hraDoingVeryWellScenario() throws Exception {
 		
-		//86
+		//86%
 
 		String height = "180";
 		String weight = "70";
@@ -79,16 +79,14 @@ public class HRADiiferentScoreScenarios4 extends BaseClass {
 
 		String sleepHrs = "10";
 
-		String noSmokes = "2";
+		String noSmokes = "10";
 
-		String noDrinks = "2";
+		String noDrinks = "10";
 
-		//String scoreLabel = "You’re doing very well.";
+		String scoreLabel = "You’re doing very well.";
 
-		String scoreLabel = "You’re doing great.";
-
-		System.out.println("Score Label should be ******** HRA You’re doing great Scenario **********");
-
+		System.out.println("Score Label should be ******** HRA Doing Very Well Scenario**********");
+		
 		System.out.println("IN 1-HRA PhysicalIntakeForms Ques1" + " " + height + " " + weight + " " + waist);
 
 		home.verifyHRAPhysicalIntakeFormsQues1(height, weight, waist);
@@ -141,12 +139,11 @@ public class HRADiiferentScoreScenarios4 extends BaseClass {
 
 		System.out.println("9- HRA Medical");
 
-		home.hraCompletionPage();
+		home.hraCompletionPageAndTalkToCare();
 
 		System.out.println("10-HRA Completition");
 
-		System.out.println("");
-		System.out.println("");
+		
 
 
 	}

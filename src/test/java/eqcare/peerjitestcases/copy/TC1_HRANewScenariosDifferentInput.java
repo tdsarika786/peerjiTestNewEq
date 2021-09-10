@@ -43,7 +43,7 @@ public class TC1_HRANewScenariosDifferentInput extends BaseClass {
 
 		home.calculateHealthScoreLink();
 
-		home.verifyHRAIntroductionPage();
+		home.verifyHRAIntroductionPage("true");
 
 		System.out.println("*******PEERJI HRA START Scenario 1***********");
 

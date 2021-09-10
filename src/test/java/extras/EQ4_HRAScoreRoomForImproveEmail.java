@@ -1,4 +1,4 @@
-package eqcare.peerjitestcases.copy;
+package extras;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Parameters;
@@ -16,7 +16,7 @@ import eqcare.pages.ClinicPage;
 import eqcare.factories.DataProviderFactory;
 import eqcare.pages.copy.BaseClass;
 
-public class EQ4_HRAScoreRoomForImprove extends BaseClass {
+public class EQ4_HRAScoreRoomForImproveEmail extends BaseClass {
 
 	LoginPage login;
 	HRAHomePageNew2 home;
@@ -30,7 +30,7 @@ public class EQ4_HRAScoreRoomForImprove extends BaseClass {
 	public void verifyPage(String email, String password) throws Exception {
 		login = PageFactory.initElements(driver, LoginPage.class);
 
-		login.loginToApplication(email, password);
+		login.loginToApplication("sarikaqa7+emp73@gmail.com", "Sarika#123");
 
 		home = PageFactory.initElements(driver, HRAHomePageNew2.class);
 
@@ -42,10 +42,10 @@ public class EQ4_HRAScoreRoomForImprove extends BaseClass {
 		
 		System.out.println("");
 		System.out.println("");
-
+		
 		System.out.println("***********************************************************");
 
-		System.out.println("######## START HRAScoreRoomForImprove_EQ4 ########## " + email);
+		System.out.println("########## START HRAScoreRoomForImproveEmail_EQ4 ######### sarikaqa7+emp73@gmail.com ");
 		System.out.println("***********************************************************");
 	}
 
@@ -54,7 +54,7 @@ public class EQ4_HRAScoreRoomForImprove extends BaseClass {
 
 		home.calculateHealthScoreLink();
 
-		home.verifyHRAIntroductionPage();
+		//home.verifyHRAIntroductionPage();
 
 		System.out.println("*******HRA Introduction Page***********");
 
@@ -116,11 +116,11 @@ public class EQ4_HRAScoreRoomForImprove extends BaseClass {
 
 		System.out.println("6- HAR LifeStyleQuesDrinking1");
 
-		home.verifyHRALifeStyleQuesStress(options[5]);
+		home.verifyHRALifeStyleQuesStress(options[2]);
 
 		System.out.println("7- HRA LifeStyleQuesStress");
 
-		home.verifyHRALifeStyleQuesHappiness(options[5]);
+		home.verifyHRALifeStyleQuesHappiness(options[2]);
 
 		System.out.println("8- HRA LifeStyleQuesHappiness");
 

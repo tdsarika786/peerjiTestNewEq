@@ -878,7 +878,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		}
 	}
 
-	public void verifyHRAIntroductionPage() throws Exception {
+	public void verifyHRAIntroductionPage(String option) throws Exception {
 
 		try {
 			// Utility.waitForWebElement(driver, healthScoreButton).click();
@@ -893,8 +893,11 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 			JavascriptExecutor executor1 = (JavascriptExecutor) driver;
 			executor1.executeScript("arguments[0].click()", button);
+			
+			if (option.equalsIgnoreCase("true")) {
 
 			Utility.waitForWebElement(driver, skipHRAFormButton);
+			}
 
 			Utility.waitForWebElement(driver, startHRAFormButton).click();
 

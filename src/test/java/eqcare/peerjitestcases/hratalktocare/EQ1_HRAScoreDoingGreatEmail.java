@@ -57,7 +57,7 @@ public class EQ1_HRAScoreDoingGreatEmail extends BaseClass {
 
 		home.calculateHealthScoreLink();
 
-		home.verifyHRAIntroductionPage();
+		home.verifyHRAIntroductionPage("true");
 
 		System.out.println("*******HRA Introduction Page***********");
 

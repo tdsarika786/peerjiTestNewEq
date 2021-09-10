@@ -58,7 +58,7 @@ public class HRAPhysicalPageTalkCare2 extends BaseClass {
 
 		home.calculateHealthScoreLink();
 
-		home.verifyHRAIntroductionPage();
+		home.verifyHRAIntroductionPage("false");
 
 		System.out.println("*******HRA Introduction Page***********");
 		

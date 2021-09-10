@@ -54,7 +54,7 @@ public class EQ3_HRAScoreKeepEyeOnItEmail extends BaseClass {
 
 		home.calculateHealthScoreLink();
 
-		home.verifyHRAIntroductionPage();
+		home.verifyHRAIntroductionPage("true");
 
 		System.out.println("*******HRA Introduction Page***********");
 

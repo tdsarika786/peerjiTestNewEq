@@ -1,4 +1,4 @@
-package eqcare.peerjitestcases.hratalktocare;
+package extras;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Parameters;
@@ -48,7 +48,7 @@ public class EQ1_HRAScoreDoingVeryWellEmail extends BaseClass {
 		
 
 		System.out
-				.println("############# START EQ1_HRAScoreDoingVeryWellEmail ############### sarikaqa7+emp70@gmail.com");
+				.println("############# START HRAScoreDoingVeryWellEmail_EQ1 ############### sarikaqa7+emp70@gmail.com");
 		System.out.println("***********************************************************");
 	}
 
@@ -57,7 +57,7 @@ public class EQ1_HRAScoreDoingVeryWellEmail extends BaseClass {
 
 		home.calculateHealthScoreLink();
 
-		home.verifyHRAIntroductionPage("true");
+		//home.verifyHRAIntroductionPage();
 
 		System.out.println("*******HRA Introduction Page***********");
 
@@ -166,7 +166,7 @@ public class EQ1_HRAScoreDoingVeryWellEmail extends BaseClass {
 
 			// home.hraCompletionPageAndTalkToCare();
 
-			home1.deviceCheck();
+			home1.deviceCheckHRA();
 
 			System.out.println("11-Device check page");
 

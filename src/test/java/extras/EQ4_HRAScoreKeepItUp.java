@@ -1,4 +1,4 @@
-package eqcare.peerjitestcases.copy;
+package extras;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Parameters;
@@ -16,7 +16,7 @@ import eqcare.pages.ClinicPage;
 import eqcare.factories.DataProviderFactory;
 import eqcare.pages.copy.BaseClass;
 
-public class EQ1_HRAScoreDoingGreatEmail extends BaseClass {
+public class EQ4_HRAScoreKeepItUp extends BaseClass {
 
 	LoginPage login;
 	HRAHomePageNew2 home;
@@ -30,7 +30,7 @@ public class EQ1_HRAScoreDoingGreatEmail extends BaseClass {
 	public void verifyPage(String email, String password) throws Exception {
 		login = PageFactory.initElements(driver, LoginPage.class);
 
-		login.loginToApplication("sarikaqa7+emp74@gmail.com", "Sarika#123");
+		login.loginToApplication(email, password);
 
 		home = PageFactory.initElements(driver, HRAHomePageNew2.class);
 
@@ -43,12 +43,9 @@ public class EQ1_HRAScoreDoingGreatEmail extends BaseClass {
 		System.out.println("");
 		System.out.println("");
 		
-	System.out.println("***********************************************************");
-		
-		
+		System.out.println("***********************************************************");
 
-		System.out
-				.println("############# START EQ1_HRAScoreDoingGreatEmail ############### sarikaqa7+emp74@gmail.com");
+		System.out.println("######## START HRAScoreKeepItUp_EQ4 #############" + email);
 		System.out.println("***********************************************************");
 	}
 
@@ -57,21 +54,21 @@ public class EQ1_HRAScoreDoingGreatEmail extends BaseClass {
 
 		home.calculateHealthScoreLink();
 
-		home.verifyHRAIntroductionPage();
+		//home.verifyHRAIntroductionPage();
 
 		System.out.println("*******HRA Introduction Page***********");
 
 	}
 
 	@Test(priority = 3, dependsOnMethods = "verifyHRAIntroPage")
-	public void hraGreatScenario() throws Exception {
-		
-		
-		//90 %%%
+	public void hraKeepItUpScenario() throws Exception {
 
-		String height = "173";
-		String weight = "58";
-		String waist = "64";
+		// Keep it up.
+		// 72%
+
+		String height = "154";
+		String weight = "40";
+		String waist = "80";
 
 		String[] options = { "option1", "option2", "option3", "option4", "option5" };
 
@@ -79,15 +76,15 @@ public class EQ1_HRAScoreDoingGreatEmail extends BaseClass {
 
 		String[] yesNoOption = { "yes", "no" };
 
-		String sleepHrs = "10";
+		String sleepHrs = "2";
 
 		String noSmokes = "10";
 
 		String noDrinks = "10";
 
-		String scoreLabel = "You’re doing great.";
+		String scoreLabel = "Keep it up.";
 
-		System.out.println("Score Label should be ******** HRA You’re doing great Scenario **********");
+		System.out.println("Score Label should be********HRA Keep It Up **********");
 
 		System.out.println("IN 1-HRA PhysicalIntakeForms Ques1" + " " + height + " " + weight + " " + waist);
 
@@ -95,37 +92,37 @@ public class EQ1_HRAScoreDoingGreatEmail extends BaseClass {
 
 		System.out.println("1-HRA PhysicalIntakeForms Ques1 done" + " " + height + " " + weight + " " + waist);
 
-		home.verifyHRAPhysicalIntakeFormsQues2(options[2]);
+		home.verifyHRAPhysicalIntakeFormsQues2("option3");
 
-		System.out.println("2- HRA PhysicalIntakeFormsQues2");
+		System.out.println("2-HRA PhysicalIntakeFormsQues2");
 
 		home.verifyHRAPhysicalIntakeFormsQues3(options[0]);
 
-		System.out.println("3- HRA PhysicalIntakeFormsQues3");
+		System.out.println("3-HRA PhysicalIntakeForms Ques3");
 
 		home.verifyHRALifeStyleQuesSleep1(sleepHrs);
 
-		System.out.println("4- HRALifeStyleQuesSleep1");
+		System.out.println("4-HRALifeStyleQues Sleep1");
 
-		home.verifyHRALifeStyleQuesSmoking2(options[0], null);
+		home.verifyHRALifeStyleQuesSmoking2(options[1], noSmokes);
 
-		System.out.println("5- HRA LifeStyleQuesSmoking2");
+		System.out.println("5-HRA LifeStyleQues Smoking2");
 
-		home.verifyHRALifeStyleQuesDrinking1(options[0], null);
+		home.verifyHRALifeStyleQuesDrinking1(options[1], noDrinks);
 
-		System.out.println("6- HRA LifeStyleQuesDrinking1");
+		System.out.println("6-HRA LifeStyleQues Drinking1");
 
-		home.verifyHRALifeStyleQuesStress(options[0]);
+		home.verifyHRALifeStyleQuesStress(options[1]);
 
-		System.out.println("7- HRALifeStyleQuesStress");
+		System.out.println("7-HRA LifeStyleQues Stress1");
 
-		home.verifyHRALifeStyleQuesHappiness(options[0]);
+		home.verifyHRALifeStyleQuesHappiness(options[1]);
 
-		System.out.println("8- HRA LifeStyleQuesHappiness");
+		System.out.println("8-HRA LifeStyle QuesHappiness1");
 
-		home.verifyMedical(medQues[0], yesNoOption[1], yesNoOption[1]);
+		home.verifyMedical(medQues[0], yesNoOption[0], yesNoOption[1]);
 
-		home.verifyMedical(medQues[1], yesNoOption[1], yesNoOption[1]);
+		home.verifyMedical(medQues[1], yesNoOption[0], yesNoOption[1]);
 
 		home.verifyMedical(medQues[2], yesNoOption[1], yesNoOption[1]);
 
@@ -139,35 +136,34 @@ public class EQ1_HRAScoreDoingGreatEmail extends BaseClass {
 
 		home.verifyMedical(medQues[7], yesNoOption[1], yesNoOption[1]);
 
-		System.out.println("9- HRA Medical");
+		System.out.println("9-HRA Medical");
 
 		home.hraCompletionPage(scoreLabel);
 
-		System.out.println("10- HRA Completition");
+		System.out.println("10- HRA Completition Form");
 
-		home.scoreModalClose();
-
-		System.out.println("11 - Score pop up close");
-
+		
 	}
 
-	@Parameters({ "Coverage" })
-	@Test(priority = 4, dependsOnMethods = "hraGreatScenario")
+	@Parameters({ "Coverage"})
+	@Test(priority = 4, dependsOnMethods = "hraKeepItUpScenario")
 	public void verifyTalkToCare(String coverage) throws Exception {
 		
 		try {
-
-		System.out.println("// ****************** EQ 1 Talk To Care from Home Page **************************** //");
+		
+		System.out.println("********EQ - HRA Form Complete View Score Modal In modal CLICK TALK TO CARE ADVOCATE");
 
 		intake = PageFactory.initElements(driver, IntakeFormPage.class);
 
 		home1 = PageFactory.initElements(driver, HomePage.class);
 
+		home.talkToCare();
+
+		// String coverage = "LJ";
+
 		if (coverage.equalsIgnoreCase("EQ")) {
 
 			System.out.println("Covergae Type " + coverage);
-
-			// home.hraCompletionPageAndTalkToCare();
 
 			home1.deviceCheckHRA();
 
@@ -176,23 +172,33 @@ public class EQ1_HRAScoreDoingGreatEmail extends BaseClass {
 			intake.fillIntakeForm();
 
 			System.out.println("12- Regular Fill Intake form");
+
+		} else if (coverage.equalsIgnoreCase("LJ")) {
+
+			System.out.println("Covergae Type " + coverage);
+
+			//intakeForm.deviceCheck();
+
+			//System.out.println("11-Life Journey Device check page");
+
+			//intakeForm.hraLifeJourneyVisit();
+
+			//System.out.println("12- Life Journey Fill Intake form");
+			
+			intakeForm.startLifeJourneyMethod();
+			
+			System.out.println("11-Life Journey Device check page");
+
+			System.out.println("12- Life Journey Fill Intake form");
+
+
 		}
 
-		else if (coverage.equalsIgnoreCase("LJ")) {
+		System.out.println("############### END EQ4_HRAScoreRoomForImproveEmail ############");
 
-			System.out.println("Covergae Type - " + coverage);
-
-			intakeForm.startLifeJourneyVisit();
-
-			System.out.println("12 - Started life journey visit");
-		}
-
-		System.out.println("############# END EQ1_HRAScoreDoingGreatEmail #########");
-		
-		System.out.println("***********************************************************");
-		
 		System.out.println("***********************************************************");
 
+		System.out.println("***********************************************************");
 		System.out.println("");
 		System.out.println("");
 		
@@ -207,9 +213,5 @@ public class EQ1_HRAScoreDoingGreatEmail extends BaseClass {
 			throw ex;
 		}
 
-		
 	}
-
-	
-
 }
