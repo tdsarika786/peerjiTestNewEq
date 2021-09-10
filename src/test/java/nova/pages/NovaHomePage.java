@@ -157,7 +157,7 @@ public class NovaHomePage {
 		
 		//Partner Portal
 		
-		WebElement buttonPortal = driver.findElement(By.xpath("//select[@data-testid='partner-portals-select']"));
+		WebElement buttonPortal = driver.findElement(By.xpath("//input[@id='portal_active']"));
 
 		JavascriptExecutor executorPortal = (JavascriptExecutor) driver;
 		executorPortal.executeScript("arguments[0].click()", buttonPortal);
