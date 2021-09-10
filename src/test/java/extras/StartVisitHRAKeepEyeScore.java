@@ -1,4 +1,4 @@
-package eqcare.peerjitestcases.copy;
+package extras;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Parameters;
@@ -14,7 +14,7 @@ import eqcare.pages.IntakeFormPageAV;
 import eqcare.pages.LoginPage;
 import eqcare.pages.copy.BaseClass;
 
-public class StartVisitHRAKeepUpScore extends BaseClass {
+public class StartVisitHRAKeepEyeScore extends BaseClass {
 
 	ClinicPage clinic, clinic1, clinic2, clinic3;
 	LoginPage login;
@@ -28,11 +28,11 @@ public class StartVisitHRAKeepUpScore extends BaseClass {
 
 		login = PageFactory.initElements(driver, LoginPage.class);
 
-		login.loginToApplication("sarikaqa7+emp71@gmail.com", "Sarika#123");
+		login.loginToApplication("sarikaqa7+emp72@gmail.com", "Sarika#123");
 
 		login.verifyUrlAfterLogin();
 		
-		System.out.println("*************START VISIT StartVisitHRAKeepUpScore ******************** "+email);
+		System.out.println("*************START VISIT StartVisitHRAKeepEyeScore ******************** "+email);
 
 	}
 

@@ -1,4 +1,4 @@
-package eqcare.peerjitestcases.copy;
+package eqcare.testcases;
 
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Parameters;
