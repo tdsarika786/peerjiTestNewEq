@@ -57,7 +57,7 @@ public class NovaHomePage {
 	
 	By selectDefault = By.xpath("//select[@id='default_lang']");
 	
-	
+	By logoPartner = By.xpath("//input[@id='file-logo_url_en']");
 	
 
 	// EMployer
@@ -120,57 +120,57 @@ public class NovaHomePage {
 	public void createPartnerPortal(String searchEmployer, String empID, String CoverageType) {
 
 		Utility.waitForWebElement(driver, PartnerLink).click();
-		
-		Utility.wait(10);
+
+		Utility.wait(7);
 
 		WebElement buttonPartner = driver.findElement(By.xpath("(//a[contains(text(), 'Create Partner')])[1]"));
 
 		JavascriptExecutor executorEmpl = (JavascriptExecutor) driver;
 		executorEmpl.executeScript("arguments[0].click()", buttonPartner);
+
+		// Select Owner
+		WebElement ownerElement = driver.findElement(selectOwner);
+
+		Select objOwner = new Select(ownerElement);
+
+		objOwner.selectByValue("employers");
+
+		// Employer
+
+		Utility.waitForWebElement(driver, employerPartner).click();
+
+		Utility.waitForWebElement(driver, searchEmployerInput).sendKeys(searchEmployer);
+
+		By selectEqCareEmployee = By.xpath("//div[contains(text(),'" + searchEmployer + "')]");
+
+		System.out.println("xpath --------" + selectEqCareEmployee);
+
+		Utility.waitForWebElement(driver, selectEqCareEmployee).click();
+
+		Utility.waitForWebElement(driver, subdomainInput).sendKeys("sarubell");
+
+		Utility.waitForWebElement(driver, accentColorInput).sendKeys("#2D863D");
+
+		// Default lang
+		WebElement langElement = driver.findElement(selectDefault);
+
+		Select objLang = new Select(langElement);
+
+		objLang.selectByValue("en-CA");
 		
-		Utility.wait(10);
+		//Logo
 		
-		//Select Owner
-		 WebElement ownerElement = driver.findElement(selectOwner);
-		 
-		 Select objOwner = new Select(ownerElement);
-		 
-		  objOwner.selectByValue("employers");
-		
-		//Employer
-		  
-		    Utility.waitForWebElement(driver, employerPartner).click();
+		Utility.waitForWebElement(driver, logoPartner)
+		.sendKeys(System.getProperty("user.dir") + "/TestData/sai-pic.jpeg");
 
-			Utility.waitForWebElement(driver, searchEmployerInput).sendKeys(searchEmployer);
+		Utility.wait(5);
 
-			By selectEqCareEmployee = By.xpath("//div[contains(text(),'" + searchEmployer + "')]");
+		WebElement buttonSub = driver.findElement(By.xpath("//button[@dusk='create-button']"));
 
-			System.out.println("xpath --------" + selectEqCareEmployee);
+		JavascriptExecutor executorSub = (JavascriptExecutor) driver;
+		executorSub.executeScript("arguments[0].click()", buttonSub);
 
-			Utility.waitForWebElement(driver, selectEqCareEmployee).click();
-
-			Utility.waitForWebElement(driver, subdomainInput).sendKeys("sarubell");
-			
-			
-			//Default lang
-			 WebElement langElement = driver.findElement(selectDefault);
-			 
-			 Select objLang = new Select(langElement);
-			 
-			 objLang.selectByValue("employers");
-			
-			 WebElement buttonSub = driver.findElement(By.xpath("//button[@dusk='create-button']"));
-
-				JavascriptExecutor executorSub = (JavascriptExecutor) driver;
-				executorSub.executeScript("arguments[0].click()", buttonSub);
-
-				Utility.wait(20);
-				
-				
-				
-		  
-		  
-		
+		Utility.wait(20);
 
 	}
 
