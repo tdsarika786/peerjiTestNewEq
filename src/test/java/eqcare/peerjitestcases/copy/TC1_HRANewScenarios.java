@@ -1,4 +1,4 @@
-	package eqcare.testcases;
+	package eqcare.peerjitestcases.copy;
 
 
 import org.openqa.selenium.support.PageFactory;
