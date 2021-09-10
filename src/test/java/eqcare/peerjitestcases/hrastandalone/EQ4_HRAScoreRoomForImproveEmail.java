@@ -141,7 +141,7 @@ public class EQ4_HRAScoreRoomForImproveEmail extends BaseClass {
 
 		System.out.println("9- HRA Medical");
 
-		home.hraCompletionPage(scoreLabel);
+		home.hraCompletionPageStandAlone(scoreLabel);
 
 		System.out.println("10- HRA Completition Form");
 

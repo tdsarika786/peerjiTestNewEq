@@ -137,7 +137,7 @@ public class EQ2_HRAScoreKeepItUpEmail extends BaseClass {
 
 		System.out.println("9-HRA Medical");
 
-		home.hraCompletionPageAndTalkToCare();
+		home.hraCompletionPageStandAlone(scoreLabel);
 
 		System.out.println("10-HRA Completition Form");
 

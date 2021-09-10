@@ -603,6 +603,21 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		viewScoreHRAComplete(scoreLabel);
 
 	}
+	public void hraCompletionPageStandAlone(String scoreLabel) {
+
+		Utility.wait(10);
+
+		Utility.waitForWebElement(driver, hraThankYouImg);
+
+		Utility.waitForWebElement(driver, hraThankyouHeader);
+
+		Utility.waitForWebElement(driver, hraThankyouText);
+
+		//Utility.waitForWebElement(driver, talkToCareLink);
+
+		viewScoreHRAComplete(scoreLabel);
+
+	}
 
 	public void hraCompletionPageAndTalkToCare() {
 

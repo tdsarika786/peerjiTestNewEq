@@ -137,7 +137,7 @@ public class EQ3_HRAScoreKeepEyeOnItEmail extends BaseClass {
 
 		System.out.println("9- HRA Medical");
 
-		home.hraCompletionPage1(scoreLabel);
+		home.hraCompletionPageStandAlone(scoreLabel);
 
 		System.out.println("10-HRA Completition Form");
 
