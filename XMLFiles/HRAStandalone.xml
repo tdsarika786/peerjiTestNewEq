@@ -15,11 +15,7 @@
 		  <class name="eqcare.peerjitestcases.hrastandalone.EQ1_HRAScoreDoingGreatEmail"/>
 		
 
-	<class
-				name="eqcare.peerjitestcases.hrastandalone.HRAIntroPageTalkCare" />
-				
-					<class
-				name="eqcare.peerjitestcases.hrastandalone.HRAPhysicalPageTalkCare2" /> 
+
 			
 			     <class name="eqcare.peerjitestcases.hrastandalone.EQ1_HRAScoreDoingVeryWellEmail"/>
 			     
