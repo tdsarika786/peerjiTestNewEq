@@ -10,7 +10,7 @@
   <test name="Test" preserve-order="true" thread-count="3" >
     <classes>
        
-         <class name="eqcare.peerjitestcases.copy.NovaPartnerPortal"/> 
+         <class name="eqcare.partnerPortal.NovaPartnerPortal"/> 
 
    <!--  	<class name="eqcare.peerjitestcases.copy.TC2_ForgotPasswordScenarios" />  -->
            
