@@ -121,7 +121,7 @@ public class NovaHomePage {
 
 		Utility.waitForWebElement(driver, PartnerLink).click();
 		
-		Utility.wait(2);
+		Utility.wait(10);
 
 		WebElement buttonPartner = driver.findElement(By.xpath("(//a[contains(text(), 'Create Partner')])[1]"));
 
