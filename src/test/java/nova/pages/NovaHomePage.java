@@ -154,6 +154,14 @@ public class NovaHomePage {
 		Utility.waitForWebElement(driver, accentColorInput).sendKeys("#2D863D");
 		
 		Utility.waitForWebElement(driver, portalActive).click();
+		
+		//Partner Portal
+		
+		WebElement buttonPortal = driver.findElement(By.xpath("//select[@data-testid='partner-portals-select']"));
+
+		JavascriptExecutor executorPortal = (JavascriptExecutor) driver;
+		executorPortal.executeScript("arguments[0].click()", buttonPortal);
+		
 
 		// Default lang
 		WebElement langElement = driver.findElement(selectDefault);
