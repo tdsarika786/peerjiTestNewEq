@@ -89,6 +89,9 @@ public class BrowserFactory {
 		if (projectrun.equalsIgnoreCase("eq")) {
 			
 			if (browser.equalsIgnoreCase("chrome")) {
+				
+				// setting up property to suppress the warning
+				System.setProperty("webdriver.chrome.silentOutput","true");
 			
 			WebDriverManager.chromedriver().setup();
 			
@@ -116,7 +119,12 @@ public class BrowserFactory {
 		
 		if (projectrun.equalsIgnoreCase("anu")) {
 			
-			System.setProperty("webdriver.chrome.driver", "/Users/sarika/Documents/ChromeDriver/chromedriver-89");
+			// setting up property to suppress the warning
+			System.setProperty("webdriver.chrome.silentOutput","true");
+			
+			//System.setProperty("webdriver.chrome.driver", "/Users/sarika/Documents/ChromeDriver/chromedriver-89");
+			
+			WebDriverManager.chromedriver().setup();
 			
 			ChromeOptions options = new ChromeOptions();
 

@@ -12,6 +12,8 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.safari.SafariDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BrowserFactory1 {
 
 	public static void closeApplication(WebDriver driver) {
@@ -28,10 +30,12 @@ public class BrowserFactory1 {
 			// System.getProperty("user.dir")+"/Drivers/chromedriver1");
 			
 			if (projectrun.equalsIgnoreCase("eq")) {
-			System.setProperty("webdriver.chrome.driver", "/Users/sarikadhall/Documents/ChromeDriver/chromedriver-90");
+			//System.setProperty("webdriver.chrome.driver", "/Users/sarikadhall/Documents/ChromeDriver/chromedriver-90");
+				WebDriverManager.chromedriver().setup();
 			}
 			else {
-				System.setProperty("webdriver.chrome.driver", "/Users/sarika/Documents/ChromeDriver/chromedriver-89");
+				//System.setProperty("webdriver.chrome.driver", "/Users/sarika/Documents/ChromeDriver/chromedriver-89");
+				WebDriverManager.chromedriver().setup();
 			}
 
 			// ChromeOptions optionsC = new ChromeOptions();
