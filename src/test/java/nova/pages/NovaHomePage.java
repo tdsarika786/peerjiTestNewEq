@@ -120,6 +120,8 @@ public class NovaHomePage {
 	public void createPartnerPortal(String searchEmployer, String empID, String CoverageType) {
 
 		Utility.waitForWebElement(driver, PartnerLink).click();
+		
+		Utility.wait(2);
 
 		WebElement buttonPartner = driver.findElement(By.xpath("(//a[contains(text(), 'Create Partner')])[1]"));
 
