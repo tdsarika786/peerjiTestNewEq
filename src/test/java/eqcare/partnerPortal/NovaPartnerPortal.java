@@ -56,7 +56,7 @@ public class NovaPartnerPortal extends BaseClass {
 	}
 
 	@Parameters({ "SearchEmployer", "CoverageToken", "CoverageType" })
-	@Test(priority = 2, dependsOnMethods = "loginToApplication")
+	@Test(priority = 3, dependsOnMethods = "loginToApplication")
 	public void CreatePartnerPortal1(String searchemployer, String coveragetoken, String coveragetype)
 			throws InterruptedException {
 
@@ -72,7 +72,7 @@ public class NovaPartnerPortal extends BaseClass {
 	}
 	
 	@Parameters({ "SearchEmployer", "CoverageToken", "CoverageType" })
-	@Test(priority = 2, dependsOnMethods = "loginToApplication")
+	@Test(priority = 4, dependsOnMethods = "loginToApplication")
 	public void CreatePartnerPortal2(String searchemployer, String coveragetoken, String coveragetype)
 			throws InterruptedException {
 
