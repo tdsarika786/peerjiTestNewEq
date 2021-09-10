@@ -39,6 +39,26 @@ public class NovaHomePage {
 	By createEmployeeSubmitButton = By.xpath("//button[@dusk='create-button']");
 
 	// Modify Employee
+	
+	//Partner Portal
+	
+	By PartnerLink = By.xpath("//a[contains(text(), 'Partner')]");
+	By createPartnerLink = By.xpath("(//a[contains(text(), 'Create Partner')])[1]");
+	
+	By selectOwner = By.xpath("//select[@data-testid='owner-type']");
+	
+	By employerPartner = By.xpath("//div[@data-testid='owner-search-input']");
+	
+	By subdomainInput = By.id("subdomain");
+	
+	By accentColorInput = By.id("Accent Color");
+	
+	By portalActive = By.id("portal_active");
+	
+	By selectDefault = By.xpath("//select[@id='default_lang']");
+	
+	
+	
 
 	// EMployer
 
@@ -95,6 +115,61 @@ public class NovaHomePage {
 	public NovaHomePage(WebDriver ldriver) {
 		this.driver = ldriver;
 	}
+	
+	
+	public void createPartnerPortal(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, PartnerLink).click();
+
+		WebElement buttonPartner = driver.findElement(By.xpath("(//a[contains(text(), 'Create Partner')])[1]"));
+
+		JavascriptExecutor executorEmpl = (JavascriptExecutor) driver;
+		executorEmpl.executeScript("arguments[0].click()", buttonPartner);
+		
+		//Select Owner
+		 WebElement ownerElement = driver.findElement(selectOwner);
+		 
+		 Select objOwner = new Select(ownerElement);
+		 
+		  objOwner.selectByValue("employers");
+		
+		//Employer
+		  
+		    Utility.waitForWebElement(driver, employerButton).click();
+
+			Utility.waitForWebElement(driver, searchEmployerInput).sendKeys(searchEmployer);
+
+			By selectEqCareEmployee = By.xpath("//div[contains(text(),'" + searchEmployer + "')]");
+
+			System.out.println("xpath --------" + selectEqCareEmployee);
+
+			Utility.waitForWebElement(driver, selectEqCareEmployee).click();
+
+			Utility.waitForWebElement(driver, subdomainInput).sendKeys("sarubell");
+			
+			
+			//Default lang
+			 WebElement langElement = driver.findElement(selectDefault);
+			 
+			 Select objLang = new Select(langElement);
+			 
+			 objLang.selectByValue("employers");
+			
+			 WebElement buttonSub = driver.findElement(By.xpath("//button[@dusk='create-button']"));
+
+				JavascriptExecutor executorSub = (JavascriptExecutor) driver;
+				executorSub.executeScript("arguments[0].click()", buttonSub);
+
+				Utility.wait(20);
+				
+				
+				
+		  
+		  
+		
+
+	}
+
 
 	public void createEmployer1(String searchEmployer, String CoverageToken, String CoverageType) {
 
