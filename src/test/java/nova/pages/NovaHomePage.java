@@ -1107,6 +1107,8 @@ public class NovaHomePage {
 	public void createService1797(String searchEmployer, String CoverageToken, String CoverageType) {
 
 		Utility.waitForWebElement(driver, EmployerLink).click();
+		
+		Utility.wait(10);
 
 		//WebElement buttonEmpl = driver.findElement(By.xpath("(//a[contains(text(), 'Create Employer')])[1]"));
 
