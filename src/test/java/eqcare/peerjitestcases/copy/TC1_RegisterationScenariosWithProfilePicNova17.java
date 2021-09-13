@@ -136,39 +136,8 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 
 	}
 	
-
 	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
 	@Test(priority = 4, dependsOnMethods = "verifyPage")
-	public void validInputEnrolledRegisterationTest4(String email, String coveragetoken, String coverageidentifier,String AppUrl) {
-		
-		register.navigateToRegisterationPage(AppUrl);
-		
-		register.EnrolledUserWithValidInput("PCLJHRA1","anu3");
-		
-		register.Registeration1("sarikaqa7+pcljhra1@gmail.com",
-
-				"Sarika-TestPCLJHRA",
-				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
-
-				DataProviderFactory.getExcel().getCellData("Users", 2, 4),
-
-				DataProviderFactory.getExcel().getCellData("Users", 2, 5),
-				DataProviderFactory.getExcel().getCellData("Users", 2, 6),
-
-				DataProviderFactory.getExcel().getCellData("Users", 2, 7),
-				DataProviderFactory.getExcel().getCellData("Users", 2, 8),
-
-				DataProviderFactory.getExcel().getCellData("Users", 2, 9),
-				"Sarika#123", true, "img");
-
-		register.registerationCompleteWithValidInput();
-		
-		System.out.println("*************** 4- sarikaqa7+pcljhra1@gmail.com *******************");
-
-	}
-	
-	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
-	@Test(priority = 5, dependsOnMethods = "verifyPage")
 	public void validInputEnrolledRegisterationTest5(String email, String coveragetoken, String coverageidentifier,String AppUrl) {
 		
 		register.navigateToRegisterationPage(AppUrl);
@@ -198,7 +167,7 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 	}
 	
 	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
-	@Test(priority = 6, dependsOnMethods = "verifyPage")
+	@Test(priority = 5, dependsOnMethods = "verifyPage")
 	public void validInputEnrolledRegisterationTest6(String email, String coveragetoken, String coverageidentifier,String AppUrl) {
 		
 		register.navigateToRegisterationPage(AppUrl);
@@ -229,7 +198,7 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 
 	
 	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
-	@Test(priority = 7, dependsOnMethods = "verifyPage")
+	@Test(priority = 6, dependsOnMethods = "verifyPage")
 	public void validInputEnrolledRegisterationTest7(String email, String coveragetoken, String coverageidentifier,String AppUrl) {
 		
 		register.navigateToRegisterationPage(AppUrl);
@@ -260,7 +229,7 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 
 	
 	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
-	@Test(priority = 8, dependsOnMethods = "verifyPage")
+	@Test(priority = 7, dependsOnMethods = "verifyPage")
 	public void validInputEnrolledRegisterationTest8(String email, String coveragetoken, String coverageidentifier,String AppUrl) {
 		
 		register.navigateToRegisterationPage(AppUrl);
@@ -293,7 +262,7 @@ public class TC1_RegisterationScenariosWithProfilePicNova17 extends BaseClass {
 	}
 
 	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
-	@Test(priority = 9, dependsOnMethods = "verifyPage")
+	@Test(priority = 8, dependsOnMethods = "verifyPage")
 	public void validInputEnrolledRegisterationTest9(String email, String coveragetoken, String coverageidentifier,String AppUrl) {
 		
 		register.navigateToRegisterationPage(AppUrl);
