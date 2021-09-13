@@ -123,7 +123,7 @@ public class NovaHomePage {
 	
 	By PatientsTtleTable = By.xpath("//span[contains(text(), 'Title')]");
 	
-	
+	By PatiemtTableHeading = By.xpath("//h1[contains(text(), 'Patients')]");
 	
 	
 	public NovaHomePage(WebDriver ldriver) {
@@ -1288,6 +1288,8 @@ By selectEqCareEmployer = By.xpath("//a[contains(text(),'" + searchEmployer + "'
 		Utility.wait(10);
 		
 		Utility.waitForWebElement(driver, PatientsTtleTable);
+		
+		Utility.waitForWebElement(driver, PatiemtTableHeading);
 		
 	}
 	
