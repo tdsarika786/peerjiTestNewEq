@@ -1280,7 +1280,7 @@ By selectEqCareEmployer = By.xpath("//a[contains(text(),'" + searchEmployer + "'
 		
 		Utility.wait(10);
 		
-		Utility.waitForWebElement(driver, PatientsTtleTable).click();
+		Utility.waitForWebElement(driver, PatientsTtleTable);
 		
 	}
 	
