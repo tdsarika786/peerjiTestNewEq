@@ -103,6 +103,10 @@ public class NovaHomePage {
 	
 	By selectGroupableSearchInput = By.xpath("//div[@data-testid='groupable-search-input']");
 	
+	By CreateGroupNo = By.xpath("//a[contains(text(), 'Create Group Number')]");
+	
+
+	
 	//Story 1797
 	By CreateCoverage = By.xpath("//a[contains(text(), 'Create Coverage')]");
 	
@@ -831,12 +835,12 @@ public class NovaHomePage {
 	}
 
 	public void createGroupNo(String groupNumber, String searchEmployer) {
-		
-		Utility.wait(2);
 
 		Utility.waitForWebElement(driver, GroupNoLink).click();
 		
 		Utility.wait(2);
+		
+		Utility.waitForWebElement(driver, CreateGroupNo);
 
 		WebElement buttonEmpl = driver.findElement(By.xpath("//a[contains(text(), 'Create Group Number')]"));
 
@@ -1152,7 +1156,7 @@ public class NovaHomePage {
 		executorCreateService.executeScript("arguments[0].click()", createService);
 		
 		Utility.wait(10);
-		
+		Utility.waitForWebElement(driver, startDateInput);
 		
 		WebElement selectService = driver.findElement(By.xpath("//select[@id='lifejourney_service_option']"));
 
@@ -1197,7 +1201,7 @@ By selectEqCareEmployer = By.xpath("//a[contains(text(),'" + searchEmployer + "'
 		
 		Utility.wait(12);
 		
-		
+		Utility.waitForWebElement(driver, CreateCoverage);
 
 		/*Utility.waitForWebElement(driver, EmployerLink).click();
 		
