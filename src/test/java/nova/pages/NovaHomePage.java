@@ -1073,6 +1073,8 @@ public class NovaHomePage {
 
 		Utility.wait(10);
 		
+		Utility.waitForWebElement(driver, selectCoverageOption);
+		
 		// Select Coverage Option
 
 				WebElement coverageOptionElement = driver.findElement(selectCoverageOption);
