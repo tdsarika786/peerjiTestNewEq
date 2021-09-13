@@ -1131,6 +1131,8 @@ public class NovaHomePage {
 		
 		Utility.wait(2);
 		
+		Utility.waitForWebElement(driver, CreateLifeJounerSer);
+		
 		//Utility.waitForWebElement(driver, CreateLifeJounerSer).click();
 		
 		WebElement createService = driver.findElement(By.xpath("//a[contains(text(), 'Create LifeJourney Service')]"));
