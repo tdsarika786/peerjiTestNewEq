@@ -358,9 +358,12 @@ public class NovaHomePage {
 
 		Utility.waitForWebElement(driver, EmployeesLink).click();
 
-		Utility.waitForWebElement(driver, createEmployeeLink).click();
+		Utility.waitForWebElement(driver, createEmployeeLink).click();		
+
+		Utility.wait(5);
 
 		Utility.waitForWebElement(driver, employerButton).click();
+		
 
 		// Modify Line No 40
 
