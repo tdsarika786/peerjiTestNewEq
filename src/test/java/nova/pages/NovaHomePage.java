@@ -1276,7 +1276,14 @@ By selectEqCareEmployer = By.xpath("//a[contains(text(),'" + searchEmployer + "'
 	
 	public void novaPatients(String searchEmployer, String empID, String CoverageType) {
 
-		Utility.waitForWebElement(driver, PatientsLink).click();
+		Utility.waitForWebElement(driver, PatientsLink);
+		
+		WebElement PatientCTALink = driver.findElement(By.xpath("//a[contains(text(), 'Patients')]"));
+
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", PatientCTALink);
+		
 		
 		Utility.wait(10);
 		
