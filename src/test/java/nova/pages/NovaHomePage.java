@@ -1110,10 +1110,14 @@ public class NovaHomePage {
 		
 		
 		By selectEqCareEmployer = By.xpath("//a[contains(text(),'" + searchEmployer + "')]");
+		
+		System.out.println("//a[contains(text(),'" + searchEmployer + "')]");
 
 		Utility.waitForWebElement(driver, selectEqCareEmployer).click();
 		
-		Utility.wait(10);
+		Utility.wait(12);
+		
+		Utility.waitForWebElement(driver, CreateLifeJounerSer);
 
 		//Utility.waitForWebElement(driver, EmployerLink).click();
 		
