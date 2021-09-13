@@ -1188,8 +1188,18 @@ public class NovaHomePage {
 	}
 	
 	public void createCoverageUpdate1797(String searchEmployer, String CoverageToken, String CoverageType) {
+		
+By selectEqCareEmployer = By.xpath("//a[contains(text(),'" + searchEmployer + "')]");
+		
+		System.out.println("//a[contains(text(),'" + searchEmployer + "')]");
 
-		Utility.waitForWebElement(driver, EmployerLink).click();
+		Utility.waitForWebElement(driver, selectEqCareEmployer).click();
+		
+		Utility.wait(12);
+		
+		
+
+		/*Utility.waitForWebElement(driver, EmployerLink).click();
 		
 		Utility.wait(2);
 
@@ -1198,7 +1208,7 @@ public class NovaHomePage {
 		JavascriptExecutor executorCreateEmployer = (JavascriptExecutor) driver;
 		executorCreateEmployer.executeScript("arguments[0].click()", clickEqCareEmployer);
 		
-		
+		*/
 		WebElement CreateCoverage = driver.findElement(By.xpath("//a[contains(text(), 'Create Coverage')]"));
 
 
@@ -1207,6 +1217,7 @@ public class NovaHomePage {
 		
 		Utility.wait(10);
 
+		Utility.waitForWebElement(driver, selectCoverageOption);
 		
 		// Select Coverage Option
 
