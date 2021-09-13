@@ -581,6 +581,8 @@ public class NovaHomePage {
 	}
 
 	public void addStaff(String staffEmail, String password, String staff) {
+		
+
 
 		WebElement buttonStaff = driver.findElement(By.xpath("//a[@href='/admin/resources/clinic-employees']"));
 
@@ -590,6 +592,8 @@ public class NovaHomePage {
 		// Utility.waitForWebElement(driver, StaffLink).click();
 
 		Utility.waitForWebElement(driver, createEmployeeLink).click();
+		
+		Utility.wait(5);
 
 		Utility.waitForWebElement(driver, email).sendKeys(staffEmail);
 
