@@ -1067,7 +1067,7 @@ public class NovaHomePage {
 		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
 		executorCreateCoverage.executeScript("arguments[0].click()", CreateCoverage);
 
-		Utility.wait(7);
+		Utility.wait(10);
 		
 		// Select Coverage Option
 
@@ -1181,7 +1181,7 @@ public class NovaHomePage {
 		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
 		executorCreateCoverage.executeScript("arguments[0].click()", CreateCoverage);
 		
-		Utility.wait(7);
+		Utility.wait(10);
 
 		
 		// Select Coverage Option
