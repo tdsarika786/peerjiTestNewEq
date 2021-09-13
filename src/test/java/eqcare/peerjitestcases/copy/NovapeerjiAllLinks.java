@@ -51,6 +51,12 @@ public class NovapeerjiAllLinks extends BaseClass {
 		String empID = "700";
 
 		home.novaPatients(searchemployer1, empID, null);
+		
+		home.novaFamilies(searchemployer1, empID, null);
+		
+		home.novaAppointments(searchemployer1, empID, null);
+		
+		home.novaVisits(searchemployer1, empID, null);
 
 		System.out.println("********* NOVA Patients Table ***********");
 	}

@@ -125,6 +125,26 @@ public class NovaHomePage {
 	
 	By PatiemtTableHeading = By.xpath("//h1[contains(text(), 'Patients')]");
 	
+	//Family
+	By FamilyLink = By.xpath("//a[contains(text(), 'Families')]");
+	
+	By FamilyTableHeading = By.xpath("//h1[contains(text(), 'Families')]");
+	
+	By FamilyTitleTable = By.xpath("//span[contains(text(), 'Primary')]");
+	
+	//Appointments
+	By AppointmentLink = By.xpath("//a[contains(text(), 'Appointments')]");
+	
+	By AppointmentTableHeading = By.xpath("//h1[contains(text(), 'Appointments')]");
+	
+	By AppointmentTitleTable = By.xpath("//span[contains(text(), 'ID')]");
+	
+	//Visits
+    By VisitsLink = By.xpath("//a[contains(text(), 'Visits')]");
+	
+	By VisitsTableHeading = By.xpath("//h1[contains(text(), 'Visits')]");
+	
+	By VisitsTitleTable = By.xpath("//span[contains(text(), 'ID')]");
 	
 	public NovaHomePage(WebDriver ldriver) {
 		this.driver = ldriver;
@@ -1293,5 +1313,57 @@ By selectEqCareEmployer = By.xpath("//a[contains(text(),'" + searchEmployer + "'
 		
 	}
 	
+	public void novaFamilies(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, PatientsLink);
+		
+		WebElement PatientCTALink = driver.findElement(By.xpath("//a[contains(text(), 'Patients')]"));
+
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", PatientCTALink);
+		
+		
+		Utility.wait(10);
+		
+		Utility.waitForWebElement(driver, PatientsTtleTable);
+		
+		Utility.waitForWebElement(driver, PatiemtTableHeading);
+		
+	}
+	
+	public void novaAppointments(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, AppointmentLink);
+		
+		WebElement AppointmentsCTALink = driver.findElement(By.xpath("//a[contains(text(), 'Appointments')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", AppointmentsCTALink);	
+		
+		Utility.wait(10);
+			
+		Utility.waitForWebElement(driver, AppointmentTableHeading);
+		
+		Utility.waitForWebElement(driver, AppointmentTitleTable);
+		
+	}
+	
+	public void novaVisits(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, VisitsLink);
+		
+		WebElement VisitsCTALink = driver.findElement(By.xpath("//a[contains(text(), 'Visits')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", VisitsCTALink);	
+		
+		Utility.wait(10);
+			
+		Utility.waitForWebElement(driver, VisitsTableHeading);
+		
+		Utility.waitForWebElement(driver, VisitsTitleTable);
+		
+	}
 	
 }
