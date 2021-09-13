@@ -1345,7 +1345,7 @@ By selectEqCareEmployer = By.xpath("//a[contains(text(),'" + searchEmployer + "'
 			
 		Utility.waitForWebElement(driver, AppointmentTableHeading);
 		
-		Utility.waitForWebElement(driver, AppointmentTitleTable);
+		//Utility.waitForWebElement(driver, AppointmentTitleTable);
 		
 	}
 	
@@ -1362,7 +1362,7 @@ By selectEqCareEmployer = By.xpath("//a[contains(text(),'" + searchEmployer + "'
 			
 		Utility.waitForWebElement(driver, VisitsTableHeading);
 		
-		Utility.waitForWebElement(driver, VisitsTitleTable);
+		//Utility.waitForWebElement(driver, VisitsTitleTable);
 		
 	}
 	
