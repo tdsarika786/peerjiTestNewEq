@@ -595,10 +595,12 @@ public class NovaHomePage {
 		executorStaff.executeScript("arguments[0].click()", buttonStaff);
 
 		// Utility.waitForWebElement(driver, StaffLink).click();
+		
+		Utility.wait(5);
 
 		Utility.waitForWebElement(driver, createEmployeeLink).click();
 		
-		Utility.wait(5);
+		Utility.wait(7);
 
 		Utility.waitForWebElement(driver, email).sendKeys(staffEmail);
 
