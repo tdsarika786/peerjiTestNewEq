@@ -1107,10 +1107,17 @@ public class NovaHomePage {
 
 
 	public void createService1797(String searchEmployer, String CoverageToken, String CoverageType) {
+		
+		
+		By selectEqCareEmployer = By.xpath("//a[contains(text(),'" + searchEmployer + "')]");
 
-		Utility.waitForWebElement(driver, EmployerLink).click();
+		Utility.waitForWebElement(driver, selectEqCareEmployer).click();
 		
 		Utility.wait(10);
+
+		//Utility.waitForWebElement(driver, EmployerLink).click();
+		
+		//Utility.wait(10);
 
 		//WebElement buttonEmpl = driver.findElement(By.xpath("(//a[contains(text(), 'Create Employer')])[1]"));
 
@@ -1122,16 +1129,16 @@ public class NovaHomePage {
 		//Utility.waitForWebElement(driver, clickEqCareEmployer).click();
 
 		//Find in table
-		WebElement clickEqCareEmployer = driver.findElement(By.xpath("(//span[contains(text(),'" + searchEmployer + "')]/following::td[6]//a[1])[1]"));
+		//WebElement clickEqCareEmployer = driver.findElement(By.xpath("(//span[contains(text(),'" + searchEmployer + "')]/following::td[6]//a[1])[1]"));
 
 	
 		
-		JavascriptExecutor executorCreateEmployer = (JavascriptExecutor) driver;
+	/*	JavascriptExecutor executorCreateEmployer = (JavascriptExecutor) driver;
 		executorCreateEmployer.executeScript("arguments[0].click()", clickEqCareEmployer);
 		
 		Utility.wait(2);
 		
-		Utility.waitForWebElement(driver, CreateLifeJounerSer);
+		Utility.waitForWebElement(driver, CreateLifeJounerSer);*/
 		
 		//Utility.waitForWebElement(driver, CreateLifeJounerSer).click();
 		
