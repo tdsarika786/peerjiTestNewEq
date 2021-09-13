@@ -116,6 +116,16 @@ public class NovaHomePage {
 	
 	By selectLifeJourneyOption = By.xpath("//select[@id='lifejourney_service_option']");
 	
+	
+	//Nova Links
+	
+	By PatientsLink = By.xpath("//a[contains(text(), 'Patients')]");
+	
+	By PatientsTtleTable = By.xpath("//span[contains(text(), 'Title')]");
+	
+	
+	
+	
 	public NovaHomePage(WebDriver ldriver) {
 		this.driver = ldriver;
 	}
@@ -1263,4 +1273,16 @@ By selectEqCareEmployer = By.xpath("//a[contains(text(),'" + searchEmployer + "'
 
 				Utility.wait(2);
 	}
+	
+	public void novaPatients(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, PatientsLink).click();
+		
+		Utility.wait(10);
+		
+		Utility.waitForWebElement(driver, PatientsTtleTable).click();
+		
+	}
+	
+	
 }
