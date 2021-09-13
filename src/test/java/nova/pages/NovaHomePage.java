@@ -675,7 +675,7 @@ public class NovaHomePage {
 
 		Utility.waitForWebElement(driver, EmployerLink).click();
 		
-		Utility.wait(5);
+		Utility.wait(10);
 
 		WebElement buttonEmpl = driver.findElement(By.xpath("(//a[contains(text(), 'Create Employer')])[1]"));
 
@@ -686,7 +686,7 @@ public class NovaHomePage {
 
 		// Change ID for NEW Employer NEW
 		
-		Utility.wait(5);
+		Utility.wait(10);
 		
 		Utility.waitForWebElement(driver, employerIDInput).sendKeys(empID);
 		// // Modify
@@ -831,8 +831,12 @@ public class NovaHomePage {
 	}
 
 	public void createGroupNo(String groupNumber, String searchEmployer) {
+		
+		Utility.wait(2);
 
 		Utility.waitForWebElement(driver, GroupNoLink).click();
+		
+		Utility.wait(2);
 
 		WebElement buttonEmpl = driver.findElement(By.xpath("//a[contains(text(), 'Create Group Number')]"));
 
@@ -1060,7 +1064,7 @@ public class NovaHomePage {
 		//Utility.waitForWebElement(driver, CreateCoverage).click();
 		
 
-		Utility.wait(2);
+		Utility.wait(5);
 		
 		WebElement CreateCoverage = driver.findElement(By.xpath("(//a[contains(text(), 'Create Coverage')])[1]"));
 
