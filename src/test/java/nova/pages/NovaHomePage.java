@@ -1067,6 +1067,7 @@ public class NovaHomePage {
 		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
 		executorCreateCoverage.executeScript("arguments[0].click()", CreateCoverage);
 
+		Utility.wait(7);
 		
 		// Select Coverage Option
 
@@ -1165,6 +1166,8 @@ public class NovaHomePage {
 	public void createCoverageUpdate1797(String searchEmployer, String CoverageToken, String CoverageType) {
 
 		Utility.waitForWebElement(driver, EmployerLink).click();
+		
+		Utility.wait(2);
 
 		WebElement clickEqCareEmployer = driver.findElement(By.xpath("(//span[contains(text(),'" + searchEmployer + "')]/following::td[6]//a[1])[1]"));
 		
@@ -1177,6 +1180,8 @@ public class NovaHomePage {
 
 		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
 		executorCreateCoverage.executeScript("arguments[0].click()", CreateCoverage);
+		
+		Utility.wait(7);
 
 		
 		// Select Coverage Option
