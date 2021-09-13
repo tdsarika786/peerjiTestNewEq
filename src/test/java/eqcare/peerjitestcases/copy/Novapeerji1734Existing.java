@@ -64,7 +64,7 @@ public class Novapeerji1734Existing extends BaseClass {
 	}
 
 	@Parameters({ "SearchEmployer", "CoverageToken", "CoverageType" })
-	@Test(priority = 3, dependsOnMethods = "loginToApplication", enabled = false)
+	@Test(priority = 3, dependsOnMethods = "loginToApplication")
 	public void CreateEmployer1(String searchemployer, String coveragetoken, String coveragetype)
 			throws InterruptedException {
 
@@ -88,7 +88,7 @@ public class Novapeerji1734Existing extends BaseClass {
 	}
 
 	@Parameters({ "SearchEmployer", "CoverageToken", "CoverageType" })
-	@Test(priority = 4, dependsOnMethods = "loginToApplication", enabled = false)
+	@Test(priority = 4, dependsOnMethods = "loginToApplication")
 	public void CreateEmployer2(String searchemployer, String coveragetoken, String coveragetype)
 			throws InterruptedException {
 
@@ -142,7 +142,7 @@ public class Novapeerji1734Existing extends BaseClass {
 	}
 
 	@Parameters({ "SearchEmployer", "CoverageToken", "CoverageType" })
-	@Test(priority = 6, dependsOnMethods = "loginToApplication", enabled = false)
+	@Test(priority = 5, dependsOnMethods = "loginToApplication")
 	public void CreateEmployer4(String searchemployer, String coveragetoken, String coveragetype)
 			throws InterruptedException {
 
@@ -174,7 +174,7 @@ public class Novapeerji1734Existing extends BaseClass {
 	}
 
 	@Parameters({ "SearchEmployer", "CoverageToken", "CoverageType" })
-	@Test(priority = 7, dependsOnMethods = "loginToApplication", enabled = false)
+	@Test(priority = 6, dependsOnMethods = "loginToApplication")
 	public void CreateEmployer5(String searchemployer, String coveragetoken, String coveragetype)
 			throws InterruptedException {
 
@@ -205,7 +205,7 @@ public class Novapeerji1734Existing extends BaseClass {
 	}
 
 	@Parameters({ "SearchEmployer", "CoverageToken", "CoverageType" })
-	@Test(priority = 8, dependsOnMethods = "loginToApplication", enabled = false)
+	@Test(priority = 7, dependsOnMethods = "loginToApplication")
 	public void CreateEmployer6(String searchemployer, String coveragetoken, String coveragetype)
 			throws InterruptedException {
 
@@ -236,7 +236,7 @@ public class Novapeerji1734Existing extends BaseClass {
 	}
 
 	@Parameters({ "SearchEmployer", "CoverageToken", "CoverageType" })
-	@Test(priority = 9, dependsOnMethods = "loginToApplication", enabled = false)
+	@Test(priority = 8, dependsOnMethods = "loginToApplication")
 	public void CreateEmployer7(String searchemployer, String coveragetoken, String coveragetype)
 			throws InterruptedException {
 
@@ -271,7 +271,7 @@ public class Novapeerji1734Existing extends BaseClass {
 	}
 	
 	@Parameters({ "SearchEmployer", "CoverageToken", "CoverageType" })
-	@Test(priority = 10, dependsOnMethods = "loginToApplication", enabled = false)
+	@Test(priority = 9, dependsOnMethods = "loginToApplication")
 	public void CreateEmployer8(String searchemployer, String coveragetoken, String coveragetype)
 			throws InterruptedException {
 
@@ -306,7 +306,7 @@ public class Novapeerji1734Existing extends BaseClass {
 	}
 	
 	@Parameters({ "SearchEmployer", "CoverageToken", "CoverageType" })
-	@Test(priority = 11, dependsOnMethods = "loginToApplication", enabled = false)
+	@Test(priority = 10, dependsOnMethods = "loginToApplication")
 	public void CreateEmployer10(String searchemployer, String coveragetoken, String coveragetype)
 			throws InterruptedException {
 
@@ -334,7 +334,7 @@ public class Novapeerji1734Existing extends BaseClass {
 	}
 	
 	@Parameters({ "SearchEmployer", "CoverageToken", "CoverageType" })
-	@Test(priority = 12, dependsOnMethods = "loginToApplication", enabled = false)
+	@Test(priority = 11, dependsOnMethods = "loginToApplication")
 	public void CreateEmployer11(String searchemployer, String coveragetoken, String coveragetype)
 			throws InterruptedException {
 
