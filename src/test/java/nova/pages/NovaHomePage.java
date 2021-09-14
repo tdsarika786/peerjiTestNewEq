@@ -1916,7 +1916,7 @@ public class NovaHomePage {
 
 		Utility.waitForWebElement(driver, AdvisorsLink);
 
-		WebElement empLink = driver.findElement(By.xpath("//a[contains(text(), 'Carriers')]"));
+		WebElement empLink = driver.findElement(By.xpath("//a[contains(text(), 'Advisors')]"));
 
 		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
 		executorCreateCoverage.executeScript("arguments[0].click()", empLink);
