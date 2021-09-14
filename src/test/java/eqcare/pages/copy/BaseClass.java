@@ -53,7 +53,7 @@ public class BaseClass implements ITestListener {
 			//driver1.manage().window().maximize();
 			
 
-		/*	driver2 = BrowserFactory.getApplication(browser, ClinicAppURL, projectrun);
+			driver2 = BrowserFactory.getApplication(browser, ClinicAppURL, projectrun);
 
 			System.out.println("Log:INFO- Driver Value Peerji 2- " + driver2);
 
@@ -64,7 +64,7 @@ public class BaseClass implements ITestListener {
 
 			System.out.println("Log:INFO- Driver Valu Peerji 3- " + driver3);
 
-			//driver3.manage().window().maximize();*/
+			//driver3.manage().window().maximize();
 
 		}
 
@@ -86,7 +86,7 @@ public class BaseClass implements ITestListener {
 		if (AppType.equalsIgnoreCase("clinic")) {
 			BrowserFactory.closeApplication(driver1);
 
-			//BrowserFactory.closeApplication(driver2);
+			BrowserFactory.closeApplication(driver2);
 
 			BrowserFactory.closeApplication(driver3);
 		}
