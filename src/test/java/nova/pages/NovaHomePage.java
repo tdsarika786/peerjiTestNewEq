@@ -1710,7 +1710,7 @@ public class NovaHomePage {
 
 		Utility.waitForWebElement(driver, StaffLink);
 
-		WebElement staffLink = driver.findElement(By.xpath("//a[contains(text(), 'Staff')]"));
+		WebElement staffLink = driver.findElement(By.xpath("(//a[contains(text(), 'Staff')])[2]"));
 
 		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
 		executorCreateCoverage.executeScript("arguments[0].click()", staffLink);
