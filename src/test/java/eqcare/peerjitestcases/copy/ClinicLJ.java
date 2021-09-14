@@ -222,7 +222,7 @@ public class ClinicLJ extends BaseClass {
 		}
 
 		catch (Exception ex) {
-			clinic2.loginToApplication("nurse@eqcare.com", "secret");
+			clinic2.loginToApplication("saru@eqcare.com", "secret");
 
 			clinic2.navigateToClinicVisitPage(VisitNo, ClinicAppURL);
 		}
@@ -323,7 +323,7 @@ public class ClinicLJ extends BaseClass {
 		}
 
 		catch (Exception ex) {
-			clinic3.loginToApplication("doctor@eqcare.com", "secret");
+			clinic3.loginToApplication("anu@eqcare.com", "secret");
 
 			clinic3.navigateToClinicVisitPage(VisitNo, ClinicAppURL);
 
