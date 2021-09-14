@@ -1379,7 +1379,9 @@ By selectEqCareEmployer = By.xpath("//a[contains(text(),'" + searchEmployer + "'
 	
 	public void LoggedAction(String identifier, String enText, String frText) {
 
-		Utility.waitForWebElement(driver, LoggedActionLink);
+		Utility.waitForWebElement(driver, LoggedActionLink).click();
+		
+		Utility.wait(2);
 		
 		WebElement CreateLoggedCTALink = driver.findElement(By.xpath("(//a[contains(text(), 'Create Logged Action')])[1]"));
 
