@@ -5,6 +5,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -103,6 +104,7 @@ public class BrowserFactory {
 		
 			options.addArguments("use-fake-device-for-media-stream");
 			options.addArguments("use-fake-ui-for-media-stream");
+			options.setPageLoadStrategy(PageLoadStrategy.NONE);
 
 			driver = new ChromeDriver(options);
 			
