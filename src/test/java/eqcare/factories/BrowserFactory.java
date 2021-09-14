@@ -163,9 +163,10 @@ public class BrowserFactory {
 		*/
 		//driver.manage().window().maximize();
 
-		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
 
 		driver.get(appURL);
+		
+		driver.manage().timeouts().pageLoadTimeout(70, TimeUnit.SECONDS);
 		
 		//driver.navigate().to(appURL);
 
