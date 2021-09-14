@@ -144,6 +144,8 @@ public class NovaHomePage {
 
 	// LOgged Actions
 	By LoggedActionLink = By.xpath("(//a[contains(text(), 'Logged Action')])[2]");
+	
+	By CreateLoggedActionLink = By.xpath("(//a[contains(text(), 'Create Logged Action')])[1]");
 
 	By IdentifierInput = By.xpath("//input[@id='Identifier']");
 
@@ -1387,6 +1389,9 @@ public class NovaHomePage {
 
 		JavascriptExecutor executorCreateCoverage1 = (JavascriptExecutor) driver;
 		executorCreateCoverage1.executeScript("arguments[0].click()", LoggedCTALink);	
+		
+		Utility.waitForWebElement(driver, CreateLoggedActionLink);
+		
 		
 		WebElement CreateLoggedCTALink = driver.findElement(By.xpath("(//a[contains(text(), 'Create Logged Action')])[1]"));
 
