@@ -241,6 +241,12 @@ public class ClinicPage {
 		Utility.waitForWebElement(driver, nextStepText).click();
 
 	}
+	
+	public void navigateToClinic(String visitNo, String ClinicAppURL) {
+		
+		Utility.navigateToURL(driver, ClinicAppURL);
+		
+	}
 
 	public void navigateToClinicVisitPage(String visitNo, String ClinicAppURL) {
 

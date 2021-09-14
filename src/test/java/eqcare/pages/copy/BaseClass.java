@@ -86,9 +86,9 @@ public class BaseClass implements ITestListener {
 		if (AppType.equalsIgnoreCase("clinic")) {
 			BrowserFactory.closeApplication(driver1);
 
-			BrowserFactory.closeApplication(driver2);
+			//BrowserFactory.closeApplication(driver2);
 
-			BrowserFactory.closeApplication(driver3);
+			//BrowserFactory.closeApplication(driver3);
 		}
 
 		System.out.println("Log:INFO- Browser terminated");

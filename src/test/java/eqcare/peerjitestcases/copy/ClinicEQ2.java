@@ -187,16 +187,20 @@ public class ClinicEQ2 extends BaseClass {
 	@Test(priority = 12, dependsOnMethods = "loginToClinicApplication")
 	public void navigateToNurse(String VisitNo,String ClinicAppURL) throws Exception {
 
-		clinic2.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
+		clinic1.navigateToClinic(VisitNo,ClinicAppURL);
+		
+		clinic1.loginToApplication("saru@eqcare.com", "secret");
+
+		clinic1.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
 		
 		try {
-			clinic2.addComments("sai-pic", "sai-pic.jpeg");
+			clinic1.addComments("sai-pic", "sai-pic.jpeg");
 		}
 
 		catch (Exception ex) {
-			clinic2.loginToApplication("nurse@eqcare.com", "secret");
+			clinic1.loginToApplication("saru@eqcare.com", "secret");
 
-			clinic2.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
+			clinic1.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
 		}
 		System.out.println("--------------------");
 
@@ -208,9 +212,9 @@ public class ClinicEQ2 extends BaseClass {
 	@Test(priority = 13, dependsOnMethods = "loginToClinicApplication")
 	public void functionsWithNR1() {
 
-		clinic2.addComments("sai-pic Nurse", "sai-pic.jpeg");
+		clinic1.addComments("sai-pic Nurse", "sai-pic.jpeg");
 
-		clinic2.addComments("Sample Nurse", "sample.pdf");
+		clinic1.addComments("Sample Nurse", "sample.pdf");
 
 		System.out.println("------------------");
 
@@ -221,7 +225,7 @@ public class ClinicEQ2 extends BaseClass {
 	@Test(priority = 14, dependsOnMethods = "loginToClinicApplication")
 	public void functionsWithNR2() {
 
-		clinic2.cannedResponses();
+		clinic1.cannedResponses();
 
 		System.out.println("------------------");
 
@@ -254,7 +258,7 @@ public class ClinicEQ2 extends BaseClass {
 	@Test(priority = 17, dependsOnMethods = "loginToClinicApplication")
 	public void functionsWithNR5() {
 
-		clinic2.submitChats("PeerjiAuto Test Chat Nurse-3");
+		clinic1.submitChats("PeerjiAuto Test Chat Nurse-3");
 
 		System.out.println("------------------");
 
@@ -276,7 +280,7 @@ public class ClinicEQ2 extends BaseClass {
 	@Test(priority = 19, dependsOnMethods = "loginToClinicApplication")
 	public void transferPatientToCoctor() {
 
-		clinic2.transferToDoctor();
+		clinic1.transferToDoctor();
 		
 		System.out.println("--------------------");
 
@@ -288,19 +292,24 @@ public class ClinicEQ2 extends BaseClass {
 	@Parameters({ "VisitNo", "ClinicAppURL" })
 	@Test(priority = 20, dependsOnMethods = "loginToClinicApplication")
 	public void navigateToDr(String VisitNo, String ClinicAppURL) throws Exception {
+		
+        clinic1.navigateToClinic(VisitNo,ClinicAppURL);
+		
+		clinic1.loginToApplication("sanu@eqcare.com", "secret");
 
-		clinic3.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
+		clinic1.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
+
 		try {
 
 			clinic3.takePatient();
 		}
 
 		catch (Exception ex) {
-			clinic3.loginToApplication("doctor@eqcare.com", "secret");
+			clinic1.loginToApplication("sanu@eqcare.com", "secret");
 
-			clinic3.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
+			clinic1.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
 
-			clinic3.takePatient();
+			clinic1.takePatient();
 		}
 		System.out.println("--------------------");
 		
@@ -311,9 +320,9 @@ public class ClinicEQ2 extends BaseClass {
 	@Test(priority = 21, dependsOnMethods = "navigateToDr")
 	public void functionsWithDR1() {
 
-		clinic3.addComments("sai-pic DR", "sai-pic.jpeg");
+		clinic1.addComments("sai-pic DR", "sai-pic.jpeg");
 
-		clinic3.addComments("Sample DR", "sample.pdf");
+		clinic1.addComments("Sample DR", "sample.pdf");
 
 		System.out.println("------------------");
 
@@ -324,7 +333,7 @@ public class ClinicEQ2 extends BaseClass {
 	@Test(priority = 22, dependsOnMethods = "navigateToDr")
 	public void functionsWithDR2() {
 
-		clinic3.cannedResponses();
+		clinic1.cannedResponses();
 
 		System.out.println("------------------");
 
@@ -358,7 +367,7 @@ public class ClinicEQ2 extends BaseClass {
 	@Test(priority = 25, dependsOnMethods = "navigateToDr")
 	public void functionsWithDR5() {
 
-		clinic3.submitChats("PeerjiAuto Test Chat DR-1");
+		clinic1.submitChats("PeerjiAuto Test Chat DR-1");
 
 		System.out.println("------------------");
 
@@ -369,7 +378,7 @@ public class ClinicEQ2 extends BaseClass {
 	@Test(priority = 26, dependsOnMethods = "navigateToDr")
 	public void functionsWithDR6() {
 
-		clinic3.visitStatus();
+		clinic1.visitStatus();
 
 		System.out.println("------------------");
 
@@ -391,7 +400,7 @@ public class ClinicEQ2 extends BaseClass {
 	@Test(priority = 28, dependsOnMethods = "navigateToDr")
 	public void doctorEndConsultation() {
 
-		clinic3.endConsultation();
+		clinic1.endConsultation();
 		
 		System.out.println("--------------------");
 
