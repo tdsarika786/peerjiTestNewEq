@@ -141,7 +141,145 @@ public class NovaHomePage {
 	By VisitsTableHeading = By.xpath("//h1[contains(text(), 'Visits')]");
 
 	By VisitsTitleTable = By.xpath("//span[contains(text(), 'ID')]");
+	
+	
+	//Paywall Plans
+	By PaywallLink = By.xpath("//a[contains(text(), 'Paywall')]");
 
+	By PaywallTableHeading = By.xpath("//h1[contains(text(), 'Paywall Plans')]");
+	
+	
+	//Native App
+	By NativeAppLink = By.xpath("//a[contains(text(), 'Native App')]");
+
+	By NativeAppTableHeading = By.xpath("//h1[contains(text(), 'Native App Versions')]");
+	
+	//Medications
+	By MedicationLink = By.xpath("//a[contains(text(), 'Medications')]");
+
+	By MedicationTableHeading = By.xpath("//h1[contains(text(), 'Medications')]");
+	
+	
+	//ICD Codes
+		By ICDLink = By.xpath("//a[contains(text(), 'Icd Codes')]");
+
+		By ICDTableHeading = By.xpath("//h1[contains(text(), 'Icd Codes')]");
+				
+	//HRA Forms
+	By HRAFormLink = By.xpath("//a[contains(text(), 'Hra Forms')]");
+
+	By HRAFormTableHeading = By.xpath("//h1[contains(text(), 'Hra Forms')]");
+	
+	//HRA Articles
+	By HRAArticleLink = By.xpath("//a[contains(text(), 'Hra Articles')]");
+
+	By HRAArticleTableHeading = By.xpath("//h1[contains(text(), 'Hra Articles')]");
+	
+	//FAQ Categories
+	By FAQCatLink = By.xpath("//a[contains(text(), 'FAQ Categories')]");
+
+	By FAQCatTableHeading = By.xpath("//h1[contains(text(), 'FAQ Categories')]");
+	
+	//FAQ 
+		By FAQLink = By.xpath("//a[contains(text(), 'FAQ')]");
+
+		By FAQTableHeading = By.xpath("//h1[contains(text(), 'FAQ')]");
+		
+		//Covid Requests
+		By CovidRequestsLink = By.xpath("//a[contains(text(), 'Covid Requests')]");
+
+		By CovidRequestsTableHeading = By.xpath("//h1[contains(text(), 'Covid Requests')]");
+		
+		//Canned Responses
+		By CannedResponsesLink = By.xpath("//a[contains(text(), 'Canned Responses')]");
+
+		By CannedResponsesTableHeading = By.xpath("//h1[contains(text(), 'Canned Responses')]");
+		
+		//Support Tickets
+		By SupportTicketsLink = By.xpath("//a[contains(text(), 'Support Tickets')]");
+
+		By SupportTicketsTableHeading = By.xpath("//h1[contains(text(), 'Support Tickets')]");
+		
+		//Staff
+		//By StaffLink = By.xpath("//a[contains(text(), 'Staff')]");
+
+		By StaffTableHeading = By.xpath("//h1[contains(text(), 'Staff')]");
+		
+		
+		//Ratings
+		By RatingsLink = By.xpath("//a[contains(text(), 'Ratings')]");
+
+	    By RatingsTableHeading = By.xpath("//h1[contains(text(), 'Ratings')]");
+				
+		//Logged Actions
+		By ClinicLoggedActionsLink = By.xpath("(//a[contains(text(), 'Logged Actions')])[1]");
+
+	    By ClinicLoggedActionsTableHeading = By.xpath("//h1[contains(text(), 'Logged Actions')]");
+	    
+	  //Incident Reports
+	  		By IncidentReportsLink = By.xpath("//a[contains(text(), 'Incident Reports')]");
+
+	  	    By IncidentReportsTableHeading = By.xpath("//h1[contains(text(), 'Incident Reports')]");
+	  	    
+	  	    
+	  	  //Clinics
+	  		By ClinicsLink = By.xpath("//a[contains(text(), 'Clinics')]");
+
+	  	    By ClinicsTableHeading = By.xpath("//h1[contains(text(), 'Clinics')]");
+	  	    
+	  	    
+	  	  //Announcements
+	  		By AnnouncementsLink = By.xpath("//a[contains(text(), 'Announcements')]");
+
+	  	    By AnnouncementsTableHeading = By.xpath("//h1[contains(text(), 'Announcements')]");
+	  	    
+	  	  //Partner Portals
+	  		By PartnerPortalsLink = By.xpath("//a[contains(text(), 'Partner Portals')]");
+
+	  	    By PartnerPortalsTableHeading = By.xpath("//h1[contains(text(), 'Partner Portals')]");
+	  	   
+	  	//Group Numbers
+	  		By GroupNumbersLink = By.xpath("//a[contains(text(), 'Group Numbers')]");
+
+	  	    By GroupNumbersTableHeading = By.xpath("//h1[contains(text(), 'Group Numbers')]");
+	  	    
+	  	//Employers
+	  		By EmployersLink = By.xpath("//a[contains(text(), 'Employers')]");
+
+	  	    By EmployersTableHeading = By.xpath("//h1[contains(text(), 'Employers')]");
+	  	    
+	  	
+	  	//Employees
+	  		By EmployeesLink1 = By.xpath("//a[contains(text(), 'Employees')]");
+
+	  	    By EmployeesTableHeading = By.xpath("//h1[contains(text(), 'Employees')]");
+	  	    
+	  		//Client Admins
+	  		By ClientAdminsLink = By.xpath("//a[contains(text(), 'Client Admins')]");
+
+	  	    By ClientAdminsTableHeading = By.xpath("//h1[contains(text(), 'Client Admins')]");
+	  	    
+	  	//Carriers
+	  		By CarriersLink = By.xpath("//a[contains(text(), 'Carriers')]");
+
+	  	    By CarriersTableHeading = By.xpath("//h1[contains(text(), 'Carriers')]");
+	  	    
+		  	//Advisors
+	  		By AdvisorsLink = By.xpath("//a[contains(text(), 'Advisors')]");
+
+	  	    By AdvisorsTableHeading = By.xpath("//h1[contains(text(), 'Advisors')]");    
+	  	    
+	  	 	//Staff KPI
+	  		By StaffKPILink = By.xpath("//a[contains(text(), 'Staff KPI')]");
+	  	    
+	  	 	//Client KPI
+		  		By ClientKPILink = By.xpath("//a[contains(text(), 'Client KPI')]");
+		  		
+		  	 	//Clinic KPI
+		  		By ClinicKPILink = By.xpath("//a[contains(text(), 'Clinic KPI')]");
+	  	    
+		
+	
 	// LOgged Actions
 	By LoggedActionLink = By.xpath("(//a[contains(text(), 'Logged Action')])[2]");
 	
@@ -1330,18 +1468,18 @@ public class NovaHomePage {
 
 	public void novaFamilies(String searchEmployer, String empID, String CoverageType) {
 
-		Utility.waitForWebElement(driver, PatientsLink);
+		Utility.waitForWebElement(driver, FamilyLink);
 
-		WebElement PatientCTALink = driver.findElement(By.xpath("//a[contains(text(), 'Patients')]"));
+		WebElement FamilyCTALink = driver.findElement(By.xpath("//a[contains(text(), 'Families')]"));
 
 		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
-		executorCreateCoverage.executeScript("arguments[0].click()", PatientCTALink);
+		executorCreateCoverage.executeScript("arguments[0].click()", FamilyCTALink);
 
 		Utility.wait(10);
 
-		Utility.waitForWebElement(driver, PatientsTtleTable);
+		Utility.waitForWebElement(driver, FamilyTitleTable);
 
-		Utility.waitForWebElement(driver, PatiemtTableHeading);
+		Utility.waitForWebElement(driver, FamilyTableHeading);
 
 	}
 
@@ -1378,6 +1516,470 @@ public class NovaHomePage {
 		// Utility.waitForWebElement(driver, VisitsTitleTable);
 
 	}
+	
+	public void novaPaywall(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, PaywallLink);
+
+		WebElement PaywallCTALink = driver.findElement(By.xpath("//a[contains(text(), 'Paywall')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", PaywallCTALink);
+
+		Utility.wait(10);
+
+		Utility.waitForWebElement(driver, PaywallTableHeading);
+
+		// Utility.waitForWebElement(driver, VisitsTitleTable);
+
+	}
+	
+	public void novaNativeApp(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, NativeAppLink);
+
+		WebElement NativeAppCTALink = driver.findElement(By.xpath("//a[contains(text(), 'Native App')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", NativeAppCTALink);
+
+		Utility.wait(10);
+
+		Utility.waitForWebElement(driver, NativeAppTableHeading);
+
+		// Utility.waitForWebElement(driver, VisitsTitleTable);
+
+	}
+	
+
+	public void novaICD(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, ICDLink);
+
+		WebElement ICDCTALink = driver.findElement(By.xpath("//a[contains(text(), 'Icd Codes')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", ICDCTALink);
+
+		Utility.wait(10);
+
+		Utility.waitForWebElement(driver, ICDTableHeading);
+
+		// Utility.waitForWebElement(driver, VisitsTitleTable);
+
+	}
+	
+	public void novaMedication(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, MedicationLink);
+
+		WebElement MedicationCTALink = driver.findElement(By.xpath("//a[contains(text(), 'Medications')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", MedicationCTALink);
+
+		Utility.wait(10);
+
+		Utility.waitForWebElement(driver, MedicationTableHeading);
+
+		// Utility.waitForWebElement(driver, VisitsTitleTable);
+
+	}
+	
+	public void novaHRAForms(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, HRAFormLink);
+
+		WebElement HRAFormCTALink = driver.findElement(By.xpath("//a[contains(text(), 'Hra Forms')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", HRAFormCTALink);
+
+		Utility.wait(10);
+
+		Utility.waitForWebElement(driver, HRAFormTableHeading);
+
+		// Utility.waitForWebElement(driver, VisitsTitleTable);
+
+	}
+	
+	public void novaHRAArticles(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, HRAArticleLink);
+
+		WebElement HRAArticleCTALink = driver.findElement(By.xpath("//a[contains(text(), 'Hra Articles')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", HRAArticleCTALink);
+
+		Utility.wait(10);
+
+		Utility.waitForWebElement(driver, HRAArticleTableHeading);
+
+		// Utility.waitForWebElement(driver, VisitsTitleTable);
+
+	}
+	
+	public void novaFAQCate(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, FAQCatLink);
+
+		WebElement HRAFAQCTALink = driver.findElement(By.xpath("//a[contains(text(), 'FAQ Categories')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", HRAFAQCTALink);
+
+		Utility.wait(10);
+
+		Utility.waitForWebElement(driver, FAQCatTableHeading);
+
+		// Utility.waitForWebElement(driver, VisitsTitleTable);
+
+	}
+	
+	public void novaFAQ(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, FAQLink);
+
+		WebElement HRAFAQLink = driver.findElement(By.xpath("//a[contains(text(), 'FAQ')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", HRAFAQLink);
+
+		Utility.wait(10);
+
+		Utility.waitForWebElement(driver, FAQTableHeading);
+
+		// Utility.waitForWebElement(driver, VisitsTitleTable);
+
+	}
+	
+	public void novaCovidReq(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, CovidRequestsLink);
+
+		WebElement CovidReqLink = driver.findElement(By.xpath("//a[contains(text(), 'Covid Requests')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", CovidReqLink);
+
+		Utility.wait(10);
+
+		Utility.waitForWebElement(driver, CovidRequestsTableHeading);
+
+		// Utility.waitForWebElement(driver, VisitsTitleTable);
+
+	}
+	
+	
+	public void novaCannedRes(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, CannedResponsesLink);
+
+		WebElement CannedResLink = driver.findElement(By.xpath("//a[contains(text(), 'Canned Responses')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", CannedResLink);
+
+		Utility.wait(10);
+
+		Utility.waitForWebElement(driver, CannedResponsesTableHeading);
+
+		// Utility.waitForWebElement(driver, VisitsTitleTable);
+
+	}
+	
+	public void novaSupportTickets(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, SupportTicketsLink);
+
+		WebElement SupportTicLink = driver.findElement(By.xpath("//a[contains(text(), 'Support Tickets')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", SupportTicLink);
+
+		Utility.wait(10);
+
+		Utility.waitForWebElement(driver, SupportTicketsTableHeading);
+
+		// Utility.waitForWebElement(driver, VisitsTitleTable);
+
+	}
+	
+	public void novaStaff(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, StaffLink);
+
+		WebElement staffLink = driver.findElement(By.xpath("//a[contains(text(), 'Staff')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", staffLink);
+
+		Utility.wait(10);
+
+		Utility.waitForWebElement(driver, StaffTableHeading);
+
+		// Utility.waitForWebElement(driver, VisitsTitleTable);
+
+	}
+	
+	
+	public void novaRatings(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, RatingsLink);
+
+		WebElement ratingLink = driver.findElement(By.xpath("//a[contains(text(), 'Ratings')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", ratingLink);
+
+		Utility.wait(10);
+
+		Utility.waitForWebElement(driver, RatingsTableHeading);
+
+		// Utility.waitForWebElement(driver, VisitsTitleTable);
+
+	}
+	
+	public void novaClinicLoggedActions(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, ClinicLoggedActionsLink);
+
+		WebElement clinicLoggedActionsLink = driver.findElement(By.xpath("(//a[contains(text(), 'Logged Actions')])[1]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", clinicLoggedActionsLink);
+
+		Utility.wait(10);
+
+		Utility.waitForWebElement(driver, ClinicLoggedActionsTableHeading);
+
+		// Utility.waitForWebElement(driver, VisitsTitleTable);
+
+	}
+	
+	public void novaIncidentReports(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, IncidentReportsLink);
+
+		WebElement incidentReportsLink = driver.findElement(By.xpath("//a[contains(text(), 'Incident Reports')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", incidentReportsLink);
+
+		Utility.wait(10);
+
+		Utility.waitForWebElement(driver, IncidentReportsTableHeading);
+
+		// Utility.waitForWebElement(driver, VisitsTitleTable);
+
+	}
+	
+	
+	public void novaClinics(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, ClinicsLink);
+
+		WebElement clinicLink = driver.findElement(By.xpath("//a[contains(text(), 'Clinics')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", clinicLink);
+
+		Utility.wait(10);
+
+		Utility.waitForWebElement(driver, ClinicsTableHeading);
+
+		// Utility.waitForWebElement(driver, VisitsTitleTable);
+
+	}
+	
+	public void novaAnnouncements(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, AnnouncementsLink);
+
+		WebElement clinicLink = driver.findElement(By.xpath("//a[contains(text(), 'Clinics')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", clinicLink);
+
+		Utility.wait(10);
+
+		Utility.waitForWebElement(driver, ClinicsTableHeading);
+
+		// Utility.waitForWebElement(driver, VisitsTitleTable);
+
+	}
+	
+	public void novaPartnerPortals(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, PartnerPortalsLink);
+
+		WebElement portalLink = driver.findElement(By.xpath("//a[contains(text(), 'Partner Portals')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", portalLink);
+
+		Utility.wait(10);
+
+		Utility.waitForWebElement(driver, PartnerPortalsTableHeading);
+
+		// Utility.waitForWebElement(driver, VisitsTitleTable);
+
+	}
+
+	public void novaGroupNos(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, GroupNumbersLink);
+
+		WebElement gpNoLink = driver.findElement(By.xpath("//a[contains(text(), 'Group Numbers')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", gpNoLink);
+
+		Utility.wait(10);
+
+		Utility.waitForWebElement(driver, GroupNumbersTableHeading);
+
+		// Utility.waitForWebElement(driver, VisitsTitleTable);
+
+	}
+	
+	public void novaEmployer(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, EmployersLink);
+
+		WebElement empLink = driver.findElement(By.xpath("//a[contains(text(), 'Employers')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", empLink);
+
+		Utility.wait(10);
+
+		Utility.waitForWebElement(driver, EmployersTableHeading);
+
+		// Utility.waitForWebElement(driver, VisitsTitleTable);
+
+	}
+	
+	public void novaEmployees(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, EmployeesLink1);
+
+		WebElement empLink = driver.findElement(By.xpath("//a[contains(text(), 'Employees')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", empLink);
+
+		Utility.wait(10);
+
+		Utility.waitForWebElement(driver, EmployeesTableHeading);
+
+		// Utility.waitForWebElement(driver, VisitsTitleTable);
+
+	}
+	
+	public void novaClientAdmin(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, ClientAdminsLink);
+
+		WebElement empLink = driver.findElement(By.xpath("//a[contains(text(), 'Client Admins')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", empLink);
+
+		Utility.wait(10);
+
+		Utility.waitForWebElement(driver, ClientAdminsTableHeading);
+
+		// Utility.waitForWebElement(driver, VisitsTitleTable);
+
+	}
+	
+	public void novaCarriers(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, CarriersLink);
+
+		WebElement empLink = driver.findElement(By.xpath("//a[contains(text(), 'Carriers')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", empLink);
+
+		Utility.wait(10);
+
+		Utility.waitForWebElement(driver, CarriersTableHeading);
+
+		// Utility.waitForWebElement(driver, VisitsTitleTable);
+
+	}
+	
+	public void novaAdvisors(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, AdvisorsLink);
+
+		WebElement empLink = driver.findElement(By.xpath("//a[contains(text(), 'Carriers')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", empLink);
+
+		Utility.wait(10);
+
+		Utility.waitForWebElement(driver, AdvisorsTableHeading);
+
+		// Utility.waitForWebElement(driver, VisitsTitleTable);
+
+	}
+	
+	public void novaStaffKPI(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, StaffKPILink);
+
+		WebElement empLink = driver.findElement(By.xpath("//a[contains(text(), 'Staff KPI')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", empLink);
+
+		Utility.wait(10);
+
+		//Utility.waitForWebElement(driver, AdvisorsTableHeading);
+
+		// Utility.waitForWebElement(driver, VisitsTitleTable);
+
+	}
+	
+	public void novaClientKPI(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, ClientKPILink);
+
+		WebElement empLink = driver.findElement(By.xpath("//a[contains(text(), 'Client KPI')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", empLink);
+
+		Utility.wait(10);
+
+		//Utility.waitForWebElement(driver, AdvisorsTableHeading);
+
+		// Utility.waitForWebElement(driver, VisitsTitleTable);
+
+	}
+	
+	public void novaClinicKPILink(String searchEmployer, String empID, String CoverageType) {
+
+		Utility.waitForWebElement(driver, ClinicKPILink);
+
+		WebElement empLink = driver.findElement(By.xpath("//a[contains(text(), 'Clinic KPI')]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", empLink);
+
+		Utility.wait(10);
+
+		//Utility.waitForWebElement(driver, AdvisorsTableHeading);
+
+		// Utility.waitForWebElement(driver, VisitsTitleTable);
+
+	}
+	
 
 	public void LoggedAction(String identifier, String enText, String frText) {
 

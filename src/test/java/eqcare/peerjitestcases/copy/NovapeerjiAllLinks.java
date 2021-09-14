@@ -57,6 +57,63 @@ public class NovapeerjiAllLinks extends BaseClass {
 		home.novaAppointments(searchemployer1, empID, null);
 		
 		home.novaVisits(searchemployer1, empID, null);
+		
+		home.novaPaywall(searchemployer1, empID, null);
+		
+		home.novaNativeApp(searchemployer1, empID, null);
+		
+		home.novaMedication(searchemployer1, empID, null);
+		
+		home.novaICD(searchemployer1, empID, null);
+		
+		home.novaHRAForms(searchemployer1, empID, null);
+		
+		home.novaHRAArticles(searchemployer1, empID, null);
+		
+		home.novaFAQCate(searchemployer1, empID, null);
+		
+		home.novaFAQ(searchemployer1, empID, null);
+		
+		home.novaCovidReq(searchemployer1, empID, null);	
+		
+		home.novaCannedRes(searchemployer1, empID, null);
+				
+		home.novaSupportTickets(searchemployer1, empID, null);
+		
+		home.novaStaff(searchemployer1, empID, null);
+		
+		home.novaRatings(searchemployer1, empID, null);
+		
+		home.novaClinicLoggedActions(searchemployer1, empID, null);
+		
+		home.novaIncidentReports(searchemployer1, empID, null);
+		
+		home.novaClinics(searchemployer1, empID, null);
+		
+		home.novaAnnouncements(searchemployer1, empID, null);
+		
+		home.novaPartnerPortals(searchemployer1, empID, null);
+		
+		home.novaGroupNos(searchemployer1, empID, null);
+		
+		home.novaEmployer(searchemployer1, empID, null);
+		
+
+		home.novaEmployees(searchemployer1, empID, null);
+		
+		home.novaClientAdmin(searchemployer1, empID, null);
+		
+		
+		home.novaCarriers(searchemployer1, empID, null);
+		
+		home.novaAdvisors(searchemployer1, empID, null);
+		
+		home.novaStaffKPI(searchemployer1, empID, null);
+		
+		home.novaClientKPI(searchemployer1, empID, null);
+		
+		home.novaClinicKPILink(searchemployer1, empID, null);
+		
 
 		System.out.println("********* NOVA Patients Table ***********");
 	}
