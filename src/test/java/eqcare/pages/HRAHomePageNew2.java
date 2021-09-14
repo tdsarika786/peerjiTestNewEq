@@ -647,9 +647,9 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 		Utility.waitForWebElement(driver, viewHealthScoreLink).click();
 
-		Utility.wait(5);
+		Utility.wait(7);
 
-		System.out.println("View Health Score");
+		System.out.println("View Health Score Link");
 
 		String getScore = Utility.waitForWebElement(driver, getScoreLabel).getText();
 
