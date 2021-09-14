@@ -94,9 +94,9 @@ public class BrowserFactory {
 				// setting up property to suppress the warning
 				//System.setProperty("webdriver.chrome.silentOutput","true");
 			
-			//WebDriverManager.chromedriver().setup();
+			WebDriverManager.chromedriver().setup();
 			
-			System.setProperty("webdriver.chrome.driver", "/Users/sarikadhall/Downloads/chromedriver");
+			//System.setProperty("webdriver.chrome.driver", "/Users/sarikadhall/Downloads/chromedriver");
 			
 			ChromeOptions options = new ChromeOptions();
 
