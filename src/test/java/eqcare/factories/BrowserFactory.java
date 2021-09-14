@@ -104,7 +104,7 @@ public class BrowserFactory {
 		
 			options.addArguments("use-fake-device-for-media-stream");
 			options.addArguments("use-fake-ui-for-media-stream");
-			options.setPageLoadStrategy(PageLoadStrategy.NONE);
+			//options.setPageLoadStrategy(PageLoadStrategy.NONE);
 
 			driver = new ChromeDriver(options);
 			
