@@ -5,6 +5,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.PageLoadStrategy;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,6 +14,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
@@ -29,6 +31,7 @@ public class BrowserFactory {
 		RemoteWebDriver driver1 = null;
 		//AppiumDriver driver = null;
 		WebDriver driver = null;
+		  WebDriverWait wait;
 		
 		if (projectrun.equalsIgnoreCase("aws")) {
 
@@ -163,10 +166,11 @@ public class BrowserFactory {
 		*/
 		//driver.manage().window().maximize();
 
-
+		 new WebDriverWait(driver, 10).until(webDriver -> ((JavascriptExecutor) webDriver)
+			        .executeScript("return document.readyState").equals("complete"));
 		
 		
-		driver.manage().timeouts().pageLoadTimeout(70, TimeUnit.SECONDS);
+		//driver.manage().timeouts().pageLoadTimeout(70, TimeUnit.SECONDS);
 		
 		driver.get(appURL);
 		
