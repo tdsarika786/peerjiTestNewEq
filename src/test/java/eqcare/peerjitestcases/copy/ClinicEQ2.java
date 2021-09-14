@@ -27,7 +27,7 @@ public class ClinicEQ2 extends BaseClass {
 
 	// CM Test
 	@Parameters({ "VisitNo","ClinicAppURL" })
-	@Test(priority = 2, dependsOnMethods = "loginAsCM")
+	@Test(priority = 2)
 	public void loginToClinicApplication(String VisitNo,String ClinicAppURL) throws Exception {
 
 		clinic1 = PageFactory.initElements(driver1, ClinicPage.class);
