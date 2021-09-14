@@ -146,6 +146,16 @@ public class NovaHomePage {
 	
 	By VisitsTitleTable = By.xpath("//span[contains(text(), 'ID')]");
 	
+	//LOgged Actions
+	 By LoggedActionLink = By.xpath("(//a[contains(text(), 'Logged Action')])[2]");
+	 
+	 By IdentifierInput = By.xpath("//input[@id='Identifier']");
+	 
+	 By LoggedActionTranslationENInput = By.xpath("//input[@id='translations_label_en-CA']");
+	 
+	 By LoggedActionTranslationFRInput = By.xpath("//input[@id='translations_label_fr-CA']");
+	
+	
 	public NovaHomePage(WebDriver ldriver) {
 		this.driver = ldriver;
 	}
@@ -1363,6 +1373,33 @@ By selectEqCareEmployer = By.xpath("//a[contains(text(),'" + searchEmployer + "'
 		Utility.waitForWebElement(driver, VisitsTableHeading);
 		
 		//Utility.waitForWebElement(driver, VisitsTitleTable);
+		
+	}
+	
+	
+	public void LoggedAction(String identifier, String enText, String frText) {
+
+		Utility.waitForWebElement(driver, LoggedActionLink);
+		
+		WebElement CreateLoggedCTALink = driver.findElement(By.xpath("(//a[contains(text(), 'Create Logged Action')])[1]"));
+
+		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
+		executorCreateCoverage.executeScript("arguments[0].click()", CreateLoggedCTALink);	
+		
+		Utility.wait(10);
+			
+		Utility.waitForWebElement(driver, IdentifierInput).sendKeys(identifier);
+		
+		Utility.waitForWebElement(driver, LoggedActionTranslationENInput).sendKeys(enText);
+		
+		Utility.waitForWebElement(driver, LoggedActionTranslationFRInput).sendKeys(frText);
+		
+		WebElement buttonSub = driver.findElement(By.xpath("//button[@dusk='create-button']"));
+
+		JavascriptExecutor executorSub = (JavascriptExecutor) driver;
+		executorSub.executeScript("arguments[0].click()", buttonSub);
+
+		Utility.wait(2);
 		
 	}
 	
