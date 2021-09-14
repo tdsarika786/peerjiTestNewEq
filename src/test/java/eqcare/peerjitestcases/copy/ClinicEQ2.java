@@ -295,17 +295,17 @@ public class ClinicEQ2 extends BaseClass {
 		
         clinic1.navigateToClinic(VisitNo,ClinicAppURL);
 		
-		clinic1.loginToApplication("sanu@eqcare.com", "secret");
+		clinic1.loginToApplication("anu@eqcare.com", "secret");
 
 		clinic1.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
 
 		try {
 
-			clinic3.takePatient();
+			clinic1.takePatient();
 		}
 
 		catch (Exception ex) {
-			clinic1.loginToApplication("sanu@eqcare.com", "secret");
+			clinic1.loginToApplication("anu@eqcare.com", "secret");
 
 			clinic1.navigateToClinicVisitPage(VisitNo,ClinicAppURL);
 
