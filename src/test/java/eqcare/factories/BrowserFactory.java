@@ -104,11 +104,13 @@ public class BrowserFactory {
 		
 			options.addArguments("use-fake-device-for-media-stream");
 			options.addArguments("use-fake-ui-for-media-stream");
-			options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
+			options.setPageLoadStrategy(PageLoadStrategy.NONE);
 
 			driver = new ChromeDriver(options);
 			
 			driver.manage().window().maximize();
+			
+			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			
 			}
 			
