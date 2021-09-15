@@ -759,7 +759,7 @@ public class AccountPageAV extends runWithAttachments {
 	}
 
 	public void navigateToProfilePage() {
-		
+		Utility.waitForWebElement(driver, profileLink);
 
 		WebElement button1 = driver.findElement(By.xpath("//a[@href='/profile']"));
 
