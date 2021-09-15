@@ -38,6 +38,8 @@ public class FeedbackPage {
 	}
 
 	public void ratingProvided() {
+		
+		Utility.wait(2);
 
 		Utility.waitForWebElement(driver, ratingHeart).click();
 
@@ -50,6 +52,8 @@ public class FeedbackPage {
 	}
 	
 	public void ratingProvidedDRCMNurse() {
+		
+		Utility.wait(2);
 
 		Utility.waitForWebElement(driver, ratingHeart).click();
 

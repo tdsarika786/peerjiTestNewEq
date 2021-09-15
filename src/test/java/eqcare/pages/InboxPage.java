@@ -58,6 +58,8 @@ public class InboxPage {
 
 	public void navigateToInboxPage() {	
 		
+		Utility.waitForWebElement(driver, inboxLink);
+		
 		WebElement button1 = driver.findElement(By.xpath("//a[@href='/profile/inbox']"));
 
 		JavascriptExecutor executor1 = (JavascriptExecutor) driver;
