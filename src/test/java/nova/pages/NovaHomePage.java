@@ -292,6 +292,9 @@ public class NovaHomePage {
 	By LoggedActionTranslationFRInput = By.xpath("//input[@id='translations_label_fr-CA']");
 	
 	By CreateCoverage1 = By.xpath("(//a[contains(text(), 'Create Coverage')])[1]");
+	
+	
+	By CoverageUpdate = By.xpath("//button[@dusk='create-and-add-another-button']");
 
 	public NovaHomePage(WebDriver ldriver) {
 		this.driver = ldriver;
@@ -1297,12 +1300,29 @@ public class NovaHomePage {
 		Utility.waitForWebElement(driver, startDateInput).sendKeys("2020-08-01");
 		Utility.waitForWebElement(driver, startDateInput).sendKeys(Keys.RETURN);
 
-		WebElement buttonSub = driver.findElement(By.xpath("//button[@dusk='create-button']"));
+		
+	}
+	
+     public void createCoverageCTA() {
+    	 
+    	 WebElement buttonSub = driver.findElement(By.xpath("//button[@dusk='create-button']"));
+
+ 		JavascriptExecutor executorSub = (JavascriptExecutor) driver;
+ 		executorSub.executeScript("arguments[0].click()", buttonSub);
+
+ 		Utility.wait(7);
+		
+	}
+	
+	public void createAnotherCoverageCTA() {
+		
+		WebElement buttonSub = driver.findElement(By.xpath("//button[@dusk='create-and-add-another-button']"));
 
 		JavascriptExecutor executorSub = (JavascriptExecutor) driver;
 		executorSub.executeScript("arguments[0].click()", buttonSub);
 
 		Utility.wait(7);
+		
 	}
 
 	public void createService1797(String searchEmployer, String CoverageToken, String CoverageType) {
@@ -1390,8 +1410,10 @@ public class NovaHomePage {
 	}
 
 	public void createCoverageUpdate1797(String searchEmployer, String CoverageToken, String CoverageType) {
+		
+		
 
-		By selectEqCareEmployer = By.xpath("//a[contains(text(),'" + searchEmployer + "')]");
+		/*By selectEqCareEmployer = By.xpath("//a[contains(text(),'" + searchEmployer + "')]");
 
 		System.out.println("//a[contains(text(),'" + searchEmployer + "')]");
 
@@ -1399,7 +1421,7 @@ public class NovaHomePage {
 
 		Utility.wait(12);
 
-		Utility.waitForWebElement(driver, CreateCoverage);
+		Utility.waitForWebElement(driver, CreateCoverage);*/
 
 		/*
 		 * Utility.waitForWebElement(driver, EmployerLink).click();
@@ -1415,12 +1437,12 @@ public class NovaHomePage {
 		 * clickEqCareEmployer);
 		 * 
 		 */
-		WebElement CreateCoverage = driver.findElement(By.xpath("//a[contains(text(), 'Create Coverage')]"));
+		/*WebElement CreateCoverage = driver.findElement(By.xpath("//a[contains(text(), 'Create Coverage')]"));
 
 		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
-		executorCreateCoverage.executeScript("arguments[0].click()", CreateCoverage);
+		executorCreateCoverage.executeScript("arguments[0].click()", CreateCoverage);*/
 
-		Utility.wait(10);
+		Utility.wait(4);
 
 		Utility.waitForWebElement(driver, selectCoverageOption);
 
@@ -1445,12 +1467,12 @@ public class NovaHomePage {
 		Utility.waitForWebElement(driver, startDateInput).sendKeys("2020-08-01");
 		Utility.waitForWebElement(driver, startDateInput).sendKeys(Keys.RETURN);
 
-		WebElement buttonSub = driver.findElement(By.xpath("//button[@dusk='create-button']"));
+		/*WebElement buttonSub = driver.findElement(By.xpath("//button[@dusk='create-button']"));
 
 		JavascriptExecutor executorSub = (JavascriptExecutor) driver;
 		executorSub.executeScript("arguments[0].click()", buttonSub);
 
-		Utility.wait(2);
+		Utility.wait(2);*/
 	}
 
 	public void novaPatients(String searchEmployer, String empID, String CoverageType) {
