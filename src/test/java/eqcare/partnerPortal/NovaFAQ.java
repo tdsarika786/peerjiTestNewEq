@@ -22,9 +22,26 @@ public class NovaFAQ extends BaseClass {
 
 		faq = PageFactory.initElements(driver, FAQPage.class);
 		
+		if (AppURL.contains("peerjipc")) {
+		
 		//faq.navigateToFAQPage(AppURL,"peerjipc");
 		
+		faq.verifyFAQCTA();
+		
 		faq.verifyFAQPCQues();
+		}
+		
+		if (AppURL.contains("peerjilj")) {
+			
+			//faq.navigateToFAQPage(AppURL,"peerjipc");
+			
+			faq.verifyFAQCTA();
+			
+			faq.verifyFAQPCQues();
+			
+			faq.verifyFAQLJQues();
+			}
+			
 
 	}
 
