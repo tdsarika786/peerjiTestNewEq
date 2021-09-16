@@ -87,4 +87,19 @@ public class NovaPartnerPortal extends BaseClass {
 		System.out.println("*********1 Sarika-Test-NewPCLJ1***********");
 	}
 
+	@Parameters({ "SearchEmployer", "CoverageToken", "CoverageType" })
+	@Test(priority = 5, dependsOnMethods = "loginToApplication")
+	public void CreatePartnerPortal3(String searchemployer, String coveragetoken, String coveragetype)
+			throws InterruptedException {
+
+		home = PageFactory.initElements(driver, NovaHomePage.class);
+
+		String searchemployer1 = "Sarika-Test-NewDCBT";
+		String groupNo = "DCBT1";
+		String empID = "700";
+
+		home.createPartnerPortal(searchemployer1, empID, "peerjidcbt");
+
+		System.out.println("*********1 Sarika-Test-NewPCLJ1***********");
+	}
 }
