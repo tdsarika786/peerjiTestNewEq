@@ -30,7 +30,7 @@ public class FAQPage {
 
 	By dataSecurityDiv = By.xpath("//li[contains(text(),'Data Security')]");
 
-	By registerationDiv = By.xpath("//li[contains(text(),'Registeration')]");
+	By registerationDiv = By.xpath("//li[contains(text(),'Registration')]");
 
 	By technologyDiv = By.xpath("//li[contains(text(),'Technology')]");
 
@@ -38,7 +38,7 @@ public class FAQPage {
 
 	By dataSecurityHeading = By.xpath("//h2[contains(text(),'Data Security')]");
 
-	By registerationHeading = By.xpath("//h2[contains(text(),'Registeration')]");
+	By registerationHeading = By.xpath("//h2[contains(text(),'Registration')]");
 
 	By technologyHeading = By.xpath("//h2[contains(text(),'Technology')]");
 
