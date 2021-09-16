@@ -1,0 +1,130 @@
+package eqcare.pages;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindAll;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
+import eqcare.factories.DataProviderFactory;
+import eqcare.helper.Utility;
+
+public class FAQPage {
+
+	WebDriver driver;
+
+	public FAQPage(WebDriver ldriver) {
+		this.driver = ldriver;
+	}
+
+	By faqLink = By.xpath("(//a[@href='/en/faq'])[1]");
+
+	By primaryCareDiv = By.xpath("//li[contains(text(),'Primary Care')]");
+
+	By dataSecurityDiv = By.xpath("//li[contains(text(),'Data Security')]");
+
+	By registerationDiv = By.xpath("//li[contains(text(),'Registeration')]");
+
+	By technologyDiv = By.xpath("//li[contains(text(),'Technology')]");
+
+	By primaryCareHeading = By.xpath("//h2[contains(text(),'Primary Care')]");
+
+	By dataSecurityHeading = By.xpath("//h2[contains(text(),'Data Security')]");
+
+	By registerationHeading = By.xpath("//h2[contains(text(),'Registeration')]");
+
+	By technologyHeading = By.xpath("//h2[contains(text(),'Technology')]");
+
+	public void navigateToFAQPage(String AppURL, String subdomain) {
+
+		if (AppURL.contains("qa2")) {
+
+			if (subdomain.contains("peerjipc")) {
+
+				String URL = "https://peerjipc.eqserviceqa2.eqcaredev.com/";
+
+				Utility.navigateToURL(driver, URL);
+
+				System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA1 " + URL);
+			}
+
+			if (subdomain.contains("peerjilj")) {
+
+				String URL = "https://peerjilj.eqserviceqa2.eqcaredev.com/";
+
+				Utility.navigateToURL(driver, URL);
+
+				System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA1 " + URL);
+			}
+
+			if (subdomain.contains("peerjipclj")) {
+
+				String URL = "https://peerjipclj.eqserviceqa2.eqcaredev.com/";
+
+				Utility.navigateToURL(driver, URL);
+
+				System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA1 " + URL);
+			}
+
+			if (subdomain.contains("peerjidcbt")) {
+
+				String URL = "https://peerjidcbt.eqserviceqa2.eqcaredev.com/";
+
+				Utility.navigateToURL(driver, URL);
+
+				System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA1 " + URL);
+			}
+
+			if (subdomain.contains("peerjiljdcbt")) {
+
+				String URL = "https://peerjiljdcbt.eqserviceqa2.eqcaredev.com/";
+
+				Utility.navigateToURL(driver, URL);
+
+				System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA1 " + URL);
+			}
+
+			if (subdomain.contains("peerjiall")) {
+
+				String URL = "https://peerjiall.eqserviceqa2.eqcaredev.com/";
+
+				Utility.navigateToURL(driver, URL);
+
+				System.out.println("Log:INFO- CLINIC VISIT STARTS CM QA1 " + URL);
+			}
+
+		}
+
+	}
+
+	public void verifyFAQPCQues() {
+
+		Utility.waitForWebElement(driver, faqLink).click();
+
+		Utility.waitForWebElement(driver, primaryCareDiv).click();
+
+		Utility.waitForWebElement(driver, primaryCareHeading);
+
+		Utility.waitForWebElement(driver, dataSecurityDiv).click();
+
+		Utility.waitForWebElement(driver, dataSecurityHeading);
+
+		Utility.waitForWebElement(driver, registerationDiv).click();
+
+		Utility.waitForWebElement(driver, registerationHeading);
+
+		Utility.waitForWebElement(driver, technologyDiv).click();
+
+		Utility.waitForWebElement(driver, technologyHeading);
+
+	}
+
+	
+
+}
