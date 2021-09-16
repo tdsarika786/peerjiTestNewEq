@@ -144,7 +144,7 @@ public class Novapeerji1733 extends BaseClass {
 
 		home.createEmployee(searchemployer1, "anu3", "single");
 
-		System.out.println("*********4 Sarika-Test-NewDCBT***********");
+		System.out.println("*********4 Sarika-Test-NewDCBT ***********");
 	}
 	
 	@Parameters({ "SearchEmployer", "CoverageToken", "CoverageType" })
@@ -154,9 +154,39 @@ public class Novapeerji1733 extends BaseClass {
 
 		home = PageFactory.initElements(driver, NovaHomePage.class);
 
-		String searchemployer1 = "Sarika-Test-NewAll";
-		String groupNo = "HRA";
+		String searchemployer1 = "Sarika-Test-LJDCBT1";
+		String groupNo = "LJDCBT1";
 		String empID = "704";
+
+		home.createEmployer1733(searchemployer1, empID, null);
+
+		home.createCoverage1797(searchemployer1, null, "lifejourney");
+		
+		home.createAnotherCoverageCTA();
+
+		home.createCoverageUpdate1797(searchemployer1, null, "dcbt");
+		
+		home.createCoverageCTA();
+
+		home.createService1797(searchemployer1, null, null);
+
+		home.createGroupNo(groupNo, searchemployer1); // then create employee
+
+		home.createEmployee(searchemployer1, "anu4", "family");
+
+		System.out.println("*********4 Sarika-Test-LJDCBT1 ***********");
+	}
+
+	@Parameters({ "SearchEmployer", "CoverageToken", "CoverageType" })
+	@Test(priority = 7, dependsOnMethods = "loginToApplication")
+	public void CreateEmployer5(String searchemployer, String coveragetoken, String coveragetype)
+			throws InterruptedException {
+
+		home = PageFactory.initElements(driver, NovaHomePage.class);
+
+		String searchemployer1 = "Sarika-Test-NewAll";
+		String groupNo = "Test11";
+		String empID = "705";
 
 		home.createEmployer1733(searchemployer1, empID, null);
 
@@ -180,11 +210,10 @@ public class Novapeerji1733 extends BaseClass {
 
 		home.createGroupNo(groupNo, searchemployer1); // then create employee
 
-		home.createEmployee(searchemployer1, "anu4", "family");
+		home.createEmployee(searchemployer1, "anu5", "family");
 
-		System.out.println("*********4 Sarika-Test-NewDCBT***********");
+		System.out.println("*********5 Sarika-Test-NewAll ***********");
 	}
-
 	
 
 }
