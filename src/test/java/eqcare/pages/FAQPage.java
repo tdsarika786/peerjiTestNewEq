@@ -22,7 +22,8 @@ public class FAQPage {
 	public FAQPage(WebDriver ldriver) {
 		this.driver = ldriver;
 	}
-
+	By faqHeader = By.xpath("//h1");
+	
 	By faqLink = By.xpath("(//a[@href='/en/faq'])[1]");
 
 	By primaryCareDiv = By.xpath("//li[contains(text(),'Primary Care')]");
@@ -105,7 +106,15 @@ public class FAQPage {
 
 	public void verifyFAQPCQues() {
 
-		Utility.waitForWebElement(driver, faqLink).click();
+		Utility.waitForWebElement(driver, faqLink);
+		
+
+		WebElement buttonSub = driver.findElement(By.xpath("(//a[@href='/en/faq'])[1]"));
+
+		JavascriptExecutor executorSub = (JavascriptExecutor) driver;
+		executorSub.executeScript("arguments[0].click()", buttonSub);
+		
+		Utility.waitForWebElement(driver, faqHeader);
 
 		Utility.waitForWebElement(driver, primaryCareDiv).click();
 
