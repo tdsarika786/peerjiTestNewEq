@@ -28,9 +28,10 @@ public class NovaFAQ extends BaseClass {
 			faq.verifyFAQCTA();
 
 			faq.verifyFAQPCQues();
+			
 		}
 
-		if (AppURL.contains("peerjilj")) {
+		else if (AppURL.contains("peerjilj")) {
 
 			// faq.navigateToFAQPage(AppURL,"peerjipc");
 
@@ -40,7 +41,7 @@ public class NovaFAQ extends BaseClass {
 
 			faq.verifyFAQLJQues();
 		}
-		if (AppURL.contains("peerjipclj")) {
+		else if (AppURL.contains("peerjipclj")) {
 
 			// faq.navigateToFAQPage(AppURL,"peerjipc");
 
@@ -51,7 +52,7 @@ public class NovaFAQ extends BaseClass {
 			faq.verifyFAQLJQues();
 		}
 		
-		if (AppURL.contains("peerjidcbt")) {
+		else if (AppURL.contains("peerjidcbt")) {
 
 			// faq.navigateToFAQPage(AppURL,"peerjipc");
 
@@ -62,7 +63,31 @@ public class NovaFAQ extends BaseClass {
 			faq.verifyFAQdCBTQues();
 		}
 		
+		else if (AppURL.contains("peerjiljdcbt")) {
+
+			// faq.navigateToFAQPage(AppURL,"peerjipc");
+
+			faq.verifyFAQCTA();
+
+			faq.verifyFAQPCQues();
+
+			faq.verifyFAQdCBTQues();
+			
+			faq.verifyFAQLJQues();
+		}
 		
+		else if (AppURL.contains("peerjiall")) {
+
+			// faq.navigateToFAQPage(AppURL,"peerjipc");
+
+			faq.verifyFAQCTA();
+
+			faq.verifyFAQPCQues();
+
+			faq.verifyFAQdCBTQues();
+			
+			faq.verifyFAQLJQues();
+		}
 		
 
 	}

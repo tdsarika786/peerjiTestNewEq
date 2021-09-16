@@ -44,7 +44,7 @@ public class FAQPage {
 	
 	By lifejourneyHeadingSection = By.xpath("//h2[contains(text(),'LifeJourney')]/following::section[1]");
 	
-	By dCBTHeading = By.xpath("//h2[contains(text(),'Mental Health, CBT and dCBT)]");
+	By dCBTHeading = By.xpath("//h2[contains(text(),'Mental Health, CBT and dCBT')]");
 	
 	By dCBTHeadingSection = By.xpath("//h2[contains(text(),'Mental Health, CBT and dCBT')]/following::section[1]");
 	
