@@ -114,14 +114,14 @@ public class Novapeerji1733 extends BaseClass {
 	}
 
 	@Parameters({ "SearchEmployer", "CoverageToken", "CoverageType" })
-	@Test(priority = 5, dependsOnMethods = "loginToApplication", enabled = false)
+	@Test(priority = 5, dependsOnMethods = "loginToApplication")
 	public void CreateEmployer3(String searchemployer, String coveragetoken, String coveragetype)
 			throws InterruptedException {
 
 		home = PageFactory.initElements(driver, NovaHomePage.class);
 
-		String searchemployer1 = "Sarika-Test-NewPCLJHRA1";
-		String groupNo = "PCLJHRA1";
+		String searchemployer1 = "Sarika-Test-NewDCBT";
+		String groupNo = "DCBT1";
 		String empID = "703";
 
 		home.createEmployer1733(searchemployer1, empID, null);
@@ -131,6 +131,8 @@ public class Novapeerji1733 extends BaseClass {
 		home.createCoverageUpdate1797(searchemployer1, null, "lifejourney");
 
 		home.createCoverageUpdate1797(searchemployer1, null, "hra");
+		
+		home.createCoverageUpdate1797(searchemployer1, null, "dcbt");
 
 		home.createService1797(searchemployer1, null, null);
 
