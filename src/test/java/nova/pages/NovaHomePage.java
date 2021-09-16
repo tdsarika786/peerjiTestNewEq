@@ -290,6 +290,8 @@ public class NovaHomePage {
 	By LoggedActionTranslationENInput = By.xpath("//input[@id='translations_label_en-CA']");
 
 	By LoggedActionTranslationFRInput = By.xpath("//input[@id='translations_label_fr-CA']");
+	
+	By CreateCoverage1 = By.xpath("(//a[contains(text(), 'Create Coverage')])[1]");
 
 	public NovaHomePage(WebDriver ldriver) {
 		this.driver = ldriver;
@@ -1262,6 +1264,8 @@ public class NovaHomePage {
 		// Utility.waitForWebElement(driver, CreateCoverage).click();
 
 		Utility.wait(5);
+		
+		Utility.waitForWebElement(driver, CreateCoverage1);
 
 		WebElement CreateCoverage = driver.findElement(By.xpath("(//a[contains(text(), 'Create Coverage')])[1]"));
 
