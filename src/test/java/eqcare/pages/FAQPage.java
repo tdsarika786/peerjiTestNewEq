@@ -26,7 +26,7 @@ public class FAQPage {
 	
 	By faqLink = By.xpath("(//a[@href='/en/faq'])[1]");
 
-	By primaryCareDiv = By.xpath("//a[@href='#category_3']");
+	By primaryCareDiv = By.xpath("//li[contains(text(),'Primary Care')]");
 
 	By dataSecurityDiv = By.xpath("//li[contains(text(),'Data Security')]");
 
@@ -115,20 +115,25 @@ public class FAQPage {
 		executorSub.executeScript("arguments[0].click()", buttonSub);
 		
 		Utility.waitForWebElement(driver, faqHeader);
+		
+		WebElement buttonPrimary = driver.findElement(By.xpath("//li[contains(text(),'Primary Care')]"));
+
+		JavascriptExecutor executorSub1 = (JavascriptExecutor) driver;
+		executorSub1.executeScript("arguments[0].click()", buttonPrimary);
 
 		Utility.waitForWebElement(driver, primaryCareDiv).click();
 
 		Utility.waitForWebElement(driver, primaryCareHeading);
 
-		Utility.waitForWebElement(driver, dataSecurityDiv);
-		
+		Utility.waitForWebElement(driver, dataSecurityDiv).click();
+
 		Utility.waitForWebElement(driver, dataSecurityHeading);
 
-		Utility.waitForWebElement(driver, registerationDiv);
+		Utility.waitForWebElement(driver, registerationDiv).click();
 
 		Utility.waitForWebElement(driver, registerationHeading);
 
-		Utility.waitForWebElement(driver, technologyDiv);
+		Utility.waitForWebElement(driver, technologyDiv).click();
 
 		Utility.waitForWebElement(driver, technologyHeading);
 
