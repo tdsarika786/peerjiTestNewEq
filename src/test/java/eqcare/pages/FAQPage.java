@@ -35,12 +35,21 @@ public class FAQPage {
 	By technologyDiv = By.xpath("//li[contains(text(),'Technology')]");
 
 	By primaryCareHeading = By.xpath("//h2[contains(text(),'Primary Care')]");
+	
+	By primaryCareHeadingSection = By.xpath("//h2[contains(text(),'Primary Care')]/following::section[1]");
 
 	By dataSecurityHeading = By.xpath("//h2[contains(text(),'Data Security')]");
+	
+	By dataSecurityHeadingSection = By.xpath("//h2[contains(text(),'Data Security')]/following::section[1]");
 
 	By registerationHeading = By.xpath("//h2[contains(text(),'Registration')]");
+	
+	By registerationHeadingSection = By.xpath("//h2[contains(text(),'Registration')]/following::section[1]");
 
 	By technologyHeading = By.xpath("//h2[contains(text(),'Technology')]");
+	
+	By technologyHeadingSection = By.xpath("//h2[contains(text(),'Technology')]/following::section[1]");
+	
 
 	public void navigateToFAQPage(String AppURL, String subdomain) {
 
@@ -125,6 +134,8 @@ public class FAQPage {
 
 		Utility.waitForWebElement(driver, primaryCareHeading);
 		
+		Utility.waitForWebElement(driver, primaryCareHeadingSection);
+		
 		WebElement buttonData = driver.findElement(By.xpath("//li[contains(text(),'Data Security')]"));
 
 		JavascriptExecutor executorSub2 = (JavascriptExecutor) driver;
@@ -133,6 +144,8 @@ public class FAQPage {
 		//Utility.waitForWebElement(driver, dataSecurityDiv).click();
 
 		Utility.waitForWebElement(driver, dataSecurityHeading);
+		
+		Utility.waitForWebElement(driver, dataSecurityHeadingSection);
 		
 		WebElement buttonReg = driver.findElement(By.xpath("//li[contains(text(),'Registration')]"));
 
@@ -143,6 +156,8 @@ public class FAQPage {
 
 		Utility.waitForWebElement(driver, registerationHeading);
 		
+		Utility.waitForWebElement(driver, registerationHeadingSection);
+		
 		WebElement buttonTech = driver.findElement(By.xpath("//li[contains(text(),'Technology')]"));
 
 		JavascriptExecutor executorSub4 = (JavascriptExecutor) driver;
@@ -151,6 +166,8 @@ public class FAQPage {
 		//Utility.waitForWebElement(driver, technologyDiv).click();
 
 		Utility.waitForWebElement(driver, technologyHeading);
+		
+		Utility.waitForWebElement(driver, technologyHeadingSection);
 
 	}
 
