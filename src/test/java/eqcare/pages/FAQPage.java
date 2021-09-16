@@ -134,7 +134,7 @@ public class FAQPage {
 
 		Utility.waitForWebElement(driver, dataSecurityHeading);
 		
-		WebElement buttonReg = driver.findElement(By.xpath("//li[contains(text(),'Registeration')]"));
+		WebElement buttonReg = driver.findElement(By.xpath("//li[contains(text(),'Registration')]"));
 
 		JavascriptExecutor executorSub3 = (JavascriptExecutor) driver;
 		executorSub3.executeScript("arguments[0].click()", buttonReg);
