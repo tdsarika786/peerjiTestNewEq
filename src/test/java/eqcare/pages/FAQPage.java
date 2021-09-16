@@ -26,7 +26,7 @@ public class FAQPage {
 	
 	By faqLink = By.xpath("(//a[@href='/en/faq'])[1]");
 
-	By primaryCareDiv = By.xpath("//li[contains(text(),'Primary Care')]");
+	By primaryCareDiv = By.xpath("//a[@href='#category_3']");
 
 	By dataSecurityDiv = By.xpath("//li[contains(text(),'Data Security')]");
 
@@ -120,15 +120,15 @@ public class FAQPage {
 
 		Utility.waitForWebElement(driver, primaryCareHeading);
 
-		Utility.waitForWebElement(driver, dataSecurityDiv).click();
-
+		Utility.waitForWebElement(driver, dataSecurityDiv);
+		
 		Utility.waitForWebElement(driver, dataSecurityHeading);
 
-		Utility.waitForWebElement(driver, registerationDiv).click();
+		Utility.waitForWebElement(driver, registerationDiv);
 
 		Utility.waitForWebElement(driver, registerationHeading);
 
-		Utility.waitForWebElement(driver, technologyDiv).click();
+		Utility.waitForWebElement(driver, technologyDiv);
 
 		Utility.waitForWebElement(driver, technologyHeading);
 
