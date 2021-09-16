@@ -28,6 +28,8 @@ public class FAQPage {
 	By faqLink = By.xpath("(//a[@href='/en/faq'])[1]");
 	
 	By lifejourneyDiv = By.xpath("//li[contains(text(),'LifeJourney')]");
+	
+	By dcBTDiv = By.xpath("//li[contains(text(),'Mental Health, CBT and dCBT')]");
 
 	By primaryCareDiv = By.xpath("//li[contains(text(),'Primary Care')]");
 
@@ -41,6 +43,10 @@ public class FAQPage {
 	By lifejourneyHeading = By.xpath("//h2[contains(text(),'LifeJourney')]");
 	
 	By lifejourneyHeadingSection = By.xpath("//h2[contains(text(),'LifeJourney')]/following::section[1]");
+	
+	By dCBTHeading = By.xpath("//h2[contains(text(),'Mental Health, CBT and dCBT)]");
+	
+	By dCBTHeadingSection = By.xpath("//h2[contains(text(),'Mental Health, CBT and dCBT')]/following::section[1]");
 	
 	
 	By primaryCareHeading = By.xpath("//h2[contains(text(),'Primary Care')]");
@@ -199,5 +205,22 @@ public class FAQPage {
 		Utility.waitForWebElement(driver, lifejourneyHeadingSection);
 		
 	}
+	
+public void verifyFAQdCBTQues() {
+		
+		
+		WebElement buttonDCBT = driver.findElement(By.xpath("//li[contains(text(),'Mental Health, CBT and dCBT')]"));
+
+		JavascriptExecutor executorSub1 = (JavascriptExecutor) driver;
+		executorSub1.executeScript("arguments[0].click()", buttonDCBT);
+
+		// Utility.waitForWebElement(driver, primaryCareDiv).click();
+
+		Utility.waitForWebElement(driver, dCBTHeading);
+
+		Utility.waitForWebElement(driver, dCBTHeadingSection);
+		
+	}
+
 
 }

@@ -14,39 +14,57 @@ public class NovaFAQ extends BaseClass {
 
 	FAQPage faq;
 
-
 	// testpeerji
 	@Parameters({ "AppURL" })
 	@Test(priority = 0)
 	public void navigateToFAQPage(String AppURL) throws Exception {
 
 		faq = PageFactory.initElements(driver, FAQPage.class);
-		
+
 		if (AppURL.contains("peerjipc")) {
-		
-		//faq.navigateToFAQPage(AppURL,"peerjipc");
-		
-		faq.verifyFAQCTA();
-		
-		faq.verifyFAQPCQues();
+
+			// faq.navigateToFAQPage(AppURL,"peerjipc");
+
+			faq.verifyFAQCTA();
+
+			faq.verifyFAQPCQues();
+		}
+
+		if (AppURL.contains("peerjilj")) {
+
+			// faq.navigateToFAQPage(AppURL,"peerjipc");
+
+			faq.verifyFAQCTA();
+
+			faq.verifyFAQPCQues();
+
+			faq.verifyFAQLJQues();
+		}
+		if (AppURL.contains("peerjipclj")) {
+
+			// faq.navigateToFAQPage(AppURL,"peerjipc");
+
+			faq.verifyFAQCTA();
+
+			faq.verifyFAQPCQues();
+
+			faq.verifyFAQLJQues();
 		}
 		
-		if (AppURL.contains("peerjilj")) {
-			
-			//faq.navigateToFAQPage(AppURL,"peerjipc");
-			
+		if (AppURL.contains("peerjidcbt")) {
+
+			// faq.navigateToFAQPage(AppURL,"peerjipc");
+
 			faq.verifyFAQCTA();
-			
+
 			faq.verifyFAQPCQues();
-			
-			faq.verifyFAQLJQues();
-			}
-			
+
+			faq.verifyFAQdCBTQues();
+		}
+		
+		
+		
 
 	}
-
-	
-	
-	
 
 }
