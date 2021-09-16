@@ -121,19 +121,34 @@ public class FAQPage {
 		JavascriptExecutor executorSub1 = (JavascriptExecutor) driver;
 		executorSub1.executeScript("arguments[0].click()", buttonPrimary);
 
-		Utility.waitForWebElement(driver, primaryCareDiv).click();
+		//Utility.waitForWebElement(driver, primaryCareDiv).click();
 
 		Utility.waitForWebElement(driver, primaryCareHeading);
+		
+		WebElement buttonData = driver.findElement(By.xpath("//li[contains(text(),'Data Security')]"));
 
-		Utility.waitForWebElement(driver, dataSecurityDiv).click();
+		JavascriptExecutor executorSub2 = (JavascriptExecutor) driver;
+		executorSub2.executeScript("arguments[0].click()", buttonData);
+
+		//Utility.waitForWebElement(driver, dataSecurityDiv).click();
 
 		Utility.waitForWebElement(driver, dataSecurityHeading);
+		
+		WebElement buttonReg = driver.findElement(By.xpath("//li[contains(text(),'Registeration')]"));
 
-		Utility.waitForWebElement(driver, registerationDiv).click();
+		JavascriptExecutor executorSub3 = (JavascriptExecutor) driver;
+		executorSub3.executeScript("arguments[0].click()", buttonReg);
+
+		//Utility.waitForWebElement(driver, registerationDiv).click();
 
 		Utility.waitForWebElement(driver, registerationHeading);
+		
+		WebElement buttonTech = driver.findElement(By.xpath("//li[contains(text(),'Technology')]"));
 
-		Utility.waitForWebElement(driver, technologyDiv).click();
+		JavascriptExecutor executorSub4 = (JavascriptExecutor) driver;
+		executorSub4.executeScript("arguments[0].click()", buttonTech);
+
+		//Utility.waitForWebElement(driver, technologyDiv).click();
 
 		Utility.waitForWebElement(driver, technologyHeading);
 
