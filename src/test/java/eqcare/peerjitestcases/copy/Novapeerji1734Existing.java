@@ -53,6 +53,8 @@ public class Novapeerji1734Existing extends BaseClass {
 		home.createEmployer1733(searchemployer1, empID, null);
 
 		home.createCoverage1797(searchemployer1, null, "lifejourney");
+		
+		home.createCoverageCTA();
 
 		home.createService1797(searchemployer1, null, null);
 
