@@ -77,6 +77,8 @@ public class Novapeerji1734Existing extends BaseClass {
 		home.createEmployer1733(searchemployer1, empID, null);
 
 		home.createCoverage1797(searchemployer1, null, "primary_care");
+		
+		home.createCoverageCTA();
 
 		home.createService1797(searchemployer1, null, null);
 
@@ -101,15 +103,19 @@ public class Novapeerji1734Existing extends BaseClass {
 		home.createEmployer1733(searchemployer1, empID, null);
 
 		home.createCoverage1797(searchemployer1, null, "primary_care");
+		
+		home.createAnotherCoverageCTA();
 
 		home.createCoverageUpdate1797(searchemployer1, null, "lifejourney");
+		
+		home.createCoverageCTA();
 
 		home.createService1797(searchemployer1, null, null);
 
 		home.createGroupNo(groupNo, searchemployer1); // then create employee
 
 		home.createEmployee(searchemployer1, "anu2", "family");
-
+		
 		System.out.println("********* 3 Sarika-Test-NewPCLJ72 ***********");
 	}
 
