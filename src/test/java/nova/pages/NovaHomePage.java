@@ -1266,7 +1266,7 @@ public class NovaHomePage {
 
 		// Utility.waitForWebElement(driver, CreateCoverage).click();
 
-		Utility.wait(5);
+		Utility.wait(2);
 		
 		Utility.waitForWebElement(driver, CreateCoverage1);
 
@@ -1275,7 +1275,7 @@ public class NovaHomePage {
 		JavascriptExecutor executorCreateCoverage = (JavascriptExecutor) driver;
 		executorCreateCoverage.executeScript("arguments[0].click()", CreateCoverage);
 
-		Utility.wait(10);
+		Utility.wait(5);
 
 		Utility.waitForWebElement(driver, selectCoverageOption);
 
