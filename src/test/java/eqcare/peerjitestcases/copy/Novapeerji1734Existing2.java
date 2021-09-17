@@ -214,14 +214,20 @@ public class Novapeerji1734Existing2 extends BaseClass {
 		String searchemployer1 = "AGEECLP (Cégep de La Pocatière)";
 		String groupNo = "AG70";
 		String empID = "74";
-
+		
 		home.createEmployer1733(searchemployer1, empID, null);
 
 		home.createCoverage1797(searchemployer1, null, "primary_care");
+		
+		home.createAnotherCoverageCTA();
 
 		home.createCoverageUpdate1797(searchemployer1, null, "lifejourney");
-
+			
+		home.createAnotherCoverageCTA();
+		
 		home.createCoverageUpdate1797(searchemployer1, null, "hra");
+		
+		home.createCoverageCTA();
 
 		home.createService1797(searchemployer1, null, null);
 
@@ -246,16 +252,22 @@ public class Novapeerji1734Existing2 extends BaseClass {
 		home.createEmployer1733(searchemployer1, empID, null);
 
 		home.createCoverage1797(searchemployer1, null, "primary_care");
+		
+		home.createAnotherCoverageCTA();
 
 		home.createCoverageUpdate1797(searchemployer1, null, "lifejourney");
-
+			
+		home.createAnotherCoverageCTA();
+		
 		home.createCoverageUpdate1797(searchemployer1, null, "hra");
+		
+		home.createCoverageCTA();
 
 		home.createService1797(searchemployer1, null, null);
 
 		home.createGroupNo(groupNo, searchemployer1); // then create employee
 
-		home.createEmployee(searchemployer1, "anu1", "family");
+		home.createEmployee(searchemployer1, "anu2", "family");
 
 		System.out.println("********* ABC company ***********");
 	}
