@@ -11,6 +11,7 @@
     <classes>
        
          <class name="eqcare.peerjitestcases.copy.Novapeerji1734Existing"/> 
+           <class name="eqcare.peerjitestcases.copy.Novapeerji1734Existing2"/> 
 
    <!--  	<class name="eqcare.peerjitestcases.copy.TC2_ForgotPasswordScenarios" />  -->
            

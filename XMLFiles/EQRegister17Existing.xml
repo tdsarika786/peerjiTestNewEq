@@ -11,6 +11,8 @@
     <classes>
 
      	<class name="eqcare.peerjitestcases.copy.TC1_RegisterationScenariosExisting" /> 
+     	
+     		<class name="eqcare.peerjitestcases.copy.TC1_RegisterationScenariosExisting2" /> 
            
           <!--   <class name="eqcare.peerjitestcases.copy.TC3_EndToEndScenarios"/> -->
       
