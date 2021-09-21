@@ -332,7 +332,7 @@ public class NovaHomePage {
 
 		By selectEqCareEmployee = By.xpath("//div[contains(text(),'" + searchEmployer + "')]");
 
-		System.out.println("xpath --------" + selectEqCareEmployee);
+		//System.out.println("xpath --------" + selectEqCareEmployee);
 
 		Utility.waitForWebElement(driver, selectEqCareEmployee).click();
 
@@ -559,7 +559,7 @@ public class NovaHomePage {
 
 		By selectEqCareEmployee = By.xpath("//div[contains(text(),'" + searchEmployer + "')]");
 
-		System.out.println("xpath --------" + selectEqCareEmployee);
+		//System.out.println("xpath --------" + selectEqCareEmployee);
 
 		Utility.waitForWebElement(driver, selectEqCareEmployee).click();
 
@@ -1339,7 +1339,7 @@ public class NovaHomePage {
 
 		By selectEqCareEmployer = By.xpath("//a[contains(text(),'" + searchEmployer + "')]");
 
-		System.out.println("//a[contains(text(),'" + searchEmployer + "')]");
+		//System.out.println("//a[contains(text(),'" + searchEmployer + "')]");
 
 		Utility.waitForWebElement(driver, selectEqCareEmployer).click();
 
