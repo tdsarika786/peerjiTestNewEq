@@ -1270,9 +1270,9 @@ public class NovaHomePage {
 
 		
 		
-		Utility.waitForWebElement(driver, CoverageEmployer);
+		//Utility.waitForWebElement(driver, CoverageEmployer);
 		
-		Utility.wait(5);
+		Utility.wait(7);
 		
 		Utility.waitForWebElement(driver, CreateCoverage1);
 
