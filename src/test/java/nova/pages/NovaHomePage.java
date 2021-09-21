@@ -865,6 +865,8 @@ public class NovaHomePage {
 		Utility.waitForWebElement(driver, EmployerLink).click();
 
 		Utility.wait(10);
+		
+		Utility.waitForWebElement(driver, createEmployerLink);
 
 		WebElement buttonEmpl = driver.findElement(By.xpath("(//a[contains(text(), 'Create Employer')])[1]"));
 
@@ -1031,7 +1033,7 @@ public class NovaHomePage {
 
 		Utility.waitForWebElement(driver, GroupNoLink).click();
 
-		Utility.wait(2);
+		Utility.wait(5);
 
 		Utility.waitForWebElement(driver, CreateGroupNo);
 
