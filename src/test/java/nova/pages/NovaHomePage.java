@@ -295,6 +295,8 @@ public class NovaHomePage {
 	
 	
 	By CoverageUpdate = By.xpath("//button[@dusk='create-and-add-another-button']");
+	
+	By CoverageEmployer = By.xpath("//select[@data-testid='employers-select']");
 
 	public NovaHomePage(WebDriver ldriver) {
 		this.driver = ldriver;
@@ -1266,7 +1268,11 @@ public class NovaHomePage {
 
 		// Utility.waitForWebElement(driver, CreateCoverage).click();
 
-		Utility.wait(2);
+		
+		
+		Utility.waitForWebElement(driver, CoverageEmployer);
+		
+		Utility.wait(5);
 		
 		Utility.waitForWebElement(driver, CreateCoverage1);
 
@@ -1320,6 +1326,8 @@ public class NovaHomePage {
 
 		JavascriptExecutor executorSub = (JavascriptExecutor) driver;
 		executorSub.executeScript("arguments[0].click()", buttonSub);
+		
+		
 
 		Utility.wait(7);
 		
