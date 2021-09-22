@@ -142,9 +142,9 @@ public class HRAScoreDoingVeryWelllSkipToTalk extends BaseClass {
 
 		System.out.println("10- HRA Completition");
 
-		home.scoreModalClose();
+		//home.scoreModalClose();
 
-		System.out.println("11 - Score pop up close");
+		//System.out.println("11 - Score pop up close");
 
 	}
 
