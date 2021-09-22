@@ -375,6 +375,10 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 	By mindScoreLabel = By.xpath("(//p[contains(text(), 'Mind')])[1]");
 
+	By sproutResourceTextScoreModalLabel = By.xpath("(//p[contains(text(),'Sprout')])[1]");
+
+	By sproutResourceLinkScoreModalLabel = By.xpath("(//a[contains(@href,'sproutatwork.com')])[1]");
+
 	By updateMyAnswerScoreLink = By.xpath("(//a[contains(text(), 'Update my answers')])[1]");
 
 	By talkToCareLink = By.xpath("//a[contains(text(), 'Talk to a Care')]");
@@ -403,6 +407,10 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 	By divLibrary = By.xpath("//div[contains(text(), 'access to your library')]");
 
+	By sproutResourceTextScoreModal = By.xpath("(//p[contains(text(),'Sprout')])[2]");
+
+	By sproutResourceLinkScoreModal = By.xpath("(//a[contains(@href,'sproutatwork.com')])[2]");
+
 	// Score ModalHome TBA
 
 	By overallScoreLabelHomeTBA = By.xpath("(//p[contains(text(), 'Overall')])");
@@ -416,6 +424,12 @@ public class HRAHomePageNew2 extends runWithAttachments {
 	// Score Home Pop up
 
 	By scorePopUpClick = By.xpath("//*[@id=\"scrollable-container\"]/div[3]/div[3]/div[3]/div[1]/div");
+
+	// Sprout Thank you
+
+	By sproutResourceText = By.xpath("//p[contains(text(),'Sprout')]");
+
+	By sproutResourceLink = By.xpath("//a[contains(@href,'sproutatwork.com')]");
 
 	public HRAHomePageNew2(WebDriver ldriver) {
 		this.driver = ldriver;
@@ -451,6 +465,10 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 		Utility.waitForWebElement(driver, talkToCareLink);
 
+		Utility.waitForWebElement(driver, sproutResourceText);
+
+		Utility.waitForWebElement(driver, sproutResourceLink);
+
 		viewScoreHRAComplete(scoreLabel);
 
 		Utility.waitForWebElement(driver, closeCTA).click();
@@ -458,6 +476,10 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		Utility.waitForWebElement(driver, scorePopUpClick).click();
 
 		System.out.println("10.1 View Score pop closed");
+
+		Utility.waitForWebElement(driver, sproutResourceText);
+
+		Utility.waitForWebElement(driver, sproutResourceLink);
 
 		Utility.waitForWebElement(driver, talkToCareLink).click();
 
@@ -470,7 +492,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		System.out.println("URL " + url);
 
 	}
-	
+
 	public void hraCompletionPage() {
 
 		Utility.wait(10);
@@ -486,6 +508,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		viewScoreHRAComplete();
 
 	}
+
 	public void viewScoreHRAComplete() {
 
 		System.out.println("View Health Score");
@@ -504,7 +527,7 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 		System.out.println(getPercentage);
 
-		//Assert.assertEquals(getScore, scoreLabel);
+		// Assert.assertEquals(getScore, scoreLabel);
 
 		String strPercentage = getPercentage.substring(0, getPercentage.length() - 1);
 
@@ -600,9 +623,12 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 		Utility.waitForWebElement(driver, talkToCareLink);
 
-		viewScoreHRAComplete(scoreLabel);
+		Utility.waitForWebElement(driver, sproutResourceText);
+
+		Utility.waitForWebElement(driver, sproutResourceLink);
 
 	}
+
 	public void hraCompletionPageStandAlone(String scoreLabel) {
 
 		Utility.wait(10);
@@ -613,7 +639,11 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 		Utility.waitForWebElement(driver, hraThankyouText);
 
-		//Utility.waitForWebElement(driver, talkToCareLink);
+		Utility.waitForWebElement(driver, sproutResourceText);
+
+		Utility.waitForWebElement(driver, sproutResourceLink);
+
+		// Utility.waitForWebElement(driver, talkToCareLink);
 
 		viewScoreHRAComplete(scoreLabel);
 
@@ -628,6 +658,10 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		Utility.waitForWebElement(driver, hraThankyouHeader);
 
 		Utility.waitForWebElement(driver, hraThankyouText);
+
+		Utility.waitForWebElement(driver, sproutResourceText);
+
+		Utility.waitForWebElement(driver, sproutResourceLink);
 
 		Utility.waitForWebElement(driver, talkToCareLink).click();
 
@@ -710,6 +744,10 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 		Utility.waitForWebElement(driver, physicalGuideTabSitting).click();
 
+		Utility.waitForWebElement(driver, sproutResourceTextScoreModalLabel);
+
+		Utility.waitForWebElement(driver, sproutResourceLinkScoreModalLabel);
+
 		System.out.println(
 				"---- HRA Complete Page Score Popup Overall, Move, feel, Mind, CTA etc. check calculation, score, physical tab----");
 
@@ -772,6 +810,10 @@ public class HRAHomePageNew2 extends runWithAttachments {
 		Utility.waitForWebElement(driver, physicalGuideTabActive).click();
 
 		Utility.waitForWebElement(driver, physicalGuideTabSitting).click();
+		
+		Utility.waitForWebElement(driver, sproutResourceTextScoreModalLabel);
+		
+		Utility.waitForWebElement(driver, sproutResourceLinkScoreModalLabel);
 
 		Utility.waitForWebElement(driver, closeCTA).click();
 
@@ -822,6 +864,10 @@ public class HRAHomePageNew2 extends runWithAttachments {
 			Utility.waitForWebElement(driver, feelScoreLabelHome);
 
 			Utility.waitForWebElement(driver, mindScoreLabelHome);
+			
+			Utility.waitForWebElement(driver, sproutResourceTextScoreModal);
+			
+			Utility.waitForWebElement(driver, sproutResourceLinkScoreModal);
 
 			Utility.waitForWebElement(driver, divLibrary);
 
@@ -851,11 +897,10 @@ public class HRAHomePageNew2 extends runWithAttachments {
 			Utility.waitForWebElement(driver, updateMyAnswerLink).click();
 		}
 	}
-	
+
 	public void verifyHRAPhysicalPageTalkCare() {
-		
+
 	}
-	
 
 	public void verifyHRAIntroductionPageTalkCare() throws Exception {
 
@@ -874,14 +919,14 @@ public class HRAHomePageNew2 extends runWithAttachments {
 			executor1.executeScript("arguments[0].click()", button);
 
 			Utility.waitForWebElement(driver, skipHRAFormButton).click();
-			
+
 			Utility.wait(7);
 
 			String url = driver.getCurrentUrl();
 
 			System.out.println("URL " + url);
 
-			//Utility.waitForWebElement(driver, startHRAFormButton).click();
+			// Utility.waitForWebElement(driver, startHRAFormButton).click();
 
 			// runTestResults(DataProviderFactory.getExcel().getCellData("Practitest", 12,
 			// 0), "0");
@@ -908,10 +953,10 @@ public class HRAHomePageNew2 extends runWithAttachments {
 
 			JavascriptExecutor executor1 = (JavascriptExecutor) driver;
 			executor1.executeScript("arguments[0].click()", button);
-			
+
 			if (option.equalsIgnoreCase("true")) {
 
-			Utility.waitForWebElement(driver, skipHRAFormButton);
+				Utility.waitForWebElement(driver, skipHRAFormButton);
 			}
 
 			Utility.waitForWebElement(driver, startHRAFormButton).click();
