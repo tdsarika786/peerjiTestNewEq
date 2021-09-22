@@ -11,21 +11,22 @@
 	<test name="Test" preserve-order="true" thread-count="3">
 		<classes>
 		
-		
-		  <class name="eqcare.peerjitestcases.hrastandalone.EQ1_HRAScoreDoingGreatEmail"/>
-		
 
+				
+			
+				
+				
+				<class
+				name="eqcare.peerjitestcases.hraskiptalktocare.HRAScoreKeepItUpSkipToTalk" />
+				
 
-			
-			     <class name="eqcare.peerjitestcases.hrastandalone.EQ1_HRAScoreDoingVeryWellEmail"/>
-			     
-			
-			           
-             <class name="eqcare.peerjitestcases.hrastandalone.EQ2_HRAScoreKeepItUpEmail"/>
-             
-           
-                   
-			
+ <class
+				name="eqcare.peerjitestcases.hraskiptalktocare.EQ3_HRAScoreKeepEyeOnItEmailSkipToTalk" />
+				
+					<class
+				name="eqcare.peerjitestcases.hraskiptalktocare.EQ4_HRAScoreRoomForImproveEmailSkipToTalk" />
+				
+		
 
 		</classes>
 

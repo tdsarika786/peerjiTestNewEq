@@ -12,19 +12,11 @@
 		<classes>
 		
 		
-		  <class name="eqcare.peerjitestcases.hratalktocare.EQ1_HRAScoreDoingGreatEmail"/>
-		
-
-	<class
-				name="eqcare.peerjitestcases.hratalktocare.HRAIntroPageTalkCare" />
-				
-					<class
-				name="eqcare.peerjitestcases.hratalktocare.HRAPhysicalPageTalkCare2" /> 
-			
-			     <class name="eqcare.peerjitestcases.hratalktocare.EQ1_HRAScoreDoingVeryWellEmail"/>
-			     
-			
-
+	
+             
+                <class name="eqcare.peerjitestcases.hrastandalone.EQ3_HRAScoreKeepEyeOnItEmail"/>   
+                
+              <class name="eqcare.peerjitestcases.hrastandalone.EQ4_HRAScoreRoomForImproveEmail"/>  
                    
 			
 
