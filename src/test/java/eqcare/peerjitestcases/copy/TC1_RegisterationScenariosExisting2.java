@@ -42,9 +42,39 @@ public class TC1_RegisterationScenariosExisting2 extends BaseClass {
 
 	}
 	
+	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
+	@Test(priority = 1, dependsOnMethods = "verifyPage")
+	public void validInputEnrolledRegisterationTest12(String email, String coveragetoken, String coverageidentifier,String AppUrl) {
+		
+		register.navigateToRegisterationPage(AppUrl);
+		
+		register.EnrolledUserWithValidInput("emp0001","anuemp1");
+		
+		register.Registeration1("sarikaqa7+anuemp1@gmail.com",
+
+				"Sarika-TestEmpGreatE",
+				DataProviderFactory.getExcel().getCellData("Users", 2, 2),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 4),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 5),
+				DataProviderFactory.getExcel().getCellData("Users", 2, 6),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 7),
+				DataProviderFactory.getExcel().getCellData("Users", 2, 8),
+
+				DataProviderFactory.getExcel().getCellData("Users", 2, 9),
+				"Sarika#123", false, "img");
+
+		register.registerationCompleteWithValidInput();
+		
+		System.out.println("*************** 6- sarikaqa7+anuemp1@gmail.com *******************");
+
+	}
+	
 	
 	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
-	@Test(priority = 5, dependsOnMethods = "verifyPage")
+	@Test(priority = 2, dependsOnMethods = "verifyPage")
 	public void validInputEnrolledRegisterationTest6(String email, String coveragetoken, String coverageidentifier,String AppUrl) {
 		
 		register.navigateToRegisterationPage(AppUrl);
@@ -75,7 +105,7 @@ public class TC1_RegisterationScenariosExisting2 extends BaseClass {
 
 	
 	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
-	@Test(priority = 6, dependsOnMethods = "verifyPage")
+	@Test(priority = 3, dependsOnMethods = "verifyPage")
 	public void validInputEnrolledRegisterationTest7(String email, String coveragetoken, String coverageidentifier,String AppUrl) {
 		
 		register.navigateToRegisterationPage(AppUrl);
@@ -106,7 +136,7 @@ public class TC1_RegisterationScenariosExisting2 extends BaseClass {
 
 	
 	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
-	@Test(priority = 7, dependsOnMethods = "verifyPage")
+	@Test(priority = 4, dependsOnMethods = "verifyPage")
 	public void validInputEnrolledRegisterationTest8(String email, String coveragetoken, String coverageidentifier,String AppUrl) {
 		
 		register.navigateToRegisterationPage(AppUrl);
@@ -139,7 +169,7 @@ public class TC1_RegisterationScenariosExisting2 extends BaseClass {
 	}
 
 	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
-	@Test(priority = 8, dependsOnMethods = "verifyPage")
+	@Test(priority = 5, dependsOnMethods = "verifyPage")
 	public void validInputEnrolledRegisterationTest9(String email, String coveragetoken, String coverageidentifier,String AppUrl) {
 		
 		register.navigateToRegisterationPage(AppUrl);
@@ -172,7 +202,7 @@ public class TC1_RegisterationScenariosExisting2 extends BaseClass {
 	}
 	
 	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
-	@Test(priority = 9, dependsOnMethods = "verifyPage")
+	@Test(priority = 6, dependsOnMethods = "verifyPage")
 	public void validInputEnrolledRegisterationTest10(String email, String coveragetoken, String coverageidentifier,String AppUrl) {
 		
 		register.navigateToRegisterationPage(AppUrl);
@@ -206,7 +236,7 @@ public class TC1_RegisterationScenariosExisting2 extends BaseClass {
 	
 	
 	@Parameters({"Email","CoverageToken","CoverageIdentifier","AppURL"})
-	@Test(priority = 10, dependsOnMethods = "verifyPage")
+	@Test(priority = 7, dependsOnMethods = "verifyPage")
 	public void validInputEnrolledRegisterationTest11(String email, String coveragetoken, String coverageidentifier,String AppUrl) {
 		
 		register.navigateToRegisterationPage(AppUrl);
