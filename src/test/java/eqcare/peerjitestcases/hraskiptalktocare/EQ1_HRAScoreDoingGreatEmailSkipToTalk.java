@@ -137,11 +137,11 @@ public class EQ1_HRAScoreDoingGreatEmailSkipToTalk extends BaseClass {
 
 		System.out.println("9- HRA Medical");
 
-		home.hraCompletionPage(scoreLabel);
+		home.hraCompletionPage1(scoreLabel);
 
 		System.out.println("10- HRA Completition");
 
-		home.scoreModalClose();
+		//home.scoreModalClose();
 
 		System.out.println("11 - Score pop up close");
 

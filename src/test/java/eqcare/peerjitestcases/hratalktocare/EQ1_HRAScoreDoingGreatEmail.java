@@ -137,7 +137,7 @@ public class EQ1_HRAScoreDoingGreatEmail extends BaseClass {
 
 		System.out.println("9- HRA Medical");
 
-		home.hraCompletionPage(scoreLabel);
+		home.hraCompletionPage1(scoreLabel);
 
 		System.out.println("10- HRA Completition");
 
