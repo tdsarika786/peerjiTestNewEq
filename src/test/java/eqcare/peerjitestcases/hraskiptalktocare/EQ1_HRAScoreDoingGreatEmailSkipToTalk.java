@@ -179,7 +179,7 @@ public class EQ1_HRAScoreDoingGreatEmailSkipToTalk extends BaseClass {
 
 			//intakeForm.deviceCheck();
 			
-			intakeForm.deviceCheckSkipToTalk();
+			intakeForm.skipTalkToCareCTA();
 
 			System.out.println("11-Life Journey Device check page");
 

@@ -1033,7 +1033,7 @@ public class NovaHomePage {
 
 		Utility.waitForWebElement(driver, GroupNoLink).click();
 
-		Utility.wait(5);
+		Utility.wait(7);
 
 		Utility.waitForWebElement(driver, CreateGroupNo);
 
