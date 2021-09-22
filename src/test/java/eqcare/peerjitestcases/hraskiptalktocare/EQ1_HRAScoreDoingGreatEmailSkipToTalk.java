@@ -143,7 +143,7 @@ public class EQ1_HRAScoreDoingGreatEmailSkipToTalk extends BaseClass {
 
 		//home.scoreModalClose();
 
-		System.out.println("11 - Score pop up close");
+		//System.out.println("11 - Score pop up close");
 
 	}
 
